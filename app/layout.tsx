@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import "./pages.css";
+import "./card-fix.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
