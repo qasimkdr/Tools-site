@@ -10,14 +10,15 @@ const pages = readdirSync(root, { withFileTypes: true })
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(root, entry.name, "index.html"), "utf8") }));
 
 const failures = [];
+const visibleText = (html) => html
+  .replace(/<script[\s\S]*?<\/script>/gi, " ")
+  .replace(/<style[\s\S]*?<\/style>/gi, " ")
+  .replace(/<[^>]+>/g, " ")
+  .replace(/&[a-z#0-9]+;/gi, " ")
+  .replace(/\s+/g, " ")
+  .trim();
 for (const { slug, html } of pages) {
-  const text = html
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&[a-z#0-9]+;/gi, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+  const text = visibleText(html);
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
   const faqs = (html.match(/<details/g) || []).length;
@@ -31,6 +32,17 @@ for (const { slug, html } of pages) {
     [html.includes("application/ld+json"), "missing structured data"],
   ];
   for (const [passed, message] of checks) if (!passed) failures.push(`${slug}: ${message}`);
+}
+
+const trustPages = ["about", "contact", "privacy", "cookies", "terms", "disclaimer", "editorial-policy", "guides", "pk/mobiles"];
+const unfinished = /coming soon|publishing soon|in review|under construction|before launch|will be added|placeholder|lorem ipsum/i;
+for (const route of trustPages) {
+  const html = readFileSync(join(process.cwd(), "out", route, "index.html"), "utf8");
+  const text = visibleText(html);
+  const words = text.split(" ").filter(Boolean).length;
+  if (words < 180) failures.push(`${route}: only ${words} rendered words on trust/content page`);
+  if (unfinished.test(text)) failures.push(`${route}: contains unfinished-page language`);
+  if (!html.includes('rel="canonical"')) failures.push(`${route}: missing canonical URL`);
 }
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
