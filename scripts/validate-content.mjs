@@ -2,6 +2,9 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 const root = join(process.cwd(), "out", "pk", "tools");
+const toolSource = readFileSync(join(process.cwd(), "lib", "tools.ts"), "utf8");
+const baseSection = toolSource.split("const baseTools:")[1]?.split("const editorial:")[0] || "";
+const declaredTools = (baseSection.match(/slug:\s*"[^"]+"/g) || []).length;
 const pages = readdirSync(root, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(root, entry.name, "index.html"), "utf8") }));
@@ -30,7 +33,7 @@ for (const { slug, html } of pages) {
   for (const [passed, message] of checks) if (!passed) failures.push(`${slug}: ${message}`);
 }
 
-if (pages.length < 18) failures.push(`only ${pages.length} tool pages generated (minimum 18)`);
+if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
