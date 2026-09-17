@@ -7,7 +7,7 @@ import "./category-grid-fix.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://solvepilot.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://solvepilot.xyz";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "SolvePilot Pakistan – Free Calculators & Smart Tools", template: "%s | SolvePilot" },
