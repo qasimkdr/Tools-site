@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata:Metadata={title:"Practical Pakistan Guides",description:"Clear guides explaining electricity, solar, salary tax, mobiles and smarter buying decisions in Pakistan."};
+export default function Guides(){return <div className="shell listing-page"><span className="eyebrow">SolvePilot learning centre</span><h1>Practical guides without the jargon</h1><p>We are preparing deeply researched guides that explain the assumptions behind our tools and help you verify important decisions.</p><div className="empty-state"><span>📚</span><h2>First guides are in review</h2><p>Electricity billing, solar sizing, salary taxation and mobile buying guides will be published after source verification.</p></div></div>}

@@ -1,0 +1,31 @@
+"use client";
+import { useMemo, useState } from "react";
+
+const n = (value: string) => Math.max(0, Number(value) || 0);
+const money = (value: number) => new Intl.NumberFormat("en-PK", { style: "currency", currency: "PKR", maximumFractionDigits: 0 }).format(value);
+
+type Result = { label: string; value: string; note?: string };
+
+function Field({ label, value, onChange, suffix }: { label: string; value: string; onChange: (v: string) => void; suffix?: string }) {
+  return <label className="field"><span>{label}</span><div><input inputMode="decimal" value={value} onChange={(e)=>onChange(e.target.value)} aria-label={label}/>{suffix && <b>{suffix}</b>}</div></label>;
+}
+
+export function Calculator({ slug }: { slug: string }) {
+  const [a,setA]=useState(slug.includes("solar")?"600":slug.includes("electricity")?"250":slug.includes("salary")?"150000":slug.includes("pta")?"500":slug.includes("ev-")?"50":slug.includes("daraz")?"3000":slug.includes("cgpa")?"3.2":"20");
+  const [b,setB]=useState(slug.includes("solar")?"5.2":slug.includes("electricity")?"18":slug.includes("salary")?"0":slug.includes("pta")?"278":slug.includes("ev-")?"40":slug.includes("daraz")?"1500":slug.includes("cgpa")?"25":"5000");
+  const [c,setC]=useState(slug.includes("solar")?"580":slug.includes("electricity")?"12":slug.includes("pta")?"15":slug.includes("ev-")?"265":slug.includes("daraz")?"12":"0");
+  const [calculated,setCalculated]=useState(true);
+
+  const config = useMemo(() => {
+    if(slug.includes("electricity")) return { labels:["Monthly units","Average energy rate","Taxes & surcharges"], suffix:["units","PKR/unit","%"], calculate:()=>{const base=n(a)*n(b);const tax=base*n(c)/100;return [{label:"Estimated monthly bill",value:money(base+tax),note:"Planning estimate"},{label:"Energy charges",value:money(base)},{label:"Taxes & surcharges",value:money(tax)}]}};
+    if(slug.includes("solar")) return { labels:["Monthly electricity usage","Peak sun hours per day","Panel wattage"], suffix:["units","hours","W"], calculate:()=>{const kw=(n(a)/30)/(n(b)*.8||1);const panels=Math.ceil(kw*1000/(n(c)||580));const generation=kw*n(b)*30*.8;return [{label:"Recommended system",value:`${kw.toFixed(1)} kW`,note:`About ${panels} × ${n(c)}W panels`},{label:"Estimated generation",value:`${Math.round(generation)} units/mo`},{label:"Roof area guide",value:`${Math.ceil(panels*28)} sq ft`} ]}};
+    if(slug.includes("salary")) return { labels:["Gross monthly salary","Monthly allowances","Other monthly deduction"], suffix:["PKR","PKR","PKR"], calculate:()=>{const annual=(n(a)+n(b))*12;let tax=0;if(annual>600000) tax=(Math.min(annual,1200000)-600000)*.01;if(annual>1200000) tax=6000+(Math.min(annual,2200000)-1200000)*.11;if(annual>2200000) tax=116000+(Math.min(annual,3200000)-2200000)*.23;if(annual>3200000) tax=346000+(Math.min(annual,4100000)-3200000)*.30;if(annual>4100000) tax=616000+(annual-4100000)*.35;const monthly=tax/12;return [{label:"Estimated take-home",value:money(n(a)+n(b)-monthly-n(c)),note:"Per month"},{label:"Estimated monthly tax",value:money(monthly)},{label:"Estimated annual tax",value:money(tax)}]}};
+    if(slug.includes("pta")) return { labels:["Phone value","USD to PKR rate","Estimated duty rate"], suffix:["USD","PKR","%"], calculate:()=>{const value=n(a)*n(b);const duty=value*n(c)/100;return [{label:"Estimated PTA duty",value:money(duty),note:"Confirm through official DIRBS assessment"},{label:"Declared PKR value",value:money(value)},{label:"Total after duty",value:money(value+duty)}]}};
+    if(slug.includes("ev-")) return { labels:["Daily travel","Petrol vehicle mileage","Petrol price"], suffix:["km","km/l","PKR/l"], calculate:()=>{const distance=n(a)*30;const petrol=distance/(n(b)||1)*n(c);const ev=distance*.035*55;const save=petrol-ev;return [{label:"Estimated monthly saving",value:money(save),note:"EV assumption: 0.035 kWh/km at PKR 55/unit"},{label:"Petrol energy cost",value:money(petrol)},{label:"EV charging cost",value:money(ev)}]}};
+    if(slug.includes("daraz")) return { labels:["Selling price","Product cost","Commission rate"], suffix:["PKR","PKR","%"], calculate:()=>{const commission=n(a)*n(c)/100;const profit=n(a)-n(b)-commission;return [{label:"Estimated profit",value:money(profit),note:`${n(a)?(profit/n(a)*100).toFixed(1):0}% net margin before other fees`},{label:"Commission",value:money(commission)},{label:"Break-even price",value:money(n(b)/(1-n(c)/100||1))}]}};
+    if(slug.includes("cgpa")) return { labels:["Your CGPA","Institution multiplier","Unused"], suffix:["CGPA","×",""], calculate:()=>[{label:"Estimated percentage",value:`${Math.min(100,n(a)*n(b)).toFixed(2)}%`,note:"Confirm your institution’s official conversion"},{label:"CGPA entered",value:n(a).toFixed(2)},{label:"Multiplier",value:`× ${n(b)}`}]};
+    return { labels:["Percentage","Value","Unused"], suffix:["%","",""], calculate:()=>[{label:`${n(a)}% of ${n(b)}`,value:(n(a)*n(b)/100).toLocaleString("en-PK"),note:"Instant percentage result"},{label:"Decimal equivalent",value:(n(a)/100).toFixed(4)},{label:"Remaining value",value:(n(b)-n(a)*n(b)/100).toLocaleString("en-PK")}]};
+  },[slug,a,b,c]);
+  const results: Result[] = config.calculate();
+  return <section className="calculator-shell" aria-label="Calculator"><div className="calc-inputs"><div className="calc-title"><span>Interactive calculator</span><strong>Your values stay on this device</strong></div><Field label={config.labels[0]} value={a} onChange={setA} suffix={config.suffix[0]}/><Field label={config.labels[1]} value={b} onChange={setB} suffix={config.suffix[1]}/>{config.labels[2]!=="Unused"&&<Field label={config.labels[2]} value={c} onChange={setC} suffix={config.suffix[2]}/>}<button className="calculate-button" onClick={()=>{setCalculated(false);requestAnimationFrame(()=>setCalculated(true))}}>Calculate result <span>→</span></button></div><div className={`calc-results ${calculated?"show":""}`}><div className="result-badge">✓ Estimated result</div><p>{results[0].label}</p><h2>{results[0].value}</h2><small>{results[0].note}</small><div className="result-grid">{results.slice(1).map((result)=><div key={result.label}><span>{result.label}</span><strong>{result.value}</strong></div>)}</div><div className="result-meter"><i style={{width:"72%"}}/><span>Personalised from your inputs</span></div></div></section>;
+}
