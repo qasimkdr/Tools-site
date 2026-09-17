@@ -11,6 +11,9 @@ export type Tool = {
   intro: string;
   formula: string;
   example: string;
+  howTo: string[];
+  considerations: { title: string; text: string }[];
+  limitations: string;
   faqs: { question: string; answer: string }[];
 };
 
@@ -18,9 +21,12 @@ const commonFaq = (name: string) => [
   { question: `Is the ${name} free?`, answer: "Yes. SolvePilot tools are free, work in your browser, and require no account." },
   { question: "Does SolvePilot store my values?", answer: "No. Calculations run locally in your browser and the values you enter are not sent to a server." },
   { question: "Should I treat the result as an exact bill or quotation?", answer: "No. Results are informed estimates. Final charges can vary because of taxes, tariffs, lender terms, usage patterns, or provider rules." },
+  { question: "How can I improve the accuracy?", answer: "Use recent values from your own bill, statement or institution, review every assumption, and confirm important results with the relevant official source." },
 ];
 
-export const tools: Tool[] = [
+type BaseTool = Omit<Tool, "howTo" | "considerations" | "limitations">;
+
+const baseTools: BaseTool[] = [
   {
     slug: "electricity-bill-calculator-pakistan",
     title: "Electricity Bill Calculator Pakistan",
@@ -117,7 +123,150 @@ export const tools: Tool[] = [
     example: "On a 4.0 scale with a multiplier of 25, a CGPA of 3.2 corresponds to an estimated 80%.",
     faqs: [...commonFaq("CGPA converter"), {question:"Is one CGPA formula valid for every university?",answer:"No. Institutions may use different formulas. Use your university’s official conversion when available."}],
   },
+  {
+    slug: "loan-emi-calculator-pakistan",
+    title: "Loan EMI Calculator Pakistan",
+    shortTitle: "Loan EMI",
+    description: "Estimate a loan's monthly instalment, total repayment and financing cost from the principal, rate and term.",
+    icon: "🏦", category: "Money", accent: "blue", updatedAt: "2026-09-17",
+    keywords: ["loan EMI calculator Pakistan", "monthly installment calculator", "loan markup calculator Pakistan"],
+    intro: "Compare loan scenarios before speaking with a bank or financing company. Enter the amount you plan to borrow, the annual percentage rate and the repayment term to see the estimated fixed monthly instalment and the total financing cost over the full term.",
+    formula: "For a reducing-balance loan, EMI = P × r × (1 + r)^n ÷ ((1 + r)^n − 1), where P is principal, r is the monthly rate and n is the number of monthly payments.",
+    example: "A PKR 1,000,000 loan at 18% per year for five years is converted to a monthly rate and 60 payments. The result shows the instalment as well as how much of the complete repayment is financing cost.",
+    faqs: [...commonFaq("loan EMI calculator"), {question:"Is bank markup always calculated this way?",answer:"No. Some products use flat rates, fees, takaful or changing benchmark rates. Check the bank's repayment schedule before signing."}],
+  },
+  {
+    slug: "fuel-cost-calculator-pakistan",
+    title: "Fuel Cost Calculator Pakistan",
+    shortTitle: "Fuel Cost",
+    description: "Plan petrol spending for a trip or month using distance, vehicle mileage and the fuel price you enter.",
+    icon: "⛽", category: "Vehicles", accent: "amber", updatedAt: "2026-09-17",
+    keywords: ["fuel cost calculator Pakistan", "petrol expense calculator", "trip fuel calculator Pakistan"],
+    intro: "Turn a route distance into a realistic fuel budget using your own vehicle's average mileage and the price displayed at the pump. The breakdown includes litres required, cost per kilometre and total estimated spend.",
+    formula: "Fuel required = distance ÷ average mileage. Estimated cost = fuel required × price per litre. Cost per kilometre = price per litre ÷ mileage.",
+    example: "For a 450 km journey in a car averaging 13 km/l at PKR 265 per litre, the estimate uses about 34.6 litres and reports the corresponding trip cost.",
+    faqs: [...commonFaq("fuel cost calculator"), {question:"Which mileage figure should I enter?",answer:"Use your recent tank-to-tank average. Manufacturer figures may be higher than real driving mileage."}],
+  },
+  {
+    slug: "battery-backup-calculator-pakistan",
+    title: "Battery Backup Time Calculator",
+    shortTitle: "Battery Backup",
+    description: "Estimate UPS or solar battery runtime from appliance load, battery capacity, voltage and practical losses.",
+    icon: "🔋", category: "Energy", accent: "green", updatedAt: "2026-09-17",
+    keywords: ["battery backup calculator Pakistan", "UPS runtime calculator", "solar battery backup time"],
+    intro: "Estimate how long a battery bank can support a known load during an outage. The result applies a conservative usable-capacity and conversion-loss allowance so it is more useful than simply dividing watt-hours by watts.",
+    formula: "Nominal energy = amp-hours × voltage. Estimated runtime = nominal energy × usable-capacity factor × inverter efficiency ÷ connected load.",
+    example: "A 150 Ah, 12 V battery stores 1,800 nominal watt-hours. At 80% combined usable energy and conversion efficiency with a 300 W load, estimated runtime is about 4.8 hours.",
+    faqs: [...commonFaq("battery backup calculator"), {question:"Why is actual backup sometimes shorter?",answer:"Battery age, temperature, discharge rate, wiring losses and inverter cut-off voltage can all reduce usable runtime."}],
+  },
+  {
+    slug: "inverter-load-calculator-pakistan",
+    title: "Inverter Load Calculator Pakistan",
+    shortTitle: "Inverter Size",
+    description: "Estimate a suitable inverter VA rating from appliance watts, safety headroom and power factor.",
+    icon: "🔌", category: "Energy", accent: "violet", updatedAt: "2026-09-17",
+    keywords: ["inverter load calculator Pakistan", "inverter size calculator", "UPS VA calculator"],
+    intro: "Add the running wattage of the appliances you want to power and allow capacity for losses and short peaks. The result converts watts into an estimated VA requirement and suggests the next practical minimum size.",
+    formula: "Required VA = connected watts × (1 + safety margin) ÷ power factor. Motors and compressors may also require separate surge capacity.",
+    example: "A planned 800 W running load with 25% headroom and a 0.8 power factor produces a minimum estimate of 1,250 VA before checking startup surges.",
+    faqs: [...commonFaq("inverter load calculator"), {question:"Do refrigerators need special allowance?",answer:"Yes. Compressors and pumps can draw several times their running power briefly, so verify the inverter's surge rating."}],
+  },
+  {
+    slug: "profit-margin-calculator",
+    title: "Profit Margin Calculator",
+    shortTitle: "Profit Margin",
+    description: "Calculate gross profit, margin percentage and markup from revenue and total cost.",
+    icon: "📈", category: "Business", accent: "green", updatedAt: "2026-09-17",
+    keywords: ["profit margin calculator", "gross margin calculator", "markup calculator Pakistan"],
+    intro: "Understand whether a product or job is priced sustainably. Enter sales revenue and all direct costs to compare gross profit margin with markup—two related percentages that are often confused.",
+    formula: "Profit = revenue − cost. Margin = profit ÷ revenue × 100. Markup = profit ÷ cost × 100.",
+    example: "If an item sells for PKR 2,000 and costs PKR 1,400, gross profit is PKR 600, margin is 30%, and markup on cost is about 42.9%.",
+    faqs: [...commonFaq("profit margin calculator"), {question:"Is margin the same as markup?",answer:"No. Margin divides profit by selling price, while markup divides profit by cost, so the percentages differ."}],
+  },
+  {
+    slug: "discount-calculator-pakistan",
+    title: "Discount Calculator Pakistan",
+    shortTitle: "Discount",
+    description: "Find the sale price, amount saved and optional tax-adjusted total after a percentage discount.",
+    icon: "🏷️", category: "Everyday", accent: "rose", updatedAt: "2026-09-17",
+    keywords: ["discount calculator Pakistan", "sale price calculator", "percentage discount calculator"],
+    intro: "Check a sale offer without doing mental arithmetic. The calculator first removes the stated percentage from the original price, then optionally applies a tax or service rate to the discounted amount.",
+    formula: "Discount = original price × discount rate ÷ 100. Sale price = original price − discount. Final total = sale price × (1 + additional rate ÷ 100).",
+    example: "A PKR 8,000 item at 25% off saves PKR 2,000 and costs PKR 6,000 before any optional tax or service charge.",
+    faqs: [...commonFaq("discount calculator"), {question:"Is an extra percentage applied before or after discount?",answer:"This tool applies the optional tax or service rate after the discount, which is the common retail sequence."}],
+  },
+  {
+    slug: "attendance-percentage-calculator",
+    title: "Attendance Percentage Calculator",
+    shortTitle: "Attendance",
+    description: "Calculate current attendance and the classes needed to reach a target percentage.",
+    icon: "🗓️", category: "Education", accent: "blue", updatedAt: "2026-09-17",
+    keywords: ["attendance percentage calculator", "classes needed for attendance", "student attendance calculator"],
+    intro: "See your current attendance and plan how many consecutive classes you need to attend to reach a required target. The result also flags when the target has already been met.",
+    formula: "Current attendance = attended ÷ held × 100. Classes needed x satisfies (attended + x) ÷ (held + x) ≥ target percentage.",
+    example: "A student who attended 36 of 50 classes has 72% attendance. To reach 75%, both attended and held totals increase for every future class attended.",
+    faqs: [...commonFaq("attendance percentage calculator"), {question:"Does an attended future class increase both totals?",answer:"Yes. Each new class increases total classes held, and attending it also increases your attended count."}],
+  },
+  {
+    slug: "marks-percentage-calculator-pakistan",
+    title: "Marks Percentage Calculator Pakistan",
+    shortTitle: "Marks Percentage",
+    description: "Convert obtained marks into a percentage and compare the result with a passing threshold.",
+    icon: "📝", category: "Education", accent: "violet", updatedAt: "2026-09-17",
+    keywords: ["marks percentage calculator Pakistan", "exam percentage calculator", "obtained marks calculator"],
+    intro: "Convert a score from any total into a consistent percentage. Add the applicable passing percentage to see the minimum marks and how far the entered score sits above or below it.",
+    formula: "Percentage = obtained marks ÷ total marks × 100. Minimum passing marks = total marks × passing percentage ÷ 100.",
+    example: "Obtaining 735 out of 1,100 gives approximately 66.82%. With a 40% threshold, the minimum passing score is 440 marks.",
+    faqs: [...commonFaq("marks percentage calculator"), {question:"Does this assign an official grade?",answer:"No. Boards and institutions use different grade boundaries, so the tool reports percentage and threshold only."}],
+  },
+  {
+    slug: "freelance-hourly-rate-calculator-pakistan",
+    title: "Freelance Hourly Rate Calculator Pakistan",
+    shortTitle: "Freelance Rate",
+    description: "Estimate a sustainable freelance hourly rate from income goal, billable time and monthly business costs.",
+    icon: "💻", category: "Business", accent: "blue", updatedAt: "2026-09-17",
+    keywords: ["freelance rate calculator Pakistan", "hourly rate calculator", "freelancer pricing Pakistan"],
+    intro: "Set a rate from the income you need rather than copying a competitor. The calculation combines your monthly income target with operating costs and divides the total by realistic billable hours—not every hour you work.",
+    formula: "Required hourly rate = (monthly income target + monthly business costs) ÷ monthly billable hours.",
+    example: "A freelancer targeting PKR 200,000, carrying PKR 30,000 in monthly costs and billing 100 hours needs an average of PKR 2,300 per billable hour before taxes.",
+    faqs: [...commonFaq("freelance hourly rate calculator"), {question:"Why use billable rather than total work hours?",answer:"Sales, administration, learning and revisions consume time but may not be directly billed to a client."}],
+  },
+  {
+    slug: "paint-quantity-calculator-pakistan",
+    title: "Paint Quantity Calculator Pakistan",
+    shortTitle: "Paint Quantity",
+    description: "Estimate paint litres and container count from wall area, coats and the product's stated coverage.",
+    icon: "🪣", category: "Home", accent: "amber", updatedAt: "2026-09-17",
+    keywords: ["paint calculator Pakistan", "paint quantity calculator", "wall paint litres calculator"],
+    intro: "Estimate material before purchasing paint for a room or project. Use the paint manufacturer's coverage rate and the net wall area after subtracting large doors and windows for a more useful result.",
+    formula: "Paint litres = wall area × number of coats ÷ coverage per litre. A practical purchase estimate then includes a small waste and touch-up allowance.",
+    example: "For 1,000 square feet of net wall area, two coats and coverage of 120 square feet per litre, the base estimate is 16.7 litres before allowance.",
+    faqs: [...commonFaq("paint quantity calculator"), {question:"Should primer be included as a paint coat?",answer:"Calculate primer separately because its coverage and number of coats can differ from the finish paint."}],
+  },
 ];
+
+const editorial: Record<string, Pick<Tool, "howTo" | "considerations" | "limitations">> = {
+  "electricity-bill-calculator-pakistan": {howTo:["Copy the units consumed from your meter or latest bill.","Enter an average energy rate and the additional-charge percentage shown on your bill.","Review energy charges separately from the estimated taxes and surcharges."],considerations:[{title:"Tariff category",text:"Residential, commercial and protected-consumer tariffs can be calculated differently."},{title:"Billing adjustments",text:"Fuel and quarterly adjustments may change from one billing period to another."},{title:"Meter period",text:"A longer or shorter meter-reading cycle changes total units even if daily use is stable."}],limitations:"This simplified planner does not reproduce every DISCO slab, protected-status rule, minimum charge or time-varying government adjustment."},
+  "solar-system-calculator-pakistan": {howTo:["Use the average of several recent electricity bills instead of one unusual month.","Enter realistic peak-sun-hours for your location and the panel wattage you plan to buy.","Use the capacity and panel count as a starting point for a professional site survey."],considerations:[{title:"Shade and orientation",text:"Trees, buildings, roof direction and tilt directly affect daily production."},{title:"Seasonal demand",text:"Summer cooling loads may require a larger system than the annual average suggests."},{title:"System losses",text:"Temperature, dust, wiring and inverter losses reduce output from nameplate capacity."}],limitations:"The estimate does not model an hourly load profile, roof geometry, export limits, battery storage or site-specific solar irradiance."},
+  "salary-tax-calculator-pakistan": {howTo:["Enter gross monthly salary and any regularly taxable allowances.","Add other monthly deductions only when you want them reflected in take-home pay.","Compare the estimate with the tax-year rules and payroll calculation used by your employer."],considerations:[{title:"Tax year",text:"Federal salary slabs can change with each Finance Act."},{title:"Other income",text:"Business, property or investment income may alter an individual's final liability."},{title:"Credits and exemptions",text:"Eligible credits, exemptions and special treatment are outside this quick estimate."}],limitations:"This is a salary-only planning estimate and not a tax return, legal interpretation or confirmation of current FBR withholding."},
+  "pta-tax-calculator-pakistan": {howTo:["Find the device's declared or assessed USD value rather than guessing from a local resale listing.","Enter the exchange rate and an estimated duty rate for planning.","Use DIRBS to obtain the official PSID amount for the exact IMEI before paying."],considerations:[{title:"Customs valuation",text:"The assessed value may differ from the amount shown on a shop receipt."},{title:"Registration route",text:"Passport and CNIC treatment or eligibility can differ under official rules."},{title:"Device identity",text:"Model, storage variant and IMEI status influence the official assessment."}],limitations:"The calculator cannot query DIRBS, validate an IMEI or determine an official tax band; only the government assessment confirms payment."},
+  "ev-vs-petrol-calculator-pakistan": {howTo:["Estimate your normal daily distance rather than using a single long trip.","Enter real-world petrol mileage and the fuel price you currently pay.","Compare monthly energy expense, then account separately for purchase price and battery replacement."],considerations:[{title:"Driving conditions",text:"Congestion, speed, load and terrain change petrol and electric efficiency."},{title:"Charging source",text:"Grid tariff, off-peak charging and solar power create different electricity costs."},{title:"Ownership costs",text:"Maintenance, financing, insurance and resale value may outweigh energy savings."}],limitations:"The quick comparison uses a fixed EV energy assumption and does not model a specific vehicle, charger losses, battery ageing or financing."},
+  "daraz-profit-calculator-pakistan": {howTo:["Enter the actual selling price after seller-funded discounts.","Use landed product cost, including packaging or inbound freight when relevant.","Enter the category commission and subtract campaign, shipping and advertising charges before deciding margin."],considerations:[{title:"Category commission",text:"Marketplace commission depends on the product category and seller terms."},{title:"Returns and damage",text:"A return allowance can materially reduce profit on products with high return rates."},{title:"Advertising",text:"Campaign spend should be attributed per order instead of ignored as a general expense."}],limitations:"The result does not retrieve a seller account, live fee table, withholding tax record, return cost or settlement statement."},
+  "percentage-calculator": {howTo:["Enter the percentage you want to apply.","Enter the base value that the percentage belongs to.","Read the calculated portion, decimal form and remaining value."],considerations:[{title:"Correct base",text:"A percentage is meaningful only when the base value is clearly identified."},{title:"Percentage points",text:"A change from 20% to 25% is five percentage points but a 25% relative increase."},{title:"Rounding",text:"Currency and measured quantities may need a defined rounding rule."}],limitations:"This mode calculates a percentage of a value; more complex compound changes should be handled one step at a time."},
+  "cgpa-percentage-calculator-pakistan": {howTo:["Enter the CGPA printed on your transcript.","Find the official multiplier or conversion rule issued by the receiving institution.","Treat the result as an estimate unless the institution explicitly accepts that method."],considerations:[{title:"Scale",text:"A 4.0, 5.0 or 10.0 CGPA scale cannot be compared without the correct rule."},{title:"Institution policy",text:"Some universities use tables or offsets instead of a simple multiplier."},{title:"Application purpose",text:"Admissions bodies may request the original CGPA rather than a self-converted percentage."}],limitations:"A multiplier cannot represent every institutional formula, transcript policy, course weighting method or credential evaluation."},
+  "loan-emi-calculator-pakistan": {howTo:["Enter the amount you will actually borrow after any down payment.","Use the annual reducing-balance rate and complete repayment term.","Compare the instalment and total financing cost with the lender's official schedule."],considerations:[{title:"Rate type",text:"A flat advertised rate is not equivalent to a reducing-balance annual rate."},{title:"Fees and insurance",text:"Processing charges, documentation, takaful and insurance can raise total cost."},{title:"Variable benchmark",text:"A floating rate can change future instalments or the repayment term."}],limitations:"The formula assumes equal monthly payments and a constant rate; it excludes fees, late charges, early settlement and lender-specific rounding."},
+  "fuel-cost-calculator-pakistan": {howTo:["Enter the full driving distance, including the return journey where applicable.","Use your vehicle's recent real-world kilometres per litre.","Enter the current pump price and allow extra budget for congestion or detours."],considerations:[{title:"Traffic",text:"Idling and stop-start driving usually reduce fuel economy."},{title:"Vehicle condition",text:"Tyre pressure, servicing, load and air conditioning influence consumption."},{title:"Route profile",text:"Motorway, city and mountain routes can produce very different mileage."}],limitations:"The estimate assumes one average mileage and price; it cannot predict traffic, route changes, fuel-quality effects or refuelling-price changes."},
+  "battery-backup-calculator-pakistan": {howTo:["Add the running watts of every appliance that will operate during backup.","Enter the battery bank's rated amp-hours and total voltage.","Use the estimated time conservatively and avoid discharging batteries beyond manufacturer guidance."],considerations:[{title:"Battery chemistry",text:"Lead-acid and lithium batteries have different safe depth-of-discharge limits."},{title:"Battery health",text:"Age, heat and repeated deep discharge reduce available capacity."},{title:"Conversion losses",text:"Inverters and wiring consume energy before it reaches appliances."}],limitations:"Runtime is an energy estimate, not a battery guarantee; it omits chemistry-specific discharge curves, surge loads and inverter cut-off behaviour."},
+  "inverter-load-calculator-pakistan": {howTo:["Add the running watts from appliance labels or reliable measurements.","Choose safety headroom and use the inverter manufacturer's power-factor guidance.","Check that both continuous and surge ratings support the intended appliances."],considerations:[{title:"Startup surge",text:"Motors, pumps and compressors can briefly draw much more than running watts."},{title:"Power factor",text:"Some loads require more volt-amperes than their watt figure suggests."},{title:"Future expansion",text:"Planned appliances should be included before choosing the inverter size."}],limitations:"This sizing aid does not replace appliance-by-appliance surge measurement, cable sizing, protection design or an electrician's assessment."},
+  "profit-margin-calculator": {howTo:["Enter net sales revenue after customer discounts and refunds.","Enter all direct costs attributable to those sales.","Compare margin with markup and add operating expenses before judging overall profitability."],considerations:[{title:"Direct costs",text:"Product, packaging, transaction and fulfilment costs may all belong in cost of sales."},{title:"Returns",text:"Refunds and damaged inventory reduce realised margin."},{title:"Overheads",text:"Gross margin does not include salaries, rent, software, tax or financing."}],limitations:"The result is a gross unit or period comparison and is not a complete profit-and-loss statement or tax calculation."},
+  "discount-calculator-pakistan": {howTo:["Enter the original listed price before the promotion.","Enter the advertised discount percentage.","Add any tax or service percentage that is charged after the discount."],considerations:[{title:"Stacked offers",text:"Two sequential discounts do not equal their percentages simply added together."},{title:"Price basis",text:"Confirm whether the offer applies to the full item price or only selected components."},{title:"Extra charges",text:"Delivery, service fees and taxes can reduce the effective saving."}],limitations:"The calculator assumes one discount followed by one optional percentage charge and does not interpret store-specific offer conditions."},
+  "attendance-percentage-calculator": {howTo:["Enter classes attended and the total classes held so far.","Set the attendance target required by your institution.","Use the required-classes result only if you plan to attend every upcoming class."],considerations:[{title:"Institution records",text:"The official portal may include corrections, excused absences or late updates."},{title:"Future absences",text:"Missing another class changes the number needed to reach the target."},{title:"Subject-level rules",text:"Attendance may be assessed separately for each course, lab or semester."}],limitations:"The projection assumes every future class is attended and does not account for cancelled classes, exemptions or institutional rounding policies."},
+  "marks-percentage-calculator-pakistan": {howTo:["Enter the obtained score exactly as shown on the result.","Enter the maximum possible score for the same subjects or assessment.","Set the relevant passing threshold and compare it with the calculated percentage."],considerations:[{title:"Subject weighting",text:"Some final results weight subjects or components instead of simply adding marks."},{title:"Practical marks",text:"Labs, internal assessment and practical examinations may be counted separately."},{title:"Grade boundaries",text:"The same percentage can receive different grades across boards and institutions."}],limitations:"This tool performs a direct marks-to-percentage conversion and does not reproduce a board's grading, moderation or subject-weighting rules."},
+  "freelance-hourly-rate-calculator-pakistan": {howTo:["Set a realistic monthly personal income target.","Add recurring business costs such as software, internet and equipment allowance.","Estimate hours you can actually invoice, then review the required rate before quoting."],considerations:[{title:"Non-billable work",text:"Proposals, administration and learning reduce the hours available for client billing."},{title:"Taxes and currency",text:"Tax, payment fees and exchange-rate movement can reduce take-home income."},{title:"Utilisation",text:"Quiet months require a buffer when setting a sustainable average rate."}],limitations:"The calculation does not set a market price or include taxes, platform commissions, unpaid revisions, bad debt or currency conversion."},
+  "paint-quantity-calculator-pakistan": {howTo:["Measure net paintable wall or ceiling area in square feet.","Choose the required number of coats and use the coverage printed on the product tin.","Round up for the available container sizes and keep a small touch-up allowance."],considerations:[{title:"Surface condition",text:"Porous, rough or newly plastered surfaces can absorb more paint."},{title:"Colour change",text:"Covering a dark colour with a light one may require extra coats or primer."},{title:"Application method",text:"Spraying, rolling and brushing can have different waste rates."}],limitations:"The estimate cannot inspect surface porosity, application technique, paint thickness, openings or manufacturer-specific coverage conditions."},
+};
+
+export const tools: Tool[] = baseTools.map((tool) => ({ ...tool, ...editorial[tool.slug] }));
 
 export const categories = [...new Set(tools.map((tool) => tool.category))];
 export const getTool = (slug: string) => tools.find((tool) => tool.slug === slug);

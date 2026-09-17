@@ -1,0 +1,38 @@
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
+
+const root = join(process.cwd(), "out", "pk", "tools");
+const pages = readdirSync(root, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => ({ slug: entry.name, html: readFileSync(join(root, entry.name, "index.html"), "utf8") }));
+
+const failures = [];
+for (const { slug, html } of pages) {
+  const text = html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z#0-9]+;/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const words = text.split(" ").filter(Boolean).length;
+  const h2s = (html.match(/<h2/g) || []).length;
+  const faqs = (html.match(/<details/g) || []).length;
+  const checks = [
+    [words >= 380, `only ${words} rendered words (minimum 380)`],
+    [h2s >= 7, `only ${h2s} H2 sections (minimum 7)`],
+    [faqs >= 4, `only ${faqs} FAQs (minimum 4)`],
+    [html.includes("Formula and methodology"), "missing methodology"],
+    [html.includes("Limits of this estimate"), "missing limitations"],
+    [html.includes('rel="canonical"'), "missing canonical URL"],
+    [html.includes("application/ld+json"), "missing structured data"],
+  ];
+  for (const [passed, message] of checks) if (!passed) failures.push(`${slug}: ${message}`);
+}
+
+if (pages.length < 18) failures.push(`only ${pages.length} tool pages generated (minimum 18)`);
+if (failures.length) {
+  console.error("Content quality gate failed:\n- " + failures.join("\n- "));
+  process.exit(1);
+}
+console.log(`Content quality gate passed for ${pages.length} calculator pages.`);
