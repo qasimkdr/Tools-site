@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-export const metadata:Metadata={title:"Practical Pakistan Calculator Guides",description:"Learn how to verify electricity, solar, salary and household calculations before making important decisions."};
+export const metadata:Metadata={title:"Practical Pakistan Calculator Guides",description:"Learn how to verify electricity, solar, salary and household calculations before making important decisions.",alternates:{canonical:"/guides/"}};
 const guides=[
  {icon:"⚡",tag:"Electricity",title:"How to estimate appliance electricity cost",copy:"Find electrical input watts—not cooling capacity or marketing output—then multiply kilowatts by realistic daily hours and days used. Compare calculated units with the effective unit cost on your own bill because slabs, taxes and adjustments vary.",href:"/pk/tools/appliance-electricity-cost-calculator-pakistan/"},
  {icon:"☀️",tag:"Solar",title:"How to create a useful solar estimate",copy:"Start with several months of electricity units, identify daytime and night loads, then account for peak-sun-hours, temperature, dust, wiring and inverter losses. Panel energy, inverter surge and battery capacity are separate sizing questions.",href:"/pk/tools/solar-system-calculator-pakistan/"},
