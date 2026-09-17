@@ -4,7 +4,7 @@ import { join } from "node:path";
 const root = join(process.cwd(), "out", "pk", "tools");
 const toolSource = readFileSync(join(process.cwd(), "lib", "tools.ts"), "utf8");
 const baseSection = toolSource.split("const baseTools:")[1]?.split("const editorial:")[0] || "";
-const declaredTools = (baseSection.match(/slug:\s*"[^"]+"/g) || []).length + (baseSection.match(/financeTool\("[^"]+"/g) || []).length + (baseSection.match(/energyTool\("[^"]+"/g) || []).length + (baseSection.match(/businessTool\("[^"]+"/g) || []).length + 8;
+const declaredTools = (baseSection.match(/slug:\s*"[^"]+"/g) || []).length + (baseSection.match(/financeTool\("[^"]+"/g) || []).length + (baseSection.match(/energyTool\("[^"]+"/g) || []).length + (baseSection.match(/businessTool\("[^"]+"/g) || []).length + (baseSection.match(/vehicleTool\("[^"]+"/g) || []).length + 8;
 const pages = readdirSync(root, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(root, entry.name, "index.html"), "utf8") }));
