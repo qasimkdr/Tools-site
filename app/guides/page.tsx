@@ -1,10 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-export const metadata:Metadata={title:"Practical Pakistan Calculator Guides",description:"Learn how to verify electricity, solar, salary and household calculations before making important decisions.",alternates:{canonical:"/guides/"}};
-const guides=[
- {icon:"⚡",tag:"Electricity",title:"How to estimate appliance electricity cost",copy:"Find electrical input watts—not cooling capacity or marketing output—then multiply kilowatts by realistic daily hours and days used. Compare calculated units with the effective unit cost on your own bill because slabs, taxes and adjustments vary.",href:"/pk/tools/appliance-electricity-cost-calculator-pakistan/"},
- {icon:"☀️",tag:"Solar",title:"How to create a useful solar estimate",copy:"Start with several months of electricity units, identify daytime and night loads, then account for peak-sun-hours, temperature, dust, wiring and inverter losses. Panel energy, inverter surge and battery capacity are separate sizing questions.",href:"/pk/tools/solar-system-calculator-pakistan/"},
- {icon:"💼",tag:"Salary",title:"How progressive salary tax works",copy:"Progressive tax does not apply the highest rate to the entire salary. Each rate applies only to income inside its band. Always verify the tax year, taxable allowances, credits and current official rules before relying on payroll estimates.",href:"/pk/tools/salary-tax-calculator-pakistan/"},
- {icon:"🧮",tag:"Accuracy",title:"How to verify any calculator result",copy:"Check units, confirm whether inputs are monthly or annual, reproduce the worked example, test a simple round number and read the limitations. For financial or safety-critical decisions, compare the output with an official source or qualified professional.",href:"/editorial-policy/"}
-];
-export default function Guides(){return <div className="shell listing-page"><span className="eyebrow">SolvePilot learning centre</span><h1>Use calculators with better judgment.</h1><p>Short practical guides explaining the assumptions behind common Pakistan-focused calculations and the checks to make before acting.</p><div className="guide-grid">{guides.map(g=><article className="guide-card" key={g.title}><span>{g.icon}</span><small>{g.tag} guide</small><h2>{g.title}</h2><p>{g.copy}</p><Link className="text-link" href={g.href}>Open related resource →</Link></article>)}</div><div className="editorial-banner"><div><span className="eyebrow">Verification first</span><h2>Important decisions deserve a second source.</h2><p>Our formulas and examples help you plan and understand. Official authorities, provider quotations and qualified professionals remain the final source for consequential decisions.</p></div><Link className="secondary-button" href="/editorial-policy/">How we review content</Link></div></div>}
+import { guides } from "@/lib/guides";
+
+export const metadata: Metadata = {
+  title: "Practical Pakistan Calculator Guides",
+  description: "Detailed, reviewed guides to electricity bills, tax, solar, mobiles, finance, business, vehicles, construction and education in Pakistan.",
+  alternates: { canonical: "/guides/" },
+};
+
+export default function Guides() {
+  return <div className="shell listing-page guide-index">
+    <span className="eyebrow">SolvePilot learning centre</span>
+    <h1>Understand the calculation before using the answer.</h1>
+    <p>Detailed Pakistan-focused guides explaining formulas, assumptions, official sources, practical checks and the limits of every estimate.</p>
+    <div className="guide-index-meta"><span><b>{guides.length}</b> reviewed guides</span><span><b>Official sources</b> where available</span><span><b>Clear limitations</b> on every page</span></div>
+    <div className="guide-grid">
+      {guides.map((guide) => <article className="guide-card" key={guide.slug}>
+        <span>{guide.icon}</span><small>{guide.category} · {guide.readingMinutes} min read</small>
+        <h2><Link href={`/guides/${guide.slug}/`}>{guide.title}</Link></h2>
+        <p>{guide.description}</p>
+        <div className="guide-reviewed">Reviewed {guide.reviewedAt}</div>
+        <Link className="text-link" href={`/guides/${guide.slug}/`}>Read detailed guide →</Link>
+      </article>)}
+    </div>
+    <div className="editorial-banner"><div><span className="eyebrow">Verification first</span><h2>Important decisions deserve a second source.</h2><p>Our formulas and examples help you plan and understand. Official authorities, provider quotations and qualified professionals remain the final source for consequential decisions.</p></div><Link className="secondary-button" href="/editorial-policy/">How we review content</Link></div>
+  </div>;
+}

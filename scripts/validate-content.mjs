@@ -34,7 +34,7 @@ for (const { slug, html } of pages) {
   for (const [passed, message] of checks) if (!passed) failures.push(`${slug}: ${message}`);
 }
 
-const trustPages = ["about", "contact", "privacy", "cookies", "terms", "disclaimer", "editorial-policy", "guides", "pk/mobiles"];
+const trustPages = ["about", "author/mohammad-qasim", "contact", "privacy", "cookies", "terms", "disclaimer", "editorial-policy", "guides", "pk/mobiles"];
 const unfinished = /coming soon|publishing soon|in review|under construction|before launch|will be added|placeholder|lorem ipsum/i;
 for (const route of trustPages) {
   const html = readFileSync(join(process.cwd(), "out", route, "index.html"), "utf8");
@@ -45,9 +45,28 @@ for (const route of trustPages) {
   if (!html.includes('rel="canonical"')) failures.push(`${route}: missing canonical URL`);
 }
 
+const guideRoot = join(process.cwd(), "out", "guides");
+const guidePages = readdirSync(guideRoot, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => ({ slug: entry.name, html: readFileSync(join(guideRoot, entry.name, "index.html"), "utf8") }));
+for (const { slug, html } of guidePages) {
+  const text = visibleText(html);
+  const words = text.split(" ").filter(Boolean).length;
+  const h2s = (html.match(/<h2/g) || []).length;
+  const internalLinks = (html.match(/href="\/(?:guides|pk\/tools)\//g) || []).length;
+  if (words < 550) failures.push(`guide ${slug}: only ${words} rendered words (minimum 550)`);
+  if (h2s < 7) failures.push(`guide ${slug}: only ${h2s} H2 sections (minimum 7)`);
+  if (internalLinks < 4) failures.push(`guide ${slug}: only ${internalLinks} guide/tool internal links`);
+  if (!html.includes("Sources and further verification")) failures.push(`guide ${slug}: missing sources section`);
+  if (!html.includes("Limitations and responsible use")) failures.push(`guide ${slug}: missing limitations section`);
+  if (!html.includes("Reviewed by Mohammad Qasim")) failures.push(`guide ${slug}: missing reviewer attribution`);
+  if (!html.includes('rel="canonical"')) failures.push(`guide ${slug}: missing canonical URL`);
+  if (!html.includes("application/ld+json")) failures.push(`guide ${slug}: missing structured data`);
+}
+
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
 }
-console.log(`Content quality gate passed for ${pages.length} calculator pages.`);
+console.log(`Content quality gate passed for ${pages.length} calculator pages and ${guidePages.length} guides.`);
