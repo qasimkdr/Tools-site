@@ -20,7 +20,34 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const adsense = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+  const adsense =
+    process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-9114585521723425";
   const ga = process.env.NEXT_PUBLIC_GA_ID;
-  return <html lang="en-PK"><body><a className="skip-link" href="#main">Skip to content</a><Header/><main id="main">{children}</main><Footer/>{adsense&&<Script async strategy="afterInteractive" crossOrigin="anonymous" src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsense}`}/>} {ga&&<><Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}/><Script id="ga" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${ga}');`}</Script></>}</body></html>;
+  return (
+    <html lang="en-PK">
+      <body>
+        <Script
+          async
+          strategy="beforeInteractive"
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsense}`}
+        />
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
+        <Header />
+        <main id="main">{children}</main>
+        <Footer />
+        {ga && (
+          <>
+            <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}
+            />
+            <Script id="ga" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${ga}');`}</Script>
+          </>
+        )}
+      </body>
+    </html>
+  );
 }
