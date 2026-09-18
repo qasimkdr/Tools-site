@@ -1,16 +1,24 @@
+import { trafficGuides } from "@/lib/traffic-guides";
+
 export type GuideSource = { name: string; url: string; note: string };
 export type GuideSection = { heading: string; paragraphs: string[]; bullets?: string[] };
+export type GuideTable = { caption: string; headers: string[]; rows: string[][]; note?: string };
+export type GuideFaq = { question: string; answer: string };
 export type Guide = {
   slug: string;
   title: string;
   description: string;
   category: string;
   icon: string;
+  publishedAt?: string;
   reviewedAt: string;
   readingMinutes: number;
   quickAnswer: string;
   takeaways: string[];
   sections: GuideSection[];
+  tables?: GuideTable[];
+  example?: { heading: string; paragraphs: string[]; steps?: string[] };
+  faqs?: GuideFaq[];
   relatedTools: string[];
   relatedGuides: string[];
   sources: GuideSource[];
@@ -264,6 +272,7 @@ export const guides: Guide[] = [
     sources:[editorialSource],
     limitation:"Rates depend on skill, proof, market, scope and negotiation. This planning framework cannot guarantee clients, income or tax treatment.",
   },
+  ...trafficGuides,
 ];
 
 export const getGuide = (slug: string) => guides.find((guide) => guide.slug === slug);

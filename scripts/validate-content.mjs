@@ -54,12 +54,16 @@ for (const { slug, html } of guidePages) {
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
   const internalLinks = (html.match(/href="\/(?:guides|pk\/tools)\//g) || []).length;
-  if (words < 550) failures.push(`guide ${slug}: only ${words} rendered words (minimum 550)`);
+  const isLongForm = html.includes("guide-table-wrap");
+  const minimumWords = isLongForm ? 1200 : 550;
+  if (words < minimumWords) failures.push(`guide ${slug}: only ${words} rendered words (minimum ${minimumWords})`);
   if (h2s < 7) failures.push(`guide ${slug}: only ${h2s} H2 sections (minimum 7)`);
   if (internalLinks < 4) failures.push(`guide ${slug}: only ${internalLinks} guide/tool internal links`);
   if (!html.includes("Sources and further verification")) failures.push(`guide ${slug}: missing sources section`);
   if (!html.includes("Limitations and responsible use")) failures.push(`guide ${slug}: missing limitations section`);
-  if (!html.includes("Reviewed by Mohammad Qasim")) failures.push(`guide ${slug}: missing reviewer attribution`);
+  if (!html.includes("reviewed by Mohammad Qasim")) failures.push(`guide ${slug}: missing reviewer attribution`);
+  if (isLongForm && (html.match(/<details/g) || []).length < 5) failures.push(`guide ${slug}: fewer than 5 FAQs`);
+  if (isLongForm && !html.includes("worked-example")) failures.push(`guide ${slug}: missing worked example`);
   if (!html.includes('rel="canonical"')) failures.push(`guide ${slug}: missing canonical URL`);
   if (!html.includes("application/ld+json")) failures.push(`guide ${slug}: missing structured data`);
 }
