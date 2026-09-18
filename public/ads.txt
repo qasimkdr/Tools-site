@@ -1,1 +1,1 @@
-# Add the authorised Google AdSense record here after approval.
+google.com, pub-9114585521723425, DIRECT, f08c47fec0942fa0
