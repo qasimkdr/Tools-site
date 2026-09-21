@@ -34,6 +34,24 @@ for (const { slug, html } of pages) {
   for (const [passed, message] of checks) if (!passed) failures.push(`${slug}: ${message}`);
 }
 
+const globalRoot = join(process.cwd(), "out", "tools");
+const globalPages = readdirSync(globalRoot, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => ({ slug: entry.name, html: readFileSync(join(globalRoot, entry.name, "index.html"), "utf8") }));
+for (const { slug, html } of globalPages) {
+  const text = visibleText(html);
+  const words = text.split(" ").filter(Boolean).length;
+  const h2s = (html.match(/<h2/g) || []).length;
+  const faqs = (html.match(/<details/g) || []).length;
+  if (words < 380) failures.push(`global ${slug}: only ${words} rendered words (minimum 380)`);
+  if (h2s < 7) failures.push(`global ${slug}: only ${h2s} H2 sections (minimum 7)`);
+  if (faqs < 5) failures.push(`global ${slug}: only ${faqs} FAQs (minimum 5)`);
+  if (!html.includes("Formula and methodology")) failures.push(`global ${slug}: missing methodology`);
+  if (!html.includes("Limits of this estimate")) failures.push(`global ${slug}: missing limitations`);
+  if (!html.includes('rel="canonical"')) failures.push(`global ${slug}: missing canonical URL`);
+  if (!html.includes("application/ld+json")) failures.push(`global ${slug}: missing structured data`);
+}
+
 const trustPages = ["about", "author/mohammad-qasim", "contact", "privacy", "cookies", "terms", "disclaimer", "editorial-policy", "guides", "pk/mobiles"];
 const unfinished = /coming soon|publishing soon|in review|under construction|before launch|will be added|placeholder|lorem ipsum/i;
 for (const route of trustPages) {
@@ -69,8 +87,9 @@ for (const { slug, html } of guidePages) {
 }
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
+if (globalPages.length !== 15) failures.push(`15 global tools expected but ${globalPages.length} pages generated`);
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
 }
-console.log(`Content quality gate passed for ${pages.length} calculator pages and ${guidePages.length} guides.`);
+console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators and ${guidePages.length} guides.`);
