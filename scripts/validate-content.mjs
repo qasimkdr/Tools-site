@@ -52,6 +52,18 @@ for (const { slug, html } of globalPages) {
   if (!html.includes("application/ld+json")) failures.push(`global ${slug}: missing structured data`);
 }
 
+const flagshipPages = [...pages, ...globalPages].filter(({ html }) => html.includes("How to interpret your result"));
+if (flagshipPages.length !== 40) failures.push(`40 flagship calculator pages expected but ${flagshipPages.length} generated`);
+for (const { slug, html } of flagshipPages) {
+  const text = visibleText(html);
+  const words = text.split(" ").filter(Boolean).length;
+  if (words < 750) failures.push(`flagship ${slug}: only ${words} rendered words (minimum 750)`);
+  if (!html.includes("Scenario comparison")) failures.push(`flagship ${slug}: missing scenario comparison`);
+  if (!html.includes("Common mistakes to avoid")) failures.push(`flagship ${slug}: missing mistakes section`);
+  if (!html.includes("How to verify this result")) failures.push(`flagship ${slug}: missing verification guidance`);
+  if ((html.match(/<tr/g) || []).length < 4) failures.push(`flagship ${slug}: incomplete scenario table`);
+}
+
 const trustPages = ["about", "author/mohammad-qasim", "contact", "privacy", "cookies", "terms", "disclaimer", "editorial-policy", "guides", "pk/mobiles"];
 const unfinished = /coming soon|publishing soon|in review|under construction|before launch|will be added|placeholder|lorem ipsum/i;
 for (const route of trustPages) {
@@ -92,4 +104,4 @@ if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
 }
-console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators and ${guidePages.length} guides.`);
+console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators, ${flagshipPages.length} flagship upgrades and ${guidePages.length} guides.`);
