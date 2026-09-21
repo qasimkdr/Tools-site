@@ -52,16 +52,20 @@ for (const { slug, html } of globalPages) {
   if (!html.includes("application/ld+json")) failures.push(`global ${slug}: missing structured data`);
 }
 
-const flagshipPages = [...pages, ...globalPages].filter(({ html }) => html.includes("How to interpret your result"));
-if (flagshipPages.length !== 40) failures.push(`40 flagship calculator pages expected but ${flagshipPages.length} generated`);
-for (const { slug, html } of flagshipPages) {
+const insightPages = [...pages, ...globalPages].filter(({ html }) => html.includes("How to interpret your result"));
+const curatedInsightPages = insightPages.filter(({ html }) => html.includes('data-insight-tier="curated"'));
+const toolSpecificInsightPages = insightPages.filter(({ html }) => html.includes('data-insight-tier="tool-specific"'));
+if (insightPages.length !== pages.length + globalPages.length) failures.push(`all ${pages.length + globalPages.length} calculator pages require insight modules; ${insightPages.length} generated`);
+if (curatedInsightPages.length !== 40) failures.push(`40 curated flagship pages expected but ${curatedInsightPages.length} generated`);
+if (toolSpecificInsightPages.length !== 156) failures.push(`156 tool-specific remaining pages expected but ${toolSpecificInsightPages.length} generated`);
+for (const { slug, html } of insightPages) {
   const text = visibleText(html);
   const words = text.split(" ").filter(Boolean).length;
-  if (words < 750) failures.push(`flagship ${slug}: only ${words} rendered words (minimum 750)`);
-  if (!html.includes("Scenario comparison")) failures.push(`flagship ${slug}: missing scenario comparison`);
-  if (!html.includes("Common mistakes to avoid")) failures.push(`flagship ${slug}: missing mistakes section`);
-  if (!html.includes("How to verify this result")) failures.push(`flagship ${slug}: missing verification guidance`);
-  if ((html.match(/<tr/g) || []).length < 4) failures.push(`flagship ${slug}: incomplete scenario table`);
+  if (words < 700) failures.push(`enhanced ${slug}: only ${words} rendered words (minimum 700)`);
+  if (!html.includes("Scenario comparison")) failures.push(`enhanced ${slug}: missing scenario comparison`);
+  if (!html.includes("Common mistakes to avoid")) failures.push(`enhanced ${slug}: missing mistakes section`);
+  if (!html.includes("How to verify this result")) failures.push(`enhanced ${slug}: missing verification guidance`);
+  if ((html.match(/<tr/g) || []).length < 4) failures.push(`enhanced ${slug}: incomplete scenario table`);
 }
 
 const trustPages = ["about", "author/mohammad-qasim", "contact", "privacy", "cookies", "terms", "disclaimer", "editorial-policy", "guides", "pk/mobiles"];
@@ -104,4 +108,4 @@ if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
 }
-console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators, ${flagshipPages.length} flagship upgrades and ${guidePages.length} guides.`);
+console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators, ${curatedInsightPages.length} curated flagships, ${toolSpecificInsightPages.length} remaining tool upgrades and ${guidePages.length} guides.`);
