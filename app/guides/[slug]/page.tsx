@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getGuide, guides } from "@/lib/guides";
 import { getTool } from "@/lib/tools";
 import { ToolCard } from "@/components/ToolCard";
+import { seoDescription } from "@/lib/seo-metadata";
 
 export function generateStaticParams() { return guides.map(({ slug }) => ({ slug })); }
 
@@ -11,7 +12,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return {};
-  return { title: guide.title, description: guide.description, alternates: { canonical: `/guides/${guide.slug}/` }, openGraph: { title: guide.title, description: guide.description, url: `/guides/${guide.slug}/`, type: "article" } };
+  const description = seoDescription(guide.description, "Guide");
+  return { title: guide.title, description, alternates: { canonical: `/guides/${guide.slug}/` }, openGraph: { title: guide.title, description, url: `/guides/${guide.slug}/`, type: "article" } };
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
