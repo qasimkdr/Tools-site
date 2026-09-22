@@ -57,7 +57,8 @@ const curatedInsightPages = insightPages.filter(({ html }) => html.includes('dat
 const toolSpecificInsightPages = insightPages.filter(({ html }) => html.includes('data-insight-tier="tool-specific"'));
 if (insightPages.length !== pages.length + globalPages.length) failures.push(`all ${pages.length + globalPages.length} calculator pages require insight modules; ${insightPages.length} generated`);
 if (curatedInsightPages.length !== 40) failures.push(`40 curated flagship pages expected but ${curatedInsightPages.length} generated`);
-if (toolSpecificInsightPages.length !== 156) failures.push(`156 tool-specific remaining pages expected but ${toolSpecificInsightPages.length} generated`);
+const expectedToolSpecificPages = pages.length + globalPages.length - 40;
+if (toolSpecificInsightPages.length !== expectedToolSpecificPages) failures.push(`${expectedToolSpecificPages} tool-specific remaining pages expected but ${toolSpecificInsightPages.length} generated`);
 for (const { slug, html } of insightPages) {
   const text = visibleText(html);
   const words = text.split(" ").filter(Boolean).length;
@@ -103,7 +104,7 @@ for (const { slug, html } of guidePages) {
 }
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
-if (globalPages.length !== 15) failures.push(`15 global tools expected but ${globalPages.length} pages generated`);
+if (globalPages.length !== 35) failures.push(`35 global tools expected but ${globalPages.length} pages generated`);
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
