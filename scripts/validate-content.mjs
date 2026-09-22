@@ -10,6 +10,15 @@ const pages = readdirSync(root, { withFileTypes: true })
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(root, entry.name, "index.html"), "utf8") }));
 
 const failures = [];
+const metaDescriptionLength = (html) => {
+  const match = html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)["']/i)
+    || html.match(/<meta[^>]+content=["']([^"']*)["'][^>]+name=["']description["']/i);
+  return match ? match[1].replace(/&amp;/g, "&").replace(/&quot;/g, '"').length : 0;
+};
+const validateMetaDescription = (label, html) => {
+  const length = metaDescriptionLength(html);
+  if (length < 110 || length > 160) failures.push(`${label}: meta description is ${length} characters (required 110-160)`);
+};
 const visibleText = (html) => html
   .replace(/<script[\s\S]*?<\/script>/gi, " ")
   .replace(/<style[\s\S]*?<\/style>/gi, " ")
@@ -18,6 +27,7 @@ const visibleText = (html) => html
   .replace(/\s+/g, " ")
   .trim();
 for (const { slug, html } of pages) {
+  validateMetaDescription(slug, html);
   const text = visibleText(html);
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
@@ -39,6 +49,7 @@ const globalPages = readdirSync(globalRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(globalRoot, entry.name, "index.html"), "utf8") }));
 for (const { slug, html } of globalPages) {
+  validateMetaDescription(`global ${slug}`, html);
   const text = visibleText(html);
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
@@ -85,6 +96,7 @@ const guidePages = readdirSync(guideRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(guideRoot, entry.name, "index.html"), "utf8") }));
 for (const { slug, html } of guidePages) {
+  validateMetaDescription(`guide ${slug}`, html);
   const text = visibleText(html);
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
