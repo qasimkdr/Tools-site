@@ -36,7 +36,7 @@ const validateOpenGraph = (label, html) => {
   for (const property of ["og:title", "og:type", "og:image", "og:url"]) {
     const value = openGraphValue(html, property);
     if (!value) failures.push(`${label}: missing ${property}`);
-    if ((property === "og:image" || property === "og:url") && value && !/^https?:\\/\\//i.test(value)) {
+    if ((property === "og:image" || property === "og:url") && value && !/^https?:\/\//i.test(value)) {
       failures.push(`${label}: ${property} must be an absolute HTTP(S) URL`);
     }
   }
