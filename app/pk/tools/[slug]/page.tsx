@@ -9,9 +9,10 @@ import { insightForTool } from "@/lib/flagship-content";
 import { getTool, tools } from "@/lib/tools";
 import { guideForTool } from "@/lib/guides";
 import { trustForTool } from "@/lib/tool-trust";
+import { seoDescription } from "@/lib/seo-metadata";
 
 export function generateStaticParams(){ return tools.map(({slug})=>({slug})); }
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const tool=getTool(slug);if(!tool)return{};return{title:tool.title,description:tool.description,keywords:tool.keywords,alternates:{canonical:`/pk/tools/${tool.slug}/`},openGraph:{title:tool.title,description:tool.description,url:`/pk/tools/${tool.slug}/`,type:"website"}}}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const tool=getTool(slug);if(!tool)return{};const description=seoDescription(tool.description,tool.category);return{title:tool.title,description,keywords:tool.keywords,alternates:{canonical:`/pk/tools/${tool.slug}/`},openGraph:{title:tool.title,description,url:`/pk/tools/${tool.slug}/`,type:"website"}}}
 
 export default async function ToolPage({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;const tool=getTool(slug);if(!tool)notFound();
