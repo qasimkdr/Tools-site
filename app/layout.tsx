@@ -4,6 +4,7 @@ import "./globals.css";
 import "./pages.css";
 import "./card-fix.css";
 import "./category-grid-fix.css";
+import "./search.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
