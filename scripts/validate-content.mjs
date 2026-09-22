@@ -13,7 +13,14 @@ const failures = [];
 const metaDescriptionLength = (html) => {
   const match = html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)["']/i)
     || html.match(/<meta[^>]+content=["']([^"']*)["'][^>]+name=["']description["']/i);
-  return match ? match[1].replace(/&amp;/g, "&").replace(/&quot;/g, '"').length : 0;
+  return match ? match[1]
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#(?:x27|39);/gi, "'")
+    .replace(/&apos;/gi, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .length : 0;
 };
 const validateMetaDescription = (label, html) => {
   const length = metaDescriptionLength(html);
