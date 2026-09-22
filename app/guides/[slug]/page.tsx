@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const guide = getGuide(slug);
   if (!guide) return {};
   const description = seoDescription(guide.description, "Guide");
-  return { title: guide.title, description, alternates: { canonical: `/guides/${guide.slug}/` }, openGraph: { title: guide.title, description, url: `/guides/${guide.slug}/`, type: "article" } };
+  return { title: guide.title, description, alternates: { canonical: `/guides/${guide.slug}/` }, openGraph: { title: guide.title, description, url: `/guides/${guide.slug}/`, type: "article", images: [{ url: "/og-image.png", width: 1732, height: 909, alt: "SolvePilot — Free Calculators & Smart Tools" }] } };
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {

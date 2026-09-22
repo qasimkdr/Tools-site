@@ -26,6 +26,21 @@ const validateMetaDescription = (label, html) => {
   const length = metaDescriptionLength(html);
   if (length < 110 || length > 160) failures.push(`${label}: meta description is ${length} characters (required 110-160)`);
 };
+const openGraphValue = (html, property) => {
+  const escaped = property.replace(":", "\\:");
+  const direct = html.match(new RegExp(`<meta[^>]+property=["']${escaped}["'][^>]+content=["']([^"']+)["']`, "i"));
+  const reversed = html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+property=["']${escaped}["']`, "i"));
+  return direct?.[1] || reversed?.[1] || "";
+};
+const validateOpenGraph = (label, html) => {
+  for (const property of ["og:title", "og:type", "og:image", "og:url"]) {
+    const value = openGraphValue(html, property);
+    if (!value) failures.push(`${label}: missing ${property}`);
+    if ((property === "og:image" || property === "og:url") && value && !/^https?:\\/\\//i.test(value)) {
+      failures.push(`${label}: ${property} must be an absolute HTTP(S) URL`);
+    }
+  }
+};
 const visibleText = (html) => html
   .replace(/<script[\s\S]*?<\/script>/gi, " ")
   .replace(/<style[\s\S]*?<\/style>/gi, " ")
@@ -35,6 +50,7 @@ const visibleText = (html) => html
   .trim();
 for (const { slug, html } of pages) {
   validateMetaDescription(slug, html);
+  validateOpenGraph(slug, html);
   const text = visibleText(html);
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
@@ -57,6 +73,7 @@ const globalPages = readdirSync(globalRoot, { withFileTypes: true })
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(globalRoot, entry.name, "index.html"), "utf8") }));
 for (const { slug, html } of globalPages) {
   validateMetaDescription(`global ${slug}`, html);
+  validateOpenGraph(`global ${slug}`, html);
   const text = visibleText(html);
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
@@ -98,12 +115,19 @@ for (const route of trustPages) {
   if (!html.includes('rel="canonical"')) failures.push(`${route}: missing canonical URL`);
 }
 
+const staticOpenGraphPages = ["", "pk/tools", "tools", ...trustPages];
+for (const route of staticOpenGraphPages) {
+  const html = readFileSync(join(process.cwd(), "out", route, "index.html"), "utf8");
+  validateOpenGraph(route || "home", html);
+}
+
 const guideRoot = join(process.cwd(), "out", "guides");
 const guidePages = readdirSync(guideRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(guideRoot, entry.name, "index.html"), "utf8") }));
 for (const { slug, html } of guidePages) {
   validateMetaDescription(`guide ${slug}`, html);
+  validateOpenGraph(`guide ${slug}`, html);
   const text = visibleText(html);
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;

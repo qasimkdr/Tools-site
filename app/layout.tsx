@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   description: "Free Pakistan calculators for electricity, solar, salary tax, PTA tax, vehicles, ecommerce, education and mobile buying decisions.",
   applicationName: "SolvePilot",
   alternates: { canonical: "/" },
-  openGraph: { type:"website", locale:"en_PK", siteName:"SolvePilot", title:"SolvePilot Pakistan – Free Calculators & Smart Tools", description:"Calculate, compare and make smarter decisions with free Pakistan-focused tools." },
-  twitter: { card:"summary_large_image", title:"SolvePilot Pakistan", description:"Free calculators, comparisons and smart decision tools." },
+  openGraph: { type:"website", locale:"en_PK", siteName:"SolvePilot", url:"/", title:"SolvePilot Pakistan – Free Calculators & Smart Tools", description:"Calculate, compare and make smarter decisions with free Pakistan-focused tools.", images:[{url:"/og-image.png",width:1732,height:909,alt:"SolvePilot — Free Calculators & Smart Tools"}] },
+  twitter: { card:"summary_large_image", title:"SolvePilot Pakistan", description:"Free calculators, comparisons and smart decision tools.", images:["/og-image.png"] },
   robots: { index:true, follow:true, googleBot:{index:true,follow:true,"max-image-preview":"large","max-snippet":-1,"max-video-preview":-1} },
 };
 

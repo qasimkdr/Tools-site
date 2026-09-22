@@ -12,7 +12,7 @@ import { trustForTool } from "@/lib/tool-trust";
 import { seoDescription } from "@/lib/seo-metadata";
 
 export function generateStaticParams(){ return tools.map(({slug})=>({slug})); }
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const tool=getTool(slug);if(!tool)return{};const description=seoDescription(tool.description,tool.category);return{title:tool.title,description,keywords:tool.keywords,alternates:{canonical:`/pk/tools/${tool.slug}/`},openGraph:{title:tool.title,description,url:`/pk/tools/${tool.slug}/`,type:"website"}}}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const tool=getTool(slug);if(!tool)return{};const description=seoDescription(tool.description,tool.category);return{title:tool.title,description,keywords:tool.keywords,alternates:{canonical:`/pk/tools/${tool.slug}/`},openGraph:{title:tool.title,description,url:`/pk/tools/${tool.slug}/`,type:"website",images:[{url:"/og-image.png",width:1732,height:909,alt:"SolvePilot — Free Calculators & Smart Tools"}]}}}
 
 export default async function ToolPage({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;const tool=getTool(slug);if(!tool)notFound();
