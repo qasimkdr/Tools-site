@@ -7,6 +7,7 @@ import "./category-grid-fix.css";
 import "./search.css";
 import "./pdf-tools.css";
 import "./document-tools.css";
+import "./image-tools.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 const siteUrl=process.env.NEXT_PUBLIC_SITE_URL||"https://solvepilot.xyz";
