@@ -1,6 +1,6 @@
 export type PdfTool={slug:string;title:string;shortTitle:string;icon:string;description:string;keywords:string[];intro:string;howTo:string[];features:string[];faqs:{question:string;answer:string}[]};
 const faqs=(name:string)=>[
- {question:`Is \${name} free to use?`,answer:"Yes. It is free, needs no account and adds no watermark unless you choose the watermark tool."},
+ {question:"Is "+name+" free to use?",answer:"Yes. It is free, needs no account and adds no watermark unless you choose the watermark tool."},
  {question:"Are my PDF files uploaded?",answer:"No. Processing happens in your browser and files are not sent to SolvePilot servers."},
  {question:"Does it work on phones?",answer:"Yes, on modern mobile browsers. Large documents may work better on a computer because browsers have limited memory."},
  {question:"What is the maximum file size?",answer:"There is no server upload limit, but we recommend files below 50 MB for reliable browser processing."},

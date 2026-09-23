@@ -10,6 +10,18 @@ const pages = readdirSync(root, { withFileTypes: true })
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(root, entry.name, "index.html"), "utf8") }));
 
 const failures = [];
+
+const scanForEscapedPlaceholders = (directory) => {
+  for (const entry of readdirSync(directory, { withFileTypes: true })) {
+    const path = join(directory, entry.name);
+    if (entry.isDirectory()) scanForEscapedPlaceholders(path);
+    else if (/\.(?:ts|tsx|js|mjs)$/.test(entry.name)) {
+      const source = readFileSync(path, "utf8");
+      if (source.includes("\\${")) failures.push(path + ": contains an escaped template placeholder");
+    }
+  }
+};
+for (const directory of ["app", "components", "lib"]) scanForEscapedPlaceholders(join(process.cwd(), directory));
 const metaDescriptionLength = (html) => {
   const match = html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)["']/i)
     || html.match(/<meta[^>]+content=["']([^"']*)["'][^>]+name=["']description["']/i);
