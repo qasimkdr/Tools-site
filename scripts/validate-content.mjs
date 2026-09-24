@@ -127,7 +127,7 @@ for (const route of trustPages) {
   if (!html.includes('rel="canonical"')) failures.push(`${route}: missing canonical URL`);
 }
 
-const staticOpenGraphPages = ["", "pk/tools", "tools", ...trustPages];
+const staticOpenGraphPages = ["", "pk/tools", "tools", "generator-tools", ...trustPages];
 for (const route of staticOpenGraphPages) {
   const html = readFileSync(join(process.cwd(), "out", route, "index.html"), "utf8");
   validateOpenGraph(route || "home", html);
@@ -158,10 +158,29 @@ for (const { slug, html } of guidePages) {
   if (!html.includes("application/ld+json")) failures.push(`guide ${slug}: missing structured data`);
 }
 
+const generatorRoot = join(process.cwd(), "out", "generator-tools");
+const generatorPages = readdirSync(generatorRoot, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => ({ slug: entry.name, html: readFileSync(join(generatorRoot, entry.name, "index.html"), "utf8") }));
+for (const { slug, html } of generatorPages) {
+  validateMetaDescription(`generator ${slug}`, html);
+  validateOpenGraph(`generator ${slug}`, html);
+  const text = visibleText(html);
+  const words = text.split(" ").filter(Boolean).length;
+  const h2s = (html.match(/<h2/g) || []).length;
+  const faqs = (html.match(/<details/g) || []).length;
+  if (words < 500) failures.push(`generator ${slug}: only ${words} rendered words (minimum 500)`);
+  if (h2s < 7) failures.push(`generator ${slug}: only ${h2s} H2 sections (minimum 7)`);
+  if (faqs < 5) failures.push(`generator ${slug}: fewer than 5 FAQs`);
+  if (!html.includes('rel="canonical"')) failures.push(`generator ${slug}: missing canonical URL`);
+  if (!html.includes("application/ld+json")) failures.push(`generator ${slug}: missing structured data`);
+}
+if (generatorPages.length !== 20) failures.push(`20 Phase 6-1 generator pages expected but ${generatorPages.length} generated`);
+
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
 if (globalPages.length !== 35) failures.push(`35 global tools expected but ${globalPages.length} pages generated`);
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
 }
-console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators, ${curatedInsightPages.length} curated flagships, ${toolSpecificInsightPages.length} remaining tool upgrades and ${guidePages.length} guides.`);
+console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators, ${generatorPages.length} Phase 6-1 generators, ${curatedInsightPages.length} curated flagships, ${toolSpecificInsightPages.length} remaining tool upgrades and ${guidePages.length} guides.`);
