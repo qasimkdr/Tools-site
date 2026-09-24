@@ -175,7 +175,7 @@ for (const { slug, html } of generatorPages) {
   if (!html.includes('rel="canonical"')) failures.push(`generator ${slug}: missing canonical URL`);
   if (!html.includes("application/ld+json")) failures.push(`generator ${slug}: missing structured data`);
 }
-if (generatorPages.length !== 20) failures.push(`20 Phase 6-1 generator pages expected but ${generatorPages.length} generated`);
+if (generatorPages.length !== 38) failures.push(`38 Phase 6-1 and 6-2 generator pages expected but ${generatorPages.length} generated`);
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
 if (globalPages.length !== 35) failures.push(`35 global tools expected but ${globalPages.length} pages generated`);
@@ -183,4 +183,4 @@ if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
 }
-console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators, ${generatorPages.length} Phase 6-1 generators, ${curatedInsightPages.length} curated flagships, ${toolSpecificInsightPages.length} remaining tool upgrades and ${guidePages.length} guides.`);
+console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators, ${generatorPages.length} Phase 6 generators, ${curatedInsightPages.length} curated flagships, ${toolSpecificInsightPages.length} remaining tool upgrades and ${guidePages.length} guides.`);

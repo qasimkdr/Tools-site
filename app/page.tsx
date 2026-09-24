@@ -7,6 +7,7 @@ import {documentTools} from "@/lib/document-tools";
 import {imageTools} from "@/lib/image-tools";
 import {mediaTools} from "@/lib/media-tools";
 import {generatorTools} from "@/lib/generator-tools";
+import {productivityTools} from "@/lib/productivity-tools";
 import {guides} from "@/lib/guides";
 
 const categories=[
@@ -16,7 +17,7 @@ const categories=[
  {title:"Document & data",icon:"📄",href:"/document-tools/",count:documentTools.length,copy:"Word, DOCX, Markdown, text, HTML, CSV, Excel and JSON browser tools.",accent:"amber"},
  {title:"Image tools",icon:"🖼️",href:"/image-tools/",count:imageTools.length,copy:"Convert, compress, resize, crop, watermark and clean image metadata on your device.",accent:"green"},
  {title:"Media tools",icon:"🎬",href:"/media-tools/",count:mediaTools.length,copy:"Video, audio and subtitle converters, compressors, trimmers and editors without uploads.",accent:"navy"},
- {title:"Generators",icon:"▦",href:"/generator-tools/",count:generatorTools.length,copy:"QR codes, barcodes, invoices, receipts, quotations and practical business documents.",accent:"green"},
+ {title:"Generators",icon:"▦",href:"/generator-tools/",count:generatorTools.length+productivityTools.length,copy:"Codes, business documents, career tools, certificates and practical office generators.",accent:"green"},
  {title:"Practical guides",icon:"📚",href:"/guides/",count:guides.length,copy:"Clear explanations, worked examples, limitations and reliable decision-making guidance.",accent:"sky"}
 ];
 
