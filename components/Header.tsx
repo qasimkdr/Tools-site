@@ -9,8 +9,10 @@ import {documentTools} from "@/lib/document-tools";
 import {imageTools} from "@/lib/image-tools";
 import {mediaTools} from "@/lib/media-tools";
 import {generatorTools} from "@/lib/generator-tools";
+import {creatorTools} from "@/lib/creator-tools";
 import {productivityTools} from "@/lib/productivity-tools";
 const searchEntries:SearchEntry[]=[
+ ...creatorTools.map(t=>({title:t.title,href:"/generator-tools/"+t.slug+"/",type:"Generator tool" as const,category:t.category,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.category+" "+t.keywords.join(" ")).toLowerCase()})),
  ...productivityTools.map(t=>({title:t.title,href:"/generator-tools/"+t.slug+"/",type:"Generator tool" as const,category:t.category,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.category+" "+t.keywords.join(" ")).toLowerCase()})),
  ...generatorTools.map(t=>({title:t.title,href:"/generator-tools/"+t.slug+"/",type:"Generator tool" as const,category:t.category,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.category+" "+t.keywords.join(" ")).toLowerCase()})),
  ...mediaTools.map(t=>({title:t.title,href:"/media-tools/"+t.slug+"/",type:"Media tool" as const,category:t.kind,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.keywords.join(" ")).toLowerCase()})),

@@ -169,13 +169,14 @@ for (const { slug, html } of generatorPages) {
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
   const faqs = (html.match(/<details/g) || []).length;
-  if (words < 500) failures.push(`generator ${slug}: only ${words} rendered words (minimum 500)`);
+  const minimumWords = ["youtube-title-generator","youtube-description-generator","youtube-tag-generator","youtube-timestamp-generator","instagram-caption-generator","hashtag-generator","social-media-bio-generator","username-generator","content-idea-generator","social-media-hook-generator"].includes(slug) ? 900 : 500;
+  if (words < minimumWords) failures.push(`generator ${slug}: only ${words} rendered words (minimum ${minimumWords})`);
   if (h2s < 7) failures.push(`generator ${slug}: only ${h2s} H2 sections (minimum 7)`);
   if (faqs < 5) failures.push(`generator ${slug}: fewer than 5 FAQs`);
   if (!html.includes('rel="canonical"')) failures.push(`generator ${slug}: missing canonical URL`);
   if (!html.includes("application/ld+json")) failures.push(`generator ${slug}: missing structured data`);
 }
-if (generatorPages.length !== 38) failures.push(`38 Phase 6-1 and 6-2 generator pages expected but ${generatorPages.length} generated`);
+if (generatorPages.length !== 48) failures.push(`48 Phase 6 generator pages expected but ${generatorPages.length} generated`);
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
 if (globalPages.length !== 35) failures.push(`35 global tools expected but ${globalPages.length} pages generated`);
