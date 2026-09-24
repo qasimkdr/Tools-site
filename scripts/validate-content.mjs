@@ -89,6 +89,8 @@ const globalRoot = join(process.cwd(), "out", "tools");
 const globalPages = readdirSync(globalRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(globalRoot, entry.name, "index.html"), "utf8") }));
+const ecommerceSlugs = new Set(["roas-calculator","break-even-roas-calculator","cost-per-acquisition-calculator","customer-acquisition-cost-calculator","customer-lifetime-value-calculator","average-order-value-calculator","ecommerce-profit-per-order-calculator","discount-profit-impact-calculator","return-refund-impact-calculator","inventory-reorder-point-calculator","dimensional-weight-calculator","ad-budget-sales-target-calculator"]);
+const ecommerceTitles = new Map(), ecommerceDescriptions = new Map(), ecommerceKeywords = new Map();
 for (const { slug, html } of globalPages) {
   validateMetaDescription(`global ${slug}`, html);
   validateOpenGraph(`global ${slug}`, html);
@@ -96,14 +98,38 @@ for (const { slug, html } of globalPages) {
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
   const faqs = (html.match(/<details/g) || []).length;
-  if (words < 380) failures.push(`global ${slug}: only ${words} rendered words (minimum 380)`);
+  const minimumWords = ecommerceSlugs.has(slug) ? 900 : 380;
+  if (words < minimumWords) failures.push(`global ${slug}: only ${words} rendered words (minimum ${minimumWords})`);
   if (h2s < 7) failures.push(`global ${slug}: only ${h2s} H2 sections (minimum 7)`);
   if (faqs < 5) failures.push(`global ${slug}: only ${faqs} FAQs (minimum 5)`);
   if (!html.includes("Formula and methodology")) failures.push(`global ${slug}: missing methodology`);
   if (!html.includes("Limits of this estimate")) failures.push(`global ${slug}: missing limitations`);
   if (!html.includes('rel="canonical"')) failures.push(`global ${slug}: missing canonical URL`);
   if (!html.includes("application/ld+json")) failures.push(`global ${slug}: missing structured data`);
+  if (ecommerceSlugs.has(slug)) {
+    const title = html.match(/<title>([^<]+)<\/title>/i)?.[1] || "";
+    const description = metaValue(html, "description");
+    const primaryKeyword = metaValue(html, "keywords").split(",")[0]?.trim().toLowerCase() || "";
+    for (const [value, map, label] of [[title, ecommerceTitles, "title"], [description, ecommerceDescriptions, "meta description"], [primaryKeyword, ecommerceKeywords, "primary keyword"]]) {
+      if (!value) failures.push(`global ${slug}: missing ${label}`);
+      else if (map.has(value)) failures.push(`global ${slug}: duplicate ${label} also used by ${map.get(value)}`);
+      else map.set(value, slug);
+    }
+    for (const schemaType of ["FAQPage", "HowTo", "BreadcrumbList"]) if (!html.includes(schemaType)) failures.push(`global ${slug}: missing ${schemaType} schema`);
+    for (const section of ["Privacy and browser processing", "Accuracy and verification", "Limits of this estimate"]) if (!html.includes(section)) failures.push(`global ${slug}: missing ${section} section`);
+    if ((html.match(/href="\/tools\//g) || []).length < 5) failures.push(`global ${slug}: insufficient related internal links`);
+  }
 }
+const globalDirectory = readFileSync(join(globalRoot, "index.html"), "utf8");
+const globalSitemap = readFileSync(join(process.cwd(), "out", "sitemap.xml"), "utf8");
+for (const slug of ecommerceSlugs) {
+  if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
+  if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
+}
+const ecommerceHeader = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
+if (!ecommerceHeader.includes("globalTools.map")) failures.push("site search: global e-commerce tools are not connected");
+const ecommerceHome = readFileSync(join(process.cwd(), "out", "index.html"), "utf8");
+if (!ecommerceHome.includes("47") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated global-tool count is missing");
 
 const insightPages = [...pages, ...globalPages].filter(({ html }) => html.includes("How to interpret your result"));
 const curatedInsightPages = insightPages.filter(({ html }) => html.includes('data-insight-tier="curated"'));
@@ -211,7 +237,7 @@ const headerSource = readFileSync(join(process.cwd(), "components", "Header.tsx"
 for (const sourceName of ["generatorTools", "productivityTools", "creatorTools"]) if (!headerSource.includes(sourceName)) failures.push(`site search: missing ${sourceName}`);
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
-if (globalPages.length !== 35) failures.push(`35 global tools expected but ${globalPages.length} pages generated`);
+if (globalPages.length !== 47) failures.push(`47 global tools expected but ${globalPages.length} pages generated`);
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);

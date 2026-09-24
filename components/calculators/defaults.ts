@@ -1,6 +1,10 @@
 export type CalculatorDefaults = [string,string,string,string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  "roas-calculator":["2000","8000","4","0"],"break-even-roas-calculator":["100","40","10","5"],"cost-per-acquisition-calculator":["1500","60","20","0"],
+  "customer-acquisition-cost-calculator":["12000","7000","5000","800"],"customer-lifetime-value-calculator":["60","4","3","40"],"average-order-value-calculator":["45000","600","82","0"],
+  "ecommerce-profit-per-order-calculator":["80","30","9","20"],"discount-profit-impact-calculator":["100","60","20","100"],"return-refund-impact-calculator":["1000","70","8","12"],
+  "inventory-reorder-point-calculator":["12","18","60","320"],"dimensional-weight-calculator":["50","40","30","5000"],"ad-budget-sales-target-calculator":["50000","100","2.5","25"],
   "electricity-bill-calculator-pakistan":["250","18","12"], "solar-system-calculator-pakistan":["600","5.2","580"],
   "salary-tax-calculator-pakistan":["150000","0","0"], "pta-tax-calculator-pakistan":["500","278","15"],
   "ev-vs-petrol-calculator-pakistan":["50","40","265"], "daraz-profit-calculator-pakistan":["3000","1500","12"],

@@ -4,6 +4,7 @@ import { calculatorDefaults } from "./calculators/defaults";
 import { formatNeutral, formatPkr, numberValue as n } from "./calculators/helpers";
 import { resolveGlobal } from "./calculators/global";
 import { resolveGlobalFinance } from "./calculators/global-finance";
+import { resolveEcommerce } from "./calculators/ecommerce";
 import { resolveCore } from "./calculators/core";
 import { resolveEnergyMobile } from "./calculators/energy-mobile";
 import { resolveFinanceTax } from "./calculators/finance-tax";
@@ -13,7 +14,7 @@ import { resolveHomeProperty } from "./calculators/home-property";
 import { resolveEducationEveryday } from "./calculators/education-everyday";
 import type { CalculatorConfig, CalculatorResolver, CalculatorResult } from "./calculators/types";
 
-const resolvers: CalculatorResolver[] = [resolveGlobalFinance,resolveGlobal,resolveCore,resolveEnergyMobile,resolveFinanceTax,resolveBusiness,resolveVehicles,resolveHomeProperty,resolveEducationEveryday];
+const resolvers: CalculatorResolver[] = [resolveEcommerce,resolveGlobalFinance,resolveGlobal,resolveCore,resolveEnergyMobile,resolveFinanceTax,resolveBusiness,resolveVehicles,resolveHomeProperty,resolveEducationEveryday];
 const neutralSlugs=new Set(["compound-interest-calculator","savings-goal-calculator","mortgage-payment-calculator","discount-calculator","sales-tax-vat-calculator","profit-margin-calculator-global","business-break-even-calculator","tip-calculator","split-bill-calculator","unit-price-comparison-calculator","work-hours-calculator","personal-cash-runway-calculator","business-cash-runway-calculator","monthly-burn-rate-calculator","emergency-fund-calculator","sinking-fund-calculator","debt-to-income-ratio-calculator","loan-comparison-calculator","effective-interest-rate-calculator","loan-early-payment-calculator","invoice-financing-cost-calculator","late-payment-interest-calculator","subscription-cost-calculator","salary-to-freelance-rate-calculator","savings-withdrawal-runway-calculator","recurring-expense-impact-calculator","lifestyle-inflation-calculator","rent-affordability-calculator","financial-goal-timeline-calculator","budget-percentage-calculator","net-worth-change-calculator"]);
 
 function Field({label,value,onChange,suffix}:{label:string;value:string;onChange:(value:string)=>void;suffix?:string}){return <label className="field"><span>{label}</span><div><input inputMode="decimal" value={value} onChange={(event)=>onChange(event.target.value)} aria-label={label}/>{suffix&&<b>{suffix}</b>}</div></label>}
