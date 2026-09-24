@@ -34,6 +34,12 @@ const metaDescriptionLength = (html) => {
     .replace(/&gt;/g, ">")
     .length : 0;
 };
+const metaValue = (html, name) => {
+  const escaped = name.replace(":", "\\:");
+  return html.match(new RegExp(`<meta[^>]+name=["']${escaped}["'][^>]+content=["']([^"']*)["']`, "i"))?.[1]
+    || html.match(new RegExp(`<meta[^>]+content=["']([^"']*)["'][^>]+name=["']${escaped}["']`, "i"))?.[1]
+    || "";
+};
 const validateMetaDescription = (label, html) => {
   const length = metaDescriptionLength(html);
   if (length < 110 || length > 160) failures.push(`${label}: meta description is ${length} characters (required 110-160)`);
@@ -162,6 +168,9 @@ const generatorRoot = join(process.cwd(), "out", "generator-tools");
 const generatorPages = readdirSync(generatorRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => ({ slug: entry.name, html: readFileSync(join(generatorRoot, entry.name, "index.html"), "utf8") }));
+const generatorTitles = new Map();
+const generatorDescriptions = new Map();
+const generatorPrimaryKeywords = new Map();
 for (const { slug, html } of generatorPages) {
   validateMetaDescription(`generator ${slug}`, html);
   validateOpenGraph(`generator ${slug}`, html);
@@ -169,14 +178,37 @@ for (const { slug, html } of generatorPages) {
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
   const faqs = (html.match(/<details/g) || []).length;
-  const minimumWords = ["youtube-title-generator","youtube-description-generator","youtube-tag-generator","youtube-timestamp-generator","instagram-caption-generator","hashtag-generator","social-media-bio-generator","username-generator","content-idea-generator","social-media-hook-generator"].includes(slug) ? 900 : 500;
-  if (words < minimumWords) failures.push(`generator ${slug}: only ${words} rendered words (minimum ${minimumWords})`);
+  const title = html.match(/<title>([^<]+)<\/title>/i)?.[1] || "";
+  const description = metaValue(html, "description");
+  const primaryKeyword = metaValue(html, "keywords").split(",")[0]?.trim().toLowerCase() || "";
+  for (const [value, map, label] of [[title, generatorTitles, "title"], [description, generatorDescriptions, "meta description"], [primaryKeyword, generatorPrimaryKeywords, "primary keyword"]]) {
+    if (!value) failures.push(`generator ${slug}: missing ${label}`);
+    else if (map.has(value)) failures.push(`generator ${slug}: duplicate ${label} also used by ${map.get(value)}`);
+    else map.set(value, slug);
+  }
+  if (words < 900) failures.push(`generator ${slug}: only ${words} rendered words (minimum 900)`);
   if (h2s < 7) failures.push(`generator ${slug}: only ${h2s} H2 sections (minimum 7)`);
   if (faqs < 5) failures.push(`generator ${slug}: fewer than 5 FAQs`);
   if (!html.includes('rel="canonical"')) failures.push(`generator ${slug}: missing canonical URL`);
   if (!html.includes("application/ld+json")) failures.push(`generator ${slug}: missing structured data`);
+  for (const schemaType of ["FAQPage", "HowTo", "BreadcrumbList"]) if (!html.includes(schemaType)) failures.push(`generator ${slug}: missing ${schemaType} schema`);
+  if (!html.includes("Privacy and browser processing")) failures.push(`generator ${slug}: missing privacy section`);
+  if (!html.includes("Accuracy and verification")) failures.push(`generator ${slug}: missing accuracy section`);
+  if (!html.includes("Limitations and responsible use")) failures.push(`generator ${slug}: missing limitations section`);
+  const generatorLinks = (html.match(/href="\/generator-tools\//g) || []).length;
+  if (generatorLinks < 5) failures.push(`generator ${slug}: only ${generatorLinks} generator internal links`);
 }
 if (generatorPages.length !== 48) failures.push(`48 Phase 6 generator pages expected but ${generatorPages.length} generated`);
+const generatorDirectory = readFileSync(join(generatorRoot, "index.html"), "utf8");
+const sitemapXml = readFileSync(join(process.cwd(), "out", "sitemap.xml"), "utf8");
+for (const { slug } of generatorPages) {
+  if (!generatorDirectory.includes(`/generator-tools/${slug}/`)) failures.push(`generator ${slug}: missing from generator directory`);
+  if (!sitemapXml.includes(`/generator-tools/${slug}/`)) failures.push(`generator ${slug}: missing from sitemap`);
+}
+const homeHtml = readFileSync(join(process.cwd(), "out", "index.html"), "utf8");
+if (!homeHtml.includes("48") || !homeHtml.includes("Generators")) failures.push("homepage: Phase 6 generator count is not discoverable");
+const headerSource = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
+for (const sourceName of ["generatorTools", "productivityTools", "creatorTools"]) if (!headerSource.includes(sourceName)) failures.push(`site search: missing ${sourceName}`);
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
 if (globalPages.length !== 35) failures.push(`35 global tools expected but ${globalPages.length} pages generated`);
