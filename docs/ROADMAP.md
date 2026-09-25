@@ -9,6 +9,7 @@
 - Phase 6-3: social and creator tools.
 - Phase 6 quality upgrade: all 48 generator pages enforce 900+ words and complete SEO requirements.
 - Global E-commerce & Ads cluster: 12 tools, bringing global calculators to 47.
+- Global Finance expansion: 25 unique tools, bringing global calculators to 72.
 
 ## Next-phase selection rules
 
@@ -26,4 +27,4 @@
 - Website/SEO preview and structured-data utilities.
 - Shipping, inventory and marketplace operations extensions.
 
-No next phase is locked yet. Validate keywords first.
+The next File & Data phase is a candidate only. Audit the existing PDF, document, image and media catalogs and validate keywords before locking it.
