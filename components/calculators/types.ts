@@ -12,6 +12,7 @@ export type ResolverContext = {
   b: string;
   c: string;
   d: string;
+  e: string;
   cash: (value: number) => string;
 };
 
