@@ -1,6 +1,11 @@
-export type CalculatorDefaults = [string,string,string,string?];
+export type CalculatorDefaults = [string,string,string,string?,string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  "debt-snowball-vs-avalanche-calculator":["3000","18","5000","24","200"],"credit-card-minimum-payment-calculator":["5000","24","3","25"],"credit-card-payoff-calculator":["6000","22","250"],"credit-card-utilization-calculator":["900","3000","1500","10000"],
+  "investment-fee-calculator":["20000","500","7","1","20"],"inflation-adjusted-return-calculator":["7","2.5","0.5"],"dollar-cost-averaging-calculator":["0","400","6","10"],"lump-sum-vs-dca-calculator":["24000","7","12","3"],
+  "coast-fire-calculator":["35","60","30000","4","5"],"fire-number-calculator":["40000","4","250000"],"savings-rate-calculator":["5000","1200","200"],"dividend-reinvestment-calculator":["25000","3","4","15"],"portfolio-rebalancing-calculator":["70000","30000","60"],"capital-gains-calculator-global":["30000","20000","1000","15"],
+  "tiered-commission-calculator":["120000","50000","3","5"],"prorated-salary-calculator":["4000","16","22","0"],"pay-raise-percentage-calculator":["50000","54000","0"],"overtime-pay-calculator-global":["20","40","10","1.5"],
+  "invoice-due-date-calculator":["2026-09-25","30","0"],"net-payment-terms-calculator":["2026-09-25","0","0"],"invoice-discount-calculator":["10000","2","20"],"freelance-project-profit-calculator":["3000","10","40","35","200"],"saas-pricing-calculator":["8","80","10000"],"debt-service-coverage-ratio-calculator":["150000","70000","30000"],"merchant-processing-fee-calculator":["100","2.9","0.30"],
   "roas-calculator":["2000","8000","4","0"],"break-even-roas-calculator":["100","40","10","5"],"cost-per-acquisition-calculator":["1500","60","20","0"],
   "customer-acquisition-cost-calculator":["12000","7000","5000","800"],"customer-lifetime-value-calculator":["60","4","3","40"],"average-order-value-calculator":["45000","600","82","0"],
   "ecommerce-profit-per-order-calculator":["80","30","9","20"],"discount-profit-impact-calculator":["100","60","20","100"],"return-refund-impact-calculator":["1000","70","8","12"],
