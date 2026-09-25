@@ -29,3 +29,4 @@ export const productivityTools:ProductivityTool[]=[
  make("word-character-counter","Word and Character Counter Online","Word & Character Counter","🔢","Student & Office","word-counter","Count words, characters, sentences, paragraphs and estimated reading time instantly from text pasted into your browser.",["word counter online","character counter","sentence paragraph counter"],"Measure text length for assignments, application fields, captions, articles and publishing requirements.",["Paste or type the text.","Review the live counts.","Edit the text until it meets the required limit."],["Word count","Characters with and without spaces","Sentence and paragraph totals"])
 ];
 export const getProductivityTool=(slug:string)=>productivityTools.find(t=>t.slug===slug);
+

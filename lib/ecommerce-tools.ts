@@ -71,3 +71,4 @@ make("ad-budget-sales-target-calculator","Advertising Budget and Sales Target Ca
 ])
 ];
 export const getEcommerceTool=(slug:string)=>ecommerceTools.find(t=>t.slug===slug);
+

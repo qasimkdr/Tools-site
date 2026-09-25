@@ -47,15 +47,18 @@ Last verified: **25 September 2026**
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
 | Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 72 |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
-| Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 14 |
+| Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
-| Video, audio and subtitle tools | `lib/media-tools.ts` | `/media-tools/[slug]/` | 13 |
+| Video, audio and subtitle tools | `lib/media-tools.ts` | `/media-tools/[slug]/` | 16 |
+| Archive and compressed-file tools | `lib/archive-tools.ts` | `/archive-tools/[slug]/` | 6 |
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 25 |
 
-The production build currently generates **402 static pages**. The content gate recognizes **181 Pakistan calculators, 72 global calculators, 48 Phase 6 generators and 25 guides**.
+The production build currently generates **423 static pages**. The content gate recognizes **181 Pakistan calculators, 72 global calculators, 48 Phase 6 generators, 20 new archive/data/subtitle tools and 25 guides**.
 
 Completed major phases include Pakistan calculator expansion, global calculators, Phase 5A browser file tools, Phase 6 generators and the 25-tool global finance expansion.
+
+The 25 September file expansion checked 25 requested ideas, reused five existing converters and added 20 unique pages: six archive tools, five Excel tools, six structured-data converters and three subtitle tools. Their processors live in `components/ArchiveTool.tsx`, `components/DocumentTool.tsx` and `components/MediaTool.tsx`; shared long-form guidance is supplied by `components/FileToolEditorial.tsx`.
 
 ## 4. Architecture and sources of truth
 
@@ -69,6 +72,7 @@ Completed major phases include Pakistan calculator expansion, global calculators
 - `lib/document-tools.ts`: document and structured-data utilities.
 - `lib/image-tools.ts`: image utilities.
 - `lib/media-tools.ts`: video, audio and subtitle utilities.
+- `lib/archive-tools.ts`: ZIP creation, extraction, protection and archive-conversion utilities.
 - `lib/generator-tools.ts`: QR, barcode and business-document generators.\n- `lib/productivity-tools.ts`: career and student/office generators.\n- `lib/creator-tools.ts`: social and creator generators.\n- `lib/ecommerce-tools.ts`: global E-commerce and Ads calculators.
 
 ### Calculator system

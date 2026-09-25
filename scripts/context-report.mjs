@@ -9,3 +9,4 @@ const collections={pakistan:countDirectories(join(root,"out","pk","tools")),glob
 const packageJson=JSON.parse(readFileSync(join(root,"package.json"),"utf8"));
 const report={project:packageJson.name,branch:git(["branch","--show-current"]),commit:git(["log","-1","--pretty=%h %s"]),workingTree:git(["status","--short"])||"clean",exportAvailable:existsSync(join(root,"out")),collections,note:existsSync(join(root,"out"))?"Counts come from the latest local static export.":"Run npm run build when exact generated-page counts are required."};
 console.log(JSON.stringify(report,null,2));
+

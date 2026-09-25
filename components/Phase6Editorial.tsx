@@ -14,3 +14,4 @@ export function Phase6Editorial({tool}:{tool:EditorialTool}){
   <section><h2>Keeping the output current</h2><p>A saved result represents the inputs and assumptions used at one moment. Review it when a price, role, schedule, policy, contact detail or official requirement changes. Do not keep distributing an old copy because it still opens correctly. Add a meaningful filename or internal date so collaborators can distinguish the current version from drafts without exposing unnecessary personal data.</p><p>Return to this {name} page when the underlying information changes and create a clean replacement. Keep supporting evidence separately because the generated output does not create an audit trail or prove that a fact was correct. For regulated, contractual, financial, employment or academic use, check the latest instructions from the responsible authority and obtain qualified advice where necessary.</p></section>
  </>
 }
+

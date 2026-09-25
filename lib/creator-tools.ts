@@ -71,3 +71,4 @@ make("social-media-hook-generator","Social Media Hook Generator Online","Hook Ge
 ],"hook"),
 ];
 export const getCreatorTool=(slug:string)=>creatorTools.find(t=>t.slug===slug);
+

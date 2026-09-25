@@ -8,10 +8,12 @@ import {pdfTools} from "@/lib/pdf-tools";
 import {documentTools} from "@/lib/document-tools";
 import {imageTools} from "@/lib/image-tools";
 import {mediaTools} from "@/lib/media-tools";
+import {archiveTools} from "@/lib/archive-tools";
 import {generatorTools} from "@/lib/generator-tools";
 import {creatorTools} from "@/lib/creator-tools";
 import {productivityTools} from "@/lib/productivity-tools";
 const searchEntries:SearchEntry[]=[
+ ...archiveTools.map(t=>({title:t.title,href:"/archive-tools/"+t.slug+"/",type:"Document tool" as const,category:"Archives",icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.keywords.join(" ")).toLowerCase()})),
  ...creatorTools.map(t=>({title:t.title,href:"/generator-tools/"+t.slug+"/",type:"Generator tool" as const,category:t.category,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.category+" "+t.keywords.join(" ")).toLowerCase()})),
  ...productivityTools.map(t=>({title:t.title,href:"/generator-tools/"+t.slug+"/",type:"Generator tool" as const,category:t.category,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.category+" "+t.keywords.join(" ")).toLowerCase()})),
  ...generatorTools.map(t=>({title:t.title,href:"/generator-tools/"+t.slug+"/",type:"Generator tool" as const,category:t.category,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.category+" "+t.keywords.join(" ")).toLowerCase()})),

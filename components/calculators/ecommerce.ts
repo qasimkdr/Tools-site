@@ -16,3 +16,4 @@ export const resolveEcommerce:CalculatorResolver=({slug,a,b,c,d,cash})=>{
  if(slug==="ad-budget-sales-target-calculator"){const orders=n(a)/(n(b)||1),visits=orders/(n(c)/100||1),budget=orders*n(d);return{labels:["Net sales target","Average order value","Website conversion rate","Target cost per acquisition"],suffix:["currency","currency","%","currency"],calculate:()=>[{label:"Estimated advertising budget",value:cash(budget),note:"Scenario assumes stable CPA and conversion"},{label:"Orders required",value:Math.ceil(orders).toLocaleString()},{label:"Website visits required",value:Math.ceil(visits).toLocaleString()}]}}
  return null;
 };
+

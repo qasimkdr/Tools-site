@@ -49,3 +49,4 @@ This is the mandatory acceptance checklist for every new tool or article.
 ## Build enforcement
 
 Update `scripts/validate-content.mjs` with the phase slug list and checks. A page is not complete until `npm run typecheck` and `npm run build` both pass.
+

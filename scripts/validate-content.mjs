@@ -255,10 +255,51 @@ if (!homeHtml.includes("48") || !homeHtml.includes("Generators")) failures.push(
 const headerSource = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
 for (const sourceName of ["generatorTools", "productivityTools", "creatorTools"]) if (!headerSource.includes(sourceName)) failures.push(`site search: missing ${sourceName}`);
 
+const requestedFileSlugs = new Set([
+  "create-zip-file", "extract-zip-file", "password-protect-zip-file", "rar-to-zip-converter", "7z-to-zip-converter", "tar-gz-extractor",
+  "merge-excel-files", "split-excel-sheets", "remove-duplicate-excel-rows", "compare-two-excel-files", "excel-to-json",
+  "csv-to-json", "json-to-csv", "xml-to-json", "json-to-xml", "yaml-to-json", "json-to-yaml",
+  "subtitle-time-shifter", "merge-subtitle-files", "subtitle-encoding-fixer"
+]);
+const fileCollections = [
+  {route:"archive-tools",expected:6},
+  {route:"document-tools",expected:25},
+  {route:"media-tools",expected:16}
+];
+const fileTitles = new Map(), fileDescriptions = new Map(), fileKeywords = new Map();
+for (const {route,expected} of fileCollections) {
+  const directory = join(process.cwd(), "out", route);
+  const collectionHtml = readFileSync(join(directory, "index.html"), "utf8");
+  const collectionPages = readdirSync(directory, {withFileTypes:true}).filter(entry=>entry.isDirectory()).map(entry=>({slug:entry.name,html:readFileSync(join(directory,entry.name,"index.html"),"utf8")}));
+  if (collectionPages.length !== expected) failures.push(`${route}: expected ${expected} pages but generated ${collectionPages.length}`);
+  for (const {slug,html} of collectionPages) {
+    if (!requestedFileSlugs.has(slug)) continue;
+    validateMetaDescription(`${route} ${slug}`,html);
+    validateOpenGraph(`${route} ${slug}`,html);
+    const words=visibleText(html).split(" ").filter(Boolean).length;
+    if (words<900) failures.push(`${route} ${slug}: only ${words} rendered words (minimum 900)`);
+    if ((html.match(/<details/g)||[]).length<5) failures.push(`${route} ${slug}: fewer than 5 FAQs`);
+    for (const schemaType of ["WebApplication","FAQPage","HowTo","BreadcrumbList"]) if (!html.includes(schemaType)) failures.push(`${route} ${slug}: missing ${schemaType} schema`);
+    for (const section of ["Privacy","Accuracy and verification","Common mistakes","Sources and review information"]) if (!html.includes(section)) failures.push(`${route} ${slug}: missing ${section} guidance`);
+    if (!html.includes('rel="canonical"')) failures.push(`${route} ${slug}: missing canonical URL`);
+    if (!collectionHtml.includes(`/${route}/${slug}/`)) failures.push(`${route} ${slug}: missing from directory`);
+    if (!sitemapXml.includes(`/${route}/${slug}/`)) failures.push(`${route} ${slug}: missing from sitemap`);
+    const title=html.match(/<title>([^<]+)<\/title>/i)?.[1]||"",description=metaValue(html,"description"),keyword=metaValue(html,"keywords").split(",")[0]?.trim().toLowerCase()||"";
+    for (const [value,map,label] of [[title,fileTitles,"title"],[description,fileDescriptions,"meta description"],[keyword,fileKeywords,"primary keyword"]]) {
+      if (!value) failures.push(`${route} ${slug}: missing ${label}`);
+      else if (map.has(value)) failures.push(`${route} ${slug}: duplicate ${label} also used by ${map.get(value)}`);
+      else map.set(value,`${route}/${slug}`);
+    }
+  }
+}
+if (!headerSource.includes("archiveTools")) failures.push("site search: archive tools are not connected");
+if (!homeHtml.includes("Archive tools")) failures.push("homepage: archive category is not discoverable");
+if ([...requestedFileSlugs].some(slug=>!sitemapXml.includes(`/${slug}/`))) failures.push("requested file tools: one or more URLs are missing from sitemap");
+
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
 if (globalPages.length !== 72) failures.push(`72 global tools expected but ${globalPages.length} pages generated`);
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
 }
-console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators, ${generatorPages.length} Phase 6 generators, ${curatedInsightPages.length} curated flagships, ${toolSpecificInsightPages.length} remaining tool upgrades and ${guidePages.length} guides.`);
+console.log(`Content quality gate passed for ${pages.length} Pakistan calculators, ${globalPages.length} global calculators, ${generatorPages.length} Phase 6 generators, ${requestedFileSlugs.size} new archive/data/subtitle tools, ${curatedInsightPages.length} curated flagships, ${toolSpecificInsightPages.length} remaining tool upgrades and ${guidePages.length} guides.`);

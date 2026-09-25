@@ -6,12 +6,14 @@ import {pdfTools} from "@/lib/pdf-tools";
 import {documentTools} from "@/lib/document-tools";
 import {imageTools} from "@/lib/image-tools";
 import {mediaTools} from "@/lib/media-tools";
+import {archiveTools} from "@/lib/archive-tools";
 import {generatorTools} from "@/lib/generator-tools";
 import {productivityTools} from "@/lib/productivity-tools";
 import {creatorTools} from "@/lib/creator-tools";
 import {guides} from "@/lib/guides";
 
 const categories=[
+ {title:"Archive tools",icon:"🗜️",href:"/archive-tools/",count:archiveTools.length,copy:"Create, extract, protect and convert ZIP, RAR, 7Z and TAR.GZ archives privately.",accent:"violet"},
  {title:"Pakistan calculators",icon:"🇵🇰",href:"/pk/tools/",count:tools.length,copy:"Tax, electricity, solar, vehicles, education, property and everyday Pakistan decisions.",accent:"blue"},
  {title:"Global calculators",icon:"🌍",href:"/tools/",count:globalTools.length,copy:"Finance, business, savings, loans, technology and everyday calculators for any currency.",accent:"violet"},
  {title:"PDF tools",icon:"📕",href:"/pdf-tools/",count:pdfTools.length,copy:"Merge, split, organize, convert, watermark, inspect and secure PDF documents privately.",accent:"rose"},
