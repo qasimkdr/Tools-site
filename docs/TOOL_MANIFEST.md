@@ -5,8 +5,9 @@ This compact manifest routes agents to canonical catalogs. Individual slugs rema
 | Collection | Count | Canonical catalog |
 |---|---:|---|
 | Pakistan calculators | 181 | `lib/tools.ts` |
-| Global calculators | 47 | `lib/global-tools.ts` plus focused imports |
+| Global calculators | 72 | `lib/global-tools.ts` plus focused imports |
 | E-commerce & Ads | 12 of global total | `lib/ecommerce-tools.ts` |
+| Global Finance expansion | 25 of global total | `lib/global-finance-expansion.ts` |
 | QR/barcode and business generators | 20 | `lib/generator-tools.ts` |
 | Career and student/office generators | 18 | `lib/productivity-tools.ts` |
 | Social and creator generators | 10 | `lib/creator-tools.ts` |
