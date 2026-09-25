@@ -12,7 +12,7 @@
 | URL | Data | UI/calculation |
 |---|---|---|
 | `/pk/tools/[slug]/` | `lib/tools.ts` | `components/Calculator.tsx`, `components/calculators/*` |
-| `/tools/[slug]/` | `lib/global-tools.ts`, `lib/global-finance-tools.ts`, `lib/ecommerce-tools.ts` | `components/Calculator.tsx`, `components/calculators/*` |
+| `/tools/[slug]/` | `lib/global-tools.ts` plus finance and E-commerce catalogs | `components/Calculator.tsx`, `components/calculators/*` |
 | `/generator-tools/[slug]/` | generator, productivity and creator catalogs | matching generator components |
 | `/pdf-tools/[slug]/` | `lib/pdf-tools.ts` | `components/PdfTool.tsx` |
 | `/document-tools/[slug]/` | `lib/document-tools.ts` | `components/DocumentTool.tsx` |
@@ -29,7 +29,7 @@ When adding a new standalone catalog, integrate all six destinations. Existing c
 ## Calculator flow
 
 1. Defaults live in `components/calculators/defaults.ts`.
-2. `components/Calculator.tsx` sends the slug and four values through ordered resolvers.
+2. `components/Calculator.tsx` sends the slug and up to five values through ordered resolvers.
 3. Focused resolver modules return labels, suffixes and results.
 4. Currency-neutral global tools pass `currencyNeutral` or belong to the neutral slug set.
 
