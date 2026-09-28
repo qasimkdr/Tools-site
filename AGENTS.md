@@ -40,12 +40,12 @@ Prefer focused searches and small excerpts. Never repeatedly load large catalogs
 
 Update this section whenever a completed phase changes counts or architecture.
 
-Last verified: **25 September 2026**
+Last verified: **29 September 2026**
 
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 72 |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 73 |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,9 +54,11 @@ Last verified: **25 September 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 25 |
 
-The production build currently generates **423 static pages**. The content gate recognizes **181 Pakistan calculators, 72 global calculators, 48 Phase 6 generators, 20 new archive/data/subtitle tools and 25 guides**.
+The production build currently generates **424 static pages**. The content gate recognizes **181 Pakistan calculators, 73 global calculators, 48 Phase 6 generators, 20 new archive/data/subtitle tools and 25 guides**.
 
 Completed major phases include Pakistan calculator expansion, global calculators, Phase 5A browser file tools, Phase 6 generators and the 25-tool global finance expansion.
+
+The 29 September education expansion added one consolidated College Admission Chances Calculator for the verified college-chance, acceptance-simulator and admission-predictor keyword cluster. Its definition lives in `lib/global-education-tools.ts`; duplicate pages for keyword variants are prohibited.
 
 The 25 September file expansion checked 25 requested ideas, reused five existing converters and added 20 unique pages: six archive tools, five Excel tools, six structured-data converters and three subtitle tools. Their processors live in `components/ArchiveTool.tsx`, `components/DocumentTool.tsx` and `components/MediaTool.tsx`; shared long-form guidance is supplied by `components/FileToolEditorial.tsx`.
 
