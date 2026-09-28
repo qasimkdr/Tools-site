@@ -24,7 +24,7 @@ const copy: Record<string, string> = {
   Technology:
     "Estimate downloads and resize digital media with clearly labelled technical units.",
   Vehicles:
-    "Convert fuel-economy measurements correctly across regions and test standards.",
+    "Compare car financing, lease-versus-buy costs and fuel-economy measurements with clearly disclosed assumptions.",
 };
 
 export default function GlobalToolsPage() {

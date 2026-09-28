@@ -3,6 +3,7 @@ import { globalFinanceTools } from "@/lib/global-finance-tools";
 import { ecommerceTools } from "@/lib/ecommerce-tools";
 import { globalFinanceExpansionTools } from "@/lib/global-finance-expansion";
 import { globalEducationTools } from "@/lib/global-education-tools";
+import { seoFinanceTools } from "@/lib/seo-finance-tools";
 
 type Seed = Pick<
   Tool,
@@ -321,6 +322,7 @@ export const globalTools: Tool[] = [
   ...ecommerceTools,
   ...globalFinanceExpansionTools,
   ...globalEducationTools,
+  ...seoFinanceTools,
 ];
 
 export const getGlobalTool = (slug: string) =>

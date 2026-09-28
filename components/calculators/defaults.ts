@@ -1,6 +1,12 @@
 export type CalculatorDefaults = [string, string, string, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  "real-estate-lawyer-cost-calculator": ["1200", "250", "4", "500", "200"],
+  "car-lease-vs-buy-calculator": ["3000", "450", "5000", "650", "22000"],
+  "seller-net-sheet-calculator": ["400000", "220000", "5", "8000", "3000"],
+  "seller-financing-calculator": ["220000", "40000", "7", "20", "5"],
+  "mortgage-buydown-calculator": ["300000", "6.75", "6.25", "30", "1"],
+  "first-lien-heloc-calculator": ["100000", "8", "25", "15"],
   "college-admission-chances-calculator": ["3.6", "82", "75", "70", "35"],
   "debt-snowball-vs-avalanche-calculator": ["3000", "18", "5000", "24", "200"],
   "credit-card-minimum-payment-calculator": ["5000", "24", "3", "25"],

@@ -1,4 +1,5 @@
 import { trafficGuides } from "@/lib/traffic-guides";
+import { autoFinanceGuides } from "@/lib/auto-finance-guides";
 
 export type GuideSource = { name: string; url: string; note: string };
 export type GuideSection = { heading: string; paragraphs: string[]; bullets?: string[] };
@@ -273,6 +274,7 @@ export const guides: Guide[] = [
     limitation:"Rates depend on skill, proof, market, scope and negotiation. This planning framework cannot guarantee clients, income or tax treatment.",
   },
   ...trafficGuides,
+  ...autoFinanceGuides,
 ];
 
 export const getGuide = (slug: string) => guides.find((guide) => guide.slug === slug);
