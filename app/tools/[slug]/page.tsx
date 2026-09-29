@@ -9,6 +9,7 @@ import { insightForTool } from "@/lib/flagship-content";
 import { getGlobalTool, globalTools } from "@/lib/global-tools";
 import { seoDescription } from "@/lib/seo-metadata";
 import { CollegeAdmissionEditorial } from "@/components/CollegeAdmissionEditorial";
+import { auditForTool } from "@/lib/semrush-batch-one-audit";
 
 export function generateStaticParams() {
   return globalTools.map(({ slug }) => ({ slug }));
@@ -26,11 +27,12 @@ export async function generateMetadata({
     title: tool.title,
     description,
     keywords: tool.keywords,
-    alternates: { canonical: `/tools/${tool.slug}/` },
+    alternates: { canonical: `/tools/${tool.canonicalSlug || tool.slug}/` },
+    ...(tool.canonicalSlug ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title: tool.title,
       description,
-      url: `/tools/${tool.slug}/`,
+      url: `/tools/${tool.canonicalSlug || tool.slug}/`,
       type: "website",
       images: [
         {
@@ -53,15 +55,16 @@ export default async function GlobalToolPage({
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
   const flagship = insightForTool(tool);
+  const semrushAudit = auditForTool(tool);
   const related = globalTools
-    .filter((item) => item.slug !== tool.slug)
+    .filter((item) => item.slug !== tool.slug && !item.canonicalSlug)
     .sort(
       (a, b) =>
         Number(b.category === tool.category) -
         Number(a.category === tool.category),
     )
     .slice(0, 4);
-  const url = `https://solvepilot.xyz/tools/${tool.slug}/`;
+  const url = `https://solvepilot.xyz/tools/${tool.canonicalSlug || tool.slug}/`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -182,6 +185,46 @@ export default async function GlobalToolPage({
             <h2>Worked calculation example</h2>
             <p>{tool.example}</p>
             {flagship && <FlagshipInsights content={flagship} />}
+            {semrushAudit && (
+              <section className="semrush-intent-audit">
+                <h2>Search intent and calculator coverage</h2>
+                <p>{semrushAudit.interpretation}</p>
+                {semrushAudit.relatedCalculators?.length ? (
+                  <p>For different inputs or formulas, use {semrushAudit.relatedCalculators.map((item, index) => (
+                    <span key={item.slug}>{index > 0 ? "; " : ""}<a href={`/tools/${item.slug}/`}>{item.title}</a></span>
+                  ))}.</p>
+                ) : null}
+                <h3>Related questions this calculator covers</h3>
+                <ul>
+                  {semrushAudit.keywordThemes.map((theme) => <li key={theme}>{theme}</li>)}
+                </ul>
+                <h2>Worked scenarios</h2>
+                <div className="guide-table-wrap">
+                  <table>
+                    <thead><tr><th>Scenario</th><th>What it shows</th></tr></thead>
+                    <tbody>
+                      {semrushAudit.scenarios.map((scenario) => {
+                        const [label, ...rest] = scenario.split(" — ");
+                        return <tr key={scenario}><td>{label}</td><td>{rest.join(" — ")}</td></tr>;
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+                <h2>Common mistakes</h2>
+                <ul className="mistake-list">
+                  {semrushAudit.mistakes.map((mistake) => <li key={mistake}>{mistake}</li>)}
+                </ul>
+                <div className="verification-box">
+                  <b>How to verify this result</b>
+                  <p>{semrushAudit.verification}</p>
+                  <small>
+                    {semrushAudit.sourceUrl ? (
+                      <><a href={semrushAudit.sourceUrl} target="_blank" rel="noreferrer">Authoritative reference</a>{semrushAudit.secondarySourceUrl ? <> and <a href={semrushAudit.secondarySourceUrl} target="_blank" rel="noreferrer">current distribution rules</a></> : null}. {semrushAudit.sourceNote}</>
+                    ) : semrushAudit.sourceNote}
+                  </small>
+                </div>
+              </section>
+            )}
             {tool.slug === "college-admission-chances-calculator" && (
               <CollegeAdmissionEditorial />
             )}

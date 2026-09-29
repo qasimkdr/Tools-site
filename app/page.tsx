@@ -15,7 +15,7 @@ import {guides} from "@/lib/guides";
 const categories=[
  {title:"Archive tools",icon:"🗜️",href:"/archive-tools/",count:archiveTools.length,copy:"Create, extract, protect and convert ZIP, RAR, 7Z and TAR.GZ archives privately.",accent:"violet"},
  {title:"Pakistan calculators",icon:"🇵🇰",href:"/pk/tools/",count:tools.length,copy:"Tax, electricity, solar, vehicles, education, property and everyday Pakistan decisions.",accent:"blue"},
- {title:"Global calculators",icon:"🌍",href:"/tools/",count:globalTools.length,copy:"Finance, business, savings, loans, technology and everyday calculators for any currency.",accent:"violet"},
+ {title:"Global calculators",icon:"🌍",href:"/tools/",count:globalTools.filter(t=>!t.canonicalSlug).length,copy:"Finance, business, savings, loans, technology and everyday calculators for any currency.",accent:"violet"},
  {title:"PDF tools",icon:"📕",href:"/pdf-tools/",count:pdfTools.length,copy:"Merge, split, organize, convert, watermark, inspect and secure PDF documents privately.",accent:"rose"},
  {title:"Document & data",icon:"📄",href:"/document-tools/",count:documentTools.length,copy:"Word, DOCX, Markdown, text, HTML, CSV, Excel and JSON browser tools.",accent:"amber"},
  {title:"Image tools",icon:"🖼️",href:"/image-tools/",count:imageTools.length,copy:"Convert, compress, resize, crop, watermark and clean image metadata on your device.",accent:"green"},

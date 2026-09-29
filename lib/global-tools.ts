@@ -57,14 +57,14 @@ const seeds: Seed[] = [
     title: "Mortgage Payment Calculator",
     shortTitle: "Mortgage Payment",
     description:
-      "Estimate a fixed-rate mortgage payment, total repayment and lifetime interest in any currency.",
+      "Estimate principal and interest, then add user-entered annual property tax and homeowners insurance to compare a broader monthly mortgage cost.",
     icon: "🏠",
     category: "Money",
     accent: "blue",
     formula:
-      "Monthly payment = P × r × (1+r)^n ÷ ((1+r)^n−1), where P is principal, r is the monthly rate and n is the number of payments.",
+      "Principal-and-interest payment = P × r × (1+r)^n ÷ ((1+r)^n−1). Add annual property tax ÷ 12 and annual insurance ÷ 12 for a user-entered monthly estimate.",
     example:
-      "A 250,000 mortgage at 6% for 30 years produces an estimated principal-and-interest payment of about 1,499 per month.",
+      "A 250,000 mortgage at 6% for 30 years produces about 1,499 monthly principal and interest; entered annual taxes and insurance can be added separately.",
     focus:
       "loan term, interest rates, deposits, fees, insurance and property taxes",
   },
@@ -179,12 +179,12 @@ const seeds: Seed[] = [
     title: "Work Hours Calculator",
     shortTitle: "Work Hours",
     description:
-      "Calculate paid hours and estimated earnings from start time, end time, breaks and hourly rate.",
+      "Calculate paid shift hours from 24-hour times or add hours to the local clock; optionally estimate gross earnings from an hourly rate.",
     icon: "⏱️",
     category: "Business",
     accent: "violet",
     formula:
-      "Paid hours = elapsed shift hours − unpaid break hours. Estimated pay = paid hours × hourly rate.",
+      "Paid shift hours = elapsed time between 24-hour start and end − unpaid break. Hours-from-now mode adds a duration to local device time; gross pay = paid hours × rate.",
     example:
       "A 9:00 to 17:30 shift with a 30-minute unpaid break contains 8 paid hours; at 20 per hour it earns 160 before deductions.",
     focus:
@@ -284,7 +284,7 @@ const questions = (tool: Seed) => [
 
 const roadmapKeywordUpgrades: Record<string,string[]> = {
   "mortgage-payment-calculator": ["mortgage calculator","mortgage payment calculator","monthly mortgage calculator with taxes and insurance","mortgage calculator with payment"],
-  "work-hours-calculator": ["hours calculator","calculate work hours","calculate hours worked","clock out calculator","8 hour shift calculator"],
+  "work-hours-calculator": ["hours calculator","calculate work hours","calculate hours worked","clock out calculator","8 hour shift calculator","hours from now calculator","military time calculator"],
 };
 
 const originalGlobalTools: Tool[] = seeds.map((tool) => ({

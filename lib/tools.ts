@@ -1,5 +1,7 @@
 export type Tool = {
   slug: string;
+  /** Legacy route that should canonicalize to one maintained calculator page. */
+  canonicalSlug?: string;
   title: string;
   shortTitle: string;
   description: string;

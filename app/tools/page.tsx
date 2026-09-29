@@ -28,7 +28,8 @@ const copy: Record<string, string> = {
 };
 
 export default function GlobalToolsPage() {
-  const categories = [...new Set(globalTools.map((tool) => tool.category))];
+  const discoverableTools = globalTools.filter((tool) => !tool.canonicalSlug);
+  const categories = [...new Set(discoverableTools.map((tool) => tool.category))];
   return (
     <div className="shell listing-page">
       <span className="eyebrow">Global SolvePilot collection</span>
@@ -38,7 +39,7 @@ export default function GlobalToolsPage() {
         measurements. Calculations run privately in your browser, and every page
         explains its formula, assumptions and limits.
       </p>
-      <CategoryBrowser tools={globalTools} hrefPrefix="/tools" />
+      <CategoryBrowser tools={discoverableTools} hrefPrefix="/tools" />
       <section className="category-explainers">
         <span className="eyebrow">Browse by purpose</span>
         <h2>Global calculator collections</h2>
@@ -48,7 +49,7 @@ export default function GlobalToolsPage() {
               <h3>{category} calculators</h3>
               <p>{copy[category]}</p>
               <div>
-                {globalTools
+                {discoverableTools
                   .filter((tool) => tool.category === category)
                   .slice(0, 4)
                   .map((tool) => (

@@ -95,6 +95,10 @@ const globalEducationSlugs = new Set(["college-admission-chances-calculator"]);
 const semrushPhaseTwoASlugs = new Set(["grade-calculator","decimal-time-converter","modified-adjusted-gross-income-calculator","money-market-calculator","confidence-interval-calculator","superscript-generator","earned-run-average-calculator","ap-statistics-score-calculator","gcf-calculator","apr-calculator","wire-size-calculator","cone-volume-calculator","normal-cdf-calculator","matrix-inverse-calculator","voltage-drop-calculator","fill-dirt-calculator","board-foot-calculator"]);
 const semrushPhaseOneSlugs = new Set(["date-from-today-calculator","payment-calculator","proportion-calculator","interest-rate-calculator","ratio-calculator","age-calculator","hypotenuse-calculator","period-calculator","random-number-generator","cubic-yard-calculator","gravel-stone-calculator","army-waist-height-ratio-calculator","401k-calculator","sand-calculator","right-triangle-calculator","ap-world-score-calculator"]);
 const semrushPhaseOneBSlugs = new Set(["gpa-calculator","square-footage-calculator","bench-press-max-calculator","triangle-calculator","molecular-weight-calculator","bowling-score-calculator","air-force-pt-test-calculator","square-root-calculator","fraction-calculator","how-many-years-calculator","cylinder-volume-calculator","date-calculator","hourly-wage-and-tax-calculator","asphalt-calculator","ap-biology-score-calculator","womens-bmi-calculator","ap-chemistry-score-calculator","concrete-calculator","npv-calculator","weeks-calculator","half-birthday-calculator","paycheck-hours-calculator","dog-pregnancy-calculator","binary-calculator","paycheck-estimator-calculator","pool-salt-calculator","rafter-length-calculator","air-force-pt-calculator","stair-calculator","scientific-notation-calculator"]);
+const firstFiftyCanonicalAliases = new Map([["air-force-pt-calculator","air-force-pt-test-calculator"],["hourly-wage-and-tax-calculator","paycheck-estimator-calculator"],["date-calculator","date-from-today-calculator"],["hypotenuse-calculator","right-triangle-calculator"]]);
+const firstFiftyExistingUpgrades = new Set(["discount-calculator","mortgage-payment-calculator","work-hours-calculator","overtime-pay-calculator-global"]);
+const firstFiftyCanonicalSlugs = new Set([...semrushPhaseOneSlugs, ...semrushPhaseOneBSlugs, ...firstFiftyExistingUpgrades].filter(slug => !firstFiftyCanonicalAliases.has(slug)));
+const firstFiftySourceRequired = new Set(["period-calculator","army-waist-height-ratio-calculator","401k-calculator","ap-world-score-calculator","ap-biology-score-calculator","womens-bmi-calculator","ap-chemistry-score-calculator","air-force-pt-test-calculator","dog-pregnancy-calculator","paycheck-estimator-calculator","mortgage-payment-calculator","overtime-pay-calculator-global"]);
 const ecommerceTitles = new Map(), ecommerceDescriptions = new Map(), ecommerceKeywords = new Map();
 const financeTitles = new Map(), financeDescriptions = new Map(), financeKeywords = new Map();
 for (const { slug, html } of globalPages) {
@@ -150,23 +154,46 @@ for (const slug of financeExpansionSlugs) {
   if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
 }
 for (const slug of semrushPhaseOneBSlugs) {
-  if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
-  if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
+  const aliasTarget = firstFiftyCanonicalAliases.get(slug);
+  if (!aliasTarget && !globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
+  if (!aliasTarget && !globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
+  if (aliasTarget && (globalDirectory.includes(`/tools/${slug}/`) || globalSitemap.includes(`/tools/${slug}/`))) failures.push(`global ${slug}: duplicate alias should not be directory or sitemap listed`);
   const page = globalPages.find(item => item.slug === slug);
   if (!page) failures.push(`global ${slug}: page was not generated`);
   else {
     for (const schemaType of ["WebApplication","FAQPage","HowTo","BreadcrumbList"]) if (!page.html.includes(schemaType)) failures.push(`global ${slug}: missing ${schemaType} schema`);
     if ((page.html.match(/href="\/tools\//g) || []).length < 5) failures.push(`global ${slug}: insufficient related internal links`);
+    if (!page.html.includes("Search intent and calculator coverage")) failures.push(`global ${slug}: missing first-50 intent audit`);
+    if (aliasTarget) {
+      if (!page.html.includes(`rel="canonical" href="https://solvepilot.xyz/tools/${aliasTarget}/"`)) failures.push(`global ${slug}: canonical does not point to ${aliasTarget}`);
+      if (!page.html.includes('name="robots" content="noindex, follow"')) failures.push(`global ${slug}: alias must be noindex, follow`);
+    }
   }
 }
 for (const slug of semrushPhaseOneSlugs) {
-  if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
-  if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
+  const aliasTarget = firstFiftyCanonicalAliases.get(slug);
+  if (!aliasTarget && !globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
+  if (!aliasTarget && !globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
   const page = globalPages.find(item => item.slug === slug);
   if (!page) failures.push(`global ${slug}: page was not generated`);
   else {
     for (const schemaType of ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList"]) if (!page.html.includes(schemaType)) failures.push(`global ${slug}: missing ${schemaType} schema`);
     if ((page.html.match(/href="\/tools\//g) || []).length < 5) failures.push(`global ${slug}: insufficient related internal links`);
+    if (aliasTarget && (!page.html.includes(`rel="canonical" href="https://solvepilot.xyz/tools/${aliasTarget}/"`) || !page.html.includes('name="robots" content="noindex, follow"'))) failures.push(`global ${slug}: canonical alias metadata is incorrect`);
+  }
+}
+for (const slug of firstFiftyCanonicalSlugs) {
+  const page = globalPages.find(item => item.slug === slug);
+  if (!page) failures.push(`first-50 ${slug}: canonical page was not generated`);
+  else {
+    const text = visibleText(page.html);
+    if (text.split(" ").filter(Boolean).length < 900) failures.push(`first-50 ${slug}: fewer than 900 rendered words`);
+    if (!page.html.includes("Search intent and calculator coverage")) failures.push(`first-50 ${slug}: missing intent coverage section`);
+    for (const schemaType of ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList"]) if (!page.html.includes(schemaType)) failures.push(`first-50 ${slug}: missing ${schemaType} schema`);
+    if ((page.html.match(/href="\/tools\//g) || []).length < 5) failures.push(`first-50 ${slug}: fewer than five related internal links`);
+    if (firstFiftySourceRequired.has(slug) && !/https:\/\/(?:www\.)?(?:irs\.gov|apcentral\.collegeboard\.org|www\.army\.mil|www\.afpc\.af\.mil|www\.cdc\.gov|www\.merckvetmanual\.com|www\.nhs\.uk|www\.consumerfinance\.gov|www\.dol\.gov)/i.test(page.html)) failures.push(`first-50 ${slug}: missing an authoritative reference link`);
+    if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`first-50 ${slug}: missing from searchable tools directory`);
+    if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`first-50 ${slug}: missing from sitemap`);
   }
 }
 for (const slug of globalEducationSlugs) {
@@ -181,9 +208,9 @@ for (const slug of globalEducationSlugs) {
   }
 }
 const ecommerceHeader = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
-if (!ecommerceHeader.includes("globalTools.map")) failures.push("site search: global e-commerce tools are not connected");
+if (!ecommerceHeader.includes("globalTools.filter(t=>!t.canonicalSlug).map") || !ecommerceHeader.includes("searchText")) failures.push("site search: canonical global tools are not connected or indexed aliases are being added");
 const ecommerceHome = readFileSync(join(process.cwd(), "out", "index.html"), "utf8");
-if (!ecommerceHome.includes("125") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated global-tool count is missing");
+if (!ecommerceHome.includes("138") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
 
 const insightPages = [...pages, ...globalPages].filter(({ html }) => html.includes("How to interpret your result"));
 const curatedInsightPages = insightPages.filter(({ html }) => html.includes('data-insight-tier="curated"'));

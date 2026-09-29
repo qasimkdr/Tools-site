@@ -23,7 +23,7 @@ export default function sitemap():MetadataRoute.Sitemap{
   ...imageTools.map(t=>monthly(base+"/image-tools/"+t.slug+"/","2026-09-23")),
   ...documentTools.map(t=>monthly(base+"/document-tools/"+t.slug+"/","2026-09-25")),
   ...pdfTools.map(t=>monthly(base+"/pdf-tools/"+t.slug+"/","2026-09-23")),
-  ...globalTools.map(t=>monthly(base+"/tools/"+t.slug+"/",t.updatedAt)),
+  ...globalTools.filter(t=>!t.canonicalSlug).map(t=>monthly(base+"/tools/"+t.slug+"/",t.updatedAt)),
   ...guides.map(g=>monthly(base+"/guides/"+g.slug+"/",g.reviewedAt)),
   ...tools.map(t=>monthly(base+"/pk/tools/"+t.slug+"/",t.updatedAt))
  ];
