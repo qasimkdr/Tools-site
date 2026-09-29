@@ -1,4 +1,5 @@
 import type { Tool } from "@/lib/tools";
+import { semrushBatchOneTools } from "@/lib/semrush-batch-one-tools";
 import { globalFinanceTools } from "@/lib/global-finance-tools";
 import { ecommerceTools } from "@/lib/ecommerce-tools";
 import { globalFinanceExpansionTools } from "@/lib/global-finance-expansion";
@@ -323,6 +324,7 @@ export const globalTools: Tool[] = [
   ...globalFinanceExpansionTools,
   ...globalEducationTools,
   ...seoFinanceTools,
+  ...semrushBatchOneTools,
 ];
 
 export const getGlobalTool = (slug: string) =>
