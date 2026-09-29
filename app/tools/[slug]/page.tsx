@@ -9,6 +9,7 @@ import { insightForTool } from "@/lib/flagship-content";
 import { getGlobalTool, globalTools } from "@/lib/global-tools";
 import { seoDescription } from "@/lib/seo-metadata";
 import { CollegeAdmissionEditorial } from "@/components/CollegeAdmissionEditorial";
+import { auditForTool } from "@/lib/semrush-batch-one-audit";
 
 export function generateStaticParams() {
   return globalTools.map(({ slug }) => ({ slug }));
@@ -53,6 +54,7 @@ export default async function GlobalToolPage({
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
   const flagship = insightForTool(tool);
+  const semrushAudit = auditForTool(tool);
   const related = globalTools
     .filter((item) => item.slug !== tool.slug)
     .sort(
@@ -182,6 +184,17 @@ export default async function GlobalToolPage({
             <h2>Worked calculation example</h2>
             <p>{tool.example}</p>
             {flagship && <FlagshipInsights content={flagship} />}
+            {semrushAudit && <section className="semrush-intent-audit">
+              <h2>Search intent and calculator coverage</h2>
+              <p>{semrushAudit.interpretation}</p>
+              <h3>Questions this calculator is designed to answer</h3>
+              <ul>{semrushAudit.keywordThemes.map((theme)=><li key={theme}>{theme}</li>)}</ul>
+              <h2>Useful scenarios</h2>
+              <div className="guide-table-wrap"><table><thead><tr><th>Scenario</th><th>Why it matters</th></tr></thead><tbody>{semrushAudit.scenarios.map((scenario)=>{const [label,...rest]=scenario.split(" — ");return <tr key={scenario}><td>{label}</td><td>{rest.join(" — ")}</td></tr>})}</tbody></table></div>
+              <h2>Common mistakes for this calculation</h2>
+              <ul className="mistake-list">{semrushAudit.mistakes.map((mistake)=><li key={mistake}>{mistake}</li>)}</ul>
+              <div className="verification-box"><b>Verification for this calculator</b><p>{semrushAudit.verification}</p><small>{semrushAudit.sourceNote}</small></div>
+            </section>}
             {tool.slug === "college-admission-chances-calculator" && (
               <CollegeAdmissionEditorial />
             )}
