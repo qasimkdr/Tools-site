@@ -45,7 +45,7 @@ Last verified: **29 September 2026**
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 95 |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 125 |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,11 +54,15 @@ Last verified: **29 September 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 35 |
 
-The production build is expected to generate **456 static pages** after the first Semrush batch slice. The content gate recognizes **181 Pakistan calculators, 95 global calculators, 48 Phase 6 generators, 20 new archive/data/subtitle tools and 35 guides**.
+The production build is expected to generate **486 static pages** after the complete first Semrush batch. The content gate recognizes **181 Pakistan calculators, 125 global calculators, 48 Phase 6 generators, 20 new archive/data/subtitle tools and 35 guides**.
 
 Completed major phases include Pakistan calculator expansion, global calculators, Phase 5A browser file tools, Phase 6 generators and the 25-tool global finance expansion.
 
-The 29 September Semrush Batch 1A expansion added 16 new global calculators and upgraded the existing Discount Calculator, covering the first 17 roadmap targets without duplicate intent pages. New definitions live in `lib/semrush-phase-one-tools.ts` and logic in `components/calculators/semrush-phase-one.ts`. The Ratio and Sand clusters were cleaned of unrelated keywords; the Army page follows the July 2026 WHtR policy rather than the obsolete tape/body-fat formula; AP World uses current section weights without inventing an unofficial 1–5 cutoff.\n\nThe 29 September education expansion added one consolidated College Admission Chances Calculator for the verified college-chance, acceptance-simulator and admission-predictor keyword cluster. Its definition lives in `lib/global-education-tools.ts`; duplicate pages for keyword variants are prohibited.
+The 29 September Semrush Batch 1B expansion completed the first 50 roadmap targets by adding 30 more global calculators, upgrading existing Mortgage Payment, Work Hours and Overtime pages instead of duplicating them, and replacing the malformed `finance finance calculator` candidate with the next valid Scientific Notation Calculator opportunity. Definitions live in `lib/semrush-phase-one-b-tools.ts` and logic in `components/calculators/semrush-phase-one-b.ts`. Automated keyword merges were manually cleaned before publication.
+
+The 29 September Semrush Batch 1A expansion added 16 new global calculators and upgraded the existing Discount Calculator, covering the first 17 roadmap targets without duplicate intent pages. New definitions live in `lib/semrush-phase-one-tools.ts` and logic in `components/calculators/semrush-phase-one.ts`. The Ratio and Sand clusters were cleaned of unrelated keywords; the Army page follows the July 2026 WHtR policy rather than the obsolete tape/body-fat formula; AP World uses current section weights without inventing an unofficial 1–5 cutoff.
+
+The 29 September education expansion added one consolidated College Admission Chances Calculator for the verified college-chance, acceptance-simulator and admission-predictor keyword cluster. Its definition lives in `lib/global-education-tools.ts`; duplicate pages for keyword variants are prohibited.
 
 The 29 September Semrush Phase 1–2 expansion consolidated low-KD finance queries into six new global calculators, upgraded the existing Credit Card Payoff Calculator, and added ten distinct auto-finance guides. Tool definitions live in `lib/seo-finance-tools.ts`, calculator logic in `components/calculators/seo-finance.ts`, and editorial guides in `lib/auto-finance-guides.ts`. Close keyword variants must continue to target these canonical pages rather than new duplicate URLs.
 
