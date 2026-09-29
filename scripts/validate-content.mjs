@@ -92,6 +92,8 @@ const globalPages = readdirSync(globalRoot, { withFileTypes: true })
 const ecommerceSlugs = new Set(["roas-calculator","break-even-roas-calculator","cost-per-acquisition-calculator","customer-acquisition-cost-calculator","customer-lifetime-value-calculator","average-order-value-calculator","ecommerce-profit-per-order-calculator","discount-profit-impact-calculator","return-refund-impact-calculator","inventory-reorder-point-calculator","dimensional-weight-calculator","ad-budget-sales-target-calculator"]);
 const financeExpansionSlugs = new Set(["debt-snowball-vs-avalanche-calculator","credit-card-minimum-payment-calculator","credit-card-payoff-calculator","credit-card-utilization-calculator","investment-fee-calculator","inflation-adjusted-return-calculator","dollar-cost-averaging-calculator","lump-sum-vs-dca-calculator","coast-fire-calculator","fire-number-calculator","savings-rate-calculator","dividend-reinvestment-calculator","portfolio-rebalancing-calculator","capital-gains-calculator-global","tiered-commission-calculator","prorated-salary-calculator","pay-raise-percentage-calculator","overtime-pay-calculator-global","invoice-due-date-calculator","net-payment-terms-calculator","invoice-discount-calculator","freelance-project-profit-calculator","saas-pricing-calculator","debt-service-coverage-ratio-calculator","merchant-processing-fee-calculator","real-estate-lawyer-cost-calculator","car-lease-vs-buy-calculator","seller-net-sheet-calculator","seller-financing-calculator","mortgage-buydown-calculator","first-lien-heloc-calculator"]);
 const globalEducationSlugs = new Set(["college-admission-chances-calculator"]);
+const semrushBatchOneSlugs = new Set(["date-from-today-calculator","payment-calculator","proportion-calculator","interest-rate-calculator","ratio-calculator","age-calculator","hypotenuse-calculator","period-calculator","random-number-generator","cubic-yard-calculator","gravel-and-stone-calculator","army-body-fat-calculator","401k-calculator","sand-calculator","right-triangle-calculator","ap-world-history-score-calculator","gpa-calculator","square-footage-calculator","bench-press-max-calculator","triangle-calculator","molecular-weight-calculator","bowling-score-calculator","air-force-pt-test-calculator","square-root-calculator","fraction-calculator","how-many-years-calculator","cylinder-volume-calculator","date-calculator","hourly-wage-and-tax-calculator","asphalt-calculator","ap-biology-score-calculator","womens-bmi-calculator","ap-chemistry-score-calculator","concrete-calculator","npv-calculator","weeks-calculator","half-birthday-calculator","paycheck-hours-calculator","dog-pregnancy-calculator","binary-calculator","paycheck-estimator-calculator","pool-salt-calculator","rafter-length-calculator","air-force-pt-calculator","stair-calculator","scientific-notation-calculator"]);
+
 const ecommerceTitles = new Map(), ecommerceDescriptions = new Map(), ecommerceKeywords = new Map();
 const financeTitles = new Map(), financeDescriptions = new Map(), financeKeywords = new Map();
 for (const { slug, html } of globalPages) {
@@ -101,7 +103,7 @@ for (const { slug, html } of globalPages) {
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
   const faqs = (html.match(/<details/g) || []).length;
-  const minimumWords = ecommerceSlugs.has(slug) || financeExpansionSlugs.has(slug) || globalEducationSlugs.has(slug) ? 900 : 380;
+  const minimumWords = ecommerceSlugs.has(slug) || financeExpansionSlugs.has(slug) || globalEducationSlugs.has(slug) || semrushBatchOneSlugs.has(slug) ? 900 : 380;
   if (words < minimumWords) failures.push(`global ${slug}: only ${words} rendered words (minimum ${minimumWords})`);
   if (h2s < 7) failures.push(`global ${slug}: only ${h2s} H2 sections (minimum 7)`);
   if (faqs < 5) failures.push(`global ${slug}: only ${faqs} FAQs (minimum 5)`);
@@ -146,6 +148,16 @@ for (const slug of financeExpansionSlugs) {
   if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
   if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
 }
+for (const slug of semrushBatchOneSlugs) {
+  if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
+  if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
+  const page = globalPages.find(item => item.slug === slug);
+  if (!page) failures.push(`global ${slug}: page was not generated`);
+  else {
+    for (const schemaType of ["WebApplication","FAQPage","HowTo","BreadcrumbList"]) if (!page.html.includes(schemaType)) failures.push(`global ${slug}: missing ${schemaType} schema`);
+    if ((page.html.match(/href="\\/tools\\//g) || []).length < 5) failures.push(`global ${slug}: insufficient related internal links`);
+  }
+}
 for (const slug of globalEducationSlugs) {
   if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
   if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
@@ -160,7 +172,7 @@ for (const slug of globalEducationSlugs) {
 const ecommerceHeader = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
 if (!ecommerceHeader.includes("globalTools.map")) failures.push("site search: global e-commerce tools are not connected");
 const ecommerceHome = readFileSync(join(process.cwd(), "out", "index.html"), "utf8");
-if (!ecommerceHome.includes("79") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated global-tool count is missing");
+if (!ecommerceHome.includes("125") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated global-tool count is missing");
 
 const insightPages = [...pages, ...globalPages].filter(({ html }) => html.includes("How to interpret your result"));
 const curatedInsightPages = insightPages.filter(({ html }) => html.includes('data-insight-tier="curated"'));
@@ -309,7 +321,7 @@ if (!homeHtml.includes("Archive tools")) failures.push("homepage: archive catego
 if ([...requestedFileSlugs].some(slug=>!sitemapXml.includes(`/${slug}/`))) failures.push("requested file tools: one or more URLs are missing from sitemap");
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
-if (globalPages.length !== 79) failures.push(`79 global tools expected but ${globalPages.length} pages generated`);
+if (globalPages.length !== 125) failures.push(`125 global tools expected but ${globalPages.length} pages generated`);
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);
