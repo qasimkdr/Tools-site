@@ -3,7 +3,9 @@ import { globalFinanceTools } from "@/lib/global-finance-tools";
 import { ecommerceTools } from "@/lib/ecommerce-tools";
 import { globalFinanceExpansionTools } from "@/lib/global-finance-expansion";
 import { globalEducationTools } from "@/lib/global-education-tools";
-import { seoFinanceTools } from "@/lib/seo-finance-tools";\nimport { semrushPhaseOneTools } from "@/lib/semrush-phase-one-tools";
+import { seoFinanceTools } from "@/lib/seo-finance-tools";
+import { semrushPhaseOneTools } from "@/lib/semrush-phase-one-tools";
+import { semrushPhaseOneBTools } from "@/lib/semrush-phase-one-b-tools";
 
 type Seed = Pick<
   Tool,
@@ -279,10 +281,15 @@ const questions = (tool: Seed) => [
   },
 ];
 
+const roadmapKeywordUpgrades: Record<string,string[]> = {
+  "mortgage-payment-calculator": ["mortgage calculator","mortgage payment calculator","monthly mortgage calculator with taxes and insurance","mortgage calculator with payment"],
+  "work-hours-calculator": ["hours calculator","calculate work hours","calculate hours worked","clock out calculator","8 hour shift calculator"],
+};
+
 const originalGlobalTools: Tool[] = seeds.map((tool) => ({
   ...tool,
   updatedAt: "2026-09-21",
-  keywords: [
+  keywords: roadmapKeywordUpgrades[tool.slug] || [
     tool.title.toLowerCase(),
     `free ${tool.shortTitle.toLowerCase()} calculator`,
     `online ${tool.shortTitle.toLowerCase()} tool`,
