@@ -3,7 +3,9 @@ import { globalFinanceTools } from "@/lib/global-finance-tools";
 import { ecommerceTools } from "@/lib/ecommerce-tools";
 import { globalFinanceExpansionTools } from "@/lib/global-finance-expansion";
 import { globalEducationTools } from "@/lib/global-education-tools";
-import { seoFinanceTools } from "@/lib/seo-finance-tools";\nimport { semrushPhaseOneTools } from "@/lib/semrush-phase-one-tools";
+import { seoFinanceTools } from "@/lib/seo-finance-tools";
+import { semrushPhaseOneTools } from "@/lib/semrush-phase-one-tools";
+import { semrushPhaseOneBTools } from "@/lib/semrush-phase-one-b-tools";
 
 type Seed = Pick<
   Tool,
