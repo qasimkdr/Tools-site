@@ -356,7 +356,6 @@ export const calculatorDefaults: Record<string, CalculatorDefaults> = {
   "semester-gpa-calculator": ["56", "16", "4"],
   "required-final-exam-marks-calculator": ["48", "70", "30"],
   "study-time-planner": ["40", "16", "12", "3"],
-  "age-calculator": ["2000", "6", "15"],
   "date-duration-calculator": ["20260101", "20260201", "0"],
   "bmi-calculator": ["70", "175", "0"],
   "daily-calorie-requirement-estimator": ["70", "175", "25", "1.55"],
