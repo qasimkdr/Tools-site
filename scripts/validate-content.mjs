@@ -155,7 +155,7 @@ for (const slug of semrushBatchOneSlugs) {
   if (!page) failures.push(`global ${slug}: page was not generated`);
   else {
     for (const schemaType of ["WebApplication","FAQPage","HowTo","BreadcrumbList"]) if (!page.html.includes(schemaType)) failures.push(`global ${slug}: missing ${schemaType} schema`);
-    if ((page.html.match(/href="\\/tools\\//g) || []).length < 5) failures.push(`global ${slug}: insufficient related internal links`);
+    if ((page.html.match(/href="\/tools\//g) || []).length < 5) failures.push(`global ${slug}: insufficient related internal links`);
   }
 }
 for (const slug of globalEducationSlugs) {
