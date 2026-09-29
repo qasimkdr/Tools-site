@@ -23,7 +23,7 @@ const expansionSlugs=new Set(["debt-snowball-vs-avalanche-calculator","credit-ca
 const seoFinanceSlugs=new Set(["real-estate-lawyer-cost-calculator","car-lease-vs-buy-calculator","seller-net-sheet-calculator","seller-financing-calculator","mortgage-buydown-calculator","first-lien-heloc-calculator"]);
 const semrushBatchOneSlugs=new Set(["payment-calculator","interest-rate-calculator","401k-calculator","hourly-wage-and-tax-calculator","npv-calculator","paycheck-hours-calculator","paycheck-estimator-calculator"]);
 
-function Field({label,value,onChange,suffix}:{label:string;value:string;onChange:(value:string)=>void;suffix?:string}){const date=suffix==="date",text=suffix==="text";return <label className="field"><span>{label}</span><div><input type={date?"date":"text"} inputMode={date||text?undefined:"decimal"} value={value} onChange={(event)=>onChange(event.target.value)} aria-label={label}/>{suffix&&!date&&<b>{suffix}</b>}</div></label>}
+function Field({label,value,onChange,suffix}:{label:string;value:string;onChange:(value:string)=>void;suffix?:string}){const date=suffix==="date",text=suffix==="text";return <label className="field"><span>{label}</span><div><input type={date?"date":"text"} inputMode={date||text?undefined:"decimal"} value={value} onChange={(event)=>onChange(event.target.value)} aria-label={label}/>{suffix&&!date&&!text&&<b>{suffix}</b>}</div></label>}
 
 export function Calculator({slug,currencyNeutral=false}:{slug:string;currencyNeutral?:boolean}){
  const initial=calculatorDefaults[slug]||["20","5000","0"];
