@@ -280,10 +280,16 @@ const questions = (tool: Seed) => [
   },
 ];
 
+const keywordUpgrades: Record<string,string[]> = {
+  "discount-calculator": ["discount calculator","percent discount calculator","off percent calculator","how to calculate discount percentage","how to calculate discount"],
+  "mortgage-payment-calculator": ["mortgage calculator","mortgage payment calculator","monthly mortgage calculator with taxes and insurance","mortgage calculator with payment"],
+  "work-hours-calculator": ["hours calculator","calculate work hours","calculate hours worked","clock out calculator","8 hour shift calculator"],
+};
+
 const originalGlobalTools: Tool[] = seeds.map((tool) => ({
   ...tool,
   updatedAt: "2026-09-21",
-  keywords: [
+  keywords: keywordUpgrades[tool.slug] || [
     tool.title.toLowerCase(),
     `free ${tool.shortTitle.toLowerCase()} calculator`,
     `online ${tool.shortTitle.toLowerCase()} tool`,
