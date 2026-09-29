@@ -81,7 +81,10 @@ The 25 September file expansion checked 25 requested ideas, reused five existing
 - `lib/image-tools.ts`: image utilities.
 - `lib/media-tools.ts`: video, audio and subtitle utilities.
 - `lib/archive-tools.ts`: ZIP creation, extraction, protection and archive-conversion utilities.
-- `lib/generator-tools.ts`: QR, barcode and business-document generators.\n- `lib/productivity-tools.ts`: career and student/office generators.\n- `lib/creator-tools.ts`: social and creator generators.\n- `lib/ecommerce-tools.ts`: global E-commerce and Ads calculators.
+- `lib/generator-tools.ts`: QR, barcode and business-document generators.
+- `lib/productivity-tools.ts`: career and student/office generators.
+- `lib/creator-tools.ts`: social and creator generators.
+- `lib/ecommerce-tools.ts`: global E-commerce and Ads calculators.
 
 ### Calculator system
 
