@@ -1,6 +1,23 @@
 export type CalculatorDefaults = [string, string, string, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  "grade-calculator":["82","85","30"],
+  "decimal-time-converter":["2.5","2","30"],
+  "modified-adjusted-gross-income-calculator":["80000","3000","0"],
+  "money-market-calculator":["10000","250","4","5"],
+  "confidence-interval-calculator":["100","15","100","95"],
+  "superscript-generator":["x2","0","0"],
+  "earned-run-average-calculator":["4","18","0"],
+  "ap-statistics-score-calculator":["70","60","0"],
+  "gcf-calculator":["48","18","0"],
+  "apr-calculator":["20000","1200","4","12"],
+  "wire-size-calculator":["20","100","120","3"],
+  "cone-volume-calculator":["3","4","0"],
+  "normal-cdf-calculator":["0","0","1"],
+  "matrix-inverse-calculator":["1","2","3","4"],
+  "voltage-drop-calculator":["20","100","1.588","120"],
+  "fill-dirt-calculator":["20","10","0.5"],
+  "board-foot-calculator":["2","6","8","1"],
   "gpa-calculator": ["4","3","3","3","4"],
   "square-footage-calculator": ["12","10","1"],
   "bench-press-max-calculator": ["100","5","0"],
