@@ -1,6 +1,6 @@
 export type CalculatorDefaults = [string, string, string, string?, string?];
 
-export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+export const calculatorDefaults: Record<string, CalculatorDefaults> = {\n  "date-from-today-calculator": ["2026-09-29", "14", "0"],\n  "payment-calculator": ["25000", "7", "5", "12"],\n  "proportion-calculator": ["3", "5", "12"],\n  "interest-rate-calculator": ["10000", "12100", "2"],\n  "ratio-calculator": ["18", "24", "12"],\n  "age-calculator": ["2000-06-15", "2026-09-29", "0"],\n  "hypotenuse-calculator": ["3", "4", "0"],\n  "period-calculator": ["2026-09-01", "28", "5"],\n  "random-number-generator": ["1", "100", "1"],\n  "cubic-yard-calculator": ["12", "9", "0.5"],\n  "gravel-stone-calculator": ["20", "10", "4", "100"],\n  "army-waist-height-ratio-calculator": ["34", "70", "0"],\n  "401k-calculator": ["50000", "8000", "4000", "6", "20"],\n  "sand-calculator": ["15", "10", "2", "100"],\n  "right-triangle-calculator": ["3", "4", "0"],\n  "ap-world-score-calculator": ["80", "70", "75", "70"],
   "real-estate-lawyer-cost-calculator": ["1200", "250", "4", "500", "200"],
   "car-lease-vs-buy-calculator": ["3000", "450", "5000", "650", "22000"],
   "seller-net-sheet-calculator": ["400000", "220000", "5", "8000", "3000"],
