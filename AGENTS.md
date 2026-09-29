@@ -45,7 +45,7 @@ Last verified: **29 September 2026**
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 79 |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 125 |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,9 +54,11 @@ Last verified: **29 September 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 35 |
 
-The production build currently generates **440 static pages**. The content gate recognizes **181 Pakistan calculators, 79 global calculators, 48 Phase 6 generators, 20 new archive/data/subtitle tools and 35 guides**.
+The production build currently generates **486 static pages**. The content gate recognizes **181 Pakistan calculators, 125 global calculators, 48 Phase 6 generators, 20 new archive/data/subtitle tools and 35 guides**.
 
 Completed major phases include Pakistan calculator expansion, global calculators, Phase 5A browser file tools, Phase 6 generators and the 25-tool global finance expansion.
+The 29 September Semrush Batch 1 expansion adds 46 new global calculator URLs and upgrades four existing intents (Discount, Mortgage Payment, Work Hours and Overtime) instead of creating duplicates. Keyword clusters were manually cleaned where automated spreadsheet grouping mixed unrelated intent. New definitions live in `lib/semrush-batch-one-tools.ts` and calculation logic in `components/calculators/semrush-batch-one.ts`. The malformed `finance finance calculator` candidate was rejected and replaced by the next valid Scientific Notation Calculator opportunity.
+
 
 The 29 September education expansion added one consolidated College Admission Chances Calculator for the verified college-chance, acceptance-simulator and admission-predictor keyword cluster. Its definition lives in `lib/global-education-tools.ts`; duplicate pages for keyword variants are prohibited.
 
