@@ -6,6 +6,7 @@ import { globalEducationTools } from "@/lib/global-education-tools";
 import { seoFinanceTools } from "@/lib/seo-finance-tools";
 import { semrushPhaseOneTools } from "@/lib/semrush-phase-one-tools";
 import { semrushPhaseOneBTools } from "@/lib/semrush-phase-one-b-tools";
+import { semrushPhaseTwoATools } from "@/lib/semrush-phase-two-a-tools";
 
 type Seed = Pick<
   Tool,
@@ -332,6 +333,7 @@ export const globalTools: Tool[] = [
   ...seoFinanceTools,
   ...semrushPhaseOneTools,
   ...semrushPhaseOneBTools,
+  ...semrushPhaseTwoATools,
 ];
 
 export const getGlobalTool = (slug: string) =>
