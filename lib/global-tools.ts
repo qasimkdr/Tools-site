@@ -330,6 +330,8 @@ export const globalTools: Tool[] = [
   ...globalFinanceExpansionTools,
   ...globalEducationTools,
   ...seoFinanceTools,
+  ...semrushPhaseOneTools,
+  ...semrushPhaseOneBTools,
 ];
 
 export const getGlobalTool = (slug: string) =>
