@@ -158,7 +158,17 @@ for (const slug of semrushPhaseOneBSlugs) {
     if ((page.html.match(/href="\/tools\//g) || []).length < 5) failures.push(`global ${slug}: insufficient related internal links`);
   }
 }
-for (const slug of semrushPhaseOneSlugs) {\n  if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);\n  if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);\n  const page = globalPages.find(item => item.slug === slug);\n  if (!page) failures.push(`global ${slug}: page was not generated`);\n  else {\n    for (const schemaType of ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList"]) if (!page.html.includes(schemaType)) failures.push(`global ${slug}: missing ${schemaType} schema`);\n    if ((page.html.match(/href="\\/tools\\//g) || []).length < 5) failures.push(`global ${slug}: insufficient related internal links`);\n  }\n}\nfor (const slug of globalEducationSlugs) {
+for (const slug of semrushPhaseOneSlugs) {
+  if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
+  if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
+  const page = globalPages.find(item => item.slug === slug);
+  if (!page) failures.push(`global ${slug}: page was not generated`);
+  else {
+    for (const schemaType of ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList"]) if (!page.html.includes(schemaType)) failures.push(`global ${slug}: missing ${schemaType} schema`);
+    if ((page.html.match(/href="\/tools\//g) || []).length < 5) failures.push(`global ${slug}: insufficient related internal links`);
+  }
+}
+for (const slug of globalEducationSlugs) {
   if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from tools directory`);
   if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`global ${slug}: missing from sitemap`);
   const page = globalPages.find(item => item.slug === slug);
