@@ -1,6 +1,12 @@
 export type CalculatorDefaults = [string, string, string, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  "circle-skirt-calculator": ["30", "24", "full", "2", "45"],
+  "cross-stitch-calculator": ["140", "100", "14", "3"],
+  "hypergeometric-calculator": ["52", "4", "5", "1"],
+  "stud-calculator": ["12", "16", "4", "10"],
+  "soffit-calculator": ["80", "18", "12", "10"],
+  "ap-english-language-and-composition-score-calculator": ["32", "4", "4", "4"],
   "grade-calculator":["82","85","30"],
   "decimal-time-converter":["2.5","2","30"],
   "modified-adjusted-gross-income-calculator":["80000","3000","0"],

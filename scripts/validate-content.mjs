@@ -93,6 +93,7 @@ const ecommerceSlugs = new Set(["roas-calculator","break-even-roas-calculator","
 const financeExpansionSlugs = new Set(["debt-snowball-vs-avalanche-calculator","credit-card-minimum-payment-calculator","credit-card-payoff-calculator","credit-card-utilization-calculator","investment-fee-calculator","inflation-adjusted-return-calculator","dollar-cost-averaging-calculator","lump-sum-vs-dca-calculator","coast-fire-calculator","fire-number-calculator","savings-rate-calculator","dividend-reinvestment-calculator","portfolio-rebalancing-calculator","capital-gains-calculator-global","tiered-commission-calculator","prorated-salary-calculator","pay-raise-percentage-calculator","overtime-pay-calculator-global","invoice-due-date-calculator","net-payment-terms-calculator","invoice-discount-calculator","freelance-project-profit-calculator","saas-pricing-calculator","debt-service-coverage-ratio-calculator","merchant-processing-fee-calculator","real-estate-lawyer-cost-calculator","car-lease-vs-buy-calculator","seller-net-sheet-calculator","seller-financing-calculator","mortgage-buydown-calculator","first-lien-heloc-calculator"]);
 const globalEducationSlugs = new Set(["college-admission-chances-calculator"]);
 const semrushPhaseTwoASlugs = new Set(["grade-calculator","decimal-time-converter","modified-adjusted-gross-income-calculator","money-market-calculator","confidence-interval-calculator","superscript-generator","earned-run-average-calculator","ap-statistics-score-calculator","gcf-calculator","apr-calculator","wire-size-calculator","cone-volume-calculator","normal-cdf-calculator","matrix-inverse-calculator","voltage-drop-calculator","fill-dirt-calculator","board-foot-calculator"]);
+const semrushPhaseThreeSlugs = new Set(["circle-skirt-calculator","cross-stitch-calculator","hypergeometric-calculator","stud-calculator","soffit-calculator","ap-english-language-and-composition-score-calculator"]);
 const semrushPhaseOneSlugs = new Set(["date-from-today-calculator","payment-calculator","proportion-calculator","interest-rate-calculator","ratio-calculator","age-calculator","hypotenuse-calculator","period-calculator","random-number-generator","cubic-yard-calculator","gravel-stone-calculator","army-waist-height-ratio-calculator","401k-calculator","sand-calculator","right-triangle-calculator","ap-world-score-calculator"]);
 const semrushPhaseOneBSlugs = new Set(["gpa-calculator","square-footage-calculator","bench-press-max-calculator","triangle-calculator","molecular-weight-calculator","bowling-score-calculator","air-force-pt-test-calculator","square-root-calculator","fraction-calculator","how-many-years-calculator","cylinder-volume-calculator","date-calculator","hourly-wage-and-tax-calculator","asphalt-calculator","ap-biology-score-calculator","womens-bmi-calculator","ap-chemistry-score-calculator","concrete-calculator","npv-calculator","weeks-calculator","half-birthday-calculator","paycheck-hours-calculator","dog-pregnancy-calculator","binary-calculator","paycheck-estimator-calculator","pool-salt-calculator","rafter-length-calculator","air-force-pt-calculator","stair-calculator","scientific-notation-calculator"]);
 const firstFiftyCanonicalAliases = new Map([["air-force-pt-calculator","air-force-pt-test-calculator"],["hourly-wage-and-tax-calculator","paycheck-estimator-calculator"],["date-calculator","date-from-today-calculator"],["hypotenuse-calculator","right-triangle-calculator"],["proportion-calculator","ratio-calculator"]]);
@@ -108,7 +109,7 @@ for (const { slug, html } of globalPages) {
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
   const faqs = (html.match(/<details/g) || []).length;
-  const minimumWords = ecommerceSlugs.has(slug) || financeExpansionSlugs.has(slug) || globalEducationSlugs.has(slug) || semrushPhaseOneSlugs.has(slug) || semrushPhaseOneBSlugs.has(slug) || semrushPhaseTwoASlugs.has(slug) ? 900 : 380;
+  const minimumWords = ecommerceSlugs.has(slug) || financeExpansionSlugs.has(slug) || globalEducationSlugs.has(slug) || semrushPhaseOneSlugs.has(slug) || semrushPhaseOneBSlugs.has(slug) || semrushPhaseTwoASlugs.has(slug) || semrushPhaseThreeSlugs.has(slug) ? 900 : 380;
   if (words < minimumWords) failures.push(`global ${slug}: only ${words} rendered words (minimum ${minimumWords})`);
   if (h2s < 7) failures.push(`global ${slug}: only ${h2s} H2 sections (minimum 7)`);
   if (faqs < 5) failures.push(`global ${slug}: only ${faqs} FAQs (minimum 5)`);
@@ -210,7 +211,41 @@ for (const slug of globalEducationSlugs) {
 const ecommerceHeader = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
 if (!ecommerceHeader.includes("globalTools.filter(t=>!t.canonicalSlug).map") || !ecommerceHeader.includes("searchText")) failures.push("site search: canonical global tools are not connected or indexed aliases are being added");
 const ecommerceHome = readFileSync(join(process.cwd(), "out", "index.html"), "utf8");
-if (!ecommerceHome.includes("137") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
+if (!ecommerceHome.includes("143") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
+
+const roadmapKeywordChecks = new Map([
+  ["cone-volume-calculator", ["cone volume calculator", "volume of a cone calculator", "volume of cone calculator", "cone volume formula", "volume of a cone", "volume of cone formula", "how to find the volume of a cone", "volume-cone", "volume of cone", "cone volume", "volume of a conical shape", "volume of a cone formula"]],
+  ["air-force-pt-test-calculator", ["af pt calculator"]],
+  ["fraction-calculator", ["fraction to fraction calculator"]],
+  ["grade-calculator", ["schoology grade calculator"]],
+  ["normal-cdf-calculator", ["normal cdf calculator"]],
+  ["matrix-inverse-calculator", ["inverse matrix calculator"]],
+  ["credit-card-payoff-calculator", ["credit card pay off calculator", "credit card calculator payoff", "pay off credit card calculator", "credit card payoff calculator", "credit card payoff estimator", "credit card debt payoff calculator", "cc payoff calculator", "credit card debt calculator", "pay off credit card debt calculator", "paying off credit card calculator", "calculate credit card payoff"]],
+  ["voltage-drop-calculator", ["voltage drop calculator", "voltage loss calculator", "how to calculate voltage drop", "southwire voltage drop calculator", "voltage drop calculation", "voltage drop calculations", "voltage drop", "calculate voltage drop", "how to compute voltage drop", "voltage and voltage drop"]],
+  ["fill-dirt-calculator", ["fill dirt calculator"]],
+  ["ap-statistics-score-calculator", ["ap statistics score calculator"]],
+  ["board-foot-calculator", ["bd ft calculator", "how to calculate board feet"]],
+  ["soffit-calculator", ["soffit calculator"]],
+  ["ap-english-language-and-composition-score-calculator", ["ap english language and composition score calculator"]],
+  ["circle-skirt-calculator", ["circle skirt calculator"]],
+  ["cross-stitch-calculator", ["cross stitch calculator"]],
+  ["hypergeometric-calculator", ["hypergeometric calculator"]],
+  ["stud-calculator", ["stud calculator"]],
+]);
+for (const [slug, terms] of roadmapKeywordChecks) {
+  const page = globalPages.find(item => item.slug === slug);
+  const keywords = page ? metaValue(page.html, "keywords").toLowerCase() : "";
+  for (const term of terms) if (!keywords.includes(term)) failures.push(`${slug}: missing roadmap keyword target ${term}`);
+}
+for (const slug of semrushPhaseThreeSlugs) {
+  const page = globalPages.find(item => item.slug === slug);
+  if (!page) failures.push(`roadmap tool ${slug}: page was not generated`);
+  else {
+    if (!metaValue(page.html, "keywords").toLowerCase().includes(slug.replaceAll("-", " ").replace(" calculator", " calculator"))) failures.push(`roadmap tool ${slug}: missing its primary keyword metadata`);
+    if (!globalDirectory.includes(`/tools/${slug}/`)) failures.push(`roadmap tool ${slug}: missing from searchable tools directory`);
+    if (!globalSitemap.includes(`/tools/${slug}/`)) failures.push(`roadmap tool ${slug}: missing from sitemap`);
+  }
+}
 
 const ratioPage = globalPages.find(item => item.slug === "ratio-calculator");
 const ratioKeywords = ratioPage ? metaValue(ratioPage.html, "keywords").toLowerCase() : "";
@@ -371,7 +406,7 @@ if (!homeHtml.includes("Archive tools")) failures.push("homepage: archive catego
 if ([...requestedFileSlugs].some(slug=>!sitemapXml.includes(`/${slug}/`))) failures.push("requested file tools: one or more URLs are missing from sitemap");
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
-if (globalPages.length !== 142) failures.push(`142 global tools expected but ${globalPages.length} pages generated`);
+if (globalPages.length !== 148) failures.push(`148 global tools expected but ${globalPages.length} pages generated`);
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);

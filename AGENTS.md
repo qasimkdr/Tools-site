@@ -45,7 +45,7 @@ Last verified: **1 October 2026**
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 137 canonical + 5 noindex aliases (142 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 143 canonical + 5 noindex aliases (148 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,7 +54,9 @@ Last verified: **1 October 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 35 |
 
-The production build is expected to generate **503 static pages** after the complete first Semrush batch. The content gate recognizes **181 Pakistan calculators, 137 indexable global calculators (142 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 35 guides**.
+The production build is expected to generate **509 static pages** after the Semrush roadmap ranks 69–85 update. The content gate recognizes **181 Pakistan calculators, 143 indexable global calculators (148 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 35 guides**.
+
+The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
 
 Completed major phases include Pakistan calculator expansion, global calculators, Phase 5A browser file tools, Phase 6 generators and the 25-tool global finance expansion.
 
