@@ -40,12 +40,12 @@ Prefer focused searches and small excerpts. Never repeatedly load large catalogs
 
 Update this section whenever a completed phase changes counts or architecture.
 
-Last verified: **29 September 2026**
+Last verified: **1 October 2026**
 
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 138 canonical + 4 noindex aliases (142 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 137 canonical + 5 noindex aliases (142 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,7 +54,7 @@ Last verified: **29 September 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 35 |
 
-The production build is expected to generate **503 static pages** after the complete first Semrush batch. The content gate recognizes **181 Pakistan calculators, 138 indexable global calculators (142 generated routes including four noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 35 guides**.
+The production build is expected to generate **503 static pages** after the complete first Semrush batch. The content gate recognizes **181 Pakistan calculators, 137 indexable global calculators (142 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 35 guides**.
 
 Completed major phases include Pakistan calculator expansion, global calculators, Phase 5A browser file tools, Phase 6 generators and the 25-tool global finance expansion.
 
@@ -65,6 +65,8 @@ The 29 September Semrush Batch 1A expansion added 16 new global calculators and 
 The 29 September education expansion added one consolidated College Admission Chances Calculator for the verified college-chance, acceptance-simulator and admission-predictor keyword cluster. Its definition lives in `lib/global-education-tools.ts`; duplicate pages for keyword variants are prohibited.
 
 The 29 September Semrush Phase 1–2 expansion consolidated low-KD finance queries into six new global calculators, upgraded the existing Credit Card Payoff Calculator, and added ten distinct auto-finance guides. Tool definitions live in `lib/seo-finance-tools.ts`, calculator logic in `components/calculators/seo-finance.ts`, and editorial guides in `lib/auto-finance-guides.ts`. Close keyword variants must continue to target these canonical pages rather than new duplicate URLs.
+
+The 1 October ratio-keyword expansion keeps the ratio calculator, ratio scale, ratio simplification, equivalent-ratio solving, ratio/fraction conversion and ratio/percentage conversion on the canonical `/tools/ratio-calculator/` page. Its real modes live in `components/calculators/semrush-phase-one.ts`; intent coverage and scenarios live in `lib/semrush-batch-one-audit.ts`. The existing `/tools/proportion-calculator/` URL remains as a noindex canonical alias of Ratio Calculator. Aspect-ratio image/video resizing remains a separate intent on the existing `/tools/aspect-ratio-calculator/` page, now with both width-from-height and height-from-width modes. Do not create separate thin URLs for the ratio keyword variants.
 
 The 25 September file expansion checked 25 requested ideas, reused five existing converters and added 20 unique pages: six archive tools, five Excel tools, six structured-data converters and three subtitle tools. Their processors live in `components/ArchiveTool.tsx`, `components/DocumentTool.tsx` and `components/MediaTool.tsx`; shared long-form guidance is supplied by `components/FileToolEditorial.tsx`.
 

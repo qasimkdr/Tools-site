@@ -95,7 +95,7 @@ const globalEducationSlugs = new Set(["college-admission-chances-calculator"]);
 const semrushPhaseTwoASlugs = new Set(["grade-calculator","decimal-time-converter","modified-adjusted-gross-income-calculator","money-market-calculator","confidence-interval-calculator","superscript-generator","earned-run-average-calculator","ap-statistics-score-calculator","gcf-calculator","apr-calculator","wire-size-calculator","cone-volume-calculator","normal-cdf-calculator","matrix-inverse-calculator","voltage-drop-calculator","fill-dirt-calculator","board-foot-calculator"]);
 const semrushPhaseOneSlugs = new Set(["date-from-today-calculator","payment-calculator","proportion-calculator","interest-rate-calculator","ratio-calculator","age-calculator","hypotenuse-calculator","period-calculator","random-number-generator","cubic-yard-calculator","gravel-stone-calculator","army-waist-height-ratio-calculator","401k-calculator","sand-calculator","right-triangle-calculator","ap-world-score-calculator"]);
 const semrushPhaseOneBSlugs = new Set(["gpa-calculator","square-footage-calculator","bench-press-max-calculator","triangle-calculator","molecular-weight-calculator","bowling-score-calculator","air-force-pt-test-calculator","square-root-calculator","fraction-calculator","how-many-years-calculator","cylinder-volume-calculator","date-calculator","hourly-wage-and-tax-calculator","asphalt-calculator","ap-biology-score-calculator","womens-bmi-calculator","ap-chemistry-score-calculator","concrete-calculator","npv-calculator","weeks-calculator","half-birthday-calculator","paycheck-hours-calculator","dog-pregnancy-calculator","binary-calculator","paycheck-estimator-calculator","pool-salt-calculator","rafter-length-calculator","air-force-pt-calculator","stair-calculator","scientific-notation-calculator"]);
-const firstFiftyCanonicalAliases = new Map([["air-force-pt-calculator","air-force-pt-test-calculator"],["hourly-wage-and-tax-calculator","paycheck-estimator-calculator"],["date-calculator","date-from-today-calculator"],["hypotenuse-calculator","right-triangle-calculator"]]);
+const firstFiftyCanonicalAliases = new Map([["air-force-pt-calculator","air-force-pt-test-calculator"],["hourly-wage-and-tax-calculator","paycheck-estimator-calculator"],["date-calculator","date-from-today-calculator"],["hypotenuse-calculator","right-triangle-calculator"],["proportion-calculator","ratio-calculator"]]);
 const firstFiftyExistingUpgrades = new Set(["discount-calculator","mortgage-payment-calculator","work-hours-calculator","overtime-pay-calculator-global"]);
 const firstFiftyCanonicalSlugs = new Set([...semrushPhaseOneSlugs, ...semrushPhaseOneBSlugs, ...firstFiftyExistingUpgrades].filter(slug => !firstFiftyCanonicalAliases.has(slug)));
 const firstFiftySourceRequired = new Set(["period-calculator","army-waist-height-ratio-calculator","401k-calculator","ap-world-score-calculator","ap-biology-score-calculator","womens-bmi-calculator","ap-chemistry-score-calculator","air-force-pt-test-calculator","dog-pregnancy-calculator","paycheck-estimator-calculator","mortgage-payment-calculator","overtime-pay-calculator-global"]);
@@ -210,7 +210,19 @@ for (const slug of globalEducationSlugs) {
 const ecommerceHeader = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
 if (!ecommerceHeader.includes("globalTools.filter(t=>!t.canonicalSlug).map") || !ecommerceHeader.includes("searchText")) failures.push("site search: canonical global tools are not connected or indexed aliases are being added");
 const ecommerceHome = readFileSync(join(process.cwd(), "out", "index.html"), "utf8");
-if (!ecommerceHome.includes("138") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
+if (!ecommerceHome.includes("137") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
+
+const ratioPage = globalPages.find(item => item.slug === "ratio-calculator");
+const ratioKeywords = ratioPage ? metaValue(ratioPage.html, "keywords").toLowerCase() : "";
+for (const keyword of ["ratio calculator","ratio scale calculator","ratio solver","simplify ratio calculator","ratio simplifier","equivalent ratios calculator","ratio to fraction calculator","fraction to ratio calculator","ratio to percentage calculator","percentage to ratio calculator"]) {
+  if (!ratioKeywords.includes(keyword)) failures.push(`ratio calculator: missing keyword target ${keyword}`);
+}
+const aspectRatioPage = globalPages.find(item => item.slug === "aspect-ratio-calculator");
+if (!aspectRatioPage || !metaValue(aspectRatioPage.html, "keywords").toLowerCase().includes("aspect ratio calculator")) failures.push("aspect ratio calculator: missing its distinct keyword target");
+const ratioResolver = readFileSync(join(process.cwd(), "components", "calculators", "semrush-phase-one.ts"), "utf8");
+for (const mode of ["scale","equivalent","to-fraction","from-fraction","to-percent","from-percent","share"]) if (!ratioResolver.includes(`mode==="${mode}"`)) failures.push(`ratio calculator: missing functional ${mode} mode`);
+const aspectResolver = readFileSync(join(process.cwd(), "components", "calculators", "global.ts"), "utf8");
+if (!aspectResolver.includes("Find height from target width") || !aspectResolver.includes("Find width from target height")) failures.push("aspect ratio calculator: missing both dimension-solving modes");
 
 const insightPages = [...pages, ...globalPages].filter(({ html }) => html.includes("How to interpret your result"));
 const curatedInsightPages = insightPages.filter(({ html }) => html.includes('data-insight-tier="curated"'));

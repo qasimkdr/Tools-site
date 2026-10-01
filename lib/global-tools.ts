@@ -226,12 +226,12 @@ const seeds: Seed[] = [
     title: "Aspect Ratio Calculator",
     shortTitle: "Aspect Ratio",
     description:
-      "Resize images and video while preserving proportions, or calculate a missing dimension.",
+      "Calculate a missing image or video dimension from its aspect ratio, or resize the frame while preserving its original proportions.",
     icon: "🖼️",
     category: "Technology",
     accent: "amber",
     formula:
-      "New height = new width × original height ÷ original width. The inverse formula finds width from height.",
+      "New height = target width × original height ÷ original width. New width = target height × original width ÷ original height. The aspect ratio is width ÷ height.",
     example:
       "A 1920 × 1080 image resized to 1280 pixels wide should be 720 pixels high to preserve its 16:9 ratio.",
     focus:
@@ -283,13 +283,14 @@ const questions = (tool: Seed) => [
 ];
 
 const roadmapKeywordUpgrades: Record<string,string[]> = {
+  "aspect-ratio-calculator": ["aspect ratio calculator","image aspect ratio calculator","video aspect ratio calculator","calculate aspect ratio dimensions","resize image without changing aspect ratio"],
   "mortgage-payment-calculator": ["mortgage calculator","mortgage payment calculator","monthly mortgage calculator with taxes and insurance","mortgage calculator with payment"],
   "work-hours-calculator": ["hours calculator","calculate work hours","calculate hours worked","clock out calculator","8 hour shift calculator","hours from now calculator","military time calculator"],
 };
 
 const originalGlobalTools: Tool[] = seeds.map((tool) => ({
   ...tool,
-  updatedAt: "2026-09-21",
+  updatedAt: tool.slug === "aspect-ratio-calculator" ? "2026-10-01" : "2026-09-21",
   keywords: roadmapKeywordUpgrades[tool.slug] || [
     tool.title.toLowerCase(),
     `free ${tool.shortTitle.toLowerCase()} calculator`,

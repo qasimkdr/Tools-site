@@ -10,7 +10,79 @@ export const resolveSemrushPhaseOne:CalculatorResolver=({slug,a,b,c,d,e,cash})=>
  if(slug==="payment-calculator")return{labels:["Principal or annuity value","Annual interest rate","Term","Payments per year","Mode: loan payment or annuity payout"],suffix:["currency","%","years","/year","text"],calculate:()=>{const P=n(a),rate=n(b)/100,years=n(c),ppy=Math.max(1,n(d)||12),r=rate/ppy,N=Math.max(1,years*ppy),mode=String(e).trim().toLowerCase();if(mode.startsWith("annuity")){const payout=r?P*r/(1-Math.pow(1+r,-N)):P/N,total=payout*N;return[{label:"Estimated periodic annuity payout",value:cash(payout),note:"Ordinary fixed annuity estimate; assumes level payments and no fees"},{label:"Total scheduled payouts",value:cash(total)},{label:"Value entered",value:cash(P)}]}const payment=r?P*r*Math.pow(1+r,N)/(Math.pow(1+r,N)-1):P/N,total=payment*N;return[{label:"Periodic loan payment",value:cash(payment),note:`${fmt(ppy,0)} payments per year`},{label:"Total repayment",value:cash(total)},{label:"Total interest",value:cash(total-P)}]}};
  if(slug==="proportion-calculator")return{labels:["First ratio A","First ratio B","Second ratio C"],suffix:["","",""],calculate:()=>{const A=n(a),B=n(b),C=n(c),x=A?B*C/A:NaN;return[{label:"Missing value X",value:fmt(x,6),note:`${fmt(A)}:${fmt(B)} = ${fmt(C)}:X`},{label:"Scale factor",value:fmt(A?C/A:NaN,6)},{label:"Cross products",value:`${fmt(A*x)} = ${fmt(B*C)}`}]}};
  if(slug==="interest-rate-calculator")return{labels:["Starting amount","Ending amount or annual rate","Time in years","Mode: solve rate or project savings","Compounds per year"],suffix:["currency","currency or %","years","text","times/year"],calculate:()=>{const mode=String(d).trim().toLowerCase();if(mode.startsWith("project")){const P=n(a),rate=n(b)/100,y=n(c),m=Math.max(1,n(e)||12),future=P*Math.pow(1+rate/m,m*y);return[{label:"Projected ending balance",value:cash(future),note:"Assumes a fixed rate and regular compounding; fees, taxes and deposits are excluded"},{label:"Interest earned",value:cash(future-P)},{label:"Monthly interest at start",value:cash(P*rate/12)}]}const P=n(a),F=n(b),y=n(c),annual=P>0&&F>0&&y>0?Math.pow(F/P,1/y)-1:NaN,monthly=Number.isFinite(annual)?Math.pow(1+annual,1/12)-1:NaN;return[{label:"Implied annual rate",value:`${fmt(annual*100,3)}%`,note:"Compound annual growth rate; assumes no deposits or withdrawals"},{label:"Monthly equivalent",value:`${fmt(monthly*100,3)}%`},{label:"Total growth",value:`${fmt(P?((F/P)-1)*100:NaN,2)}%`}]}};
- if(slug==="ratio-calculator")return{labels:["Ratio terms (e.g. 18:24 or 1:2:1)","Second ratio term if entering two separate values","Equivalent ratio known first term","Mode: simplify, share, or equivalent"],suffix:["text","number","number","text"],calculate:()=>{const raw=String(a).trim(),parts=raw.includes(":")?raw.split(":").map(Number):raw.includes("/")?raw.split("/").map(Number):[Number(raw),n(b)],mode=String(d).trim().toLowerCase(),valid=parts.length>=2&&parts.length<=5&&parts.every(x=>Number.isFinite(x)&&x>=0)&&parts.some(x=>x>0);if(!valid)return[{label:"Ratio",value:"Enter 2–5 non-negative terms"}];const ints=parts.map(x=>Math.round(x*100000)),g=ints.reduce((x,y)=>gcd(x,y),0)||1,reduced=ints.map(x=>x/g),total=parts.reduce((x,y)=>x+y,0),fraction=parts.length===2?`${reduced[0]}/${reduced[1]}`:"—",equiv=parts.length===2&&parts[0]>0?n(c)*parts[1]/parts[0]:NaN;return[{label:"Simplified ratio",value:reduced.join(":"),note:"Each term is reduced by a common factor"},{label:"Ratio as fraction",value:fraction},{label:"First term share of total",value:`${fmt(total?parts[0]/total*100:NaN,2)}%`},{label:"Equivalent missing term",value:mode.startsWith("equiv")&&Number.isFinite(equiv)?fmt(equiv,6):"Choose equivalent mode and enter a known first term"}]}};
+ if(slug==="ratio-calculator"){
+  const mode=String(d).trim().toLowerCase();
+  const labelsByMode:Record<string,string[]>={
+   simplify:["Ratio terms (for example 18:24 or 1:2:1)","Second term (only if entering a single first term)","Unused","Ratio operation"],
+   scale:["Ratio terms (for example 3:4)","Scale factor","Unused","Ratio operation"],
+   equivalent:["Known ratio (for example 3:4)","Unused","Known first term in equivalent ratio (C)","Ratio operation"],
+   "to-fraction":["Ratio terms (A:B)","Unused","Unused","Ratio operation"],
+   "from-fraction":["Fraction (for example 3/4)","Unused","Unused","Ratio operation"],
+   "to-percent":["Ratio terms (A:B)","Unused","Unused","Ratio operation"],
+   "from-percent":["Percentage from 0 to 100","Unused","Unused","Ratio operation"],
+   share:["Ratio terms (for example 1:2)","Second term (only if entering a single first term)","Unused","Ratio operation"],
+  };
+  const modeSuffix="select:simplify=Simplify ratio|scale=Scale ratio|equivalent=Solve equivalent ratio|to-fraction=Ratio to fraction|from-fraction=Fraction to ratio|to-percent=Ratio to percentage|from-percent=Percentage to ratio|share=Part-to-whole share";
+  const labels=labelsByMode[mode]||labelsByMode.simplify;
+  return{labels,suffix:["text","","",modeSuffix],calculate:()=>{
+   const parseParts=(raw:string,second:string,separatorMode:"ratio"|"fraction"="ratio")=>{
+    const value=String(raw).trim();
+    const separator=separatorMode==="fraction"?"/":value.includes(":")?":":value.includes(",")?",":"";
+    const parts=separator?value.split(separator).map(part=>Number(part.trim())):[Number(value),Number(String(second).trim())];
+    const valid=Boolean(separator||String(second).trim())&&parts.length>=2&&parts.length<=5&&parts.every(part=>Number.isFinite(part)&&part>=0)&&parts.some(part=>part>0);
+    return valid?parts:null;
+   };
+   const reduced=(parts:number[])=>{
+    const scaled=parts.map(part=>Math.round(part*1_000_000));
+    if(scaled.some(part=>!Number.isSafeInteger(part)))return null;
+    const divisor=scaled.reduce((left,right)=>gcd(left,right),0)||1;
+    return scaled.map(part=>part/divisor);
+   };
+   const ratio=(parts:number[])=>{const result=reduced(parts);return result?result.join(":"):"Values are too large to simplify safely"};
+   const error=(message:string)=>[{label:"Ratio calculation",value:message}];
+   if(mode==="from-percent"){
+    const percent=Number(String(a).trim().replace(/%$/,""));
+    if(!Number.isFinite(percent)||percent<0||percent>100)return error("Enter a percentage from 0 to 100");
+    return[{label:"Part-to-remainder ratio",value:ratio([percent,100-percent]),note:"A percentage p of a whole is p:(100 − p)"},{label:"Part of whole",value:`${fmt(percent,4)}%`},{label:"Remainder",value:`${fmt(100-percent,4)}%`}];
+   }
+   if(mode==="from-fraction"){
+    const parts=parseParts(a,"0","fraction");
+    if(!parts||parts.length!==2||parts[1]===0)return error("Enter a fraction with two terms and a non-zero denominator");
+    return[{label:"Simplified ratio",value:ratio(parts),note:"Fraction numerator : denominator"},{label:"Fraction value",value:fmt(parts[0]/parts[1],6)},{label:"Equivalent percentage",value:`${fmt(parts[0]/parts[1]*100,4)}%`}];
+   }
+   const parts=parseParts(a,b);
+   if(!parts)return error("Enter 2–5 non-negative ratio terms; separate terms with : or ,");
+   if(["to-fraction","to-percent","equivalent"].includes(mode)&&parts.length!==2)return error("This mode needs exactly two ratio terms");
+   if(mode==="scale"){
+    const factor=n(b);
+    if(factor<=0)return error("Enter a scale factor greater than zero");
+    return[{label:"Scaled ratio",value:parts.map(part=>fmt(part*factor,6)).join(" : "),note:`Each term is multiplied by ${fmt(factor,6)}`},{label:"Equivalent simplified ratio",value:ratio(parts)},{label:"Scale factor",value:fmt(factor,6)}];
+   }
+   if(mode==="equivalent"){
+    if(parts[0]<=0||n(c)<0)return error("The first known ratio term must be greater than zero and C cannot be negative");
+    const x=parts[1]*n(c)/parts[0];
+    return[{label:"Missing equivalent term (X)",value:fmt(x,6),note:`${fmt(parts[0])}:${fmt(parts[1])} = ${fmt(n(c))}:X`},{label:"Scale factor",value:fmt(n(c)/parts[0],6)},{label:"Cross products",value:`${fmt(parts[0]*x,6)} = ${fmt(parts[1]*n(c),6)}`}];
+   }
+   if(mode==="to-fraction"){
+    if(parts[1]===0)return error("The second ratio term cannot be zero when converting to a fraction");
+    const result=reduced(parts);
+    return[{label:"Simplified fraction",value:result?`${result[0]}/${result[1]}`:"Values are too large to simplify safely",note:"First ratio term divided by second ratio term"},{label:"Decimal value",value:fmt(parts[0]/parts[1],6)},{label:"Percentage equivalent",value:`${fmt(parts[0]/parts[1]*100,4)}%`}];
+   }
+   if(mode==="to-percent"){
+    if(parts[1]===0)return error("The second ratio term cannot be zero when converting A:B to a percentage");
+    const total=parts[0]+parts[1];
+    return[{label:"A as a percentage of B",value:`${fmt(parts[0]/parts[1]*100,4)}%`,note:"Calculated as A ÷ B × 100"},{label:"A share of the combined total",value:`${fmt(parts[0]/total*100,4)}%`},{label:"B share of the combined total",value:`${fmt(parts[1]/total*100,4)}%`}];
+   }
+   if(mode==="share"){
+    const total=parts.reduce((sum,part)=>sum+part,0);
+    return[{label:"First term share of total",value:`${fmt(total?parts[0]/total*100:NaN,4)}%`,note:`Total of all terms: ${fmt(total,6)}`},{label:"Simplified ratio",value:ratio(parts)},{label:"Other terms share",value:`${fmt(total?(total-parts[0])/total*100:NaN,4)}%`}];
+   }
+   const total=parts.reduce((sum,part)=>sum+part,0);
+   const result=reduced(parts);
+   const fraction=parts.length===2&&result?`${result[0]}/${result[1]}`:"Only a two-term ratio converts to one fraction";
+   return[{label:"Simplified ratio",value:ratio(parts),note:"Terms are reduced using a common factor"},{label:"Equivalent fraction",value:fraction},{label:"First term share of total",value:`${fmt(total?parts[0]/total*100:NaN,4)}%`}];
+  }};
+ }
  if(slug==="age-calculator")return{labels:["Date of birth","Age on date","Unused"],suffix:["date","date",""],calculate:()=>{const birth=new Date(`${a}T12:00:00`),on=new Date(`${b}T12:00:00`);if(isNaN(birth.getTime())||isNaN(on.getTime())||on<birth)return[{label:"Chronological age",value:"Enter valid dates"}];let y=on.getFullYear()-birth.getFullYear(),m=on.getMonth()-birth.getMonth(),day=on.getDate()-birth.getDate();if(day<0){m--;day+=new Date(on.getFullYear(),on.getMonth(),0).getDate()}if(m<0){y--;m+=12}const days=Math.floor((on.getTime()-birth.getTime())/86400000);return[{label:"Chronological age",value:`${y} years, ${m} months, ${day} days`,note:"Completed calendar age"},{label:"Total days",value:fmt(days,0)},{label:"Approx. months",value:fmt(days/30.436875,1)}]}};
  if(slug==="hypotenuse-calculator")return{labels:["Leg A","Leg B","Unused"],suffix:["units","units",""],calculate:()=>{const A=n(a),B=n(b),h=Math.hypot(A,B);return[{label:"Hypotenuse",value:fmt(h,6),note:"c = √(a² + b²)"},{label:"Area",value:fmt(A*B/2,6)},{label:"Perimeter",value:fmt(A+B+h,6)}]}};
  if(slug==="period-calculator")return{labels:["First day of last period","Usual cycle length","Period length"],suffix:["date","days","days"],calculate:()=>{const cycle=Math.max(1,n(b)),len=Math.max(1,n(c)),next=addDays(a,cycle),end=next?addDays(next.toISOString().slice(0,10),len-1):null;return[{label:"Estimated next period",value:dateText(next),note:"Cycle estimates can vary naturally"},{label:"Estimated end",value:dateText(end)},{label:"Following cycle",value:next?dateText(addDays(next.toISOString().slice(0,10),cycle)):"—"}]}};
