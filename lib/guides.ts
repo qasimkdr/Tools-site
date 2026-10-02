@@ -1,3 +1,4 @@
+import {roadmap146Guides} from "./roadmap-146-165-guides";
 import {roadmap126Guide} from "./roadmap-126-145-guide";
 import { trafficGuides } from "@/lib/traffic-guides";
 import { autoFinanceGuides } from "@/lib/auto-finance-guides";
@@ -9,6 +10,9 @@ export type GuideFaq = { question: string; answer: string };
 export type Guide = {
   slug: string;
   keywords?: string[];
+  calculatorSlug?: string;
+  calculatorTitle?: string;
+  calculatorExplanation?: string;
   title: string;
   description: string;
   category: string;
@@ -278,6 +282,7 @@ export const guides: Guide[] = [
   ...trafficGuides,
   ...autoFinanceGuides,
   roadmap126Guide,
+  ...roadmap146Guides,
 ];
 
 export const getGuide = (slug: string) => guides.find((guide) => guide.slug === slug);

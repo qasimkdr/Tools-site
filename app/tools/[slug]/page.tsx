@@ -1,3 +1,4 @@
+import {roadmap146Audit} from "@/lib/roadmap-146-165-audit";
 import {roadmap126Audit} from "@/lib/roadmap-126-145-audit";
 import {roadmap106Audit} from "@/lib/roadmap-106-125-audit";
 import type { Metadata } from "next";
@@ -56,7 +57,7 @@ export default async function GlobalToolPage({
   const { slug } = await params;
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
-  const hasDetailedEditorial = Boolean(roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]);
+  const hasDetailedEditorial = Boolean(roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
   const flagship = hasDetailedEditorial ? null : insightForTool(tool);
   const semrushAudit = auditForTool(tool);
   const incoming = globalTools.filter(item => item.slug !== tool.slug && auditForTool(item)?.relatedCalculators?.some(link => link.slug === tool.slug));

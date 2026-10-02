@@ -1,3 +1,4 @@
+import {Calculator} from "@/components/Calculator";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -29,7 +30,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     return pakistan ? { tool: pakistan, hrefPrefix: "/pk/tools" } : null;
   }).filter(Boolean);
   const relatedGuides = guide.relatedGuides.map(getGuide).filter(Boolean);
-  const jsonLd = {"@context":"https://schema.org","@graph":[{"@type":"Article",headline:guide.title,description:guide.description,datePublished:guide.publishedAt||"2026-09-18",dateModified:guide.reviewedAt,author:{"@type":"Person",name:"Mohammad Qasim",url:"https://solvepilot.xyz/author/mohammad-qasim/"},reviewedBy:{"@type":"Person",name:"Mohammad Qasim",url:"https://solvepilot.xyz/author/mohammad-qasim/"},publisher:{"@type":"Organization",name:"SolvePilot",url:"https://solvepilot.xyz/"},mainEntityOfPage:`https://solvepilot.xyz/guides/${guide.slug}/`},{"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:"https://solvepilot.xyz/"},{"@type":"ListItem",position:2,name:"Guides",item:"https://solvepilot.xyz/guides/"},{"@type":"ListItem",position:3,name:guide.title,item:`https://solvepilot.xyz/guides/${guide.slug}/`}]},...(guide.faqs?.length?[{"@type":"FAQPage",mainEntity:guide.faqs.map(item=>({"@type":"Question",name:item.question,acceptedAnswer:{"@type":"Answer",text:item.answer}}))}]:[])]};
+  const jsonLd = {"@context":"https://schema.org","@graph":[...(guide.calculatorSlug?[{"@type":"WebApplication",name:guide.calculatorTitle,description:guide.calculatorExplanation,applicationCategory:"EducationalApplication",operatingSystem:"Any",url:`https://solvepilot.xyz/guides/${guide.slug}/`,isAccessibleForFree:true}]:[]),{"@type":"Article",headline:guide.title,description:guide.description,datePublished:guide.publishedAt||"2026-09-18",dateModified:guide.reviewedAt,author:{"@type":"Person",name:"Mohammad Qasim",url:"https://solvepilot.xyz/author/mohammad-qasim/"},reviewedBy:{"@type":"Person",name:"Mohammad Qasim",url:"https://solvepilot.xyz/author/mohammad-qasim/"},publisher:{"@type":"Organization",name:"SolvePilot",url:"https://solvepilot.xyz/"},mainEntityOfPage:`https://solvepilot.xyz/guides/${guide.slug}/`},{"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:"https://solvepilot.xyz/"},{"@type":"ListItem",position:2,name:"Guides",item:"https://solvepilot.xyz/guides/"},{"@type":"ListItem",position:3,name:guide.title,item:`https://solvepilot.xyz/guides/${guide.slug}/`}]},...(guide.faqs?.length?[{"@type":"FAQPage",mainEntity:guide.faqs.map(item=>({"@type":"Question",name:item.question,acceptedAnswer:{"@type":"Answer",text:item.answer}}))}]:[])]};
   return <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}/>
     <article className="guide-article">
@@ -42,6 +43,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <div className="shell guide-layout"><div className="guide-body">
         <section className="quick-answer"><span>Quick answer</span><p>{guide.quickAnswer}</p></section>
         <section><h2>What to remember</h2><ul className="takeaway-list">{guide.takeaways.map(item=><li key={item}>✓ <span>{item}</span></li>)}</ul></section>
+        {guide.calculatorSlug && <section><h2>{guide.calculatorTitle}</h2><p>{guide.calculatorExplanation}</p><Calculator slug={guide.calculatorSlug} currencyNeutral /></section>}
         {guide.sections.map(section=><section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map(paragraph=><p key={paragraph}>{paragraph}</p>)}{section.bullets&&<ul>{section.bullets.map(item=><li key={item}>{item}</li>)}</ul>}</section>)}
         <AutoFinanceSupplement slug={guide.slug} />
         {guide.tables?.map(table=><section key={table.caption}><h2>{table.caption}</h2><div className="guide-table-wrap"><table><thead><tr>{table.headers.map(header=><th key={header}>{header}</th>)}</tr></thead><tbody>{table.rows.map((row,index)=><tr key={`${table.caption}-${index}`}>{row.map((cell,cellIndex)=><td key={`${index}-${cellIndex}`}>{cell}</td>)}</tr>)}</tbody></table></div>{table.note&&<p className="table-note">{table.note}</p>}</section>)}

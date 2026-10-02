@@ -1,0 +1,30 @@
+// Independent worked examples and limits exercised through the actual TypeScript resolver.
+const fs=require('node:fs'),assert=require('node:assert/strict'),ts=require('typescript');
+require.extensions['.ts']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText,file);
+const {resolveRoadmap146:resolve}=require('../components/calculators/roadmap-146-165.ts');
+const calc=(slug,...v)=>{const [a='',b='',c='',d='',e='']=v.map(String);const conf=resolve({slug,a,b,c,d,e,cash:n=>n.toFixed(2)});assert(conf,slug);return conf.calculate()};
+const value=(s,...v)=>calc(s,...v)[0].value,bad=(s,...v)=>assert.equal(value(s,...v),'Unable to calculate',s+' rejects invalid inputs');
+assert.equal(value('epoxy-resin-calculator',100,50,2,'2:1',10),'1.1 L');assert.equal(calc('epoxy-resin-calculator',100,50,2,'2:1',10)[1].value,'0.7333 L');bad('epoxy-resin-calculator',100,50,2,'2:0',10);bad('epoxy-resin-calculator',100,50,2,'2:1',101);
+for(const [a,b,c,d,expected] of [[5.844,58.44,1000,'mass','0.1 mol/L'],[.2,0,500,'moles','0.4 mol/L'],[.1,58.44,1000,'required','5.844 g'],[1,.1,100,'dilute','10 mL']])assert.equal(value('molarity-calculator',a,b,c,d),expected,d);
+bad('molarity-calculator',1,2,100,'dilute');bad('molarity-calculator',1,0,100,'mass');bad('molarity-calculator',1,1,0,'moles');
+assert.equal(value('garage-door-spring-calculator',200,2,2),'400 lbf·in');assert.equal(calc('garage-door-spring-calculator',200,2,2)[1].value,'200 lbf·in');bad('garage-door-spring-calculator',200,2,1.5);
+assert.equal(value('lawn-mowing-cost-calculator',10000,30,5000,10,4),'70.00');assert.equal(calc('lawn-mowing-cost-calculator',10000,30,5000,10,4)[2].value,'280.00');bad('lawn-mowing-cost-calculator',10000,30,0,10,4);
+assert.equal(value('quarter-mile-calculator',3200,400,5.825,234),'11.65 s');assert.equal(calc('quarter-mile-calculator',3200,400,5.825,234)[1].value,'117 mph');bad('quarter-mile-calculator',3200,0,5.825,234);
+assert.equal(value('firewood-cord-calculator',8,4,4,250),'1 cords');assert.equal(value('firewood-cord-calculator',8,4,2,250),'0.5 cords');bad('firewood-cord-calculator',8,0,4,250);
+assert.equal(value('nether-portal-calculator',800,-1600,'to-nether',64),'X 100, Z -200');assert.equal(value('nether-portal-calculator',100,-200,'to-overworld',64),'X 800, Z -1,600');assert.equal(calc('nether-portal-calculator',-9,9,'to-nether',64)[1].value,'X -2, Z 1');bad('nether-portal-calculator',30000000,0,'to-overworld',64);
+assert.equal(value('arv-calculator','200000,330000','1000,1500',1200,0,40000),'252000.00');assert.equal(calc('arv-calculator','200000,330000','1000,1500',1200,0,40000)[3].value,'212000.00');bad('arv-calculator','200000,330000','1000',1200,0,40000);
+assert.equal(value('breastfeeding-calorie-calculator',2000),'2,330–2,400 kcal/day');bad('breastfeeding-calorie-calculator',0);
+const acuity=calc('measured-visual-acuity-converter',6,12);assert.equal(acuity[0].value,'20/40');assert.equal(acuity[1].value,'0.5');assert.equal(acuity[2].value,'0.301');bad('measured-visual-acuity-converter',-2,20);
+assert.equal(value('business-break-even-calculator',10000,50,30,600),'500 units');assert.equal(calc('business-break-even-calculator',10000,50,30,600)[3].value,'2000.00');assert.equal(value('business-break-even-calculator',10000,30,30,600),'No finite break-even volume');bad('business-break-even-calculator',-1,50,30,600);
+assert.equal(value('sales-tax-vat-calculator',100,20,'add'),'120.00');assert.equal(value('sales-tax-vat-calculator',120,20,'remove'),'100.00');assert.equal(calc('sales-tax-vat-calculator',120,20,'remove')[1].value,'20.00');bad('sales-tax-vat-calculator',120,-20,'remove');
+assert.equal(value('savings-withdrawal-runway-calculator',100000,2000,0,0,100),'50 months to exhaustion');assert.equal(calc('savings-withdrawal-runway-calculator',100,60,0,0,10)[1].value,'1');assert.equal(value('savings-withdrawal-runway-calculator',0,60,0,0,10),'0 months to exhaustion');assert.equal(value('savings-withdrawal-runway-calculator',100000,1,0,0,10),'Not exhausted within 10 years');
+const inflated=calc('savings-withdrawal-runway-calculator',100000,2000,0,12,100);assert(Number.parseInt(inflated[0].value)<50);bad('savings-withdrawal-runway-calculator',1000,0,0,0,10);bad('savings-withdrawal-runway-calculator',1000,10,-100,0,10);
+assert.equal(value('seller-financing-calculator',120000,0,0,10,5),'1000.00');assert.equal(calc('seller-financing-calculator',120000,0,0,10,5)[1].value,'60000.00');assert.equal(calc('seller-financing-calculator',120000,0,7,10,10)[1].value,'0.00');bad('seller-financing-calculator',120000,120001,7,10,5);
+// Verify an interest-bearing balloon independently via direct monthly amortization.
+const loan=calc('seller-financing-calculator',200000,20000,7,20,5);let remaining=180000,interest=0;const monthly=180000*(.07/12)/(1-(1+.07/12)**-240);for(let m=0;m<60;m++){interest+=remaining*.07/12;remaining=remaining*(1+.07/12)-monthly}assert(Math.abs(Number(loan[1].value)-remaining)<.01);assert(Math.abs(Number(loan[3].value)-interest)<.01);
+for(const [mode,b,c,d,expected] of [['wdc',1200,120,0,'10 A'],['adc',10,120,0,'1,200 W'],['wac',1200,120,.8,'12.5 A'],['aac',10,120,.8,'960 W']])assert.equal(value('ohms-law-calculator',mode,b,c,d),expected,mode);
+const three=calc('ohms-law-calculator','wthree',Math.sqrt(3)*400*10*.8,400,.8);assert.equal(three[0].value,'10 A');bad('ohms-law-calculator','wac',1000,230,0);
+assert.equal(value('ohms-law-calculator','code',100,0,'gold'),'brown · black · brown · gold');
+assert.equal(value('cubic-yard-calculator',9,3,1,10),'1 yd³');assert.equal(calc('cubic-yard-calculator',9,3,1,10)[1].value,'1.1 yd³');bad('cubic-yard-calculator',9,3,0,10);
+assert.equal(value('air-force-pt-test-calculator',50,20,15,15),'100');bad('air-force-pt-test-calculator',51,20,15,15);bad('air-force-pt-test-calculator','',20,15,15);
+console.log('Roadmap 146–165 actual formulas, four chemistry modes, watt/amp modes, negative coordinate floors, balloon amortization, retirement inflation and invalid-input boundaries passed.');
