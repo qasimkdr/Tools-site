@@ -1,3 +1,5 @@
+import {roadmap166Audit} from "@/lib/roadmap-166-185-audit";
+import {RedactedTextTool} from "@/components/RedactedTextTool";
 import {roadmap146Audit} from "@/lib/roadmap-146-165-audit";
 import {roadmap126Audit} from "@/lib/roadmap-126-145-audit";
 import {roadmap106Audit} from "@/lib/roadmap-106-125-audit";
@@ -57,7 +59,7 @@ export default async function GlobalToolPage({
   const { slug } = await params;
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
-  const hasDetailedEditorial = Boolean(roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
+  const hasDetailedEditorial = Boolean(roadmap166Audit[tool.slug]||roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
   const flagship = hasDetailedEditorial ? null : insightForTool(tool);
   const semrushAudit = auditForTool(tool);
   const incoming = globalTools.filter(item => item.slug !== tool.slug && auditForTool(item)?.relatedCalculators?.some(link => link.slug === tool.slug));
@@ -162,7 +164,7 @@ export default async function GlobalToolPage({
       </div>
       <article className="shell article-layout">
         <div className="article-main">
-          <Calculator key={tool.slug} slug={tool.slug} />
+          {tool.slug==="redacted-text-generator"?<RedactedTextTool/>:<Calculator key={tool.slug} slug={tool.slug} />}
           <AdSlot slot="0000000001" format="horizontal" />
           <section className="rich-content">
             <h2>How this calculator helps</h2>
@@ -197,7 +199,7 @@ export default async function GlobalToolPage({
                 <p>{semrushAudit.interpretation}</p>
                 {semrushAudit.relatedCalculators?.length ? (
                   <p>For different inputs or formulas, use {semrushAudit.relatedCalculators.map((item, index) => (
-                    <span key={item.slug}>{index > 0 ? "; " : ""}<a href={`/tools/${item.slug}/`}>{item.title}</a></span>
+                    <span key={item.slug}>{index > 0 ? "; " : ""}<a href={item.path||`/tools/${item.slug}/`}>{item.title}</a></span>
                   ))}.</p>
                 ) : null}
                 <h3>Related questions this calculator covers</h3>

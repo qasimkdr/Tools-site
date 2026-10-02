@@ -1,9 +1,11 @@
+import {roadmap166Keywords} from "./roadmap-166-185-keywords";
+import {roadmap166Audit} from "./roadmap-166-185-audit";
 import {roadmap146Audit} from "./roadmap-146-165-audit";
 import {roadmap126Audit} from "./roadmap-126-145-audit";
 import {roadmap106Audit} from "./roadmap-106-125-audit";
 import type { Tool } from "@/lib/tools";
 
-export type Audit = { keywordThemes:string[]; interpretation:string; scenarios:[string,string,string]; mistakes:[string,string,string]; verification:string; sourceNote:string; sourceUrl?:string; secondarySourceUrl?:string; relatedCalculators?:{title:string;slug:string}[] };
+export type Audit = { keywordThemes:string[]; interpretation:string; scenarios:[string,string,string]; mistakes:[string,string,string]; verification:string; sourceNote:string; sourceUrl?:string; secondarySourceUrl?:string; relatedCalculators?:{title:string;slug:string;path?:string}[] };
 
 const semrushBatchOneAuditBase:Record<string,Audit>={
 "date-from-today-calculator":{keywordThemes:["days from today","weeks from today","months from today","what date is X days from today","date after X days"],interpretation:"Use one date engine for day, week and month offsets instead of publishing dozens of thin fixed-number URLs. The result should answer both the calculated date and the direction of the offset.",scenarios:["14 days from today — short calendar planning","10 weeks from today — week-based planning","6 months from today — month-boundary planning"],mistakes:["Treating business days as calendar days","Assuming every month has the same number of days","Creating a separate thin page for every numeric offset"],verification:"Check the returned date against a second calendar, especially around leap days and month-end boundaries.",sourceNote:"Calendar arithmetic follows the Gregorian calendar used by the browser."},
@@ -494,4 +496,10 @@ export const semrushBatchOneAudit: Record<string, Audit> = {
   },
 };
 
-export const auditForTool=(tool:Tool)=>roadmap146Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap106Audit[tool.slug]||semrushBatchOneAudit[tool.slug];
+export const auditForTool=(tool:Tool)=>{
+ const audit=roadmap166Audit[tool.slug]||roadmap146Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap106Audit[tool.slug]||semrushBatchOneAudit[tool.slug];
+ if(!audit)return audit;
+ const terms=roadmap166Keywords.filter(k=>k.slug===tool.slug).map(k=>k.keyword);
+ if(!terms.length)return audit;
+ return{...audit,keywordThemes:[...new Set([...audit.keywordThemes,...terms])],...(tool.slug==='mean-standard-deviation-calculator'?{sourceUrl:'https://pmc.ncbi.nlm.nih.gov/articles/PMC1255808/',sourceNote:'Altman and Bland distinguish observation standard deviation from sample-mean standard error; SEM = sample SD/√n under the appropriate independent-sampling assumptions.'}:{}),...(tool.slug==='dog-pregnancy-calculator'?{sourceUrl:'https://www.merckvetmanual.com/management-and-nutrition/management-of-reproduction-dogs-and-cats/whelping-and-queening-in-bitches-and-queens',sourceNote:'Merck Veterinary Manual distinguishes broad breeding-date timing from a veterinarian-established ovulation basis. No pregnancy or condition diagnosis is made.'}:{})};
+};

@@ -1,3 +1,5 @@
+import {roadmap166Tools} from "./roadmap-166-185-tools";
+import {upgradeRoadmap166} from "./roadmap-166-185-upgrades";
 import {roadmap146Tools} from "./roadmap-146-165-tools";
 import {upgradeRoadmap146} from "./roadmap-146-165-upgrades";
 import {roadmap126Tools} from "./roadmap-126-145-tools";
@@ -347,6 +349,7 @@ export const globalTools: Tool[] = [
   ...semrushRoadmapTools,
   ...roadmap106Tools,
   ...roadmap126Tools,
+  ...roadmap166Tools,
   ...roadmap146Tools,
 ].map((tool) => {
   if (tool.slug === "bench-press-max-calculator") return {
@@ -375,7 +378,7 @@ export const globalTools: Tool[] = [
     intro: "Use the pro rata calculator to scale a full-period amount to the eligible share of that period. The day-based method also applies to common prorated salary or billing estimates when the agreement uses calendar days.",
   };
   return tool;
-}).map(upgradeRoadmap106).map(upgradeRoadmap126).map(upgradeRoadmap146);
+}).map(upgradeRoadmap106).map(upgradeRoadmap126).map(upgradeRoadmap146).map(upgradeRoadmap166);
 
 export const getGlobalTool = (slug: string) =>
   globalTools.find((tool) => tool.slug === slug);

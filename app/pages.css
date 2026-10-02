@@ -43,3 +43,5 @@ body>header,body>main,body>footer,.tool-hero{width:100%;max-width:100%}
   .tool-heading h1,.tool-heading p,.tool-heading .eyebrow,.tool-review-line{overflow-wrap:anywhere}
   .calculator-shell,.calc-inputs,.calc-results{width:100%}
 }
+
+.text-redaction-tool textarea{display:block;width:100%;max-width:100%;resize:vertical;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit;line-height:1.5;min-height:100px}.text-redaction-tool textarea:focus-visible{outline:2px solid var(--blue);outline-offset:2px}.text-redaction-tool .clear-text-button{margin-top:12px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font:inherit;cursor:pointer}.text-redaction-tool .calc-results textarea{margin-top:12px}

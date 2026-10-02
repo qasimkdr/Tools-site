@@ -448,3 +448,5 @@ export const calculatorDefaults: Record<string, CalculatorDefaults> = {
   "whatsapp-data-usage-calculator": ["50", "30", "10", "30"],
   "youtube-data-usage-calculator": ["1", "5", "30"],
 };
+
+Object.assign(calculatorDefaults, {"vpd-calculator": ["25", "60", "24", "air", "0"], "goat-gestation-calculator": ["2026-10-02", "0", "0"], "gas-oil-mix-calculator": ["5", "50", "litre"], "macro-calculator": ["2000", "0", "25", "25", "maintain"], "macroeconomics-calculator": ["1000", "200", "300", "150", "180"], "vinegar-carbon-dosing-calculator": ["0", "100", "200", "5", "5"], "radical-expression-simplifier": ["2sqrt(72)-sqrt(8)+3", "0", "0"], "wedding-liquor-calculator": ["100", "1", "40", "30", "750"], "abg-calculator": ["7.4", "40", "24", "140", "104"], "soil-calculator": ["12", "8", "4", "0", "0"], "profit-margin-calculator-global": ["100", "25", "markup"], "car-lease-vs-buy-calculator": ["2000", "400", "5000", "500;15000;25000", "0;0"], "dog-pregnancy-calculator": ["2026-10-02", "breeding", "0"]});
