@@ -1,0 +1,33 @@
+// Formula and boundary checks use the actual TypeScript resolver and reference data.
+const fs=require('node:fs'),assert=require('node:assert/strict'),ts=require('typescript');
+require.extensions['.ts']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText,file);
+const {resolveRoadmap106:resolve}=require('../components/calculators/roadmap-106-125.ts');
+const {whoWeightLms}=require('../lib/who-weight-for-age.ts');
+const calc=(slug,...v)=>{const [a='',b='',c='',d='',e='']=v.map(String);const conf=resolve({slug,a,b,c,d,e,cash:x=>x.toFixed(2)});assert(conf,slug);return conf.calculate()};
+const value=(s,...v)=>calc(s,...v)[0].value;
+const bad=(s,...v)=>assert.equal(value(s,...v),'Unable to calculate',s+' boundary');
+assert.equal(value('sourdough-calculator',1000,70,20,2,100),'465.12 g');
+bad('sourdough-calculator',1000,10,100,2,100);
+assert.equal(value('audiobook-speed-calculator',10,0,1.5,0),'6 h 40 min 0 sec');
+bad('audiobook-speed-calculator',1,60,1,0);bad('audiobook-speed-calculator',1,0,0,0);
+for(const [mode,b,c,d,expected] of [['rectangle',3,4,0,12],['square',3,0,0,9],['circle',1,0,0,3.14],['ellipse',2,3,0,18.85],['triangle',3,4,0,6],['trapezoid',3,5,4,16],['parallelogram',3,4,0,12],['cube',3,0,0,54],['box',2,3,4,52],['sphere',1,0,0,12.57],['cylinder',1,2,0,18.85],['cone',3,4,0,75.4]])assert.equal(value('surface-area-calculator',mode,b,c,d),expected+' square units',mode);
+bad('surface-area-calculator','box',2,-3,4);
+assert.equal(value('body-surface-area-calculator',170,70),'1.818 m²');bad('body-surface-area-calculator',0,70);
+assert.equal(value('roof-area-calculator',40,30,6,10),'1,341.64 ft²');assert.equal(value('roof-area-calculator',40,30,0,0),'1,200 ft²');
+assert.equal(value('corrected-calcium-calculator',8,3,'us'),'8.8 mg/dL');assert.equal(value('corrected-calcium-calculator',2,30,'si'),'2.2 mmol/L');
+assert.equal(value('grade-curve-calculator','70,80,90','highest',5,100),'80, 90, 100');
+assert.equal(value('grade-curve-calculator','80,90,100','mean',100,100),'90, 100, 100');bad('grade-curve-calculator','101','add',5,100);
+assert.match(value('pt-141-dosage-calculator',23,0),/reached/);assert.match(value('pt-141-dosage-calculator',24,8),/reached/);assert.match(value('pt-141-dosage-calculator',24,7),/below/);bad('pt-141-dosage-calculator',24,1.2);
+assert.equal(value('btu-calculator',200,2,'normal','room',0),'6,000 BTU/h');assert.equal(value('btu-calculator',200,3,'sun','kitchen',0),'11,200 BTU/h');assert.equal(value('btu-calculator',200,2,'normal','heating',30),'6,000 BTU/h');bad('btu-calculator',2500,2,'normal','room',0);bad('btu-calculator',200,2,'normal','heating',0);
+assert.equal(value('arrow-speed-calculator',30,.1,400),'300 ft/s');bad('arrow-speed-calculator',30,0,400);
+for(const [mode,b,c,d,v] of [['box',2,3,4,'24'],['cube',3,0,0,'27'],['sphere',1,0,0,'4.1888'],['cone',1,3,0,'3.1416'],['cylinder',1,3,0,'9.4248'],['tube',2,1,3,'28.2743'],['pond',2,3,4,'24'],['pond-round',1,3,0,'9.4248']])assert.equal(value('volume-calculator',mode,b,c,d,'m'),v+' m³',mode);
+bad('volume-calculator','tube',1,2,3,'m');
+assert.equal(calc('volume-calculator','box',1,1,1,'m')[1].value,'1,000');
+assert.equal(value('productivity-calculator',400,5,8,10),'10 units / labor-hour');assert.equal(calc('productivity-calculator',0,5,8,10)[3].value,'Undefined for zero output');bad('productivity-calculator',400,0,8,10);
+assert.equal(value('time-between-calculator','2026-10-02T09:00','2026-10-03T17:30'),'1 days 8 hours 30 minutes');bad('time-between-calculator','2026-02-30T09:00','2026-03-03T09:00');bad('time-between-calculator','2026-10-03T09:00','2026-10-02T09:00');
+for(const [sys,dia,cat] of [[119,79,'Normal'],[120,79,'Elevated'],[120,80,'Stage 1'],[139,89,'Stage 1'],[140,80,'Stage 2'],[180,120,'Stage 2'],[181,80,'Severe'],[130,121,'Severe']])assert.match(value('blood-pressure-by-age-calculator',40,sys,dia),new RegExp(cat));bad('blood-pressure-by-age-calculator',17,120,80);
+for(const sex of ['boys','girls']){assert.equal(whoWeightLms[sex].length,25);for(let m=0;m<=24;m++)assert.equal(value('baby-percentile-calculator',sex,m,whoWeightLms[sex][m][1]),'50%')}
+bad('baby-percentile-calculator','boys',6.5,7);bad('baby-percentile-calculator','boys',25,7);bad('baby-percentile-calculator','boys',6,30);
+assert.equal(value('interest-rate-calculator',1000,12,1,'cd',12),'1126.83');assert.equal(value('interest-rate-calculator',1000,12,1,'fd',12),'1126.83');assert.equal(value('interest-rate-calculator',1000,12,1,'apy',12),'1120.00');assert.equal(value('interest-rate-calculator',1000,0,.5,'cd',12),'1000.00');
+assert.equal(value('tile-quantity-calculator-pakistan',200,24,24,10,4),'55');assert.equal(calc('tile-quantity-calculator-pakistan',200,24,24,10,4)[2].value,'14');bad('tile-quantity-calculator-pakistan',200,0,24,10,4);
+console.log('Roadmap 106–125 formulas, all shape modes, WHO median lookups and invalid-input boundaries passed.');

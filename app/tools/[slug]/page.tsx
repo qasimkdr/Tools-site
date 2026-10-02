@@ -1,3 +1,4 @@
+import {roadmap106Audit} from "@/lib/roadmap-106-125-audit";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -54,7 +55,8 @@ export default async function GlobalToolPage({
   const { slug } = await params;
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
-  const flagship = insightForTool(tool);
+  const isRoadmap106 = Boolean(roadmap106Audit[tool.slug]);
+  const flagship = isRoadmap106 ? null : insightForTool(tool);
   const semrushAudit = auditForTool(tool);
   const related = globalTools
     .filter((item) => item.slug !== tool.slug && !item.canonicalSlug)
@@ -156,7 +158,7 @@ export default async function GlobalToolPage({
       </div>
       <article className="shell article-layout">
         <div className="article-main">
-          <Calculator slug={tool.slug} />
+          <Calculator key={tool.slug} slug={tool.slug} />
           <AdSlot slot="0000000001" format="horizontal" />
           <section className="rich-content">
             <h2>How this calculator helps</h2>
@@ -186,8 +188,8 @@ export default async function GlobalToolPage({
             <p>{tool.example}</p>
             {flagship && <FlagshipInsights content={flagship} />}
             {semrushAudit && (
-              <section className="semrush-intent-audit">
-                <h2>Search intent and calculator coverage</h2>
+              <section className="semrush-intent-audit" data-insight-tier={isRoadmap106 ? "tool-specific" : undefined}>
+                <h2>{isRoadmap106 ? "How to interpret your result" : "Search intent and calculator coverage"}</h2>
                 <p>{semrushAudit.interpretation}</p>
                 {semrushAudit.relatedCalculators?.length ? (
                   <p>For different inputs or formulas, use {semrushAudit.relatedCalculators.map((item, index) => (
@@ -198,7 +200,7 @@ export default async function GlobalToolPage({
                 <ul>
                   {semrushAudit.keywordThemes.map((theme) => <li key={theme}>{theme}</li>)}
                 </ul>
-                <h2>Worked scenarios</h2>
+                <h2>{isRoadmap106 ? "Scenario comparison" : "Worked scenarios"}</h2>
                 <div className="guide-table-wrap">
                   <table>
                     <thead><tr><th>Scenario</th><th>What it shows</th></tr></thead>
@@ -210,7 +212,7 @@ export default async function GlobalToolPage({
                     </tbody>
                   </table>
                 </div>
-                <h2>Common mistakes</h2>
+                <h2>Common mistakes to avoid</h2>
                 <ul className="mistake-list">
                   {semrushAudit.mistakes.map((mistake) => <li key={mistake}>{mistake}</li>)}
                 </ul>
@@ -228,7 +230,7 @@ export default async function GlobalToolPage({
             {tool.slug === "college-admission-chances-calculator" && (
               <CollegeAdmissionEditorial />
             )}
-            {tool.category !== "Education" && <><h2>Understanding the displayed figures</h2>
+            {tool.category !== "Education" && !isRoadmap106 && <><h2>Understanding the displayed figures</h2>
             <p>
               The main result answers the page’s primary question, while the
               supporting figures reveal how that answer was formed. Read the

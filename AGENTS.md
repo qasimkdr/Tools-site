@@ -45,7 +45,7 @@ Last verified: **2 October 2026**
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 160 canonical + 5 noindex aliases (165 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 175 canonical + 5 noindex aliases (180 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,11 +54,13 @@ Last verified: **2 October 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 35 |
 
-The production build is expected to generate **526 static pages** after the Semrush roadmap ranks 86–105 update. The content gate recognizes **181 Pakistan calculators, 160 indexable global calculators (165 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 35 guides**.
+The production build is expected to generate **541 static pages** after the SolvePilot roadmap ranks 106–125 update. The content gate recognizes **181 Pakistan calculators, 175 indexable global calculators (180 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 35 guides**.
 
 The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
 
 The 2 October SolvePilot 50 Tools Daily SEO Roadmap batch covers ranks 86–105. It adds 17 canonical global calculators in `lib/semrush-roadmap-86-105-tools.ts` and calculator logic in `components/calculators/semrush-phase-one-b.ts`. Rank 93 merges into the existing prorated salary tool; rank 102 expands the existing one-rep-max page to bench, squat and deadlift; rank 104 adds river-rock intent to the gravel/stone estimator. Rank 105's visceral-fat query is a distinct output and receives its own sourced estimate page. The workbook's rank 98 “Mango+calculator” and rank 364 “Calculator+mango” rows have no sufficiently clear calculator intent, so they remain unbuilt pending a corrected query; do not invent a tool or include those phrases as metadata. The height page explicitly uses the mid-parental estimate and does not claim to implement Khamis–Roche without its age-specific coefficient table. The validator checks the new routes, formulas' resolver coverage, metadata keywords, audit content, sitemap, directory discovery and internal links. The expected static export is 526 pages, with 160 canonical global calculators and five noindex aliases.
+
+The ranks **106–125** batch adds 15 global routes in `lib/roadmap-106-125-tools.ts`, with resolver logic in `components/calculators/roadmap-106-125.ts`. Existing Tile Quantity, Linear Feet, Pay Raise, AP Statistics, Interest Rate, Wall Stud and AP Chemistry URLs are upgraded instead of duplicated. CD and FD use one interest/deposit engine, with nominal and APY modes. Surface area separates geometry from BSA and roof geometry; volume supports box, cube, cylinder, cone, sphere, tube and pond modes. The mistakenly clustered baby-percentile term receives a WHO weight-for-age page limited to exact monthly points 0–24 and |z|≤3; it does not claim gestational-age birthweight percentiles. WHO monthly LMS data are bundled with source provenance in `lib/who-weight-for-age.ts`. PT-141 is an approved Vyleesi frequency-label check, not dosing or reconstitution advice. Blood pressure uses adult categories rather than fabricated age-based normals. Arrow speed uses measured distance/time and explicitly does not implement an IBO correction model. Missing diagrams, perimeter-only area and survey boundaries are recorded as requiring additional information. Every exact workbook keyword is tracked with its destination and scope in `lib/roadmap-106-125-keywords.ts`; preserve these method boundaries in future work. Expected export: 541 pages, 175 canonical global tools plus five noindex aliases.
 
 Completed major phases include Pakistan calculator expansion, global calculators, Phase 5A browser file tools, Phase 6 generators and the 25-tool global finance expansion.
 
@@ -411,3 +413,8 @@ A tool or phase is complete only when:
 - Changes are committed and pushed when authorized.
 
 If any item is missing, report the phase as incomplete rather than describing it as finished.
+
+### Explicit calculation interaction — permanent rule
+All mathematics calculators must keep displayed results unchanged while users edit inputs. Calculate runs only when the user clicks **Calculate result**. The initial state prompts for a click instead of calculating the defaults. New calculators must use the shared submitted-results state; never call `config.calculate()` during rendering or initialization. Apply the same interaction to future tools. Verify that editing a field leaves the last submitted result visible and clicking Calculate updates it.
+
+Batch verification commands: `npm run verify:roadmap106` checks real formulas, shape modes, invalid-input boundaries and all 50 WHO monthly median lookups. `npm run verify:calculate` exercises the shared component’s actual callbacks and persistent state without a browser binary; it checks initial click gating and unchanged output while editing. Full browser QA was unavailable in the managed environment because the Chromium download returned an invalid archive. Typecheck and static-export/content gates remain required.

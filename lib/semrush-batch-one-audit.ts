@@ -1,6 +1,7 @@
+import {roadmap106Audit} from "./roadmap-106-125-audit";
 import type { Tool } from "@/lib/tools";
 
-type Audit = { keywordThemes:string[]; interpretation:string; scenarios:[string,string,string]; mistakes:[string,string,string]; verification:string; sourceNote:string; sourceUrl?:string; secondarySourceUrl?:string; relatedCalculators?:{title:string;slug:string}[] };
+export type Audit = { keywordThemes:string[]; interpretation:string; scenarios:[string,string,string]; mistakes:[string,string,string]; verification:string; sourceNote:string; sourceUrl?:string; secondarySourceUrl?:string; relatedCalculators?:{title:string;slug:string}[] };
 
 const semrushBatchOneAuditBase:Record<string,Audit>={
 "date-from-today-calculator":{keywordThemes:["days from today","weeks from today","months from today","what date is X days from today","date after X days"],interpretation:"Use one date engine for day, week and month offsets instead of publishing dozens of thin fixed-number URLs. The result should answer both the calculated date and the direction of the offset.",scenarios:["14 days from today — short calendar planning","10 weeks from today — week-based planning","6 months from today — month-boundary planning"],mistakes:["Treating business days as calendar days","Assuming every month has the same number of days","Creating a separate thin page for every numeric offset"],verification:"Check the returned date against a second calendar, especially around leap days and month-end boundaries.",sourceNote:"Calendar arithmetic follows the Gregorian calendar used by the browser."},
@@ -360,8 +361,9 @@ export const semrushBatchOneAudit: Record<string, Audit> = {
   },
   "interest-rate-calculator": {
     ...semrushBatchOneAuditBase["interest-rate-calculator"],
+    sourceUrl: "https://www.consumerfinance.gov/rules-policy/regulations/1030/a/",
     keywordThemes: ["solve the compound rate from two balances", "project savings or CD growth from an entered rate", "compare monthly and annual compounding"],
-    interpretation: "Use the solve-rate mode for balances with no intermediate deposits or withdrawals, or switch to project mode for a savings or certificate-of-deposit balance. FHA loan quotes use mortgage terms and market disclosures, so compare them with a mortgage payment estimate instead of treating them as a savings yield.",
+    interpretation: "Use the solve-rate mode for balances with no intermediate deposits or withdrawals, or switch to project, CD, FD or APY mode for a savings or fixed-deposit balance. Nominal deposit modes use user-entered compounding; APY mode does not compound an annual yield twice. FHA loan quotes use mortgage terms and market disclosures, so compare them with a mortgage payment estimate instead of treating them as a savings yield.",
     relatedCalculators: [{title:"Mortgage Payment Calculator",slug:"mortgage-payment-calculator"}],
   },
   "ratio-calculator": {
@@ -490,4 +492,4 @@ export const semrushBatchOneAudit: Record<string, Audit> = {
   },
 };
 
-export const auditForTool=(tool:Tool)=>semrushBatchOneAudit[tool.slug];
+export const auditForTool=(tool:Tool)=>roadmap106Audit[tool.slug]||semrushBatchOneAudit[tool.slug];
