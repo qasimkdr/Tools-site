@@ -8,6 +8,7 @@ import { semrushPhaseOneTools } from "@/lib/semrush-phase-one-tools";
 import { semrushPhaseOneBTools } from "@/lib/semrush-phase-one-b-tools";
 import { semrushPhaseTwoATools } from "@/lib/semrush-phase-two-a-tools";
 import { semrushPhaseThreeTools } from "@/lib/semrush-phase-three-tools";
+import { semrushRoadmapTools } from "@/lib/semrush-roadmap-86-105-tools";
 
 type Seed = Pick<
   Tool,
@@ -337,7 +338,35 @@ export const globalTools: Tool[] = [
   ...semrushPhaseOneBTools,
   ...semrushPhaseTwoATools,
   ...semrushPhaseThreeTools,
-];
+  ...semrushRoadmapTools,
+].map((tool) => {
+  if (tool.slug === "bench-press-max-calculator") return {
+    ...tool,
+    title: "One Rep Max Calculator",
+    shortTitle: "One Rep Max",
+    description: "Estimate a one-repetition maximum for bench press, squat or deadlift from a completed set, using the Epley equation.",
+    keywords: ["one rep max calculator","deadlift calculator","deadlift max calculator","bench press calculator","bench max calculator","bench calculator","squat calculator","1rm calculator","1rm bench calculator","one rep max bench calculator","one rep calculator","calculate 1 rep max","1 rep max calculator bench","bench 1rm calculator","bench press one rep max calculator","max rep calculator bench"],
+    formula: "Estimated 1RM = load × (1 + completed repetitions ÷ 30). This Epley estimate can vary by lift, lifter and repetition range.",
+    example: "A 100 kg bench press for 5 completed repetitions estimates a 1RM of about 116.7 kg.",
+    intro: "Estimate a one-repetition maximum for bench press, squat or deadlift from a recent set. The same equation serves these closely related lift-specific searches; select the lift by entering its weight and completed repetitions.",
+  };
+  if (tool.slug === "gravel-stone-calculator") return {
+    ...tool,
+    title: "Gravel, Stone and River Rock Calculator",
+    shortTitle: "Gravel & River Rock",
+    description: "Estimate gravel, crushed stone, pea gravel or river rock volume and approximate weight from area, depth and material density.",
+    keywords: [...tool.keywords, "river rock calculator", "river rock coverage calculator", "river rock estimator"],
+  };
+  if (tool.slug === "prorated-salary-calculator") return {
+    ...tool,
+    title: "Pro Rata Calculator",
+    shortTitle: "Pro Rata",
+    description: "Calculate a fair pro rata amount for part of a period from the full-period value and eligible days, including prorated salary and billing examples.",
+    keywords: [...tool.keywords, "pro rata calculator", "prorata calculator", "pro rata salary calculator", "prorated amount calculator"],
+    intro: "Use the pro rata calculator to scale a full-period amount to the eligible share of that period. The day-based method also applies to common prorated salary or billing estimates when the agreement uses calendar days.",
+  };
+  return tool;
+});
 
 export const getGlobalTool = (slug: string) =>
   globalTools.find((tool) => tool.slug === slug);

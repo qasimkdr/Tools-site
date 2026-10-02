@@ -40,12 +40,12 @@ Prefer focused searches and small excerpts. Never repeatedly load large catalogs
 
 Update this section whenever a completed phase changes counts or architecture.
 
-Last verified: **1 October 2026**
+Last verified: **2 October 2026**
 
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 143 canonical + 5 noindex aliases (148 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 160 canonical + 5 noindex aliases (165 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,9 +54,11 @@ Last verified: **1 October 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 35 |
 
-The production build is expected to generate **509 static pages** after the Semrush roadmap ranks 69–85 update. The content gate recognizes **181 Pakistan calculators, 143 indexable global calculators (148 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 35 guides**.
+The production build is expected to generate **526 static pages** after the Semrush roadmap ranks 86–105 update. The content gate recognizes **181 Pakistan calculators, 160 indexable global calculators (165 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 35 guides**.
 
 The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
+
+The 2 October SolvePilot 50 Tools Daily SEO Roadmap batch covers ranks 86–105. It adds 17 canonical global calculators in `lib/semrush-roadmap-86-105-tools.ts` and calculator logic in `components/calculators/semrush-phase-one-b.ts`. Rank 93 merges into the existing prorated salary tool; rank 102 expands the existing one-rep-max page to bench, squat and deadlift; rank 104 adds river-rock intent to the gravel/stone estimator. Rank 105's visceral-fat query is a distinct output and receives its own sourced estimate page. The workbook's rank 98 “Mango+calculator” and rank 364 “Calculator+mango” rows have no sufficiently clear calculator intent, so they remain unbuilt pending a corrected query; do not invent a tool or include those phrases as metadata. The height page explicitly uses the mid-parental estimate and does not claim to implement Khamis–Roche without its age-specific coefficient table. The validator checks the new routes, formulas' resolver coverage, metadata keywords, audit content, sitemap, directory discovery and internal links. The expected static export is 526 pages, with 160 canonical global calculators and five noindex aliases.
 
 Completed major phases include Pakistan calculator expansion, global calculators, Phase 5A browser file tools, Phase 6 generators and the 25-tool global finance expansion.
 
