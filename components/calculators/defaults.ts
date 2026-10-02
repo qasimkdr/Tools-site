@@ -1,6 +1,17 @@
 export type CalculatorDefaults = [string, string, string, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+ "calories-burned-calculator":["70","30","walk","minutes","100"],
+ "pine-straw-calculator":["20","10","50","10"],
+ "ohms-law-calculator":["vi","12","0.5","gold"],
+ "fence-post-depth-calculator":["6","third","0","6"],
+ "lead-time-calculator":["1","5","3","1"],
+ "recessed-light-calculator":["5","4","800","150","0.7"],
+ "partial-fraction-calculator":["1","1,-1","0"],
+ "implicit-differentiation-calculator":["x^2+y^2=25","3","4"],
+ "greek-gematria-calculator":["αβγ","0","0"],
+ "time-off-calculator":["40","4","6","16","80"],
+ "decimals-calculator":["0.1","0.2","add","10"],
  "sourdough-calculator":["1000","70","20","2","100"],
  "audiobook-speed-calculator":["10","0","1.5","0"],
  "surface-area-calculator":["cube","3","4","5"],
@@ -219,7 +230,7 @@ export const calculatorDefaults: Record<string, CalculatorDefaults> = {
   "unit-price-comparison-calculator": ["6", "750", "8", "1000"],
   "work-hours-calculator": ["9", "17.5", "0.5", "20", "shift hours"],
   "download-time-estimator": ["20", "50", "90"],
-  "running-pace-calculator": ["10", "50", "0"],
+  "running-pace-calculator": ["5","30","km","1","pace"],
   "aspect-ratio-calculator": ["1920", "1080", "1280", "height-from-width"],
   "fuel-economy-converter": ["8", "0", "0"],
   "personal-cash-runway-calculator": ["18000", "3000", "1500"],

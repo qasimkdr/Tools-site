@@ -1,3 +1,4 @@
+import {roadmap126Audit} from "./roadmap-126-145-audit";
 import {roadmap106Audit} from "./roadmap-106-125-audit";
 import type { Tool } from "@/lib/tools";
 
@@ -492,4 +493,4 @@ export const semrushBatchOneAudit: Record<string, Audit> = {
   },
 };
 
-export const auditForTool=(tool:Tool)=>roadmap106Audit[tool.slug]||semrushBatchOneAudit[tool.slug];
+export const auditForTool=(tool:Tool)=>roadmap126Audit[tool.slug]||roadmap106Audit[tool.slug]||semrushBatchOneAudit[tool.slug];

@@ -1,3 +1,4 @@
+import {roadmap126Audit} from "@/lib/roadmap-126-145-audit";
 import {roadmap106Audit} from "@/lib/roadmap-106-125-audit";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -55,17 +56,19 @@ export default async function GlobalToolPage({
   const { slug } = await params;
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
-  const isRoadmap106 = Boolean(roadmap106Audit[tool.slug]);
-  const flagship = isRoadmap106 ? null : insightForTool(tool);
+  const hasDetailedEditorial = Boolean(roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]);
+  const flagship = hasDetailedEditorial ? null : insightForTool(tool);
   const semrushAudit = auditForTool(tool);
+  const incoming = globalTools.filter(item => item.slug !== tool.slug && auditForTool(item)?.relatedCalculators?.some(link => link.slug === tool.slug));
+  const outgoing = semrushAudit?.relatedCalculators?.map(link => link.slug) || [];
   const related = globalTools
     .filter((item) => item.slug !== tool.slug && !item.canonicalSlug)
     .sort(
       (a, b) =>
-        Number(b.category === tool.category) -
-        Number(a.category === tool.category),
+        (Number(incoming.includes(b)) * 4 + Number(outgoing.includes(b.slug)) * 2 + Number(b.category === tool.category)) -
+        (Number(incoming.includes(a)) * 4 + Number(outgoing.includes(a.slug)) * 2 + Number(a.category === tool.category)),
     )
-    .slice(0, 4);
+    .slice(0, 5);
   const url = `https://solvepilot.xyz/tools/${tool.canonicalSlug || tool.slug}/`;
   const jsonLd = {
     "@context": "https://schema.org",
@@ -188,8 +191,8 @@ export default async function GlobalToolPage({
             <p>{tool.example}</p>
             {flagship && <FlagshipInsights content={flagship} />}
             {semrushAudit && (
-              <section className="semrush-intent-audit" data-insight-tier={isRoadmap106 ? "tool-specific" : undefined}>
-                <h2>{isRoadmap106 ? "How to interpret your result" : "Search intent and calculator coverage"}</h2>
+              <section className="semrush-intent-audit" data-insight-tier={hasDetailedEditorial ? "tool-specific" : undefined}>
+                <h2>{hasDetailedEditorial ? "How to interpret your result" : "Search intent and calculator coverage"}</h2>
                 <p>{semrushAudit.interpretation}</p>
                 {semrushAudit.relatedCalculators?.length ? (
                   <p>For different inputs or formulas, use {semrushAudit.relatedCalculators.map((item, index) => (
@@ -200,7 +203,7 @@ export default async function GlobalToolPage({
                 <ul>
                   {semrushAudit.keywordThemes.map((theme) => <li key={theme}>{theme}</li>)}
                 </ul>
-                <h2>{isRoadmap106 ? "Scenario comparison" : "Worked scenarios"}</h2>
+                <h2>{hasDetailedEditorial ? "Scenario comparison" : "Worked scenarios"}</h2>
                 <div className="guide-table-wrap">
                   <table>
                     <thead><tr><th>Scenario</th><th>What it shows</th></tr></thead>
@@ -221,7 +224,7 @@ export default async function GlobalToolPage({
                   <p>{semrushAudit.verification}</p>
                   <small>
                     {semrushAudit.sourceUrl ? (
-                      <><a href={semrushAudit.sourceUrl} target="_blank" rel="noreferrer">Authoritative reference</a>{semrushAudit.secondarySourceUrl ? <> and <a href={semrushAudit.secondarySourceUrl} target="_blank" rel="noreferrer">current distribution rules</a></> : null}. {semrushAudit.sourceNote}</>
+                      <><a href={semrushAudit.sourceUrl} target="_blank" rel="noreferrer">Authoritative reference</a>{semrushAudit.secondarySourceUrl ? <> and <a href={semrushAudit.secondarySourceUrl} target="_blank" rel="noreferrer">additional source reference</a></> : null}. {semrushAudit.sourceNote}</>
                     ) : semrushAudit.sourceNote}
                   </small>
                 </div>
@@ -230,7 +233,7 @@ export default async function GlobalToolPage({
             {tool.slug === "college-admission-chances-calculator" && (
               <CollegeAdmissionEditorial />
             )}
-            {tool.category !== "Education" && !isRoadmap106 && <><h2>Understanding the displayed figures</h2>
+            {tool.category !== "Education" && !hasDetailedEditorial && <><h2>Understanding the displayed figures</h2>
             <p>
               The main result answers the page’s primary question, while the
               supporting figures reveal how that answer was formed. Read the

@@ -45,16 +45,16 @@ Last verified: **2 October 2026**
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 175 canonical + 5 noindex aliases (180 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 186 canonical + 5 noindex aliases (191 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
 | Video, audio and subtitle tools | `lib/media-tools.ts` | `/media-tools/[slug]/` | 16 |
 | Archive and compressed-file tools | `lib/archive-tools.ts` | `/archive-tools/[slug]/` | 6 |
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
-| Guides | guide catalog in `lib/` | `/guides/[slug]/` | 35 |
+| Guides | guide catalog in `lib/` | `/guides/[slug]/` | 36 |
 
-The production build is expected to generate **541 static pages** after the SolvePilot roadmap ranks 106–125 update. The content gate recognizes **181 Pakistan calculators, 175 indexable global calculators (180 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 35 guides**.
+The production build is expected to generate **553 static pages** after the SolvePilot roadmap ranks 126–145 update. The content gate recognizes **181 Pakistan calculators, 186 indexable global calculators (191 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 36 guides**.
 
 The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
 
@@ -418,3 +418,5 @@ If any item is missing, report the phase as incomplete rather than describing it
 All mathematics calculators must keep displayed results unchanged while users edit inputs. Calculate runs only when the user clicks **Calculate result**. The initial state prompts for a click instead of calculating the defaults. New calculators must use the shared submitted-results state; never call `config.calculate()` during rendering or initialization. Apply the same interaction to future tools. Verify that editing a field leaves the last submitted result visible and clicking Calculate updates it.
 
 Batch verification commands: `npm run verify:roadmap106` checks real formulas, shape modes, invalid-input boundaries and all 50 WHO monthly median lookups. `npm run verify:calculate` exercises the shared component’s actual callbacks and persistent state without a browser binary; it checks initial click gating and unchanged output while editing. Full browser QA was unavailable in the managed environment because the Chromium download returned an invalid archive. Typecheck and static-export/content gates remain required.
+
+The ranks **126–145** batch covers all 20 roadmap targets: 11 new canonical global calculators, seven upgraded existing calculator URLs covering eight ranks, and one Canon LS-154TG product-intent guide. Exact workbook terms and scope are in `lib/roadmap-126-145-keywords.ts`; retain every destination in future work. Running Pace adds cumulative even splits, Interest adds simple interest, and AP/mare keywords reuse existing pages. Greek gematria is Greek isopsephy only; partial fractions accept monic denominators supplied as at most six real linear roots; implicit differentiation accepts bounded polynomials only. Calories use sourced adult METs and measured-cadence walking steps. Lighting uses supplied lumen-method factors; fence embedment is planning, not engineering. PTO projects a fixed accrual/cap model. Canon seller code is not asserted to be a verified manufacturer part number. New math tools preserve the Calculate-button policy. Expected current export: 553 pages, 186 canonical global calculators plus five aliases, and 36 guides. `npm run verify:roadmap126` checks the actual new resolver and its arithmetic/parser boundaries.
