@@ -40,21 +40,21 @@ Prefer focused searches and small excerpts. Never repeatedly load large catalogs
 
 Update this section whenever a completed phase changes counts or architecture.
 
-Last verified: **2 October 2026**
+Last verified: **3 October 2026**
 
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 205 canonical + 5 noindex aliases (210 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 212 canonical + 5 noindex aliases (217 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
 | Video, audio and subtitle tools | `lib/media-tools.ts` | `/media-tools/[slug]/` | 16 |
 | Archive and compressed-file tools | `lib/archive-tools.ts` | `/archive-tools/[slug]/` | 6 |
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
-| Guides | guide catalog in `lib/` | `/guides/[slug]/` | 38 |
+| Guides | guide catalog in `lib/` | `/guides/[slug]/` | 40 |
 
-The production build is expected to generate **574 static pages** after the SolvePilot roadmap ranks 166–185 update. The content gate recognizes **181 Pakistan calculators, 205 indexable global tools (210 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 38 guides**.
+The production build is expected to generate **583 static pages** after the SolvePilot roadmap ranks 186–205 update. The content gate recognizes **181 Pakistan calculators, 212 indexable global tools (217 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 40 guides**.
 
 The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
 
@@ -436,3 +436,18 @@ Radicals support up to 20 bounded integer square-root terms and constants, with 
 `components/RedactedTextTool.tsx` and `lib/text-redaction.ts` provide local literal replacement and a separate reviewed TXT download; the processor is integrated through the existing global dynamic route. No automatic PII detection, PDF-object redaction or anonymity guarantee is claimed. Source edits retain the last generated copy until Generate is clicked; Clear empties interface state. Audit related links support optional explicit paths for relevant generator/document resources.
 
 Current expected export: **574 pages**, **205 canonical global tools plus five aliases**, **38 guides**. `npm run verify:roadmap166` exercises the actual formulas, humidity modes, date bases, pricing/equity, bounded parser, literal replacement and invalid inputs. `npm run verify:redaction` checks the real text-component callbacks and the actual downloaded Blob contents. `npm run verify:calculate` checks all new mathematics and upgraded interactive modes remain click-gated. All ten new pages require at least 900 rendered words, matching schema, sitemap/directory integration and contextual inbound links; preserve all earlier quality gates.
+
+
+### Roadmap ranks 186–205 — completed 3 October 2026
+All 20 ranks and **99 exact workbook matching queries** are mapped in `lib/roadmap-186-205-keywords.ts`. Seven new canonical calculators are defined in `lib/roadmap-186-205-tools.ts`: Percent, Mulch, Concrete Block count, Basis Points, Rounding, Tire Size and Anniversary. Eleven existing canonical URLs are upgraded for Bowling, AP World, independent Myusfinance-name payment intent, Radicals, Can/Recessed Lights, Anion Gap/ABG, VOO/Compound Interest, Dog Due Date, Grade Curve, Soil Yards and AP Lang. Do not create extra URLs for their close variants.
+
+Two guides in `lib/roadmap-186-205-guides.ts` cover Military PT test selection and BPC-157/TB-500 blend evidence. Military embeds a total of supplied official points/maxima; it does not invent raw-event charts or pass rules. The peptide guide supplies no dose, reconstitution, injection or stacking model. Regulatory listing/nomination is not asserted to be product approval or a universal legal status. Related chemistry and measurement tools are not dosing substitutes. Editorial review is not specialist clinical review.
+
+Logic lives in `components/calculators/roadmap-186-205.ts`. RPD explicitly uses the mean of two non-negative values; change uses a positive original baseline. Percent modes include reverse, duration and nested percentages; examination percentages do not imply board grades. Rounding uses exact BigInt decimal text, explicit halfway rules and significant-figure carry handling. Tire output is nominal metric geometry, not Tacoma fitment or retailer affiliation. Anniversary uses user-selected February 29 observation and Gregorian calendar dates. Basis points are currency-neutral financial arithmetic, not pay scales. Compound interest now supports end-of-month contributions and nominal/effective annual bases, without hidden VOO returns, distributions, taxes or fees. Grade Curve preserves the existing additive highest/mean methods and adds linear z-score rescaling; it does not create a Gaussian distribution. All shared tools retain click-to-calculate interaction.
+
+Current expected export: **583 pages**, **212 canonical global tools plus five noindex aliases (217 routes)** and **40 guides**. `npm run verify:roadmap186` checks actual formula modes, exact rounding ties/carry, date boundaries, finance conventions, legacy grading behavior and related destinations. The content gate requires all 99 exact keywords, nine new destinations, original audits, useful word counts, five FAQs, schema and contextual inbound links.
+
+### Sitemap and indexing checks — 3 October 2026
+The pre-push live sitemap returned HTTP 200, valid XML and 565 unique URLs; robots pointed to the apex sitemap and did not block crawling. Googlebot user-agent requests also returned the same XML, which does not establish actual Googlebot IP access or explain a historical Search Console fetch failure. No IndexNow code exists in this checkout. Do not reintroduce it as a Google indexing fix or claim a submission guarantees crawling/ranking.
+
+A stronger full-export sitemap gate found and fixed inherited homepage canonicals on Contact, Privacy, Cookies and Terms. This was a canonical indexing inconsistency, not demonstrated evidence of a transport fetch failure. `lib/site-url.ts` normalizes origin trailing slashes and rejects path/query/credential configuration. `npm run build` now checks every sitemap URL against its exported self-canonical, rejects noindex entries, duplicates, missing targets, malformed host/path and invalid/future dates, enforces protocol limits and validates robots discovery. The current build sitemap contains 574 canonical URLs. `python3 scripts/check-live-sitemap.py` diagnoses live XML, robots, Googlebot user-agent parity and the four fixed page canonicals after deployment; it cannot read Search Console historical errors. Keep fetchability, canonical indexing and completed deployment as distinct observations.

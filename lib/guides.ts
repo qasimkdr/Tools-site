@@ -1,3 +1,4 @@
+import {roadmap186Guides} from "./roadmap-186-205-guides";
 import {roadmap146Guides} from "./roadmap-146-165-guides";
 import {roadmap126Guide} from "./roadmap-126-145-guide";
 import { trafficGuides } from "@/lib/traffic-guides";
@@ -39,6 +40,7 @@ const editorialSource: GuideSource = {
 };
 
 export const guides: Guide[] = [
+  ...roadmap186Guides,
   {
     slug: "how-electricity-bills-are-calculated-in-pakistan",
     title: "How Electricity Bills Are Calculated in Pakistan",
