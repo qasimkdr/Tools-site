@@ -1,3 +1,5 @@
+import {roadmap206Audit} from "@/lib/roadmap-206-225-audit";
+import {MinecraftSphereTool} from "@/components/MinecraftSphereTool";
 import {roadmap186Audit} from "@/lib/roadmap-186-205-audit";
 import {roadmap166Audit} from "@/lib/roadmap-166-185-audit";
 import {RedactedTextTool} from "@/components/RedactedTextTool";
@@ -60,7 +62,7 @@ export default async function GlobalToolPage({
   const { slug } = await params;
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
-  const hasDetailedEditorial = Boolean(roadmap186Audit[tool.slug]||roadmap166Audit[tool.slug]||roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
+  const hasDetailedEditorial = Boolean(roadmap206Audit[tool.slug]||roadmap186Audit[tool.slug]||roadmap166Audit[tool.slug]||roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
   const flagship = hasDetailedEditorial ? null : insightForTool(tool);
   const semrushAudit = auditForTool(tool);
   const incoming = globalTools.filter(item => item.slug !== tool.slug && auditForTool(item)?.relatedCalculators?.some(link => link.slug === tool.slug));
@@ -165,7 +167,7 @@ export default async function GlobalToolPage({
       </div>
       <article className="shell article-layout">
         <div className="article-main">
-          {tool.slug==="redacted-text-generator"?<RedactedTextTool/>:<Calculator key={tool.slug} slug={tool.slug} />}
+          {tool.slug==="redacted-text-generator"?<RedactedTextTool/>:tool.slug==="minecraft-sphere-generator"?<MinecraftSphereTool/>:<Calculator key={tool.slug} slug={tool.slug} />}
           <AdSlot slot="0000000001" format="horizontal" />
           <section className="rich-content">
             <h2>How this calculator helps</h2>

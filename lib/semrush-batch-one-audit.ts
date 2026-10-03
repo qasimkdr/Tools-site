@@ -1,3 +1,5 @@
+import {roadmap206Audit} from "./roadmap-206-225-audit";
+import {enhanceRoadmap206} from "./roadmap-206-225-audit-upgrades";
 import {roadmap186Audit} from "./roadmap-186-205-audit";
 import {roadmap186Keywords} from "./roadmap-186-205-keywords";
 import {roadmap166Keywords} from "./roadmap-166-185-keywords";
@@ -498,7 +500,8 @@ export const semrushBatchOneAudit: Record<string, Audit> = {
   },
 };
 
-export const auditForTool=(tool:Tool)=>{
+const baseAuditForTool=(tool:Tool)=>{
+ if(roadmap206Audit[tool.slug])return roadmap206Audit[tool.slug];
  if(roadmap186Audit[tool.slug])return roadmap186Audit[tool.slug];
  if(tool.slug==='compound-interest-calculator')return{keywordThemes:['compound interest calculator','voo calculator','monthly contributions','nominal versus effective annual return'],interpretation:'A user-supplied constant-return illustration with month-end contributions. No VOO price feed, historical return, product recommendation, taxes or fees are inferred. Total-return assumptions already including reinvested distributions must not have dividends added again.',scenarios:['Zero return: 1,000 plus twelve contributions of 100 gives 2,200.','12% effective annual return with no contributions: 1,000 grows to 1,120 in one year.','12% nominal annual rate: 1% monthly, which differs from a 12% effective annual return.'] as [string,string,string],mistakes:['Mixing nominal rates with effective annual returns.','Adding dividends twice to a total-return assumption.','Treating a constant-return scenario as a VOO forecast.'] as [string,string,string],verification:'Use the zero-return case to verify contributions, then check a one-year effective-return case without contributions. Reconcile the return basis with product disclosures; market returns vary.',sourceNote:'Vanguard explains ETFs as investment products; SolvePilot supplies only independent user-assumed arithmetic and does not retrieve product performance.',sourceUrl:'https://investor.vanguard.com/investor-resources-education/etfs/what-is-an-etf',secondarySourceUrl:'https://investor.vanguard.com/investment-products/etfs/profile/voo',relatedCalculators:[{slug:'basis-points-calculator',title:'Basis Points Calculator'},{slug:'investment-fee-calculator',title:'Investment Fee Calculator'},{slug:'dividend-reinvestment-calculator',title:'Dividend Reinvestment Calculator'}]};
  const audit=roadmap166Audit[tool.slug]||roadmap146Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap106Audit[tool.slug]||semrushBatchOneAudit[tool.slug];
@@ -510,3 +513,5 @@ export const auditForTool=(tool:Tool)=>{
  if(!terms.length)return related;
  return{...related,keywordThemes:[...new Set([...audit.keywordThemes,...terms])],...(tool.slug==='mean-standard-deviation-calculator'?{sourceUrl:'https://pmc.ncbi.nlm.nih.gov/articles/PMC1255808/',sourceNote:'Altman and Bland distinguish observation standard deviation from sample-mean standard error; SEM = sample SD/√n under the appropriate independent-sampling assumptions.'}:{}),...(tool.slug==='dog-pregnancy-calculator'?{sourceUrl:'https://www.merckvetmanual.com/management-and-nutrition/management-of-reproduction-dogs-and-cats/whelping-and-queening-in-bitches-and-queens',sourceNote:'Merck Veterinary Manual distinguishes broad breeding-date timing from a veterinarian-established ovulation basis. No pregnancy or condition diagnosis is made.'}:{})};
 };
+
+export const auditForTool=(tool:Tool)=>enhanceRoadmap206(tool,baseAuditForTool(tool));

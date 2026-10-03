@@ -1,4 +1,4 @@
-export type CalculatorDefaults = [string, string, string, string?, string?];
+export type CalculatorDefaults = [string, string, string, string?, string?, string?, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
   "epoxy-resin-calculator": ["100", "50", "2", "2:1", "10"],
@@ -452,3 +452,7 @@ export const calculatorDefaults: Record<string, CalculatorDefaults> = {
 Object.assign(calculatorDefaults, {"vpd-calculator": ["25", "60", "24", "air", "0"], "goat-gestation-calculator": ["2026-10-02", "0", "0"], "gas-oil-mix-calculator": ["5", "50", "litre"], "macro-calculator": ["2000", "0", "25", "25", "maintain"], "macroeconomics-calculator": ["1000", "200", "300", "150", "180"], "vinegar-carbon-dosing-calculator": ["0", "100", "200", "5", "5"], "radical-expression-simplifier": ["2sqrt(72)-sqrt(8)+3", "0", "0"], "wedding-liquor-calculator": ["100", "1", "40", "30", "750"], "abg-calculator": ["7.4", "40", "24", "140", "104"], "soil-calculator": ["12", "8", "4", "0", "0"], "profit-margin-calculator-global": ["100", "25", "markup"], "car-lease-vs-buy-calculator": ["2000", "400", "5000", "500;15000;25000", "0;0"], "dog-pregnancy-calculator": ["2026-10-02", "breeding", "0"]});
 
 Object.assign(calculatorDefaults, {"percent-calculator":["20","80","of"],"mulch-calculator":["12","8","3","0","2"],"concrete-block-calculator":["20","8","0","16;8","5"],"basis-points-calculator":["25","0","bps"],"rounding-calculator":["1.005","2","away","places"],"tire-size-calculator":["265/70R16","285/70R17","60","mph"],"anniversary-calculator":["2020-10-03","2026-10-03","feb28"],"compound-interest-calculator":["10000","7","10","100","effective"],"grade-curve-calculator":["60,70,80,90","zscore","75","100","10"],"military-chart-points-total":["40,15,12,12","50,20,15,15","0"]});
+
+Object.assign(calculatorDefaults, {"gc-content-calculator": ["ACGTNN", "dna", "known"], "llc-tax-calculator": ["100000", "100", "0", "0", "0"], "wainscoting-calculator": ["120", "3", "3", "4"], "charles-law-calculator": ["2", "300", "0", "450", "v2"], "crypto-conversion-calculator": ["100", "0.25", "1", "USD", "value"], "basic-calculator": ["(12 + 8) * 3", "0", "0"], "roof-area-calculator": ["40", "30", "6", "10", "0", "0", "0", "roof"], "bank-simple-interest-days": ["10000", "5", "30", "365"], "study-assessment-weighted-total": ["70,80,90", "20,30,50", "0"], "new-jersey-tax-calculator": ["39875", "45000", "joint", "0", "0"]});
+
+Object.assign(calculatorDefaults, {'linear-feet-calculator':['2','6','8','pieces']});

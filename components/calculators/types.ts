@@ -13,6 +13,9 @@ export type ResolverContext = {
   c: string;
   d: string;
   e: string;
+  f?: string;
+  g?: string;
+  h?: string;
   cash: (value: number) => string;
 };
 
