@@ -17,7 +17,8 @@
     "verify:redaction": "node scripts/verify-redacted-text-interaction.cjs",
     "verify:roadmap186": "node scripts/verify-roadmap-186-205.cjs",
     "verify:roadmap206": "node scripts/verify-roadmap-206-225.cjs",
-    "verify:sphere": "node scripts/verify-sphere-interaction.cjs"
+    "verify:sphere": "node scripts/verify-sphere-interaction.cjs",
+    "verify:next20": "node scripts/verify-next20.cjs && node scripts/verify-boolean-interaction.cjs"
   },
   "dependencies": {
     "next": "16.3.5",

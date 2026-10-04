@@ -1,0 +1,262 @@
+{
+  "baselineCommit": "b4e2889",
+  "requestTime": "2026-10-04T00:54:12Z",
+  "fourDayCutoff": "2026-09-30T00:54:12Z",
+  "uniqueDestinations": 20,
+  "newCalculators": 15,
+  "olderCanonicalUpgrades": [
+    {
+      "slug": "asphalt-calculator",
+      "previousReviewed": "2026-09-29",
+      "note": "Calculator-specific implementation last changed 29 September; later shared-file commits affected other tools."
+    },
+    {
+      "slug": "ap-biology-score-calculator",
+      "previousReviewed": "2026-09-29",
+      "note": "Calculator-specific implementation last changed 29 September; later shared-file commits affected other tools."
+    },
+    {
+      "slug": "womens-bmi-calculator",
+      "previousReviewed": "2026-09-29",
+      "note": "Calculator-specific implementation last changed 29 September; later shared-file commits affected other tools."
+    }
+  ],
+  "guides": [
+    "puppy-weight-estimator-guide",
+    "ski-din-calculator-guide"
+  ],
+  "nextUnreviewedRank": 268,
+  "records": [
+    {
+      "rank": 226,
+      "status": "recent",
+      "note": "Average intent already served by Mean/SD (2026-10-02) and Weighted Mean (actual introduction 2026-10-02 despite inherited 2026-09-29 date). Do not change or duplicate."
+    },
+    {
+      "rank": 227,
+      "status": "covered",
+      "destination": "puppy-weight-estimator-guide",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 228,
+      "status": "covered",
+      "destination": "horsepower-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 229,
+      "status": "deferred",
+      "note": "Incorrect mixed cluster: ET overlaps recent Quarter Mile; accounting and US self-employment tax need independent scoped research; meme and Google-app queries are unrelated/navigation. Retain for intent correction."
+    },
+    {
+      "rank": 230,
+      "status": "covered",
+      "destination": "ski-din-calculator-guide",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 231,
+      "status": "recent",
+      "note": "Bowling Score updated 2026-10-03; handicap is already supported on its canonical page."
+    },
+    {
+      "rank": 232,
+      "status": "deferred",
+      "note": "Calculator+cherry has no established functional calculator intent."
+    },
+    {
+      "rank": 233,
+      "status": "covered",
+      "destination": "interest-rate-cap-payout-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 234,
+      "status": "recent",
+      "note": "Basis Points updated 2026-10-03."
+    },
+    {
+      "rank": 235,
+      "status": "covered",
+      "destination": "geographic-midpoint-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 236,
+      "status": "recent",
+      "note": "USAF points page updated within four days; reuse its canonical destination in a later eligible update."
+    },
+    {
+      "rank": 237,
+      "status": "covered",
+      "destination": "cake-pricing-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 238,
+      "status": "recent",
+      "note": "AP Chemistry updated 2026-10-02/03."
+    },
+    {
+      "rank": 239,
+      "status": "recent",
+      "note": "Profit Margin updated 2026-10-02; branded Nemin query belongs to that independent canonical tool."
+    },
+    {
+      "rank": 240,
+      "status": "covered",
+      "destination": "sheep-gestation-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 241,
+      "status": "deferred",
+      "note": "Reputation calculator requires the actual game/platform and reputation rules; do not fabricate a universal model."
+    },
+    {
+      "rank": 242,
+      "status": "covered",
+      "destination": "asphalt-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 243,
+      "status": "recent",
+      "note": "Military PT guide/points destination updated 2026-10-03."
+    },
+    {
+      "rank": 244,
+      "status": "covered",
+      "destination": "boolean-algebra-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 245,
+      "status": "recent",
+      "note": "Five-number summary is related descriptive-statistics output; defer extension of recent Mean/SD page, do not create a duplicate statistics URL."
+    },
+    {
+      "rank": 246,
+      "status": "covered",
+      "destination": "megawatt-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 247,
+      "status": "recent",
+      "note": "Molarity updated 2026-10-02; branded Tocris intent can be reviewed later."
+    },
+    {
+      "rank": 248,
+      "status": "recent",
+      "note": "Military PT canonical guide/points destination updated 2026-10-03."
+    },
+    {
+      "rank": 249,
+      "status": "recent",
+      "note": "Radical simplifier updated 2026-10-03."
+    },
+    {
+      "rank": 250,
+      "status": "covered",
+      "destination": "substitution-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 251,
+      "status": "deferred",
+      "note": "Pool shock requires verified product-label concentration, chemistry and a safely scoped model; no generic dosing formula fabricated."
+    },
+    {
+      "rank": 252,
+      "status": "covered",
+      "destination": "ap-biology-score-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 253,
+      "status": "deferred",
+      "note": "BTZ eligibility requires verified current policy, grade dates and official quarter rules; do not invent promotion eligibility."
+    },
+    {
+      "rank": 254,
+      "status": "covered",
+      "destination": "womens-bmi-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 255,
+      "status": "covered",
+      "destination": "cap-rate-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 256,
+      "status": "deferred",
+      "note": "Binding is ambiguous between ski release and quilt binding; establish intended query before building."
+    },
+    {
+      "rank": 257,
+      "status": "covered",
+      "destination": "swim-time-converter",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 258,
+      "status": "covered",
+      "destination": "swim-time-converter",
+      "note": "Merged into rank 257 destination."
+    },
+    {
+      "rank": 259,
+      "status": "covered",
+      "destination": "cpm-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 260,
+      "status": "covered",
+      "destination": "fence-cost-estimator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 261,
+      "status": "recent",
+      "note": "Peptide evidence guide updated 2026-10-03; no dosing model."
+    },
+    {
+      "rank": 262,
+      "status": "recent",
+      "note": "Weight loss percentage reuses Percent updated 2026-10-03; no duplicate percentage URL."
+    },
+    {
+      "rank": 263,
+      "status": "recent",
+      "note": "Military PT canonical guide updated 2026-10-03."
+    },
+    {
+      "rank": 264,
+      "status": "recent",
+      "note": "AFT belongs to the recently maintained military PT cluster; official raw-event chart implementation remains separate from supplied-point arithmetic."
+    },
+    {
+      "rank": 265,
+      "status": "covered",
+      "destination": "subwoofer-case-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 266,
+      "status": "covered",
+      "destination": "acres-per-hour-calculator",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    },
+    {
+      "rank": 267,
+      "status": "covered",
+      "destination": "torque-converter",
+      "note": "New distinct destination or eligible older canonical upgrade; method limits documented."
+    }
+  ]
+}

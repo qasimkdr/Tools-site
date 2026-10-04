@@ -1,0 +1,12 @@
+const fs=require('node:fs'),assert=require('node:assert/strict'),ts=require('typescript'),Module=require('node:module');
+require.extensions['.ts']=require.extensions['.tsx']=(m,file)=>m._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020,jsx:ts.JsxEmit.ReactJSX}}).outputText,file);
+const states=[];let slot=0;const react=require('react'),load=Module._load;
+Module._load=function(id,parent,...rest){if(id==='react'&&parent?.filename.endsWith('/components/BooleanAlgebraTool.tsx'))return{...react,useState:init=>{const i=slot++;if(!(i in states))states[i]=init;return[states[i],v=>states[i]=v]}};return load.call(this,id,parent,...rest)};
+const {BooleanAlgebraTool}=require('../components/BooleanAlgebraTool.tsx');
+const walk=(node,p)=>{if(!node||typeof node!=='object')return null;if(p(node))return node;for(const c of [node.props?.children].flat(Infinity)){const v=walk(c,p);if(v)return v;}return null};
+const text=n=>Array.isArray(n)?n.map(text).join(''):n&&typeof n==='object'?text(n.props?.children):String(n??'');
+const render=()=>{slot=0;return BooleanAlgebraTool();};
+const input=t=>walk(t,n=>n.type==='input'),button=t=>walk(t,n=>n.type==='button'),table=t=>walk(t,n=>n.type==='table');
+let t=render();assert(!table(t));assert(text(t).includes('Click Calculate'));button(t).props.onClick();t=render();assert(table(t));assert(text(t).includes('1 true rows out of 4'));const previous=text(table(t));input(t).props.onChange({target:{value:'A|!A'}});t=render();assert.equal(text(table(t)),previous);assert(text(t).includes('Inputs changed'));button(t).props.onClick();t=render();assert(text(t).includes('Tautology'));assert(text(t).includes('2 true rows out of 2'));
+const validTable=text(table(t));input(t).props.onChange({target:{value:'A&&B'}});t=render();button(t).props.onClick();t=render();assert(walk(t,n=>n.props?.role==='alert'));assert.equal(text(table(t)),validTable);input(t).props.onChange({target:{value:'A|B|C|D'}});t=render();button(t).props.onClick();t=render();assert(text(t).includes('15 true rows out of 16'));assert.equal(walk(t,n=>n.type==='tbody').props.children.length,16);
+console.log('Boolean table UI passed: explicit submission, accessible 16-row table, stable previous output and validation errors.');

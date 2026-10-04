@@ -40,21 +40,21 @@ Prefer focused searches and small excerpts. Never repeatedly load large catalogs
 
 Update this section whenever a completed phase changes counts or architecture.
 
-Last verified: **3 October 2026**
+Last verified: **4 October 2026**
 
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 220 canonical + 5 noindex aliases (225 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 235 canonical + 5 noindex aliases (240 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
 | Video, audio and subtitle tools | `lib/media-tools.ts` | `/media-tools/[slug]/` | 16 |
 | Archive and compressed-file tools | `lib/archive-tools.ts` | `/archive-tools/[slug]/` | 6 |
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
-| Guides | guide catalog in `lib/` | `/guides/[slug]/` | 43 |
+| Guides | guide catalog in `lib/` | `/guides/[slug]/` | 45 |
 
-The production build is expected to generate **594 static pages** after the SolvePilot roadmap ranks 206–225 update. The content gate recognizes **181 Pakistan calculators, 220 indexable global tools (225 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 43 guides**.
+The production build is expected to generate **611 static pages** after the next 20 eligible destinations following ranks 206–225. The content gate recognizes **181 Pakistan calculators, 235 indexable global tools (240 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 45 guides**.
 
 The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
 
@@ -467,3 +467,21 @@ Roofing retains horizontal-plan uniform-pitch geometry and adds supplied package
 Bank guide embeds fixed-denominator simple-interest arithmetic from supplied days; it does not perform a 30/360 date transformation. Study guide embeds a normalized weighted assessment percentage; it does not predict a VCAA study score, moderation, scaling or ATAR. Breast implant guide has no personalized cc algorithm, cup conversion, sizing recommendation or image analysis. Related measurement pages are not device-selection substitutes; editorial review is not clinical review.
 
 Expected export: **594 pages**, **220 canonical global tools plus five aliases (225 routes)**, **43 guides** and **585 sitemap URLs**. `npm run verify:roadmap206` checks shipped formula modes, all tax rows, official examples/boundaries, voxel counts/symmetry, parser rejections and exact keyword destinations. `npm run verify:sphere` checks actual component callbacks and the exported CSV Blob. `npm run verify:calculate` covers initial click gates, stable outputs and all extra roof-field snapshots. Preserve previous regression and full-export sitemap gates.
+
+
+### Next 20 eligible destinations after rank 225 — completed 4 October 2026
+The user's permanent selection rule: skip an existing calculator updated within the preceding **four days** and move to another eligible roadmap entry. Upgrade an older existing canonical calculator instead of making a duplicate. Check both per-tool review metadata and calculator-specific git history: inherited dates can be stale, and broad shared-file commit dates alone do not prove a particular calculator changed. Shared contextual navigation links may connect new destinations without resetting an existing tool's reviewed date or changing its calculation/editorial model.
+
+This batch uses **20 unique destinations** covering **21 exact workbook queries/ranks** from 227 through 267; ranks 257 and 258 merge into one Swim Time Converter. `research/roadmap-next20-selection.json` records every inspected row 226–267, the cutoff, recently updated skips, unresolved intent deferrals and exact previous-state evidence for the three eligible upgrades. **Next unreviewed rank: 268.** Do not describe this as all ranks 226–245 completed: several are intentionally skipped or deferred.
+
+Fifteen new canonical calculators live in `lib/roadmap-next20-tools.ts`: Horsepower, Interest Rate Cap Period Payout, Geographic Midpoint, Cake Pricing, Sheep Gestation, Boolean Algebra truth tables, Megawatt unit conversion, two-equation Substitution, Cap Rate, Swim Time Conversion, CPM, Fence Cost, Subwoofer Case Volume, Acres per Hour and Torque Conversion. `components/calculators/roadmap-next20.ts` owns their bounded formulas and the three older upgrades. Existing Asphalt/Pavement, AP Biology and adult/reverse BMI pages are upgraded at their original URLs; their calculator-specific content/logic was older than the cutoff. Mean/SD, Weighted Mean, Bowling, Basis Points, USAF, AP Chemistry, Profit Margin, Molarity, Radicals and the military/peptide clusters remain unselected when recently updated.
+
+`lib/roadmap-next20-keywords.ts` retains exact keyword, volume, KD, CPC, destination and rank from the supplied roadmap. `lib/roadmap-next20-audit.ts` and `lib/roadmap-next20-upgrades.ts` supply original methodology, examples, limitations and contextual links. New money worksheets and asphalt cost are currency-neutral in the real shared UI. The new Boolean component `components/BooleanAlgebraTool.tsx` renders an accessible complete table after explicit submission, preserves the last valid table while editing or rejecting invalid input, and supports at most four variables/16 rows. Boolean is evaluation/classification, not a symbolic minimizer or HDL simulator. Substitution is six numeric coefficients for two real linear equations, with near-singular rejection, not general CAS.
+
+Horsepower uses torque and rpm at one operating point and labels mechanical hp versus metric PS. Interest-rate cap is supplied single-period payout, **not Chatham premium pricing, curve/volatility valuation or live quotes**. Geographic midpoint requires manually supplied coordinates and is spherical shorter-arc geometry, **not city geocoding, road distance or driving time**; antipodal pairs have no unique midpoint. Cake price uses labor as cost and margin/percentage fees as shares of final price. Sheep dates use a 147-day center and 144–150-day general reference, not diagnosis or intervention advice. Megawatt and torque are unit conversions, not energy/fastener recommendations. Swim conversion is distance scaling multiplied by an explicit supplied factor; **factor one is not an official SCY/SCM/LCM performance conversion**. No federation factor or additive conversion is fabricated.
+
+Cap rate uses annual NOI and supplied positive property value with negative NOI preserved; no appraisal or investment recommendation. CPM uses matched spend/impressions and a constant-price inverse scenario, not unique reach, conversion or earnings prediction. Fence cost uses supplied rates, explicit material-only allowance and separate charges, not market prices or structural design. Subwoofer estimates rectangular net air volume after supplied displacement, not acoustic tuning. Field capacity uses width/speed/efficiency and the 8.25 unit factor, not a safe-speed prescription. Asphalt replaces a hidden fixed allowance with an explicit one and supplied material-only price while retaining the older 5% scenario. AP Biology validates MC count and FRQ percentage and does not invent 1–5 cutoffs. Reverse BMI is the adult identity using a **user-supplied BMI, not an ideal-weight target**.
+
+Two source-backed guides in `lib/roadmap-next20-guides.ts` cover Puppy Weight Estimator limitations and Ski DIN Calculator/technician checks. No universal adult puppy-weight multiplier, feeding prescription, personalized ski release setting or unverified adjustment chart is generated. Editorial review is distinguished from individual veterinary/technician assessment. Unclear cherry, reputation, binding and mixed calculator.net clusters remain deferred, as do product-label pool-shock dosing and unverified BTZ policy.
+
+Expected export: **611 static pages**, **235 canonical global calculators plus five noindex aliases (240 generated global routes)**, **45 guides**, **602 sitemap URLs**. `npm run verify:next20` tests all new/default/upgrade formulas, parser and date boundaries, midpoint symmetry, negative NOI, unit conversions, actual Boolean callbacks and related destinations. `npm run verify:calculate` exercises all eighteen mathematics resolvers and the extra field snapshots with real component callbacks. The full build gates all fifteen new pages at 900 rendered words, both guides at 1200 words, exact keyword destinations, metadata/schema, contextual inbound links, directory discovery and all sitemap self-canonicals. Keep all previous regression gates.

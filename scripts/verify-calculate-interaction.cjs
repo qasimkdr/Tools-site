@@ -36,3 +36,29 @@ console.log('Ranks 206–225 shared UI passed, including roofing sixth/seventh/e
 // FASTA must use a real textarea: a single-line input strips pasted newlines.
 states.length=0;let gc=render('gc-content-calculator');const sequenceField=field(gc,'DNA or RNA sequence (one FASTA record allowed)'),control=sequenceField.type(sequenceField.props);assert(walk(control,n=>n.type==='textarea'));sequenceField.props.onChange('>record one\nACGTNN');gc=render('gc-content-calculator');assert.equal(result(gc),'Click Calculate');button(gc).props.onClick();assert.equal(result(render('gc-content-calculator')),'50 %');
 console.log('GC textarea preserves multiline FASTA and remains click-gated.');
+
+// Every next-batch resolver uses the actual persistent submitted-results shell.
+for(const [slug,label,next]of [
+ ['horsepower-calculator','Torque at measured operating point','300'],
+ ['interest-rate-cap-payout-calculator','Observed index rate','7'],
+ ['geographic-midpoint-calculator','First latitude','10'],
+ ['cake-pricing-calculator','Ingredients and decoration cost','50'],
+ ['sheep-gestation-calculator','Known mating date','2026-01-08'],
+ ['asphalt-calculator','Paved surface area','1200'],
+ ['boolean-algebra-calculator','Boolean expression using A–D','A|B'],
+ ['megawatt-calculator','Power value','3'],
+ ['substitution-calculator','Equation 1: right side','8'],
+ ['ap-biology-score-calculator','Multiple-choice correct','48'],
+ ['womens-bmi-calculator','Measured body weight','70'],
+ ['cap-rate-calculator','Annual gross operating income','140000'],
+ ['swim-time-converter','Recorded time: seconds or m:ss.xx','90'],
+ ['cpm-calculator','Campaign spend','300'],
+ ['fence-cost-estimator','Fence run length (exclude gate openings)','120'],
+ ['subwoofer-case-calculator','External rectangular width','18'],
+ ['acres-per-hour-calculator','Effective implement working width','24'],
+ ['torque-converter','Torque value','120']]){
+ states.length=0;let tree=render(slug,false);assert.equal(result(tree),'Click Calculate',slug);button(tree).props.onClick();tree=render(slug,false);const previous=result(tree);assert(!previous.includes('PKR'),slug+' global currency');field(tree,label).props.onChange(next);tree=render(slug,false);assert.equal(result(tree),previous,slug+' output while editing');button(tree).props.onClick();assert.notEqual(result(render(slug,false)),previous,slug+' submitted output');
+}
+// Sixth/seventh-field changes must also wait for resubmission.
+states.length=0;let cake=render('cake-pricing-calculator',false);button(cake).props.onClick();cake=render('cake-pricing-calculator',false);const priorCake=result(cake);field(cake,'Fixed transaction fee').props.onChange('10');cake=render('cake-pricing-calculator',false);assert.equal(result(cake),priorCake);button(cake).props.onClick();assert.notEqual(result(render('cake-pricing-calculator',false)),priorCake);
+console.log('Next 20 shared UI passed: all 18 resolver modes click-gated; global money is currency-neutral; extra fields preserve submitted snapshots.');
