@@ -19,7 +19,7 @@ for(const g of guides)profiles.push({path:`/guides/${g.slug}/`,title:g.title,des
 const index=new Map(profiles.map(p=>[p.path,p]));
 for(const t of globalTools.filter(t=>!t.canonicalSlug)){const p=index.get(`/tools/${t.slug}/`)!;for(const link of auditForTool(t)?.relatedCalculators||[]){const path=link.path||resolveSlug(link.slug);if(path&&index.has(path))p.approved.push(path);}}
 // Guide associations supply explicit supporting-guide evidence to their tools.
-for(const p of profiles.filter(p=>p.kind==='guide'))for(const path of p.approved){const target=index.get(path);if(target?.kind==='tool')target.approved.push(p.path);}
+for(const p of profiles.filter(p=>p.kind==='guide'))for(const path of p.approved){const target=index.get(path);if(target?.kind==='tool'&&tokens(target.title).some(t=>tokens(p.title).includes(t))&&target.terms.filter(t=>p.terms.includes(t)).length>=2)target.approved.push(p.path);}
 for(const p of profiles)p.approved=[...new Set(p.approved)].filter(path=>path!==p.path&&index.has(path));
 export const navigationProfiles=profiles;
 export const relatedNavigation=createMatcher(profiles);

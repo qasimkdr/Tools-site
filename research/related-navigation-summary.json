@@ -2,9 +2,9 @@
   "version": 1,
   "policy": "navigation only; scores are not probabilities; duplicate candidates require manual review",
   "pages": 603,
-  "selectedLinks": 698,
+  "selectedLinks": 613,
   "automaticLinks": 12,
-  "editorialLinks": 686,
+  "editorialLinks": 601,
   "duplicateCandidates": [
     {
       "paths": [
@@ -207,7 +207,7 @@
       "action": "review-only"
     }
   ],
-  "unmatchedCount": 362,
+  "unmatchedCount": 400,
   "automaticSelections": [
     {
       "source": "/pk/tools/lithium-vs-lead-acid-battery-calculator/",

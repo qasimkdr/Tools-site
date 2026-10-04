@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/validate-content.mjs && node scripts/verify-related-navigation.cjs && node scripts/indexnow.mjs generate",
+    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/validate-content.mjs && node scripts/verify-related-navigation.cjs --export && node scripts/indexnow.mjs generate",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "validate:content": "node scripts/validate-content.mjs",

@@ -27,9 +27,11 @@ for(const p of pages){
  report.matches.push({source:p.path,selected:matches,review:matcher.ranked(p.path).filter(m=>m.confidence==='review').slice(0,3)});
 }
 assert.equal(pages.length,603);
+assert(!matcher.select('/tools/ratio-calculator/').some(m=>m.path==='/guides/lri-calculator-guide/'));
+assert(!matcher.select('/tools/ratio-calculator/').some(m=>m.path==='/guides/eye-prescription-to-20-20-guide/'));
 assert.equal(matcher.select('/tools/watt-hour-calculator/',5,['/tools/watt-hour-calculator/']).some(m=>m.path==='/tools/watt-hour-calculator/'),false);
 let renderedBlocks=0;
-if(fs.existsSync('out/sitemap.xml'))for(const p of pages){
+if(process.argv.includes('--export')&&fs.existsSync('out/sitemap.xml'))for(const p of pages){
  const file=`out${p.path}index.html`;assert(fs.existsSync(file),p.path+' export missing');
  const html=fs.readFileSync(file,'utf8'),block=html.match(/<section[^>]*data-related-navigation="v1"[^>]*>([\s\S]*?)<\/section>/);
  if(!block)continue;renderedBlocks++;
