@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/validate-content.mjs",
+    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/validate-content.mjs && node scripts/indexnow.mjs generate",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "validate:content": "node scripts/validate-content.mjs",
@@ -19,7 +19,9 @@
     "verify:roadmap206": "node scripts/verify-roadmap-206-225.cjs",
     "verify:sphere": "node scripts/verify-sphere-interaction.cjs",
     "verify:next20": "node scripts/verify-next20.cjs && node scripts/verify-boolean-interaction.cjs",
-    "verify:roadmap268": "node scripts/verify-roadmap-268-plus.cjs"
+    "verify:roadmap268": "node scripts/verify-roadmap-268-plus.cjs",
+    "indexnow:notify": "node scripts/indexnow.mjs notify",
+    "verify:indexnow": "node --test scripts/indexnow.test.mjs"
   },
   "dependencies": {
     "next": "16.3.5",

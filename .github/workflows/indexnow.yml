@@ -1,0 +1,32 @@
+name: Notify IndexNow after production deployment
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: false
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Restore last successfully submitted manifest
+        uses: actions/cache/restore@v4
+        with:
+          path: .indexnow-state
+          key: indexnow-production-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: indexnow-production-
+      - name: Wait for this commit to go live and notify changed URLs
+        run: node scripts/indexnow.mjs notify
+      - name: Save checkpoint only after accepted submissions
+        uses: actions/cache/save@v4
+        with:
+          path: .indexnow-state
+          key: indexnow-production-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
