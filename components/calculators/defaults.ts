@@ -1,6 +1,27 @@
 export type CalculatorDefaults = [string, string, string, string?, string?, string?, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  "drywall-calculator": ["500", "40", "4", "8", "10"],
+  "zero-to-sixty-calculator": ["4", "60", "mph"],
+  "watt-hour-calculator": ["60", "5", "0"],
+  "kd-calculator": ["120", "80", "2"],
+  "deck-board-calculator": ["12", "16", "5.5", "0.25", "16", "10"],
+  "plate-rolling-calculator": ["100", "10", "0.5", "360", "0"],
+  "running-record-calculator": ["100", "5", "2", "60"],
+  "timecode-calculator": ["00:00:12:15", "00:00:00:15", "30", "add"],
+  "cow-gestation-calculator": ["2026-01-01", "283", "0"],
+  "rim-offset-calculator": ["8", "40", "9", "35"],
+  "correlation-coefficient-calculator": ["1,2,3,4", "2,4,6,8", "0"],
+  "speed-distance-time-calculator": ["speed", "150", "2", "75"],
+  "tv-mounting-height-calculator": ["105", "70", "0", "10"],
+  "wire-length-calculator": ["20", "2", "3", "1", "10"],
+  "gear-ratio-speed-calculator": ["speed", "3000", "60", "1", "3", "28"],
+  "christmas-tree-light-calculator": ["6", "100", "100", "200"],
+  "ops-calculator": ["100", "30", "10", "2", "3", "5", "1", "4"],
+  "binomial-distribution-calculator": ["10", "0.5", "5"],
+  "octagon-calculator": ["2", "0", "0"],
+  "winrate-calculator": ["30", "20", "10", "include", "60"],
+
   "horsepower-calculator": ["200", "3000", "0"],
   "interest-rate-cap-payout-calculator": ["1000000", "6", "4", "30", "360"],
   "geographic-midpoint-calculator": ["0", "0", "0", "90"],

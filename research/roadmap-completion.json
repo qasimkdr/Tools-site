@@ -1,0 +1,4844 @@
+{
+  "summary": {
+    "asOf": "2026-10-04",
+    "totalRoadmapRows": 489,
+    "completedScopedRows": 260,
+    "completedCalculatorOrToolRows": 250,
+    "completedGuideRows": 10,
+    "uniqueCalculatorOrToolDestinations": 190,
+    "uniqueGuideDestinations": 10,
+    "notCountedRows": 229,
+    "latestReviewedRank": 327,
+    "nextUnreviewedRank": 328,
+    "thisBatchNewCalculators": 20,
+    "thisBatchExactKeywords": 43,
+    "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis\u2013Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately."
+  },
+  "rows": [
+    {
+      "rank": 1,
+      "roadmapPage": "Date From Today Calculator",
+      "primaryKeyword": "14 days from today",
+      "status": "completed-scoped-destination",
+      "path": "/tools/date-from-today-calculator/",
+      "slug": "date-from-today-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/date-from-today-calculator/"
+      ]
+    },
+    {
+      "rank": 2,
+      "roadmapPage": "Payment Calculator",
+      "primaryKeyword": "payment calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/payment-calculator/",
+      "slug": "payment-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/payment-calculator/"
+      ]
+    },
+    {
+      "rank": 3,
+      "roadmapPage": "Proportion Calculator",
+      "primaryKeyword": "proportion calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ratio-calculator/",
+      "slug": "ratio-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/ratio-calculator/"
+      ]
+    },
+    {
+      "rank": 4,
+      "roadmapPage": "Interest Rate Calculator",
+      "primaryKeyword": "interest rate calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/interest-rate-calculator/",
+      "slug": "interest-rate-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/interest-rate-calculator/"
+      ]
+    },
+    {
+      "rank": 5,
+      "roadmapPage": "Ratio Calculator",
+      "primaryKeyword": "ratio calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ratio-calculator/",
+      "slug": "ratio-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/ratio-calculator/"
+      ]
+    },
+    {
+      "rank": 6,
+      "roadmapPage": "Age Calculator",
+      "primaryKeyword": "age calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/age-calculator/",
+      "slug": "age-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/age-calculator/"
+      ]
+    },
+    {
+      "rank": 7,
+      "roadmapPage": "Discount Calculator",
+      "primaryKeyword": "discount calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/discount-calculator/",
+      "slug": "discount-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/discount-calculator/"
+      ]
+    },
+    {
+      "rank": 8,
+      "roadmapPage": "Hypotenuse Calculator",
+      "primaryKeyword": "hypotenuse calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/right-triangle-calculator/",
+      "slug": "right-triangle-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/right-triangle-calculator/"
+      ]
+    },
+    {
+      "rank": 9,
+      "roadmapPage": "Period Calculator",
+      "primaryKeyword": "period calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/period-calculator/",
+      "slug": "period-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/period-calculator/"
+      ]
+    },
+    {
+      "rank": 10,
+      "roadmapPage": "Random Number Generator",
+      "primaryKeyword": "random 4 digit number generator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/random-number-generator/",
+      "slug": "random-number-generator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/random-number-generator/"
+      ]
+    },
+    {
+      "rank": 11,
+      "roadmapPage": "Cubic Yard Calculator",
+      "primaryKeyword": "cubic yard calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cubic-yard-calculator/",
+      "slug": "cubic-yard-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/cubic-yard-calculator/"
+      ]
+    },
+    {
+      "rank": 12,
+      "roadmapPage": "Gravel & Stone Calculator",
+      "primaryKeyword": "stone calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/gravel-stone-calculator/",
+      "slug": "gravel-stone-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/gravel-stone-calculator/"
+      ]
+    },
+    {
+      "rank": 13,
+      "roadmapPage": "Army Body Fat Calculator",
+      "primaryKeyword": "army fitness calculator body fat",
+      "status": "completed-scoped-destination",
+      "path": "/tools/army-waist-height-ratio-calculator/",
+      "slug": "army-waist-height-ratio-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/army-waist-height-ratio-calculator/"
+      ]
+    },
+    {
+      "rank": 14,
+      "roadmapPage": "401(k) Calculator",
+      "primaryKeyword": "401k calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/401k-calculator/",
+      "slug": "401k-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/401k-calculator/"
+      ]
+    },
+    {
+      "rank": 15,
+      "roadmapPage": "Sand Calculator",
+      "primaryKeyword": "sand calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/sand-calculator/",
+      "slug": "sand-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/sand-calculator/"
+      ]
+    },
+    {
+      "rank": 16,
+      "roadmapPage": "Right Triangle Calculator",
+      "primaryKeyword": "right triangle calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/right-triangle-calculator/",
+      "slug": "right-triangle-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/right-triangle-calculator/"
+      ]
+    },
+    {
+      "rank": 17,
+      "roadmapPage": "Ap World Calculator",
+      "primaryKeyword": "ap world calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-world-score-calculator/",
+      "slug": "ap-world-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/ap-world-score-calculator/"
+      ]
+    },
+    {
+      "rank": 18,
+      "roadmapPage": "GPA Calculator",
+      "primaryKeyword": "gpa calculator for middle schoolers",
+      "status": "completed-scoped-destination",
+      "path": "/tools/gpa-calculator/",
+      "slug": "gpa-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/gpa-calculator/"
+      ]
+    },
+    {
+      "rank": 19,
+      "roadmapPage": "Square Footage Calculator",
+      "primaryKeyword": "square footage calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/square-footage-calculator/",
+      "slug": "square-footage-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/square-footage-calculator/"
+      ]
+    },
+    {
+      "rank": 20,
+      "roadmapPage": "Hours Calculator",
+      "primaryKeyword": "hours from now calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/work-hours-calculator/",
+      "slug": "work-hours-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/work-hours-calculator/"
+      ]
+    },
+    {
+      "rank": 21,
+      "roadmapPage": "Bench Press Max Calculator",
+      "primaryKeyword": "bench press max calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/bench-press-max-calculator/",
+      "slug": "bench-press-max-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/bench-press-max-calculator/"
+      ]
+    },
+    {
+      "rank": 22,
+      "roadmapPage": "Triangle Calculator",
+      "primaryKeyword": "right angle triangle calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/right-triangle-calculator/",
+      "slug": "right-triangle-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/right-triangle-calculator/"
+      ]
+    },
+    {
+      "rank": 23,
+      "roadmapPage": "Molecular Weight Calculator",
+      "primaryKeyword": "molecular weight calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/molecular-weight-calculator/",
+      "slug": "molecular-weight-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/molecular-weight-calculator/"
+      ]
+    },
+    {
+      "rank": 24,
+      "roadmapPage": "Bowling Score Calculator",
+      "primaryKeyword": "bowling score calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/bowling-score-calculator/",
+      "slug": "bowling-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/bowling-score-calculator/"
+      ]
+    },
+    {
+      "rank": 25,
+      "roadmapPage": "Air Force Pt Test Calculator",
+      "primaryKeyword": "air force pt test calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/air-force-pt-test-calculator/",
+      "slug": "air-force-pt-test-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/air-force-pt-test-calculator/"
+      ]
+    },
+    {
+      "rank": 26,
+      "roadmapPage": "Calculateur Racine Carree Calculator",
+      "primaryKeyword": "racine carree calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/square-root-calculator/",
+      "slug": "square-root-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/square-root-calculator/"
+      ]
+    },
+    {
+      "rank": 27,
+      "roadmapPage": "Fraction Calculator",
+      "primaryKeyword": "mixed fraction calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/fraction-calculator/",
+      "slug": "fraction-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/fraction-calculator/"
+      ]
+    },
+    {
+      "rank": 28,
+      "roadmapPage": "How Many Years Calculator",
+      "primaryKeyword": "how many years calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/how-many-years-calculator/",
+      "slug": "how-many-years-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/how-many-years-calculator/"
+      ]
+    },
+    {
+      "rank": 29,
+      "roadmapPage": "Mortgage Calculator",
+      "primaryKeyword": "mortgage calculator idaho",
+      "status": "completed-scoped-destination",
+      "path": "/tools/mortgage-payment-calculator/",
+      "slug": "mortgage-payment-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/mortgage-payment-calculator/"
+      ]
+    },
+    {
+      "rank": 30,
+      "roadmapPage": "Cylinder Volume Calculator",
+      "primaryKeyword": "volume calculator cylinder",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cylinder-volume-calculator/",
+      "slug": "cylinder-volume-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/cylinder-volume-calculator/"
+      ]
+    },
+    {
+      "rank": 31,
+      "roadmapPage": "Date Calculator",
+      "primaryKeyword": "add days calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/date-from-today-calculator/",
+      "slug": "date-from-today-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/date-from-today-calculator/"
+      ]
+    },
+    {
+      "rank": 32,
+      "roadmapPage": "Overtime Calculator",
+      "primaryKeyword": "overtime calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/overtime-pay-calculator-global/",
+      "slug": "overtime-pay-calculator-global",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/overtime-pay-calculator-global/"
+      ]
+    },
+    {
+      "rank": 33,
+      "roadmapPage": "Hourly Wage And Tax Calculator",
+      "primaryKeyword": "hourly wage and tax calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/paycheck-estimator-calculator/",
+      "slug": "paycheck-estimator-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/paycheck-estimator-calculator/"
+      ]
+    },
+    {
+      "rank": 34,
+      "roadmapPage": "Asphalt Calculator",
+      "primaryKeyword": "bitumen calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/asphalt-calculator/",
+      "slug": "asphalt-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/asphalt-calculator/"
+      ]
+    },
+    {
+      "rank": 35,
+      "roadmapPage": "Ap Bio Score Calculator",
+      "primaryKeyword": "ap bio score calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-biology-score-calculator/",
+      "slug": "ap-biology-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/ap-biology-score-calculator/"
+      ]
+    },
+    {
+      "rank": 36,
+      "roadmapPage": "Bmi Women Calculator",
+      "primaryKeyword": "women bmi calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/womens-bmi-calculator/",
+      "slug": "womens-bmi-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/womens-bmi-calculator/"
+      ]
+    },
+    {
+      "rank": 37,
+      "roadmapPage": "Ap Chemistry Score Calculator",
+      "primaryKeyword": "ap chemistry score calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-chemistry-score-calculator/",
+      "slug": "ap-chemistry-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/ap-chemistry-score-calculator/"
+      ]
+    },
+    {
+      "rank": 38,
+      "roadmapPage": "Concrete Calculator",
+      "primaryKeyword": "concrete calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/concrete-calculator/",
+      "slug": "concrete-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/concrete-calculator/"
+      ]
+    },
+    {
+      "rank": 39,
+      "roadmapPage": "Npv Calculator",
+      "primaryKeyword": "npv calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/npv-calculator/",
+      "slug": "npv-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/npv-calculator/"
+      ]
+    },
+    {
+      "rank": 40,
+      "roadmapPage": "Weeks Calculator",
+      "primaryKeyword": "weeks calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/weeks-calculator/",
+      "slug": "weeks-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/weeks-calculator/"
+      ]
+    },
+    {
+      "rank": 41,
+      "roadmapPage": "Half Birthday Calculator",
+      "primaryKeyword": "half birthday calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/half-birthday-calculator/",
+      "slug": "half-birthday-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/half-birthday-calculator/"
+      ]
+    },
+    {
+      "rank": 42,
+      "roadmapPage": "Hours Calculator Paycheck",
+      "primaryKeyword": "hours calculator paycheck",
+      "status": "completed-scoped-destination",
+      "path": "/tools/paycheck-hours-calculator/",
+      "slug": "paycheck-hours-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/paycheck-hours-calculator/"
+      ]
+    },
+    {
+      "rank": 43,
+      "roadmapPage": "Dog Pregnancy Calculator",
+      "primaryKeyword": "dog pregnancy calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/dog-pregnancy-calculator/",
+      "slug": "dog-pregnancy-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/dog-pregnancy-calculator/"
+      ]
+    },
+    {
+      "rank": 44,
+      "roadmapPage": "Binary Calculator",
+      "primaryKeyword": "binary converter",
+      "status": "completed-scoped-destination",
+      "path": "/tools/binary-calculator/",
+      "slug": "binary-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/binary-calculator/"
+      ]
+    },
+    {
+      "rank": 45,
+      "roadmapPage": "Paycheck Estimator Calculator",
+      "primaryKeyword": "paycheck estimator calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/paycheck-estimator-calculator/",
+      "slug": "paycheck-estimator-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/paycheck-estimator-calculator/"
+      ]
+    },
+    {
+      "rank": 46,
+      "roadmapPage": "Pool Salt Calculator",
+      "primaryKeyword": "pool salt calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/pool-salt-calculator/",
+      "slug": "pool-salt-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/pool-salt-calculator/"
+      ]
+    },
+    {
+      "rank": 47,
+      "roadmapPage": "Rafter Length Calculator",
+      "primaryKeyword": "rafter length calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/rafter-length-calculator/",
+      "slug": "rafter-length-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/rafter-length-calculator/"
+      ]
+    },
+    {
+      "rank": 48,
+      "roadmapPage": "Air Force Pt Calculator",
+      "primaryKeyword": "air force pt calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/air-force-pt-test-calculator/",
+      "slug": "air-force-pt-test-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/air-force-pt-test-calculator/"
+      ]
+    },
+    {
+      "rank": 49,
+      "roadmapPage": "Stair Calculator",
+      "primaryKeyword": "stairs calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/stair-calculator/",
+      "slug": "stair-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/stair-calculator/"
+      ]
+    },
+    {
+      "rank": 50,
+      "roadmapPage": "Finance Finance Calculator",
+      "primaryKeyword": "finance finance calculator",
+      "status": "deferred-or-partial",
+      "reason": "Malformed finance finance calculator query; next valid scientific notation row51 completed instead."
+    },
+    {
+      "rank": 51,
+      "roadmapPage": "Scientific Notation Calculator",
+      "primaryKeyword": "scientific notation converter",
+      "status": "completed-scoped-destination",
+      "path": "/tools/scientific-notation-calculator/",
+      "slug": "scientific-notation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/scientific-notation-calculator/"
+      ]
+    },
+    {
+      "rank": 52,
+      "roadmapPage": "Hr Calculator",
+      "primaryKeyword": "hr calculator",
+      "status": "deferred-or-partial",
+      "reason": "HR abbreviation not resolved as a distinct supported tool in the earlier catalog; not counted from assumed intent."
+    },
+    {
+      "rank": 53,
+      "roadmapPage": "Grade Calculator",
+      "primaryKeyword": "final grade calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/grade-calculator/",
+      "slug": "grade-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/grade-calculator/"
+      ]
+    },
+    {
+      "rank": 54,
+      "roadmapPage": "Bowling Calculator",
+      "primaryKeyword": "bowling calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/bowling-score-calculator/",
+      "slug": "bowling-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/bowling-score-calculator/"
+      ]
+    },
+    {
+      "rank": 55,
+      "roadmapPage": "Decimal Time Converter",
+      "primaryKeyword": "decimal time converter",
+      "status": "completed-scoped-destination",
+      "path": "/tools/decimal-time-converter/",
+      "slug": "decimal-time-converter",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/decimal-time-converter/"
+      ]
+    },
+    {
+      "rank": 56,
+      "roadmapPage": "Dog Pregnancy Estimator",
+      "primaryKeyword": "dog pregnancy estimator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/dog-pregnancy-calculator/",
+      "slug": "dog-pregnancy-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/dog-pregnancy-calculator/"
+      ]
+    },
+    {
+      "rank": 57,
+      "roadmapPage": "Modified Adjusted Gross Income Calculator",
+      "primaryKeyword": "modified adjusted gross income calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/modified-adjusted-gross-income-calculator/",
+      "slug": "modified-adjusted-gross-income-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/modified-adjusted-gross-income-calculator/"
+      ]
+    },
+    {
+      "rank": 58,
+      "roadmapPage": "Money Market Calculator",
+      "primaryKeyword": "money market calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/money-market-calculator/",
+      "slug": "money-market-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/money-market-calculator/"
+      ]
+    },
+    {
+      "rank": 59,
+      "roadmapPage": "Confidence Interval Calculator",
+      "primaryKeyword": "confidence interval calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/confidence-interval-calculator/",
+      "slug": "confidence-interval-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/confidence-interval-calculator/"
+      ]
+    },
+    {
+      "rank": 60,
+      "roadmapPage": "Superscript Generator",
+      "primaryKeyword": "superscript generator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/superscript-generator/",
+      "slug": "superscript-generator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/superscript-generator/"
+      ]
+    },
+    {
+      "rank": 61,
+      "roadmapPage": "Earned Run Average Calculator",
+      "primaryKeyword": "era calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/earned-run-average-calculator/",
+      "slug": "earned-run-average-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/earned-run-average-calculator/"
+      ]
+    },
+    {
+      "rank": 62,
+      "roadmapPage": "Ap Stats Grading Calculator",
+      "primaryKeyword": "ap stats grading calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-statistics-score-calculator/",
+      "slug": "ap-statistics-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/ap-statistics-score-calculator/"
+      ]
+    },
+    {
+      "rank": 63,
+      "roadmapPage": "Gcf Calculator",
+      "primaryKeyword": "gcf calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/gcf-calculator/",
+      "slug": "gcf-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/gcf-calculator/"
+      ]
+    },
+    {
+      "rank": 64,
+      "roadmapPage": "Af Pt Test Calculator",
+      "primaryKeyword": "af pt test calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/air-force-pt-test-calculator/",
+      "slug": "air-force-pt-test-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/air-force-pt-test-calculator/"
+      ]
+    },
+    {
+      "rank": 65,
+      "roadmapPage": "APR Calculator",
+      "primaryKeyword": "apr calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/apr-calculator/",
+      "slug": "apr-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/apr-calculator/"
+      ]
+    },
+    {
+      "rank": 66,
+      "roadmapPage": "Wire Size Calculator",
+      "primaryKeyword": "wire gauge calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/wire-size-calculator/",
+      "slug": "wire-size-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/wire-size-calculator/"
+      ]
+    },
+    {
+      "rank": 67,
+      "roadmapPage": "Miscarriage Calculator",
+      "primaryKeyword": "miscarriage calculator",
+      "status": "deferred-or-partial",
+      "reason": "Miscarriage query has no supported calculator/guide destination in the current catalog; not counted."
+    },
+    {
+      "rank": 68,
+      "roadmapPage": "Login Calculator",
+      "primaryKeyword": "ug calculator",
+      "status": "deferred-or-partial",
+      "reason": "UG/login ambiguity previously deferred."
+    },
+    {
+      "rank": 69,
+      "roadmapPage": "Cone Volume Calculator",
+      "primaryKeyword": "cone volume calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cone-volume-calculator/",
+      "slug": "cone-volume-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/cone-volume-calculator/"
+      ]
+    },
+    {
+      "rank": 70,
+      "roadmapPage": "Af Pt Calculator",
+      "primaryKeyword": "af pt calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/air-force-pt-test-calculator/",
+      "slug": "air-force-pt-test-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/air-force-pt-test-calculator/"
+      ]
+    },
+    {
+      "rank": 71,
+      "roadmapPage": "Normal Cdf Calculator",
+      "primaryKeyword": "normal cdf calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/normal-cdf-calculator/",
+      "slug": "normal-cdf-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/normal-cdf-calculator/"
+      ]
+    },
+    {
+      "rank": 72,
+      "roadmapPage": "Fraction To Fraction Calculator",
+      "primaryKeyword": "fraction to fraction calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/fraction-calculator/",
+      "slug": "fraction-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/fraction-calculator/"
+      ]
+    },
+    {
+      "rank": 73,
+      "roadmapPage": "Matrix Inverse Calculator",
+      "primaryKeyword": "inverse matrix calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/matrix-inverse-calculator/",
+      "slug": "matrix-inverse-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/matrix-inverse-calculator/"
+      ]
+    },
+    {
+      "rank": 74,
+      "roadmapPage": "Credit Card Payoff Calculator",
+      "primaryKeyword": "credit card pay off calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/credit-card-payoff-calculator/",
+      "slug": "credit-card-payoff-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/credit-card-payoff-calculator/"
+      ]
+    },
+    {
+      "rank": 75,
+      "roadmapPage": "Voltage Drop Calculator",
+      "primaryKeyword": "voltage drop calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/voltage-drop-calculator/",
+      "slug": "voltage-drop-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/voltage-drop-calculator/"
+      ]
+    },
+    {
+      "rank": 76,
+      "roadmapPage": "Circle Skirt Calculator",
+      "primaryKeyword": "circle skirt calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/circle-skirt-calculator/",
+      "slug": "circle-skirt-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/circle-skirt-calculator/"
+      ]
+    },
+    {
+      "rank": 77,
+      "roadmapPage": "Cross Stitch Calculator",
+      "primaryKeyword": "cross stitch calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cross-stitch-calculator/",
+      "slug": "cross-stitch-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/cross-stitch-calculator/"
+      ]
+    },
+    {
+      "rank": 78,
+      "roadmapPage": "Fill Dirt Calculator",
+      "primaryKeyword": "fill dirt calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/fill-dirt-calculator/",
+      "slug": "fill-dirt-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/fill-dirt-calculator/"
+      ]
+    },
+    {
+      "rank": 79,
+      "roadmapPage": "Hypergeometric Calculator",
+      "primaryKeyword": "hypergeometric calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/hypergeometric-calculator/",
+      "slug": "hypergeometric-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/hypergeometric-calculator/"
+      ]
+    },
+    {
+      "rank": 80,
+      "roadmapPage": "Stud Calculator",
+      "primaryKeyword": "stud calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/stud-calculator/",
+      "slug": "stud-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/stud-calculator/"
+      ]
+    },
+    {
+      "rank": 81,
+      "roadmapPage": "Ap Statistics Score Calculator",
+      "primaryKeyword": "ap statistics score calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-statistics-score-calculator/",
+      "slug": "ap-statistics-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/ap-statistics-score-calculator/"
+      ]
+    },
+    {
+      "rank": 82,
+      "roadmapPage": "Board Foot Calculator",
+      "primaryKeyword": "board feet calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/board-foot-calculator/",
+      "slug": "board-foot-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/board-foot-calculator/"
+      ]
+    },
+    {
+      "rank": 83,
+      "roadmapPage": "Soffit Calculator",
+      "primaryKeyword": "soffit calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/soffit-calculator/",
+      "slug": "soffit-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/soffit-calculator/"
+      ]
+    },
+    {
+      "rank": 84,
+      "roadmapPage": "Ap English Language And Composition Score Calculator",
+      "primaryKeyword": "ap english language and composition score calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-english-language-and-composition-score-calculator/",
+      "slug": "ap-english-language-and-composition-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/ap-english-language-and-composition-score-calculator/"
+      ]
+    },
+    {
+      "rank": 85,
+      "roadmapPage": "Schoology Grade Calculator",
+      "primaryKeyword": "schoology grade calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/grade-calculator/",
+      "slug": "grade-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/grade-calculator/"
+      ]
+    },
+    {
+      "rank": 86,
+      "roadmapPage": "Money Counter",
+      "primaryKeyword": "money counter money counter",
+      "status": "completed-scoped-destination",
+      "path": "/tools/money-counter-calculator/",
+      "slug": "money-counter-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/money-counter-calculator/"
+      ]
+    },
+    {
+      "rank": 87,
+      "roadmapPage": "Soil Calculator",
+      "primaryKeyword": "topsoil calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/soil-calculator/",
+      "slug": "soil-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/soil-calculator/"
+      ]
+    },
+    {
+      "rank": 88,
+      "roadmapPage": "Ffmi Calculator",
+      "primaryKeyword": "ffmi calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ffmi-calculator/",
+      "slug": "ffmi-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/ffmi-calculator/"
+      ]
+    },
+    {
+      "rank": 89,
+      "roadmapPage": "Hex Calculator",
+      "primaryKeyword": "hex calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/hex-calculator/",
+      "slug": "hex-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/hex-calculator/"
+      ]
+    },
+    {
+      "rank": 90,
+      "roadmapPage": "Dunk Calculator",
+      "primaryKeyword": "dunk calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/dunk-calculator/",
+      "slug": "dunk-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/dunk-calculator/"
+      ]
+    },
+    {
+      "rank": 91,
+      "roadmapPage": "Mare Gestation Period Calculator",
+      "primaryKeyword": "mare gestation period calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/mare-gestation-calculator/",
+      "slug": "mare-gestation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/mare-gestation-calculator/"
+      ]
+    },
+    {
+      "rank": 92,
+      "roadmapPage": "Linear Feet Calculator",
+      "primaryKeyword": "linear feet calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/linear-feet-calculator/",
+      "slug": "linear-feet-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/linear-feet-calculator/"
+      ]
+    },
+    {
+      "rank": 93,
+      "roadmapPage": "Pro Rata Calculator",
+      "primaryKeyword": "pro rata calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/prorated-salary-calculator/",
+      "slug": "prorated-salary-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/prorated-salary-calculator/"
+      ]
+    },
+    {
+      "rank": 94,
+      "roadmapPage": "Water Intake Calculator",
+      "primaryKeyword": "water calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/water-intake-calculator/",
+      "slug": "water-intake-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/water-intake-calculator/"
+      ]
+    },
+    {
+      "rank": 95,
+      "roadmapPage": "Steps To Miles Calculator",
+      "primaryKeyword": "steps to miles calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/steps-to-miles-calculator/",
+      "slug": "steps-to-miles-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/steps-to-miles-calculator/"
+      ]
+    },
+    {
+      "rank": 96,
+      "roadmapPage": "Minecraft Circle",
+      "primaryKeyword": "minecraft circle generator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/minecraft-circle-generator/",
+      "slug": "minecraft-circle-generator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/minecraft-circle-generator/"
+      ]
+    },
+    {
+      "rank": 97,
+      "roadmapPage": "Density Altitude Calculator",
+      "primaryKeyword": "density altitude calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/density-altitude-calculator/",
+      "slug": "density-altitude-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/density-altitude-calculator/"
+      ]
+    },
+    {
+      "rank": 98,
+      "roadmapPage": "Mango+calculator",
+      "primaryKeyword": "mango+calculator",
+      "status": "deferred-or-partial",
+      "reason": "Malformed mango+calculator query previously deferred."
+    },
+    {
+      "rank": 99,
+      "roadmapPage": "Height Calculator",
+      "primaryKeyword": "khamis-roche method height calculator",
+      "status": "deferred-or-partial",
+      "reason": "Mid-parental height arithmetic exists, but Khamis\u2013Roche intent requires age-specific coefficients not implemented. Excluded from full primary-intent completion count."
+    },
+    {
+      "rank": 100,
+      "roadmapPage": "Weighted Mean Calculator",
+      "primaryKeyword": "weighted mean calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/weighted-mean-calculator/",
+      "slug": "weighted-mean-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/weighted-mean-calculator/"
+      ]
+    },
+    {
+      "rank": 101,
+      "roadmapPage": "Yardage Calculator",
+      "primaryKeyword": "yardage calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/yardage-calculator/",
+      "slug": "yardage-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/yardage-calculator/"
+      ]
+    },
+    {
+      "rank": 102,
+      "roadmapPage": "One Rep Max Calculator",
+      "primaryKeyword": "deadlift calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/bench-press-max-calculator/",
+      "slug": "bench-press-max-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/bench-press-max-calculator/"
+      ]
+    },
+    {
+      "rank": 103,
+      "roadmapPage": "Mean And Standard Deviation Calculator",
+      "primaryKeyword": "mean and standard deviation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/mean-standard-deviation-calculator/",
+      "slug": "mean-standard-deviation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/mean-standard-deviation-calculator/"
+      ]
+    },
+    {
+      "rank": 104,
+      "roadmapPage": "River Rock Calculator",
+      "primaryKeyword": "river rock calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/gravel-stone-calculator/",
+      "slug": "gravel-stone-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/gravel-stone-calculator/"
+      ]
+    },
+    {
+      "rank": 105,
+      "roadmapPage": "Body Fat Calculator",
+      "primaryKeyword": "body fat calculator u.s. navy",
+      "status": "completed-scoped-destination",
+      "path": "/tools/body-fat-calculator/",
+      "slug": "body-fat-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "earlier catalog/validated batch destination; scoped to disclosed method",
+      "destinations": [
+        "/tools/body-fat-calculator/"
+      ]
+    },
+    {
+      "rank": 106,
+      "roadmapPage": "Tile Calculator",
+      "primaryKeyword": "tile sq ft calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/baby-percentile-calculator/",
+      "slug": "baby-percentile-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/pk/tools/tile-quantity-calculator-pakistan/",
+        "/tools/baby-percentile-calculator/"
+      ]
+    },
+    {
+      "rank": 107,
+      "roadmapPage": "Linear Foot Calculator",
+      "primaryKeyword": "linear foot calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/linear-feet-calculator/",
+      "slug": "linear-feet-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/linear-feet-calculator/"
+      ]
+    },
+    {
+      "rank": 108,
+      "roadmapPage": "Sourdough Calculator",
+      "primaryKeyword": "sourdough calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/sourdough-calculator/",
+      "slug": "sourdough-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/sourdough-calculator/"
+      ]
+    },
+    {
+      "rank": 109,
+      "roadmapPage": "Pay Raise Calculator",
+      "primaryKeyword": "pay raise calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/pay-raise-percentage-calculator/",
+      "slug": "pay-raise-percentage-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/pay-raise-percentage-calculator/"
+      ]
+    },
+    {
+      "rank": 110,
+      "roadmapPage": "Audiobook Speed Calculator",
+      "primaryKeyword": "audiobook speed calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/audiobook-speed-calculator/",
+      "slug": "audiobook-speed-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/audiobook-speed-calculator/"
+      ]
+    },
+    {
+      "rank": 111,
+      "roadmapPage": "Ap Statistics Calculator Score",
+      "primaryKeyword": "ap statistics calculator score",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-statistics-score-calculator/",
+      "slug": "ap-statistics-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/ap-statistics-score-calculator/"
+      ]
+    },
+    {
+      "rank": 112,
+      "roadmapPage": "Cd Calculator",
+      "primaryKeyword": "cd interest calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/interest-rate-calculator/",
+      "slug": "interest-rate-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/interest-rate-calculator/"
+      ]
+    },
+    {
+      "rank": 113,
+      "roadmapPage": "Wall Stud Calculator",
+      "primaryKeyword": "wall stud calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/stud-calculator/",
+      "slug": "stud-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/stud-calculator/"
+      ]
+    },
+    {
+      "rank": 114,
+      "roadmapPage": "Area Calculator",
+      "primaryKeyword": "surface area calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/surface-area-calculator/",
+      "slug": "surface-area-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/body-surface-area-calculator/",
+        "/tools/roof-area-calculator/",
+        "/tools/surface-area-calculator/"
+      ]
+    },
+    {
+      "rank": 115,
+      "roadmapPage": "Corrected Calcium Calculator",
+      "primaryKeyword": "calcium adjusted calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/corrected-calcium-calculator/",
+      "slug": "corrected-calcium-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/corrected-calcium-calculator/"
+      ]
+    },
+    {
+      "rank": 116,
+      "roadmapPage": "Grade Curve Calculator",
+      "primaryKeyword": "grade curve calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/grade-curve-calculator/",
+      "slug": "grade-curve-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/grade-curve-calculator/"
+      ]
+    },
+    {
+      "rank": 117,
+      "roadmapPage": "Pt-141 Dosage Calculator",
+      "primaryKeyword": "pt-141 dosage calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/pt-141-dosage-calculator/",
+      "slug": "pt-141-dosage-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/pt-141-dosage-calculator/"
+      ]
+    },
+    {
+      "rank": 118,
+      "roadmapPage": "Btu Calculator",
+      "primaryKeyword": "air conditioner size calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/btu-calculator/",
+      "slug": "btu-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/btu-calculator/"
+      ]
+    },
+    {
+      "rank": 119,
+      "roadmapPage": "Arrow Speed Calculator",
+      "primaryKeyword": "arrow speed calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/arrow-speed-calculator/",
+      "slug": "arrow-speed-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/arrow-speed-calculator/"
+      ]
+    },
+    {
+      "rank": 120,
+      "roadmapPage": "Fd Calculator",
+      "primaryKeyword": "fd calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/interest-rate-calculator/",
+      "slug": "interest-rate-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/interest-rate-calculator/"
+      ]
+    },
+    {
+      "rank": 121,
+      "roadmapPage": "Volume Calculator",
+      "primaryKeyword": "pond volume calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/volume-calculator/",
+      "slug": "volume-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/volume-calculator/"
+      ]
+    },
+    {
+      "rank": 122,
+      "roadmapPage": "Productivity Calculator",
+      "primaryKeyword": "productivity calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/productivity-calculator/",
+      "slug": "productivity-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/productivity-calculator/"
+      ]
+    },
+    {
+      "rank": 123,
+      "roadmapPage": "Time Between Calculator",
+      "primaryKeyword": "time between calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/time-between-calculator/",
+      "slug": "time-between-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/time-between-calculator/"
+      ]
+    },
+    {
+      "rank": 124,
+      "roadmapPage": "Ap Chem Exam Score Calculator",
+      "primaryKeyword": "ap chem exam score calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-chemistry-score-calculator/",
+      "slug": "ap-chemistry-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/ap-chemistry-score-calculator/"
+      ]
+    },
+    {
+      "rank": 125,
+      "roadmapPage": "Blood Pressure By Age Calculator",
+      "primaryKeyword": "blood pressure by age calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/blood-pressure-by-age-calculator/",
+      "slug": "blood-pressure-by-age-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-106-125-keywords.ts",
+      "destinations": [
+        "/tools/blood-pressure-by-age-calculator/"
+      ]
+    },
+    {
+      "rank": 126,
+      "roadmapPage": "Calories Burned Calculator",
+      "primaryKeyword": "kcal burned walking calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/calories-burned-calculator/",
+      "slug": "calories-burned-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/calories-burned-calculator/"
+      ]
+    },
+    {
+      "rank": 127,
+      "roadmapPage": "Ap Stats Calculator",
+      "primaryKeyword": "ap stats calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-statistics-score-calculator/",
+      "slug": "ap-statistics-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/ap-statistics-score-calculator/"
+      ]
+    },
+    {
+      "rank": 128,
+      "roadmapPage": "Pine Straw Calculator",
+      "primaryKeyword": "pine straw calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/pine-straw-calculator/",
+      "slug": "pine-straw-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/pine-straw-calculator/"
+      ]
+    },
+    {
+      "rank": 129,
+      "roadmapPage": "Split Calculator",
+      "primaryKeyword": "split calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/running-pace-calculator/",
+      "slug": "running-pace-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/running-pace-calculator/"
+      ]
+    },
+    {
+      "rank": 130,
+      "roadmapPage": "Ohm's Law Calculator",
+      "primaryKeyword": "ohm calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ohms-law-calculator/",
+      "slug": "ohms-law-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/ohms-law-calculator/"
+      ]
+    },
+    {
+      "rank": 131,
+      "roadmapPage": "Ap Chemistry Calculator",
+      "primaryKeyword": "ap chemistry calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-chemistry-score-calculator/",
+      "slug": "ap-chemistry-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/ap-chemistry-score-calculator/"
+      ]
+    },
+    {
+      "rank": 132,
+      "roadmapPage": "Fence Post Depth Calculator",
+      "primaryKeyword": "fence post depth calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/fence-post-depth-calculator/",
+      "slug": "fence-post-depth-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/fence-post-depth-calculator/"
+      ]
+    },
+    {
+      "rank": 133,
+      "roadmapPage": "Lead Time Calculator",
+      "primaryKeyword": "lead time calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/lead-time-calculator/",
+      "slug": "lead-time-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/lead-time-calculator/"
+      ]
+    },
+    {
+      "rank": 134,
+      "roadmapPage": "Canon Ls154tg Handheld Calculator Cnm1075b004",
+      "primaryKeyword": "canon ls154tg handheld calculator cnm1075b004",
+      "status": "completed-scoped-destination",
+      "path": "/guides/canon-ls154tg-handheld-calculator-guide/",
+      "slug": "canon-ls154tg-handheld-calculator-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/guides/canon-ls154tg-handheld-calculator-guide/"
+      ]
+    },
+    {
+      "rank": 135,
+      "roadmapPage": "Recessed Light Calculator",
+      "primaryKeyword": "recessed light calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/recessed-light-calculator/",
+      "slug": "recessed-light-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/recessed-light-calculator/"
+      ]
+    },
+    {
+      "rank": 136,
+      "roadmapPage": "Partial Fraction Calculator",
+      "primaryKeyword": "partial fraction calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/partial-fraction-calculator/",
+      "slug": "partial-fraction-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/partial-fraction-calculator/"
+      ]
+    },
+    {
+      "rank": 137,
+      "roadmapPage": "Ap English Language Score Calculator",
+      "primaryKeyword": "ap english language score calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-english-language-and-composition-score-calculator/",
+      "slug": "ap-english-language-and-composition-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/ap-english-language-and-composition-score-calculator/"
+      ]
+    },
+    {
+      "rank": 138,
+      "roadmapPage": "Apwh Calculator",
+      "primaryKeyword": "apwh calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-world-score-calculator/",
+      "slug": "ap-world-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/ap-world-score-calculator/"
+      ]
+    },
+    {
+      "rank": 139,
+      "roadmapPage": "Implicit Differentiation Calculator",
+      "primaryKeyword": "implicit differentiation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/implicit-differentiation-calculator/",
+      "slug": "implicit-differentiation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/implicit-differentiation-calculator/"
+      ]
+    },
+    {
+      "rank": 140,
+      "roadmapPage": "Greek Gematria Calculator",
+      "primaryKeyword": "gematria calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/greek-gematria-calculator/",
+      "slug": "greek-gematria-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/greek-gematria-calculator/"
+      ]
+    },
+    {
+      "rank": 141,
+      "roadmapPage": "Time Off Calculator",
+      "primaryKeyword": "time off calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/time-off-calculator/",
+      "slug": "time-off-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/time-off-calculator/"
+      ]
+    },
+    {
+      "rank": 142,
+      "roadmapPage": "Mare Gestation Calculator",
+      "primaryKeyword": "mare gestation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/mare-gestation-calculator/",
+      "slug": "mare-gestation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/mare-gestation-calculator/"
+      ]
+    },
+    {
+      "rank": 143,
+      "roadmapPage": "Ap World Exam Calculator",
+      "primaryKeyword": "ap world exam calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-world-score-calculator/",
+      "slug": "ap-world-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/ap-world-score-calculator/"
+      ]
+    },
+    {
+      "rank": 144,
+      "roadmapPage": "Interest Calculator",
+      "primaryKeyword": "interest calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/interest-rate-calculator/",
+      "slug": "interest-rate-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/interest-rate-calculator/"
+      ]
+    },
+    {
+      "rank": 145,
+      "roadmapPage": "Decimals Calculator",
+      "primaryKeyword": "decimals calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/decimals-calculator/",
+      "slug": "decimals-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-126-145-keywords.ts",
+      "destinations": [
+        "/tools/decimals-calculator/"
+      ]
+    },
+    {
+      "rank": 146,
+      "roadmapPage": "Watt And Ampere Calculator",
+      "primaryKeyword": "watt and ampere calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ohms-law-calculator/",
+      "slug": "ohms-law-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/ohms-law-calculator/"
+      ]
+    },
+    {
+      "rank": 147,
+      "roadmapPage": "Ap Language Calculator",
+      "primaryKeyword": "ap language calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-english-language-and-composition-score-calculator/",
+      "slug": "ap-english-language-and-composition-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/ap-english-language-and-composition-score-calculator/"
+      ]
+    },
+    {
+      "rank": 148,
+      "roadmapPage": "Epoxy Resin Calculator",
+      "primaryKeyword": "epoxy resin calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/epoxy-resin-calculator/",
+      "slug": "epoxy-resin-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/epoxy-resin-calculator/"
+      ]
+    },
+    {
+      "rank": 149,
+      "roadmapPage": "Usaf Pt Test Calculator",
+      "primaryKeyword": "usaf pt test calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/air-force-pt-test-calculator/",
+      "slug": "air-force-pt-test-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/air-force-pt-test-calculator/"
+      ]
+    },
+    {
+      "rank": 150,
+      "roadmapPage": "Convert Eye Prescription To 20/20 Scale Calculator",
+      "primaryKeyword": "convert eye prescription to 20/20 scale calculator",
+      "status": "completed-scoped-destination",
+      "path": "/guides/eye-prescription-to-20-20-guide/",
+      "slug": "eye-prescription-to-20-20-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/guides/eye-prescription-to-20-20-guide/"
+      ]
+    },
+    {
+      "rank": 151,
+      "roadmapPage": "Free Break Even Calculator Tool On Nemin. Io",
+      "primaryKeyword": "free break even calculator tool on nemin. io",
+      "status": "completed-scoped-destination",
+      "path": "/tools/business-break-even-calculator/",
+      "slug": "business-break-even-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/business-break-even-calculator/"
+      ]
+    },
+    {
+      "rank": 152,
+      "roadmapPage": "Seller Financing Calculator",
+      "primaryKeyword": "seller financing calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/seller-financing-calculator/",
+      "slug": "seller-financing-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/seller-financing-calculator/"
+      ]
+    },
+    {
+      "rank": 153,
+      "roadmapPage": "Lri Calculator",
+      "primaryKeyword": "lri calculator",
+      "status": "completed-scoped-destination",
+      "path": "/guides/lri-calculator-guide/",
+      "slug": "lri-calculator-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/guides/lri-calculator-guide/"
+      ]
+    },
+    {
+      "rank": 154,
+      "roadmapPage": "Molarity Calculator",
+      "primaryKeyword": "molarity calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/molarity-calculator/",
+      "slug": "molarity-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/molarity-calculator/"
+      ]
+    },
+    {
+      "rank": 155,
+      "roadmapPage": "Garage Door Spring Calculator",
+      "primaryKeyword": "garage door spring calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/garage-door-spring-calculator/",
+      "slug": "garage-door-spring-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/garage-door-spring-calculator/"
+      ]
+    },
+    {
+      "rank": 156,
+      "roadmapPage": "Lawn Mowing Cost Calculator",
+      "primaryKeyword": "lawn mowing cost calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/lawn-mowing-cost-calculator/",
+      "slug": "lawn-mowing-cost-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/lawn-mowing-cost-calculator/"
+      ]
+    },
+    {
+      "rank": 157,
+      "roadmapPage": "1/4 Mile Calculator",
+      "primaryKeyword": "1/4 mile calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/quarter-mile-calculator/",
+      "slug": "quarter-mile-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/quarter-mile-calculator/"
+      ]
+    },
+    {
+      "rank": 158,
+      "roadmapPage": "Yard Calculator",
+      "primaryKeyword": "yard calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cubic-yard-calculator/",
+      "slug": "cubic-yard-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/cubic-yard-calculator/"
+      ]
+    },
+    {
+      "rank": 159,
+      "roadmapPage": "How Long Will My Retirement Savings Last Calculator",
+      "primaryKeyword": "how long will my retirement savings last calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/savings-withdrawal-runway-calculator/",
+      "slug": "savings-withdrawal-runway-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/savings-withdrawal-runway-calculator/"
+      ]
+    },
+    {
+      "rank": 160,
+      "roadmapPage": "Firewood Calculator Cord",
+      "primaryKeyword": "firewood calculator cord",
+      "status": "completed-scoped-destination",
+      "path": "/tools/firewood-cord-calculator/",
+      "slug": "firewood-cord-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/firewood-cord-calculator/"
+      ]
+    },
+    {
+      "rank": 161,
+      "roadmapPage": "1 4 Of A Mile Calculator",
+      "primaryKeyword": "1 4 of a mile calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/quarter-mile-calculator/",
+      "slug": "quarter-mile-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/quarter-mile-calculator/"
+      ]
+    },
+    {
+      "rank": 162,
+      "roadmapPage": "Nether Portal Calculator",
+      "primaryKeyword": "nether portal calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/nether-portal-calculator/",
+      "slug": "nether-portal-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/nether-portal-calculator/"
+      ]
+    },
+    {
+      "rank": 163,
+      "roadmapPage": "Arv Calculator",
+      "primaryKeyword": "arv calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/arv-calculator/",
+      "slug": "arv-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/arv-calculator/"
+      ]
+    },
+    {
+      "rank": 164,
+      "roadmapPage": "Breastfeeding Calorie Calculator",
+      "primaryKeyword": "breastfeeding calorie calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/breastfeeding-calorie-calculator/",
+      "slug": "breastfeeding-calorie-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/breastfeeding-calorie-calculator/"
+      ]
+    },
+    {
+      "rank": 165,
+      "roadmapPage": "Tax Calculator Online",
+      "primaryKeyword": "tax calculator online",
+      "status": "completed-scoped-destination",
+      "path": "/tools/sales-tax-vat-calculator/",
+      "slug": "sales-tax-vat-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-146-165-keywords.ts",
+      "destinations": [
+        "/tools/sales-tax-vat-calculator/"
+      ]
+    },
+    {
+      "rank": 166,
+      "roadmapPage": "Standard Deviation Calculator",
+      "primaryKeyword": "average and standard deviation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/mean-standard-deviation-calculator/",
+      "slug": "mean-standard-deviation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/mean-standard-deviation-calculator/"
+      ]
+    },
+    {
+      "rank": 167,
+      "roadmapPage": "Vpd Calculator",
+      "primaryKeyword": "vpd calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/vpd-calculator/",
+      "slug": "vpd-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/vpd-calculator/"
+      ]
+    },
+    {
+      "rank": 168,
+      "roadmapPage": "Loam Calculator",
+      "primaryKeyword": "loam calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/soil-calculator/",
+      "slug": "soil-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/soil-calculator/"
+      ]
+    },
+    {
+      "rank": 169,
+      "roadmapPage": "Goat Gestation Calculator",
+      "primaryKeyword": "goat gestation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/goat-gestation-calculator/",
+      "slug": "goat-gestation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/goat-gestation-calculator/"
+      ]
+    },
+    {
+      "rank": 170,
+      "roadmapPage": "Markup Calculator",
+      "primaryKeyword": "markup calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/profit-margin-calculator-global/",
+      "slug": "profit-margin-calculator-global",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/profit-margin-calculator-global/"
+      ]
+    },
+    {
+      "rank": 171,
+      "roadmapPage": "50 To 1 Gas Oil Mix Calculator",
+      "primaryKeyword": "50 to 1 gas oil mix calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/gas-oil-mix-calculator/",
+      "slug": "gas-oil-mix-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/gas-oil-mix-calculator/"
+      ]
+    },
+    {
+      "rank": 172,
+      "roadmapPage": "Lease Vs Buy Car Calculator",
+      "primaryKeyword": "lease vs buy car calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/car-lease-vs-buy-calculator/",
+      "slug": "car-lease-vs-buy-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/car-lease-vs-buy-calculator/"
+      ]
+    },
+    {
+      "rank": 173,
+      "roadmapPage": "Aspect Ratio Calculator",
+      "primaryKeyword": "aspect ratio calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/aspect-ratio-calculator/",
+      "slug": "aspect-ratio-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/aspect-ratio-calculator/"
+      ]
+    },
+    {
+      "rank": 174,
+      "roadmapPage": "Chemistry Ap Calculator",
+      "primaryKeyword": "chemistry ap calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-chemistry-score-calculator/",
+      "slug": "ap-chemistry-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/ap-chemistry-score-calculator/"
+      ]
+    },
+    {
+      "rank": 175,
+      "roadmapPage": "How Long Will Retirement Savings Last Calculator",
+      "primaryKeyword": "how long will retirement savings last calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/savings-withdrawal-runway-calculator/",
+      "slug": "savings-withdrawal-runway-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/savings-withdrawal-runway-calculator/"
+      ]
+    },
+    {
+      "rank": 176,
+      "roadmapPage": "Macro Calculator",
+      "primaryKeyword": "macroeconomics calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/macro-calculator/",
+      "slug": "macro-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/macro-calculator/",
+        "/tools/macroeconomics-calculator/"
+      ]
+    },
+    {
+      "rank": 177,
+      "roadmapPage": "Vinegar Carbon Dosing Calculator Ml Per Ppm Nitrate",
+      "primaryKeyword": "vinegar carbon dosing calculator ml per ppm nitrate",
+      "status": "completed-scoped-destination",
+      "path": "/tools/vinegar-carbon-dosing-calculator/",
+      "slug": "vinegar-carbon-dosing-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/vinegar-carbon-dosing-calculator/"
+      ]
+    },
+    {
+      "rank": 178,
+      "roadmapPage": "Simplifying Radical Expressions Solver",
+      "primaryKeyword": "simplifying radical expressions solver",
+      "status": "completed-scoped-destination",
+      "path": "/tools/radical-expression-simplifier/",
+      "slug": "radical-expression-simplifier",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/radical-expression-simplifier/"
+      ]
+    },
+    {
+      "rank": 179,
+      "roadmapPage": "Calculator Dog Pregnancy",
+      "primaryKeyword": "calculator dog pregnancy",
+      "status": "completed-scoped-destination",
+      "path": "/tools/dog-pregnancy-calculator/",
+      "slug": "dog-pregnancy-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/dog-pregnancy-calculator/"
+      ]
+    },
+    {
+      "rank": 180,
+      "roadmapPage": "Redacted Text Generator",
+      "primaryKeyword": "redacted text generator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/redacted-text-generator/",
+      "slug": "redacted-text-generator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/redacted-text-generator/"
+      ]
+    },
+    {
+      "rank": 181,
+      "roadmapPage": "Rh Calculator",
+      "primaryKeyword": "rh calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/vpd-calculator/",
+      "slug": "vpd-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/vpd-calculator/"
+      ]
+    },
+    {
+      "rank": 182,
+      "roadmapPage": "Liquor Calculator Wedding",
+      "primaryKeyword": "liquor calculator wedding",
+      "status": "completed-scoped-destination",
+      "path": "/tools/wedding-liquor-calculator/",
+      "slug": "wedding-liquor-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/wedding-liquor-calculator/"
+      ]
+    },
+    {
+      "rank": 183,
+      "roadmapPage": "Liquor Wedding Calculator",
+      "primaryKeyword": "liquor wedding calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/wedding-liquor-calculator/",
+      "slug": "wedding-liquor-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/wedding-liquor-calculator/"
+      ]
+    },
+    {
+      "rank": 184,
+      "roadmapPage": "Abg Calculator",
+      "primaryKeyword": "abg calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/abg-calculator/",
+      "slug": "abg-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/abg-calculator/"
+      ]
+    },
+    {
+      "rank": 185,
+      "roadmapPage": "Score Calculator Ap Chemistry",
+      "primaryKeyword": "score calculator ap chemistry",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-chemistry-score-calculator/",
+      "slug": "ap-chemistry-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-166-185-keywords.ts",
+      "destinations": [
+        "/tools/ap-chemistry-score-calculator/"
+      ]
+    },
+    {
+      "rank": 186,
+      "roadmapPage": "Bowling Calculator Score",
+      "primaryKeyword": "bowling calculator score",
+      "status": "completed-scoped-destination",
+      "path": "/tools/bowling-score-calculator/",
+      "slug": "bowling-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/bowling-score-calculator/"
+      ]
+    },
+    {
+      "rank": 187,
+      "roadmapPage": "Mulch Calculator",
+      "primaryKeyword": "mulch calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/mulch-calculator/",
+      "slug": "mulch-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/mulch-calculator/"
+      ]
+    },
+    {
+      "rank": 188,
+      "roadmapPage": "Ap World History Exam Calculator",
+      "primaryKeyword": "ap world history exam calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-world-score-calculator/",
+      "slug": "ap-world-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/ap-world-score-calculator/"
+      ]
+    },
+    {
+      "rank": 189,
+      "roadmapPage": "Myusfinance Com Financial Calculator",
+      "primaryKeyword": "myusfinance com financial calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/payment-calculator/",
+      "slug": "payment-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/payment-calculator/"
+      ]
+    },
+    {
+      "rank": 190,
+      "roadmapPage": "Percent Calculator",
+      "primaryKeyword": "percent difference calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/percent-calculator/",
+      "slug": "percent-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/percent-calculator/"
+      ]
+    },
+    {
+      "rank": 191,
+      "roadmapPage": "Military Pt Test Calculator",
+      "primaryKeyword": "military pt test calculator",
+      "status": "completed-scoped-destination",
+      "path": "/guides/military-pt-test-calculator-guide/",
+      "slug": "military-pt-test-calculator-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/guides/military-pt-test-calculator-guide/"
+      ]
+    },
+    {
+      "rank": 192,
+      "roadmapPage": "Simplifying Radicals Calculator",
+      "primaryKeyword": "simplifying radicals calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/radical-expression-simplifier/",
+      "slug": "radical-expression-simplifier",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/radical-expression-simplifier/"
+      ]
+    },
+    {
+      "rank": 193,
+      "roadmapPage": "Can Light Calculator",
+      "primaryKeyword": "can light calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/recessed-light-calculator/",
+      "slug": "recessed-light-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/recessed-light-calculator/"
+      ]
+    },
+    {
+      "rank": 194,
+      "roadmapPage": "Cement Block Calculator",
+      "primaryKeyword": "cement block calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/concrete-block-calculator/",
+      "slug": "concrete-block-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/concrete-block-calculator/"
+      ]
+    },
+    {
+      "rank": 195,
+      "roadmapPage": "Bpc 157 Tb 500 Blend Dosage Calculator",
+      "primaryKeyword": "bpc 157 tb 500 blend dosage calculator",
+      "status": "completed-scoped-destination",
+      "path": "/guides/bpc-157-tb-500-blend-calculator-guide/",
+      "slug": "bpc-157-tb-500-blend-calculator-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/guides/bpc-157-tb-500-blend-calculator-guide/"
+      ]
+    },
+    {
+      "rank": 196,
+      "roadmapPage": "Anion Gap Calculator",
+      "primaryKeyword": "anion gap calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/abg-calculator/",
+      "slug": "abg-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/abg-calculator/"
+      ]
+    },
+    {
+      "rank": 197,
+      "roadmapPage": "Bps Calculator",
+      "primaryKeyword": "bps calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/basis-points-calculator/",
+      "slug": "basis-points-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/basis-points-calculator/"
+      ]
+    },
+    {
+      "rank": 198,
+      "roadmapPage": "Voo Calculator",
+      "primaryKeyword": "voo calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/compound-interest-calculator/",
+      "slug": "compound-interest-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/compound-interest-calculator/"
+      ]
+    },
+    {
+      "rank": 199,
+      "roadmapPage": "Rounding Calculator",
+      "primaryKeyword": "rounding calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/rounding-calculator/",
+      "slug": "rounding-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/rounding-calculator/"
+      ]
+    },
+    {
+      "rank": 200,
+      "roadmapPage": "Tire Size Calculator",
+      "primaryKeyword": "tacoma tire calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/tire-size-calculator/",
+      "slug": "tire-size-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/tire-size-calculator/"
+      ]
+    },
+    {
+      "rank": 201,
+      "roadmapPage": "Dog Due Date Calculator",
+      "primaryKeyword": "dog due date calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/dog-pregnancy-calculator/",
+      "slug": "dog-pregnancy-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/dog-pregnancy-calculator/"
+      ]
+    },
+    {
+      "rank": 202,
+      "roadmapPage": "Grading Bell Curve Calculator",
+      "primaryKeyword": "grading bell curve calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/grade-curve-calculator/",
+      "slug": "grade-curve-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/grade-curve-calculator/"
+      ]
+    },
+    {
+      "rank": 203,
+      "roadmapPage": "Soil Yard Calculator",
+      "primaryKeyword": "soil yard calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/soil-calculator/",
+      "slug": "soil-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/soil-calculator/"
+      ]
+    },
+    {
+      "rank": 204,
+      "roadmapPage": "Anniversary Calculator",
+      "primaryKeyword": "anniversary calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/anniversary-calculator/",
+      "slug": "anniversary-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/anniversary-calculator/"
+      ]
+    },
+    {
+      "rank": 205,
+      "roadmapPage": "Ap Lang Grade Calculator",
+      "primaryKeyword": "ap lang grade calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-english-language-and-composition-score-calculator/",
+      "slug": "ap-english-language-and-composition-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-186-205-keywords.ts",
+      "destinations": [
+        "/tools/ap-english-language-and-composition-score-calculator/"
+      ]
+    },
+    {
+      "rank": 206,
+      "roadmapPage": "Gc Calculator",
+      "primaryKeyword": "gc calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/gc-content-calculator/",
+      "slug": "gc-content-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/gc-content-calculator/"
+      ]
+    },
+    {
+      "rank": 207,
+      "roadmapPage": "Llc Tax Calculator",
+      "primaryKeyword": "llc tax calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/llc-tax-calculator/",
+      "slug": "llc-tax-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/llc-tax-calculator/"
+      ]
+    },
+    {
+      "rank": 208,
+      "roadmapPage": "Calculator For Banks",
+      "primaryKeyword": "calculator for banks",
+      "status": "completed-scoped-destination",
+      "path": "/guides/bank-calculators-guide/",
+      "slug": "bank-calculators-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/guides/bank-calculators-guide/"
+      ]
+    },
+    {
+      "rank": 209,
+      "roadmapPage": "Wainscoting Calculator",
+      "primaryKeyword": "wainscoting calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/wainscoting-calculator/",
+      "slug": "wainscoting-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/wainscoting-calculator/"
+      ]
+    },
+    {
+      "rank": 210,
+      "roadmapPage": "Percentage Decrease Calculator",
+      "primaryKeyword": "percent decrease calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/percent-calculator/",
+      "slug": "percent-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/percent-calculator/"
+      ]
+    },
+    {
+      "rank": 211,
+      "roadmapPage": "Horse Gestation Calculator",
+      "primaryKeyword": "horse gestation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/mare-gestation-calculator/",
+      "slug": "mare-gestation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/mare-gestation-calculator/"
+      ]
+    },
+    {
+      "rank": 212,
+      "roadmapPage": "Charles' Law Calculator - Bythelaws.com",
+      "primaryKeyword": "charles' law calculator - bythelaws.com",
+      "status": "completed-scoped-destination",
+      "path": "/tools/charles-law-calculator/",
+      "slug": "charles-law-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/charles-law-calculator/"
+      ]
+    },
+    {
+      "rank": 213,
+      "roadmapPage": "Ovo Calculator",
+      "primaryKeyword": "ovo calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/crypto-conversion-calculator/",
+      "slug": "crypto-conversion-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/crypto-conversion-calculator/"
+      ]
+    },
+    {
+      "rank": 214,
+      "roadmapPage": "Sphere Minecraft Generator",
+      "primaryKeyword": "sphere minecraft generator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/minecraft-sphere-generator/",
+      "slug": "minecraft-sphere-generator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/minecraft-sphere-generator/"
+      ]
+    },
+    {
+      "rank": 215,
+      "roadmapPage": "Study Score Calculator",
+      "primaryKeyword": "study score calculator",
+      "status": "completed-scoped-destination",
+      "path": "/guides/study-score-calculator-guide/",
+      "slug": "study-score-calculator-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/guides/study-score-calculator-guide/"
+      ]
+    },
+    {
+      "rank": 216,
+      "roadmapPage": "Breast Implant Size Calculator",
+      "primaryKeyword": "breast implant size calculator",
+      "status": "completed-scoped-destination",
+      "path": "/guides/breast-implant-size-calculator-guide/",
+      "slug": "breast-implant-size-calculator-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/guides/breast-implant-size-calculator-guide/"
+      ]
+    },
+    {
+      "rank": 217,
+      "roadmapPage": "Dog Gestation Calculator",
+      "primaryKeyword": "dog gestation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/dog-pregnancy-calculator/",
+      "slug": "dog-pregnancy-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/dog-pregnancy-calculator/"
+      ]
+    },
+    {
+      "rank": 218,
+      "roadmapPage": "Trigonometry And The Calculator Common Core Geometry Homework",
+      "primaryKeyword": "trigonometry and the calculator common core geometry homework",
+      "status": "completed-scoped-destination",
+      "path": "/tools/right-triangle-calculator/",
+      "slug": "right-triangle-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/right-triangle-calculator/"
+      ]
+    },
+    {
+      "rank": 219,
+      "roadmapPage": "Basic Calculator",
+      "primaryKeyword": "enday basic calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/basic-calculator/",
+      "slug": "basic-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/basic-calculator/"
+      ]
+    },
+    {
+      "rank": 220,
+      "roadmapPage": "Firewood Calculator",
+      "primaryKeyword": "firewood calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/firewood-cord-calculator/",
+      "slug": "firewood-cord-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/firewood-cord-calculator/"
+      ]
+    },
+    {
+      "rank": 221,
+      "roadmapPage": "Rucking Calorie Calculator",
+      "primaryKeyword": "rucking calorie calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/calories-burned-calculator/",
+      "slug": "calories-burned-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/calories-burned-calculator/"
+      ]
+    },
+    {
+      "rank": 222,
+      "roadmapPage": "Sq Ft To Linear Ft Calculator",
+      "primaryKeyword": "sq ft to linear ft calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/linear-feet-calculator/",
+      "slug": "linear-feet-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/linear-feet-calculator/"
+      ]
+    },
+    {
+      "rank": 223,
+      "roadmapPage": "Amps To Watts Conversion Calculator",
+      "primaryKeyword": "amps to watts conversion calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ohms-law-calculator/",
+      "slug": "ohms-law-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/ohms-law-calculator/"
+      ]
+    },
+    {
+      "rank": 224,
+      "roadmapPage": "Roofing Calculator",
+      "primaryKeyword": "roof calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/roof-area-calculator/",
+      "slug": "roof-area-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/roof-area-calculator/"
+      ]
+    },
+    {
+      "rank": 225,
+      "roadmapPage": "New Jersey Tax Calculator",
+      "primaryKeyword": "new jersey tax calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/new-jersey-tax-calculator/",
+      "slug": "new-jersey-tax-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-206-225-keywords.ts",
+      "destinations": [
+        "/tools/new-jersey-tax-calculator/"
+      ]
+    },
+    {
+      "rank": 226,
+      "roadmapPage": "Average Calculator",
+      "primaryKeyword": "averages calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 227,
+      "roadmapPage": "Puppy Weight Estimator",
+      "primaryKeyword": "puppy weight estimator",
+      "status": "completed-scoped-destination",
+      "path": "/guides/puppy-weight-estimator-guide/",
+      "slug": "puppy-weight-estimator-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/guides/puppy-weight-estimator-guide/"
+      ]
+    },
+    {
+      "rank": 228,
+      "roadmapPage": "Horsepower Calculator",
+      "primaryKeyword": "horsepower calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/horsepower-calculator/",
+      "slug": "horsepower-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/horsepower-calculator/"
+      ]
+    },
+    {
+      "rank": 229,
+      "roadmapPage": "Www.calculator.net Calculator",
+      "primaryKeyword": "et calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 230,
+      "roadmapPage": "Ski Din Calculator",
+      "primaryKeyword": "ski din calculator",
+      "status": "completed-scoped-destination",
+      "path": "/guides/ski-din-calculator-guide/",
+      "slug": "ski-din-calculator-guide",
+      "type": "guide",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/guides/ski-din-calculator-guide/"
+      ]
+    },
+    {
+      "rank": 231,
+      "roadmapPage": "Bowling Handicap Calculator",
+      "primaryKeyword": "bowling handicap calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 232,
+      "roadmapPage": "Calculator+cherry",
+      "primaryKeyword": "calculator+cherry",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 233,
+      "roadmapPage": "Chatham Rate Cap Calculator",
+      "primaryKeyword": "chatham rate cap calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/interest-rate-cap-payout-calculator/",
+      "slug": "interest-rate-cap-payout-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/interest-rate-cap-payout-calculator/"
+      ]
+    },
+    {
+      "rank": 234,
+      "roadmapPage": "Basis Point Calculator",
+      "primaryKeyword": "basis point calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 235,
+      "roadmapPage": "Halfway Point Between Two Cities Calculator",
+      "primaryKeyword": "halfway point between two cities calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/geographic-midpoint-calculator/",
+      "slug": "geographic-midpoint-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/geographic-midpoint-calculator/"
+      ]
+    },
+    {
+      "rank": 236,
+      "roadmapPage": "Usaf Pt Calculator",
+      "primaryKeyword": "usaf pt calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 237,
+      "roadmapPage": "Cake Pricing Calculator",
+      "primaryKeyword": "cake pricing calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cake-pricing-calculator/",
+      "slug": "cake-pricing-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/cake-pricing-calculator/"
+      ]
+    },
+    {
+      "rank": 238,
+      "roadmapPage": "Ap Chem Test Score Calculator",
+      "primaryKeyword": "ap chem test score calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 239,
+      "roadmapPage": "Free Profit Margin Calculator Tool On Nemin .io",
+      "primaryKeyword": "free profit margin calculator tool on nemin .io",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 240,
+      "roadmapPage": "Sheep Gestation Calculator",
+      "primaryKeyword": "sheep gestation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/sheep-gestation-calculator/",
+      "slug": "sheep-gestation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/sheep-gestation-calculator/"
+      ]
+    },
+    {
+      "rank": 241,
+      "roadmapPage": "Reputation Calculator",
+      "primaryKeyword": "reputation calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 242,
+      "roadmapPage": "Pavement Calculator",
+      "primaryKeyword": "pavement calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/asphalt-calculator/",
+      "slug": "asphalt-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/asphalt-calculator/"
+      ]
+    },
+    {
+      "rank": 243,
+      "roadmapPage": "Army Fitness Test Calculator",
+      "primaryKeyword": "army fitness test calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 244,
+      "roadmapPage": "Boolean Algebra Calculator",
+      "primaryKeyword": "boolean algebra calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/boolean-algebra-calculator/",
+      "slug": "boolean-algebra-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/boolean-algebra-calculator/"
+      ]
+    },
+    {
+      "rank": 245,
+      "roadmapPage": "Five Number Summary Calculator",
+      "primaryKeyword": "five number summary calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 246,
+      "roadmapPage": "Megawatt Calculator",
+      "primaryKeyword": "megawatt calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/megawatt-calculator/",
+      "slug": "megawatt-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/megawatt-calculator/"
+      ]
+    },
+    {
+      "rank": 247,
+      "roadmapPage": "Tocris Molarity Calculator",
+      "primaryKeyword": "tocris molarity calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 248,
+      "roadmapPage": "Army Physical Test Calculator",
+      "primaryKeyword": "army physical test calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 249,
+      "roadmapPage": "Simplify Radical Expressions Calculator",
+      "primaryKeyword": "simplify radical expressions calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 250,
+      "roadmapPage": "Substitution Calculator",
+      "primaryKeyword": "substitution calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/substitution-calculator/",
+      "slug": "substitution-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/substitution-calculator/"
+      ]
+    },
+    {
+      "rank": 251,
+      "roadmapPage": "Pool Shock Calculator",
+      "primaryKeyword": "pool shock calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 252,
+      "roadmapPage": "Ap Bio Exam Score Calculator",
+      "primaryKeyword": "ap bio exam score calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ap-biology-score-calculator/",
+      "slug": "ap-biology-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/ap-biology-score-calculator/"
+      ]
+    },
+    {
+      "rank": 253,
+      "roadmapPage": "Btz Calculator",
+      "primaryKeyword": "btz calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 254,
+      "roadmapPage": "Reverse Bmi Calculator",
+      "primaryKeyword": "reverse bmi calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/womens-bmi-calculator/",
+      "slug": "womens-bmi-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/womens-bmi-calculator/"
+      ]
+    },
+    {
+      "rank": 255,
+      "roadmapPage": "Cap Rate Calculator",
+      "primaryKeyword": "cap rate calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cap-rate-calculator/",
+      "slug": "cap-rate-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/cap-rate-calculator/"
+      ]
+    },
+    {
+      "rank": 256,
+      "roadmapPage": "Binding Calculator",
+      "primaryKeyword": "binding calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 257,
+      "roadmapPage": "Swim Converter",
+      "primaryKeyword": "swim converter",
+      "status": "completed-scoped-destination",
+      "path": "/tools/swim-time-converter/",
+      "slug": "swim-time-converter",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/swim-time-converter/"
+      ]
+    },
+    {
+      "rank": 258,
+      "roadmapPage": "Swimming Time Calculator",
+      "primaryKeyword": "time conversion calculator swimming",
+      "status": "completed-scoped-destination",
+      "path": "/tools/swim-time-converter/",
+      "slug": "swim-time-converter",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/swim-time-converter/"
+      ]
+    },
+    {
+      "rank": 259,
+      "roadmapPage": "Cpm Calculator",
+      "primaryKeyword": "cpm calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cpm-calculator/",
+      "slug": "cpm-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/cpm-calculator/"
+      ]
+    },
+    {
+      "rank": 260,
+      "roadmapPage": "Fence Cost Estimator",
+      "primaryKeyword": "fence cost estimator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/fence-cost-estimator/",
+      "slug": "fence-cost-estimator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/fence-cost-estimator/"
+      ]
+    },
+    {
+      "rank": 261,
+      "roadmapPage": "Bpc-157 + Tb-500 Blend Dosage Calculator",
+      "primaryKeyword": "bpc-157 + tb-500 blend dosage calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 262,
+      "roadmapPage": "Weight Loss Percentage Calculator",
+      "primaryKeyword": "weight loss percentage calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 263,
+      "roadmapPage": "Pt Test Calculator",
+      "primaryKeyword": "pt test calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 264,
+      "roadmapPage": "Aft Calculator",
+      "primaryKeyword": "aft calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 265,
+      "roadmapPage": "Subwoofer Case Calculator",
+      "primaryKeyword": "subwoofer case calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/subwoofer-case-calculator/",
+      "slug": "subwoofer-case-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/subwoofer-case-calculator/"
+      ]
+    },
+    {
+      "rank": 266,
+      "roadmapPage": "Acres Per Hour Calculator",
+      "primaryKeyword": "acres per hour calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/acres-per-hour-calculator/",
+      "slug": "acres-per-hour-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/acres-per-hour-calculator/"
+      ]
+    },
+    {
+      "rank": 267,
+      "roadmapPage": "Nm To Ft Lb",
+      "primaryKeyword": "n-m to ft lbs converter",
+      "status": "completed-scoped-destination",
+      "path": "/tools/torque-converter/",
+      "slug": "torque-converter",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-next20-keywords.ts",
+      "destinations": [
+        "/tools/torque-converter/"
+      ]
+    },
+    {
+      "rank": 268,
+      "roadmapPage": "Drywall Calculator",
+      "primaryKeyword": "drywall calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/drywall-calculator/",
+      "slug": "drywall-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/drywall-calculator/"
+      ]
+    },
+    {
+      "rank": 269,
+      "roadmapPage": "Credit Union Loan Calculator",
+      "primaryKeyword": "credit union loan calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 270,
+      "roadmapPage": "Chocolate For Dogs Calculator",
+      "primaryKeyword": "chocolate for dogs calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 271,
+      "roadmapPage": "Cubic Feet Calculator",
+      "primaryKeyword": "cubic feet calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 272,
+      "roadmapPage": "Ap Stats Grade Calculator",
+      "primaryKeyword": "ap stats grade calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 273,
+      "roadmapPage": "Suburban Paycheck Calculator",
+      "primaryKeyword": "suburban paycheck calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 274,
+      "roadmapPage": "0-60 Calculator",
+      "primaryKeyword": "0-60 calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/zero-to-sixty-calculator/",
+      "slug": "zero-to-sixty-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/zero-to-sixty-calculator/"
+      ]
+    },
+    {
+      "rank": 275,
+      "roadmapPage": "Watt Hour Calculator",
+      "primaryKeyword": "watt hour calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/watt-hour-calculator/",
+      "slug": "watt-hour-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/watt-hour-calculator/"
+      ]
+    },
+    {
+      "rank": 276,
+      "roadmapPage": "5 Number Summary Calculator",
+      "primaryKeyword": "5 number summary calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 277,
+      "roadmapPage": "Kd Calculator",
+      "primaryKeyword": "kd calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/kd-calculator/",
+      "slug": "kd-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/kd-calculator/"
+      ]
+    },
+    {
+      "rank": 278,
+      "roadmapPage": "Decking Calculator",
+      "primaryKeyword": "deck board calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/deck-board-calculator/",
+      "slug": "deck-board-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/deck-board-calculator/"
+      ]
+    },
+    {
+      "rank": 279,
+      "roadmapPage": "Tsp Growth Calculator",
+      "primaryKeyword": "tsp growth calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 280,
+      "roadmapPage": "Generator Birthday",
+      "primaryKeyword": "generator birthday",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 281,
+      "roadmapPage": "Fat Intake Calculator",
+      "primaryKeyword": "fat intake calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 282,
+      "roadmapPage": "Hpt Calculator",
+      "primaryKeyword": "hpt calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 283,
+      "roadmapPage": "Ap Statistics Calculator",
+      "primaryKeyword": "ap statistics calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 284,
+      "roadmapPage": "Plate Rolling Calculator",
+      "primaryKeyword": "plate rolling calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/plate-rolling-calculator/",
+      "slug": "plate-rolling-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/plate-rolling-calculator/"
+      ]
+    },
+    {
+      "rank": 285,
+      "roadmapPage": "Wedding Drink Calculator",
+      "primaryKeyword": "wedding drink calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 286,
+      "roadmapPage": "Future Value Calculator",
+      "primaryKeyword": "future value calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 287,
+      "roadmapPage": "Decathlon Calculator",
+      "primaryKeyword": "decathlon calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 288,
+      "roadmapPage": "Running Record Calculator",
+      "primaryKeyword": "running record calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/running-record-calculator/",
+      "slug": "running-record-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/running-record-calculator/"
+      ]
+    },
+    {
+      "rank": 289,
+      "roadmapPage": "Timecode Calculator",
+      "primaryKeyword": "timecode calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/timecode-calculator/",
+      "slug": "timecode-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/timecode-calculator/"
+      ]
+    },
+    {
+      "rank": 290,
+      "roadmapPage": "Cow Gestation Calculator",
+      "primaryKeyword": "cattle gestation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cow-gestation-calculator/",
+      "slug": "cow-gestation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/cow-gestation-calculator/"
+      ]
+    },
+    {
+      "rank": 291,
+      "roadmapPage": "Drip Calculator Online",
+      "primaryKeyword": "drip calculator online",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 292,
+      "roadmapPage": "Exponent Calculator",
+      "primaryKeyword": "exponents calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 293,
+      "roadmapPage": "Compound Interest Calculator",
+      "primaryKeyword": "cd compound interest calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 294,
+      "roadmapPage": "Rim Offset Calculator",
+      "primaryKeyword": "rim offset calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/rim-offset-calculator/",
+      "slug": "rim-offset-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/rim-offset-calculator/"
+      ]
+    },
+    {
+      "rank": 295,
+      "roadmapPage": "Deadline Calculator Legal",
+      "primaryKeyword": "deadline calculator legal",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 296,
+      "roadmapPage": "APY Calculator",
+      "primaryKeyword": "apy calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 297,
+      "roadmapPage": "Use A Calculator To Find The R-value Of These Data",
+      "primaryKeyword": "use a calculator to find the r-value of these data",
+      "status": "completed-scoped-destination",
+      "path": "/tools/correlation-coefficient-calculator/",
+      "slug": "correlation-coefficient-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/correlation-coefficient-calculator/"
+      ]
+    },
+    {
+      "rank": 298,
+      "roadmapPage": "Vat Calculator",
+      "primaryKeyword": "vat calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 299,
+      "roadmapPage": "Rmd Calculator",
+      "primaryKeyword": "rmd calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 300,
+      "roadmapPage": "Salt Calculator Pool",
+      "primaryKeyword": "salt calculator pool",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 301,
+      "roadmapPage": "Time To Decimal Calculator",
+      "primaryKeyword": "hours to decimal calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 302,
+      "roadmapPage": "Money Market Rate Calculator",
+      "primaryKeyword": "money market rate calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 303,
+      "roadmapPage": "Speed Calculator",
+      "primaryKeyword": "speed calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/speed-distance-time-calculator/",
+      "slug": "speed-distance-time-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/speed-distance-time-calculator/"
+      ]
+    },
+    {
+      "rank": 304,
+      "roadmapPage": "Tv Mounting Height Calculator",
+      "primaryKeyword": "tv mounting height calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/tv-mounting-height-calculator/",
+      "slug": "tv-mounting-height-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/tv-mounting-height-calculator/"
+      ]
+    },
+    {
+      "rank": 305,
+      "roadmapPage": "Basis Calculator",
+      "primaryKeyword": "basis calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 306,
+      "roadmapPage": "Brick Calculator",
+      "primaryKeyword": "brick calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 307,
+      "roadmapPage": "Calculator Anion Gap",
+      "primaryKeyword": "calculator anion gap",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 308,
+      "roadmapPage": "Calculator+lemon",
+      "primaryKeyword": "calculator+lemon",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 309,
+      "roadmapPage": "Dotted Calculator",
+      "primaryKeyword": "dotted calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 310,
+      "roadmapPage": "Numerical Expression Calculator",
+      "primaryKeyword": "numerical expression calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 311,
+      "roadmapPage": "Sourdough Starter Calculator",
+      "primaryKeyword": "sourdough starter calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 312,
+      "roadmapPage": "Simplest Radical Form Calculator",
+      "primaryKeyword": "simplest radical form calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 313,
+      "roadmapPage": "Wire Length Calculator",
+      "primaryKeyword": "wire length calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/wire-length-calculator/",
+      "slug": "wire-length-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/wire-length-calculator/"
+      ]
+    },
+    {
+      "rank": 314,
+      "roadmapPage": "Stem And Leaf Plot Generator",
+      "primaryKeyword": "stem and leaf plot generator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 315,
+      "roadmapPage": "Gear Ratio Calculator",
+      "primaryKeyword": "tremec gear ratio calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/gear-ratio-speed-calculator/",
+      "slug": "gear-ratio-speed-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/gear-ratio-speed-calculator/"
+      ]
+    },
+    {
+      "rank": 316,
+      "roadmapPage": "Cc In Hp Converter",
+      "primaryKeyword": "cc in hp converter",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 317,
+      "roadmapPage": "Battery Run Time Calculator",
+      "primaryKeyword": "battery run time calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 318,
+      "roadmapPage": "Wattage Calculator",
+      "primaryKeyword": "watt wattage",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 319,
+      "roadmapPage": "Bra Size Calculator",
+      "primaryKeyword": "bras measurement calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 320,
+      "roadmapPage": "Christmas Tree Light Calculator",
+      "primaryKeyword": "christmas tree light calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/christmas-tree-light-calculator/",
+      "slug": "christmas-tree-light-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/christmas-tree-light-calculator/"
+      ]
+    },
+    {
+      "rank": 321,
+      "roadmapPage": "Ops Calculator",
+      "primaryKeyword": "ops calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/ops-calculator/",
+      "slug": "ops-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/ops-calculator/"
+      ]
+    },
+    {
+      "rank": 322,
+      "roadmapPage": "Binomial Distribution Calculator",
+      "primaryKeyword": "binomial distribution calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/binomial-distribution-calculator/",
+      "slug": "binomial-distribution-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/binomial-distribution-calculator/"
+      ]
+    },
+    {
+      "rank": 323,
+      "roadmapPage": "Water Calculator Intake",
+      "primaryKeyword": "water calculator intake",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 324,
+      "roadmapPage": "Car Lease Vs Buy Calculator",
+      "primaryKeyword": "car lease vs buy calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 325,
+      "roadmapPage": "Missouri Child Support Calculator",
+      "primaryKeyword": "missouri child support calculator",
+      "status": "skipped-deferred-or-unverified",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+    },
+    {
+      "rank": 326,
+      "roadmapPage": "Octagon Calculator",
+      "primaryKeyword": "octagon calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/octagon-calculator/",
+      "slug": "octagon-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/octagon-calculator/"
+      ]
+    },
+    {
+      "rank": 327,
+      "roadmapPage": "Winrate Calculator",
+      "primaryKeyword": "winrate calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/winrate-calculator/",
+      "slug": "winrate-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "lib/roadmap-268-plus-keywords.ts",
+      "destinations": [
+        "/tools/winrate-calculator/"
+      ]
+    },
+    {
+      "rank": 328,
+      "roadmapPage": "Matrix Calculator",
+      "primaryKeyword": "8x8 calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 329,
+      "roadmapPage": "Time And A Half Calculator",
+      "primaryKeyword": "time and a half calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 330,
+      "roadmapPage": "Decimal To Fraction Calculator",
+      "primaryKeyword": "decimal to fraction calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 331,
+      "roadmapPage": "Alcohol Calculator Wedding",
+      "primaryKeyword": "alcohol calculator wedding",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 332,
+      "roadmapPage": "Blow In Insulation Calculator",
+      "primaryKeyword": "blow in insulation calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 333,
+      "roadmapPage": "Calc Industries Pocket Real Estate Master Financial Calculator",
+      "primaryKeyword": "calc industries pocket real estate master financial calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 334,
+      "roadmapPage": "Euler's Method Calculator",
+      "primaryKeyword": "euler's method calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 335,
+      "roadmapPage": "Gestation Period For Sheep Calculator",
+      "primaryKeyword": "gestation period for sheep calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 336,
+      "roadmapPage": "Log Weight Calculator",
+      "primaryKeyword": "log weight calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 337,
+      "roadmapPage": "Roth Ira Calculator",
+      "primaryKeyword": "roth ira calculator calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 338,
+      "roadmapPage": "Roman Numeral Converter",
+      "primaryKeyword": "roman letters converter",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 339,
+      "roadmapPage": "Cross Stitch Fabric Calculator",
+      "primaryKeyword": "cross stitch fabric calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 340,
+      "roadmapPage": "Decimal Percentage Converter",
+      "primaryKeyword": "decimal percentage converter",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 341,
+      "roadmapPage": "Prop Slip Calculator",
+      "primaryKeyword": "prop slip calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 342,
+      "roadmapPage": "Rc Filter Calculator",
+      "primaryKeyword": "rc filter calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 343,
+      "roadmapPage": "Water Fast Weight Loss Calculator",
+      "primaryKeyword": "water fast weight loss calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 344,
+      "roadmapPage": "Topsoil Estimator",
+      "primaryKeyword": "topsoil estimator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 345,
+      "roadmapPage": "Probability Calculator",
+      "primaryKeyword": "probability calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 346,
+      "roadmapPage": "Target Heart Rate Calculator",
+      "primaryKeyword": "finding maximum heart rate calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 347,
+      "roadmapPage": "Pension Calculator",
+      "primaryKeyword": "pension calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 348,
+      "roadmapPage": "Dilution Ratio Calculator",
+      "primaryKeyword": "dilution calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 349,
+      "roadmapPage": "Grams In Ml Converter",
+      "primaryKeyword": "grams and milliliters converter",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 350,
+      "roadmapPage": "Siding Calculator",
+      "primaryKeyword": "siding calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 351,
+      "roadmapPage": "Pond Calculator",
+      "primaryKeyword": "pond calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 352,
+      "roadmapPage": "Difference Quotient Calculator",
+      "primaryKeyword": "difference quotient calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 353,
+      "roadmapPage": "Income Tax Estimator Nj",
+      "primaryKeyword": "income tax estimator nj",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 354,
+      "roadmapPage": "Odds Risk Calculator",
+      "primaryKeyword": "odds risk calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 355,
+      "roadmapPage": "Time Lapse Photography Calculator",
+      "primaryKeyword": "time lapse photography calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 356,
+      "roadmapPage": "Rate Buydown Calculator",
+      "primaryKeyword": "rate buydown calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 357,
+      "roadmapPage": "Mean Median Mode Range Calculator",
+      "primaryKeyword": "mean median and mode calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 358,
+      "roadmapPage": "Mileage Calculator",
+      "primaryKeyword": "mileage calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 359,
+      "roadmapPage": "Savings Calculator",
+      "primaryKeyword": "high yield savings account calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 360,
+      "roadmapPage": "Construction Calculator",
+      "primaryKeyword": "construction calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 361,
+      "roadmapPage": "Draw Length Calculator",
+      "primaryKeyword": "draw length calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 362,
+      "roadmapPage": "Ap Bio Exam Calculator",
+      "primaryKeyword": "ap bio exam calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 363,
+      "roadmapPage": "Ap Bio Grade Calculator",
+      "primaryKeyword": "ap bio grade calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 364,
+      "roadmapPage": "Calculator+mango",
+      "primaryKeyword": "calculator+mango",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 365,
+      "roadmapPage": "Cardiac Output Calculator",
+      "primaryKeyword": "cardiac output calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 366,
+      "roadmapPage": "Shelf Life Calculator",
+      "primaryKeyword": "shelf life calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 367,
+      "roadmapPage": "Snow Load Calculator",
+      "primaryKeyword": "snow load calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 368,
+      "roadmapPage": "Call Put Option Calculator",
+      "primaryKeyword": "option profit calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 369,
+      "roadmapPage": "Age Difference Calculator",
+      "primaryKeyword": "age calculator difference",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 370,
+      "roadmapPage": "Parallel Resistor Calculator",
+      "primaryKeyword": "parallel resistor calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 371,
+      "roadmapPage": "Peptide Dosage Calculator",
+      "primaryKeyword": "peptide dosage calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 372,
+      "roadmapPage": "Scrap Silver Calculator",
+      "primaryKeyword": "scrap silver calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 373,
+      "roadmapPage": "Z Score Calculator",
+      "primaryKeyword": "z value calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 374,
+      "roadmapPage": "Dog Age Calculator",
+      "primaryKeyword": "dog age calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 375,
+      "roadmapPage": "Credit Card Fee Calculator",
+      "primaryKeyword": "credit card fee calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 376,
+      "roadmapPage": "Ira Calculator",
+      "primaryKeyword": "ira calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 377,
+      "roadmapPage": "First Lien Heloc Calculator",
+      "primaryKeyword": "first lien heloc calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 378,
+      "roadmapPage": "Annuity Calculator",
+      "primaryKeyword": "fixed index annuity calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 379,
+      "roadmapPage": "Business Loan Calculator",
+      "primaryKeyword": "business calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 380,
+      "roadmapPage": "Deadline Calculator",
+      "primaryKeyword": "deadline calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 381,
+      "roadmapPage": "Circumference Calculator",
+      "primaryKeyword": "circumference calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 382,
+      "roadmapPage": "Body Type Calculator",
+      "primaryKeyword": "body shape calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 383,
+      "roadmapPage": "Pace Calculator",
+      "primaryKeyword": "treadmill pace calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 384,
+      "roadmapPage": "Circle Calculator",
+      "primaryKeyword": "area of a circle calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 385,
+      "roadmapPage": "Pythagorean Theorem Calculator",
+      "primaryKeyword": "pythagoras equation solver",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 386,
+      "roadmapPage": "Pounds Ounces",
+      "primaryKeyword": "oz pounds converter",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 387,
+      "roadmapPage": "Percent Off Calculator",
+      "primaryKeyword": "percentage off calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 388,
+      "roadmapPage": "Pizza Party Calculator",
+      "primaryKeyword": "pizza calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 389,
+      "roadmapPage": "Conversion Calculator",
+      "primaryKeyword": "metric to inches calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 390,
+      "roadmapPage": "Electricity Calculator",
+      "primaryKeyword": "power usage calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 391,
+      "roadmapPage": "Eigenvalue Eigenvector Calculator",
+      "primaryKeyword": "eigenvalue calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 392,
+      "roadmapPage": "Credit Card Calculator",
+      "primaryKeyword": "credit card calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 393,
+      "roadmapPage": "Percent Error Calculator",
+      "primaryKeyword": "percentage error calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 394,
+      "roadmapPage": "Paver Calculator",
+      "primaryKeyword": "paver calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 395,
+      "roadmapPage": "Buydown Calculator",
+      "primaryKeyword": "buydown calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 396,
+      "roadmapPage": "Midpoint Calculator",
+      "primaryKeyword": "midpoint calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 397,
+      "roadmapPage": "Walking Calorie Calculator",
+      "primaryKeyword": "treadmill calorie calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 398,
+      "roadmapPage": "Seller Net Sheet Calculator",
+      "primaryKeyword": "seller net sheet calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 399,
+      "roadmapPage": "Percentage Change Calculator",
+      "primaryKeyword": "change calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 400,
+      "roadmapPage": "Annuity Payout Calculator",
+      "primaryKeyword": "annuity payout calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 401,
+      "roadmapPage": "Dew Point Calculator",
+      "primaryKeyword": "dew point calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 402,
+      "roadmapPage": "Golf Handicap Calculator",
+      "primaryKeyword": "golf handicap calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 403,
+      "roadmapPage": "Steps To Calories Calculator",
+      "primaryKeyword": "steps to calories calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 404,
+      "roadmapPage": "Lottery Annuity Calculator",
+      "primaryKeyword": "lottery annuity calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 405,
+      "roadmapPage": "Mobile Home Calculator",
+      "primaryKeyword": "mobile home calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 406,
+      "roadmapPage": "Height In Inches Calculator",
+      "primaryKeyword": "inches calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 407,
+      "roadmapPage": "Salary Calculator",
+      "primaryKeyword": "annual income estimator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 408,
+      "roadmapPage": "Feet And Inches Calculator",
+      "primaryKeyword": "inches to feet calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 409,
+      "roadmapPage": "Long Division Calculator",
+      "primaryKeyword": "dividing decimals calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 410,
+      "roadmapPage": "Kilometers To Miles",
+      "primaryKeyword": "converter kn to miles",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 411,
+      "roadmapPage": "Permutation And Combination Calculator",
+      "primaryKeyword": "permutation calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 412,
+      "roadmapPage": "Ounces To Pounds Converter",
+      "primaryKeyword": "converter ounces to pounds",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 413,
+      "roadmapPage": "Sig Fig Calculator",
+      "primaryKeyword": "sig fig calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 414,
+      "roadmapPage": "Anc Calculator",
+      "primaryKeyword": "anc calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 415,
+      "roadmapPage": "Log Calculator",
+      "primaryKeyword": "calculate log calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 416,
+      "roadmapPage": "Fuel Cost Calculator",
+      "primaryKeyword": "gas calculator trip",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 417,
+      "roadmapPage": "Sphere Volume Calculator",
+      "primaryKeyword": "volume calculator for a sphere",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 418,
+      "roadmapPage": "Fence Calculator",
+      "primaryKeyword": "fence calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 419,
+      "roadmapPage": "Take Home Pay Calculator",
+      "primaryKeyword": "take home wage calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 420,
+      "roadmapPage": "Time Calculator",
+      "primaryKeyword": "add time calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 421,
+      "roadmapPage": "Big Number Calculator",
+      "primaryKeyword": "big number calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 422,
+      "roadmapPage": "Mm To Inches Conversion Calculator",
+      "primaryKeyword": "mm to inches calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 423,
+      "roadmapPage": "Tip Calculator",
+      "primaryKeyword": "geekzilla.io tip calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 424,
+      "roadmapPage": "Scientific Calculator",
+      "primaryKeyword": "physics calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 425,
+      "roadmapPage": "Trigonometry Calculator",
+      "primaryKeyword": "calculator trigonometri",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 426,
+      "roadmapPage": "Love Calculator",
+      "primaryKeyword": "love calculator paper",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 427,
+      "roadmapPage": "Slope Calculator",
+      "primaryKeyword": "rise over run calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 428,
+      "roadmapPage": "Simple Interest Calculator",
+      "primaryKeyword": "interest and simple interest",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 429,
+      "roadmapPage": "Rental Property Calculator",
+      "primaryKeyword": "investment property calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 430,
+      "roadmapPage": "Resistor Calculator",
+      "primaryKeyword": "resistor calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 431,
+      "roadmapPage": "Bond Calculator",
+      "primaryKeyword": "i bond value calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 432,
+      "roadmapPage": "Quadratic Formula Calculator",
+      "primaryKeyword": "quadratic calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 433,
+      "roadmapPage": "Mass Calculator",
+      "primaryKeyword": "calculator of mass",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 434,
+      "roadmapPage": "Carbohydrate Calculator",
+      "primaryKeyword": "net carb calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 435,
+      "roadmapPage": "Lcm Calculator",
+      "primaryKeyword": "least common multiple calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 436,
+      "roadmapPage": "Etg Calculator",
+      "primaryKeyword": "etg calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 437,
+      "roadmapPage": "Percentage Increase Calculator",
+      "primaryKeyword": "increase calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 438,
+      "roadmapPage": "Reconstitution Calculator",
+      "primaryKeyword": "reconstitution calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 439,
+      "roadmapPage": "Weight Watchers Points Calculator",
+      "primaryKeyword": "weight watchers calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 440,
+      "roadmapPage": "Paint Calculator",
+      "primaryKeyword": "paint calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 441,
+      "roadmapPage": "Tax Calculator",
+      "primaryKeyword": "taxable income calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 442,
+      "roadmapPage": "Dice Roller Calculator",
+      "primaryKeyword": "dice calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 443,
+      "roadmapPage": "Vo2 Max Calculator",
+      "primaryKeyword": "estimate vo2 max calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 444,
+      "roadmapPage": "Monthly Income Calculator",
+      "primaryKeyword": "monthly income calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 445,
+      "roadmapPage": "Remainder",
+      "primaryKeyword": "remainder solver",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 446,
+      "roadmapPage": "Root Calculator",
+      "primaryKeyword": "cube rooting calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 447,
+      "roadmapPage": "New York Tax Calculator",
+      "primaryKeyword": "nyc income tax calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 448,
+      "roadmapPage": "Commission Calculator",
+      "primaryKeyword": "commission calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 449,
+      "roadmapPage": "Bmr Calculator",
+      "primaryKeyword": "harris benedict calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 450,
+      "roadmapPage": "Title Case",
+      "primaryKeyword": "title case converter",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 451,
+      "roadmapPage": "Pregnancy Calculator",
+      "primaryKeyword": "pregnancy test calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 452,
+      "roadmapPage": "Conception Calculator",
+      "primaryKeyword": "implantation estimator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 453,
+      "roadmapPage": "Correlation Calculator",
+      "primaryKeyword": "correlation coefficient calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 454,
+      "roadmapPage": "Shoe Size Conversion Calculator",
+      "primaryKeyword": "foot size calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 455,
+      "roadmapPage": "Margin Calculator",
+      "primaryKeyword": "gm calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 456,
+      "roadmapPage": "Sum Of Series Calculator",
+      "primaryKeyword": "summation calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 457,
+      "roadmapPage": "Bac Calculator",
+      "primaryKeyword": "most accurate bac calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 458,
+      "roadmapPage": "Auto Lease Calculator",
+      "primaryKeyword": "lease buyout calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 459,
+      "roadmapPage": "Systems Of Equations Calculator",
+      "primaryKeyword": "systems of equations calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 460,
+      "roadmapPage": "Currency Calculator",
+      "primaryKeyword": "money calculator online",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 461,
+      "roadmapPage": "Protein Calculator",
+      "primaryKeyword": "protein calculator in food",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 462,
+      "roadmapPage": "Rent Vs Buy Calculator",
+      "primaryKeyword": "rent vs buy calculator nyt",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 463,
+      "roadmapPage": "Half Life Calculator",
+      "primaryKeyword": "half life converter",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 464,
+      "roadmapPage": "Acreage Calculator",
+      "primaryKeyword": "acreage calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 465,
+      "roadmapPage": "Budget Calculator",
+      "primaryKeyword": "bill calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 466,
+      "roadmapPage": "Debt Payoff Calculator",
+      "primaryKeyword": "debt avalanche calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 467,
+      "roadmapPage": "Lean Body Mass Calculator",
+      "primaryKeyword": "lbm calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 468,
+      "roadmapPage": "Roi Calculator",
+      "primaryKeyword": "annualized return calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 469,
+      "roadmapPage": "Investment Calculator",
+      "primaryKeyword": "appreciation calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 470,
+      "roadmapPage": "Common Factor Calculator",
+      "primaryKeyword": "common factor calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 471,
+      "roadmapPage": "Finance Calculator",
+      "primaryKeyword": "tvm solver",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 472,
+      "roadmapPage": "Sales Tax Calculator",
+      "primaryKeyword": "texas state tax calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 473,
+      "roadmapPage": "Present Value Calculator",
+      "primaryKeyword": "present day value calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 474,
+      "roadmapPage": "Auto Loan Calculator",
+      "primaryKeyword": "car payoff calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 475,
+      "roadmapPage": "Integer Calculator",
+      "primaryKeyword": "integer calculator step by step",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 476,
+      "roadmapPage": "Feet To Inches Calculator",
+      "primaryKeyword": "conversion calculator feet to inches",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 477,
+      "roadmapPage": "Distance Calculator",
+      "primaryKeyword": "distance formula calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 478,
+      "roadmapPage": "Rent Calculator",
+      "primaryKeyword": "rent budget calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 479,
+      "roadmapPage": "Density Calculator",
+      "primaryKeyword": "density calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 480,
+      "roadmapPage": "Bpm Calculator",
+      "primaryKeyword": "bpm calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 481,
+      "roadmapPage": "Date Difference Calculator",
+      "primaryKeyword": "calculate number of days between dates",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 482,
+      "roadmapPage": "Prime Factorization Calculator",
+      "primaryKeyword": "prime factorization calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 483,
+      "roadmapPage": "Mutual Fund Calculator",
+      "primaryKeyword": "mf calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 484,
+      "roadmapPage": "Calorie Calculator",
+      "primaryKeyword": "kcal calories converter",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 485,
+      "roadmapPage": "Amortization Calculator",
+      "primaryKeyword": "auto loan calculator with extra payments",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 486,
+      "roadmapPage": "Ip Subnet Calculator",
+      "primaryKeyword": "ipv6 subnet calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 487,
+      "roadmapPage": "Number Sequence Calculator",
+      "primaryKeyword": "arithmetic sequence calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 488,
+      "roadmapPage": "Bandwidth Calculator",
+      "primaryKeyword": "bandwidth calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 489,
+      "roadmapPage": "Student Loan Calculator",
+      "primaryKeyword": "student loan amortization calculator",
+      "status": "not-yet-reviewed-in-sequence"
+    }
+  ]
+}

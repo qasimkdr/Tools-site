@@ -62,3 +62,30 @@ for(const [slug,label,next]of [
 // Sixth/seventh-field changes must also wait for resubmission.
 states.length=0;let cake=render('cake-pricing-calculator',false);button(cake).props.onClick();cake=render('cake-pricing-calculator',false);const priorCake=result(cake);field(cake,'Fixed transaction fee').props.onChange('10');cake=render('cake-pricing-calculator',false);assert.equal(result(cake),priorCake);button(cake).props.onClick();assert.notEqual(result(render('cake-pricing-calculator',false)),priorCake);
 console.log('Next 20 shared UI passed: all 18 resolver modes click-gated; global money is currency-neutral; extra fields preserve submitted snapshots.');
+
+// Next 20 calculators after rank 267: run the shipped callbacks for every new tool.
+for(const [slug,label,next] of [
+ ['drywall-calculator','Total wall and ceiling area','550'],
+ ['zero-to-sixty-calculator','Constant acceleration scenario','5'],
+ ['watt-hour-calculator','Measured or supplied power','80'],
+ ['kd-calculator','Recorded kills','150'],
+ ['deck-board-calculator','Deck width across board rows','14'],
+ ['plate-rolling-calculator','Inside finished radius','120'],
+ ['running-record-calculator','Uncorrected scored errors','10'],
+ ['timecode-calculator','First timecode HH:MM:SS:FF','00:00:14:15'],
+ ['cow-gestation-calculator','Planning gestation length','280'],
+ ['rim-offset-calculator','Proposed offset','30'],
+ ['correlation-coefficient-calculator','Y observations in matching order','8,6,4,2'],
+ ['speed-distance-time-calculator','Distance','180'],
+ ['tv-mounting-height-calculator','Measured seated eye height','110'],
+ ['wire-length-calculator','Measured one-way route','25'],
+ ['gear-ratio-speed-calculator','Engine rotational speed','3500'],
+ ['christmas-tree-light-calculator','Existing usable light count','0'],
+ ['ops-calculator','Home runs','5'],
+ ['binomial-distribution-calculator','Success count of interest','4'],
+ ['octagon-calculator','Side length of regular octagon','3'],
+ ['winrate-calculator','Recorded wins','40']]){
+ states.length=0;let tree=render(slug,true);assert.equal(result(tree),'Click Calculate',slug+' initial gate');button(tree).props.onClick();tree=render(slug,true);const saved=result(tree);assert(!String(saved).includes('Check inputs'));field(tree,label).props.onChange(next);tree=render(slug,true);assert.equal(result(tree),saved,slug+' retains submitted output during edits');button(tree).props.onClick();assert.notEqual(result(render(slug,true)),saved,slug+' recalculates after click');
+}
+states.length=0;let corr=render('correlation-coefficient-calculator');const corrField=field(corr,'X observations in pair order');assert(walk(corrField.type(corrField.props),n=>n.type==='textarea'));corrField.props.onChange('1\n2\n3\n4');corr=render('correlation-coefficient-calculator');assert.equal(result(corr),'Click Calculate');button(corr).props.onClick();assert.equal(result(render('correlation-coefficient-calculator')),'1');
+console.log('Roadmap268 UI passed: all 20 real calculators wait for submission, retain prior outputs during edits, and support eighth-field/textarea inputs.');

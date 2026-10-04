@@ -94,6 +94,7 @@ const financeExpansionSlugs = new Set(["debt-snowball-vs-avalanche-calculator","
 const globalEducationSlugs = new Set(["college-admission-chances-calculator"]);
 const semrushPhaseTwoASlugs = new Set(["grade-calculator","decimal-time-converter","modified-adjusted-gross-income-calculator","money-market-calculator","confidence-interval-calculator","superscript-generator","earned-run-average-calculator","ap-statistics-score-calculator","gcf-calculator","apr-calculator","wire-size-calculator","cone-volume-calculator","normal-cdf-calculator","matrix-inverse-calculator","voltage-drop-calculator","fill-dirt-calculator","board-foot-calculator"]);
 const semrushPhaseThreeSlugs = new Set(["circle-skirt-calculator","cross-stitch-calculator","hypergeometric-calculator","stud-calculator","soffit-calculator","ap-english-language-and-composition-score-calculator"]);
+const roadmap268Slugs = new Set(["drywall-calculator", "zero-to-sixty-calculator", "watt-hour-calculator", "kd-calculator", "deck-board-calculator", "plate-rolling-calculator", "running-record-calculator", "timecode-calculator", "cow-gestation-calculator", "rim-offset-calculator", "correlation-coefficient-calculator", "speed-distance-time-calculator", "tv-mounting-height-calculator", "wire-length-calculator", "gear-ratio-speed-calculator", "christmas-tree-light-calculator", "ops-calculator", "binomial-distribution-calculator", "octagon-calculator", "winrate-calculator"]);
 const next20Slugs = new Set(["horsepower-calculator", "interest-rate-cap-payout-calculator", "geographic-midpoint-calculator", "cake-pricing-calculator", "sheep-gestation-calculator", "boolean-algebra-calculator", "megawatt-calculator", "substitution-calculator", "cap-rate-calculator", "swim-time-converter", "cpm-calculator", "fence-cost-estimator", "subwoofer-case-calculator", "acres-per-hour-calculator", "torque-converter"]);
 const roadmap206Slugs = new Set(["gc-content-calculator","llc-tax-calculator","wainscoting-calculator","charles-law-calculator","crypto-conversion-calculator","minecraft-sphere-generator","basic-calculator","new-jersey-tax-calculator"]);
 const roadmap186Slugs = new Set(["percent-calculator","mulch-calculator","concrete-block-calculator","basis-points-calculator","rounding-calculator","tire-size-calculator","anniversary-calculator"]);
@@ -117,7 +118,7 @@ for (const { slug, html } of globalPages) {
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
   const faqs = (html.match(/<details/g) || []).length;
-  const minimumWords = ecommerceSlugs.has(slug) || financeExpansionSlugs.has(slug) || globalEducationSlugs.has(slug) || semrushPhaseOneSlugs.has(slug) || semrushPhaseOneBSlugs.has(slug) || semrushPhaseTwoASlugs.has(slug) || semrushPhaseThreeSlugs.has(slug) || semrushRoadmapSlugs.has(slug) || roadmap106Slugs.has(slug) || roadmap126Slugs.has(slug) || roadmap146Slugs.has(slug) || roadmap166Slugs.has(slug) || roadmap186Slugs.has(slug) || roadmap206Slugs.has(slug) || next20Slugs.has(slug) ? 900 : 380;
+  const minimumWords = ecommerceSlugs.has(slug) || financeExpansionSlugs.has(slug) || globalEducationSlugs.has(slug) || semrushPhaseOneSlugs.has(slug) || semrushPhaseOneBSlugs.has(slug) || semrushPhaseTwoASlugs.has(slug) || semrushPhaseThreeSlugs.has(slug) || semrushRoadmapSlugs.has(slug) || roadmap106Slugs.has(slug) || roadmap126Slugs.has(slug) || roadmap146Slugs.has(slug) || roadmap166Slugs.has(slug) || roadmap186Slugs.has(slug) || roadmap206Slugs.has(slug) || next20Slugs.has(slug) || roadmap268Slugs.has(slug) ? 900 : 380;
   if (words < minimumWords) failures.push(`global ${slug}: only ${words} rendered words (minimum ${minimumWords})`);
   if (h2s < 7) failures.push(`global ${slug}: only ${h2s} H2 sections (minimum 7)`);
   if (faqs < 5) failures.push(`global ${slug}: only ${faqs} FAQs (minimum 5)`);
@@ -219,7 +220,7 @@ for (const slug of globalEducationSlugs) {
 const ecommerceHeader = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
 if (!ecommerceHeader.includes("globalTools.filter(t=>!t.canonicalSlug).map") || !ecommerceHeader.includes("searchText")) failures.push("site search: canonical global tools are not connected or indexed aliases are being added");
 const ecommerceHome = readFileSync(join(process.cwd(), "out", "index.html"), "utf8");
-if (!ecommerceHome.includes("235") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
+if (!ecommerceHome.includes("255") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
 
 const roadmapKeywordChecks = new Map([
   ["cone-volume-calculator", ["cone volume calculator", "volume of a cone calculator", "volume of cone calculator", "cone volume formula", "volume of a cone", "volume of cone formula", "how to find the volume of a cone", "volume-cone", "volume of cone", "cone volume", "volume of a conical shape", "volume of a cone formula"]],
@@ -429,7 +430,7 @@ if (!homeHtml.includes("Archive tools")) failures.push("homepage: archive catego
 if ([...requestedFileSlugs].some(slug=>!sitemapXml.includes(`/${slug}/`))) failures.push("requested file tools: one or more URLs are missing from sitemap");
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
-if (globalPages.length !== 240) failures.push(`240 global tools expected but ${globalPages.length} pages generated`);
+if (globalPages.length !== 260) failures.push(`260 global tools expected but ${globalPages.length} pages generated`);
 // Every workbook variant retains a destination with an explicit method boundary.
 const keywordSource=readFileSync(join(process.cwd(),"lib/roadmap-106-125-keywords.ts"),"utf8");
 const keywordMap=JSON.parse(keywordSource.slice(keywordSource.indexOf("= ")+2,keywordSource.lastIndexOf(" as const")));
@@ -593,7 +594,7 @@ for(const slug of ["bank-calculators-guide","study-score-calculator-guide","brea
  if(!page||visibleText(page.html).split(" ").length<1200)failures.push(`${slug}: requires 1200 useful words`);
  if(!globalPages.some(p=>p.html.slice(p.html.indexOf("<main"),p.html.indexOf("</main>")).replace(/<script[\s\S]*?<\/script>/g,"").includes(`href="/guides/${slug}/"`)))failures.push(`${slug}: missing contextual inbound link`);
 }
-if(locs.length!==602)failures.push(`ranks 206–225: expected 602 sitemap URLs, found ${locs.length}`);
+if(locs.length!==622)failures.push(`ranks 206–225: expected 622 sitemap URLs, found ${locs.length}`);
 
 // Next 20 eligible destinations: 15 new tools, 3 older upgrades, 2 guides; 21 ranks with swim merge.
 const nextSource=readFileSync(join(process.cwd(),"lib/roadmap-next20-keywords.ts"),"utf8");
@@ -618,6 +619,22 @@ for(const slug of ["puppy-weight-estimator-guide","ski-din-calculator-guide"]){
  if(!page||visibleText(page.html).split(" ").length<1200)failures.push(`next20 ${slug}: requires 1200 useful words`);
  if(!globalPages.some(p=>p.html.slice(p.html.indexOf("<main"),p.html.indexOf("</main>")).replace(/<script[\s\S]*?<\/script>/g,"").includes(`href="/guides/${slug}/"`)))failures.push(`next20 ${slug}: missing inbound link`);
 }
+// Next 20 actual calculators after rank 267: six-day recent-update skip rule.
+const batch268Source=readFileSync(join(process.cwd(),"lib/roadmap-268-plus-keywords.ts"),"utf8");
+const batch268Map=JSON.parse(batch268Source.slice(batch268Source.indexOf("= ")+2,batch268Source.lastIndexOf(" as const")));
+if(batch268Map.length!==43||new Set(batch268Map.map(k=>k.path)).size!==20)failures.push("roadmap268: requires 20 calculators and all 43 workbook keywords");
+for(const item of batch268Map){
+ const page=globalPages.find(p=>p.slug===item.slug);
+ if(!page||!metaValue(page.html,"keywords").toLowerCase().includes(item.keyword.toLowerCase())||!globalSitemap.includes(item.path))failures.push(`roadmap268: missing keyword/discovery ${item.keyword}`);
+}
+for(const slug of roadmap268Slugs){
+ const page=globalPages.find(p=>p.slug===slug);
+ if(!page||!globalDirectory.includes(`/tools/${slug}/`)){failures.push(`roadmap268: missing page/directory ${slug}`);continue;}
+ for(const type of ["WebApplication","FAQPage","HowTo","BreadcrumbList"])if(!page.html.includes(type))failures.push(`roadmap268 ${slug}: missing ${type}`);
+ if(!page.html.includes('data-insight-tier="tool-specific"'))failures.push(`roadmap268 ${slug}: missing original audit`);
+ if(!globalPages.some(other=>other.slug!==slug&&other.html.slice(other.html.indexOf("<main"),other.html.indexOf("</main>")).replace(/<script[\s\S]*?<\/script>/g,"").includes(`href="/tools/${slug}/"`)))failures.push(`roadmap268 ${slug}: missing contextual inbound link`);
+}
+
 if (failures.length) {
   console.error("Content quality gate failed:\n- " + failures.join("\n- "));
   process.exit(1);

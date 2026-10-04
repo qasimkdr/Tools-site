@@ -1,3 +1,4 @@
+import {roadmap268Audit} from "./roadmap-268-plus-audit";
 import {next20Audit} from "./roadmap-next20-audit";
 import {enhanceNext20} from "./roadmap-next20-upgrades";
 import {roadmap206Audit} from "./roadmap-206-225-audit";
@@ -503,6 +504,7 @@ export const semrushBatchOneAudit: Record<string, Audit> = {
 };
 
 const baseAuditForTool=(tool:Tool)=>{
+ if(roadmap268Audit[tool.slug])return roadmap268Audit[tool.slug];
  if(next20Audit[tool.slug])return next20Audit[tool.slug];
  if(roadmap206Audit[tool.slug])return roadmap206Audit[tool.slug];
  if(roadmap186Audit[tool.slug])return roadmap186Audit[tool.slug];

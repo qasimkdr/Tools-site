@@ -1,3 +1,4 @@
+import {roadmap268Audit} from "@/lib/roadmap-268-plus-audit";
 import {BooleanAlgebraTool} from "@/components/BooleanAlgebraTool";
 import {next20Audit} from "@/lib/roadmap-next20-audit";
 import {roadmap206Audit} from "@/lib/roadmap-206-225-audit";
@@ -64,7 +65,7 @@ export default async function GlobalToolPage({
   const { slug } = await params;
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
-  const hasDetailedEditorial = Boolean(next20Audit[tool.slug]||roadmap206Audit[tool.slug]||roadmap186Audit[tool.slug]||roadmap166Audit[tool.slug]||roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
+  const hasDetailedEditorial = Boolean(roadmap268Audit[tool.slug]||next20Audit[tool.slug]||roadmap206Audit[tool.slug]||roadmap186Audit[tool.slug]||roadmap166Audit[tool.slug]||roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
   const flagship = hasDetailedEditorial ? null : insightForTool(tool);
   const semrushAudit = auditForTool(tool);
   const incoming = globalTools.filter(item => item.slug !== tool.slug && auditForTool(item)?.relatedCalculators?.some(link => link.slug === tool.slug));
@@ -189,7 +190,7 @@ export default async function GlobalToolPage({
                 <h3>Formula and methodology</h3>
                 <p>{tool.formula}</p>
                 <p>
-                  {tool.category === "Education" && !next20Audit[tool.slug]
+                  {tool.category === "Education" && !next20Audit[tool.slug] && !roadmap268Audit[tool.slug]
                     ? "The calculator applies the disclosed heuristic to values entered on this device. It does not load private admissions data or claim to reproduce an institution's review process."
                     : "The calculator applies the displayed arithmetic to the values entered on this device. It does not silently load a local tax rate, currency conversion or commercial assumption."}
                 </p>

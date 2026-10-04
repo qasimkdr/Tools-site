@@ -1,0 +1,490 @@
+{
+  "baselineCommit": "5b7a5fc7ea59dfa26f6e094c30628010e6539536",
+  "requestTime": "2026-10-04T01:39:22Z",
+  "sixDayCutoff": "2026-09-28T01:39:22Z",
+  "policy": "Do not update an existing calculator created or updated during the last six days. Reuse existing canonical intent without duplication; older already-useful pages need no forced update.",
+  "newCalculators": 20,
+  "exactKeywords": 43,
+  "inspectedRanks": [
+    268,
+    327
+  ],
+  "nextUnreviewedRank": 328,
+  "existingCalculatorDefinitionsUnchanged": 240,
+  "rows": [
+    {
+      "rank": 268,
+      "page": "Drywall Calculator",
+      "primaryKeyword": "drywall calculator",
+      "status": "completed-new-calculator",
+      "slug": "drywall-calculator"
+    },
+    {
+      "rank": 269,
+      "page": "Credit Union Loan Calculator",
+      "primaryKeyword": "credit union loan calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "payment-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 270,
+      "page": "Chocolate For Dogs Calculator",
+      "primaryKeyword": "chocolate for dogs calculator",
+      "status": "deferred-or-already-covered",
+      "reason": "Animal poisoning triage requires an authoritative veterinary protocol and immediate professional contact; no unsourced dose or safe threshold is built."
+    },
+    {
+      "rank": 271,
+      "page": "Cubic Feet Calculator",
+      "primaryKeyword": "cubic feet calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "volume-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 272,
+      "page": "Ap Stats Grade Calculator",
+      "primaryKeyword": "ap stats grade calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "ap-statistics-score-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 273,
+      "page": "Suburban Paycheck Calculator",
+      "primaryKeyword": "suburban paycheck calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "paycheck-estimator-calculator",
+      "previousReviewed": "2026-09-29",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 274,
+      "page": "0-60 Calculator",
+      "primaryKeyword": "0-60 calculator",
+      "status": "completed-new-calculator",
+      "slug": "zero-to-sixty-calculator"
+    },
+    {
+      "rank": 275,
+      "page": "Watt Hour Calculator",
+      "primaryKeyword": "watt hour calculator",
+      "status": "completed-new-calculator",
+      "slug": "watt-hour-calculator"
+    },
+    {
+      "rank": 276,
+      "page": "5 Number Summary Calculator",
+      "primaryKeyword": "5 number summary calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "mean-standard-deviation-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 277,
+      "page": "Kd Calculator",
+      "primaryKeyword": "kd calculator",
+      "status": "completed-new-calculator",
+      "slug": "kd-calculator"
+    },
+    {
+      "rank": 278,
+      "page": "Decking Calculator",
+      "primaryKeyword": "deck board calculator",
+      "status": "completed-new-calculator",
+      "slug": "deck-board-calculator"
+    },
+    {
+      "rank": 279,
+      "page": "Tsp Growth Calculator",
+      "primaryKeyword": "tsp growth calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "401k-calculator",
+      "previousReviewed": "2026-09-29",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 280,
+      "page": "Generator Birthday",
+      "primaryKeyword": "generator birthday",
+      "status": "deferred-or-already-covered",
+      "reason": "Generator birthday is ambiguous generator intent, not a clearly specified new calculator."
+    },
+    {
+      "rank": 281,
+      "page": "Fat Intake Calculator",
+      "primaryKeyword": "fat intake calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "macro-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 282,
+      "page": "Hpt Calculator",
+      "primaryKeyword": "hpt calculator",
+      "status": "deferred-or-already-covered",
+      "reason": "HPT abbreviation has mixed intent; no reliable distinct formula established."
+    },
+    {
+      "rank": 283,
+      "page": "Ap Statistics Calculator",
+      "primaryKeyword": "ap statistics calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "ap-statistics-score-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 284,
+      "page": "Plate Rolling Calculator",
+      "primaryKeyword": "plate rolling calculator",
+      "status": "completed-new-calculator",
+      "slug": "plate-rolling-calculator"
+    },
+    {
+      "rank": 285,
+      "page": "Wedding Drink Calculator",
+      "primaryKeyword": "wedding drink calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "wedding-liquor-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 286,
+      "page": "Future Value Calculator",
+      "primaryKeyword": "future value calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "compound-interest-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 287,
+      "page": "Decathlon Calculator",
+      "primaryKeyword": "decathlon calculator",
+      "status": "deferred-or-already-covered",
+      "reason": "Decathlon requires verified event coefficients and official scoring conventions; no invented table."
+    },
+    {
+      "rank": 288,
+      "page": "Running Record Calculator",
+      "primaryKeyword": "running record calculator",
+      "status": "completed-new-calculator",
+      "slug": "running-record-calculator"
+    },
+    {
+      "rank": 289,
+      "page": "Timecode Calculator",
+      "primaryKeyword": "timecode calculator",
+      "status": "completed-new-calculator",
+      "slug": "timecode-calculator"
+    },
+    {
+      "rank": 290,
+      "page": "Cow Gestation Calculator",
+      "primaryKeyword": "cattle gestation calculator",
+      "status": "completed-new-calculator",
+      "slug": "cow-gestation-calculator"
+    },
+    {
+      "rank": 291,
+      "page": "Drip Calculator Online",
+      "primaryKeyword": "drip calculator online",
+      "status": "deferred-or-already-covered",
+      "reason": "Existing dividend-reinvestment engine already serves supplied-rate reinvestment scenarios; no meaningful new calculation required. Older review remains unchanged."
+    },
+    {
+      "rank": 292,
+      "page": "Exponent Calculator",
+      "primaryKeyword": "exponents calculator",
+      "status": "deferred-partial-overlap",
+      "existingSlug": "basic-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Recent Basic Arithmetic serves numeric four-operation expressions but is not an exponent-law solver. General exponent rewrite intent needs an explicitly implemented parser; no duplicate or unsupported CAS promise."
+    },
+    {
+      "rank": 293,
+      "page": "Compound Interest Calculator",
+      "primaryKeyword": "cd compound interest calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "compound-interest-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 294,
+      "page": "Rim Offset Calculator",
+      "primaryKeyword": "rim offset calculator",
+      "status": "completed-new-calculator",
+      "slug": "rim-offset-calculator"
+    },
+    {
+      "rank": 295,
+      "page": "Deadline Calculator Legal",
+      "primaryKeyword": "deadline calculator legal",
+      "status": "deferred-or-already-covered",
+      "reason": "Legal deadlines depend on jurisdiction, service and court-calendar rules not supplied by this row. No generic deadline is represented as a legal determination."
+    },
+    {
+      "rank": 296,
+      "page": "APY Calculator",
+      "primaryKeyword": "apy calculator",
+      "status": "deferred-or-already-covered",
+      "reason": "Existing effective-interest and deposit engines cover supplied APY arithmetic; no meaningful new page required. Older review remains unchanged."
+    },
+    {
+      "rank": 297,
+      "page": "Use A Calculator To Find The R-value Of These Data",
+      "primaryKeyword": "use a calculator to find the r-value of these data",
+      "status": "completed-new-calculator",
+      "slug": "correlation-coefficient-calculator"
+    },
+    {
+      "rank": 298,
+      "page": "Vat Calculator",
+      "primaryKeyword": "vat calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "sales-tax-vat-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 299,
+      "page": "Rmd Calculator",
+      "primaryKeyword": "rmd calculator",
+      "status": "deferred-or-already-covered",
+      "reason": "RMD 2026 requires verified applicable IRS age/table and account rules; no universal divisor assumed."
+    },
+    {
+      "rank": 300,
+      "page": "Salt Calculator Pool",
+      "primaryKeyword": "salt calculator pool",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "pool-salt-calculator",
+      "previousReviewed": "2026-09-29",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 301,
+      "page": "Time To Decimal Calculator",
+      "primaryKeyword": "hours to decimal calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "decimal-time-converter",
+      "previousReviewed": "2026-09-29",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 302,
+      "page": "Money Market Rate Calculator",
+      "primaryKeyword": "money market rate calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "money-market-calculator",
+      "previousReviewed": "2026-09-29",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 303,
+      "page": "Speed Calculator",
+      "primaryKeyword": "speed calculator",
+      "status": "completed-new-calculator",
+      "slug": "speed-distance-time-calculator"
+    },
+    {
+      "rank": 304,
+      "page": "Tv Mounting Height Calculator",
+      "primaryKeyword": "tv mounting height calculator",
+      "status": "completed-new-calculator",
+      "slug": "tv-mounting-height-calculator"
+    },
+    {
+      "rank": 305,
+      "page": "Basis Calculator",
+      "primaryKeyword": "basis calculator",
+      "status": "deferred-or-already-covered",
+      "reason": "Basis calculator is mixed algebra/finance intent and no distinct reliable inputs were established."
+    },
+    {
+      "rank": 306,
+      "page": "Brick Calculator",
+      "primaryKeyword": "brick calculator",
+      "status": "deferred-distinct-material",
+      "existingSlug": "concrete-block-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Recent concrete-block tool overlaps modular face-area arithmetic, but brick dimensions and mortar conventions need a distinct supported takeoff. Not counted complete from this overlap."
+    },
+    {
+      "rank": 307,
+      "page": "Calculator Anion Gap",
+      "primaryKeyword": "calculator anion gap",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "abg-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 308,
+      "page": "Calculator+lemon",
+      "primaryKeyword": "calculator+lemon",
+      "status": "deferred-or-already-covered",
+      "reason": "Malformed calculator+lemon query deferred."
+    },
+    {
+      "rank": 309,
+      "page": "Dotted Calculator",
+      "primaryKeyword": "dotted calculator",
+      "status": "deferred-or-already-covered",
+      "reason": "Dotted calculator is unclear intent and not a reliable calculator specification."
+    },
+    {
+      "rank": 310,
+      "page": "Numerical Expression Calculator",
+      "primaryKeyword": "numerical expression calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "basic-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 311,
+      "page": "Sourdough Starter Calculator",
+      "primaryKeyword": "sourdough starter calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "sourdough-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 312,
+      "page": "Simplest Radical Form Calculator",
+      "primaryKeyword": "simplest radical form calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "radical-expression-simplifier",
+      "previousReviewed": "2026-10-03",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 313,
+      "page": "Wire Length Calculator",
+      "primaryKeyword": "wire length calculator",
+      "status": "completed-new-calculator",
+      "slug": "wire-length-calculator"
+    },
+    {
+      "rank": 314,
+      "page": "Stem And Leaf Plot Generator",
+      "primaryKeyword": "stem and leaf plot generator",
+      "status": "deferred-distinct-output",
+      "existingSlug": "mean-standard-deviation-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Recent summary-statistics page is not a stem-and-leaf display generator. Distinct display intent is deferred rather than falsely marked completed."
+    },
+    {
+      "rank": 315,
+      "page": "Gear Ratio Calculator",
+      "primaryKeyword": "tremec gear ratio calculator",
+      "status": "completed-new-calculator",
+      "slug": "gear-ratio-speed-calculator"
+    },
+    {
+      "rank": 316,
+      "page": "Cc In Hp Converter",
+      "primaryKeyword": "cc in hp converter",
+      "status": "deferred-or-already-covered",
+      "reason": "Engine displacement alone cannot determine horsepower; no invented cc-to-hp factor."
+    },
+    {
+      "rank": 317,
+      "page": "Battery Run Time Calculator",
+      "primaryKeyword": "battery run time calculator",
+      "status": "deferred-distinct-output",
+      "existingSlug": "watt-hour-calculator",
+      "previousReviewed": null,
+      "reason": "Energy identity is covered in this batch, but usable-capacity/efficiency runtime requires a separate supported model. Not counted as battery-runtime completion."
+    },
+    {
+      "rank": 318,
+      "page": "Wattage Calculator",
+      "primaryKeyword": "watt wattage",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "ohms-law-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 319,
+      "page": "Bra Size Calculator",
+      "primaryKeyword": "bras measurement calculator",
+      "status": "deferred-distinct-output",
+      "existingSlug": "breast-implant-size-calculator-guide",
+      "previousReviewed": null,
+      "reason": "Recent breast-implant limits guide does not satisfy bra sizing. Manufacturer sizing conventions require verified charts; no personalized generic chart invented."
+    },
+    {
+      "rank": 320,
+      "page": "Christmas Tree Light Calculator",
+      "primaryKeyword": "christmas tree light calculator",
+      "status": "completed-new-calculator",
+      "slug": "christmas-tree-light-calculator"
+    },
+    {
+      "rank": 321,
+      "page": "Ops Calculator",
+      "primaryKeyword": "ops calculator",
+      "status": "completed-new-calculator",
+      "slug": "ops-calculator"
+    },
+    {
+      "rank": 322,
+      "page": "Binomial Distribution Calculator",
+      "primaryKeyword": "binomial distribution calculator",
+      "status": "completed-new-calculator",
+      "slug": "binomial-distribution-calculator"
+    },
+    {
+      "rank": 323,
+      "page": "Water Calculator Intake",
+      "primaryKeyword": "water calculator intake",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "water-intake-calculator",
+      "previousReviewed": "2026-09-29",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 324,
+      "page": "Car Lease Vs Buy Calculator",
+      "primaryKeyword": "car lease vs buy calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "car-lease-vs-buy-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Existing canonical intent remains untouched under the six-day rule; no duplicate keyword page. A related partial intent is not counted as completed in this batch."
+    },
+    {
+      "rank": 325,
+      "page": "Missouri Child Support Calculator",
+      "primaryKeyword": "missouri child support calculator",
+      "status": "deferred-or-already-covered",
+      "reason": "Missouri child-support computation requires current official worksheet, case inputs and verified adjustments; no universal percentage invented."
+    },
+    {
+      "rank": 326,
+      "page": "Octagon Calculator",
+      "primaryKeyword": "octagon calculator",
+      "status": "completed-new-calculator",
+      "slug": "octagon-calculator"
+    },
+    {
+      "rank": 327,
+      "page": "Winrate Calculator",
+      "primaryKeyword": "winrate calculator",
+      "status": "completed-new-calculator",
+      "slug": "winrate-calculator"
+    }
+  ]
+}
