@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/validate-content.mjs && node scripts/verify-related-navigation.cjs --export && node scripts/indexnow.mjs generate",
+    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/validate-content.mjs && node scripts/verify-related-navigation.cjs --export --report && node scripts/check-navigation-graph.mjs --report && node scripts/indexnow.mjs generate",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "validate:content": "node scripts/validate-content.mjs",
@@ -23,7 +23,8 @@
     "indexnow:notify": "node scripts/indexnow.mjs notify",
     "verify:indexnow": "node --test scripts/indexnow.test.mjs",
     "verify:related": "node scripts/verify-related-navigation.cjs",
-    "related:report": "node scripts/verify-related-navigation.cjs --report"
+    "related:report": "node scripts/verify-related-navigation.cjs --report",
+    "verify:navigation": "node --test scripts/navigation-graph.test.mjs && node scripts/check-navigation-graph.mjs"
   },
   "dependencies": {
     "next": "16.3.5",

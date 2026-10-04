@@ -3,7 +3,7 @@ export type PageProfile = {
   path: string; title: string; description: string; icon: string;
   kind: 'tool' | 'guide'; region: 'global' | 'pakistan'; category: string;
   terms: string[]; capabilities: string[]; approved: string[]; blocked?: string[];
-  scope?: string; indexable: boolean;
+  scope?: string; indexable: boolean; reviewed?: Record<string,string>;
 };
 export type Match = {path: string; score: number; relationship: string; reasons: string[];
   signals: Record<string, number>; editorial: boolean; confidence: 'approved' | 'high' | 'review' | 'secondary'};
@@ -17,6 +17,7 @@ const fraction=(shared:number,a:number,b:number)=>shared/Math.max(1,Math.min(a,b
 export function scorePair(a:PageProfile,b:PageProfile, idf:Map<string,number>=new Map()):Match|null {
   if(a.path===b.path||!a.indexable||!b.indexable||a.blocked?.includes(b.path)||b.blocked?.includes(a.path))return null;
   const editorial=a.approved.includes(b.path);
+  const reviewed=a.reviewed?.[b.path];
   if(a.scope&&b.scope&&a.scope!==b.scope)return null;
   const titleA=tokens(a.title),titleB=tokens(b.title),sharedTitle=overlap(titleA,titleB);
   const shared=overlap(a.terms,b.terms),cap=overlap(a.capabilities,b.capabilities);
@@ -31,7 +32,7 @@ export function scorePair(a:PageProfile,b:PageProfile, idf:Map<string,number>=ne
   // Workflow evidence: editorial association or strongly overlapping named tasks; no inferred input/output conversion.
   const signals={intent:Math.round(25*intent),functional:Math.round(25*functional),topic:Math.round(20*topic),workflow:editorial?15:(sharedTitle.length>=2&&functional>=0.6?10:0),keyword:Math.round(10*keyword),audience:a.region===b.region?5:0};
   const score=Object.values(signals).reduce((n,v)=>n+v,0);
-  return {path:b.path,score,signals,editorial,relationship:a.kind!==b.kind?(a.kind==='guide'?'explanation-to-tool':'tool-to-explanation'):'related-task',reasons:[...(editorial?['Explicit editorial association']:[]),`Shared concepts: ${shared.join(', ')}`,`Method/description overlap: ${cap.join(', ')}`],confidence:editorial?'approved':'review'};
+  return {path:b.path,score,signals,editorial,relationship:a.kind!==b.kind?(a.kind==='guide'?'explanation-to-tool':'tool-to-explanation'):'related-task',reasons:[...(reviewed?[reviewed]:editorial?['Explicit editorial association']:[]),`Shared concepts: ${shared.join(', ')}`,`Method/description overlap: ${cap.join(', ')}`],confidence:editorial?'approved':'review'};
 }
 export function createMatcher(pages:PageProfile[]) {
   const byPath=new Map(pages.map(p=>[p.path,p]));
@@ -43,7 +44,7 @@ export function createMatcher(pages:PageProfile[]) {
   function ranked(path:string):Match[]{
     if(cache.has(path))return cache.get(path)!;
     const p=byPath.get(path);if(!p)return [];
-    const candidates=new Set(p.approved);
+    const candidates=new Set([...p.approved,...Object.keys(p.reviewed||{})]);
     for(const t of p.terms)for(const target of postings.get(t)||[])candidates.add(target);
     const matches=[...candidates].flatMap(target=>{const b=byPath.get(target);const m=b&&scorePair(p,b,idf);return m?[m]:[];}).sort((a,b)=>Number(b.editorial)-Number(a.editorial)||b.score-a.score||a.path.localeCompare(b.path));
     const automatic=matches.filter(m=>!m.editorial);
@@ -58,7 +59,7 @@ export function createMatcher(pages:PageProfile[]) {
       eligible.sort((a,b)=>utility(b)-utility(a)||a.path.localeCompare(b.path));
       selected.push(eligible.shift()!);
     }
-    function utility(m:Match){const title=tokens(byPath.get(m.path)!.title);const redundancy=Math.max(0,...selected.map(s=>fraction(overlap(title,tokens(byPath.get(s.path)!.title)).length,title.length,tokens(byPath.get(s.path)!.title).length)));return (m.editorial?200:0)+m.score-12*redundancy;}
+    function utility(m:Match){const title=tokens(byPath.get(m.path)!.title);const redundancy=Math.max(0,...selected.map(s=>fraction(overlap(title,tokens(byPath.get(s.path)!.title)).length,title.length,tokens(byPath.get(s.path)!.title).length)));return (byPath.get(path)?.reviewed?.[m.path]?400:m.editorial?200:0)+m.score-12*redundancy;}
     return selected;
   }
   return {byPath,ranked,select};

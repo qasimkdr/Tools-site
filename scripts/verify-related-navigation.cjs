@@ -3,6 +3,7 @@ require.extensions['.ts']=(m,p)=>m._compile(ts.transpileModule(fs.readFileSync(p
 Module._load=function(id,p,...r){return old.call(this,id.startsWith('@/')?process.cwd()+'/'+id.slice(2):id,p,...r)};
 const {createMatcher,scorePair,duplicateCandidates,tokens}=require('../lib/relevance-engine.ts');
 const {navigationProfiles:pages,relatedNavigation:matcher}=require('../lib/related-navigation.ts');
+const {navigationTopics}=require('../lib/navigation-topics.ts');
 const profile=(path,title,extra={})=>({path,title,description:title,icon:'',kind:'tool',region:'global',category:'test',terms:tokens(title),capabilities:tokens(title),approved:[],indexable:true,...extra});
 const energy=profile('/energy/','Battery electrical energy voltage capacity');
 assert.equal(scorePair(energy,energy),null);
@@ -26,7 +27,12 @@ for(const p of pages){
  for(const m of matches){assert.notEqual(m.path,p.path);assert(matcher.byPath.get(m.path)?.indexable);assert(m.editorial||m.score>=75);report.selectedLinks++;report[m.editorial?'editorialLinks':'automaticLinks']++;report.incoming[m.path]=(report.incoming[m.path]||0)+1;}
  report.matches.push({source:p.path,selected:matches,review:matcher.ranked(p.path).filter(m=>m.confidence==='review').slice(0,3)});
 }
-assert.equal(pages.length,603);
+// Counts derive from catalogs so future publishing expands the graph automatically.
+assert(pages.length>=603);
+assert.equal(new Set(navigationTopics.map(t=>t.id)).size,navigationTopics.length);
+for(const topic of navigationTopics){assert(topic.reason.length>30);for(const path of topic.paths)assert(matcher.byPath.has(path));}
+// Reviewed-topic edges must give every explicitly mapped destination an incoming selection.
+for(const topic of navigationTopics)for(const path of topic.paths)assert(report.incoming[path]>0,path+' reviewed topic lost incoming coverage');
 assert(!matcher.select('/tools/ratio-calculator/').some(m=>m.path==='/guides/lri-calculator-guide/'));
 assert(!matcher.select('/tools/ratio-calculator/').some(m=>m.path==='/guides/eye-prescription-to-20-20-guide/'));
 assert.equal(matcher.select('/tools/watt-hour-calculator/',5,['/tools/watt-hour-calculator/']).some(m=>m.path==='/tools/watt-hour-calculator/'),false);
@@ -43,5 +49,9 @@ if(process.argv.includes('--export')&&fs.existsSync('out/sitemap.xml'))for(const
 
 // Every route uses the same matcher; canonical logic stays in the existing route metadata.
 for(const prefix of ['tools','pk/tools','guides','pdf-tools','document-tools','image-tools','media-tools','archive-tools','generator-tools'])assert(fs.readFileSync(`app/${prefix}/[slug]/page.tsx`,'utf8').includes('<RelatedNavigation path='));
-if(process.argv.includes('--report')){fs.mkdirSync('research',{recursive:true});fs.writeFileSync('research/related-navigation-report.json',JSON.stringify(report,null,2)+'\n');}
+if(process.argv.includes('--report')){
+ fs.mkdirSync('research',{recursive:true});fs.writeFileSync('research/related-navigation-report.json',JSON.stringify(report,null,2)+'\n');
+ const summary={version:2,policy:report.policy,pages:pages.length,profilePaths:pages.map(p=>p.path),reviewedTopics:navigationTopics.length,reviewedMembers:new Set(navigationTopics.flatMap(t=>t.paths)).size,selectedLinks:report.selectedLinks,automaticLinks:report.automaticLinks,editorialLinks:report.editorialLinks,unmatchedCount:report.unmatched.length,duplicateCandidates:report.duplicateCandidates,automaticSelections:report.matches.flatMap(p=>p.selected.filter(m=>!m.editorial).map(m=>({source:p.source,target:m.path,score:m.score})))};
+ fs.writeFileSync('research/related-navigation-summary.json',JSON.stringify(summary,null,2)+'\n');
+}
 console.log(JSON.stringify({pages:report.pages,selectedLinks:report.selectedLinks,automaticLinks:report.automaticLinks,editorialLinks:report.editorialLinks,unmatched:report.unmatched.length,duplicateReviewPairs:report.duplicateCandidates.length,renderedBlocks}));

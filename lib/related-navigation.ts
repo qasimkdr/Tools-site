@@ -1,3 +1,4 @@
+import {navigationTopics} from "./navigation-topics";
 import {globalTools} from './global-tools';
 import {tools} from './tools';
 import {guides} from './guides';
@@ -21,5 +22,17 @@ for(const t of globalTools.filter(t=>!t.canonicalSlug)){const p=index.get(`/tool
 // Guide associations supply explicit supporting-guide evidence to their tools.
 for(const p of profiles.filter(p=>p.kind==='guide'))for(const path of p.approved){const target=index.get(path);if(target?.kind==='tool'&&tokens(target.title).some(t=>tokens(p.title).includes(t))&&target.terms.filter(t=>p.terms.includes(t)).length>=2)target.approved.push(p.path);}
 for(const p of profiles)p.approved=[...new Set(p.approved)].filter(path=>path!==p.path&&index.has(path));
+// Small reviewed task families add neighbours, not a site-wide all-to-all block.
+for(const topic of navigationTopics){
+ for(const path of topic.paths)if(!index.has(path))throw new Error(`Unknown reviewed navigation member: ${topic.id} ${path}`);
+ if(topic.paths.length<2||new Set(topic.paths).size!==topic.paths.length)throw new Error(`Invalid navigation topic: ${topic.id}`);
+ for(let i=0;i<topic.paths.length;i++){
+  const p=index.get(topic.paths[i])!;
+  for(const offset of [-1,1]){const target=topic.paths[(i+offset+topic.paths.length)%topic.paths.length];
+   p.approved.push(target);p.reviewed={...p.reviewed,[target]:`${topic.id}: ${topic.reason}`};
+  }
+ }
+}
+for(const p of profiles)p.approved=[...new Set(p.approved)];
 export const navigationProfiles=profiles;
 export const relatedNavigation=createMatcher(profiles);
