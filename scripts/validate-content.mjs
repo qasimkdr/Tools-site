@@ -556,12 +556,17 @@ const locs=[...globalSitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 if(!globalSitemap.includes('xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'))failures.push('sitemap: missing protocol namespace');
 if(new Set(locs).size!==locs.length)failures.push('sitemap: duplicate URLs');
 if(locs.length>50000||Buffer.byteLength(globalSitemap)>50*1024*1024)failures.push('sitemap: protocol size limit exceeded');
+const canonicalTitleOwners=new Map();
 for(const loc of locs){
  let url;try{url=new URL(loc);}catch{failures.push(`sitemap: invalid URL ${loc}`);continue;}
  if(url.origin!=="https://solvepilot.xyz"||url.search||url.hash||url.pathname.includes('//'))failures.push(`sitemap: malformed production URL ${loc}`);
  const file=join(process.cwd(),'out',url.pathname,'index.html');
  if(!existsSync(file)){failures.push(`sitemap: no export for ${loc}`);continue;}
  const html=readFileSync(file,'utf8');
+ const renderedTitle=html.match(/<title>(.*?)<\/title>/i)?.[1];
+ if(!renderedTitle)failures.push(`metadata: missing title for ${loc}`);
+ else if(canonicalTitleOwners.has(renderedTitle))failures.push(`metadata: duplicate canonical title ${loc} and ${canonicalTitleOwners.get(renderedTitle)}`);
+ else canonicalTitleOwners.set(renderedTitle,loc);
  if(/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i.test(html))failures.push(`sitemap: noindex URL ${loc}`);
  const canonical=html.match(/<link[^>]+rel="canonical"[^>]+href="([^"]+)"/i)?.[1];
  if(canonical!==loc)failures.push(`sitemap: canonical mismatch ${loc} → ${canonical}`);
