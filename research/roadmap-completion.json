@@ -2,16 +2,16 @@
   "summary": {
     "asOf": "2026-10-04",
     "totalRoadmapRows": 489,
-    "completedScopedRows": 260,
-    "completedCalculatorOrToolRows": 250,
+    "completedScopedRows": 280,
+    "completedCalculatorOrToolRows": 270,
     "completedGuideRows": 10,
-    "uniqueCalculatorOrToolDestinations": 190,
+    "uniqueCalculatorOrToolDestinations": 210,
     "uniqueGuideDestinations": 10,
-    "notCountedRows": 229,
-    "latestReviewedRank": 327,
-    "nextUnreviewedRank": 328,
+    "notCountedRows": 209,
+    "latestReviewedRank": 368,
+    "nextUnreviewedRank": 369,
     "thisBatchNewCalculators": 20,
-    "thisBatchExactKeywords": 43,
+    "thisBatchExactKeywords": 45,
     "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis\u2013Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately."
   },
   "rows": [
@@ -4839,6 +4839,266 @@
       "roadmapPage": "Student Loan Calculator",
       "primaryKeyword": "student loan amortization calculator",
       "status": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 328,
+      "roadmapPage": "Matrix Calculator",
+      "primaryKeyword": "8x8 calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/matrix-multiplication-calculator/",
+      "slug": "matrix-multiplication-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/matrix-multiplication-calculator/"
+      ]
+    },
+    {
+      "rank": 330,
+      "roadmapPage": "Decimal To Fraction Calculator",
+      "primaryKeyword": "decimal to fraction calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/decimal-to-fraction-calculator/",
+      "slug": "decimal-to-fraction-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/decimal-to-fraction-calculator/"
+      ]
+    },
+    {
+      "rank": 332,
+      "roadmapPage": "Blow In Insulation Calculator",
+      "primaryKeyword": "blow in insulation calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/blown-insulation-calculator/",
+      "slug": "blown-insulation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/blown-insulation-calculator/"
+      ]
+    },
+    {
+      "rank": 334,
+      "roadmapPage": "Euler's Method Calculator",
+      "primaryKeyword": "euler's method calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/euler-method-calculator/",
+      "slug": "euler-method-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/euler-method-calculator/"
+      ]
+    },
+    {
+      "rank": 336,
+      "roadmapPage": "Log Weight Calculator",
+      "primaryKeyword": "log weight calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/log-weight-calculator/",
+      "slug": "log-weight-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/log-weight-calculator/"
+      ]
+    },
+    {
+      "rank": 338,
+      "roadmapPage": "Roman Numeral Converter",
+      "primaryKeyword": "roman letters converter",
+      "status": "completed-scoped-destination",
+      "path": "/tools/roman-numeral-converter/",
+      "slug": "roman-numeral-converter",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/roman-numeral-converter/"
+      ]
+    },
+    {
+      "rank": 341,
+      "roadmapPage": "Prop Slip Calculator",
+      "primaryKeyword": "prop slip calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/prop-slip-calculator/",
+      "slug": "prop-slip-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/prop-slip-calculator/"
+      ]
+    },
+    {
+      "rank": 342,
+      "roadmapPage": "Rc Filter Calculator",
+      "primaryKeyword": "rc filter calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/rc-filter-calculator/",
+      "slug": "rc-filter-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/rc-filter-calculator/"
+      ]
+    },
+    {
+      "rank": 345,
+      "roadmapPage": "Probability Calculator",
+      "primaryKeyword": "probability calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/probability-calculator/",
+      "slug": "probability-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/probability-calculator/"
+      ]
+    },
+    {
+      "rank": 346,
+      "roadmapPage": "Target Heart Rate Calculator",
+      "primaryKeyword": "finding maximum heart rate calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/target-heart-rate-calculator/",
+      "slug": "target-heart-rate-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/target-heart-rate-calculator/"
+      ]
+    },
+    {
+      "rank": 347,
+      "roadmapPage": "Pension Calculator",
+      "primaryKeyword": "pension calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/pension-benefit-calculator/",
+      "slug": "pension-benefit-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/pension-benefit-calculator/"
+      ]
+    },
+    {
+      "rank": 349,
+      "roadmapPage": "Grams In Ml Converter",
+      "primaryKeyword": "grams and milliliters converter",
+      "status": "completed-scoped-destination",
+      "path": "/tools/grams-to-ml-converter/",
+      "slug": "grams-to-ml-converter",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/grams-to-ml-converter/"
+      ]
+    },
+    {
+      "rank": 350,
+      "roadmapPage": "Siding Calculator",
+      "primaryKeyword": "siding calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/siding-course-calculator/",
+      "slug": "siding-course-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/siding-course-calculator/"
+      ]
+    },
+    {
+      "rank": 352,
+      "roadmapPage": "Difference Quotient Calculator",
+      "primaryKeyword": "difference quotient calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/difference-quotient-calculator/",
+      "slug": "difference-quotient-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/difference-quotient-calculator/"
+      ]
+    },
+    {
+      "rank": 354,
+      "roadmapPage": "Odds Risk Calculator",
+      "primaryKeyword": "odds risk calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/odds-risk-calculator/",
+      "slug": "odds-risk-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/odds-risk-calculator/"
+      ]
+    },
+    {
+      "rank": 355,
+      "roadmapPage": "Time Lapse Photography Calculator",
+      "primaryKeyword": "time lapse photography calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/time-lapse-calculator/",
+      "slug": "time-lapse-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/time-lapse-calculator/"
+      ]
+    },
+    {
+      "rank": 358,
+      "roadmapPage": "Mileage Calculator",
+      "primaryKeyword": "mileage calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/mileage-reimbursement-calculator/",
+      "slug": "mileage-reimbursement-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/mileage-reimbursement-calculator/"
+      ]
+    },
+    {
+      "rank": 361,
+      "roadmapPage": "Draw Length Calculator",
+      "primaryKeyword": "draw length calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/draw-length-calculator/",
+      "slug": "draw-length-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/draw-length-calculator/"
+      ]
+    },
+    {
+      "rank": 365,
+      "roadmapPage": "Cardiac Output Calculator",
+      "primaryKeyword": "cardiac output calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/cardiac-output-calculator/",
+      "slug": "cardiac-output-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/cardiac-output-calculator/"
+      ]
+    },
+    {
+      "rank": 368,
+      "roadmapPage": "Call Put Option Calculator",
+      "primaryKeyword": "option profit calculator",
+      "status": "completed-scoped-destination",
+      "path": "/tools/option-profit-calculator/",
+      "slug": "option-profit-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/option-profit-calculator/"
+      ]
     }
   ]
 }

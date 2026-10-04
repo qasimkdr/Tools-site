@@ -1,0 +1,371 @@
+{
+  "baselineCommit": "5f5190d9c01aef9e944ab896eb5ff43c1eabe324",
+  "requestTime": "2026-10-04T08:06:48Z",
+  "sixDayCutoff": "2026-09-28T08:06:48Z",
+  "policy": "Six-day rule: existing definitions, methods and review dates unchanged. Explicit shared navigation connects distinct new tasks.",
+  "newCalculators": 20,
+  "exactKeywords": 45,
+  "inspectedRanks": [
+    328,
+    368
+  ],
+  "nextUnreviewedRank": 369,
+  "existingCalculatorDefinitionsUnchanged": 260,
+  "rows": [
+    {
+      "rank": 328,
+      "page": "Matrix Calculator",
+      "primaryKeyword": "8x8 calculator",
+      "status": "completed-new-calculator",
+      "slug": "matrix-multiplication-calculator",
+      "scope": "Numeric rectangular matrices with one through eight rows and columns. No inverse, determinant, symbolic expressions or general algebra system."
+    },
+    {
+      "rank": 329,
+      "page": "Time And A Half Calculator",
+      "primaryKeyword": "time and a half calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "overtime-pay-calculator-global",
+      "previousReviewed": "2026-09-25",
+      "reason": "Recent overtime already covers time-and-half pay.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 330,
+      "page": "Decimal To Fraction Calculator",
+      "primaryKeyword": "decimal to fraction calculator",
+      "status": "completed-new-calculator",
+      "slug": "decimal-to-fraction-calculator",
+      "scope": "Exact finite decimal text only: up to forty whole digits and eighteen decimal places. No repeating-decimal notation, scientific notation or inferred rational approximation."
+    },
+    {
+      "rank": 331,
+      "page": "Alcohol Calculator Wedding",
+      "primaryKeyword": "alcohol calculator wedding",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "wedding-liquor-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Recent wedding quantity intent; no distinct supplied task.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 332,
+      "page": "Blow In Insulation Calculator",
+      "primaryKeyword": "blow in insulation calculator",
+      "status": "completed-new-calculator",
+      "slug": "blown-insulation-calculator",
+      "scope": "Supplied-coverage purchasing arithmetic, not an R-value selector, building-code assessment or installation plan."
+    },
+    {
+      "rank": 333,
+      "page": "Calc Industries Pocket Real Estate Master Financial Calculator",
+      "primaryKeyword": "calc industries pocket real estate master financial calculator",
+      "status": "deferred",
+      "reason": "Handheld construction calculator product intent requires a verified model-specific manual, not a generic duplicate."
+    },
+    {
+      "rank": 334,
+      "page": "Euler's Method Calculator",
+      "primaryKeyword": "euler's method calculator",
+      "status": "completed-new-calculator",
+      "slug": "euler-method-calculator",
+      "scope": "Explicit Euler for affine differential equations only, bounded to 1,000 steps. No arbitrary expression parser, adaptive solver or certified error bound."
+    },
+    {
+      "rank": 335,
+      "page": "Gestation Period For Sheep Calculator",
+      "primaryKeyword": "gestation period for sheep calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "sheep-gestation-calculator",
+      "previousReviewed": "2026-10-04",
+      "reason": "Recently created sheep date estimator.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 336,
+      "page": "Log Weight Calculator",
+      "primaryKeyword": "log weight calculator",
+      "status": "completed-new-calculator",
+      "slug": "log-weight-calculator",
+      "scope": "Ideal circular frustum with independently supplied bulk density. No species/moisture inference, load-rating decision or lifting recommendation."
+    },
+    {
+      "rank": 337,
+      "page": "Roth Ira Calculator",
+      "primaryKeyword": "roth ira calculator calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "401k-calculator",
+      "previousReviewed": "2026-09-29",
+      "reason": "Recent retirement growth engines; tax-specific IRA expansion needs independently verified rules.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 338,
+      "page": "Roman Numeral Converter",
+      "primaryKeyword": "roman letters converter",
+      "status": "completed-new-calculator",
+      "slug": "roman-numeral-converter",
+      "scope": "Canonical subtractive Roman notation, integers 1\u20133999 and real Gregorian dates with years 0001\u20133999. No zero, negatives, overbars or ancient-calendar conversion."
+    },
+    {
+      "rank": 339,
+      "page": "Cross Stitch Fabric Calculator",
+      "primaryKeyword": "cross stitch fabric calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "cross-stitch-calculator",
+      "previousReviewed": "2026-10-01",
+      "reason": "Existing fabric sizing intent already covered.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 340,
+      "page": "Decimal Percentage Converter",
+      "primaryKeyword": "decimal percentage converter",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "percent-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Recent percentage conversion engine.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 341,
+      "page": "Prop Slip Calculator",
+      "primaryKeyword": "prop slip calculator",
+      "status": "completed-new-calculator",
+      "slug": "prop-slip-calculator",
+      "scope": "Apparent slip from supplied steady measurements and nominal pitch. No safe-speed prediction, propeller selection, engine setup or performance guarantee."
+    },
+    {
+      "rank": 342,
+      "page": "Rc Filter Calculator",
+      "primaryKeyword": "rc filter calculator",
+      "status": "completed-new-calculator",
+      "slug": "rc-filter-calculator",
+      "scope": "Single unloaded passive first-order RC stage. No component selection, active-filter design, loading correction or electrical safety approval."
+    },
+    {
+      "rank": 343,
+      "page": "Water Fast Weight Loss Calculator",
+      "primaryKeyword": "water fast weight loss calculator",
+      "status": "deferred",
+      "reason": "No sourced or responsible individual water-fast weight-loss prediction model."
+    },
+    {
+      "rank": 344,
+      "page": "Topsoil Estimator",
+      "primaryKeyword": "topsoil estimator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "soil-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Recently updated supplied-density soil quantity model.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 345,
+      "page": "Probability Calculator",
+      "primaryKeyword": "probability calculator",
+      "status": "completed-new-calculator",
+      "slug": "probability-calculator",
+      "scope": "Two-event probability identities only. Independence is supplied explicitly; no event forecasting, frequency fitting, combinatorial solver or guaranteed chance model."
+    },
+    {
+      "rank": 346,
+      "page": "Target Heart Rate Calculator",
+      "primaryKeyword": "finding maximum heart rate calculator",
+      "status": "completed-new-calculator",
+      "slug": "target-heart-rate-calculator",
+      "scope": "Adult population-reference arithmetic, ages 18\u2013100. Not measured maximum, diagnosis, exercise clearance, individual training prescription or emergency triage."
+    },
+    {
+      "rank": 347,
+      "page": "Pension Calculator",
+      "primaryKeyword": "pension calculator",
+      "status": "completed-new-calculator",
+      "slug": "pension-benefit-calculator",
+      "scope": "Currency-neutral supplied final-salary defined-benefit worksheet. No administrator entitlement, state pension, investment-pot projection, tax or retirement recommendation."
+    },
+    {
+      "rank": 348,
+      "page": "Dilution Ratio Calculator",
+      "primaryKeyword": "dilution calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "molarity-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Recent dilution modes already cover actual formula.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 349,
+      "page": "Grams In Ml Converter",
+      "primaryKeyword": "grams and milliliters converter",
+      "status": "completed-new-calculator",
+      "slug": "grams-to-ml-converter",
+      "scope": "User-supplied density conversion only. No universal mass-volume equality, material identification, dosing or formulation approval."
+    },
+    {
+      "rank": 350,
+      "page": "Siding Calculator",
+      "primaryKeyword": "siding calculator",
+      "status": "completed-new-calculator",
+      "slug": "siding-course-calculator",
+      "scope": "One rectangular wall with independent whole boards per horizontal course. No openings, offcut sharing, installation approval, flashing, fastening or structural design."
+    },
+    {
+      "rank": 351,
+      "page": "Pond Calculator",
+      "primaryKeyword": "pond calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "volume-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Recent pond volume mode already covers the intended geometry.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 352,
+      "page": "Difference Quotient Calculator",
+      "primaryKeyword": "difference quotient calculator",
+      "status": "completed-new-calculator",
+      "slug": "difference-quotient-calculator",
+      "scope": "Numeric quadratic-polynomial family only, including linear and constant cases. No general function parser, symbolic algebra or zero-step evaluation."
+    },
+    {
+      "rank": 353,
+      "page": "Income Tax Estimator Nj",
+      "primaryKeyword": "income tax estimator nj",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "new-jersey-tax-calculator",
+      "previousReviewed": "2026-10-03",
+      "reason": "Recently created verified 2025 tax model.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 354,
+      "page": "Odds Risk Calculator",
+      "primaryKeyword": "odds risk calculator",
+      "status": "completed-new-calculator",
+      "slug": "odds-risk-calculator",
+      "scope": "Observed two-group table arithmetic. No causal inference, clinical prediction, confidence interval, significance test or population-risk interpretation from case-control sampling."
+    },
+    {
+      "rank": 355,
+      "page": "Time Lapse Photography Calculator",
+      "primaryKeyword": "time lapse photography calculator",
+      "status": "completed-new-calculator",
+      "slug": "time-lapse-calculator",
+      "scope": "Fixed-interval capture planning, inclusive first-frame convention. No exposure, storage, battery, variable-rate, dropped-frame or camera-firmware prediction."
+    },
+    {
+      "rank": 356,
+      "page": "Rate Buydown Calculator",
+      "primaryKeyword": "rate buydown calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "mortgage-buydown-calculator",
+      "previousReviewed": "2026-09-29",
+      "reason": "Existing mortgage buydown task already covered.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 357,
+      "page": "Mean Median Mode Range Calculator",
+      "primaryKeyword": "mean median and mode calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "mean-standard-deviation-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Recent descriptive-statistics engine; no forced duplicate rewrite.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 358,
+      "page": "Mileage Calculator",
+      "primaryKeyword": "mileage calculator",
+      "status": "completed-new-calculator",
+      "slug": "mileage-reimbursement-calculator",
+      "scope": "Odometer difference and user-rate reimbursement only. No mapping, fuel economy, tax eligibility, employer approval or automatic 2025/2026 mileage rate."
+    },
+    {
+      "rank": 359,
+      "page": "Savings Calculator",
+      "primaryKeyword": "high yield savings account calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "interest-rate-calculator",
+      "previousReviewed": "2026-10-02",
+      "reason": "Recent savings growth mode and compound interest engine.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 360,
+      "page": "Construction Calculator",
+      "primaryKeyword": "construction calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "square-footage-calculator",
+      "previousReviewed": "2026-09-29",
+      "reason": "Broad construction intent already served by individual takeoff tools.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 361,
+      "page": "Draw Length Calculator",
+      "primaryKeyword": "draw length calculator",
+      "status": "completed-new-calculator",
+      "slug": "draw-length-calculator",
+      "scope": "Measured ATA convention only. No wingspan fit estimate, personalized bow adjustment, arrow-length recommendation or equipment safety approval."
+    },
+    {
+      "rank": 362,
+      "page": "Ap Bio Exam Calculator",
+      "primaryKeyword": "ap bio exam calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "ap-biology-score-calculator",
+      "previousReviewed": "2026-10-04",
+      "reason": "Recent AP Biology weighted score model.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 363,
+      "page": "Ap Bio Grade Calculator",
+      "primaryKeyword": "ap bio grade calculator",
+      "status": "skip-recent-or-covered-intent",
+      "existingSlug": "ap-biology-score-calculator",
+      "previousReviewed": "2026-10-04",
+      "reason": "Recent AP Biology model; keyword variant is not a distinct tool.",
+      "definitionUnchanged": true
+    },
+    {
+      "rank": 364,
+      "page": "Calculator+mango",
+      "primaryKeyword": "calculator+mango",
+      "status": "deferred",
+      "reason": "Unresolved calculator mango intent; no invented tool."
+    },
+    {
+      "rank": 365,
+      "page": "Cardiac Output Calculator",
+      "primaryKeyword": "cardiac output calculator",
+      "status": "completed-new-calculator",
+      "slug": "cardiac-output-calculator",
+      "scope": "Educational supplied HR\u00d7SV identity only. No stroke-volume inference, diagnosis, normal-range label, treatment recommendation or emergency triage."
+    },
+    {
+      "rank": 366,
+      "page": "Shelf Life Calculator",
+      "primaryKeyword": "shelf life calculator",
+      "status": "deferred",
+      "reason": "Safe food expiration cannot be derived from generic date arithmetic; no shelf-life guarantee."
+    },
+    {
+      "rank": 367,
+      "page": "Snow Load Calculator",
+      "primaryKeyword": "snow load calculator",
+      "status": "deferred",
+      "reason": "Structural snow loads need verified local code and site/design conditions, not an invented universal formula."
+    },
+    {
+      "rank": 368,
+      "page": "Call Put Option Calculator",
+      "primaryKeyword": "option profit calculator",
+      "status": "completed-new-calculator",
+      "slug": "option-profit-calculator",
+      "scope": "Purchased vanilla call/put expiry arithmetic only. No live option valuation, volatility, short positions, margin, assignment forecast, taxes or investment recommendation."
+    }
+  ]
+}

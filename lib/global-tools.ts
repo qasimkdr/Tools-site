@@ -1,3 +1,4 @@
+import {roadmap328Tools} from "./roadmap-328-plus-tools";
 import {roadmap268Tools} from "./roadmap-268-plus-tools";
 import {next20Tools} from "./roadmap-next20-tools";
 import {upgradeNext20} from "./roadmap-next20-upgrades";
@@ -359,6 +360,7 @@ export const globalTools: Tool[] = [
   ...roadmap166Tools,
   ...roadmap186Tools,
   ...roadmap206Tools,
+  ...roadmap328Tools,
   ...roadmap268Tools,
   ...next20Tools,
   ...roadmap146Tools,

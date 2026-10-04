@@ -30,5 +30,5 @@ for(let d=1;d<=12;d++)for(const mode of ['solid','hollow']){const model=generate
 for(const d of [0,65,3.5,NaN])assert.throws(()=>generateSphere(d,'solid'));
 const {globalTools}=require('../lib/global-tools.ts'),{guides}=require('../lib/guides.ts'),{roadmap206Keywords}=require('../lib/roadmap-206-225-keywords.ts');assert.equal(roadmap206Keywords.length,37);assert.equal(new Set(roadmap206Keywords.map(k=>k.rank)).size,20);
 for(const item of roadmap206Keywords){const page=(item.path.startsWith('/guides/')?guides:globalTools).find(p=>p.slug===item.slug);assert(page,item.path);assert(page.keywords.includes(item.keyword),item.keyword);}
-assert.equal(globalTools.filter(t=>!t.canonicalSlug).length,255);assert.equal(guides.length,45);
+assert.equal(globalTools.filter(t=>!t.canonicalSlug).length,275);assert.equal(guides.length,45);
 console.log('Ranks 206–225 passed: 37 mapped queries, all new engines, 2,000 NJ rows, formula boundaries, voxel symmetry and reused modes.');
