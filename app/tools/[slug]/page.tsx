@@ -1,3 +1,4 @@
+import {RelatedNavigation} from "@/components/RelatedNavigation";
 import {roadmap268Audit} from "@/lib/roadmap-268-plus-audit";
 import {BooleanAlgebraTool} from "@/components/BooleanAlgebraTool";
 import {next20Audit} from "@/lib/roadmap-next20-audit";
@@ -373,6 +374,6 @@ export default async function GlobalToolPage({
           ))}
         </div>
       </section>
-    </>
+    <RelatedNavigation path={`/tools/${tool.slug}/`} exclude={related.map(item=>`/tools/${item.slug}/`)} /></>
   );
 }

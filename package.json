@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/validate-content.mjs && node scripts/indexnow.mjs generate",
+    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/validate-content.mjs && node scripts/verify-related-navigation.cjs && node scripts/indexnow.mjs generate",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "validate:content": "node scripts/validate-content.mjs",
@@ -21,7 +21,9 @@
     "verify:next20": "node scripts/verify-next20.cjs && node scripts/verify-boolean-interaction.cjs",
     "verify:roadmap268": "node scripts/verify-roadmap-268-plus.cjs",
     "indexnow:notify": "node scripts/indexnow.mjs notify",
-    "verify:indexnow": "node --test scripts/indexnow.test.mjs"
+    "verify:indexnow": "node --test scripts/indexnow.test.mjs",
+    "verify:related": "node scripts/verify-related-navigation.cjs",
+    "related:report": "node scripts/verify-related-navigation.cjs --report"
   },
   "dependencies": {
     "next": "16.3.5",

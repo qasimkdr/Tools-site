@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "policy": "navigation only; scores are not probabilities; duplicate candidates require manual review",
+  "pages": 603,
+  "selectedLinks": 698,
+  "automaticLinks": 12,
+  "editorialLinks": 686,
+  "duplicateCandidates": [
+    {
+      "paths": [
+        "/tools/savings-goal-calculator/",
+        "/pk/tools/savings-goal-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/discount-calculator/",
+        "/pk/tools/discount-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/business-break-even-calculator/",
+        "/pk/tools/business-break-even-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/emergency-fund-calculator/",
+        "/pk/tools/emergency-fund-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/debt-to-income-ratio-calculator/",
+        "/pk/tools/debt-to-income-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/loan-early-payment-calculator/",
+        "/pk/tools/early-loan-payment-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/rent-affordability-calculator/",
+        "/pk/tools/rent-affordability-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/inventory-reorder-point-calculator/",
+        "/pk/tools/inventory-reorder-point-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/credit-card-minimum-payment-calculator/",
+        "/pk/tools/credit-card-minimum-payment-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/credit-card-payoff-calculator/",
+        "/pk/tools/credit-card-payoff-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/overtime-pay-calculator-global/",
+        "/pk/tools/overtime-pay-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/tools/age-calculator/",
+        "/pk/tools/age-calculator/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/pk/tools/electricity-bill-calculator-pakistan/",
+        "/pk/tools/k-electric-bill-calculator-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/pk/tools/house-construction-cost-calculator-pakistan/",
+        "/guides/house-construction-cost-guide-pakistan/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/pdf-tools/images-to-pdf/",
+        "/pdf-tools/pdf-to-images/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/document-tools/word-to-pdf/",
+        "/document-tools/pdf-to-word/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/document-tools/csv-to-excel/",
+        "/document-tools/excel-to-csv/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/document-tools/json-to-excel/",
+        "/document-tools/excel-to-json/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/document-tools/csv-to-json/",
+        "/document-tools/json-to-csv/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/document-tools/xml-to-json/",
+        "/document-tools/json-to-xml/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/document-tools/yaml-to-json/",
+        "/document-tools/json-to-yaml/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/image-tools/jpg-to-png/",
+        "/image-tools/png-to-jpg/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/image-tools/image-to-base64/",
+        "/image-tools/base64-to-image/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/media-tools/wav-to-mp3/",
+        "/media-tools/mp3-to-wav/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    },
+    {
+      "paths": [
+        "/media-tools/srt-to-vtt/",
+        "/media-tools/vtt-to-srt/"
+      ],
+      "reason": "Same normalized title; manual task/method/content review required",
+      "action": "review-only"
+    }
+  ],
+  "unmatchedCount": 362,
+  "automaticSelections": [
+    {
+      "source": "/pk/tools/lithium-vs-lead-acid-battery-calculator/",
+      "target": "/guides/lithium-vs-lead-acid-battery-pakistan/",
+      "score": 80
+    },
+    {
+      "source": "/pk/tools/motorcycle-fuel-cost-calculator-pakistan/",
+      "target": "/guides/vehicle-fuel-cost-guide-pakistan/",
+      "score": 75
+    },
+    {
+      "source": "/document-tools/word-to-pdf/",
+      "target": "/document-tools/pdf-to-word/",
+      "score": 80
+    },
+    {
+      "source": "/document-tools/pdf-to-word/",
+      "target": "/document-tools/word-to-pdf/",
+      "score": 80
+    },
+    {
+      "source": "/document-tools/csv-to-excel/",
+      "target": "/document-tools/excel-to-csv/",
+      "score": 77
+    },
+    {
+      "source": "/document-tools/excel-to-csv/",
+      "target": "/document-tools/csv-to-excel/",
+      "score": 77
+    },
+    {
+      "source": "/media-tools/wav-to-mp3/",
+      "target": "/media-tools/mp3-to-wav/",
+      "score": 77
+    },
+    {
+      "source": "/media-tools/mp3-to-wav/",
+      "target": "/media-tools/wav-to-mp3/",
+      "score": 77
+    },
+    {
+      "source": "/media-tools/srt-to-vtt/",
+      "target": "/media-tools/vtt-to-srt/",
+      "score": 84
+    },
+    {
+      "source": "/media-tools/vtt-to-srt/",
+      "target": "/media-tools/srt-to-vtt/",
+      "score": 84
+    },
+    {
+      "source": "/generator-tools/qr-code-generator/",
+      "target": "/generator-tools/url-qr-code-generator/",
+      "score": 78
+    },
+    {
+      "source": "/generator-tools/url-qr-code-generator/",
+      "target": "/generator-tools/qr-code-generator/",
+      "score": 78
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import {RelatedNavigation} from "@/components/RelatedNavigation";
 import {Calculator} from "@/components/Calculator";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -55,5 +56,5 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       </div><aside className="guide-aside"><div className="side-card"><b>Editorial checks</b><span>✓ Practical purpose</span><span>✓ Method explained</span><span>✓ Primary sources preferred</span><span>✓ Limitations disclosed</span><Link className="text-link" href="/editorial-policy/">Read our policy →</Link></div><div className="side-card author-mini"><span>MQ</span><div><b>Mohammad Qasim</b><small>Founder and editor, SolvePilot</small><Link href="/author/mohammad-qasim/">About the author →</Link></div></div></aside></div>
     </article>
     <section className="shell related guide-tools"><div className="section-heading"><div><span className="eyebrow">Put the guide into practice</span><h2>Related calculators</h2></div><Link href="/tools/">All tools →</Link></div><div className="tools-grid three">{relatedTools.slice(0,5).map(item=><ToolCard key={item!.tool.slug} tool={item!.tool} hrefPrefix={item!.hrefPrefix}/>)}</div></section>
-  </>;
+  <RelatedNavigation path={`/guides/${guide.slug}/`} exclude={[...relatedTools.flatMap(item=>item?[`${item.hrefPrefix}/${item.tool.canonicalSlug||item.tool.slug}/`]:[]),...relatedGuides.flatMap(item=>item?[`/guides/${item.slug}/`]:[])]} /></>;
 }
