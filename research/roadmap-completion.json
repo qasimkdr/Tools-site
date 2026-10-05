@@ -1,17 +1,17 @@
 {
   "summary": {
-    "asOf": "2026-10-04",
+    "asOf": "2026-10-05",
     "totalRoadmapRows": 489,
-    "completedScopedRows": 280,
-    "completedCalculatorOrToolRows": 270,
+    "completedScopedRows": 303,
+    "completedCalculatorOrToolRows": 293,
     "completedGuideRows": 10,
-    "uniqueCalculatorOrToolDestinations": 210,
+    "uniqueCalculatorOrToolDestinations": 230,
     "uniqueGuideDestinations": 10,
-    "notCountedRows": 209,
-    "latestReviewedRank": 368,
-    "nextUnreviewedRank": 369,
+    "notCountedRows": 186,
+    "latestReviewedRank": 422,
+    "nextUnreviewedRank": 423,
     "thisBatchNewCalculators": 20,
-    "thisBatchExactKeywords": 45,
+    "thisBatchExactKeywords": 114,
     "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis\u2013Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately."
   },
   "rows": [
@@ -4118,325 +4118,517 @@
       "rank": 369,
       "roadmapPage": "Age Difference Calculator",
       "primaryKeyword": "age calculator difference",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/age-difference-calculator/",
+      "slug": "age-difference-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/age-difference-calculator/"
+      ]
     },
     {
       "rank": 370,
       "roadmapPage": "Parallel Resistor Calculator",
       "primaryKeyword": "parallel resistor calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/parallel-resistor-calculator/",
+      "slug": "parallel-resistor-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/parallel-resistor-calculator/"
+      ]
     },
     {
       "rank": 371,
       "roadmapPage": "Peptide Dosage Calculator",
       "primaryKeyword": "peptide dosage calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred",
+      "evidence": "Clinical peptide dosing requires verified prescription/product context; no invented dosage."
     },
     {
       "rank": 372,
       "roadmapPage": "Scrap Silver Calculator",
       "primaryKeyword": "scrap silver calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/scrap-silver-calculator/",
+      "slug": "scrap-silver-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/scrap-silver-calculator/"
+      ]
     },
     {
       "rank": 373,
       "roadmapPage": "Z Score Calculator",
       "primaryKeyword": "z value calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/z-score-calculator/",
+      "slug": "z-score-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/z-score-calculator/"
+      ]
     },
     {
       "rank": 374,
       "roadmapPage": "Dog Age Calculator",
       "primaryKeyword": "dog age calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred",
+      "evidence": "Dog age requires a sourced species/size/age model rather than a universal multiplier."
     },
     {
       "rank": 375,
       "roadmapPage": "Credit Card Fee Calculator",
       "primaryKeyword": "credit card fee calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 376,
       "roadmapPage": "Ira Calculator",
       "primaryKeyword": "ira calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Retirement contribution projection already exists; IRA-specific statutory and tax rules are not established by basic growth arithmetic."
     },
     {
       "rank": 377,
       "roadmapPage": "First Lien Heloc Calculator",
       "primaryKeyword": "first lien heloc calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 378,
       "roadmapPage": "Annuity Calculator",
       "primaryKeyword": "fixed index annuity calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Basic annuity payment already exists; fixed-index product crediting rules need verified contract-specific modeling."
     },
     {
       "rank": 379,
       "roadmapPage": "Business Loan Calculator",
       "primaryKeyword": "business calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Standard payment arithmetic already exists; SBA or business-specific product terms are not loaded."
     },
     {
       "rank": 380,
       "roadmapPage": "Deadline Calculator",
       "primaryKeyword": "deadline calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 381,
       "roadmapPage": "Circumference Calculator",
       "primaryKeyword": "circumference calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/circumference-calculator/",
+      "slug": "circumference-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/circumference-calculator/"
+      ]
     },
     {
       "rank": 382,
       "roadmapPage": "Body Type Calculator",
       "primaryKeyword": "body shape calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred",
+      "evidence": "No validated universal body-shape/clothing-size classification was established."
     },
     {
       "rank": 383,
       "roadmapPage": "Pace Calculator",
       "primaryKeyword": "treadmill pace calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 384,
       "roadmapPage": "Circle Calculator",
       "primaryKeyword": "area of a circle calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 385,
       "roadmapPage": "Pythagorean Theorem Calculator",
       "primaryKeyword": "pythagoras equation solver",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 386,
       "roadmapPage": "Pounds Ounces",
       "primaryKeyword": "oz pounds converter",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/pounds-ounces-converter/",
+      "slug": "pounds-ounces-converter",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/pounds-ounces-converter/"
+      ]
     },
     {
       "rank": 387,
       "roadmapPage": "Percent Off Calculator",
       "primaryKeyword": "percentage off calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 388,
       "roadmapPage": "Pizza Party Calculator",
       "primaryKeyword": "pizza calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/pizza-party-calculator/",
+      "slug": "pizza-party-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/pizza-party-calculator/"
+      ]
     },
     {
       "rank": 389,
       "roadmapPage": "Conversion Calculator",
       "primaryKeyword": "metric to inches calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/length-conversion-calculator/",
+      "slug": "length-conversion-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/length-conversion-calculator/"
+      ]
     },
     {
       "rank": 390,
       "roadmapPage": "Electricity Calculator",
       "primaryKeyword": "power usage calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/electricity-usage-calculator/",
+      "slug": "electricity-usage-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/electricity-usage-calculator/"
+      ]
     },
     {
       "rank": 391,
       "roadmapPage": "Eigenvalue Eigenvector Calculator",
       "primaryKeyword": "eigenvalue calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/eigenvalue-calculator/",
+      "slug": "eigenvalue-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/eigenvalue-calculator/"
+      ]
     },
     {
       "rank": 392,
       "roadmapPage": "Credit Card Calculator",
       "primaryKeyword": "credit card calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 393,
       "roadmapPage": "Percent Error Calculator",
       "primaryKeyword": "percentage error calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/percent-error-calculator/",
+      "slug": "percent-error-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/percent-error-calculator/"
+      ]
     },
     {
       "rank": 394,
       "roadmapPage": "Paver Calculator",
       "primaryKeyword": "paver calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Rectangular tile quantity already exists and is recent; paver-specific joint/base/site methods are outside its scope."
     },
     {
       "rank": 395,
       "roadmapPage": "Buydown Calculator",
       "primaryKeyword": "buydown calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 396,
       "roadmapPage": "Midpoint Calculator",
       "primaryKeyword": "midpoint calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/midpoint-calculator/",
+      "slug": "midpoint-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/midpoint-calculator/"
+      ]
     },
     {
       "rank": 397,
       "roadmapPage": "Walking Calorie Calculator",
       "primaryKeyword": "treadmill calorie calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 398,
       "roadmapPage": "Seller Net Sheet Calculator",
       "primaryKeyword": "seller net sheet calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 399,
       "roadmapPage": "Percentage Change Calculator",
       "primaryKeyword": "change calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 400,
       "roadmapPage": "Annuity Payout Calculator",
       "primaryKeyword": "annuity payout calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 401,
       "roadmapPage": "Dew Point Calculator",
       "primaryKeyword": "dew point calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/dew-point-calculator/",
+      "slug": "dew-point-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/dew-point-calculator/"
+      ]
     },
     {
       "rank": 402,
       "roadmapPage": "Golf Handicap Calculator",
       "primaryKeyword": "golf handicap calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred",
+      "evidence": "Handicap scoring needs verified current official differential, adjustment and score-count rules; no incomplete substitute."
     },
     {
       "rank": 403,
       "roadmapPage": "Steps To Calories Calculator",
       "primaryKeyword": "steps to calories calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing walking calorie scope already covers supported step/distance conversion; preserve it."
     },
     {
       "rank": 404,
       "roadmapPage": "Lottery Annuity Calculator",
       "primaryKeyword": "lottery annuity calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/lottery-annuity-calculator/",
+      "slug": "lottery-annuity-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/lottery-annuity-calculator/"
+      ]
     },
     {
       "rank": 405,
       "roadmapPage": "Mobile Home Calculator",
       "primaryKeyword": "mobile home calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Generic loan payment already exists; manufactured-home lending terms are not inferred."
     },
     {
       "rank": 406,
       "roadmapPage": "Height In Inches Calculator",
       "primaryKeyword": "inches calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/length-conversion-calculator/",
+      "slug": "length-conversion-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/length-conversion-calculator/"
+      ]
     },
     {
       "rank": 407,
       "roadmapPage": "Salary Calculator",
       "primaryKeyword": "annual income estimator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 408,
       "roadmapPage": "Feet And Inches Calculator",
       "primaryKeyword": "inches to feet calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/feet-inches-calculator/",
+      "slug": "feet-inches-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/feet-inches-calculator/"
+      ]
     },
     {
       "rank": 409,
       "roadmapPage": "Long Division Calculator",
       "primaryKeyword": "dividing decimals calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/long-division-calculator/",
+      "slug": "long-division-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/long-division-calculator/"
+      ]
     },
     {
       "rank": 410,
       "roadmapPage": "Kilometers To Miles",
       "primaryKeyword": "converter kn to miles",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "partial-supported-secondary-queries",
+      "evidence": "Primary query converter kn to miles is unsupported/malformed and is not counted complete. Valid kilometre/mile secondary queries map to the length converter."
     },
     {
       "rank": 411,
       "roadmapPage": "Permutation And Combination Calculator",
       "primaryKeyword": "permutation calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/permutation-combination-calculator/",
+      "slug": "permutation-combination-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/permutation-combination-calculator/"
+      ]
     },
     {
       "rank": 412,
       "roadmapPage": "Ounces To Pounds Converter",
       "primaryKeyword": "converter ounces to pounds",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/pounds-ounces-converter/",
+      "slug": "pounds-ounces-converter",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/pounds-ounces-converter/"
+      ]
     },
     {
       "rank": 413,
       "roadmapPage": "Sig Fig Calculator",
       "primaryKeyword": "sig fig calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 414,
       "roadmapPage": "Anc Calculator",
       "primaryKeyword": "anc calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred",
+      "evidence": "Clinical ANC arithmetic and interpretation deferred; not needed to fill this batch."
     },
     {
       "rank": 415,
       "roadmapPage": "Log Calculator",
       "primaryKeyword": "calculate log calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/logarithm-calculator/",
+      "slug": "logarithm-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/logarithm-calculator/"
+      ]
     },
     {
       "rank": 416,
       "roadmapPage": "Fuel Cost Calculator",
       "primaryKeyword": "gas calculator trip",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/trip-fuel-cost-calculator/",
+      "slug": "trip-fuel-cost-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/trip-fuel-cost-calculator/"
+      ]
     },
     {
       "rank": 417,
       "roadmapPage": "Sphere Volume Calculator",
       "primaryKeyword": "volume calculator for a sphere",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 418,
       "roadmapPage": "Fence Calculator",
       "primaryKeyword": "fence calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 419,
       "roadmapPage": "Take Home Pay Calculator",
       "primaryKeyword": "take home wage calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing calculator covers the supplied task; leave it unchanged and continue."
     },
     {
       "rank": 420,
       "roadmapPage": "Time Calculator",
       "primaryKeyword": "add time calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "skipped-existing-or-covered-intent",
+      "evidence": "Existing duration arithmetic already supplies this task; do not duplicate it."
     },
     {
       "rank": 421,
       "roadmapPage": "Big Number Calculator",
       "primaryKeyword": "big number calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/big-number-calculator/",
+      "slug": "big-number-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/big-number-calculator/"
+      ]
     },
     {
       "rank": 422,
       "roadmapPage": "Mm To Inches Conversion Calculator",
       "primaryKeyword": "mm to inches calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/length-conversion-calculator/",
+      "slug": "length-conversion-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap369 bounded implementation and export gates; unsupported grouped keywords excluded",
+      "destinations": [
+        "/tools/length-conversion-calculator/"
+      ]
     },
     {
       "rank": 423,

@@ -496,8 +496,10 @@
   },
   {
     "slug": "molecular-weight-calculator",
-    "updatedAt": "2026-09-29",
-    "sha256": "c314812c62a335dd4e2a916e28d7db110783b33be58c7554ce6692032ec25377"
+    "updatedAt": "2026-10-05",
+    "sha256": "519e70cd3354f3a06293cf92779b186e849544325c6d9c5b08fcab08754ddaec",
+    "previousSha256": "c314812c62a335dd4e2a916e28d7db110783b33be58c7554ce6692032ec25377",
+    "approvedException": "Already published molecular correction cdb6c589b8319bfc07de009e5609b6be03337b64, before this batch; explicit user requested fix."
   },
   {
     "slug": "bowling-score-calculator",

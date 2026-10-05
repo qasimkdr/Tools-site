@@ -1,6 +1,27 @@
 export type CalculatorDefaults = [string, string, string, string?, string?, string?, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  "age-difference-calculator": ["2000-01-15", "2002-03-20", "0"],
+  "parallel-resistor-calculator": ["100, 200", "12", "0"],
+  "scrap-silver-calculator": ["100", "g", "92.5", "30", "90"],
+  "z-score-calculator": ["85", "70", "10"],
+  "circumference-calculator": ["5", "radius", "0"],
+  "pounds-ounces-converter": ["2.5", "lb", "0"],
+  "pizza-party-calculator": ["12", "3", "8", "10", "15"],
+  "length-conversion-calculator": ["100", "cm", "in"],
+  "electricity-usage-calculator": ["1000", "2", "30", "1", "0.20", "100"],
+  "eigenvalue-calculator": ["2", "0", "0", "3"],
+  "percent-error-calculator": ["9.8", "10", "0"],
+  "midpoint-calculator": ["2", "4", "6", "8"],
+  "dew-point-calculator": ["25", "C", "50"],
+  "lottery-annuity-calculator": ["1000000", "30", "5", "4", "0", "now"],
+  "feet-inches-calculator": ["5", "8", "2", "7", "add"],
+  "long-division-calculator": ["1", "6", "0"],
+  "permutation-combination-calculator": ["10", "3", "combination"],
+  "logarithm-calculator": ["1000", "10", "0"],
+  "trip-fuel-cost-calculator": ["300", "7", "l100", "1.60", "1"],
+  "big-number-calculator": ["9007199254740993", "1", "add"],
+
   "matrix-multiplication-calculator": ["1 2\n3 4", "5 6\n7 8", "0"],
   "decimal-to-fraction-calculator": ["0.125", "0", "0"],
   "blown-insulation-calculator": ["1000", "25", "10", "30"],

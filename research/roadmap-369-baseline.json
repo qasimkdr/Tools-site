@@ -1,0 +1,2768 @@
+[
+  {
+    "region": "global",
+    "slug": "compound-interest-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "e0c081e961b8edaef58351985876bc620dbd8a8eafdf6cc60b01aad37330a1d2"
+  },
+  {
+    "region": "global",
+    "slug": "savings-goal-calculator",
+    "updatedAt": "2026-09-21",
+    "sha256": "e7e2fca4bcf17eb8b4666805d159f3d7e0bf2354d53d12baac526cfbcc612c3f"
+  },
+  {
+    "region": "global",
+    "slug": "mortgage-payment-calculator",
+    "updatedAt": "2026-09-21",
+    "sha256": "b666a89d4a013390038abbeb93a2869b109f97b46800b8c3ece68f1932c82099"
+  },
+  {
+    "region": "global",
+    "slug": "discount-calculator",
+    "updatedAt": "2026-09-21",
+    "sha256": "152bc1b5672e82f226c0dc6eeceb233f296c3ddd6e54ba9b378eae3b573578b2"
+  },
+  {
+    "region": "global",
+    "slug": "sales-tax-vat-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "5fd3eb3d5d864cdb10f8e7582faee473d7a946fc23f4c510b8981364a8f0db85"
+  },
+  {
+    "region": "global",
+    "slug": "profit-margin-calculator-global",
+    "updatedAt": "2026-10-02",
+    "sha256": "e0cbff4da5b04976a96d8ee7c81d0a16dfc3c62c36b861e60c5b534ee843c129"
+  },
+  {
+    "region": "global",
+    "slug": "business-break-even-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "0ab618d040fb9657985701177c486c3147779ea959fe69829f0d58562f2034ba"
+  },
+  {
+    "region": "global",
+    "slug": "tip-calculator",
+    "updatedAt": "2026-09-21",
+    "sha256": "1d88a75c0ac6fc772101962fc2d327a5a41c6c318d75e947c04950e1b64a34d3"
+  },
+  {
+    "region": "global",
+    "slug": "split-bill-calculator",
+    "updatedAt": "2026-09-21",
+    "sha256": "bb2d2aa1d39d6385e50b405243649f4c1d4e6c924467d71736c57c6e3e8bb1ca"
+  },
+  {
+    "region": "global",
+    "slug": "unit-price-comparison-calculator",
+    "updatedAt": "2026-09-21",
+    "sha256": "4c5fcbba871085d75142edd474e97f742829bfdb9fcb83f306a3f1fbbbdba6c0"
+  },
+  {
+    "region": "global",
+    "slug": "work-hours-calculator",
+    "updatedAt": "2026-09-21",
+    "sha256": "e279de36e929987ecb7532b8c366b32da4675b234b8f8242ff8743e6b6b324c9"
+  },
+  {
+    "region": "global",
+    "slug": "download-time-estimator",
+    "updatedAt": "2026-09-21",
+    "sha256": "c96d23a433983fd805e939f5da87812e371a9cb1bc171349c3d90e78c68f26ed"
+  },
+  {
+    "region": "global",
+    "slug": "running-pace-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "d32d7cad6c3ff79ca190021fb22c70c28a55af78ddedc77416f5819151898e38"
+  },
+  {
+    "region": "global",
+    "slug": "aspect-ratio-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "1c8778f9d018417888e4425009ddbe4adee024922908b15fd0f6ba8bd0adc404"
+  },
+  {
+    "region": "global",
+    "slug": "fuel-economy-converter",
+    "updatedAt": "2026-09-21",
+    "sha256": "4425c29f90421f0356ac39b668eb09432331629e0a94ff5bec7bcaa9ca87e372"
+  },
+  {
+    "region": "global",
+    "slug": "personal-cash-runway-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "90c63d47843274f0c4b9fa3652870a468081772fcd1bbdf2bb2be35e93690889"
+  },
+  {
+    "region": "global",
+    "slug": "business-cash-runway-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "e2e2c48d2367dfbc9ac4fbc3f8c6080b324018aa4ae0ce6108750e3703fc38e6"
+  },
+  {
+    "region": "global",
+    "slug": "monthly-burn-rate-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "844acfd7328737b2196bc9856d16928384804340f463d9294e6ea39e106d951f"
+  },
+  {
+    "region": "global",
+    "slug": "emergency-fund-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "d6ddd139263d40ad5d0283464921c72460157538ce89671cee8f8dde12490e87"
+  },
+  {
+    "region": "global",
+    "slug": "sinking-fund-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "c1d38541ed7f34345c11fdcd842a3caf1e1c4637b8903456e4da23635f12f680"
+  },
+  {
+    "region": "global",
+    "slug": "debt-to-income-ratio-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "8493e54c793ee56763ddfad098c5efed1bd8f24573af6eb56b0e1b3f98dbe939"
+  },
+  {
+    "region": "global",
+    "slug": "loan-comparison-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "d6781064a2518bc6f46980055d9ea0ea155053ed445f569b495a76b9f8952e36"
+  },
+  {
+    "region": "global",
+    "slug": "effective-interest-rate-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "f790ed1210456c4cb92d7e09d0f25a02db2f57d65d4d03c4e0347a520c5fd05a"
+  },
+  {
+    "region": "global",
+    "slug": "loan-early-payment-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "5da177d0130c1b259014ba45d80485b7bc6782fd3cb4369849cab53614e10a4c"
+  },
+  {
+    "region": "global",
+    "slug": "invoice-financing-cost-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "09f2900ab6890e97f8fc85c74e4b9a2cc571f36fb21da9e3830132ee6f216770"
+  },
+  {
+    "region": "global",
+    "slug": "late-payment-interest-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "736f31d67045e0f4c254f611b8bb4088a5714394c033daa587e4d6e4fa6471d3"
+  },
+  {
+    "region": "global",
+    "slug": "subscription-cost-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "69e07621c0c6ea64a778bb3c09f616af597a3702acd273b848ace4a8309b0bfa"
+  },
+  {
+    "region": "global",
+    "slug": "salary-to-freelance-rate-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "884696e34939639bc4bdf22b6cdd068834563b1042a30c41d90b5777fa711373"
+  },
+  {
+    "region": "global",
+    "slug": "savings-withdrawal-runway-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "1e91b262a17bd255225ceb67b347ef2ad46d6504b8b9515a6e3a50d7891901b2"
+  },
+  {
+    "region": "global",
+    "slug": "recurring-expense-impact-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "bf22e56f78dfde2d235ef24122f771a55edef7fd036ccd2d15157e5122c294f1"
+  },
+  {
+    "region": "global",
+    "slug": "lifestyle-inflation-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "000e423cbcee1da7765c0ce64a17f57df7308aa61f6a52686ca73f8eeef7911c"
+  },
+  {
+    "region": "global",
+    "slug": "rent-affordability-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "21e6975f457c2334cf00e80b9c3bf2df8078e47a76324b4371ec8d415eedc7a1"
+  },
+  {
+    "region": "global",
+    "slug": "financial-goal-timeline-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "60a2df9912d592a22ffaf98580695dadc2c1d4053e3f4fdc7dce8bc9d1d2e181"
+  },
+  {
+    "region": "global",
+    "slug": "budget-percentage-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "12a6996c9461f3dc28a0ac1c13f11f9d874af582996219254800a975926e4c12"
+  },
+  {
+    "region": "global",
+    "slug": "net-worth-change-calculator",
+    "updatedAt": "2026-09-22",
+    "sha256": "06ec912bfde359afe9352585b3cc63932f1beac2fa03a04b83ffd5823e20e266"
+  },
+  {
+    "region": "global",
+    "slug": "roas-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "ca5c6dc000995976d4a9a596fec3be01518e37f85db64065bb042ff36a752ce1"
+  },
+  {
+    "region": "global",
+    "slug": "break-even-roas-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "02d69db464bcd7510ecff4bfcb6d7dbcd08acd2eaeb5cab39830b0651aac0f03"
+  },
+  {
+    "region": "global",
+    "slug": "cost-per-acquisition-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "5c54ed04af0b47c5293014bb9db76b6600bbcfe999835cb44e93bbf62862b438"
+  },
+  {
+    "region": "global",
+    "slug": "customer-acquisition-cost-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "91537dbdc112d52f7d171546b804e7cc76be300cb21d773a11fc5441032f7447"
+  },
+  {
+    "region": "global",
+    "slug": "customer-lifetime-value-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "12ab573e4e840a8387c5636c9ad43ac928ca8ec6c0148f70e7db2bfaf1aa0ab5"
+  },
+  {
+    "region": "global",
+    "slug": "average-order-value-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "a6b7a8d09a41a4608a5241d4959b9a9157416e9f721b492e7c12b9d48a6e647f"
+  },
+  {
+    "region": "global",
+    "slug": "ecommerce-profit-per-order-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "b26a91c2246fb966c490ddb31bd50e146c52879b31dff10f7e38a58448edaba2"
+  },
+  {
+    "region": "global",
+    "slug": "discount-profit-impact-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "cb2f883c454f2a4e853edec27b9f10db45de8afa996505e554ef2b113d01168c"
+  },
+  {
+    "region": "global",
+    "slug": "return-refund-impact-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "39b7198d474a53aa871dcbb58c39573417ac02a527aec8e0ce9d3f65a5a0fbc8"
+  },
+  {
+    "region": "global",
+    "slug": "inventory-reorder-point-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "0ce612614891cdfd33385cf469e63edb474f2eee045b4c87fc8f26d7062e754c"
+  },
+  {
+    "region": "global",
+    "slug": "dimensional-weight-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "3c2040e523d1a49896571789dd04ca3a1f1710f44af5d5345631e616d9189f89"
+  },
+  {
+    "region": "global",
+    "slug": "ad-budget-sales-target-calculator",
+    "updatedAt": "2026-09-24",
+    "sha256": "df47fb21862418d6ed3486749674ba959b0faf067e76487ec4ea4b27fbc57a6e"
+  },
+  {
+    "region": "global",
+    "slug": "debt-snowball-vs-avalanche-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "2fc3fc8d43333b6eba25408f0a9065cc54f1a75f39a36708cc0ebd3c120076f4"
+  },
+  {
+    "region": "global",
+    "slug": "credit-card-minimum-payment-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "a5eb12953eb345e9fb94a32df5f21817cb58dc23582d4877f37c42488fd975b6"
+  },
+  {
+    "region": "global",
+    "slug": "credit-card-payoff-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "1ae175c95512c076e03ab17552154b3bd711f7831585197fca5405700b754204"
+  },
+  {
+    "region": "global",
+    "slug": "credit-card-utilization-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "1e5b95f6589b8790028fbb35c503cb2ddf89d0a00e2b55dd06641e5220f0fc0d"
+  },
+  {
+    "region": "global",
+    "slug": "investment-fee-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "e115b2596622f5dbce682c491f956e3f81514db047bfd6a42bfc59992a6d0c61"
+  },
+  {
+    "region": "global",
+    "slug": "inflation-adjusted-return-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "d6f34545d8ae7bf4e573314ddaea87adb994e92d3f03bb515dfd4d2cafbf3be7"
+  },
+  {
+    "region": "global",
+    "slug": "dollar-cost-averaging-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "952ee391923c33b8dd4777f4a976ee465f9ca6088bcc8542a3cf307d095ec494"
+  },
+  {
+    "region": "global",
+    "slug": "lump-sum-vs-dca-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "4c9159d00dcaa4f9fb19da130b7bda43cbdb8f3cf31e064498ef48349043843d"
+  },
+  {
+    "region": "global",
+    "slug": "coast-fire-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "7164bb82c588d0955f0765d6bad1acd485f24f853163c2b3795bc151c65493f7"
+  },
+  {
+    "region": "global",
+    "slug": "fire-number-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "25e1115b0b96af8cf8132dfeaa0f5ba8dd354ff5fc6aed5db5106764790945d1"
+  },
+  {
+    "region": "global",
+    "slug": "savings-rate-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "6f8cbc9f76d879b98799d295fb6834bf51066ad171f1b53e79e8893e3a74f59d"
+  },
+  {
+    "region": "global",
+    "slug": "dividend-reinvestment-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "aa3bd3b5570d7f48b37d7ea81c9cd2ca72dc864494b3084dba9b77775469dcd4"
+  },
+  {
+    "region": "global",
+    "slug": "portfolio-rebalancing-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "869af21293a40214a49ced02e3c80869b5aea0d45e78f4933014f8a4cbddd3c6"
+  },
+  {
+    "region": "global",
+    "slug": "capital-gains-calculator-global",
+    "updatedAt": "2026-09-25",
+    "sha256": "7d6604ce710f94f9238a5d4585d7cc53c7fcdb12669c149d6ed4c3a34f5a6bdb"
+  },
+  {
+    "region": "global",
+    "slug": "tiered-commission-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "9d477486d47ca68876c69c39473db85deb0be457e1924188d74c8ddbaae580d6"
+  },
+  {
+    "region": "global",
+    "slug": "prorated-salary-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "52883964ccdaa8d51e4d4bf933f5e07545485e3ac3cdb2026bf22120eb97ccd5"
+  },
+  {
+    "region": "global",
+    "slug": "pay-raise-percentage-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "6659fb87994325e0342851bac06c5be52084c0d34f5d471a9a847987fd067476"
+  },
+  {
+    "region": "global",
+    "slug": "overtime-pay-calculator-global",
+    "updatedAt": "2026-09-25",
+    "sha256": "6c8d8eb2c28120ef09dec74fd3fc77155acbb28dc5d5f9aa85eb83f0b026b8b8"
+  },
+  {
+    "region": "global",
+    "slug": "invoice-due-date-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "4b54b110b6bc4897db034ff5da9f61e458b6df3472e5b550bfa627eb4afca3e7"
+  },
+  {
+    "region": "global",
+    "slug": "net-payment-terms-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "dd823d36570a303deb85687b2ded4d9c332ef67ccb181464ac0bcab064460991"
+  },
+  {
+    "region": "global",
+    "slug": "invoice-discount-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "1f2fa4aac45502bfaacee04366de73ad2fbf2398d31768e1a7fdc384a12b5e69"
+  },
+  {
+    "region": "global",
+    "slug": "freelance-project-profit-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "86f0d31118e427a7477ae87c94ce64a834f0ec86b3b09777a2e6137d605334a4"
+  },
+  {
+    "region": "global",
+    "slug": "saas-pricing-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "6410da6bd14fa02390f51cff7e261fb958ccde87130f326a232158b93268c474"
+  },
+  {
+    "region": "global",
+    "slug": "debt-service-coverage-ratio-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "767abb4c968fab9cd433ee1b97dd0ab87017539027a9c15c2d26fd84ce33227c"
+  },
+  {
+    "region": "global",
+    "slug": "merchant-processing-fee-calculator",
+    "updatedAt": "2026-09-25",
+    "sha256": "b07093c6f41af6ca6971b8670ee0a9fbd2c833149a11825d774c1fdf91d8943a"
+  },
+  {
+    "region": "global",
+    "slug": "college-admission-chances-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "dbf227e17fd49d37d37097940a5144552438070d0e4374d1debd0a96ec895370"
+  },
+  {
+    "region": "global",
+    "slug": "real-estate-lawyer-cost-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "6acd1146e45b923db4c672d6e6a7a07e63e51c6e27af41d7e0ed9af0bd142c28"
+  },
+  {
+    "region": "global",
+    "slug": "car-lease-vs-buy-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "b267102627b5481a688abeb34b9c0ef7dbcfa666eba4df326426d57c9a2b0257"
+  },
+  {
+    "region": "global",
+    "slug": "seller-net-sheet-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "84a386377fd008b12cc873c1f13bf8731a59ac0a4a625b444ba552ca9e01f587"
+  },
+  {
+    "region": "global",
+    "slug": "seller-financing-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "08562535a7c54733561b496826c52d825382b5b5805bc144660492dd8e07b644"
+  },
+  {
+    "region": "global",
+    "slug": "mortgage-buydown-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "12a8f373e5e46fae82a848ebb830e81f68d8069839674757e19e3bf62d38f1b9"
+  },
+  {
+    "region": "global",
+    "slug": "first-lien-heloc-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "7fe1d11cb44b84d274994e7bda9916fb3abf3702f27e6d0bf8691e236efb2ff6"
+  },
+  {
+    "region": "global",
+    "slug": "date-from-today-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "f1058029010e43060fc524014a7a4b750b5f47cac3d9746fc97287d7c577ef17"
+  },
+  {
+    "region": "global",
+    "slug": "payment-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "5ff3b23341f825aefa3a0d6184bcccdabc01c70056bf5dff6ebe99ef2ccdc815"
+  },
+  {
+    "region": "global",
+    "slug": "proportion-calculator",
+    "updatedAt": "2026-10-01",
+    "sha256": "435458fbcdd9db439d5f957b3c004bab419256ff4aa62dbfdfd3cb496f136af7"
+  },
+  {
+    "region": "global",
+    "slug": "interest-rate-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "3145b87d520edd3b8c90c55a17ddbe0e2f823e3ca066e45306248ab993198b54"
+  },
+  {
+    "region": "global",
+    "slug": "ratio-calculator",
+    "updatedAt": "2026-10-01",
+    "sha256": "24521df17f06dca6e58a4250f8302c02b0b1dea055f2f0edc0824a82b7866070"
+  },
+  {
+    "region": "global",
+    "slug": "age-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "96a298eebb1e35b7345b3f35b06de661a424759347e095acde9c727474a0f1b5"
+  },
+  {
+    "region": "global",
+    "slug": "hypotenuse-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "aac958c4e05b278dec2194cbe35f4000298d0610fdbd3dee42955c5ce27f73bd"
+  },
+  {
+    "region": "global",
+    "slug": "period-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "c407e9630098f787dc50f513a44593eb4c7e498870e5181af77d263030e3a438"
+  },
+  {
+    "region": "global",
+    "slug": "random-number-generator",
+    "updatedAt": "2026-09-29",
+    "sha256": "9eb198ec0548e9000fdd2cc142af65b9fb94c87923c13e431cf3ce3393a3699f"
+  },
+  {
+    "region": "global",
+    "slug": "cubic-yard-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "8ee9f3929809b6793ac870dcac9ffdcd4d50444370a271147761f7e36a6cc537"
+  },
+  {
+    "region": "global",
+    "slug": "gravel-stone-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "bb9922bdb11a7a580e322f4ff033a66473037d3b61826482e99d324af60e94d3"
+  },
+  {
+    "region": "global",
+    "slug": "army-waist-height-ratio-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "9cd164a62a4a6f637a4063ebc22129a0e952f31bc1426bb7f631091c071df53e"
+  },
+  {
+    "region": "global",
+    "slug": "401k-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "15dcf2dadaeb51d200742d87949cc2df6e088c226fb6edde4551c122e57ffbc7"
+  },
+  {
+    "region": "global",
+    "slug": "sand-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "23958828fd81c6eccde4536f1cb53ac9f4e10449281639cfcf2400f1b118e9de"
+  },
+  {
+    "region": "global",
+    "slug": "right-triangle-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "d2fb86f35ceefe45900d84d64c01fe128dd3c2ca1e5df6504be009489d6d092f"
+  },
+  {
+    "region": "global",
+    "slug": "ap-world-score-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "86ade217432158fc294c479d886403591e6bbcf9350dadcdae4acadb398c8112"
+  },
+  {
+    "region": "global",
+    "slug": "gpa-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "f809064c71006162d40a6b6e6ac1cb20d316132dd6c2468c23247d0a61b3c561"
+  },
+  {
+    "region": "global",
+    "slug": "square-footage-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "257fcf5ea9222b36b0f94ce10862c0d7c1bce490f5b3c65e7712a0763bc6f49f"
+  },
+  {
+    "region": "global",
+    "slug": "bench-press-max-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "2ec9f8488c24a1a655dd9793a1d1592c20e9b5a5aa7baea30f0766951099dfe6"
+  },
+  {
+    "region": "global",
+    "slug": "triangle-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "ad0cfd71f584182e614ebde29097880ad8d646d0953b8353b0a9bde5aaf83c87"
+  },
+  {
+    "region": "global",
+    "slug": "molecular-weight-calculator",
+    "updatedAt": "2026-10-05",
+    "sha256": "519e70cd3354f3a06293cf92779b186e849544325c6d9c5b08fcab08754ddaec"
+  },
+  {
+    "region": "global",
+    "slug": "bowling-score-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "4f8f7d60278a77c4365b55636799b8323374a724a4ad6d7398fc84926dc4c2c1"
+  },
+  {
+    "region": "global",
+    "slug": "air-force-pt-test-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "22819f2e58416175d0f7adeea43c1b601811feec5c88465b67050b08922fc4ab"
+  },
+  {
+    "region": "global",
+    "slug": "square-root-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "9cb53cb9042393b7944b55d3994503831a11cb9366daac4715546537aeef271b"
+  },
+  {
+    "region": "global",
+    "slug": "fraction-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "d9d9a703249ae58c5126a7077cd83af47b11df74cc1040ff2481e10959a7093f"
+  },
+  {
+    "region": "global",
+    "slug": "how-many-years-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "e385a46eb98ac61deb9c03d871449a0a14c500ed9097d45983d4db2a1d5a6889"
+  },
+  {
+    "region": "global",
+    "slug": "cylinder-volume-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "85df0311ffecf8764ae2a329f17df68db98559cdad34189614f3f84dc8cf78e2"
+  },
+  {
+    "region": "global",
+    "slug": "date-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "074204c9064cf8e52a19c2439bf9433ce6273d4ae5c2496f754b3e928b730426"
+  },
+  {
+    "region": "global",
+    "slug": "hourly-wage-and-tax-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "e0fe7055c8b290b913839b4cd75ba814e95d271cfe48c430ce5e1438f3d147b9"
+  },
+  {
+    "region": "global",
+    "slug": "asphalt-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "488724af18b08d834290339aa1dac6b53eb63ba4aa28bbfdc5634917883f893e"
+  },
+  {
+    "region": "global",
+    "slug": "ap-biology-score-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "d23115b19f3f4805dd3c16ba9b704c55c4c3cf3630b22d6cd5cd65b896e351ba"
+  },
+  {
+    "region": "global",
+    "slug": "womens-bmi-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "c18ea4c2ae2853bf783a0a8ae6e8810fe0f1cfa79d182420b85fc4ba23da85ac"
+  },
+  {
+    "region": "global",
+    "slug": "ap-chemistry-score-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "74e8e35f888879435f77e11fe2472097e42b039a10d7fdb2ea0dc95df67ed56c"
+  },
+  {
+    "region": "global",
+    "slug": "concrete-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "190231e3a37d0afd5de8916c36683ba1eee1a8df847e8573362430795b628a79"
+  },
+  {
+    "region": "global",
+    "slug": "npv-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "529da6ff71020246e00302ed187d91d6bfa68d539905e16a112d9e0372e6e459"
+  },
+  {
+    "region": "global",
+    "slug": "weeks-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "158c543ac27a3adc7812c048650b1d9549c52550ef58affd0461f781ee5d89d0"
+  },
+  {
+    "region": "global",
+    "slug": "half-birthday-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "c1bcd980c60c6af88b6a6ef213e442323eb736ea8c7cee436ce2efe5d573f065"
+  },
+  {
+    "region": "global",
+    "slug": "paycheck-hours-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "1ac83bfe2239c91ee9f066316a31c02b0ec4abf15ec2eaa33229e6c0b9002b01"
+  },
+  {
+    "region": "global",
+    "slug": "dog-pregnancy-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "f8ef26624145e8f399388f157e65bc4540e0fb1cd401efda269e25463ef6426d"
+  },
+  {
+    "region": "global",
+    "slug": "binary-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "15cd842481c294a398d4f7f5d31c94b0e3fbde20747b2445ca8c09c781eb8228"
+  },
+  {
+    "region": "global",
+    "slug": "paycheck-estimator-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "ebf5cea2bb248b8eee34ad21cfc51a62b1cfeac93aa01d609f74d89b4505649e"
+  },
+  {
+    "region": "global",
+    "slug": "pool-salt-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "544615b8056a63357746083173f7d43eb9458a6193bbc12d3a286370cf133b43"
+  },
+  {
+    "region": "global",
+    "slug": "rafter-length-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "26c3e687dd50fad04909604ce28a7fbf6cd99ea9d1f120a300f547b636ebeb14"
+  },
+  {
+    "region": "global",
+    "slug": "air-force-pt-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "dc32abf4331480d07394f5afd9f0927ecd66a1ff88127aa1a54caecbf42b0382"
+  },
+  {
+    "region": "global",
+    "slug": "stair-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "851718b5ca7262934587fdce157f1c957f0dac9ec4f68735c333c261eafb6dc9"
+  },
+  {
+    "region": "global",
+    "slug": "scientific-notation-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "c3c4c4ed32753430b0eea8050b47548270157b00e2f9b8923a012a3b679009c4"
+  },
+  {
+    "region": "global",
+    "slug": "grade-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "cfa0873c4dacf7ebf6d6de4e8c48a5188ad3556b710a8ad131636ea3933114f0"
+  },
+  {
+    "region": "global",
+    "slug": "decimal-time-converter",
+    "updatedAt": "2026-09-29",
+    "sha256": "1da7dc83f80f99e672f6b9fa1f9b6740c1623dab4ade900fc335e5ae337c0d92"
+  },
+  {
+    "region": "global",
+    "slug": "modified-adjusted-gross-income-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "c8c1efca131a4c23bc120788090591feb6f7e6914cbc04537c8fa05cebfa9888"
+  },
+  {
+    "region": "global",
+    "slug": "money-market-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "0f5ea2d2ba5633fb5946dae96a534857953a22ffc31b935f1c1fb49051a1f251"
+  },
+  {
+    "region": "global",
+    "slug": "confidence-interval-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "13b509849fa311d0891e1cb1019ab517863ded053d822990b1bc99b1e7badf57"
+  },
+  {
+    "region": "global",
+    "slug": "superscript-generator",
+    "updatedAt": "2026-09-29",
+    "sha256": "47672a6a99527dda117ece3fba061e6fbaa692b420bb9ce46080b7bdd99fd0a5"
+  },
+  {
+    "region": "global",
+    "slug": "earned-run-average-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "aae2666702060cc97ee0615b6193de74fc718d5df5e4df3252ac985d05452df5"
+  },
+  {
+    "region": "global",
+    "slug": "ap-statistics-score-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "dfd38e73fa8a345aee2ca6a7551592b8c6e8f316639f18eec68bd6cca6915e21"
+  },
+  {
+    "region": "global",
+    "slug": "gcf-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "5b870bb3899813375e3fd2b408c92e71372cc26dd041c899fc221c344980cb32"
+  },
+  {
+    "region": "global",
+    "slug": "apr-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "f1c80645d3b2e31ac7fc85a421d1af4e06a7ae5c629aa8f257d691f0220cdab0"
+  },
+  {
+    "region": "global",
+    "slug": "wire-size-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "d9d46d0358b8a619af92d0acd5a9b3a3960ef3a4ded7610d2f8990f142090a8c"
+  },
+  {
+    "region": "global",
+    "slug": "cone-volume-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "5966126149b2df84274e762ecd75f56d987a76ff7fab7b76d087946ae9dd1ee3"
+  },
+  {
+    "region": "global",
+    "slug": "normal-cdf-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "dace93591c3959150851c64d62911f310e9e0d0d6be36327cf997e0bdf3a01ff"
+  },
+  {
+    "region": "global",
+    "slug": "matrix-inverse-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "92058c886509ef4445f193bcc70e79c0dcbfc9681717e5b8b8f8090e46cf3859"
+  },
+  {
+    "region": "global",
+    "slug": "voltage-drop-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "fef296fccadff2d3f71b140642bb74cdd5306f9c2e78f07f7156353c73885eb6"
+  },
+  {
+    "region": "global",
+    "slug": "fill-dirt-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "0d90a0e99cc107ee6e00069ce21be809e152c5fd1b8fd1973723a949483ad780"
+  },
+  {
+    "region": "global",
+    "slug": "board-foot-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "f66b9b09931e0299fef02421209709b989c4a6bbdc0248d2aab50f9b775dcdb9"
+  },
+  {
+    "region": "global",
+    "slug": "circle-skirt-calculator",
+    "updatedAt": "2026-10-01",
+    "sha256": "23693accf17c90edf66974ef0532f14a012075c8936e416ccc64673c3790d217"
+  },
+  {
+    "region": "global",
+    "slug": "cross-stitch-calculator",
+    "updatedAt": "2026-10-01",
+    "sha256": "32f167954cf3c5c179da51acc0876b7603a69394ee2c6eebf099bf9db6ac8afb"
+  },
+  {
+    "region": "global",
+    "slug": "hypergeometric-calculator",
+    "updatedAt": "2026-10-01",
+    "sha256": "67889069f5f8443f228d1000463e0933125677f647c35ca1afe3fcb8ad0ce708"
+  },
+  {
+    "region": "global",
+    "slug": "stud-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "35186e68f00c08c1fc6b083210890f08b05721eb4f9aec770372343c10dc44f0"
+  },
+  {
+    "region": "global",
+    "slug": "soffit-calculator",
+    "updatedAt": "2026-10-01",
+    "sha256": "9c38939f3eb8143b09eda00b238db8c079fe446d01f138a33f2ba4a5b713e5bb"
+  },
+  {
+    "region": "global",
+    "slug": "ap-english-language-and-composition-score-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "28f54dec37df7940fd969566e49b3ac2de48eb4819b346460a940ace192967f2"
+  },
+  {
+    "region": "global",
+    "slug": "money-counter-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "5dddd4b3036a7878d3de6432a745b7cb614237401f5864839f01640a2eb3629c"
+  },
+  {
+    "region": "global",
+    "slug": "soil-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "ed0267ee60b0cc12bf4e485e18017f9c2d9d4ae93f923e830a3d1817027b203a"
+  },
+  {
+    "region": "global",
+    "slug": "ffmi-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "d6208c882afd1ecd535d32e517c0b6ac32979e5bf699dbadffdf24290f9d5a3a"
+  },
+  {
+    "region": "global",
+    "slug": "hex-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "9dc41a6ab91fe42d4261e6b885058252cf05de2f5753434a03e11034cde8f049"
+  },
+  {
+    "region": "global",
+    "slug": "dunk-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "baceccdfd76c23e6a4b3435a3892cb73a16ce8ee8cbb5baf72301f7af233f179"
+  },
+  {
+    "region": "global",
+    "slug": "mare-gestation-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "a57a38e80d2ac8494f9bc3e95a4f51b3eae92c79171b700399ceadd2dec189d2"
+  },
+  {
+    "region": "global",
+    "slug": "linear-feet-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "2f64563fc79ccfea714324f3300ff6fbdec1d8882253d6dca9692e9846725725"
+  },
+  {
+    "region": "global",
+    "slug": "water-intake-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "dcffbe601d9aa58ed42f96013cc7ce638702dc92f743d8e4a4612ecdee9a4e41"
+  },
+  {
+    "region": "global",
+    "slug": "steps-to-miles-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "ea6b48b396e0fcd9748a13c7608a34e7e100f07c015b18c0c3cb93562ede5b9c"
+  },
+  {
+    "region": "global",
+    "slug": "minecraft-circle-generator",
+    "updatedAt": "2026-09-29",
+    "sha256": "19bba6b16ebba2360e4daa733d53ddc5eae85ffe5854abf9dc87b7c36f83a07a"
+  },
+  {
+    "region": "global",
+    "slug": "density-altitude-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "0409923f7a62d4379fc3f1f5439d04d50f7f6d1b969397152460990feebbda5b"
+  },
+  {
+    "region": "global",
+    "slug": "height-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "fdc7a5e0581bd0dfa72599e4badbac372953b4fcef9c96a35d41a72b4a889864"
+  },
+  {
+    "region": "global",
+    "slug": "weighted-mean-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "78b1399bdbf6de7c4155eb376761eb8192e12b37d101524af658fd18eba08625"
+  },
+  {
+    "region": "global",
+    "slug": "yardage-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "460f566a83efd178d4ebaeb39074b3293bd8ff313062420a5d4425a87ad3d5f1"
+  },
+  {
+    "region": "global",
+    "slug": "mean-standard-deviation-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "468fe6dde53f4cfc753dde3a5186afb6167278ce7aa76d4167a6fc3c1511ee9c"
+  },
+  {
+    "region": "global",
+    "slug": "visceral-fat-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "432994efc60cd24cdc56e75da1fac8e2f84c240aca15f4ca2f73df9900eece11"
+  },
+  {
+    "region": "global",
+    "slug": "body-fat-calculator",
+    "updatedAt": "2026-09-29",
+    "sha256": "020f769c49c312508c1c3b9bebe916671afe937df77cde09f8ccc951505fa3eb"
+  },
+  {
+    "region": "global",
+    "slug": "sourdough-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "0faf533c8761f8a9aaadfd2d5599cdbcafcbdb4bdb8d62bdd25fd256c101d513"
+  },
+  {
+    "region": "global",
+    "slug": "audiobook-speed-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "a4ab828c9aeb5b20f199af9652f62e170abed9221b63fd8f5c7a05d6f681b976"
+  },
+  {
+    "region": "global",
+    "slug": "surface-area-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "13b3a42e2485fd5f36125b918e4ef86a4395c593bbf8862bde745cf0c513ea94"
+  },
+  {
+    "region": "global",
+    "slug": "body-surface-area-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "063743caae42dea31f977404489bf157337f26eb5b5819bb12fcb6aa42ac4d41"
+  },
+  {
+    "region": "global",
+    "slug": "roof-area-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "34ac2c658d9aff5f6fca73a51e21cbcd783c728482198239900727218c5fa46b"
+  },
+  {
+    "region": "global",
+    "slug": "corrected-calcium-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "6784d5ccc9d1f0c4009761d4ba3e2cfdd0eceed603e36a691e676092786e1f1e"
+  },
+  {
+    "region": "global",
+    "slug": "grade-curve-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "48398cccb74382b513030529072e78e5e4c88ef7a28bc6cf01b0df9180aba9bc"
+  },
+  {
+    "region": "global",
+    "slug": "pt-141-dosage-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "2f3da5ab5bfe213d1016c7f497ae1fcbf6dd2bb0773ceb1a34d072b1961c7339"
+  },
+  {
+    "region": "global",
+    "slug": "btu-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "9c376f6b63a76486d47352c582cf81d79d442a3f89ac4a4b6dc9f1962d903a5f"
+  },
+  {
+    "region": "global",
+    "slug": "arrow-speed-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "fe261afd2ae88368b2a9b656cc7457aba9ebb06db3a51041062c69600108c4a7"
+  },
+  {
+    "region": "global",
+    "slug": "volume-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "5195af47d24f800670049c58d5684c69d1295f071367cc0408db5208e6ce3f16"
+  },
+  {
+    "region": "global",
+    "slug": "productivity-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "9bbb7af056a48c1efcac436ec51b678e0ae847371ccb4ce5fece55adc24347d7"
+  },
+  {
+    "region": "global",
+    "slug": "time-between-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "4cb780525ded8b72d733e5971d2d9eed16c116661ddedbaaa0894257d4c5df9a"
+  },
+  {
+    "region": "global",
+    "slug": "blood-pressure-by-age-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "f57de203d66bd309b713396dbad7de3ab4fe95650fe2020427d916a977574867"
+  },
+  {
+    "region": "global",
+    "slug": "baby-percentile-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "1b84c1d45ccfe17f1df0f61c64665d35fdb7d78b955f60847a688b34081f8533"
+  },
+  {
+    "region": "global",
+    "slug": "calories-burned-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "634b866534daa86926286a5f16785eade61554253bce2be3a974a4bd41830940"
+  },
+  {
+    "region": "global",
+    "slug": "pine-straw-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "cbd9509e54aee2c93f6944a0b209d271f9c4f05724bb7bbd9e71d7e03fdf5bc1"
+  },
+  {
+    "region": "global",
+    "slug": "ohms-law-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "c2a1191667125ccd24a74043ea24a212c6cb4da30994c914c510f23ce5aa01a7"
+  },
+  {
+    "region": "global",
+    "slug": "fence-post-depth-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "6387a485f4ef0f4267b5d289118bdfce6e709dcf3268c16516210c9807d5566d"
+  },
+  {
+    "region": "global",
+    "slug": "lead-time-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "c079060d1de9942a9fd85e22d163a5907d391913f1b0008593e4ebab316a165a"
+  },
+  {
+    "region": "global",
+    "slug": "recessed-light-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "40e940e4bb92c7b01b3a9f5b2dba606839c6d9bc89b46aa4ff56d335dd54b216"
+  },
+  {
+    "region": "global",
+    "slug": "partial-fraction-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "5515b6821ac6eeabb9bf296b5c524708c043ac07a09f3bbd58cb8a947f3bb33b"
+  },
+  {
+    "region": "global",
+    "slug": "implicit-differentiation-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "7f9a1c61ac8e71c25616d39c0b27dfe53df8956431ab7af6081316782dd2a500"
+  },
+  {
+    "region": "global",
+    "slug": "greek-gematria-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "1850b40af2dcd510bbdf4570d0b0494158725c44287808f446c75b0382388f53"
+  },
+  {
+    "region": "global",
+    "slug": "time-off-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "99e149153b130308760565c78730528c50145b34a58d9589bb0603683fe35b32"
+  },
+  {
+    "region": "global",
+    "slug": "decimals-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "22b8a5b873c417eb7363c0f0a48f3a0ef09f561433a62d6ec11211adb856d82b"
+  },
+  {
+    "region": "global",
+    "slug": "vpd-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "1ca7c066806da122b226ba391880d2d0acedc0bbedb0b476e0be8e573138e5e1"
+  },
+  {
+    "region": "global",
+    "slug": "goat-gestation-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "dd2d98a654154a3986b0fa69e2df8fa1b490b60484838f48be4fd0bfabfcf154"
+  },
+  {
+    "region": "global",
+    "slug": "gas-oil-mix-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "2549da280d444f82d3a55c60a4cc662a1c58e55f305a163877bca283b3a6c6f4"
+  },
+  {
+    "region": "global",
+    "slug": "macro-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "1294a3813b73af549853a84a6c6780fc359e4771a7e87d41c36bcfccb9fc70e9"
+  },
+  {
+    "region": "global",
+    "slug": "macroeconomics-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "85e25512575e1413d6a41e8b395b59d85281b2220cbe44b9111519e407f5a6e8"
+  },
+  {
+    "region": "global",
+    "slug": "vinegar-carbon-dosing-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "9245de1eb3afa4bfef677e6a39e9b99313862130656ddca0c257c1e4bd721dda"
+  },
+  {
+    "region": "global",
+    "slug": "radical-expression-simplifier",
+    "updatedAt": "2026-10-03",
+    "sha256": "722fdbfde421d8a6be7da2875c5b003e8e52d9e574083912473596b81a282129"
+  },
+  {
+    "region": "global",
+    "slug": "redacted-text-generator",
+    "updatedAt": "2026-10-02",
+    "sha256": "8f3b1c649024f4cb8e70e57f05dce1364e7ac5fb0d66752c1fb97496764bdbfb"
+  },
+  {
+    "region": "global",
+    "slug": "wedding-liquor-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "efe1c25730c2544613dce535f9ae2c439cf1d8d43a3e56d87c646de33ed68e96"
+  },
+  {
+    "region": "global",
+    "slug": "abg-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "62cf5c6f967ac1a407802c8df2b42acf95a676d23ebccab92ef6a1ca89fd1d7d"
+  },
+  {
+    "region": "global",
+    "slug": "percent-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "2b6913c5cffdb6f081716efe3d837e6af27cf0c6f3fb93ef55e878b0345c313e"
+  },
+  {
+    "region": "global",
+    "slug": "mulch-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "a3255df5bb6a68e21007718fb28dc28891e9a9a780d8356b7927366c7f96e7cb"
+  },
+  {
+    "region": "global",
+    "slug": "concrete-block-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "3a61ff9678eabcffbd233939680f5891116eca21bb713159a9e180b5d2171863"
+  },
+  {
+    "region": "global",
+    "slug": "basis-points-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "a4849db44b2d6645fbb32365323effe0ae9ee4b6e09c6b33366d90f4b33c414a"
+  },
+  {
+    "region": "global",
+    "slug": "rounding-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "176a5f9ad9ebc9ead1f64f13250475e3018601cd5eff6faea69edc471acb7ab8"
+  },
+  {
+    "region": "global",
+    "slug": "tire-size-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "e46c6e0abfccc7308c89a18f28412fba043db112f1e02122e63544c8152e14c9"
+  },
+  {
+    "region": "global",
+    "slug": "anniversary-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "512c6b6d1267c4a066242ad008e81c254e700e0b33d5f734b6125fb4b2207aa7"
+  },
+  {
+    "region": "global",
+    "slug": "gc-content-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "9ae9af721dcde191c0c5b8572562b45f6d63d8d0d422c8298b275a0d9cac5061"
+  },
+  {
+    "region": "global",
+    "slug": "llc-tax-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "1de97304d1447a64d93397a16399994832329d76d570bcbf852e40fbe03ee97f"
+  },
+  {
+    "region": "global",
+    "slug": "wainscoting-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "62f36c7ddc01407a95d280369e7ef782001647c53ac8a22fbb53ac99e8ddc13e"
+  },
+  {
+    "region": "global",
+    "slug": "charles-law-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "c883f157656e2801467ac24f2af027eba589ee404a28bd719366116d7acb75b1"
+  },
+  {
+    "region": "global",
+    "slug": "crypto-conversion-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "237ff3d06900f784cda569df7d51b438c1db9fda71fff33bd69ca6aefd352589"
+  },
+  {
+    "region": "global",
+    "slug": "minecraft-sphere-generator",
+    "updatedAt": "2026-10-03",
+    "sha256": "b522f590183bd14cb09b499cb3903de9a7d1e0343a682d62ce164135b7db9194"
+  },
+  {
+    "region": "global",
+    "slug": "basic-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "fb9c5cf85f3eb31ee264d576c262417423c9388543177cd02b61572b636152e0"
+  },
+  {
+    "region": "global",
+    "slug": "new-jersey-tax-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "9f21adafc1ab58c5e7ee7f3dabaa038e558659af706193d040d4cb4700e5c2e8"
+  },
+  {
+    "region": "global",
+    "slug": "matrix-multiplication-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "9ab5d7e055ad1a4b8be4387713fc57d9cfb7bdfefa2810049821cddec8a98d34"
+  },
+  {
+    "region": "global",
+    "slug": "decimal-to-fraction-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "b54ce7e291f03ecec1de4e81ea4a12bf093c805354b03df28890cb0db85b71bc"
+  },
+  {
+    "region": "global",
+    "slug": "blown-insulation-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "167c6a4c6e4094f002a6cacd92595ff9f7a58790b96efe593167b46cc855c3f5"
+  },
+  {
+    "region": "global",
+    "slug": "euler-method-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "66d6fad41483f8dc3ba8b8206472c6e2ea87e5523b33e325a2044280033ec5a4"
+  },
+  {
+    "region": "global",
+    "slug": "log-weight-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "7559ba3948a6396e2e33943da7b9619d8fd483821edd838f2aa728d22fb5b72e"
+  },
+  {
+    "region": "global",
+    "slug": "roman-numeral-converter",
+    "updatedAt": "2026-10-04",
+    "sha256": "e0ecbd30507fd6d43e53734162d09ff89e26bcb5ac3d3e029f81b69699d13da3"
+  },
+  {
+    "region": "global",
+    "slug": "prop-slip-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "6999949f82b08258dff75cb2ff3aa6f5c98ca27837f059d3a3d4f9fe3c5f50c6"
+  },
+  {
+    "region": "global",
+    "slug": "rc-filter-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "01f893e87ecad7e05cd4c91e12ce5931dd1b105f256d85d7300f4c2aebaacdeb"
+  },
+  {
+    "region": "global",
+    "slug": "probability-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "394099c8df58a68ffe4dd67bc983a23d43e6e05fc16411922f7426da82065798"
+  },
+  {
+    "region": "global",
+    "slug": "target-heart-rate-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "03f89333bda9a286887b58c725d8c8ac7de63566ea0e69221d454c37fbc10b49"
+  },
+  {
+    "region": "global",
+    "slug": "pension-benefit-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "3c18dd4c5ba3cd2ecc3e9142052370cb8949471cb954c3b05a116081afd986a1"
+  },
+  {
+    "region": "global",
+    "slug": "grams-to-ml-converter",
+    "updatedAt": "2026-10-04",
+    "sha256": "5a7d8de4e507907a595632b2e9f9d845d73e244d1c16b1c0e1d37e92d6355712"
+  },
+  {
+    "region": "global",
+    "slug": "siding-course-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "5a2664ead8970220aba343c1c420e1ad6d6e4091dab0aa0d17a42b6677d1fe7e"
+  },
+  {
+    "region": "global",
+    "slug": "difference-quotient-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "0a5476e87984ceec783298697006e4d00d8965ff21b8facaf4cae2a625e963f1"
+  },
+  {
+    "region": "global",
+    "slug": "odds-risk-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "469590bcaf53318d55303deeff7d32b9b03ba854fe6043749964773e340799d6"
+  },
+  {
+    "region": "global",
+    "slug": "time-lapse-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "fb070fa7e9012fd8d2c757dc6ba7c210a9d7f4a65583830891df3546f7b6b3f1"
+  },
+  {
+    "region": "global",
+    "slug": "mileage-reimbursement-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "f0f8f91a5c85027e66aba1764c97a0747ca85141d1cf655130fcabfd911dbc24"
+  },
+  {
+    "region": "global",
+    "slug": "draw-length-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "d88fefd657926fb1b49190ce2ae42b7e12b4a75f07bd0684c2dda87421a6a012"
+  },
+  {
+    "region": "global",
+    "slug": "cardiac-output-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "593ef51d18fb249362570a4abbc19f0bd378b3315fe2adc4436577288690280b"
+  },
+  {
+    "region": "global",
+    "slug": "option-profit-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "6441b67602ef14352033a7141134ff10a4d58277d5eb42b766c1196790ae49d0"
+  },
+  {
+    "region": "global",
+    "slug": "drywall-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "3cfa21722461eaa4665ff4b70997131808baa6c5ccc42d1512b4d827bf1b57c1"
+  },
+  {
+    "region": "global",
+    "slug": "zero-to-sixty-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "6c9ed13ba9b19e0a46ad65a66804b4ce87c9c7e63c29b89185d347d9edc5c3ce"
+  },
+  {
+    "region": "global",
+    "slug": "watt-hour-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "a73eaf18a8250cba2da351d39df93024956656384aad8981b57aa53cc67c3a90"
+  },
+  {
+    "region": "global",
+    "slug": "kd-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "c23ba9eaa10c4ce8ceefc957eabec553efa517b19ff33884e80f4a255ae66f74"
+  },
+  {
+    "region": "global",
+    "slug": "deck-board-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "b7d5d1bbb4714b7090f5071eabb1f5517e247b1e0ae3846152efdaafc3c494f4"
+  },
+  {
+    "region": "global",
+    "slug": "plate-rolling-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "5a289327cee250ebb2c0b7d9757d96f0cebd25158d4a08a0e4b7e13f6ba11315"
+  },
+  {
+    "region": "global",
+    "slug": "running-record-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "9625d177313f39e3993b43cf8b1e730840fd683e7b63d084d704922203d70a85"
+  },
+  {
+    "region": "global",
+    "slug": "timecode-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "b36731d7164549c86c683a5c0ec0f5bff2b19fa4e4afe4f4e1671df0161b4b11"
+  },
+  {
+    "region": "global",
+    "slug": "cow-gestation-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "2cfe51fa8ea23d5721162a337852b990872e035f00db21174a8fa8dc77107740"
+  },
+  {
+    "region": "global",
+    "slug": "rim-offset-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "09e5f960e934a14e1c49b78ca16ea572cfcd59ea7855ff026acd5f53f7cd4a59"
+  },
+  {
+    "region": "global",
+    "slug": "correlation-coefficient-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "10aa9edb3957ef3e183ae11a1821cbe967b92c4ad418565520a7f748bf942a37"
+  },
+  {
+    "region": "global",
+    "slug": "speed-distance-time-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "5f696b68609143e7cdba907e6a5c50d7e2632c82d32087267c96944ffbde4f7f"
+  },
+  {
+    "region": "global",
+    "slug": "tv-mounting-height-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "a14cf302b551d50d6935aca6dc57f303a909f5741a7b42fa3e042776a19c5585"
+  },
+  {
+    "region": "global",
+    "slug": "wire-length-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "4e832f0fc73ee894d10b5b68168586b93832a4a2c7c689673240a5884e647295"
+  },
+  {
+    "region": "global",
+    "slug": "gear-ratio-speed-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "1c132a46bcbc105f54b95370009ca48f1cbb2e1dd88adf8534a5cc49111bdd9d"
+  },
+  {
+    "region": "global",
+    "slug": "christmas-tree-light-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "f692d577c2b8218abd45c51b622677987e5c4f94ed8d8f4b7335d444e48a61c2"
+  },
+  {
+    "region": "global",
+    "slug": "ops-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "0860e93a80800b47e9e76e45f19cb4872dd0dffad44b4ed466f5ef252bf9f5e2"
+  },
+  {
+    "region": "global",
+    "slug": "binomial-distribution-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "9914a76978b0b0293d27893a4c2529cb5e4af4eaf9eead5af0cc75a0789a4848"
+  },
+  {
+    "region": "global",
+    "slug": "octagon-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "07ee08d67b7919d5eb30f35a430af70fa94c7e760a1d47e93ceece9d0ebf1711"
+  },
+  {
+    "region": "global",
+    "slug": "winrate-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "3db2f397bd8c20c3eb81e3a6c14c7db87e071478c54087b853760651275ca9b7"
+  },
+  {
+    "region": "global",
+    "slug": "horsepower-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "fcd552be6324dc8d33cc94855951867e6bef8bd59fb26ab69463f5ccaf506853"
+  },
+  {
+    "region": "global",
+    "slug": "interest-rate-cap-payout-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "169e5463a30deb9e9fe16170aa073645a78cdb6f2de586501265a912054bf72c"
+  },
+  {
+    "region": "global",
+    "slug": "geographic-midpoint-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "10a6577b4b61cec694dad75959190c53bcd0d0bd76a1bc36bdd08462b5ca107a"
+  },
+  {
+    "region": "global",
+    "slug": "cake-pricing-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "fd4ef4d52e6a5aba5f70485c97dcc4e1ad22208c3f7538d55389b230b7f29f4b"
+  },
+  {
+    "region": "global",
+    "slug": "sheep-gestation-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "e5451cd864be6703b9091e1a80886c79b914b1438fa39d58b6711b3829539dce"
+  },
+  {
+    "region": "global",
+    "slug": "boolean-algebra-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "554e66b25317c8800126c7515351a59783fbd6fd19ffce86f6bafd1006a2db09"
+  },
+  {
+    "region": "global",
+    "slug": "megawatt-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "0fa37357146940d4d39d47f5379556f1d7364f2c85a48c02abcb8b57e2319086"
+  },
+  {
+    "region": "global",
+    "slug": "substitution-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "6eb1bb87186a09befef53fe68e44ef0e5acae959e8649f66114f3a742ad40212"
+  },
+  {
+    "region": "global",
+    "slug": "cap-rate-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "74c42611784f8c2610ad10a6a388bd44a43ded9fce9cb0e06529665b9bc5d045"
+  },
+  {
+    "region": "global",
+    "slug": "swim-time-converter",
+    "updatedAt": "2026-10-04",
+    "sha256": "ea0929ef645f2dbd80626e8567b18b00ccadd2e59fa947b27ec95375f2baacde"
+  },
+  {
+    "region": "global",
+    "slug": "cpm-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "763ae44feda1908ea71a86efdfa4cf38b36c501f66f6b406dfbd5e9c440bacfa"
+  },
+  {
+    "region": "global",
+    "slug": "fence-cost-estimator",
+    "updatedAt": "2026-10-04",
+    "sha256": "92b2116cf8b3471657ba574ff1b470ccc10dbaeb75b0481bdc0abb59715ad925"
+  },
+  {
+    "region": "global",
+    "slug": "subwoofer-case-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "19d2483d4abcaea47c1826ac776e03aee924e402339c3dc8c3e4d33e37f62c16"
+  },
+  {
+    "region": "global",
+    "slug": "acres-per-hour-calculator",
+    "updatedAt": "2026-10-04",
+    "sha256": "f3b69090638c80d18a43f4e6cda6cb0cc215ab8cda9e15c7457f41f2d0602f3f"
+  },
+  {
+    "region": "global",
+    "slug": "torque-converter",
+    "updatedAt": "2026-10-04",
+    "sha256": "c32ccf3586dceffd0c6bc81ab2588022ab7dff55d242040bd80abb276ddb3a8a"
+  },
+  {
+    "region": "global",
+    "slug": "epoxy-resin-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "db40876ebae1a6f0c064b5f4fb9647edbfd7b877081d540f26acd7f42e18222a"
+  },
+  {
+    "region": "global",
+    "slug": "molarity-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "7af2d0cbcc82a835c97cbeede9f0605164b55ea27c67cddb2c49e781428ce42e"
+  },
+  {
+    "region": "global",
+    "slug": "garage-door-spring-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "1f9e7c2c0d247d6ad08129f0e3ac483ee873d986a84d1bb7cec6652f677e40dc"
+  },
+  {
+    "region": "global",
+    "slug": "lawn-mowing-cost-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "2f0ddc354d9dacb09e961a91d9ae05a140b9528a674aa0f66457146a62cfb139"
+  },
+  {
+    "region": "global",
+    "slug": "quarter-mile-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "b467c86473ecc28b029c9a4823c254241d557c1bc9ead92aa6a78d74ca072e5e"
+  },
+  {
+    "region": "global",
+    "slug": "firewood-cord-calculator",
+    "updatedAt": "2026-10-03",
+    "sha256": "ddffebdfd372979d5bf87278ad5dfd5840399ca96017a81ae036427a4161e3b5"
+  },
+  {
+    "region": "global",
+    "slug": "nether-portal-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "3b2978582070c3cbb1f751704b7ccbcf8ba42441b71db277700a6ecfbe7c7037"
+  },
+  {
+    "region": "global",
+    "slug": "arv-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "e2983a5042a2cd5551c1a0d91a379e002984a33e5ac95a362db51715f3694a1c"
+  },
+  {
+    "region": "global",
+    "slug": "breastfeeding-calorie-calculator",
+    "updatedAt": "2026-10-02",
+    "sha256": "1efd6348ae96032716c4109341d76c76c0cbcd97d0d5a2bc49205e942de82b25"
+  },
+  {
+    "region": "pk",
+    "slug": "electricity-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "4314da8b015441d70d9d2d1e2c8c6710770f1eac46406e6e2c8fa23092a0a8ba"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-system-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "a7d83e65302ca354c9ca6d749727c7040c3d31040ad4d7075b4dcc2c12add17b"
+  },
+  {
+    "region": "pk",
+    "slug": "salary-tax-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "f1a590a7e70d1b3cafe9ed44aca549b39141d87d5838ed6c4b67c3b9a80b4e1a"
+  },
+  {
+    "region": "pk",
+    "slug": "pta-tax-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0798910b2c396acfc7d3f8fd4c0f66260ac321d9a5575318ad26500f529ac16a"
+  },
+  {
+    "region": "pk",
+    "slug": "ev-vs-petrol-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "cc2d39fa6e43d3e35e24c5673706438efaec4613a0244150e99040f0aa66c9ef"
+  },
+  {
+    "region": "pk",
+    "slug": "daraz-profit-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "63cd3b8ef928492175abc0e28464c4234043e649f7cba61f068f217247b937a4"
+  },
+  {
+    "region": "pk",
+    "slug": "percentage-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "434c3fe81febce8fba754430ebd52ffa42c28973fd61896952c40e58d38ea412"
+  },
+  {
+    "region": "pk",
+    "slug": "cgpa-percentage-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "a0dba07c7a386f4ba1d51e28f6ceefb30218e28398b369acbfc30f6b9765dffc"
+  },
+  {
+    "region": "pk",
+    "slug": "loan-emi-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "543324bf0d8e652a13bcced90325336ef437524b11518360bc86ee529002136e"
+  },
+  {
+    "region": "pk",
+    "slug": "fuel-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "64deb5e29820e492654b310d43022b6fef0b0f54c1269f1d6d8d649751c94ca2"
+  },
+  {
+    "region": "pk",
+    "slug": "battery-backup-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "1a0ad116dc4d89cfb1c7c2a37fc9de149728c4dd74212770e78ad840ffed4d23"
+  },
+  {
+    "region": "pk",
+    "slug": "inverter-load-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "153af944c1460426805657cefe108972525473330c8b3f06d6e5a3a640b7f0a7"
+  },
+  {
+    "region": "pk",
+    "slug": "profit-margin-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "2d76e627620db0bb7d7f403557f292d2282efdd0a68656294d4319b9c1acd581"
+  },
+  {
+    "region": "pk",
+    "slug": "discount-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "2f84fdcb47521a81c54f8c30ae5b44e16366ebfe350641c2b95f668c7e504205"
+  },
+  {
+    "region": "pk",
+    "slug": "attendance-percentage-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "11c7a4d55297755e4a138bc854a64038105f615744fea1ccebb89188971a4339"
+  },
+  {
+    "region": "pk",
+    "slug": "marks-percentage-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "c1170ddc06162568d9dee0e6c0f7a4b9a6b82b8978a87fbfa2c4173abbade204"
+  },
+  {
+    "region": "pk",
+    "slug": "freelance-hourly-rate-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "5ecb3897b894452193b74ed7da17c503831883b41028695c1ae04d98f2ed6f08"
+  },
+  {
+    "region": "pk",
+    "slug": "paint-quantity-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "dee6f8b63118cf1a2723b4f3d20a9c1c5c3e40c46a189fd3775dfcdb8f49be22"
+  },
+  {
+    "region": "pk",
+    "slug": "appliance-electricity-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "7d9d9f42bd3d5a3a44cd2d941f417b34545cc111901ae35c762c04a0d34d4222"
+  },
+  {
+    "region": "pk",
+    "slug": "generator-fuel-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "72b4f0380ff9093ac6b3f3db4170b66f97beb10b445a87e72c2faf43eacaf123"
+  },
+  {
+    "region": "pk",
+    "slug": "ac-tonnage-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "5ac458581181214af16d4bbedf07c6defc62c1593d6034dbb6cc4734b7cdf700"
+  },
+  {
+    "region": "pk",
+    "slug": "water-tank-volume-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "90503d02464c7fbb1dfb89361d2ada8fbc052e044d9b2ee96480ad4a0d6195ea"
+  },
+  {
+    "region": "pk",
+    "slug": "tile-quantity-calculator-pakistan",
+    "updatedAt": "2026-10-02",
+    "sha256": "d4169e8d951b6dcec0e77b21442381f981ad97ed761e915574dfc87e1d217c66"
+  },
+  {
+    "region": "pk",
+    "slug": "concrete-volume-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "e5389178c5cc1c2b99d4aabd4e09555d8cc960cab515fd9525aa1aafc8154ace"
+  },
+  {
+    "region": "pk",
+    "slug": "download-time-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "b2e1865d82d955e377630bf229d6e6700020f7204cf0b62b15a90c674f67fb34"
+  },
+  {
+    "region": "pk",
+    "slug": "mobile-data-usage-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "a04dd0062853a5c8cb25f525a7e35727d193ab417a1c9c37cd465ed7146b1c33"
+  },
+  {
+    "region": "pk",
+    "slug": "compound-interest-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "6ef4c2030f4beaf969cf858623212da0cdf11fce1c2a8bf6504c6ebcdd0ca0f8"
+  },
+  {
+    "region": "pk",
+    "slug": "savings-goal-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "a50dc37e55270a94856fde4a41114e91ce0d2cd2e4d4c0b0e702600d354b6698"
+  },
+  {
+    "region": "pk",
+    "slug": "monthly-investment-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "82f30405053c6d41d3ddea44245d0b3e4c989a5f84aaa26d398fc8c696bdf2fc"
+  },
+  {
+    "region": "pk",
+    "slug": "loan-affordability-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "50f3ec403a692f6a210c5063f75cbd9d42a15299c2ee9182ccd2f429b4c8db34"
+  },
+  {
+    "region": "pk",
+    "slug": "credit-card-payoff-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "d1fd1a7203ba2bb167b90faa2d60c308d7b650d0926993d2334f7839d289f5bb"
+  },
+  {
+    "region": "pk",
+    "slug": "emergency-fund-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "6f674c504b8d41443760e893bf0f5bb08fd40ee52053a19fa4cb1f7b51f9f22c"
+  },
+  {
+    "region": "pk",
+    "slug": "salary-increment-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "3d9b9130334e7a6e377a5d64d7f2927cd45605727731ddcd1f837dbfabd3f684"
+  },
+  {
+    "region": "pk",
+    "slug": "business-break-even-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "743414a7f314b5bdde77f8dffa2297865d78d28b84efd307dcf229d9615165b9"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-battery-size-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "644ce7dea8a21e1a43f5676ce813ee2c031a8fc6cfd57295be30d2a7a214454f"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-panel-output-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "2b604356f49f69b83cc0fedf9d5eddaeef66506c0cabfab7cbd5d89a019f04cf"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-payback-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "d0b5dfca99513f24a3c52f613894aec4d3f28d99181000080bd6e60fd09f856f"
+  },
+  {
+    "region": "pk",
+    "slug": "ac-electricity-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "dc5f27354b8bf1fdad3660c9acb6c9e4b31cc8cb4c69d3bd78805ea2a633c851"
+  },
+  {
+    "region": "pk",
+    "slug": "battery-charging-time-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "c1d4e4028e83aaca754f9eaabe44b1afe9eab94d1dc8c88c4a27803820f9282b"
+  },
+  {
+    "region": "pk",
+    "slug": "watts-amps-volts-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "249bf3e53d0040878f9903c2bbdb55666e4a80da175ae71be68f5ac09488eb68"
+  },
+  {
+    "region": "pk",
+    "slug": "rent-affordability-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "adda0cbb9f56eb5096c6734c36b4f30b2fd610e120f33583cd9f24386cab395c"
+  },
+  {
+    "region": "pk",
+    "slug": "debt-to-income-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "cc184fd8a423cd2b015b65587b78dcdff9e83378a06fe6bff7859ee8309c0c5c"
+  },
+  {
+    "region": "pk",
+    "slug": "freelance-project-quote-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "f8889ead0080c9a3fb3c129b1ef1a1de7bf794e7b003d29a04b3c767fd3f4413"
+  },
+  {
+    "region": "pk",
+    "slug": "sales-commission-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "00b0571ef0d0211ffee8925cbeb51a9f815a2ff1cb9a32b0b609fc76b4bf7dfa"
+  },
+  {
+    "region": "pk",
+    "slug": "50-30-20-budget-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "6cff59d91a12435517394509b8c71024ee6f799e87f6c3f10cec076c79e0a39b"
+  },
+  {
+    "region": "pk",
+    "slug": "salary-to-hourly-rate-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "a7c83cc3919f49834c77edc1505bdabee7c3317821aca674dee1534a2dfaa565"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-ac-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "7492dfb448d5d4962c0b007e50fa7e16ae87db78f52fa1c22ebcd5940942b2c0"
+  },
+  {
+    "region": "pk",
+    "slug": "ups-charging-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "5fdfac0f31d3f575734c56df8566f49ac40fe910f1a63faee5babfc1b6b8f645"
+  },
+  {
+    "region": "pk",
+    "slug": "generator-size-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "91c2f5beb0d448ee51a72a5bf33a77a681ff3f4e768c979bf8bec9bd7ace2d46"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-panel-series-parallel-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "b3bab2270a62cb8473afe98042c20bd6c057c2075db2e671e2cbb9aa43f5cdd7"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-roof-area-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "225cdc030e5aeaac3fa6ba74df822c078d7237ce017c2b09dc1c15995ffe584e"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-load-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0d2350410b281b66e1e5211cd835e7e71f28d4bc154611d9841d415985cdbff3"
+  },
+  {
+    "region": "pk",
+    "slug": "phone-finder-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "c8b1faf40146152b2b0969f92630696a79759ce2e4015a76e8d9d9301afc3bc3"
+  },
+  {
+    "region": "pk",
+    "slug": "phone-comparison-score-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "4d18a15e8abf305a95440317d68b221c31d644ce9fd19bbe444da76703e1058f"
+  },
+  {
+    "region": "pk",
+    "slug": "mobile-gaming-fps-estimator",
+    "updatedAt": "2026-09-17",
+    "sha256": "d784b4fcadc02f19557392e5f0fef2b0e1489473b699c50a9a7f2138b2df18fb"
+  },
+  {
+    "region": "pk",
+    "slug": "phone-value-score-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "1ef2b36b73f7bfc1785be2e8b9214fea86d347cb1bbcc76db0e751435e5a1a1a"
+  },
+  {
+    "region": "pk",
+    "slug": "screen-ppi-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "bd644e0203fb519bcf8c8b33e64143839460011eb90de8f070e4f6938c235316"
+  },
+  {
+    "region": "pk",
+    "slug": "mobile-battery-life-estimator",
+    "updatedAt": "2026-09-17",
+    "sha256": "b431a08d3806aac29e57178a1f4e8abce1aec33aa71437f02f22dc0a0aa13ffa"
+  },
+  {
+    "region": "pk",
+    "slug": "mobile-charging-time-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "758d2172302a1d9ab51d8938e29d628986bac8ab4ae2b0ff28db986e2b1d5bb3"
+  },
+  {
+    "region": "pk",
+    "slug": "phone-storage-requirement-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "067a5ccf2a547aa8f0093f328018eabe2e52c215c88db3f1ac50b14ed0776ce5"
+  },
+  {
+    "region": "pk",
+    "slug": "used-phone-condition-score-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0f2414903b5b55fe0366c023441f61894733d9937ba15fe8a5fc2fdf64574e68"
+  },
+  {
+    "region": "pk",
+    "slug": "annual-to-monthly-salary-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "604e162ae4ab03cd747af0a3e3e3478f7105eebb45a21360f5fb0954907ac7ec"
+  },
+  {
+    "region": "pk",
+    "slug": "job-offer-comparison-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "7e7e3dbdd01e8bdf481c4dfec9b86f985b969b9f25e1daaa1da8aaa200a32519"
+  },
+  {
+    "region": "pk",
+    "slug": "overtime-pay-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "5d01f48aa68962e5aabef1a2a8ae6dd8bed18cd007f168070d59118119d53c2d"
+  },
+  {
+    "region": "pk",
+    "slug": "provident-fund-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "8c1a6192e653c887258ffa4f1b560bbdec0e5b3911ae6b69fb8c34047ba8d939"
+  },
+  {
+    "region": "pk",
+    "slug": "gratuity-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "76eda4cecb3b78f150052e8bf429159b25e560838048bcb571ce3dfe2908a3f5"
+  },
+  {
+    "region": "pk",
+    "slug": "bonus-tax-estimator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "ae158cbeac570738855d0465d173b6d38b90d4553e3bb7db1d320cf301dfbc7c"
+  },
+  {
+    "region": "pk",
+    "slug": "salary-allowance-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "773d772aea63d9fb92ca7df5d8d62df03a2e8d6d19103a5f90da716d610349ae"
+  },
+  {
+    "region": "pk",
+    "slug": "freelancer-income-tax-estimator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "b898b8c238944a8616c784c428beae790a3147df459c509c9ed2932c33e38614"
+  },
+  {
+    "region": "pk",
+    "slug": "sole-proprietor-tax-estimator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "08cf76f4032259f69d4c8933b080cdd76fbe3919d335e8e7a04183bd9c1ca111"
+  },
+  {
+    "region": "pk",
+    "slug": "withholding-tax-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "9e922fa75dd38989c8699c30e9ec5c4326558d19554eac49f9bb4aa901155b28"
+  },
+  {
+    "region": "pk",
+    "slug": "property-tax-estimator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0a060eccd9a217bd029cc27e3493533748d548bb7e89d84bfc2f45b8bbaf7a64"
+  },
+  {
+    "region": "pk",
+    "slug": "vehicle-token-tax-estimator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0118091f7cb4c92abf090b09ee09bcdc71ae79cba99026ddd7046fa72084a309"
+  },
+  {
+    "region": "pk",
+    "slug": "filer-vs-non-filer-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "86fc82b19de5482441d5b1b561d4ded5d56c2c445f1a7db2e1c16d3f26770f65"
+  },
+  {
+    "region": "pk",
+    "slug": "capital-gains-tax-estimator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "b27fe3f0c4ff947a10a7b069048bf9f1c4ab834e11689620608b9f1a3967f7b0"
+  },
+  {
+    "region": "pk",
+    "slug": "islamic-home-finance-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "bdb909076a6a67db717ef501d4035858e3a527c2423bb3f0206d9e856022a4b3"
+  },
+  {
+    "region": "pk",
+    "slug": "car-financing-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "2cc7c7202a551b076b0b4974a670d43d81c6790f0b6ef2b6a6e7199b82d4d20b"
+  },
+  {
+    "region": "pk",
+    "slug": "personal-loan-comparison-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "fd0bd68d886e641dfd962799198595f341f9b32713f50377138aa6e11373c252"
+  },
+  {
+    "region": "pk",
+    "slug": "early-loan-payment-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "d6e951169f55a36bcdedc92f0ab0b9c00894678958389e682ba4c27a0a51e681"
+  },
+  {
+    "region": "pk",
+    "slug": "loan-refinancing-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "95e5323045f512a1e6fe4cab30ff9f710fdee84d4e8d2f733d39d6d8e9dc26e7"
+  },
+  {
+    "region": "pk",
+    "slug": "credit-card-minimum-payment-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "7feea9378ceabe58816792aca39bf300e0538db1e1627a9df41315afcec36b0a"
+  },
+  {
+    "region": "pk",
+    "slug": "savings-account-profit-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "17bf045dece81aefa8a902fe080ffd589ef2e3f75f7d84087cf169759c187437"
+  },
+  {
+    "region": "pk",
+    "slug": "term-deposit-profit-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "e6dc6e8d099b95ff6eede3a1e39bd1acc2888f78cd0b9b599398eef21d1b903e"
+  },
+  {
+    "region": "pk",
+    "slug": "inflation-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0a7f8a3330e91cdb9e981ddf0084bebf785415deb8afad49c96761ac95060264"
+  },
+  {
+    "region": "pk",
+    "slug": "pkr-purchasing-power-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "d52bc43eaf4b2836f18356cc7873c8e07ec2a9c9b0c4d42c6feb1dcdb751fb75"
+  },
+  {
+    "region": "pk",
+    "slug": "retirement-savings-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "f6be3f261bf114118d0c0a2736baee7f0c870c11cefe666d599e1d70dec358de"
+  },
+  {
+    "region": "pk",
+    "slug": "education-savings-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "44b1bcd36debdb402f6d22ab4a00738b2213e60bcfcc3b9f5f947541eb1bd1cb"
+  },
+  {
+    "region": "pk",
+    "slug": "wedding-budget-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "ed2bc93eadfefcbedfc49ae45fcb666261b27b7dbdac2ef4289cbbdf46c6d05b"
+  },
+  {
+    "region": "pk",
+    "slug": "household-budget-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "d528e5e5147d2857048a2887505a6964c4e01213df5321bf98062f529d77fa7f"
+  },
+  {
+    "region": "pk",
+    "slug": "debt-snowball-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "1533e067b83dfaa60c38bdfcd78f61e088fa5ae25e226d0b944e767aa5c3535f"
+  },
+  {
+    "region": "pk",
+    "slug": "debt-avalanche-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "85a4415b610771ee74a97b4340150f513d5958947d99e3117d0892e4ae7e1a9c"
+  },
+  {
+    "region": "pk",
+    "slug": "currency-conversion-fee-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "3664e8ade2ec15a3ebab24ea1954d9816ad4c4950d0c7b2250f569c3ffd8f965"
+  },
+  {
+    "region": "pk",
+    "slug": "remittance-received-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "cabf7458786cfd1f7b829d15595dede76c6b61423c7bd5be5050e30a2a6bc0e2"
+  },
+  {
+    "region": "pk",
+    "slug": "electricity-slab-rate-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "d3491b508e190e6d7d79de2de3cf7ee02c8b24e064984558d2256ce6733a86f6"
+  },
+  {
+    "region": "pk",
+    "slug": "lesco-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "3895dc2f60fcd8c325c225f01d513392152e0f42fb33877181b10e3c59d04ae4"
+  },
+  {
+    "region": "pk",
+    "slug": "iesco-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "dfc654fb3ec38dd9b2e79d759fbb8d3b53ff86326bb9231acf9a062bacf9b640"
+  },
+  {
+    "region": "pk",
+    "slug": "fesco-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "e80d99041506f3697d59b9ab12f7719ace28291d252816d16b3846fc6c975a6c"
+  },
+  {
+    "region": "pk",
+    "slug": "mepco-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "10f5db2c79b316ab1b87f2611960d74b593b3176a268743bb06ea00cf54e7877"
+  },
+  {
+    "region": "pk",
+    "slug": "gepco-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "1f539a8f083a7aa1f77f5c767b85a04db5bcc891af5b913a2d286e3458c0646d"
+  },
+  {
+    "region": "pk",
+    "slug": "pesco-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "00be0c9c07d8d56f7cce6eca2cf0729ea10b7d85a3377abecd7e903eef707d58"
+  },
+  {
+    "region": "pk",
+    "slug": "hesco-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "5a3b167098cc526e2fac668e8dc4a8a29e5e16d85fcd47984483862b3b7f9a1e"
+  },
+  {
+    "region": "pk",
+    "slug": "sepco-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "261c14110f6e99f325e8294ec458499a3e7f9e883b8aa941fc19f3ef9ce8596c"
+  },
+  {
+    "region": "pk",
+    "slug": "k-electric-bill-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "90e499e9048242ac3fef93d87e7fe309de76b9109400554e4c029a90913ad5f7"
+  },
+  {
+    "region": "pk",
+    "slug": "net-metering-savings-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "8f045c028e0f76c81ca6ee53778067c0bcac2a3a58e283489738d9e07da85e82"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-export-credit-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0a0b654baa7fc1f8fb259df51f2b662a5ac41fd9c46f243f41e67accd98ef6a8"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-inverter-size-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "1845a75fe2a52b9278f1a7b419286a352637dd73bced041e67756594cf45e80f"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-cable-size-estimator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "111e26c25c55813d65f9fc2650963ff53ce574e001942e0b602f97ac69f570f9"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-panel-tilt-angle-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "2db401d6b2841bd0b7b9a2d34e9f753b22cfee85415dc0e02f910fbe067a7313"
+  },
+  {
+    "region": "pk",
+    "slug": "solar-generation-by-city-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0ecf396ecd3911f065bd4d7b652f94d31b8112444d785632438dfeed1463169c"
+  },
+  {
+    "region": "pk",
+    "slug": "load-shedding-battery-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "9fa95147ee61a9023fe93dd0aa09429b3ea2c2d796f0bab7251ddd34f4647257"
+  },
+  {
+    "region": "pk",
+    "slug": "lithium-vs-lead-acid-battery-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "366b3223128dbebe3e07c05244b5bc9782105cb646133ed35857d17e196c58b5"
+  },
+  {
+    "region": "pk",
+    "slug": "ups-runtime-multiple-appliances-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "f2174465e072db880e4dafb594f9b796ff11137047fdfa8b584e235a59679588"
+  },
+  {
+    "region": "pk",
+    "slug": "electricity-bill-appliance-share-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "b2c9255f863a45f525961b4076a00e3d824ca6bfe0e056aa1024c96139825cb6"
+  },
+  {
+    "region": "pk",
+    "slug": "inverter-vs-non-inverter-ac-savings-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "97e135eea6c9d9841989a3d48710295d515c66301d04e05427b93a9fef68127a"
+  },
+  {
+    "region": "pk",
+    "slug": "refrigerator-electricity-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "2dccbeba980a8bacdcacb8685798bc11045d047c5bbfb5885a67a875501f04ff"
+  },
+  {
+    "region": "pk",
+    "slug": "electric-geyser-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0b95584bc23ef3d84232ad20127b8e6fb4838136e828d831661cdff4698b0360"
+  },
+  {
+    "region": "pk",
+    "slug": "ev-charging-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "c1659fd212cf1bb9d42f0e187a04a08e2d13755efa923f08a3dd9c156fd2e960"
+  },
+  {
+    "region": "pk",
+    "slug": "shopify-profit-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "508cd7473f0e13beaa5f23fd6d4c921f4d29ee193deaa6335222e762de6ad152"
+  },
+  {
+    "region": "pk",
+    "slug": "amazon-pakistan-seller-profit-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "c3a7b1941d4c7e1a66a745e69965f3d7823478ca02a93d407706a2d9145a1005"
+  },
+  {
+    "region": "pk",
+    "slug": "foodpanda-restaurant-commission-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "748e6f471e4340ebf388aecac1fd8914ea73df0d3ac704b640a70b0806fef735"
+  },
+  {
+    "region": "pk",
+    "slug": "marketplace-fee-comparison-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "446cef83338bd3ab3ed89f2b1b3086830c598aed72b65566412c8dd46c727faa"
+  },
+  {
+    "region": "pk",
+    "slug": "cod-order-profit-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "6b74858771aeb73bf90480726334a21bd20da725f65d4fba6501ae8bccede4f4"
+  },
+  {
+    "region": "pk",
+    "slug": "cod-return-loss-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "3d94764456f2e1e375285380cc08624d918b4847087cabf859a2f1cb93ee585b"
+  },
+  {
+    "region": "pk",
+    "slug": "product-pricing-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "771ad03893bc5ecafccecd29b33f771fa82da356be23142dee40224caf2e6bd4"
+  },
+  {
+    "region": "pk",
+    "slug": "wholesale-retail-markup-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "14774cecf2e757785032567b743bb74411b2b75508da341557a742a1d0dea51c"
+  },
+  {
+    "region": "pk",
+    "slug": "sales-tax-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "4d7ed6454491b4acae5adbae665f6fada06e66c8a4ab16efd75b3b3ebecb43c3"
+  },
+  {
+    "region": "pk",
+    "slug": "inventory-reorder-point-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "b6340da1628c1bd49099632497a4ebf3bf7ec6c5e07762a9f0371280d6b7d952"
+  },
+  {
+    "region": "pk",
+    "slug": "inventory-turnover-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "571f6a6874afeddf8b23e005ff5d43493b104d0c95315c51181f9ef916dc070c"
+  },
+  {
+    "region": "pk",
+    "slug": "import-landed-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "8c4253874038c5a54b7255b59266d2906b6f4924a7df86a60eab8db32a18fdf6"
+  },
+  {
+    "region": "pk",
+    "slug": "customs-duty-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "98fe2e2edb69c3936c0df43de31d06521e6da0fd0af9d165aa5470d9cd202252"
+  },
+  {
+    "region": "pk",
+    "slug": "courier-cost-comparison-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "439976cf6a618ff9ae58011ba24998b1d61a0954232a863604dd967c82bb3a2d"
+  },
+  {
+    "region": "pk",
+    "slug": "freelancer-platform-fee-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "32728eac514f4f7ea256d1c52f7e0aa3d212534eccda4cc73b613ff3f503ff82"
+  },
+  {
+    "region": "pk",
+    "slug": "payoneer-withdrawal-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "d001f52ca28add69ced5ff3fe1c431a3725af3d7c56ba0dab9ec4b226190dac0"
+  },
+  {
+    "region": "pk",
+    "slug": "international-payment-fee-comparison-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0c0ecbbd8a8994c2ac608400860da20f2cdac06834f7519aecb55155e589d776"
+  },
+  {
+    "region": "pk",
+    "slug": "small-business-cash-flow-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "66a6dbd436289bdddbe7773c8975fbc3fe0f8d0846ea99eeedc848cc1f26e774"
+  },
+  {
+    "region": "pk",
+    "slug": "employee-cost-to-company-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "82ef228040f30a812613f453d1d24c2f3e77adc13d5e2414b062de781af059ff"
+  },
+  {
+    "region": "pk",
+    "slug": "car-fuel-average-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "53be832063bdee3346f1b46b046da144f178fd998f43aa1425648001287084d3"
+  },
+  {
+    "region": "pk",
+    "slug": "motorcycle-fuel-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "96ed948402ac788e58be70f398f450da3280891e20662e516e3bc0612aecc5d2"
+  },
+  {
+    "region": "pk",
+    "slug": "petrol-vs-hybrid-savings-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "2abb49dafa0769921b33ebeb046813261945ff41f98bdb8bae0319872a410d2f"
+  },
+  {
+    "region": "pk",
+    "slug": "petrol-vs-electric-bike-savings-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "ccc1882795091b8a50c4a35f4ae10197594128a4146f6b8ce8a0b148c1790ef1"
+  },
+  {
+    "region": "pk",
+    "slug": "car-ownership-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "fe67681e46db2700157b15cb0ae022c9024ce70a69b9456c8d3d84021b7b5eaa"
+  },
+  {
+    "region": "pk",
+    "slug": "used-car-depreciation-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "2f102ad577224b0e294c56e55050b4e75d05d429e2a8834974605f294ad3381e"
+  },
+  {
+    "region": "pk",
+    "slug": "vehicle-installment-affordability-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "50fadc177e2331fc54a186f0456aa814bf7f29638f550469937eeec152e8321f"
+  },
+  {
+    "region": "pk",
+    "slug": "ride-hailing-earnings-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "621429281d7ca2d5bbbbd39dcb18c6a4227e9982b672c1f57c43bda2e8860b2b"
+  },
+  {
+    "region": "pk",
+    "slug": "delivery-rider-earnings-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "160f696cd7d673f316333d098c82b6fd8dbd125b6dd3ed0515434863aae8946e"
+  },
+  {
+    "region": "pk",
+    "slug": "motorway-toll-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "6d6f5d15e4b60542b447cec04080ac87bceecaf53a3e3f9b3c1d84482423577a"
+  },
+  {
+    "region": "pk",
+    "slug": "trip-fuel-sharing-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "07dece921ade8c72efd3146652c799a0342e142e8e11300213980f3a663f7899"
+  },
+  {
+    "region": "pk",
+    "slug": "tyre-size-comparison-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "718e628ec64acbeb39e3932d2a0078daf772eba6e8ee71839d230c62960c3d8e"
+  },
+  {
+    "region": "pk",
+    "slug": "tyre-pressure-converter",
+    "updatedAt": "2026-09-17",
+    "sha256": "a21d165d2fa143874449aef00933090000b03211532a961f12c3ae3f6081a685"
+  },
+  {
+    "region": "pk",
+    "slug": "engine-oil-change-reminder-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "53d7bce00bc48bcc07b80e901e9cdee476aa0962858ee690a768b124b30bf0f5"
+  },
+  {
+    "region": "pk",
+    "slug": "brick-quantity-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "c754c137689e3a8f787a3bebc54f5b4f8388fc9071627ac16c7d1678f569acf1"
+  },
+  {
+    "region": "pk",
+    "slug": "cement-sand-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0e9b37a602c1ac4cb689711c2c685c86748ce6a8478f04fc5d0f431f14c74534"
+  },
+  {
+    "region": "pk",
+    "slug": "plaster-material-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "5449e90df5e83a10438e1337a0875d1cec75a666e5154690c2e241970e4bb88d"
+  },
+  {
+    "region": "pk",
+    "slug": "flooring-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "5b62838a4bdc8d1faac58ac4c16b0a35bcb0984f703e53bd1f6c53b648a53d89"
+  },
+  {
+    "region": "pk",
+    "slug": "false-ceiling-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0ecb4f7aa600baa81d2e27523953d1765a72ee904f61752af76b7c1c7a975d20"
+  },
+  {
+    "region": "pk",
+    "slug": "steel-weight-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "1e86e74496e023f4e6eaca0eea2477dd2cd5830de8aee8b2ab4ef7df431e9f5c"
+  },
+  {
+    "region": "pk",
+    "slug": "rebar-quantity-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "25298ffb554d677f9b63cea37b0f9c71d301de5e14aac41c42de395add32d4b2"
+  },
+  {
+    "region": "pk",
+    "slug": "boundary-wall-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "cc4ba52c7282ba57554549b8d9b9aba61b3af77dea7a3fd475716124bfcee047"
+  },
+  {
+    "region": "pk",
+    "slug": "house-construction-cost-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "5d797564f07ab635ea5ad9f0c7e45308eef2e5e403a28900df31c1d76f896e55"
+  },
+  {
+    "region": "pk",
+    "slug": "room-renovation-budget-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "0680b0711d6733079658efc8deded113f09262af90c2b7edf3189b96fb13a472"
+  },
+  {
+    "region": "pk",
+    "slug": "property-rental-yield-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "82aa2178ecf6ea6ec315911454598a5aba69e33650fc3aa2736f65a4f51e5782"
+  },
+  {
+    "region": "pk",
+    "slug": "property-price-per-square-foot-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "84f3223a4143ea4df116edb087ccf3fccec59878c995bd40b5f76cd745b1b38a"
+  },
+  {
+    "region": "pk",
+    "slug": "marla-kanal-square-feet-converter-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "b973298357d4700c37afc6ee09501d13f05d30216cda1af92d987d603e0407a3"
+  },
+  {
+    "region": "pk",
+    "slug": "property-transfer-cost-estimator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "f5211310393321a5f8740154681ecd005fd787a9726ad018009c0647cfa0d93c"
+  },
+  {
+    "region": "pk",
+    "slug": "home-loan-vs-rent-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "1c7abb9ceeb24e1b17a99aa112a70935158d76d5a0e42183e5687d4d5d920f47"
+  },
+  {
+    "region": "pk",
+    "slug": "mdcat-aggregate-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "8cc6a0d041f07d0b722cac5615b1a03864f3c4155980d82eb1dd0aa31b1dc051"
+  },
+  {
+    "region": "pk",
+    "slug": "ecat-aggregate-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "9b2edb37f9ce10045fda0fcc5943a8b5b8d709ddb1f845550870a75ca07ab706"
+  },
+  {
+    "region": "pk",
+    "slug": "university-merit-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "19e04d2f80bcea5c1232d92a648cc0a69d8d1b1c234fb3a5078e1e7e83e327db"
+  },
+  {
+    "region": "pk",
+    "slug": "semester-gpa-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "3e7be698d4e78dec2cee91e9b55162e1fc86f5fe94bd4e99573f34e719994e2b"
+  },
+  {
+    "region": "pk",
+    "slug": "required-final-exam-marks-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "88a3e71c0d9425cec9132a068cd8e4f716377965eaad98d8ecce205a2d487c5f"
+  },
+  {
+    "region": "pk",
+    "slug": "study-time-planner",
+    "updatedAt": "2026-09-17",
+    "sha256": "3eae7d7c8f584f25034c89787aa0549c72c00dc1712fba9925c06215db49ce3c"
+  },
+  {
+    "region": "pk",
+    "slug": "age-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "a0198b8a1b44801771e1929fafd651642ba26bdf89c30e2848418cbfae801144"
+  },
+  {
+    "region": "pk",
+    "slug": "date-duration-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "5407d56521909f27cff53815bc19c08871ebeba9c69d8677e29675c856fe8351"
+  },
+  {
+    "region": "pk",
+    "slug": "bmi-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "72ce7eee36397ee455fb2fa6e89a095cc49bd3b2c182b2a0857b649480022bda"
+  },
+  {
+    "region": "pk",
+    "slug": "daily-calorie-requirement-estimator",
+    "updatedAt": "2026-09-17",
+    "sha256": "fd1cf373eac6bcc64e1ecbdfa05c22360e00782b3dd5780ecb8fc5adc29ce55d"
+  },
+  {
+    "region": "pk",
+    "slug": "daily-water-intake-estimator",
+    "updatedAt": "2026-09-17",
+    "sha256": "85adb54131f52d5828dc51e69b9eae7aa2763beb9a01c244afb70ac962a5e69c"
+  },
+  {
+    "region": "pk",
+    "slug": "internet-package-comparison-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "449e421ea1e9425860110e671eba6d52c902a5022211b9309f24fcda364f870e"
+  },
+  {
+    "region": "pk",
+    "slug": "internet-speed-requirement-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "9618be491fa3348d14b8b31be97263bfc23800f212586594dfd4769c585faef8"
+  },
+  {
+    "region": "pk",
+    "slug": "data-package-cost-per-gb-calculator-pakistan",
+    "updatedAt": "2026-09-17",
+    "sha256": "63b7884b664bd8389e5f6d88f37f5650ea0696a85c631a2df46b6fa08f293790"
+  },
+  {
+    "region": "pk",
+    "slug": "whatsapp-data-usage-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "b2cede515743cbfd3a039e593bd40ea9961f10a570cff9f00e6184d0cd1af084"
+  },
+  {
+    "region": "pk",
+    "slug": "youtube-data-usage-calculator",
+    "updatedAt": "2026-09-17",
+    "sha256": "51f95610776e0e54fc6d0a8394b4fbb50116e9d25db218a3abe08b15ac095486"
+  }
+]

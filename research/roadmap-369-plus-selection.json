@@ -1,0 +1,567 @@
+{
+  "reviewedAt": "2026-10-05",
+  "cutoff": "2026-09-28",
+  "cutoffRule": "Leave every existing calculator created or updated on/after the cutoff untouched. This additive batch leaves ALL existing definitions, calculation modules and review dates untouched.",
+  "sourceWorkbook": "SolvePilot_50_Tools_Daily_SEO_Roadmap.xlsx",
+  "reviewedRanks": [
+    369,
+    422
+  ],
+  "nextUnreviewedRank": 423,
+  "newCalculators": 20,
+  "supportedWorkbookKeywords": 114,
+  "keywordData": "Historical workbook metrics, not current SERP or Search Console rankings.",
+  "excludedKeywords": [
+    {
+      "rank": 389,
+      "keyword": "convert cal",
+      "reason": "Unsupported or malformed non-length intent; no keyword claim."
+    },
+    {
+      "rank": 410,
+      "keyword": "converter kn to miles",
+      "reason": "Unsupported or malformed non-length intent; no keyword claim."
+    },
+    {
+      "rank": 381,
+      "keyword": "omni circumference calculator",
+      "reason": "Grouped workbook intent exceeds implemented scope; no branded, bill-tariff, rate-of-power-change, conversion-chart or observed fuel-economy calculation claim."
+    },
+    {
+      "rank": 389,
+      "keyword": "convert metric chart",
+      "reason": "Grouped workbook intent exceeds implemented scope; no branded, bill-tariff, rate-of-power-change, conversion-chart or observed fuel-economy calculation claim."
+    },
+    {
+      "rank": 390,
+      "keyword": "how do you calculate kilowatts per hour",
+      "reason": "Grouped workbook intent exceeds implemented scope; no branded, bill-tariff, rate-of-power-change, conversion-chart or observed fuel-economy calculation claim."
+    },
+    {
+      "rank": 390,
+      "keyword": "electric bill calculator",
+      "reason": "Grouped workbook intent exceeds implemented scope; no branded, bill-tariff, rate-of-power-change, conversion-chart or observed fuel-economy calculation claim."
+    },
+    {
+      "rank": 390,
+      "keyword": "power bill calculator",
+      "reason": "Grouped workbook intent exceeds implemented scope; no branded, bill-tariff, rate-of-power-change, conversion-chart or observed fuel-economy calculation claim."
+    },
+    {
+      "rank": 416,
+      "keyword": "how do i calculate fuel mileage",
+      "reason": "Grouped workbook intent exceeds implemented scope; no branded, bill-tariff, rate-of-power-change, conversion-chart or observed fuel-economy calculation claim."
+    },
+    {
+      "rank": 416,
+      "keyword": "petrol mileage calculator",
+      "reason": "Grouped workbook intent exceeds implemented scope; no branded, bill-tariff, rate-of-power-change, conversion-chart or observed fuel-economy calculation claim."
+    },
+    {
+      "rank": 416,
+      "keyword": "miles to a gallon calculator",
+      "reason": "Grouped workbook intent exceeds implemented scope; no branded, bill-tariff, rate-of-power-change, conversion-chart or observed fuel-economy calculation claim."
+    }
+  ],
+  "rows": [
+    {
+      "rank": 369,
+      "page": "Age Difference Calculator",
+      "primaryKeyword": "age calculator difference",
+      "status": "completed-new-calculator",
+      "slug": "age-difference-calculator",
+      "scope": "Compare two birth dates in calendar years, months and days, with an exact day count and explicit end-of-month handling."
+    },
+    {
+      "rank": 370,
+      "page": "Parallel Resistor Calculator",
+      "primaryKeyword": "parallel resistor calculator",
+      "status": "completed-new-calculator",
+      "slug": "parallel-resistor-calculator",
+      "scope": "Calculate equivalent resistance for up to 100 parallel branches, with optional voltage-based branch current and power checks."
+    },
+    {
+      "rank": 371,
+      "page": "Peptide Dosage Calculator",
+      "primaryKeyword": "peptide dosage calculator",
+      "status": "deferred",
+      "reason": "Clinical peptide dosing requires verified prescription/product context; no invented dosage."
+    },
+    {
+      "rank": 372,
+      "page": "Scrap Silver Calculator",
+      "primaryKeyword": "scrap silver calculator",
+      "status": "completed-new-calculator",
+      "slug": "scrap-silver-calculator",
+      "scope": "Estimate fine-silver mass, metal value and a buyer payout from supplied weight, purity and price; no live silver quote is loaded."
+    },
+    {
+      "rank": 373,
+      "page": "Z Score Calculator",
+      "primaryKeyword": "z value calculator",
+      "status": "completed-new-calculator",
+      "slug": "z-score-calculator",
+      "scope": "Standardize a numeric observation using an independently supplied mean and positive standard deviation, with signed distance interpretation."
+    },
+    {
+      "rank": 374,
+      "page": "Dog Age Calculator",
+      "primaryKeyword": "dog age calculator",
+      "status": "deferred",
+      "reason": "Dog age requires a sourced species/size/age model rather than a universal multiplier."
+    },
+    {
+      "rank": 375,
+      "page": "Credit Card Fee Calculator",
+      "primaryKeyword": "credit card fee calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "merchant-processing-fee-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-09-25",
+      "cutoffProtected": false
+    },
+    {
+      "rank": 376,
+      "page": "Ira Calculator",
+      "primaryKeyword": "ira calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "401k-calculator",
+      "definitionUnchanged": true,
+      "reason": "Retirement contribution projection already exists; IRA-specific statutory and tax rules are not established by basic growth arithmetic.",
+      "previousReviewed": "2026-09-29",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 377,
+      "page": "First Lien Heloc Calculator",
+      "primaryKeyword": "first lien heloc calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "first-lien-heloc-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-09-29",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 378,
+      "page": "Annuity Calculator",
+      "primaryKeyword": "fixed index annuity calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "payment-calculator",
+      "definitionUnchanged": true,
+      "reason": "Basic annuity payment already exists; fixed-index product crediting rules need verified contract-specific modeling.",
+      "previousReviewed": "2026-10-03",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 379,
+      "page": "Business Loan Calculator",
+      "primaryKeyword": "business calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "payment-calculator",
+      "definitionUnchanged": true,
+      "reason": "Standard payment arithmetic already exists; SBA or business-specific product terms are not loaded.",
+      "previousReviewed": "2026-10-03",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 380,
+      "page": "Deadline Calculator",
+      "primaryKeyword": "deadline calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "date-from-today-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-09-29",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 381,
+      "page": "Circumference Calculator",
+      "primaryKeyword": "circumference calculator",
+      "status": "completed-new-calculator",
+      "slug": "circumference-calculator",
+      "scope": "Find a circle’s circumference from radius or diameter, or recover radius and diameter from a known perimeter, with area as supporting output."
+    },
+    {
+      "rank": 382,
+      "page": "Body Type Calculator",
+      "primaryKeyword": "body shape calculator",
+      "status": "deferred",
+      "reason": "No validated universal body-shape/clothing-size classification was established."
+    },
+    {
+      "rank": 383,
+      "page": "Pace Calculator",
+      "primaryKeyword": "treadmill pace calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "running-pace-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-10-02",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 384,
+      "page": "Circle Calculator",
+      "primaryKeyword": "area of a circle calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "surface-area-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-10-02",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 385,
+      "page": "Pythagorean Theorem Calculator",
+      "primaryKeyword": "pythagoras equation solver",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "right-triangle-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-10-03",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 386,
+      "page": "Pounds Ounces",
+      "primaryKeyword": "oz pounds converter",
+      "status": "completed-new-calculator",
+      "slug": "pounds-ounces-converter",
+      "scope": "Convert avoirdupois pounds, mass ounces and grams, including a normalized pounds-plus-ounces result; fluid and troy ounces are excluded."
+    },
+    {
+      "rank": 387,
+      "page": "Percent Off Calculator",
+      "primaryKeyword": "percentage off calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "discount-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-09-21",
+      "cutoffProtected": false
+    },
+    {
+      "rank": 388,
+      "page": "Pizza Party Calculator",
+      "primaryKeyword": "pizza calculator",
+      "status": "completed-new-calculator",
+      "slug": "pizza-party-calculator",
+      "scope": "Estimate whole pizzas, slice coverage and pizza cost from your guest count, appetite assumptions, cut size and optional extra allowance."
+    },
+    {
+      "rank": 389,
+      "page": "Conversion Calculator",
+      "primaryKeyword": "metric to inches calculator",
+      "status": "completed-new-calculator",
+      "slug": "length-conversion-calculator",
+      "scope": "Convert millimetres, centimetres, metres, kilometres, inches, feet, yards and international miles with an explicit unit selector."
+    },
+    {
+      "rank": 390,
+      "page": "Electricity Calculator",
+      "primaryKeyword": "power usage calculator",
+      "status": "completed-new-calculator",
+      "slug": "electricity-usage-calculator",
+      "scope": "Estimate appliance kWh and usage cost from power, runtime, device count, duty cycle and a supplied flat electricity price."
+    },
+    {
+      "rank": 391,
+      "page": "Eigenvalue Eigenvector Calculator",
+      "primaryKeyword": "eigenvalue calculator",
+      "status": "completed-new-calculator",
+      "slug": "eigenvalue-calculator",
+      "scope": "Find eigenvalues of a numeric 2×2 real matrix, with real unit eigenvectors or a labeled complex conjugate pair and trace checks."
+    },
+    {
+      "rank": 392,
+      "page": "Credit Card Calculator",
+      "primaryKeyword": "credit card calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "credit-card-payoff-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-09-25",
+      "cutoffProtected": false
+    },
+    {
+      "rank": 393,
+      "page": "Percent Error Calculator",
+      "primaryKeyword": "percentage error calculator",
+      "status": "completed-new-calculator",
+      "slug": "percent-error-calculator",
+      "scope": "Compare a measured value with a nonzero reference using absolute percent error, signed relative error and the underlying difference."
+    },
+    {
+      "rank": 394,
+      "page": "Paver Calculator",
+      "primaryKeyword": "paver calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "tile-quantity-calculator-pakistan",
+      "definitionUnchanged": true,
+      "reason": "Rectangular tile quantity already exists and is recent; paver-specific joint/base/site methods are outside its scope."
+    },
+    {
+      "rank": 395,
+      "page": "Buydown Calculator",
+      "primaryKeyword": "buydown calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "mortgage-buydown-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-09-29",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 396,
+      "page": "Midpoint Calculator",
+      "primaryKeyword": "midpoint calculator",
+      "status": "completed-new-calculator",
+      "slug": "midpoint-calculator",
+      "scope": "Find a two-dimensional Cartesian segment midpoint, full distance and half-distance from two coordinate pairs, with clear geometric scope."
+    },
+    {
+      "rank": 397,
+      "page": "Walking Calorie Calculator",
+      "primaryKeyword": "treadmill calorie calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "calories-burned-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-10-03",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 398,
+      "page": "Seller Net Sheet Calculator",
+      "primaryKeyword": "seller net sheet calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "seller-net-sheet-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-09-29",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 399,
+      "page": "Percentage Change Calculator",
+      "primaryKeyword": "change calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "percent-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-10-03",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 400,
+      "page": "Annuity Payout Calculator",
+      "primaryKeyword": "annuity payout calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "payment-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-10-03",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 401,
+      "page": "Dew Point Calculator",
+      "primaryKeyword": "dew point calculator",
+      "status": "completed-new-calculator",
+      "slug": "dew-point-calculator",
+      "scope": "Estimate liquid-water dew point from air temperature and relative humidity, with Celsius/Fahrenheit output and an explicit 0–50°C model boundary."
+    },
+    {
+      "rank": 402,
+      "page": "Golf Handicap Calculator",
+      "primaryKeyword": "golf handicap calculator",
+      "status": "deferred",
+      "reason": "Handicap scoring needs verified current official differential, adjustment and score-count rules; no incomplete substitute."
+    },
+    {
+      "rank": 403,
+      "page": "Steps To Calories Calculator",
+      "primaryKeyword": "steps to calories calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "calories-burned-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing walking calorie scope already covers supported step/distance conversion; preserve it.",
+      "previousReviewed": "2026-10-03",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 404,
+      "page": "Lottery Annuity Calculator",
+      "primaryKeyword": "lottery annuity calculator",
+      "status": "completed-new-calculator",
+      "slug": "lottery-annuity-calculator",
+      "scope": "Model an escalating lottery payout schedule from supplied total, payment count and assumptions, including discounted value without a live cash-option quote."
+    },
+    {
+      "rank": 405,
+      "page": "Mobile Home Calculator",
+      "primaryKeyword": "mobile home calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "payment-calculator",
+      "definitionUnchanged": true,
+      "reason": "Generic loan payment already exists; manufactured-home lending terms are not inferred.",
+      "previousReviewed": "2026-10-03",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 406,
+      "page": "Height In Inches Calculator",
+      "primaryKeyword": "inches calculator",
+      "status": "completed-scoped-merge",
+      "slug": "length-conversion-calculator",
+      "scope": "Only supported linear-distance or avoirdupois mass queries; exclusions recorded separately."
+    },
+    {
+      "rank": 407,
+      "page": "Salary Calculator",
+      "primaryKeyword": "annual income estimator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "paycheck-estimator-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-09-29",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 408,
+      "page": "Feet And Inches Calculator",
+      "primaryKeyword": "inches to feet calculator",
+      "status": "completed-new-calculator",
+      "slug": "feet-inches-calculator",
+      "scope": "Add or subtract two mixed feet-and-inches lengths, with normalized signed output, total inches, decimal feet and metres."
+    },
+    {
+      "rank": 409,
+      "page": "Long Division Calculator",
+      "primaryKeyword": "dividing decimals calculator",
+      "status": "completed-new-calculator",
+      "slug": "long-division-calculator",
+      "scope": "Divide written finite decimals with exact scaled-integer arithmetic, visible fractional steps, repeating-digit notation and a bounded decimal expansion."
+    },
+    {
+      "rank": 410,
+      "page": "Kilometers To Miles",
+      "primaryKeyword": "converter kn to miles",
+      "status": "partial-supported-secondary-queries",
+      "slug": "length-conversion-calculator",
+      "scope": "Only supported linear-distance or avoirdupois mass queries; exclusions recorded separately.",
+      "reason": "Primary query converter kn to miles is unsupported/malformed and is not counted complete. Valid kilometre/mile secondary queries map to the length converter."
+    },
+    {
+      "rank": 411,
+      "page": "Permutation And Combination Calculator",
+      "primaryKeyword": "permutation calculator",
+      "status": "completed-new-calculator",
+      "slug": "permutation-combination-calculator",
+      "scope": "Count selections or ordered arrangements of distinct items without replacement using exact integer arithmetic for 0 ≤ r ≤ n ≤ 1000."
+    },
+    {
+      "rank": 412,
+      "page": "Ounces To Pounds Converter",
+      "primaryKeyword": "converter ounces to pounds",
+      "status": "completed-scoped-merge",
+      "slug": "pounds-ounces-converter",
+      "scope": "Only supported linear-distance or avoirdupois mass queries; exclusions recorded separately."
+    },
+    {
+      "rank": 413,
+      "page": "Sig Fig Calculator",
+      "primaryKeyword": "sig fig calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "rounding-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-10-03",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 414,
+      "page": "Anc Calculator",
+      "primaryKeyword": "anc calculator",
+      "status": "deferred",
+      "reason": "Clinical ANC arithmetic and interpretation deferred; not needed to fill this batch."
+    },
+    {
+      "rank": 415,
+      "page": "Log Calculator",
+      "primaryKeyword": "calculate log calculator",
+      "status": "completed-new-calculator",
+      "slug": "logarithm-calculator",
+      "scope": "Calculate a real logarithm with any positive base other than one, plus natural/base-ten values and an exponent reconstruction check."
+    },
+    {
+      "rank": 416,
+      "page": "Fuel Cost Calculator",
+      "primaryKeyword": "gas calculator trip",
+      "status": "completed-new-calculator",
+      "slug": "trip-fuel-cost-calculator",
+      "scope": "Estimate fuel quantity and trip cost using supplied distance, economy, fuel price and trip count, with explicit US or imperial gallon choices."
+    },
+    {
+      "rank": 417,
+      "page": "Sphere Volume Calculator",
+      "primaryKeyword": "volume calculator for a sphere",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "volume-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-10-02",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 418,
+      "page": "Fence Calculator",
+      "primaryKeyword": "fence calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "fence-cost-estimator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-10-04",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 419,
+      "page": "Take Home Pay Calculator",
+      "primaryKeyword": "take home wage calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "paycheck-estimator-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing calculator covers the supplied task; leave it unchanged and continue.",
+      "previousReviewed": "2026-09-29",
+      "cutoffProtected": true
+    },
+    {
+      "rank": 420,
+      "page": "Time Calculator",
+      "primaryKeyword": "add time calculator",
+      "status": "skipped-existing-or-covered-intent",
+      "existingSlug": "time-calculator",
+      "definitionUnchanged": true,
+      "reason": "Existing duration arithmetic already supplies this task; do not duplicate it."
+    },
+    {
+      "rank": 421,
+      "page": "Big Number Calculator",
+      "primaryKeyword": "big number calculator",
+      "status": "completed-new-calculator",
+      "slug": "big-number-calculator",
+      "scope": "Add, subtract, multiply or divide signed integers up to 500 digits without floating-point rounding, with a labeled integer quotient and remainder."
+    },
+    {
+      "rank": 422,
+      "page": "Mm To Inches Conversion Calculator",
+      "primaryKeyword": "mm to inches calculator",
+      "status": "completed-scoped-merge",
+      "slug": "length-conversion-calculator",
+      "scope": "Only supported linear-distance or avoirdupois mass queries; exclusions recorded separately."
+    }
+  ]
+}
