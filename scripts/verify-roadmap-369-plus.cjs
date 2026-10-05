@@ -8,7 +8,7 @@ assert.equal(calc('age-difference-calculator','2023-01-31','2023-02-28')[0].valu
 near(n(calc('parallel-resistor-calculator','100,200','12')),200/3);near(n(calc('parallel-resistor-calculator','100,100',''),0),50);assert.equal(calc('parallel-resistor-calculator','100','').at(-1).value,'Voltage omitted');bad('parallel-resistor-calculator','0,1','');bad('parallel-resistor-calculator',Array(101).fill(1).join(','),'');
 near(n(calc('scrap-silver-calculator','100','g','92.5','30','90')),100*.925/31.1034768*30*.9);near(n(calc('scrap-silver-calculator','1','oz','100','30','100')),30);bad('scrap-silver-calculator','1','g','925','30','90');
 near(n(calc('z-score-calculator','85','70','10')),1.5);near(n(calc('z-score-calculator','55','70','10')),-1.5);bad('z-score-calculator','1','0','0');
-near(n(calc('circumference-calculator','5','radius'),2),10*Math.PI);near(n(calc('circumference-calculator',2*Math.PI,'circumference')),1);bad('circumference-calculator','0','radius');bad('circumference-calculator','1','area');
+near(n(calc('circumference-calculator','5','radius')),10*Math.PI);near(n(calc('circumference-calculator',2*Math.PI,'circumference'),1),1);bad('circumference-calculator','0','radius');bad('circumference-calculator','1','area');
 near(n(calc('pounds-ounces-converter','2.5','lb'),1),40);near(n(calc('pounds-ounces-converter','453.59237','g')),1);bad('pounds-ounces-converter','1','fluid');
 assert.equal(n(calc('pizza-party-calculator','12','3','8','10','15')),5);assert.equal(n(calc('pizza-party-calculator','12','0','8','10','15')),0);bad('pizza-party-calculator','1.5','3','8','0','1');
 near(n(calc('length-conversion-calculator','1','in','mm')),25.4);near(n(calc('length-conversion-calculator','1','mi','km')),1.609344);bad('length-conversion-calculator','1','kn','mi');
@@ -31,3 +31,5 @@ for(const previous of JSON.parse(fs.readFileSync('research/roadmap-369-baseline.
 console.log('Roadmap369: twenty functional tools; exact arithmetic, modes, units, invalid inputs, defaults and every existing global/PK definition preserved.');
 
 const ledger=JSON.parse(fs.readFileSync("research/roadmap-completion.json","utf8"));assert.equal(ledger.rows.filter(x=>x.status==="completed-scoped-destination").length,ledger.summary.completedScopedRows);assert.equal(ledger.summary.completedScopedRows,303);assert.equal(ledger.summary.nextUnreviewedRank,423);assert.notEqual(ledger.rows.find(x=>x.rank===410).status,"completed-scoped-destination");
+
+assert(calc('parallel-resistor-calculator','100,200','12')[2].value.includes('0.12 A'));assert(calc('parallel-resistor-calculator','100,200','12')[2].value.includes('1.44 W'));

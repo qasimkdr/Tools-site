@@ -7,7 +7,8 @@ permissions:
   contents: read
 concurrency:
   group: indexnow-production
-  cancel-in-progress: false
+  # Only the latest production commit should wait and notify; stale runs must not time out.
+  cancel-in-progress: true
 jobs:
   notify:
     runs-on: ubuntu-latest
