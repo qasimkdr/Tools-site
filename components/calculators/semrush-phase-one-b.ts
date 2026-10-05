@@ -7,7 +7,8 @@ const fractionValue=(input:string):[number,number]|null=>{const mixed=input.trim
 const formulaMasses:Record<string,number>={H:1.008,He:4.0026,Li:6.94,Be:9.0122,B:10.81,C:12.011,N:14.007,O:15.999,F:18.998403163,Ne:20.1797,Na:22.98976928,Mg:24.305,Al:26.9815385,Si:28.085,P:30.973761998,S:32.06,Cl:35.45,Ar:39.948,K:39.0983,Ca:40.078,Sc:44.955908,Ti:47.867,V:50.9415,Cr:51.9961,Mn:54.938044,Fe:55.845,Co:58.933194,Ni:58.6934,Cu:63.546,Zn:65.38,Ga:69.723,Ge:72.63,As:74.921595,Se:78.971,Br:79.904,Kr:83.798,Rb:85.4678,Sr:87.62,Y:88.90584,Zr:91.222,Nb:92.90637,Mo:95.95,Ru:101.07,Rh:102.9055,Pd:106.42,Ag:107.8682,Cd:112.414,In:114.818,Sn:118.71,Sb:121.76,Te:127.6,I:126.90447,Xe:131.293,Cs:132.90545196,Ba:137.327,La:138.90547,Ce:140.116,Pr:140.90766,Nd:144.242,Sm:150.36,Eu:151.964,Gd:157.25,Tb:158.92535,Dy:162.5,Ho:164.93033,Er:167.259,Tm:168.93422,Yb:173.045,Lu:174.9668,Hf:178.49,Ta:180.94788,W:183.84,Re:186.207,Os:190.23,Ir:192.217,Pt:195.084,Au:196.966569,Hg:200.592,Tl:204.38,Pb:207.2,Bi:208.9804,Th:232.0377,Pa:231.03588,U:238.02891};
 type MolecularBreakdown={total:number;counts:Record<string,number>};
 const molecularBreakdown=(raw:string):MolecularBreakdown|null=>{
-  const formula=raw.trim().replace(/\s+/g,"").replace(/[·•]/g,".");
+  if(raw.length>4096)return null;
+  const formula=raw.trim().replace(/[₀-₉]/g,d=>String("₀₁₂₃₄₅₆₇₈₉".indexOf(d))).replace(/\s+/g,"").replace(/[·•]/g,".");
   if(!formula||/[^A-Za-z0-9().]/.test(formula))return null;
   const parts=formula.split(".");
   const totals:Record<string,number>={};
@@ -17,31 +18,32 @@ const molecularBreakdown=(raw:string):MolecularBreakdown|null=>{
     const multiplier=lead?Number(lead[1]):1;
     const body=lead?part.slice(lead[1].length):part;
     const tokens=body.match(/[A-Z][a-z]?|\d+|[()]/g);
-    if(!tokens||tokens.join("")!==body||!Number.isInteger(multiplier)||multiplier<1)return null;
+    if(!tokens||tokens.join("")!==body||!Number.isSafeInteger(multiplier)||multiplier<1)return null;
     let index=0;
-    const group=(nested=false):Record<string,number>|null=>{
+    const group=(nested=false,depth=0):Record<string,number>|null=>{
+      if(depth>32)return null;
       const counts:Record<string,number>={}; let found=false;
       const merge=(source:Record<string,number>,m=1)=>Object.entries(source).forEach(([k,v])=>counts[k]=(counts[k]||0)+v*m);
       while(index<tokens.length&&tokens[index]!==")"){
         if(tokens[index]==="("){
-          index++; const inner=group(true); if(!inner)return null;
+          index++; const inner=group(true,depth+1); if(!inner)return null;
           const m=/^\d+$/.test(tokens[index]||"")?Number(tokens[index++]):1;
-          if(!Number.isInteger(m)||m<1)return null; merge(inner,m); found=true; continue;
+          if(!Number.isSafeInteger(m)||m<1)return null; merge(inner,m); found=true; continue;
         }
         const symbol=tokens[index++]; if(formulaMasses[symbol]===undefined)return null;
         const count=/^\d+$/.test(tokens[index]||"")?Number(tokens[index++]):1;
-        if(!Number.isInteger(count)||count<1)return null;
+        if(!Number.isSafeInteger(count)||count<1)return null;
         counts[symbol]=(counts[symbol]||0)+count; found=true;
       }
       if(nested){if(tokens[index]!==")")return null;index++}
-      return found?counts:null;
+      return found&&Object.values(counts).every(Number.isSafeInteger)?counts:null;
     };
     const counts=group(); if(!counts||index!==tokens.length)return null;
-    Object.keys(counts).forEach(k=>counts[k]*=multiplier); return counts;
+    Object.keys(counts).forEach(k=>counts[k]*=multiplier); return Object.values(counts).every(Number.isSafeInteger)?counts:null;
   };
   for(const part of parts){if(!part)return null;const counts=parsePart(part);if(!counts)return null;Object.entries(counts).forEach(([k,v])=>add(k,v))}
   const total=Object.entries(totals).reduce((sum,[el,count])=>sum+formulaMasses[el]*count,0);
-  return Number.isFinite(total)&&total>0?{total,counts:totals}:null;
+  return Object.values(totals).every(Number.isSafeInteger)&&Number.isFinite(total)&&total>0?{total,counts:totals}:null;
 };
 const bowlingScore=(input:string):{score:number;frames:number}|null=>{const tokens=input.trim().toUpperCase().split(/[\s,;]+/).filter(Boolean);let i=0;const rolls:number[]=[],frames:number[][]=[];const pin=(t:string)=>t==="X"?10:t==="-"?0:/^\d+$/.test(t)?Number(t):NaN;for(let frame=0;frame<10;frame++){const firstToken=tokens[i++];if(!firstToken)return null;const first=pin(firstToken);if(!Number.isInteger(first)||first<0||first>10)return null;const current=[first];if(frame<9&&first===10){rolls.push(10);frames.push(current);continue}const secondToken=tokens[i++];if(!secondToken)return null;const second=secondToken==="/"?(first===10?NaN:10-first):pin(secondToken);if(!Number.isInteger(second)||second<0||second>10||(frame<9&&first+second>10))return null;current.push(second);if(frame===9&&(first===10||first+second===10)){const thirdToken=tokens[i++];if(!thirdToken)return null;const third=thirdToken==="/"?(second===10?NaN:10-second):pin(thirdToken);if(!Number.isInteger(third)||third<0||third>10||(first===10&&second<10&&second+third>10))return null;current.push(third)}else if(frame===9&&i<tokens.length)return null;rolls.push(...current);frames.push(current)}if(i!==tokens.length)return null;let total=0,index=0;for(let frame=0;frame<9;frame++){const first=rolls[index];if(first===10){const next=rolls[index+1],after=rolls[index+2];if(next===undefined||after===undefined)return null;total+=10+next+after;index++}else{const second=rolls[index+1];if(second===undefined)return null;if(first+second===10){const bonus=rolls[index+2];if(bonus===undefined)return null;total+=10+bonus}else total+=first+second;index+=2}}total+=frames[9].reduce((sum,x)=>sum+x,0);return{score:total,frames:frames.length}};
 const dt=(s:string)=>new Date(`${s}T12:00:00Z`);
