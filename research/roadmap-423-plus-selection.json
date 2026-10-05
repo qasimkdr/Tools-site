@@ -1,0 +1,655 @@
+{
+  "reviewedAt": "2026-10-05",
+  "cutoff": "2026-09-28",
+  "cutoffRule": "Leave all existing definitions, logic and review dates unchanged. New tools are additive; protected or already covered rows are skipped.",
+  "sourceWorkbook": "SolvePilot_50_Tools_Daily_SEO_Roadmap.xlsx",
+  "reviewedRanks": [
+    423,
+    488
+  ],
+  "nextUnreviewedRank": 489,
+  "newCalculators": 20,
+  "supportedWorkbookKeywords": 56,
+  "keywordData": "Historical workbook metrics, not current observed rankings.",
+  "excludedKeywords": [
+    {
+      "rank": 424,
+      "keyword": "physics calculator",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 424,
+      "keyword": "advanced calculator",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 424,
+      "keyword": "sci calculator",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 424,
+      "keyword": "free scientific calculator",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 424,
+      "keyword": "high school calculator",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 435,
+      "keyword": "less common factor calculator",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 446,
+      "keyword": "how to calculate square root with a calculator",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 446,
+      "keyword": "how to find the square root with a calculator",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 446,
+      "keyword": "calculator with square root",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 458,
+      "keyword": "how to calculate lease payment",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 473,
+      "keyword": "net present value calculator",
+      "reason": "Outside the new bounded function; broader or already protected intent is not claimed."
+    },
+    {
+      "rank": 430,
+      "keyword": "resistance calculator",
+      "reason": "Malformed mass wording or general resistance-solving intent exceeds the implemented physical-density/color-decoder method."
+    },
+    {
+      "rank": 433,
+      "keyword": "mass of calculator",
+      "reason": "Malformed mass wording or general resistance-solving intent exceeds the implemented physical-density/color-decoder method."
+    },
+    {
+      "rank": 433,
+      "keyword": "mass mass calculator",
+      "reason": "Malformed mass wording or general resistance-solving intent exceeds the implemented physical-density/color-decoder method."
+    }
+  ],
+  "selection": [
+    {
+      "rank": 423,
+      "page": "Tip Calculator",
+      "primaryKeyword": "geekzilla.io tip calculator",
+      "status": "existing-covered-left-unchanged",
+      "slug": "tip-calculator",
+      "path": "/tools/tip-calculator/",
+      "existingUpdatedAt": "2026-09-21",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 424,
+      "page": "Scientific Calculator",
+      "primaryKeyword": "physics calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Primary physics/scientific-calculator intent exceeds the numeric trigonometric scope. Only five supported secondary queries map to the new trigonometry tool."
+    },
+    {
+      "rank": 425,
+      "page": "Trigonometry Calculator",
+      "primaryKeyword": "calculator trigonometri",
+      "status": "new-calculator",
+      "slug": "trigonometric-functions-calculator",
+      "path": "/tools/trigonometric-functions-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 426,
+      "page": "Love Calculator",
+      "primaryKeyword": "love calculator paper",
+      "status": "deferred-outside-verified-scope",
+      "reason": "No validated relationship-compatibility method; no invented love score."
+    },
+    {
+      "rank": 427,
+      "page": "Slope Calculator",
+      "primaryKeyword": "rise over run calculator",
+      "status": "new-calculator",
+      "slug": "slope-calculator",
+      "path": "/tools/slope-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 428,
+      "page": "Simple Interest Calculator",
+      "primaryKeyword": "interest and simple interest",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Dedicated simple-interest intent is not selected in this twenty-tool batch; the existing compound-growth page is not relabeled as simple interest."
+    },
+    {
+      "rank": 429,
+      "page": "Rental Property Calculator",
+      "primaryKeyword": "investment property calculator",
+      "status": "new-calculator",
+      "slug": "rental-property-cash-flow-calculator",
+      "path": "/tools/rental-property-cash-flow-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 430,
+      "page": "Resistor Calculator",
+      "primaryKeyword": "resistor calculator",
+      "status": "new-calculator",
+      "slug": "resistor-color-code-calculator",
+      "path": "/tools/resistor-color-code-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 431,
+      "page": "Bond Calculator",
+      "primaryKeyword": "i bond value calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Series I bond valuation requires verified issue-date rate history and redemption terms; no generic bond substitute."
+    },
+    {
+      "rank": 432,
+      "page": "Quadratic Formula Calculator",
+      "primaryKeyword": "quadratic calculator",
+      "status": "new-calculator",
+      "slug": "quadratic-equation-calculator",
+      "path": "/tools/quadratic-equation-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 433,
+      "page": "Mass Calculator",
+      "primaryKeyword": "calculator of mass",
+      "status": "new-calculator",
+      "slug": "density-mass-volume-calculator",
+      "path": "/tools/density-mass-volume-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 434,
+      "page": "Carbohydrate Calculator",
+      "primaryKeyword": "net carb calculator",
+      "status": "new-calculator",
+      "slug": "net-carbohydrate-calculator",
+      "path": "/tools/net-carbohydrate-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 435,
+      "page": "Lcm Calculator",
+      "primaryKeyword": "least common multiple calculator",
+      "status": "new-calculator",
+      "slug": "least-common-multiple-calculator",
+      "path": "/tools/least-common-multiple-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 436,
+      "page": "Etg Calculator",
+      "primaryKeyword": "etg calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "No validated individual EtG elimination or detection forecast."
+    },
+    {
+      "rank": 437,
+      "page": "Percentage Increase Calculator",
+      "primaryKeyword": "increase calculator",
+      "status": "protected-existing",
+      "slug": "percent-calculator",
+      "path": "/tools/percent-calculator/",
+      "existingUpdatedAt": "2026-10-03",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 438,
+      "page": "Reconstitution Calculator",
+      "primaryKeyword": "reconstitution calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Clinical reconstitution and dosing require validated product-specific instructions."
+    },
+    {
+      "rank": 439,
+      "page": "Weight Watchers Points Calculator",
+      "primaryKeyword": "weight watchers calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "No verified permissioned proprietary Weight Watchers scoring algorithm."
+    },
+    {
+      "rank": 440,
+      "page": "Paint Calculator",
+      "primaryKeyword": "paint calculator",
+      "status": "existing-covered-left-unchanged",
+      "reason": "The existing Pakistan paint takeoff accepts supplied area, coats and manufacturer coverage. Leave its definition and logic unchanged; no fabricated paint-product table or universal coverage rate.",
+      "slug": "paint-quantity-calculator-pakistan",
+      "path": "/pk/tools/paint-quantity-calculator-pakistan/"
+    },
+    {
+      "rank": 441,
+      "page": "Tax Calculator",
+      "primaryKeyword": "taxable income calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Taxable-income computation requires verified jurisdiction, tax-year rules and filing inputs."
+    },
+    {
+      "rank": 442,
+      "page": "Dice Roller Calculator",
+      "primaryKeyword": "dice calculator",
+      "status": "new-calculator",
+      "slug": "dice-sum-probability-calculator",
+      "path": "/tools/dice-sum-probability-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 443,
+      "page": "Vo2 Max Calculator",
+      "primaryKeyword": "estimate vo2 max calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "VO2 max estimation requires a selected validated test protocol and population scope."
+    },
+    {
+      "rank": 444,
+      "page": "Monthly Income Calculator",
+      "primaryKeyword": "monthly income calculator",
+      "status": "protected-existing",
+      "slug": "paycheck-estimator-calculator",
+      "path": "/tools/paycheck-estimator-calculator/",
+      "existingUpdatedAt": "2026-09-29",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 445,
+      "page": "Remainder",
+      "primaryKeyword": "remainder solver",
+      "status": "protected-existing",
+      "slug": "big-number-calculator",
+      "path": "/tools/big-number-calculator/",
+      "existingUpdatedAt": "2026-10-05",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 446,
+      "page": "Root Calculator",
+      "primaryKeyword": "cube rooting calculator",
+      "status": "new-calculator",
+      "slug": "nth-root-calculator",
+      "path": "/tools/nth-root-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 447,
+      "page": "New York Tax Calculator",
+      "primaryKeyword": "nyc income tax calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "NYC income tax requires current verified statutory rules and filing scope."
+    },
+    {
+      "rank": 448,
+      "page": "Commission Calculator",
+      "primaryKeyword": "commission calculator",
+      "status": "existing-covered-left-unchanged",
+      "slug": "tiered-commission-calculator",
+      "path": "/tools/tiered-commission-calculator/",
+      "existingUpdatedAt": "2026-09-25",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 449,
+      "page": "Bmr Calculator",
+      "primaryKeyword": "harris benedict calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Harris–Benedict intent requires a separately verified formula and clinical scope; no relabeling of existing BMR."
+    },
+    {
+      "rank": 450,
+      "page": "Title Case",
+      "primaryKeyword": "title case converter",
+      "status": "new-calculator",
+      "slug": "title-case-converter",
+      "path": "/tools/title-case-converter/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 451,
+      "page": "Pregnancy Calculator",
+      "primaryKeyword": "pregnancy test calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Pregnancy-test timing cannot be determined from a generic pregnancy-date arithmetic result."
+    },
+    {
+      "rank": 452,
+      "page": "Conception Calculator",
+      "primaryKeyword": "implantation estimator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Implantation/conception prediction needs disclosed clinical uncertainty and validated method."
+    },
+    {
+      "rank": 453,
+      "page": "Correlation Calculator",
+      "primaryKeyword": "correlation coefficient calculator",
+      "status": "protected-existing",
+      "slug": "correlation-coefficient-calculator",
+      "path": "/tools/correlation-coefficient-calculator/",
+      "existingUpdatedAt": "2026-10-04",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 454,
+      "page": "Shoe Size Conversion Calculator",
+      "primaryKeyword": "foot size calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Shoe-size conversion depends on a verified manufacturer or regional chart, not one universal rule."
+    },
+    {
+      "rank": 455,
+      "page": "Margin Calculator",
+      "primaryKeyword": "gm calculator",
+      "status": "protected-existing",
+      "slug": "profit-margin-calculator-global",
+      "path": "/tools/profit-margin-calculator-global/",
+      "existingUpdatedAt": "2026-10-02",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 456,
+      "page": "Sum Of Series Calculator",
+      "primaryKeyword": "summation calculator",
+      "status": "new-calculator",
+      "slug": "sequence-sum-calculator",
+      "path": "/tools/sequence-sum-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 457,
+      "page": "Bac Calculator",
+      "primaryKeyword": "most accurate bac calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "No driving-safety or individual BAC-clearance guarantee."
+    },
+    {
+      "rank": 458,
+      "page": "Auto Lease Calculator",
+      "primaryKeyword": "lease buyout calculator",
+      "status": "new-calculator",
+      "slug": "lease-buyout-calculator",
+      "path": "/tools/lease-buyout-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 459,
+      "page": "Systems Of Equations Calculator",
+      "primaryKeyword": "systems of equations calculator",
+      "status": "protected-existing",
+      "slug": "substitution-calculator",
+      "path": "/tools/substitution-calculator/",
+      "existingUpdatedAt": "2026-10-04",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 460,
+      "page": "Currency Calculator",
+      "primaryKeyword": "money calculator online",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Broad money/currency intent requires defined currency units and a verifiable exchange basis."
+    },
+    {
+      "rank": 461,
+      "page": "Protein Calculator",
+      "primaryKeyword": "protein calculator in food",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Food protein totals and muscle-gain targets are distinct intents; no unverified target or unsupported food database."
+    },
+    {
+      "rank": 462,
+      "page": "Rent Vs Buy Calculator",
+      "primaryKeyword": "rent vs buy calculator nyt",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Branded NYT rent-versus-buy intent is not reproduced by a generic lease comparison."
+    },
+    {
+      "rank": 463,
+      "page": "Half Life Calculator",
+      "primaryKeyword": "half life converter",
+      "status": "new-calculator",
+      "slug": "half-life-calculator",
+      "path": "/tools/half-life-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 464,
+      "page": "Acreage Calculator",
+      "primaryKeyword": "acreage calculator",
+      "status": "new-calculator",
+      "slug": "acreage-calculator",
+      "path": "/tools/acreage-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 465,
+      "page": "Budget Calculator",
+      "primaryKeyword": "bill calculator",
+      "status": "existing-covered-left-unchanged",
+      "slug": "budget-percentage-calculator",
+      "path": "/tools/budget-percentage-calculator/",
+      "existingUpdatedAt": "2026-09-22",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 466,
+      "page": "Debt Payoff Calculator",
+      "primaryKeyword": "debt avalanche calculator",
+      "status": "existing-covered-left-unchanged",
+      "slug": "debt-snowball-vs-avalanche-calculator",
+      "path": "/tools/debt-snowball-vs-avalanche-calculator/",
+      "existingUpdatedAt": "2026-09-25",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 467,
+      "page": "Lean Body Mass Calculator",
+      "primaryKeyword": "lbm calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Lean mass is not muscle mass; no unverified body-composition estimator."
+    },
+    {
+      "rank": 468,
+      "page": "Roi Calculator",
+      "primaryKeyword": "annualized return calculator",
+      "status": "new-calculator",
+      "slug": "annualized-return-calculator",
+      "path": "/tools/annualized-return-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 469,
+      "page": "Investment Calculator",
+      "primaryKeyword": "appreciation calculator",
+      "status": "protected-existing",
+      "slug": "compound-interest-calculator",
+      "path": "/tools/compound-interest-calculator/",
+      "existingUpdatedAt": "2026-10-03",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 470,
+      "page": "Common Factor Calculator",
+      "primaryKeyword": "common factor calculator",
+      "status": "protected-existing",
+      "slug": "gcf-calculator",
+      "path": "/tools/gcf-calculator/",
+      "existingUpdatedAt": "2026-09-29",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 471,
+      "page": "Finance Calculator",
+      "primaryKeyword": "tvm solver",
+      "status": "new-calculator",
+      "slug": "time-value-of-money-calculator",
+      "path": "/tools/time-value-of-money-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 472,
+      "page": "Sales Tax Calculator",
+      "primaryKeyword": "texas state tax calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Texas sales-tax intent requires verified state/local rules and tax base."
+    },
+    {
+      "rank": 473,
+      "page": "Present Value Calculator",
+      "primaryKeyword": "present day value calculator",
+      "status": "merged-new-scoped-destination",
+      "slug": "time-value-of-money-calculator",
+      "path": "/tools/time-value-of-money-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 474,
+      "page": "Auto Loan Calculator",
+      "primaryKeyword": "car payoff calculator",
+      "status": "existing-covered-left-unchanged",
+      "slug": "loan-early-payment-calculator",
+      "path": "/tools/loan-early-payment-calculator/",
+      "existingUpdatedAt": "2026-09-22",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 475,
+      "page": "Integer Calculator",
+      "primaryKeyword": "integer calculator step by step",
+      "status": "protected-existing",
+      "slug": "big-number-calculator",
+      "path": "/tools/big-number-calculator/",
+      "existingUpdatedAt": "2026-10-05",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 476,
+      "page": "Feet To Inches Calculator",
+      "primaryKeyword": "conversion calculator feet to inches",
+      "status": "protected-existing",
+      "slug": "length-conversion-calculator",
+      "path": "/tools/length-conversion-calculator/",
+      "existingUpdatedAt": "2026-10-05",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 477,
+      "page": "Distance Calculator",
+      "primaryKeyword": "distance formula calculator",
+      "status": "protected-existing",
+      "slug": "midpoint-calculator",
+      "path": "/tools/midpoint-calculator/",
+      "existingUpdatedAt": "2026-10-05",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 478,
+      "page": "Rent Calculator",
+      "primaryKeyword": "rent budget calculator",
+      "status": "existing-covered-left-unchanged",
+      "slug": "rent-affordability-calculator",
+      "path": "/tools/rent-affordability-calculator/",
+      "existingUpdatedAt": "2026-09-22",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 479,
+      "page": "Density Calculator",
+      "primaryKeyword": "density calculator",
+      "status": "merged-new-scoped-destination",
+      "slug": "density-mass-volume-calculator",
+      "path": "/tools/density-mass-volume-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 480,
+      "page": "Bpm Calculator",
+      "primaryKeyword": "bpm calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "A dedicated beat-count observation method is outside this selected twenty-tool batch."
+    },
+    {
+      "rank": 481,
+      "page": "Date Difference Calculator",
+      "primaryKeyword": "calculate number of days between dates",
+      "status": "protected-existing",
+      "slug": "age-difference-calculator",
+      "path": "/tools/age-difference-calculator/",
+      "existingUpdatedAt": "2026-10-05",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 482,
+      "page": "Prime Factorization Calculator",
+      "primaryKeyword": "prime factorization calculator",
+      "status": "new-calculator",
+      "slug": "prime-factorization-calculator",
+      "path": "/tools/prime-factorization-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 483,
+      "page": "Mutual Fund Calculator",
+      "primaryKeyword": "mf calculator",
+      "status": "deferred-outside-verified-scope",
+      "reason": "Mutual-fund performance needs explicit fee, return, contribution and jurisdiction scope."
+    },
+    {
+      "rank": 484,
+      "page": "Calorie Calculator",
+      "primaryKeyword": "kcal calories converter",
+      "status": "deferred-outside-verified-scope",
+      "reason": "kcal/food-calorie conversion requires clear small-calorie versus nutrition-Calorie units, not a duplicate energy-intake target."
+    },
+    {
+      "rank": 485,
+      "page": "Amortization Calculator",
+      "primaryKeyword": "auto loan calculator with extra payments",
+      "status": "existing-covered-left-unchanged",
+      "slug": "loan-early-payment-calculator",
+      "path": "/tools/loan-early-payment-calculator/",
+      "existingUpdatedAt": "2026-09-22",
+      "reason": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded."
+    },
+    {
+      "rank": 486,
+      "page": "Ip Subnet Calculator",
+      "primaryKeyword": "ipv6 subnet calculator",
+      "status": "new-calculator",
+      "slug": "ipv6-subnet-calculator",
+      "path": "/tools/ipv6-subnet-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 487,
+      "page": "Number Sequence Calculator",
+      "primaryKeyword": "arithmetic sequence calculator",
+      "status": "merged-new-scoped-destination",
+      "slug": "sequence-sum-calculator",
+      "path": "/tools/sequence-sum-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    },
+    {
+      "rank": 488,
+      "page": "Bandwidth Calculator",
+      "primaryKeyword": "bandwidth calculator",
+      "status": "new-calculator",
+      "slug": "bandwidth-requirement-calculator",
+      "path": "/tools/bandwidth-requirement-calculator/",
+      "reason": "Original bounded implementation with disclosed assumptions; broader grouped queries are not implied."
+    }
+  ]
+}

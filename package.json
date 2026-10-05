@@ -26,7 +26,8 @@
     "related:report": "node scripts/verify-related-navigation.cjs --report",
     "verify:navigation": "node --test scripts/navigation-graph.test.mjs && node scripts/check-navigation-graph.mjs",
     "verify:roadmap328": "node scripts/verify-roadmap-328-plus.cjs",
-    "verify:roadmap369": "node scripts/verify-roadmap-369-plus.cjs"
+    "verify:roadmap369": "node scripts/verify-roadmap-369-plus.cjs",
+    "verify:roadmap423": "node scripts/verify-roadmap-423-plus.cjs"
   },
   "dependencies": {
     "next": "16.3.5",

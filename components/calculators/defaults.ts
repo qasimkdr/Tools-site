@@ -1,6 +1,27 @@
 export type CalculatorDefaults = [string, string, string, string?, string?, string?, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  "trigonometric-functions-calculator": ["30", "sin", "deg"],
+  "slope-calculator": ["2", "3", "6", "11"],
+  "rental-property-cash-flow-calculator": ["2000", "5", "600", "900", "60000", "240000"],
+  "resistor-color-code-calculator": ["4", "yellow", "violet", "black", "red", "gold"],
+  "quadratic-equation-calculator": ["1", "-5", "6"],
+  "density-mass-volume-calculator": ["density", "2", "0.001", "2000"],
+  "net-carbohydrate-calculator": ["20", "5", "4", "50", "1.5"],
+  "least-common-multiple-calculator": ["12,18,30", "0", "0"],
+  "dice-sum-probability-calculator": ["2", "6", "7", "eq"],
+  "nth-root-calculator": ["-27", "3", "0"],
+  "title-case-converter": ["a guide to the science of light", "headline", "0"],
+  "sequence-sum-calculator": ["3", "2", "5", "arithmetic"],
+  "lease-buyout-calculator": ["18000", "300", "1200", "21000", "3500", "0", "48"],
+  "half-life-calculator": ["decay", "80", "8", "4", "20"],
+  "acreage-calculator": ["0,0\n100,0\n100,200\n0,200", "ft", "0"],
+  "annualized-return-calculator": ["1000", "1210", "2"],
+  "time-value-of-money-calculator": ["fv", "1", "12", "1000", "100", "2395.075331451", "end"],
+  "prime-factorization-calculator": ["360", "0", "0"],
+  "ipv6-subnet-calculator": ["2001:db8::1234", "64", "80"],
+  "bandwidth-requirement-calculator": ["5", "10", "20", "70"],
+
   "age-difference-calculator": ["2000-01-15", "2002-03-20", "0"],
   "parallel-resistor-calculator": ["100, 200", "12", "0"],
   "scrap-silver-calculator": ["100", "g", "92.5", "30", "90"],

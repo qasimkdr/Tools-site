@@ -2,16 +2,16 @@
   "summary": {
     "asOf": "2026-10-05",
     "totalRoadmapRows": 489,
-    "completedScopedRows": 303,
-    "completedCalculatorOrToolRows": 293,
+    "completedScopedRows": 326,
+    "completedCalculatorOrToolRows": 316,
     "completedGuideRows": 10,
-    "uniqueCalculatorOrToolDestinations": 230,
+    "uniqueCalculatorOrToolDestinations": 250,
     "uniqueGuideDestinations": 10,
-    "notCountedRows": 186,
-    "latestReviewedRank": 422,
-    "nextUnreviewedRank": 423,
+    "notCountedRows": 163,
+    "latestReviewedRank": 488,
+    "nextUnreviewedRank": 489,
     "thisBatchNewCalculators": 20,
-    "thisBatchExactKeywords": 114,
+    "thisBatchExactKeywords": 56,
     "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis\u2013Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately."
   },
   "rows": [
@@ -4634,397 +4634,644 @@
       "rank": 423,
       "roadmapPage": "Tip Calculator",
       "primaryKeyword": "geekzilla.io tip calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "existing-covered-left-unchanged",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 424,
       "roadmapPage": "Scientific Calculator",
       "primaryKeyword": "physics calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Primary physics/scientific-calculator intent exceeds the numeric trigonometric scope. Only five supported secondary queries map to the new trigonometry tool.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 425,
       "roadmapPage": "Trigonometry Calculator",
       "primaryKeyword": "calculator trigonometri",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/trigonometric-functions-calculator/",
+      "slug": "trigonometric-functions-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/trigonometric-functions-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 426,
       "roadmapPage": "Love Calculator",
       "primaryKeyword": "love calculator paper",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "No validated relationship-compatibility method; no invented love score.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 427,
       "roadmapPage": "Slope Calculator",
       "primaryKeyword": "rise over run calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/slope-calculator/",
+      "slug": "slope-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/slope-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 428,
       "roadmapPage": "Simple Interest Calculator",
       "primaryKeyword": "interest and simple interest",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Dedicated simple-interest intent is not selected in this twenty-tool batch; the existing compound-growth page is not relabeled as simple interest.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 429,
       "roadmapPage": "Rental Property Calculator",
       "primaryKeyword": "investment property calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/rental-property-cash-flow-calculator/",
+      "slug": "rental-property-cash-flow-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/rental-property-cash-flow-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 430,
       "roadmapPage": "Resistor Calculator",
       "primaryKeyword": "resistor calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/resistor-color-code-calculator/",
+      "slug": "resistor-color-code-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/resistor-color-code-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 431,
       "roadmapPage": "Bond Calculator",
       "primaryKeyword": "i bond value calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Series I bond valuation requires verified issue-date rate history and redemption terms; no generic bond substitute.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 432,
       "roadmapPage": "Quadratic Formula Calculator",
       "primaryKeyword": "quadratic calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/quadratic-equation-calculator/",
+      "slug": "quadratic-equation-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/quadratic-equation-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 433,
       "roadmapPage": "Mass Calculator",
       "primaryKeyword": "calculator of mass",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/density-mass-volume-calculator/",
+      "slug": "density-mass-volume-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/density-mass-volume-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 434,
       "roadmapPage": "Carbohydrate Calculator",
       "primaryKeyword": "net carb calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/net-carbohydrate-calculator/",
+      "slug": "net-carbohydrate-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/net-carbohydrate-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 435,
       "roadmapPage": "Lcm Calculator",
       "primaryKeyword": "least common multiple calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/least-common-multiple-calculator/",
+      "slug": "least-common-multiple-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/least-common-multiple-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 436,
       "roadmapPage": "Etg Calculator",
       "primaryKeyword": "etg calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "No validated individual EtG elimination or detection forecast.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 437,
       "roadmapPage": "Percentage Increase Calculator",
       "primaryKeyword": "increase calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 438,
       "roadmapPage": "Reconstitution Calculator",
       "primaryKeyword": "reconstitution calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Clinical reconstitution and dosing require validated product-specific instructions.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 439,
       "roadmapPage": "Weight Watchers Points Calculator",
       "primaryKeyword": "weight watchers calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "No verified permissioned proprietary Weight Watchers scoring algorithm.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 440,
       "roadmapPage": "Paint Calculator",
       "primaryKeyword": "paint calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "existing-covered-left-unchanged",
+      "evidence": "The existing Pakistan paint takeoff accepts supplied area, coats and manufacturer coverage. Leave its definition and logic unchanged; no fabricated paint-product table or universal coverage rate.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 441,
       "roadmapPage": "Tax Calculator",
       "primaryKeyword": "taxable income calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Taxable-income computation requires verified jurisdiction, tax-year rules and filing inputs.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 442,
       "roadmapPage": "Dice Roller Calculator",
       "primaryKeyword": "dice calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/dice-sum-probability-calculator/",
+      "slug": "dice-sum-probability-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/dice-sum-probability-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 443,
       "roadmapPage": "Vo2 Max Calculator",
       "primaryKeyword": "estimate vo2 max calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "VO2 max estimation requires a selected validated test protocol and population scope.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 444,
       "roadmapPage": "Monthly Income Calculator",
       "primaryKeyword": "monthly income calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 445,
       "roadmapPage": "Remainder",
       "primaryKeyword": "remainder solver",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 446,
       "roadmapPage": "Root Calculator",
       "primaryKeyword": "cube rooting calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/nth-root-calculator/",
+      "slug": "nth-root-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/nth-root-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 447,
       "roadmapPage": "New York Tax Calculator",
       "primaryKeyword": "nyc income tax calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "NYC income tax requires current verified statutory rules and filing scope.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 448,
       "roadmapPage": "Commission Calculator",
       "primaryKeyword": "commission calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "existing-covered-left-unchanged",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 449,
       "roadmapPage": "Bmr Calculator",
       "primaryKeyword": "harris benedict calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Harris\u2013Benedict intent requires a separately verified formula and clinical scope; no relabeling of existing BMR.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 450,
       "roadmapPage": "Title Case",
       "primaryKeyword": "title case converter",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/title-case-converter/",
+      "slug": "title-case-converter",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/title-case-converter/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 451,
       "roadmapPage": "Pregnancy Calculator",
       "primaryKeyword": "pregnancy test calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Pregnancy-test timing cannot be determined from a generic pregnancy-date arithmetic result.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 452,
       "roadmapPage": "Conception Calculator",
       "primaryKeyword": "implantation estimator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Implantation/conception prediction needs disclosed clinical uncertainty and validated method.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 453,
       "roadmapPage": "Correlation Calculator",
       "primaryKeyword": "correlation coefficient calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 454,
       "roadmapPage": "Shoe Size Conversion Calculator",
       "primaryKeyword": "foot size calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Shoe-size conversion depends on a verified manufacturer or regional chart, not one universal rule.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 455,
       "roadmapPage": "Margin Calculator",
       "primaryKeyword": "gm calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 456,
       "roadmapPage": "Sum Of Series Calculator",
       "primaryKeyword": "summation calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/sequence-sum-calculator/",
+      "slug": "sequence-sum-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/sequence-sum-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 457,
       "roadmapPage": "Bac Calculator",
       "primaryKeyword": "most accurate bac calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "No driving-safety or individual BAC-clearance guarantee.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 458,
       "roadmapPage": "Auto Lease Calculator",
       "primaryKeyword": "lease buyout calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/lease-buyout-calculator/",
+      "slug": "lease-buyout-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/lease-buyout-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 459,
       "roadmapPage": "Systems Of Equations Calculator",
       "primaryKeyword": "systems of equations calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 460,
       "roadmapPage": "Currency Calculator",
       "primaryKeyword": "money calculator online",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Broad money/currency intent requires defined currency units and a verifiable exchange basis.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 461,
       "roadmapPage": "Protein Calculator",
       "primaryKeyword": "protein calculator in food",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Food protein totals and muscle-gain targets are distinct intents; no unverified target or unsupported food database.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 462,
       "roadmapPage": "Rent Vs Buy Calculator",
       "primaryKeyword": "rent vs buy calculator nyt",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Branded NYT rent-versus-buy intent is not reproduced by a generic lease comparison.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 463,
       "roadmapPage": "Half Life Calculator",
       "primaryKeyword": "half life converter",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/half-life-calculator/",
+      "slug": "half-life-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/half-life-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 464,
       "roadmapPage": "Acreage Calculator",
       "primaryKeyword": "acreage calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/acreage-calculator/",
+      "slug": "acreage-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/acreage-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 465,
       "roadmapPage": "Budget Calculator",
       "primaryKeyword": "bill calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "existing-covered-left-unchanged",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 466,
       "roadmapPage": "Debt Payoff Calculator",
       "primaryKeyword": "debt avalanche calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "existing-covered-left-unchanged",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 467,
       "roadmapPage": "Lean Body Mass Calculator",
       "primaryKeyword": "lbm calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Lean mass is not muscle mass; no unverified body-composition estimator.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 468,
       "roadmapPage": "Roi Calculator",
       "primaryKeyword": "annualized return calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/annualized-return-calculator/",
+      "slug": "annualized-return-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/annualized-return-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 469,
       "roadmapPage": "Investment Calculator",
       "primaryKeyword": "appreciation calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 470,
       "roadmapPage": "Common Factor Calculator",
       "primaryKeyword": "common factor calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 471,
       "roadmapPage": "Finance Calculator",
       "primaryKeyword": "tvm solver",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/time-value-of-money-calculator/",
+      "slug": "time-value-of-money-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/time-value-of-money-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 472,
       "roadmapPage": "Sales Tax Calculator",
       "primaryKeyword": "texas state tax calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Texas sales-tax intent requires verified state/local rules and tax base.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 473,
       "roadmapPage": "Present Value Calculator",
       "primaryKeyword": "present day value calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/time-value-of-money-calculator/",
+      "slug": "time-value-of-money-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/time-value-of-money-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 474,
       "roadmapPage": "Auto Loan Calculator",
       "primaryKeyword": "car payoff calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "existing-covered-left-unchanged",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 475,
       "roadmapPage": "Integer Calculator",
       "primaryKeyword": "integer calculator step by step",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 476,
       "roadmapPage": "Feet To Inches Calculator",
       "primaryKeyword": "conversion calculator feet to inches",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 477,
       "roadmapPage": "Distance Calculator",
       "primaryKeyword": "distance formula calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 478,
       "roadmapPage": "Rent Calculator",
       "primaryKeyword": "rent budget calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "existing-covered-left-unchanged",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 479,
       "roadmapPage": "Density Calculator",
       "primaryKeyword": "density calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/density-mass-volume-calculator/",
+      "slug": "density-mass-volume-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/density-mass-volume-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 480,
       "roadmapPage": "Bpm Calculator",
       "primaryKeyword": "bpm calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "A dedicated beat-count observation method is outside this selected twenty-tool batch.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 481,
       "roadmapPage": "Date Difference Calculator",
       "primaryKeyword": "calculate number of days between dates",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 482,
       "roadmapPage": "Prime Factorization Calculator",
       "primaryKeyword": "prime factorization calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/prime-factorization-calculator/",
+      "slug": "prime-factorization-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/prime-factorization-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 483,
       "roadmapPage": "Mutual Fund Calculator",
       "primaryKeyword": "mf calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "Mutual-fund performance needs explicit fee, return, contribution and jurisdiction scope.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 484,
       "roadmapPage": "Calorie Calculator",
       "primaryKeyword": "kcal calories converter",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "evidence": "kcal/food-calorie conversion requires clear small-calorie versus nutrition-Calorie units, not a duplicate energy-intake target.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 485,
       "roadmapPage": "Amortization Calculator",
       "primaryKeyword": "auto loan calculator with extra payments",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "existing-covered-left-unchanged",
+      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
+      "reviewedAt": "2026-10-05"
     },
     {
       "rank": 486,
       "roadmapPage": "Ip Subnet Calculator",
       "primaryKeyword": "ipv6 subnet calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/ipv6-subnet-calculator/",
+      "slug": "ipv6-subnet-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/ipv6-subnet-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 487,
       "roadmapPage": "Number Sequence Calculator",
       "primaryKeyword": "arithmetic sequence calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/sequence-sum-calculator/",
+      "slug": "sequence-sum-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/sequence-sum-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 488,
       "roadmapPage": "Bandwidth Calculator",
       "primaryKeyword": "bandwidth calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/bandwidth-requirement-calculator/",
+      "slug": "bandwidth-requirement-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/bandwidth-requirement-calculator/"
+      ],
+      "evidence": "roadmap423 original scoped method, source, tested dedicated resolver and exported page; does not implement every broad grouped keyword"
     },
     {
       "rank": 489,

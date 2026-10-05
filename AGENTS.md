@@ -40,12 +40,12 @@ Prefer focused searches and small excerpts. Never repeatedly load large catalogs
 
 Update this section whenever a completed phase changes counts or architecture.
 
-Last verified: **4 October 2026**
+Last verified: **5 October 2026**
 
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 275 canonical + 5 noindex aliases (280 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 315 canonical + 5 noindex aliases (320 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,7 +54,7 @@ Last verified: **4 October 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 45 |
 
-The production build is expected to generate **651 static pages** after the next 20 calculators following rank 327. The content gate recognizes **181 Pakistan calculators, 275 indexable global tools (280 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 45 guides**.
+The production build is expected to generate **691 static pages** after the twenty distinct calculators selected from ranks 423–488. The content gate recognizes **181 Pakistan calculators, 315 indexable global tools (320 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 45 guides**. There are **682 canonical sitemap URLs** and **663 tool/guide profiles**. The next unreviewed workbook rank is **489**. These counts do not establish indexing or search positions.
 
 The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
 
@@ -576,3 +576,17 @@ Dew point uses a liquid-water Magnus approximation, with both air and computed d
 Current target totals after validated export: **671 static pages**, **295 canonical global tools plus five aliases**, **45 guides**, **662 canonical sitemap URLs**, **643 tool/guide profiles**. Workbook ledger: **303/489 scoped rows**, **293 calculator/tool rows and10 guides**, **230 distinct calculator/tool destinations and10 guide destinations**. Counts describe scoped implementations, not indexed pages or ranking guarantees. Run `verify:roadmap369`, `verify:calculate`, prior baseline gates, typecheck, full build, related navigation, navigation graph and whitespace checks before publishing. Keep two-worker static export and the post-live IndexNow workflow.
 
 IndexNow notification concurrency now cancels superseded runs (`cancel-in-progress: true`) so queued older commits cannot fail merely because a newer production manifest replaced them. Keep exact-commit live verification, ownership-key verification and checkpoint saving only after accepted submissions. Cancellation may leave the checkpoint at the last accepted saved manifest; the next run can safely resubmit the remaining changed URLs. Do not treat a cancelled stale run as a failed deployment or disable notifications.
+
+## Roadmap continuation from rank 423 — 5 October 2026
+
+Reviewed ranks **423–488** and added **20 distinct canonical tools**: Trigonometric Functions, Slope, Rental Property Cash Flow, Resistor Color Codes, Quadratic Equations, Density/Mass/Volume, Net Carbohydrate, Least Common Multiple, Dice Sum Probability, Nth Roots, Title Case, Sequence Sums, Lease Buyout, Half-Life, Acreage, Annualized Return, Time Value of Money, Prime Factorization, IPv6 Subnets and Bandwidth Requirements. Sources of truth are `lib/roadmap-423-plus-tools.ts`, `lib/roadmap-423-plus-audit.ts`, `lib/roadmap-423-plus-keywords.ts` and `components/calculators/roadmap-423-plus.ts`. The new bounded engines map **56 supported historical workbook queries**. Historical volume and difficulty are not current Search Console observations.
+
+The user's cutoff is **28 September 2026**. All **300 pre-existing global definitions and 181 Pakistan definitions**, including dates, remain unchanged and are fingerprinted in `research/roadmap-423-baseline.json`. Existing computation modules are unchanged. Shared integration adds only the new resolver/catalog, defaults and reviewed contextual task families; scoped long-result styling applies only to named new pages. Keep calculations click-gated and preserve submitted output during edits.
+
+Do not broaden these implementations silently. Trigonometry is not a full physics/scientific calculator; roots are real numeric principal roots; sequences are finite arithmetic/geometric progressions; TVM solves only PV/FV/PMT with a per-period rate and disclosed positive-balance convention. Rental and lease models use supplied amounts, not live quotes or tax engines. Net carbohydrate is an explicit label-subtraction scenario, not a glucose or medication model. Half-life is constant mathematical decay, not clinical clearance. Dice probabilities use identical fair independent numbered dice, not a random roller or advanced game mechanics. Acreage uses simple planar measured polygons, not geographic coordinates or a legal survey. IPv6 is hexadecimal 128-bit prefix arithmetic with a deliberately limited parser; counts are address space, not usable-host guarantees or broadcast addresses. Title capitalization follows simple disclosed English rules and normalizes acronyms; it does not claim complete compliance with named style guides.
+
+`research/roadmap-423-plus-selection.json` records every inspected row, preserved destinations and exclusions. Ranks 473,479,487 intentionally merge into new TVM, density and sequence destinations. Rank424's primary physics intent is not counted complete even though five valid trigonometric secondary queries are supported. Other unsupported medical, branded, proprietary or current-tax intents remain deferred. Protected or already covered existing rows are not counted as newly completed. The next unreviewed rank is **489**; the workbook still has deferred rows, so reaching its end will not mean every intent is implemented.
+
+Expected totals: **691 static pages**, **315 canonical global tools plus five aliases**, **45 guides**, **682 sitemap URLs**, **663 tool/guide profiles**. The conservative ledger has **326/489 scoped rows**, **316 calculator/tool rows and10 guide rows**, with **250 distinct calculator/tool destinations and10 guide destinations**. Preserve the original denominator and distinguish row completion from indexed or ranking pages.
+
+Run `verify:roadmap423`, existing roadmap268/328/369 baseline checks, `verify:calculate`, typecheck, full production build, related-navigation export, navigation graph and `git diff --check` before publishing. The new content gate requires 900 useful rendered words, five FAQs, distinct method/examples, self-canonical metadata, WebApplication/FAQPage/HowTo/BreadcrumbList schema, all supported mapped keywords, directory/sitemap discovery and a contextual incoming link. Title Case links to existing generator text tools; do not invent global text-counter routes. Keep two-worker static export and exact-live-commit IndexNow checks with cancellation of superseded notification runs.
