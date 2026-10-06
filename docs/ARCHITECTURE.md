@@ -29,7 +29,7 @@ When adding a new standalone catalog, integrate all six destinations. Existing c
 ## Calculator flow
 
 1. Defaults live in `components/calculators/defaults.ts`.
-2. `components/Calculator.tsx` sends the slug and up to five values through ordered resolvers.
+2. `components/Calculator.tsx` sends the slug and up to eight values through ordered resolvers.
 3. Focused resolver modules return labels, suffixes and results.
 4. Currency-neutral global tools pass `currencyNeutral` or belong to the neutral slug set.
 
@@ -38,3 +38,5 @@ Keep resolver modules category-focused. Do not keep expanding one universal cond
 ## Validation
 
 `scripts/validate-content.mjs` reads exported HTML from `out/` and blocks incomplete builds. Add phase-specific slugs and exact checks there instead of relying on manual review alone.
+
+The gap20 resolver is additive and ordered before prior resolvers. NYC and Nike reference datasets are separated from the engine in `lib/gap20-reference-data.ts`. Original prior tool definitions are fingerprinted independently of reviewed navigation additions.

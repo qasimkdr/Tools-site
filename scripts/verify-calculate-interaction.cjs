@@ -125,3 +125,36 @@ for(const [slug,label,next] of deferredInteraction){
  field(tree,label).props.onChange(next);tree=render(slug,false);assert.equal(result(tree),saved,slug+' retained snapshot');assert(allText(tree).includes('Inputs changed'));button(tree).props.onClick();tree=render(slug,false);assert.notEqual(result(tree),saved,slug+' updated only on calculate');assert(!allText(tree).includes('PKR'),slug+' neutral units');
 }
 console.log('Deferred interaction: all twenty actual callbacks, retained results, explicit recalculation and RMD eligibility gate passed.');
+
+const gap20Interaction=[
+ ['decathlon-scoring-calculator','Ten performances in official event order: seconds or metres','11 7 14 2 52 15.5 42 4.5 55 270'],
+ ['dotted-note-duration-calculator','Quarter-note tempo','240'],
+ ['matrix-basis-calculator','Real matrix: one row per line','1 0 0\n0 1 0'],
+ ['complex-number-calculator','First real part','6'],
+ ['snow-weight-load-calculator','Measured snow depth or water equivalent','.6'],
+ ['labrador-human-age-calculator','Age: dog years or human comparison years','8'],
+ ['golf-handicap-worksheet','18-hole adjusted gross score','100'],
+ ['absolute-neutrophil-count-calculator','Reported white blood cell count','9'],
+ ['harris-benedict-calculator','Adult body mass','80'],
+ ['adult-shoe-size-converter','Published size or measured foot length','10'],
+ ['food-energy-calculator','Nutrient rows: name, grams on one common basis','carbs,20\nprotein,10\nfat,10\nfibre,3'],
+ ['taxable-income-worksheet','Already assessed includible income amounts','60000\n2000'],
+ ['texas-sales-tax-calculator','Supplied taxable sale price','200'],
+ ['nyc-resident-income-tax-calculator','2025 NYC taxable income: IT-201 line 47','80000'],
+ ['clothing-size-chart-matcher','Measured bust or chest','99'],
+ ['boer-lean-body-mass-calculator','Adult body mass','80'],
+ ['point-mass-center-of-mass-calculator','Point rows: positive mass, x, y, z','2,0,0,0\n1,9,3,0'],
+ ['construction-crew-size-calculator','Required productive labour hours','300'],
+ ['excavation-haul-calculator','Bank excavation length','20'],
+ ['vector-dot-cross-calculator','Vector A y','2'],
+];
+const gap20Gates={'labrador-human-age-calculator':'Study population confirmed','adult-shoe-size-converter':'Chart scope confirmed','nyc-resident-income-tax-calculator':'Full-year NYC resident scope confirmed'};
+for(const [slug,label,next]of gap20Interaction){
+ states.length=0;let tree=render(slug,false);assert.equal(result(tree),'Click Calculate',slug+' initial gate');
+ if(gap20Gates[slug]){button(tree).props.onClick();tree=render(slug,false);assert(allText(tree).includes('Unable to calculate'),slug+' scope must be confirmed');field(tree,gap20Gates[slug]).props.onChange('yes');tree=render(slug,false);}
+ button(tree).props.onClick();tree=render(slug,false);assert(!allText(tree).includes('Unable to calculate'),slug+' valid initial record');const saved=result(tree);
+ field(tree,label).props.onChange(next);tree=render(slug,false);assert.equal(result(tree),saved,slug+' output retained during edits');assert(allText(tree).includes('Inputs changed'));button(tree).props.onClick();tree=render(slug,false);assert.notEqual(result(tree),saved,slug+' explicit recalculation');assert(!allText(tree).includes('Unable to calculate'),slug+' valid changed record');
+}
+states.length=0;let gapHaul=render('excavation-haul-calculator',false);button(gapHaul).props.onClick();gapHaul=render('excavation-haul-calculator',false);const savedHaul=allText(walk(gapHaul,n=>n.props?.className==='result-grid'));field(gapHaul,'Supplied cost per complete trip').props.onChange('200');gapHaul=render('excavation-haul-calculator',false);assert.equal(allText(walk(gapHaul,n=>n.props?.className==='result-grid')),savedHaul);button(gapHaul).props.onClick();gapHaul=render('excavation-haul-calculator',false);assert(allText(walk(gapHaul,n=>n.props?.className==='result-grid')).includes('2,600'));
+for(const [slug,label]of [['matrix-basis-calculator','Real matrix: one row per line'],['clothing-size-chart-matcher','Own brand chart: label,bust min,max,waist min,max,hip min,max'],['point-mass-center-of-mass-calculator','Point rows: positive mass, x, y, z']]){states.length=0;const t=render(slug,false),input=field(t,label);assert(walk(input.type(input.props),n=>n.type==='textarea'),slug+' multiline input');}
+console.log('Gap20 UI: all twenty real callbacks, three explicit scope gates, persistent submitted results, eighth-field cost and multiline controls passed.');

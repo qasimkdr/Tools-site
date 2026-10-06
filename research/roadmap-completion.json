@@ -2,18 +2,19 @@
   "summary": {
     "asOf": "2026-10-06",
     "totalRoadmapRows": 489,
-    "completedScopedRows": 337,
-    "completedCalculatorOrToolRows": 327,
+    "completedScopedRows": 351,
+    "completedCalculatorOrToolRows": 341,
     "completedGuideRows": 10,
-    "uniqueCalculatorOrToolDestinations": 260,
+    "uniqueCalculatorOrToolDestinations": 271,
     "uniqueGuideDestinations": 10,
-    "notCountedRows": 152,
+    "notCountedRows": 138,
     "latestReviewedRank": 489,
     "nextUnreviewedRank": null,
     "thisBatchNewCalculators": 20,
-    "thisBatchExactKeywords": 25,
+    "thisBatchExactKeywords": 27,
     "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis\u2013Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately.",
-    "thisBatchNewScopedRows": 11
+    "thisBatchNewScopedRows": 14,
+    "duplicateRanksRemoved": 20
   },
   "rows": [
     {
@@ -3520,8 +3521,17 @@
       "rank": 287,
       "roadmapPage": "Decathlon Calculator",
       "primaryKeyword": "decathlon calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "path": "/tools/decathlon-scoring-calculator/",
+      "slug": "decathlon-scoring-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "destinations": [
+        "/tools/decathlon-scoring-calculator/"
+      ],
+      "previousStatus": "skipped-deferred-or-unverified",
+      "scopeNote": "decathlon-scoring-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 288,
@@ -3702,8 +3712,17 @@
       "rank": 305,
       "roadmapPage": "Basis Calculator",
       "primaryKeyword": "basis calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "path": "/tools/matrix-basis-calculator/",
+      "slug": "matrix-basis-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "destinations": [
+        "/tools/matrix-basis-calculator/"
+      ],
+      "previousStatus": "skipped-deferred-or-unverified",
+      "scopeNote": "matrix-basis-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 306,
@@ -3730,8 +3749,17 @@
       "rank": 309,
       "roadmapPage": "Dotted Calculator",
       "primaryKeyword": "dotted calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "path": "/tools/dotted-note-duration-calculator/",
+      "slug": "dotted-note-duration-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "destinations": [
+        "/tools/dotted-note-duration-calculator/"
+      ],
+      "previousStatus": "skipped-deferred-or-unverified",
+      "scopeNote": "dotted-note-duration-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 310,
@@ -3919,7 +3947,14 @@
       "rank": 328,
       "roadmapPage": "Matrix Calculator",
       "primaryKeyword": "8x8 calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/matrix-multiplication-calculator/",
+      "slug": "matrix-multiplication-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/matrix-multiplication-calculator/"
+      ]
     },
     {
       "rank": 329,
@@ -3931,7 +3966,14 @@
       "rank": 330,
       "roadmapPage": "Decimal To Fraction Calculator",
       "primaryKeyword": "decimal to fraction calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/decimal-to-fraction-calculator/",
+      "slug": "decimal-to-fraction-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/decimal-to-fraction-calculator/"
+      ]
     },
     {
       "rank": 331,
@@ -3943,7 +3985,14 @@
       "rank": 332,
       "roadmapPage": "Blow In Insulation Calculator",
       "primaryKeyword": "blow in insulation calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/blown-insulation-calculator/",
+      "slug": "blown-insulation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/blown-insulation-calculator/"
+      ]
     },
     {
       "rank": 333,
@@ -3955,7 +4004,14 @@
       "rank": 334,
       "roadmapPage": "Euler's Method Calculator",
       "primaryKeyword": "euler's method calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/euler-method-calculator/",
+      "slug": "euler-method-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/euler-method-calculator/"
+      ]
     },
     {
       "rank": 335,
@@ -3967,7 +4023,14 @@
       "rank": 336,
       "roadmapPage": "Log Weight Calculator",
       "primaryKeyword": "log weight calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/log-weight-calculator/",
+      "slug": "log-weight-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/log-weight-calculator/"
+      ]
     },
     {
       "rank": 337,
@@ -3979,7 +4042,14 @@
       "rank": 338,
       "roadmapPage": "Roman Numeral Converter",
       "primaryKeyword": "roman letters converter",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/roman-numeral-converter/",
+      "slug": "roman-numeral-converter",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/roman-numeral-converter/"
+      ]
     },
     {
       "rank": 339,
@@ -3997,13 +4067,27 @@
       "rank": 341,
       "roadmapPage": "Prop Slip Calculator",
       "primaryKeyword": "prop slip calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/prop-slip-calculator/",
+      "slug": "prop-slip-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/prop-slip-calculator/"
+      ]
     },
     {
       "rank": 342,
       "roadmapPage": "Rc Filter Calculator",
       "primaryKeyword": "rc filter calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/rc-filter-calculator/",
+      "slug": "rc-filter-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/rc-filter-calculator/"
+      ]
     },
     {
       "rank": 343,
@@ -4021,19 +4105,40 @@
       "rank": 345,
       "roadmapPage": "Probability Calculator",
       "primaryKeyword": "probability calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/probability-calculator/",
+      "slug": "probability-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/probability-calculator/"
+      ]
     },
     {
       "rank": 346,
       "roadmapPage": "Target Heart Rate Calculator",
       "primaryKeyword": "finding maximum heart rate calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/target-heart-rate-calculator/",
+      "slug": "target-heart-rate-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/target-heart-rate-calculator/"
+      ]
     },
     {
       "rank": 347,
       "roadmapPage": "Pension Calculator",
       "primaryKeyword": "pension calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/pension-benefit-calculator/",
+      "slug": "pension-benefit-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/pension-benefit-calculator/"
+      ]
     },
     {
       "rank": 348,
@@ -4052,13 +4157,27 @@
       "rank": 349,
       "roadmapPage": "Grams In Ml Converter",
       "primaryKeyword": "grams and milliliters converter",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/grams-to-ml-converter/",
+      "slug": "grams-to-ml-converter",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/grams-to-ml-converter/"
+      ]
     },
     {
       "rank": 350,
       "roadmapPage": "Siding Calculator",
       "primaryKeyword": "siding calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/siding-course-calculator/",
+      "slug": "siding-course-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/siding-course-calculator/"
+      ]
     },
     {
       "rank": 351,
@@ -4070,7 +4189,14 @@
       "rank": 352,
       "roadmapPage": "Difference Quotient Calculator",
       "primaryKeyword": "difference quotient calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/difference-quotient-calculator/",
+      "slug": "difference-quotient-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/difference-quotient-calculator/"
+      ]
     },
     {
       "rank": 353,
@@ -4082,13 +4208,27 @@
       "rank": 354,
       "roadmapPage": "Odds Risk Calculator",
       "primaryKeyword": "odds risk calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/odds-risk-calculator/",
+      "slug": "odds-risk-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/odds-risk-calculator/"
+      ]
     },
     {
       "rank": 355,
       "roadmapPage": "Time Lapse Photography Calculator",
       "primaryKeyword": "time lapse photography calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/time-lapse-calculator/",
+      "slug": "time-lapse-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/time-lapse-calculator/"
+      ]
     },
     {
       "rank": 356,
@@ -4106,7 +4246,14 @@
       "rank": 358,
       "roadmapPage": "Mileage Calculator",
       "primaryKeyword": "mileage calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/mileage-reimbursement-calculator/",
+      "slug": "mileage-reimbursement-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/mileage-reimbursement-calculator/"
+      ]
     },
     {
       "rank": 359,
@@ -4118,13 +4265,26 @@
       "rank": 360,
       "roadmapPage": "Construction Calculator",
       "primaryKeyword": "construction calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "deferred-outside-verified-scope",
+      "additionalScopedDestinations": [
+        "/tools/construction-crew-size-calculator/",
+        "/tools/excavation-haul-calculator/"
+      ],
+      "scopeNote": "Separate crew and hauling tasks do not complete the broad construction primary.",
+      "reviewedAt": "2026-10-06"
     },
     {
       "rank": 361,
       "roadmapPage": "Draw Length Calculator",
       "primaryKeyword": "draw length calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/draw-length-calculator/",
+      "slug": "draw-length-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/draw-length-calculator/"
+      ]
     },
     {
       "rank": 362,
@@ -4148,7 +4308,14 @@
       "rank": 365,
       "roadmapPage": "Cardiac Output Calculator",
       "primaryKeyword": "cardiac output calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/cardiac-output-calculator/",
+      "slug": "cardiac-output-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/cardiac-output-calculator/"
+      ]
     },
     {
       "rank": 366,
@@ -4160,13 +4327,30 @@
       "rank": 367,
       "roadmapPage": "Snow Load Calculator",
       "primaryKeyword": "snow load calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/snow-weight-load-calculator/",
+      "slug": "snow-weight-load-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "destinations": [
+        "/tools/snow-weight-load-calculator/"
+      ],
+      "previousStatus": "not-yet-reviewed-in-sequence",
+      "scopeNote": "snow-weight-load-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 368,
       "roadmapPage": "Call Put Option Calculator",
       "primaryKeyword": "option profit calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/option-profit-calculator/",
+      "slug": "option-profit-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
+      "destinations": [
+        "/tools/option-profit-calculator/"
+      ]
     },
     {
       "rank": 369,
@@ -4231,8 +4415,17 @@
       "rank": 374,
       "roadmapPage": "Dog Age Calculator",
       "primaryKeyword": "dog age calculator",
-      "status": "deferred",
-      "evidence": "Dog age requires a sourced species/size/age model rather than a universal multiplier."
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "path": "/tools/labrador-human-age-calculator/",
+      "slug": "labrador-human-age-calculator",
+      "type": "calculator-or-tool",
+      "reviewedAt": "2026-10-06",
+      "destinations": [
+        "/tools/labrador-human-age-calculator/"
+      ],
+      "previousStatus": "deferred",
+      "scopeNote": "labrador-human-age-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 375,
@@ -4294,7 +4487,12 @@
       "roadmapPage": "Body Type Calculator",
       "primaryKeyword": "body shape calculator",
       "status": "deferred",
-      "evidence": "No validated universal body-shape/clothing-size classification was established."
+      "evidence": "No validated universal body-shape/clothing-size classification was established.",
+      "additionalScopedDestinations": [
+        "/tools/clothing-size-chart-matcher/"
+      ],
+      "scopeNote": "Supplied clothing chart secondary only; body-shape primary remains unsupported.",
+      "reviewedAt": "2026-10-06"
     },
     {
       "rank": 383,
@@ -4481,8 +4679,17 @@
       "rank": 402,
       "roadmapPage": "Golf Handicap Calculator",
       "primaryKeyword": "golf handicap calculator",
-      "status": "deferred",
-      "evidence": "Handicap scoring needs verified current official differential, adjustment and score-count rules; no incomplete substitute."
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "path": "/tools/golf-handicap-worksheet/",
+      "slug": "golf-handicap-worksheet",
+      "type": "calculator-or-tool",
+      "reviewedAt": "2026-10-06",
+      "destinations": [
+        "/tools/golf-handicap-worksheet/"
+      ],
+      "previousStatus": "deferred",
+      "scopeNote": "golf-handicap-worksheet only; scope and exclusions disclosed on page"
     },
     {
       "rank": 403,
@@ -4601,8 +4808,17 @@
       "rank": 414,
       "roadmapPage": "Anc Calculator",
       "primaryKeyword": "anc calculator",
-      "status": "deferred",
-      "evidence": "Clinical ANC arithmetic and interpretation deferred; not needed to fill this batch."
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "path": "/tools/absolute-neutrophil-count-calculator/",
+      "slug": "absolute-neutrophil-count-calculator",
+      "type": "calculator-or-tool",
+      "reviewedAt": "2026-10-06",
+      "destinations": [
+        "/tools/absolute-neutrophil-count-calculator/"
+      ],
+      "previousStatus": "deferred",
+      "scopeNote": "absolute-neutrophil-count-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 415,
@@ -4698,7 +4914,7 @@
       "primaryKeyword": "physics calculator",
       "status": "deferred-outside-verified-scope",
       "evidence": "Primary physics/scientific-calculator intent exceeds the numeric trigonometric scope. Only five supported secondary queries map to the new trigonometry tool.",
-      "reviewedAt": "2026-10-05",
+      "reviewedAt": "2026-10-06",
       "additionalScopedDestinations": [
         "/tools/force-mass-acceleration-calculator/",
         "/tools/kinetic-energy-calculator/",
@@ -4706,9 +4922,12 @@
         "/tools/work-energy-calculator/",
         "/tools/gravitational-potential-energy-calculator/",
         "/tools/hookes-law-calculator/",
-        "/tools/ideal-gas-law-calculator/"
+        "/tools/ideal-gas-law-calculator/",
+        "/tools/complex-number-calculator/",
+        "/tools/point-mass-center-of-mass-calculator/",
+        "/tools/vector-dot-cross-calculator/"
       ],
-      "scopeNote": "physics is a broad subject; seven explicitly scoped equations do not complete the broad primary intent"
+      "scopeNote": "Distinct arithmetic extensions do not complete the broad physics/scientific primary."
     },
     {
       "rank": 425,
@@ -4886,9 +5105,17 @@
       "rank": 441,
       "roadmapPage": "Tax Calculator",
       "primaryKeyword": "taxable income calculator",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "Taxable-income computation requires verified jurisdiction, tax-year rules and filing inputs.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "path": "/tools/taxable-income-worksheet/",
+      "slug": "taxable-income-worksheet",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/taxable-income-worksheet/"
+      ],
+      "previousStatus": "deferred-outside-verified-scope",
+      "scopeNote": "taxable-income-worksheet only; scope and exclusions disclosed on page"
     },
     {
       "rank": 442,
@@ -4950,9 +5177,17 @@
       "rank": 447,
       "roadmapPage": "New York Tax Calculator",
       "primaryKeyword": "nyc income tax calculator",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "NYC income tax requires current verified statutory rules and filing scope.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "path": "/tools/nyc-resident-income-tax-calculator/",
+      "slug": "nyc-resident-income-tax-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/nyc-resident-income-tax-calculator/"
+      ],
+      "previousStatus": "deferred-outside-verified-scope",
+      "scopeNote": "nyc-resident-income-tax-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 448,
@@ -4966,13 +5201,20 @@
       "rank": 449,
       "roadmapPage": "Bmr Calculator",
       "primaryKeyword": "harris benedict calculator",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "Harris\u2013Benedict intent requires a separately verified formula and clinical scope; no relabeling of existing BMR.",
-      "reviewedAt": "2026-10-05",
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
       "additionalScopedDestinations": [
         "/tools/resting-energy-calculator/"
       ],
-      "scopeNote": "Harris\u2013Benedict is not implemented; Mifflin secondary intent only"
+      "scopeNote": "harris-benedict-calculator only; scope and exclusions disclosed on page",
+      "path": "/tools/harris-benedict-calculator/",
+      "slug": "harris-benedict-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/harris-benedict-calculator/"
+      ],
+      "previousStatus": "deferred-outside-verified-scope"
     },
     {
       "rank": 450,
@@ -5015,9 +5257,17 @@
       "rank": 454,
       "roadmapPage": "Shoe Size Conversion Calculator",
       "primaryKeyword": "foot size calculator",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "Shoe-size conversion depends on a verified manufacturer or regional chart, not one universal rule.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "path": "/tools/adult-shoe-size-converter/",
+      "slug": "adult-shoe-size-converter",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/adult-shoe-size-converter/"
+      ],
+      "previousStatus": "deferred-outside-verified-scope",
+      "scopeNote": "adult-shoe-size-converter only; scope and exclusions disclosed on page"
     },
     {
       "rank": 455,
@@ -5145,9 +5395,17 @@
       "rank": 467,
       "roadmapPage": "Lean Body Mass Calculator",
       "primaryKeyword": "lbm calculator",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "Lean mass is not muscle mass; no unverified body-composition estimator.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "path": "/tools/boer-lean-body-mass-calculator/",
+      "slug": "boer-lean-body-mass-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/boer-lean-body-mass-calculator/"
+      ],
+      "previousStatus": "deferred-outside-verified-scope",
+      "scopeNote": "boer-lean-body-mass-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 468,
@@ -5195,9 +5453,17 @@
       "rank": 472,
       "roadmapPage": "Sales Tax Calculator",
       "primaryKeyword": "texas state tax calculator",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "Texas sales-tax intent requires verified state/local rules and tax base.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "path": "/tools/texas-sales-tax-calculator/",
+      "slug": "texas-sales-tax-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/texas-sales-tax-calculator/"
+      ],
+      "previousStatus": "deferred-outside-verified-scope",
+      "scopeNote": "texas-sales-tax-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 473,
@@ -5318,9 +5584,17 @@
       "rank": 484,
       "roadmapPage": "Calorie Calculator",
       "primaryKeyword": "kcal calories converter",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "kcal/food-calorie conversion requires clear small-calorie versus nutrition-Calorie units, not a duplicate energy-intake target.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "gap20 verified scoped method, independent calculation examples, original editorial content and export gates",
+      "reviewedAt": "2026-10-06",
+      "path": "/tools/food-energy-calculator/",
+      "slug": "food-energy-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/food-energy-calculator/"
+      ],
+      "previousStatus": "deferred-outside-verified-scope",
+      "scopeNote": "food-energy-calculator only; scope and exclusions disclosed on page"
     },
     {
       "rank": 485,
@@ -5375,266 +5649,6 @@
       "primaryKeyword": "student loan amortization calculator",
       "status": "protected-existing-destination",
       "evidence": "Existing payment and mortgage amortization intent overlaps protected definitions; no duplicate student-loan URL added."
-    },
-    {
-      "rank": 328,
-      "roadmapPage": "Matrix Calculator",
-      "primaryKeyword": "8x8 calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/matrix-multiplication-calculator/",
-      "slug": "matrix-multiplication-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/matrix-multiplication-calculator/"
-      ]
-    },
-    {
-      "rank": 330,
-      "roadmapPage": "Decimal To Fraction Calculator",
-      "primaryKeyword": "decimal to fraction calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/decimal-to-fraction-calculator/",
-      "slug": "decimal-to-fraction-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/decimal-to-fraction-calculator/"
-      ]
-    },
-    {
-      "rank": 332,
-      "roadmapPage": "Blow In Insulation Calculator",
-      "primaryKeyword": "blow in insulation calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/blown-insulation-calculator/",
-      "slug": "blown-insulation-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/blown-insulation-calculator/"
-      ]
-    },
-    {
-      "rank": 334,
-      "roadmapPage": "Euler's Method Calculator",
-      "primaryKeyword": "euler's method calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/euler-method-calculator/",
-      "slug": "euler-method-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/euler-method-calculator/"
-      ]
-    },
-    {
-      "rank": 336,
-      "roadmapPage": "Log Weight Calculator",
-      "primaryKeyword": "log weight calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/log-weight-calculator/",
-      "slug": "log-weight-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/log-weight-calculator/"
-      ]
-    },
-    {
-      "rank": 338,
-      "roadmapPage": "Roman Numeral Converter",
-      "primaryKeyword": "roman letters converter",
-      "status": "completed-scoped-destination",
-      "path": "/tools/roman-numeral-converter/",
-      "slug": "roman-numeral-converter",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/roman-numeral-converter/"
-      ]
-    },
-    {
-      "rank": 341,
-      "roadmapPage": "Prop Slip Calculator",
-      "primaryKeyword": "prop slip calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/prop-slip-calculator/",
-      "slug": "prop-slip-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/prop-slip-calculator/"
-      ]
-    },
-    {
-      "rank": 342,
-      "roadmapPage": "Rc Filter Calculator",
-      "primaryKeyword": "rc filter calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/rc-filter-calculator/",
-      "slug": "rc-filter-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/rc-filter-calculator/"
-      ]
-    },
-    {
-      "rank": 345,
-      "roadmapPage": "Probability Calculator",
-      "primaryKeyword": "probability calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/probability-calculator/",
-      "slug": "probability-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/probability-calculator/"
-      ]
-    },
-    {
-      "rank": 346,
-      "roadmapPage": "Target Heart Rate Calculator",
-      "primaryKeyword": "finding maximum heart rate calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/target-heart-rate-calculator/",
-      "slug": "target-heart-rate-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/target-heart-rate-calculator/"
-      ]
-    },
-    {
-      "rank": 347,
-      "roadmapPage": "Pension Calculator",
-      "primaryKeyword": "pension calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/pension-benefit-calculator/",
-      "slug": "pension-benefit-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/pension-benefit-calculator/"
-      ]
-    },
-    {
-      "rank": 349,
-      "roadmapPage": "Grams In Ml Converter",
-      "primaryKeyword": "grams and milliliters converter",
-      "status": "completed-scoped-destination",
-      "path": "/tools/grams-to-ml-converter/",
-      "slug": "grams-to-ml-converter",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/grams-to-ml-converter/"
-      ]
-    },
-    {
-      "rank": 350,
-      "roadmapPage": "Siding Calculator",
-      "primaryKeyword": "siding calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/siding-course-calculator/",
-      "slug": "siding-course-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/siding-course-calculator/"
-      ]
-    },
-    {
-      "rank": 352,
-      "roadmapPage": "Difference Quotient Calculator",
-      "primaryKeyword": "difference quotient calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/difference-quotient-calculator/",
-      "slug": "difference-quotient-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/difference-quotient-calculator/"
-      ]
-    },
-    {
-      "rank": 354,
-      "roadmapPage": "Odds Risk Calculator",
-      "primaryKeyword": "odds risk calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/odds-risk-calculator/",
-      "slug": "odds-risk-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/odds-risk-calculator/"
-      ]
-    },
-    {
-      "rank": 355,
-      "roadmapPage": "Time Lapse Photography Calculator",
-      "primaryKeyword": "time lapse photography calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/time-lapse-calculator/",
-      "slug": "time-lapse-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/time-lapse-calculator/"
-      ]
-    },
-    {
-      "rank": 358,
-      "roadmapPage": "Mileage Calculator",
-      "primaryKeyword": "mileage calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/mileage-reimbursement-calculator/",
-      "slug": "mileage-reimbursement-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/mileage-reimbursement-calculator/"
-      ]
-    },
-    {
-      "rank": 361,
-      "roadmapPage": "Draw Length Calculator",
-      "primaryKeyword": "draw length calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/draw-length-calculator/",
-      "slug": "draw-length-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/draw-length-calculator/"
-      ]
-    },
-    {
-      "rank": 365,
-      "roadmapPage": "Cardiac Output Calculator",
-      "primaryKeyword": "cardiac output calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/cardiac-output-calculator/",
-      "slug": "cardiac-output-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/cardiac-output-calculator/"
-      ]
-    },
-    {
-      "rank": 368,
-      "roadmapPage": "Call Put Option Calculator",
-      "primaryKeyword": "option profit calculator",
-      "status": "completed-scoped-destination",
-      "path": "/tools/option-profit-calculator/",
-      "slug": "option-profit-calculator",
-      "type": "calculator-or-tool",
-      "evidence": "roadmap328 dedicated formula, scoped content, regression and export gates",
-      "destinations": [
-        "/tools/option-profit-calculator/"
-      ]
     }
   ]
 }

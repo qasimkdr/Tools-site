@@ -28,3 +28,7 @@
 - Shipping, inventory and marketplace operations extensions.
 
 The next File & Data phase is a candidate only. Audit the existing PDF, document, image and media catalogs and validate keywords before locking it.
+
+## 6 October 2026 verified-gap batch
+
+Twenty additional task-specific calculators are implemented according to the existing protection cutoff. Fourteen supported primary rows add scoped destinations; broad construction, body-shape and physics intentions remain incomplete despite useful secondary tools. Workbook coverage is 351/489 (71.8%), with 27 exact supported queries retained from historical workbook metrics. Counts are completion evidence, not rankings. See the gap20 selection, source provenance, baseline and completion ledger for the exact scope.

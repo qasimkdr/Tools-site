@@ -1,0 +1,450 @@
+{
+  "asOf": "2026-10-06",
+  "newTools": 20,
+  "records": [
+    {
+      "slug": "decathlon-scoring-calculator",
+      "ranks": [
+        287
+      ],
+      "keywords": [
+        "decathlon calculator",
+        "decathlon scoring calculator",
+        "decathlon points calculator"
+      ],
+      "related": [
+        "running-pace-calculator",
+        "speed-distance-time-calculator",
+        "average-time-calculator"
+      ],
+      "defaults": [
+        "11.5 7 14 2 52 15.5 42 4.5 55 270"
+      ]
+    },
+    {
+      "slug": "dotted-note-duration-calculator",
+      "ranks": [
+        309
+      ],
+      "keywords": [
+        "dotted calculator",
+        "dotted note calculator",
+        "dotted eighth note delay calculator"
+      ],
+      "related": [
+        "bpm-calculator",
+        "timecode-calculator",
+        "decimal-time-converter"
+      ],
+      "defaults": [
+        "120",
+        "8",
+        "1"
+      ]
+    },
+    {
+      "slug": "matrix-basis-calculator",
+      "ranks": [
+        305
+      ],
+      "keywords": [
+        "basis calculator",
+        "matrix basis calculator",
+        "null space basis calculator",
+        "rref rank calculator"
+      ],
+      "related": [
+        "matrix-multiplication-calculator",
+        "substitution-calculator",
+        "matrix-inverse-calculator"
+      ],
+      "defaults": [
+        "1 2 3\n2 4 6"
+      ]
+    },
+    {
+      "slug": "complex-number-calculator",
+      "ranks": [],
+      "keywords": [
+        "complex number calculator",
+        "complex arithmetic calculator",
+        "complex multiplication calculator"
+      ],
+      "related": [
+        "basic-calculator",
+        "matrix-multiplication-calculator",
+        "vector-dot-cross-calculator"
+      ],
+      "defaults": [
+        "3",
+        "2",
+        "1",
+        "-4",
+        "multiply"
+      ]
+    },
+    {
+      "slug": "snow-weight-load-calculator",
+      "ranks": [
+        367
+      ],
+      "keywords": [
+        "snow load calculator",
+        "snow weight calculator",
+        "snow water equivalent load calculator"
+      ],
+      "related": [
+        "density-mass-volume-calculator",
+        "roof-area-calculator",
+        "gravitational-potential-energy-calculator"
+      ],
+      "defaults": [
+        "depth",
+        ".3",
+        "200",
+        "100"
+      ]
+    },
+    {
+      "slug": "labrador-human-age-calculator",
+      "ranks": [
+        374
+      ],
+      "keywords": [
+        "dog age calculator",
+        "age calculator of dog",
+        "human years to dog years calculator",
+        "labrador human age calculator"
+      ],
+      "related": [
+        "dog-pregnancy-calculator",
+        "date-from-today-calculator",
+        "logarithm-calculator"
+      ],
+      "defaults": [
+        "4",
+        "no",
+        "forward"
+      ]
+    },
+    {
+      "slug": "golf-handicap-worksheet",
+      "ranks": [
+        402
+      ],
+      "keywords": [
+        "golf handicap calculator",
+        "handicap calculator",
+        "handicap calculator golf",
+        "calculate golf handicap",
+        "golf score differential calculator"
+      ],
+      "related": [
+        "average-time-calculator",
+        "weighted-mean-calculator",
+        "winrate-calculator"
+      ],
+      "defaults": [
+        "differential",
+        "90",
+        "70.2",
+        "125",
+        "0",
+        "15.3\n15.2\n16.6"
+      ]
+    },
+    {
+      "slug": "absolute-neutrophil-count-calculator",
+      "ranks": [
+        414
+      ],
+      "keywords": [
+        "anc calculator",
+        "absolute neutrophil count calculator",
+        "calculate anc"
+      ],
+      "related": [
+        "cardiac-output-calculator",
+        "abg-calculator",
+        "boer-lean-body-mass-calculator"
+      ],
+      "defaults": [
+        "4.5",
+        "si",
+        "40",
+        "2",
+        "separate"
+      ]
+    },
+    {
+      "slug": "harris-benedict-calculator",
+      "ranks": [
+        449
+      ],
+      "keywords": [
+        "harris benedict calculator",
+        "harris benedict equation calculator",
+        "revised harris benedict calculator"
+      ],
+      "related": [
+        "resting-energy-calculator",
+        "macro-calculator",
+        "food-energy-calculator"
+      ],
+      "defaults": [
+        "70",
+        "175",
+        "35",
+        "male"
+      ]
+    },
+    {
+      "slug": "adult-shoe-size-converter",
+      "ranks": [
+        454
+      ],
+      "keywords": [
+        "foot size calculator",
+        "women's to men's shoe size conversion calculator",
+        "shoe size converter and calculator",
+        "adult shoe size converter"
+      ],
+      "related": [
+        "length-conversion-calculator",
+        "clothing-size-chart-matcher",
+        "ratio-calculator"
+      ],
+      "defaults": [
+        "men",
+        "9",
+        "no"
+      ]
+    },
+    {
+      "slug": "food-energy-calculator",
+      "ranks": [
+        484
+      ],
+      "keywords": [
+        "kcal calories converter",
+        "how to calculate calories in food",
+        "food energy calculator",
+        "kcal to small calories converter"
+      ],
+      "related": [
+        "food-protein-calculator",
+        "macro-calculator",
+        "net-carbohydrate-calculator"
+      ],
+      "defaults": [
+        "composition",
+        "1",
+        "kcal",
+        "carbs,20\nprotein,10\nfat,5\nfibre,3",
+        "100",
+        "150"
+      ]
+    },
+    {
+      "slug": "taxable-income-worksheet",
+      "ranks": [
+        441
+      ],
+      "keywords": [
+        "taxable income calculator",
+        "taxable income worksheet",
+        "adjusted income arithmetic calculator"
+      ],
+      "related": [
+        "paycheck-estimator-calculator",
+        "nyc-resident-income-tax-calculator",
+        "new-jersey-tax-calculator"
+      ],
+      "defaults": [
+        "50000\n2000",
+        "1500\n500",
+        "10000"
+      ]
+    },
+    {
+      "slug": "texas-sales-tax-calculator",
+      "ranks": [
+        472
+      ],
+      "keywords": [
+        "texas state tax calculator",
+        "car sales tax calculator",
+        "texas sales tax calculator",
+        "texas dealer vehicle sales tax calculator"
+      ],
+      "related": [
+        "sales-tax-vat-calculator",
+        "taxable-income-worksheet",
+        "car-lease-vs-buy-calculator"
+      ],
+      "defaults": [
+        "retail",
+        "100",
+        "0",
+        "0",
+        "2"
+      ]
+    },
+    {
+      "slug": "nyc-resident-income-tax-calculator",
+      "ranks": [
+        447
+      ],
+      "keywords": [
+        "nyc income tax calculator",
+        "new york city resident tax calculator",
+        "2025 nyc income tax calculator"
+      ],
+      "related": [
+        "new-jersey-tax-calculator",
+        "taxable-income-worksheet",
+        "paycheck-estimator-calculator"
+      ],
+      "defaults": [
+        "70000",
+        "single",
+        "no"
+      ]
+    },
+    {
+      "slug": "clothing-size-chart-matcher",
+      "ranks": [],
+      "keywords": [
+        "clothing size calculator",
+        "clothing size chart matcher",
+        "brand size chart calculator"
+      ],
+      "related": [
+        "adult-shoe-size-converter",
+        "ratio-calculator",
+        "length-conversion-calculator"
+      ],
+      "defaults": [
+        "93",
+        "77",
+        "101",
+        "S,84,90,68,74,92,98\nM,90,96,74,80,98,104\nL,96,102,80,86,104,110"
+      ]
+    },
+    {
+      "slug": "boer-lean-body-mass-calculator",
+      "ranks": [
+        467
+      ],
+      "keywords": [
+        "lbm calculator",
+        "lean mass calculator",
+        "lean mass weight calculator",
+        "boer lean body mass calculator"
+      ],
+      "related": [
+        "body-fat-calculator",
+        "resting-energy-calculator",
+        "harris-benedict-calculator"
+      ],
+      "defaults": [
+        "70",
+        "175",
+        "male",
+        "35"
+      ]
+    },
+    {
+      "slug": "point-mass-center-of-mass-calculator",
+      "ranks": [],
+      "keywords": [
+        "center of mass calculator",
+        "point mass center of mass calculator",
+        "3d mass center calculator"
+      ],
+      "related": [
+        "midpoint-calculator",
+        "momentum-impulse-calculator",
+        "vector-dot-cross-calculator"
+      ],
+      "defaults": [
+        "2,0,0,0\n1,6,3,0"
+      ]
+    },
+    {
+      "slug": "construction-crew-size-calculator",
+      "ranks": [],
+      "keywords": [
+        "construction crew size calculator",
+        "worker hours crew calculator",
+        "construction labour capacity calculator"
+      ],
+      "related": [
+        "productivity-calculator",
+        "average-time-calculator",
+        "lawn-mowing-cost-calculator"
+      ],
+      "defaults": [
+        "240",
+        "5",
+        "8",
+        "75",
+        "20"
+      ]
+    },
+    {
+      "slug": "excavation-haul-calculator",
+      "ranks": [],
+      "keywords": [
+        "excavation haul calculator",
+        "excavation swell calculator",
+        "truck haul trips calculator"
+      ],
+      "related": [
+        "cubic-yard-calculator",
+        "density-mass-volume-calculator",
+        "construction-crew-size-calculator"
+      ],
+      "defaults": [
+        "10",
+        "5",
+        "2",
+        "25",
+        "1800",
+        "10",
+        "15000",
+        "100"
+      ]
+    },
+    {
+      "slug": "vector-dot-cross-calculator",
+      "ranks": [],
+      "keywords": [
+        "vector dot product calculator",
+        "cross product calculator",
+        "vector projection calculator"
+      ],
+      "related": [
+        "cartesian-distance-calculator",
+        "work-energy-calculator",
+        "point-mass-center-of-mass-calculator"
+      ],
+      "defaults": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    }
+  ],
+  "exclusions": {
+    "382": "body-shape primary remains unsupported; only supplied clothing chart secondary implemented",
+    "424": "broad scientific and physics intent not completed by separate complex/vector/center-of-mass tasks",
+    "360": "broad construction primary not completed by crew and hauling extensions",
+    "467": "lean body mass is not skeletal muscle mass; muscle keyword excluded"
+  },
+  "protection": "All 340 earlier global definitions and 181 Pakistan definitions are unchanged, including dates and calculators.",
+  "ranking": "No first-page or indexing guarantee."
+}

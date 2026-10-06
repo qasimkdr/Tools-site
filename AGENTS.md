@@ -40,12 +40,12 @@ Prefer focused searches and small excerpts. Never repeatedly load large catalogs
 
 Update this section whenever a completed phase changes counts or architecture.
 
-Last verified: **5 October 2026**
+Last verified: **6 October 2026**
 
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 335 canonical + 5 noindex aliases (340 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 355 canonical + 5 noindex aliases (360 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,7 +54,7 @@ Last verified: **5 October 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 45 |
 
-The production build is expected to generate **711 static pages** after the deferred-intent batch of 6 October 2026. The content gate recognizes **181 Pakistan calculators, 335 indexable global tools (340 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 45 guides**. There are **702 canonical sitemap URLs** and **683 tool/guide profiles**. All 489 workbook rows have now been reviewed; deferred scope remains and reaching the workbook end does not mean all intents are implemented. These counts do not establish indexing or search positions.
+The production build is expected to generate **731 static pages** after the verified-gap batch of 6 October 2026. The content gate recognizes **181 Pakistan calculators, 355 indexable global tools (360 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 45 guides**. There are **722 canonical sitemap URLs** and **703 tool/guide profiles**. All 489 unique workbook rows have been reviewed; **351 scoped rows (71.8%)** are completed, while 138 remain outside the completed count. These counts do not establish indexing or search positions.
 
 The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
 
@@ -600,3 +600,16 @@ Matching queries are merged into one calculation page. Physics extensions are di
 No existing definition or review date was rewritten. `research/roadmap-deferred-baseline.json` protects all **320 prior global and 181 Pakistan definitions**. `npm run verify:deferred` checks actual engines, independent examples, inverse modes, invalid inputs and the IRS table provenance. `verify:calculate` exercises all twenty actual callbacks, requires explicit Calculate, preserves submitted output during edits, and tests the RMD confirmation gate. RMD defaults to unconfirmed; inherited, Roth-owner and Table II cases are excluded. Resting energy is Mifflin only, without an activity factor; Rockport uses the original healthy-adult age scope and an already completed test record.
 
 Expected validated export: **711 pages**, **335 canonical global tools plus five aliases**, **702 sitemap URLs**, **683 tool/guide profiles**. Run typecheck, new and prior baseline gates, interaction checks, full content/export/navigation validation and whitespace checks before pushing. Static export remains capped at two workers. Preserve the exact-live-commit manifest check and the existing post-live IndexNow workflow. Google ranking and indexing cannot be guaranteed.
+
+
+## 22. Next twenty verified-gap tools (6 October 2026)
+
+The user authorized another additive twenty-tool batch. Catalog `lib/roadmap-gap20-tools.ts`, method content `lib/roadmap-gap20-audit.ts`, logic `components/calculators/roadmap-gap20.ts`, defaults `components/calculators/gap20-defaults.ts` and reviewed families `lib/roadmap-gap20-navigation.ts` are integrated into the shared catalog, page and calculator flows. `research/build-gap20.py` preserves deterministic individually authored content and method-specific steps. Existing definitions and dates remain unchanged under the on/after-28-September cutoff; `research/roadmap-gap20-baseline.json` fingerprints all **340 prior global and 181 Pakistan definitions**.
+
+New tasks: men’s decathlon scoring; augmentation-dot musical duration; matrix RREF and space bases; complex arithmetic; measured snow mass and pressure; the Labrador epigenetic age comparison and its mathematical inverse; golf differential/raw index arithmetic; ANC laboratory arithmetic; revised 1984 Harris–Benedict resting energy; the checked Nike adult shoe chart; food energy conversion and EU composition factors; assessed taxable-income reconciliation; Texas retail/dealer vehicle tax; 2025 NYC resident tax before credits; supplied clothing chart matching; Boer lean mass; point-mass center of mass; construction crew capacity; excavation swell/hauling; vector dot/cross/projection.
+
+Source data `lib/gap20-reference-data.ts` retains **1,302 official 2025 NYC city intervals** and **38 Nike adult chart rows**, with source URLs/fingerprints in `research/gap20-source-provenance.json`. NYC city scope is 2025 full-year resident before credits; never relabel it 2026 or combine it silently with federal/state tax. Shoe CM/JP labels differ from measured length; converted foot cm use the published inch row. Decathlon uses the combined-events coefficients, automatic sprint timing and per-event truncation. Golf output is raw arithmetic, excluding official history safeguards. ANC, resting-energy and lean-mass pages are bounded arithmetic/estimates, with no clinical decisions. Labrador scope is not a universal dog formula. Snow is measured mass, not roof capacity or code design.
+
+The ledger has exactly **489 unique ranks** after twenty duplicate rank records were consolidated while preserving existing completion evidence. It now records **351 completed scoped rows: 341 tools and 10 guides**, with **271 distinct completed tool paths and 10 guide paths**. The prior summary’s 260 distinct-tool figure exceeded its actual 257 documented paths; this summary is recomputed from unique primary paths. This batch adds fourteen primary scoped completions and **27 exact workbook queries**, whose historical metrics are preserved in `lib/roadmap-gap20-keywords.ts`. Supplied clothing matching does not complete body-shape primary; complex/vector/mass-center tasks do not complete broad scientific/physics primary; crew and haul tasks do not complete broad construction primary. No duplicate stair, inverse-matrix, water-intake, generic growth or student-loan engine was added.
+
+Required gates: `npm run typecheck`, `npm run verify:gap20`, all prior calculation/baseline scripts, `npm run verify:calculate`, full build/content/navigation checks and `git diff --check`. The gap20 gate tests all NYC interval endpoints, published examples, inverses, domain failures, source dimensions and protected fingerprints. Actual component callbacks cover all twenty tools, explicit scope gates, persistent submitted output, multiline inputs and the eighth haul field. Every new route needs a contextual incoming link from a pre-existing main-content tool or guide. Export concurrency remains two. Confirm exact production commit manifest, all twenty URLs and Render logs after the authorized publish.

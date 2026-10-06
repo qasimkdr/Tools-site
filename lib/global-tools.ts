@@ -1,3 +1,4 @@
+import {roadmapGap20Tools} from "./roadmap-gap20-tools";
 import {roadmapDeferredTools} from "./roadmap-deferred-tools";
 import {roadmap423Tools} from "./roadmap-423-plus-tools";
 import {roadmap369Tools} from "./roadmap-369-plus-tools";
@@ -363,6 +364,7 @@ export const globalTools: Tool[] = [
   ...roadmap166Tools,
   ...roadmap186Tools,
   ...roadmap206Tools,
+  ...roadmapGap20Tools,
   ...roadmapDeferredTools,
   ...roadmap423Tools,
   ...roadmap369Tools,...roadmap328Tools,

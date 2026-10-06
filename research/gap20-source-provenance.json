@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-10-06",
+  "nyc2025": {
+    "url": "https://www.tax.ny.gov/pit/file/tax-tables/it201i-2025.htm",
+    "rows": 1302,
+    "sha256": "1d9d46c0a8cc5a3ee5ebd81a59393ca2cc3a272e7d04c0e3660bdaa8ceeabd67"
+  },
+  "nike": {
+    "url": "https://www.nike.com/size-fit/mens-footwear",
+    "rows": 38,
+    "columns": [
+      "US men",
+      "US women",
+      "UK",
+      "EU",
+      "CM JP label",
+      "foot inches",
+      "foot cm converted from inches"
+    ],
+    "sha256": "27bacc1733f6bbbdb8e51c40447e6c9f2a30bf38d325388ced2975f7a789084c"
+  },
+  "combinedEvents": {
+    "url": "https://worldathletics.org/download/download?filename=53f7d332-be0c-434c-8467-1d9078966147.pdf&urlslug=IAAF+Scoring+Tables+for+Combined+Events",
+    "sha256": "d889ed4539027a366e6522a18dfd83fdf18cac5c80e0caec67a774a9eb90bb3d"
+  },
+  "golfCountTable": {
+    "url": "https://rulesworkshops.usga.org/content/usga/home-page/handicapping/roh/Content/rules/5%202a%20For%20Fewer%20Than%2020%20Scores.htm",
+    "sha256": "fb09feca9bcce54b9573085350592ee5703a18556fbebb82519dd25d09e98126",
+    "rows": [
+      [
+        "Number of Score Differentials in scoring record",
+        "Score Differential(s) to be used in calculation of Handicap Index",
+        "Adjustment"
+      ],
+      [
+        "3",
+        "Lowest 1",
+        "-2.0"
+      ],
+      [
+        "4",
+        "Lowest 1",
+        "-1.0"
+      ],
+      [
+        "5",
+        "Lowest 1",
+        "0"
+      ],
+      [
+        "6",
+        "Average of lowest 2",
+        "-1.0"
+      ],
+      [
+        "7 or 8",
+        "Average of lowest 2",
+        "0"
+      ],
+      [
+        "9 to 11",
+        "Average of lowest 3",
+        "0"
+      ],
+      [
+        "12 to 14",
+        "Average of lowest 4",
+        "0"
+      ],
+      [
+        "15 or 16",
+        "Average of lowest 5",
+        "0"
+      ],
+      [
+        "17 or 18",
+        "Average of lowest 6",
+        "0"
+      ],
+      [
+        "19",
+        "Average of lowest 7",
+        "0"
+      ],
+      [
+        "20",
+        "Average of lowest 8",
+        "0"
+      ],
+      [
+        "",
+        "(i)",
+        "If a player\u2019s initial Handicap Index is calculated to be greater than the maximum Handicap Index of 54.0 (see Rule 5.3 Maximum Handicap Index), the player is allocated a Handicap Index of 54.0."
+      ],
+      [
+        "",
+        "(ii)",
+        "Based on any additional evidence available about a player\u2019s demonstrated ability, a Handicap Committee may modify a player\u2019s initial Handicap Index upward or downward, up to a maximum of 54.0 (see Rule 7.1a Conducting a Handicap Review and Adjusting a Handicap Index)."
+      ],
+      [
+        "Rule 5.2a Clarifications:"
+      ],
+      [
+        "5.2a/1 \u2013 Modification of a Player\u2019s Initial Handicap Index Due to Evidence of Previous Ability\n                                                        A player submits three scores to obtain an initial Handicap Index, which result in calculated Score Differentials of 15.3, 15.2 and 16.6.\n\n                                                        This would result in an initial Handicap Index of:\n\n                                                        \n                                                            \n                                                            \n                                                            \n                                                            \n                                                            \n                                                            \n                                                                \n                                                                    \n                                                                        Lowest Score Differential\n                                                                    \n                                                                    \n                                                                        \u2013\n                                                                    \n                                                                    \n                                                                        Adjustment\n                                                                    \n                                                                    \n                                                                        =\n                                                                    \n                                                                    \n                                                                        InitialHandicap Index\n                                                                    \n                                                                \n                                                                \n                                                                    \n                                                                        15.2\n                                                                    \n                                                                    \n                                                                        2\n                                                                    \n                                                                    \n                                                                        13.2\n                                                                    \n                                                                \n                                                            \n                                                        \n                                                        The Handicap Committee is aware that the player, who is rejoining a golf club after many years out of the game, had played well as a junior golfer and maintained a Handicap Index of around 8.0.\n                                                        Based on the evidence available, the Handicap Committee may adjust the player\u2019s calculated initial Handicap Index to better reflect their previously demonstrated ability.\n                                                        5.2a/2 \u2013 Modification of a Player\u2019s Initial Handicap Index When Subsequent Scores Are Significantly Different Than Expected\n                                                        A player submits three scores to obtain an initial Handicap Index, which result in calculated Score Differentials of 40.7, 42.4 and 36.1.\n                                                        This would result in an initial Handicap Index of:\n                                                        \n                                                            \n                                                            \n                                                            \n                                                            \n                                                            \n                                                            \n                                                                \n                                                                    \n                                                                        Lowest Score Differential\n                                                                    \n                                                                    \n                                                                        \u2013\n                                                                    \n                                                                    \n                                                                        Adjustment\n                                                                    \n                                                                    \n                                                                        =\n                                                                    \n                                                                    \n                                                                        InitialHandicap Index\n                                                                    \n                                                                \n                                                                \n                                                                    \n                                                                        36.1\n                                                                    \n                                                                    \n                                                                        2\n                                                                    \n                                                                    \n                                                                        34.1\n                                                                    \n                                                                \n                                                            \n                                                        \n                                                        The player then goes on to submit three more scores  which result in calculated Score Differentials of 45.9, 43.6 and 45.0.\n                                                        After these six scores, the player\u2019s Handicap Index would be:\n                                                        \n                                                            \n                                                            \n                                                            \n                                                            \n                                                            \n                                                            \n                                                                \n                                                                    \n                                                                        Average of Lowest Two Score\n Differentials\n                                                                    \n                                                                    \n                                                                        \u2013\n                                                                    \n                                                                    \n                                                                        Adjustment\n                                                                    \n                                                                    \n                                                                        =\n                                                                    \n                                                                    \n                                                                        InitialHandicap Index\n                                                                    \n                                                                \n                                                                \n                                                                    \n                                                                        38.4\n                                                                    \n                                                                    \n                                                                        1\n                                                                    \n                                                                    \n                                                                        37.4"
+      ],
+      [
+        "Lowest Score Differential",
+        "\u2013",
+        "Adjustment",
+        "=",
+        "InitialHandicap Index"
+      ],
+      [
+        "15.2",
+        "2",
+        "13.2"
+      ],
+      [
+        "Lowest Score Differential",
+        "\u2013",
+        "Adjustment",
+        "=",
+        "InitialHandicap Index"
+      ],
+      [
+        "36.1",
+        "2",
+        "34.1"
+      ],
+      [
+        "Average of Lowest Two Score\n Differentials",
+        "\u2013",
+        "Adjustment",
+        "=",
+        "InitialHandicap Index"
+      ],
+      [
+        "38.4",
+        "1",
+        "37.4"
+      ],
+      [
+        "In reviewing the player\u2019s calculated Handicap Index against their scores, the Handicap Committee may conclude in this case that the -1 adjustment should be removed to ensure the calculated Handicap Index better reflects the player\u2019s ability."
+      ]
+    ]
+  },
+  "texasRetail": {
+    "url": "https://comptroller.texas.gov/taxes/sales/",
+    "sha256": "318273a4053f7c731d7768722a0bb6e9d1a3779968b4f074bbaee534e9ca087e"
+  },
+  "texasVehicle": {
+    "url": "https://comptroller.texas.gov/taxes/motor-vehicle/sales-use.php",
+    "sha256": "b8847da8a2ff0d2d17cf93e7952b47542e9887c6cbbe2d29f343ff14271f7370"
+  },
+  "euEnergy": {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R1169-20250401",
+    "sha256": "1452050b952605f2e8df3dcd794b18a795c43ddb9c800e9de6249c91d067bd62"
+  }
+}
