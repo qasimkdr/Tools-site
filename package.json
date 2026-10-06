@@ -32,7 +32,7 @@
     "verify:gap20": "node scripts/verify-roadmap-gap20.cjs"
   },
   "dependencies": {
-    "next": "16.3.5",
+    "next": "16.3.8",
     "react": "19.1.1",
     "react-dom": "19.1.1"
   },
