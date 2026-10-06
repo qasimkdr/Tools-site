@@ -45,7 +45,7 @@ Last verified: **5 October 2026**
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 315 canonical + 5 noindex aliases (320 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 335 canonical + 5 noindex aliases (340 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
@@ -54,7 +54,7 @@ Last verified: **5 October 2026**
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
 | Guides | guide catalog in `lib/` | `/guides/[slug]/` | 45 |
 
-The production build is expected to generate **691 static pages** after the twenty distinct calculators selected from ranks 423–488. The content gate recognizes **181 Pakistan calculators, 315 indexable global tools (320 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 45 guides**. There are **682 canonical sitemap URLs** and **663 tool/guide profiles**. The next unreviewed workbook rank is **489**. These counts do not establish indexing or search positions.
+The production build is expected to generate **711 static pages** after the deferred-intent batch of 6 October 2026. The content gate recognizes **181 Pakistan calculators, 335 indexable global tools (340 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 45 guides**. There are **702 canonical sitemap URLs** and **683 tool/guide profiles**. All 489 workbook rows have now been reviewed; deferred scope remains and reaching the workbook end does not mean all intents are implemented. These counts do not establish indexing or search positions.
 
 The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
 
@@ -590,3 +590,13 @@ Do not broaden these implementations silently. Trigonometry is not a full physic
 Expected totals: **691 static pages**, **315 canonical global tools plus five aliases**, **45 guides**, **682 sitemap URLs**, **663 tool/guide profiles**. The conservative ledger has **326/489 scoped rows**, **316 calculator/tool rows and10 guide rows**, with **250 distinct calculator/tool destinations and10 guide destinations**. Preserve the original denominator and distinguish row completion from indexed or ranking pages.
 
 Run `verify:roadmap423`, existing roadmap268/328/369 baseline checks, `verify:calculate`, typecheck, full production build, related-navigation export, navigation graph and `git diff --check` before publishing. The new content gate requires 900 useful rendered words, five FAQs, distinct method/examples, self-canonical metadata, WebApplication/FAQPage/HowTo/BreadcrumbList schema, all supported mapped keywords, directory/sitemap discovery and a contextual incoming link. Title Case links to existing generator text tools; do not invent global text-counter routes. Keep two-worker static export and exact-live-commit IndexNow checks with cancellation of superseded notification runs.
+
+## Deferred-intent batch: 6 October 2026
+
+Twenty distinct worksheets were added after reviewing the final workbook row and revisiting deferred intents. The selection record is `research/roadmap-deferred-selection.json`; original authored content is reproducible with `python research/build-deferred-batch.py`. The batch contains five-number summaries, duration averages, integer exponent rules, stem-and-leaf plots, battery energy runtime, dilution ratio conventions, coupon-date fixed bonds, Cartesian 3D distance, timed BPM, label-based food protein, seven distinct mechanics/gas equations, Mifflin resting energy, Rockport walk prediction and confirmed Table III 2026 RMD arithmetic.
+
+Matching queries are merged into one calculation page. Physics extensions are distinct formulas, not seven additional roadmap rows. Unsupported broad physics intent, I bonds, Harris–Benedict and ordinary averages remain excluded from primary completion counts. Existing student-loan amortization overlaps protected payment destinations and receives no duplicate URL. The conservative ledger has **337/489 scoped rows**, comprising **327 calculator/tool rows and 10 guides**. Eleven deferred rows gained supported primary destinations; same-intent summary ranks 245 and 276 share one URL. Keyword provenance retains 25 exact supported workbook queries separately from new extension terms and does not invent their search volumes.
+
+No existing definition or review date was rewritten. `research/roadmap-deferred-baseline.json` protects all **320 prior global and 181 Pakistan definitions**. `npm run verify:deferred` checks actual engines, independent examples, inverse modes, invalid inputs and the IRS table provenance. `verify:calculate` exercises all twenty actual callbacks, requires explicit Calculate, preserves submitted output during edits, and tests the RMD confirmation gate. RMD defaults to unconfirmed; inherited, Roth-owner and Table II cases are excluded. Resting energy is Mifflin only, without an activity factor; Rockport uses the original healthy-adult age scope and an already completed test record.
+
+Expected validated export: **711 pages**, **335 canonical global tools plus five aliases**, **702 sitemap URLs**, **683 tool/guide profiles**. Run typecheck, new and prior baseline gates, interaction checks, full content/export/navigation validation and whitespace checks before pushing. Static export remains capped at two workers. Preserve the exact-live-commit manifest check and the existing post-live IndexNow workflow. Google ranking and indexing cannot be guaranteed.

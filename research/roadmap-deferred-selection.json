@@ -1,0 +1,447 @@
+{
+  "asOf": "2026-10-06",
+  "newTools": 20,
+  "records": [
+    {
+      "slug": "five-number-summary-calculator",
+      "ranks": [
+        245,
+        276
+      ],
+      "keywords": [
+        "five number summary calculator",
+        "5 number summary calculator"
+      ],
+      "related": [
+        "mean-standard-deviation-calculator",
+        "stem-and-leaf-plot-generator",
+        "z-score-calculator"
+      ],
+      "defaults": [
+        "1,2,3,4,5",
+        "exclusive"
+      ]
+    },
+    {
+      "slug": "average-time-calculator",
+      "ranks": [
+        226
+      ],
+      "keywords": [
+        "average time calculator"
+      ],
+      "related": [
+        "decimal-time-converter",
+        "time-between-calculator",
+        "weighted-mean-calculator"
+      ],
+      "defaults": [
+        "10:30\n12:00\n13:30",
+        ""
+      ]
+    },
+    {
+      "slug": "integer-exponent-calculator",
+      "ranks": [
+        292
+      ],
+      "keywords": [
+        "exponents calculator",
+        "rewrite using a single positive exponent calculator"
+      ],
+      "related": [
+        "nth-root-calculator",
+        "big-number-calculator",
+        "logarithm-calculator"
+      ],
+      "defaults": [
+        "2",
+        "-3",
+        "product",
+        "5"
+      ]
+    },
+    {
+      "slug": "stem-and-leaf-plot-generator",
+      "ranks": [
+        314
+      ],
+      "keywords": [
+        "stem and leaf plot generator"
+      ],
+      "related": [
+        "five-number-summary-calculator",
+        "mean-standard-deviation-calculator",
+        "correlation-coefficient-calculator"
+      ],
+      "defaults": [
+        "12,14,14,21,29",
+        "0"
+      ]
+    },
+    {
+      "slug": "battery-runtime-calculator",
+      "ranks": [
+        317
+      ],
+      "keywords": [
+        "battery run time calculator"
+      ],
+      "related": [
+        "watt-hour-calculator",
+        "electricity-usage-calculator",
+        "ohms-law-calculator"
+      ],
+      "defaults": [
+        "12",
+        "100",
+        "ah",
+        "80",
+        "90",
+        "120"
+      ]
+    },
+    {
+      "slug": "dilution-ratio-calculator",
+      "ranks": [
+        348
+      ],
+      "keywords": [
+        "dilution calculator",
+        "dilution ratio calculator"
+      ],
+      "related": [
+        "molarity-calculator",
+        "grams-to-ml-converter",
+        "ratio-calculator"
+      ],
+      "defaults": [
+        "diluent",
+        "9",
+        "1000"
+      ]
+    },
+    {
+      "slug": "fixed-coupon-bond-calculator",
+      "ranks": [
+        431
+      ],
+      "keywords": [
+        "bond price calculator",
+        "bond calculator",
+        "bond value calculator",
+        "calculator bond",
+        "bond valuation calculator"
+      ],
+      "related": [
+        "npv-calculator",
+        "time-value-of-money-calculator",
+        "effective-interest-rate-calculator"
+      ],
+      "defaults": [
+        "1000",
+        "5",
+        "6",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "slug": "cartesian-distance-calculator",
+      "ranks": [
+        477
+      ],
+      "keywords": [
+        "distance formula calculator",
+        "distance between two points calculator",
+        "distance between two points solver"
+      ],
+      "related": [
+        "midpoint-calculator",
+        "slope-calculator",
+        "right-triangle-calculator"
+      ],
+      "defaults": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "15"
+      ]
+    },
+    {
+      "slug": "bpm-calculator",
+      "ranks": [
+        480
+      ],
+      "keywords": [
+        "bpm calculator"
+      ],
+      "related": [
+        "average-time-calculator",
+        "decimal-time-converter",
+        "timecode-calculator"
+      ],
+      "defaults": [
+        "13",
+        "6",
+        "beats"
+      ]
+    },
+    {
+      "slug": "food-protein-calculator",
+      "ranks": [
+        461
+      ],
+      "keywords": [
+        "protein calculator in food",
+        "food protein calculator",
+        "protein counter",
+        "protein calculator online"
+      ],
+      "related": [
+        "macro-calculator",
+        "net-carbohydrate-calculator",
+        "grams-to-ml-converter"
+      ],
+      "defaults": [
+        "20,100,150\n8,200,100",
+        "80"
+      ]
+    },
+    {
+      "slug": "force-mass-acceleration-calculator",
+      "ranks": [
+        424
+      ],
+      "keywords": [
+        "physics calculator",
+        "force mass acceleration calculator",
+        "newtons second law calculator"
+      ],
+      "related": [
+        "momentum-impulse-calculator",
+        "kinetic-energy-calculator",
+        "gravitational-potential-energy-calculator"
+      ],
+      "defaults": [
+        "force",
+        "30",
+        "12",
+        "2.5"
+      ]
+    },
+    {
+      "slug": "kinetic-energy-calculator",
+      "ranks": [
+        424
+      ],
+      "keywords": [
+        "kinetic energy calculator",
+        "calculate kinetic energy",
+        "kinetic energy mass speed calculator"
+      ],
+      "related": [
+        "work-energy-calculator",
+        "momentum-impulse-calculator",
+        "force-mass-acceleration-calculator"
+      ],
+      "defaults": [
+        "energy",
+        "4",
+        "3",
+        "18"
+      ]
+    },
+    {
+      "slug": "momentum-impulse-calculator",
+      "ranks": [
+        424
+      ],
+      "keywords": [
+        "momentum calculator",
+        "impulse calculator",
+        "average force from impulse calculator"
+      ],
+      "related": [
+        "force-mass-acceleration-calculator",
+        "kinetic-energy-calculator",
+        "work-energy-calculator"
+      ],
+      "defaults": [
+        "2",
+        "3",
+        "-1",
+        ".5"
+      ]
+    },
+    {
+      "slug": "work-energy-calculator",
+      "ranks": [
+        424
+      ],
+      "keywords": [
+        "work calculator physics",
+        "work energy calculator",
+        "average power calculator"
+      ],
+      "related": [
+        "kinetic-energy-calculator",
+        "hookes-law-calculator",
+        "gravitational-potential-energy-calculator"
+      ],
+      "defaults": [
+        "50",
+        "4",
+        "60",
+        "5"
+      ]
+    },
+    {
+      "slug": "gravitational-potential-energy-calculator",
+      "ranks": [
+        424
+      ],
+      "keywords": [
+        "gravitational potential energy calculator",
+        "potential energy change calculator",
+        "mgh calculator"
+      ],
+      "related": [
+        "work-energy-calculator",
+        "kinetic-energy-calculator",
+        "force-mass-acceleration-calculator"
+      ],
+      "defaults": [
+        "5",
+        "2",
+        "9.81"
+      ]
+    },
+    {
+      "slug": "hookes-law-calculator",
+      "ranks": [
+        424
+      ],
+      "keywords": [
+        "hookes law calculator",
+        "spring force calculator",
+        "elastic potential energy calculator"
+      ],
+      "related": [
+        "work-energy-calculator",
+        "kinetic-energy-calculator",
+        "force-mass-acceleration-calculator"
+      ],
+      "defaults": [
+        "force",
+        "200",
+        ".05",
+        "-10"
+      ]
+    },
+    {
+      "slug": "ideal-gas-law-calculator",
+      "ranks": [
+        424
+      ],
+      "keywords": [
+        "ideal gas law calculator",
+        "pv nrt calculator",
+        "gas pressure volume temperature calculator"
+      ],
+      "related": [
+        "molarity-calculator",
+        "molecular-weight-calculator",
+        "density-mass-volume-calculator"
+      ],
+      "defaults": [
+        "pressure",
+        "99773.5514178389",
+        ".025",
+        "1",
+        "300"
+      ]
+    },
+    {
+      "slug": "resting-energy-calculator",
+      "ranks": [
+        449
+      ],
+      "keywords": [
+        "bmr calculation formula",
+        "basic metabolic rate calculator",
+        "mifflin st jeor calculator",
+        "resting energy calculator"
+      ],
+      "related": [
+        "macro-calculator",
+        "food-protein-calculator",
+        "calories-burned-calculator"
+      ],
+      "defaults": [
+        "70",
+        "175",
+        "35",
+        "male"
+      ]
+    },
+    {
+      "slug": "rockport-vo2-max-calculator",
+      "ranks": [
+        443
+      ],
+      "keywords": [
+        "estimate vo2 max calculator",
+        "vo2 max calculator",
+        "rockport vo2 max calculator",
+        "one mile walk vo2 calculator"
+      ],
+      "related": [
+        "bpm-calculator",
+        "running-pace-calculator",
+        "resting-energy-calculator"
+      ],
+      "defaults": [
+        "70",
+        "40",
+        "male",
+        "15",
+        "120"
+      ]
+    },
+    {
+      "slug": "rmd-uniform-lifetime-calculator",
+      "ranks": [
+        299
+      ],
+      "keywords": [
+        "rmd calculator",
+        "required minimum distribution calculator",
+        "2026 rmd calculator",
+        "uniform lifetime table calculator"
+      ],
+      "related": [
+        "savings-withdrawal-runway-calculator",
+        "time-value-of-money-calculator",
+        "compound-interest-calculator"
+      ],
+      "defaults": [
+        "265000",
+        "73",
+        "4000",
+        "no"
+      ]
+    }
+  ],
+  "excludedPrimaryIntents": {
+    "226": "ordinary numeric averages already protected; duration extension only",
+    "431": "I bond calculator needs current inflation-linked savings-bond rules; fixed-coupon secondary intent only",
+    "449": "Harris\u2013Benedict is not implemented; Mifflin secondary intent only",
+    "424": "physics is a broad subject; seven explicitly scoped equations do not complete the broad primary intent",
+    "489": "student-loan payment overlaps protected amortization destination; no duplicate added"
+  },
+  "protection": "All 320 prior global and 181 Pakistan definitions remain byte-for-byte equivalent as data. No prior calculation module changes.",
+  "ranking": "No first-page or indexing guarantee; pages are crawlable, unique and validated."
+}

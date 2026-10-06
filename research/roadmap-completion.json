@@ -1,18 +1,19 @@
 {
   "summary": {
-    "asOf": "2026-10-05",
+    "asOf": "2026-10-06",
     "totalRoadmapRows": 489,
-    "completedScopedRows": 326,
-    "completedCalculatorOrToolRows": 316,
+    "completedScopedRows": 337,
+    "completedCalculatorOrToolRows": 327,
     "completedGuideRows": 10,
-    "uniqueCalculatorOrToolDestinations": 250,
+    "uniqueCalculatorOrToolDestinations": 260,
     "uniqueGuideDestinations": 10,
-    "notCountedRows": 163,
-    "latestReviewedRank": 488,
-    "nextUnreviewedRank": 489,
+    "notCountedRows": 152,
+    "latestReviewedRank": 489,
+    "nextUnreviewedRank": null,
     "thisBatchNewCalculators": 20,
-    "thisBatchExactKeywords": 56,
-    "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis\u2013Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately."
+    "thisBatchExactKeywords": 25,
+    "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis\u2013Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately.",
+    "thisBatchNewScopedRows": 11
   },
   "rows": [
     {
@@ -2913,7 +2914,11 @@
       "roadmapPage": "Average Calculator",
       "primaryKeyword": "averages calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "additionalScopedDestinations": [
+        "/tools/average-time-calculator/"
+      ],
+      "scopeNote": "ordinary numeric averages already protected; duration extension only"
     },
     {
       "rank": 227,
@@ -3099,8 +3104,15 @@
       "rank": 245,
       "roadmapPage": "Five Number Summary Calculator",
       "primaryKeyword": "five number summary calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/tools/five-number-summary-calculator/",
+      "slug": "five-number-summary-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "destinations": [
+        "/tools/five-number-summary-calculator/"
+      ]
     },
     {
       "rank": 246,
@@ -3406,8 +3418,15 @@
       "rank": 276,
       "roadmapPage": "5 Number Summary Calculator",
       "primaryKeyword": "5 number summary calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/tools/five-number-summary-calculator/",
+      "slug": "five-number-summary-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "destinations": [
+        "/tools/five-number-summary-calculator/"
+      ]
     },
     {
       "rank": 277,
@@ -3554,8 +3573,15 @@
       "rank": 292,
       "roadmapPage": "Exponent Calculator",
       "primaryKeyword": "exponents calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/tools/integer-exponent-calculator/",
+      "slug": "integer-exponent-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "destinations": [
+        "/tools/integer-exponent-calculator/"
+      ]
     },
     {
       "rank": 293,
@@ -3615,8 +3641,15 @@
       "rank": 299,
       "roadmapPage": "Rmd Calculator",
       "primaryKeyword": "rmd calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/tools/rmd-uniform-lifetime-calculator/",
+      "slug": "rmd-uniform-lifetime-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "destinations": [
+        "/tools/rmd-uniform-lifetime-calculator/"
+      ]
     },
     {
       "rank": 300,
@@ -3738,8 +3771,15 @@
       "rank": 314,
       "roadmapPage": "Stem And Leaf Plot Generator",
       "primaryKeyword": "stem and leaf plot generator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/tools/stem-and-leaf-plot-generator/",
+      "slug": "stem-and-leaf-plot-generator",
+      "type": "calculator-or-tool",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "destinations": [
+        "/tools/stem-and-leaf-plot-generator/"
+      ]
     },
     {
       "rank": 315,
@@ -3765,8 +3805,15 @@
       "rank": 317,
       "roadmapPage": "Battery Run Time Calculator",
       "primaryKeyword": "battery run time calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/tools/battery-runtime-calculator/",
+      "slug": "battery-runtime-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "destinations": [
+        "/tools/battery-runtime-calculator/"
+      ]
     },
     {
       "rank": 318,
@@ -3992,7 +4039,14 @@
       "rank": 348,
       "roadmapPage": "Dilution Ratio Calculator",
       "primaryKeyword": "dilution calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/dilution-ratio-calculator/",
+      "slug": "dilution-ratio-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "destinations": [
+        "/tools/dilution-ratio-calculator/"
+      ]
     },
     {
       "rank": 349,
@@ -4644,7 +4698,17 @@
       "primaryKeyword": "physics calculator",
       "status": "deferred-outside-verified-scope",
       "evidence": "Primary physics/scientific-calculator intent exceeds the numeric trigonometric scope. Only five supported secondary queries map to the new trigonometry tool.",
-      "reviewedAt": "2026-10-05"
+      "reviewedAt": "2026-10-05",
+      "additionalScopedDestinations": [
+        "/tools/force-mass-acceleration-calculator/",
+        "/tools/kinetic-energy-calculator/",
+        "/tools/momentum-impulse-calculator/",
+        "/tools/work-energy-calculator/",
+        "/tools/gravitational-potential-energy-calculator/",
+        "/tools/hookes-law-calculator/",
+        "/tools/ideal-gas-law-calculator/"
+      ],
+      "scopeNote": "physics is a broad subject; seven explicitly scoped equations do not complete the broad primary intent"
     },
     {
       "rank": 425,
@@ -4720,7 +4784,11 @@
       "primaryKeyword": "i bond value calculator",
       "status": "deferred-outside-verified-scope",
       "evidence": "Series I bond valuation requires verified issue-date rate history and redemption terms; no generic bond substitute.",
-      "reviewedAt": "2026-10-05"
+      "reviewedAt": "2026-10-05",
+      "additionalScopedDestinations": [
+        "/tools/fixed-coupon-bond-calculator/"
+      ],
+      "scopeNote": "I bond calculator needs current inflation-linked savings-bond rules; fixed-coupon secondary intent only"
     },
     {
       "rank": 432,
@@ -4839,9 +4907,15 @@
       "rank": 443,
       "roadmapPage": "Vo2 Max Calculator",
       "primaryKeyword": "estimate vo2 max calculator",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "VO2 max estimation requires a selected validated test protocol and population scope.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "reviewedAt": "2026-10-05",
+      "path": "/tools/rockport-vo2-max-calculator/",
+      "slug": "rockport-vo2-max-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/rockport-vo2-max-calculator/"
+      ]
     },
     {
       "rank": 444,
@@ -4894,7 +4968,11 @@
       "primaryKeyword": "harris benedict calculator",
       "status": "deferred-outside-verified-scope",
       "evidence": "Harris\u2013Benedict intent requires a separately verified formula and clinical scope; no relabeling of existing BMR.",
-      "reviewedAt": "2026-10-05"
+      "reviewedAt": "2026-10-05",
+      "additionalScopedDestinations": [
+        "/tools/resting-energy-calculator/"
+      ],
+      "scopeNote": "Harris\u2013Benedict is not implemented; Mifflin secondary intent only"
     },
     {
       "rank": 450,
@@ -5003,9 +5081,15 @@
       "rank": 461,
       "roadmapPage": "Protein Calculator",
       "primaryKeyword": "protein calculator in food",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "Food protein totals and muscle-gain targets are distinct intents; no unverified target or unsupported food database.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "reviewedAt": "2026-10-05",
+      "path": "/tools/food-protein-calculator/",
+      "slug": "food-protein-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/food-protein-calculator/"
+      ]
     },
     {
       "rank": 462,
@@ -5156,9 +5240,15 @@
       "rank": 477,
       "roadmapPage": "Distance Calculator",
       "primaryKeyword": "distance formula calculator",
-      "status": "protected-existing",
-      "evidence": "Existing adjacent or supported calculation is preserved. No definition, logic or review-date edit; broader unsupported variants remain excluded.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "reviewedAt": "2026-10-05",
+      "path": "/tools/cartesian-distance-calculator/",
+      "slug": "cartesian-distance-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/cartesian-distance-calculator/"
+      ]
     },
     {
       "rank": 478,
@@ -5185,9 +5275,15 @@
       "rank": 480,
       "roadmapPage": "Bpm Calculator",
       "primaryKeyword": "bpm calculator",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "A dedicated beat-count observation method is outside this selected twenty-tool batch.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "2026-10-06 deferred review: explicit supported worksheet; see roadmap-deferred-selection.json",
+      "reviewedAt": "2026-10-05",
+      "path": "/tools/bpm-calculator/",
+      "slug": "bpm-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/bpm-calculator/"
+      ]
     },
     {
       "rank": 481,
@@ -5277,7 +5373,8 @@
       "rank": 489,
       "roadmapPage": "Student Loan Calculator",
       "primaryKeyword": "student loan amortization calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "protected-existing-destination",
+      "evidence": "Existing payment and mortgage amortization intent overlaps protected definitions; no duplicate student-loan URL added."
     },
     {
       "rank": 328,

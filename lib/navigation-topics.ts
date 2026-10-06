@@ -1,9 +1,11 @@
 /** Reviewed task families, not broad category matching. Membership is explicit;
  * future pages require a reviewed addition rather than a keyword guess.
  * A topic link offers a separate related task, never equivalent functionality. */
+import {deferredNavigation} from "./roadmap-deferred-navigation";
 export type NavigationTopic={id:string;reason:string;paths:string[]};
 const group=(id:string,prefix:string,slugs:string,reason:string):NavigationTopic=>({id,reason,paths:slugs.split(/\s+/).map(s=>`${prefix}/${s}/`)});
 export const navigationTopics:NavigationTopic[]=[
+ ...deferredNavigation,
  {"id": "roadmap423-trigonometric-functions-calculator", "reason": "Angle or ratio: Calculate sine, cosine, tangent and principal inverse angles with an explicit degree or radian setting and domain checks. Each related worksheet handles its own adjacent task with separate assumptions.", "paths": ["/tools/trigonometric-functions-calculator/", "/tools/right-triangle-calculator/", "/tools/logarithm-calculator/", "/tools/slope-calculator/"]},
  {"id": "roadmap423-slope-calculator", "reason": "Coordinate pairs: Find rise over run, line angle and Cartesian distance between two points, with explicit vertical-line and identical-point handling. Each related worksheet handles its own adjacent task with separate assumptions.", "paths": ["/tools/slope-calculator/", "/tools/midpoint-calculator/", "/tools/right-triangle-calculator/", "/tools/trigonometric-functions-calculator/"]},
  {"id": "roadmap423-rental-property-cash-flow-calculator", "reason": "One period and currency: Model rental cash flow, net operating income, cap rate and cash-on-cash return from supplied rent, vacancy, costs and capital. Each related worksheet handles its own adjacent task with separate assumptions.", "paths": ["/tools/rental-property-cash-flow-calculator/", "/tools/cap-rate-calculator/", "/tools/npv-calculator/", "/tools/rent-affordability-calculator/"]},

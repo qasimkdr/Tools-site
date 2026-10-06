@@ -1,6 +1,8 @@
+import {deferredDefaults} from "./deferred-defaults";
 export type CalculatorDefaults = [string, string, string, string?, string?, string?, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  ...deferredDefaults,
   "trigonometric-functions-calculator": ["30", "sin", "deg"],
   "slope-calculator": ["2", "3", "6", "11"],
   "rental-property-cash-flow-calculator": ["2000", "5", "600", "900", "60000", "240000"],
