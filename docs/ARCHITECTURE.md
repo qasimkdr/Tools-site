@@ -40,3 +40,5 @@ Keep resolver modules category-focused. Do not keep expanding one universal cond
 `scripts/validate-content.mjs` reads exported HTML from `out/` and blocks incomplete builds. Add phase-specific slugs and exact checks there instead of relying on manual review alone.
 
 The gap20 resolver is additive and ordered before prior resolvers. NYC and Nike reference datasets are separated from the engine in `lib/gap20-reference-data.ts`. Original prior tool definitions are fingerprinted independently of reviewed navigation additions.
+
+The 12 October batch uses seven shared resolvers plus dedicated submitted-result BirthdayGenerator and RentBuyTool workbenches. Authored catalog and extended methodology are centralized in lib/roadmap-next10-oct12-content.ts; reviewed navigation and an additional full-export SEO gate integrate the ten destinations without rewriting prior definitions.

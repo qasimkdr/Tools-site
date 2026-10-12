@@ -1,8 +1,10 @@
+import {next10Defaults} from './next10-defaults';
 import {gap20Defaults} from "./gap20-defaults";
 import {deferredDefaults} from "./deferred-defaults";
 export type CalculatorDefaults = [string, string, string, string?, string?, string?, string?, string?];
 
 export const calculatorDefaults: Record<string, CalculatorDefaults> = {
+  ...next10Defaults,
   ...gap20Defaults,
   ...deferredDefaults,
   "trigonometric-functions-calculator": ["30", "sin", "deg"],

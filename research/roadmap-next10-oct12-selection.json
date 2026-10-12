@@ -1,0 +1,201 @@
+{
+  "asOf": "2026-10-12",
+  "baselineCommit": "bb969fee0ca0fe811c6153d2ec5685da652e2ca8",
+  "policy": "Preserve every prior global and Pakistan definition, including reviewed dates. Skip duplicate or protected destinations. Revisit verified gaps rather than invent a next unreviewed rank.",
+  "sourceWorkbook": "SolvePilot_50_Tools_Daily_SEO_Roadmap.xlsx",
+  "keywordData": "Historical supplied SEMrush workbook metrics, not current paid-tool observations. No fresh volume/KD or ranking guarantee claimed. Higher-KD entries selected for distinct user tasks and feasible improvements, not labeled low competition.",
+  "newTools": 9,
+  "newGuides": 1,
+  "records": [
+    {
+      "rank": 231,
+      "slug": "bowling-handicap-calculator",
+      "path": "/tools/bowling-handicap-calculator/",
+      "type": "calculator-or-tool",
+      "primaryKeyword": "bowling handicap calculator",
+      "historicalVolume": 1000,
+      "historicalKD": 4,
+      "historicalCPC": 0,
+      "sourceFiles": "semrush-export-2215.xlsx",
+      "scope": "Individual nonnegative per-game percentage-of-basis awards; league settings supplied; no negative or team-difference handicap.",
+      "previousLedgerStatus": "skipped-deferred-or-unverified"
+    },
+    {
+      "rank": 256,
+      "slug": "quilt-binding-calculator",
+      "path": "/tools/quilt-binding-calculator/",
+      "type": "calculator-or-tool",
+      "primaryKeyword": "binding calculator",
+      "historicalVolume": 1300,
+      "historicalKD": 9,
+      "historicalCPC": 0,
+      "sourceFiles": "semrush-export-2215.xlsx",
+      "scope": "Quilting intent verified; straight cross-grain strips with supplied internal join loss; not ski binding or bias layout.",
+      "previousLedgerStatus": "skipped-deferred-or-unverified"
+    },
+    {
+      "rank": 280,
+      "slug": "random-birthday-generator",
+      "path": "/tools/random-birthday-generator/",
+      "type": "calculator-or-tool",
+      "primaryKeyword": "generator birthday",
+      "historicalVolume": 1000,
+      "historicalKD": 9,
+      "historicalCPC": 1.26,
+      "sourceFiles": "semrush-export-2215.xlsx",
+      "scope": "Fictional uniform Gregorian date samples, not identity data or demographic weighting.",
+      "previousLedgerStatus": "skipped-deferred-or-unverified"
+    },
+    {
+      "rank": 295,
+      "slug": "legal-deadline-calculator",
+      "path": "/tools/legal-deadline-calculator/",
+      "type": "calculator-or-tool",
+      "primaryKeyword": "deadline calculator legal",
+      "historicalVolume": 1000,
+      "historicalKD": 12,
+      "historicalCPC": 2.19,
+      "sourceFiles": "semrush-export-2215.xlsx",
+      "scope": "Verified FRCP 6(a)-style date arithmetic with standard federal observed holidays and supplied exceptions; no jurisdiction/service/cutoff inference.",
+      "previousLedgerStatus": "skipped-deferred-or-unverified"
+    },
+    {
+      "rank": 306,
+      "slug": "brick-calculator",
+      "path": "/tools/brick-calculator/",
+      "type": "calculator-or-tool",
+      "primaryKeyword": "brick calculator",
+      "historicalVolume": 5400,
+      "historicalKD": 25,
+      "historicalCPC": null,
+      "sourceFiles": "semrush-export-2604.xlsx",
+      "scope": "Global actual-face modular net-area brick takeoff; distinct from protected Pakistan nominal volume-density worksheet.",
+      "previousLedgerStatus": "skipped-deferred-or-unverified"
+    },
+    {
+      "rank": 319,
+      "slug": "bra-size-calculator",
+      "path": "/tools/bra-size-calculator/",
+      "type": "calculator-or-tool",
+      "primaryKeyword": "bras measurement calculator",
+      "historicalVolume": 6600,
+      "historicalKD": 31,
+      "historicalCPC": null,
+      "sourceFiles": "semrush-export-4100.xlsx",
+      "scope": "Disclosed rounded two-measurement US/UK chart; no six-measurement A Bra That Fits algorithm or breast volume.",
+      "previousLedgerStatus": "skipped-deferred-or-unverified"
+    },
+    {
+      "rank": 333,
+      "slug": "pocket-real-estate-master-guide",
+      "path": "/guides/pocket-real-estate-master-guide/",
+      "type": "guide",
+      "primaryKeyword": "calc industries pocket real estate master financial calculator",
+      "historicalVolume": 1000,
+      "historicalKD": 11,
+      "historicalCPC": 0,
+      "sourceFiles": "semrush-export-2215.xlsx",
+      "scope": "Independent product-intent guide linking manufacturer documentation; embeds existing mortgage check, not firmware emulation.",
+      "previousLedgerStatus": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 366,
+      "slug": "shelf-life-calculator",
+      "path": "/tools/shelf-life-calculator/",
+      "type": "calculator-or-tool",
+      "primaryKeyword": "shelf life calculator",
+      "historicalVolume": 1000,
+      "historicalKD": 14,
+      "historicalCPC": 0,
+      "sourceFiles": "semrush-export-2215.xlsx",
+      "scope": "Supplied Q10 accelerated-aging duration scenarios only; not safety or expiry determination.",
+      "previousLedgerStatus": "not-yet-reviewed-in-sequence"
+    },
+    {
+      "rank": 394,
+      "slug": "paver-calculator",
+      "path": "/tools/paver-calculator/",
+      "type": "calculator-or-tool",
+      "primaryKeyword": "paver calculator",
+      "historicalVolume": 8100,
+      "historicalKD": 36,
+      "historicalCPC": null,
+      "sourceFiles": "semrush-export-2604.xlsx",
+      "scope": "Paving units plus separately supplied base/bedding ordering volumes; distinct from protected tile count; no pavement design.",
+      "previousLedgerStatus": "skipped-existing-or-covered-intent"
+    },
+    {
+      "rank": 462,
+      "slug": "home-rent-vs-buy-calculator",
+      "path": "/tools/home-rent-vs-buy-calculator/",
+      "type": "calculator-or-tool",
+      "primaryKeyword": "rent vs buy calculator nyt",
+      "historicalVolume": 4400,
+      "historicalKD": 42,
+      "historicalCPC": null,
+      "sourceFiles": "semrush-export-4100.xlsx",
+      "scope": "Independent fixed-rate home cash-flow and opportunity-cost scenario; not NYT tax method or affiliation.",
+      "previousLedgerStatus": "deferred-outside-verified-scope"
+    }
+  ],
+  "selectionNotes": [
+    "Ambiguous HR/login/fruit/calculator-brand queries remain deferred.",
+    "Covered averages, percentages, tax, date and credit-card synonyms remain unchanged.",
+    "No peptide, reconstitution, EtG or other unvalidated personal dosing/detection engine added.",
+    "Quilting resolves binding query intent; broad legal, bra, shelf-life and named NYT queries are bounded to expressly disclosed methods."
+  ],
+  "reviewedSources": [
+    "https://bowl.com/rules/general-resources",
+    "https://www.janome.com/how-to-machine-bind-a-quilt/",
+    "https://www.w3.org/TR/WebCryptoAPI/",
+    "https://www.uscourts.gov/sites/default/files/document/federal-rules-of-civil-procedure.pdf",
+    "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+    "https://www.gobrick.com/media/file/10-dimensioning-and-estimating-brick-masonry.pdf",
+    "https://www.barenecessities.com/blogs/learn/how-to-measure-your-bra-size",
+    "https://www.bravissimo.com/us/bra-fitting-guide/",
+    "https://westpak.com/resources/calculator/accelerated-aging-time-calculator/",
+    "https://store.astm.org/f1980-21.html",
+    "https://www.cmha.org/resource/pav-tec-002/",
+    "https://www.consumerfinance.gov/owning-a-home/prepare/figure-out-how-much-you-want-to-spend/",
+    "https://www.calculated.com/products/pocket-real-estate-master-3400-finance-calculator/",
+    "https://www.calculated.com/user-guides/"
+  ],
+  "competitorReview": [
+    {
+      "url": "https://gobowling.com/bowling-handicap-calculator/",
+      "finding": "League settings and team modes already exist; add explicit average truncation, optional scratch-series verification and limits rather than claiming every competing page lacks them."
+    },
+    {
+      "url": "https://www.thefabricmath.com/quilt-binding-calculator/",
+      "finding": "Perimeter plus allowance simplified estimate; expose per-internal-join loss and verify the minimum joined strip count."
+    },
+    {
+      "url": "https://textavia.com/tools/random-date-of-birth-generator",
+      "finding": "Date range and export already exist; preserve submitted samples and exported reference dates, reject unique-count capacity errors."
+    },
+    {
+      "url": "https://www.opencase.com/tools/legal-deadline-calculator",
+      "finding": "FRCP arithmetic exists; make applicability and additional court exclusions explicit, support backward counting, do not infer service deadlines."
+    },
+    {
+      "url": "https://projectmaterialcalc.com/structure-and-measuring/brick-calculator/",
+      "finding": "Actual modules and openings already exist; provide auditable intermediate coverage and separate independent-leaf scope."
+    },
+    {
+      "url": "https://bracalc.com/bra-size-chart",
+      "finding": "Multiple sizing systems are not universal; disclose the chosen rounded chart and reject extrapolation."
+    },
+    {
+      "url": "https://calculator.academy/accelerated-stability-calculator/",
+      "finding": "Advanced models exist; use bounded supplied Q10 only with explicit validation gate, not a claim to out-feature every model."
+    },
+    {
+      "url": "https://www.measureandbuild.com/paver-base-calculator/",
+      "finding": "Prescriptive depths and assumed density differ; keep supplier ordering depths and volume packaging explicit."
+    },
+    {
+      "url": "https://www.nytimes.com/interactive/2024/upshot/buy-rent-calculator.html",
+      "finding": "Reviewed retrieved public search summary; branded tax model not reproduced. Disclose independent monthly cash-flow timing, remaining debt and year-by-year export."
+    }
+  ]
+}

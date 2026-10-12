@@ -1,3 +1,4 @@
+import {next10Tools} from './roadmap-next10-oct12-content';
 import {roadmapGap20Tools} from "./roadmap-gap20-tools";
 import {roadmapDeferredTools} from "./roadmap-deferred-tools";
 import {roadmap423Tools} from "./roadmap-423-plus-tools";
@@ -348,6 +349,7 @@ const originalGlobalTools: Tool[] = seeds.map((tool) => ({
 }));
 
 export const globalTools: Tool[] = [
+  ...next10Tools,
   ...originalGlobalTools,
   ...globalFinanceTools,
   ...ecommerceTools,

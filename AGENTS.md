@@ -40,21 +40,21 @@ Prefer focused searches and small excerpts. Never repeatedly load large catalogs
 
 Update this section whenever a completed phase changes counts or architecture.
 
-Last verified: **6 October 2026**
+Last verified: **12 October 2026**
 
 | Collection | Source catalog | Public route | Pages |
 |---|---|---|---:|
 | Pakistan calculators | `lib/tools.ts` | `/pk/tools/[slug]/` | 181 |
-| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 355 canonical + 5 noindex aliases (360 generated) |
+| Global calculators | `lib/global-tools.ts` plus focused catalogs | `/tools/[slug]/` | 364 canonical + 5 noindex aliases (369 generated) |
 | PDF tools | `lib/pdf-tools.ts` | `/pdf-tools/[slug]/` | 14 |
 | Document and data tools | `lib/document-tools.ts` | `/document-tools/[slug]/` | 25 |
 | Image tools | `lib/image-tools.ts` | `/image-tools/[slug]/` | 13 |
 | Video, audio and subtitle tools | `lib/media-tools.ts` | `/media-tools/[slug]/` | 16 |
 | Archive and compressed-file tools | `lib/archive-tools.ts` | `/archive-tools/[slug]/` | 6 |
 | Generator tools | three focused generator catalogs | `/generator-tools/[slug]/` | 48 |
-| Guides | guide catalog in `lib/` | `/guides/[slug]/` | 45 |
+| Guides | guide catalog in `lib/` | `/guides/[slug]/` | 46 |
 
-The production build is expected to generate **731 static pages** after the verified-gap batch of 6 October 2026. The content gate recognizes **181 Pakistan calculators, 355 indexable global tools (360 generated routes including five noindex canonical aliases), 48 Phase 6 generators, 20 archive/data/subtitle tools and 45 guides**. There are **722 canonical sitemap URLs** and **703 tool/guide profiles**. All 489 unique workbook rows have been reviewed; **351 scoped rows (71.8%)** are completed, while 138 remain outside the completed count. These counts do not establish indexing or search positions.
+The current batch targets **741 static pages**, **181 Pakistan calculators**, **364 indexable global tools (369 generated routes including five noindex canonical aliases)**, **48 generators** and **46 guides**. There are **732 canonical sitemap URLs** and **713 tool/guide profiles**. All 489 unique workbook ranks are represented in the ledger; **361 scoped rows (73.8%)** are completed and **128** remain outside that count. Completion is bounded to documented methods, not all possible keyword variants, indexed pages or ranking positions. Historical phase counts below describe their own dates and are not the current totals.
 
 The roadmap ranks 69–85 are covered by six new canonical calculators and eleven keyword upgrades/merges into existing relevant pages. Rank 68, “Login Calculator,” is deferred because its mapped “ug calculator” query has mixed unrelated search intent and does not support a reliable, accurate login calculator page.
 
@@ -617,3 +617,18 @@ Required gates: `npm run typecheck`, `npm run verify:gap20`, all prior calculati
 ## 23. Security dependency patches (6 October 2026)
 
 The user explicitly authorized fixing the dependency vulnerabilities reported after the gap20 batch. Next.js is pinned to **16.3.8**, including its matching environment/SWC packages; the existing PostCSS-compatible source-map-js dependency is locked to **1.2.2** without an override or new direct dependency. These resolve the prior critical Next.js image-response advisory and high source-map indexed-offset denial-of-service advisory. React versions, all calculator/editorial definitions and reviewed dates, route counts and spreadsheet coverage are unchanged. Verify a clean npm ci, zero-known-vulnerability npm audit, typecheck, calculation/baseline regressions, full 731-page export/content/navigation gates and whitespace checks before publishing. Confirm the exact live commit and Render logs afterward. The local npm unknown http-proxy configuration warning comes from injected runner environment variables, not application code; do not add a repository workaround or alter hosting secrets for it.
+
+
+## 24. Ten verified-gap destinations — 12 October 2026
+
+The user authorized publication of the next ten eligible destinations using the existing design and all prior SEO/discovery rules. This batch adds nine canonical global tools and one product-intent guide: Bowling Handicap, Quilt Binding, Random Birthday, Legal Deadline, actual-size Brick Takeoff, US/UK Bra Chart, Q10 Shelf-Life Aging, Pavers/Base/Bedding, Home Rent vs Buy, and the Calculated Industries Pocket Real Estate Master guide. Selection ranks are 231, 256, 280, 295, 306, 319, 333, 366, 394 and 462, recorded with historical workbook metrics and source/competitor review in `research/roadmap-next10-oct12-selection.json`. No claim of fresh paid keyword metrics, universal competitor superiority or first-page placement is made.
+
+Content/catalog ownership is `lib/roadmap-next10-oct12-content.ts`; the guide is `lib/roadmap-next10-oct12-guide.ts`. Seven mathematics engines live in `components/calculators/roadmap-next10-oct12.ts`, with defaults in `components/calculators/next10-defaults.ts`. `BirthdayGenerator.tsx` and `RentBuyTool.tsx` use the shared design classes and independent local processors in `lib/birthday-generator.ts` and `lib/rent-buy.ts`. Both retain submitted results and downloads during input edits. Reviewed incoming associations live in `lib/roadmap-next10-oct12-navigation.ts`. Catalog integration automatically supplies routes, header search, directories, homepage counts and sitemap entries.
+
+Scopes must remain explicit: bowling truncates an entered average and per-game award with supplied basis/percentage/cap, not team-difference or series-level rounding. Binding calculates straight cross-grain strips with supplied internal-join losses, not bias layouts. Birthdays are uniform fictional date samples, not identities. Legal dates require verified FRCP-style day-count applicability and complete extra exclusions; no service extension, jurisdiction or filing-time rule is inferred. Brick counts use actual face modules and openings for identical independent leaves, distinct from the protected Pakistan nominal volume estimate. Bra labels use a disclosed rounded two-measurement US/UK chart, not the six-measurement A Bra That Fits method or breast volume. Q10 durations require an independently checked protocol and do not establish an expiry or safety claim. Paving quantities use supplied ordering depths without a hidden compaction or structural prescription. Rent-buy compares user-assumed monthly cash flows, remaining debt, transaction costs and net opportunity returns, with no NYT tax-method emulation. The product guide links official instructions and embeds the existing mortgage calculator; no firmware or keystroke emulation is claimed.
+
+All **541 prior definitions** (360 global plus 181 Pakistan) and review dates are fingerprinted in `research/roadmap-next10-oct12-baseline.json`. `npm run verify:next10` checks independent examples, invariants, inverses, dates/holidays, failure boundaries, real shared/custom callbacks, actual downloadable Blob contents and protected fingerprints. `scripts/validate-next10-oct12.mjs` is an additional build gate: every new tool requires at least 900 rendered article words excluding navigation, the guide 1200, plus metadata, canonical/OG/Twitter tags, visible FAQs, schema, supported keywords, directory and sitemap checks. Original gates remain enabled; existing count assertions are updated to the larger verified totals.
+
+Expected export: **741 pages**, **732 canonical sitemap URLs**, **713 tool/guide profiles**, **364 canonical global tools + 5 aliases**, **46 guides**. The conservative ledger now records **361/489 scoped rows: 350 tool rows and 11 guides**, mapping to **280 distinct primary tool paths and 11 guide paths**. Keep the original 489 denominator and all unsupported/deferred scopes.
+
+Permanent continuation preference: for future authorized batches, apply these established SEO, existing-design, duplicate prevention, protected-definition, source/method, sitemap/search/category, contextual linking, validation and exact-deployment verification rules without requiring the user to restate them. Current source files and the latest snapshot are authoritative over older historical notes. No ranking or indexing guarantee is permitted. Publishing remains subject to successful checks and session authorization; this session expressly authorized the ten-destination publish.

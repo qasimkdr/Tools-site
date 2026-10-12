@@ -14,7 +14,7 @@ import {creatorTools} from "@/lib/creator-tools";
 export const dynamic="force-static";
 const monthly=(url:string,date:string,priority=.8)=>({url,lastModified:new Date(date),changeFrequency:"monthly" as const,priority});
 export default function sitemap():MetadataRoute.Sitemap{
- const fixed=["","/tools","/pdf-tools","/document-tools","/image-tools","/media-tools","/archive-tools","/generator-tools","/pk/tools","/pk/mobiles","/guides","/about","/editorial-policy","/author/mohammad-qasim","/contact","/privacy","/cookies","/terms","/disclaimer"].map((path,i)=>({url:base+path+"/",lastModified:new Date(["","/tools","/guides","/contact","/privacy","/cookies","/terms"].includes(path)?"2026-10-03":"2026-09-25"),changeFrequency:(i<8?"weekly":"monthly") as "weekly"|"monthly",priority:i===0?1:i<8?.8:.4}));
+ const fixed=["","/tools","/pdf-tools","/document-tools","/image-tools","/media-tools","/archive-tools","/generator-tools","/pk/tools","/pk/mobiles","/guides","/about","/editorial-policy","/author/mohammad-qasim","/contact","/privacy","/cookies","/terms","/disclaimer"].map((path,i)=>({url:base+path+"/",lastModified:new Date(["","/tools","/guides"].includes(path)?"2026-10-12":["/contact","/privacy","/cookies","/terms"].includes(path)?"2026-10-03":"2026-09-25"),changeFrequency:(i<8?"weekly":"monthly") as "weekly"|"monthly",priority:i===0?1:i<8?.8:.4}));
  return[
   ...fixed,
   ...archiveTools.map(t=>monthly(base+"/archive-tools/"+t.slug+"/","2026-09-25")),

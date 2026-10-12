@@ -1,3 +1,4 @@
+import {next10Guide} from './roadmap-next10-oct12-guide';
 import {next20Guides} from "./roadmap-next20-guides";
 import {roadmap206Guides} from "./roadmap-206-225-guides";
 import {roadmap186Guides} from "./roadmap-186-205-guides";
@@ -42,6 +43,7 @@ const editorialSource: GuideSource = {
 };
 
 export const guides: Guide[] = [
+  next10Guide,
   ...roadmap186Guides,
   ...roadmap206Guides,
   ...next20Guides,

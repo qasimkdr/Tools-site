@@ -1,3 +1,4 @@
+import {next10Audit} from './roadmap-next10-oct12-content';
 import {roadmapGap20Audit} from "./roadmap-gap20-audit";
 import {roadmapDeferredAudit} from "./roadmap-deferred-audit";
 import {roadmap423Audit} from "./roadmap-423-plus-audit";
@@ -509,6 +510,7 @@ export const semrushBatchOneAudit: Record<string, Audit> = {
 };
 
 const baseAuditForTool=(tool:Tool)=>{
+ if(next10Audit[tool.slug])return next10Audit[tool.slug];
  if(roadmapGap20Audit[tool.slug])return roadmapGap20Audit[tool.slug];
  if(roadmapDeferredAudit[tool.slug])return roadmapDeferredAudit[tool.slug];
  if(roadmap423Audit[tool.slug])return roadmap423Audit[tool.slug];

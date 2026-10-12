@@ -11,6 +11,10 @@ export const metadata: Metadata = {
 };
 
 const copy: Record<string, string> = {
+  Crafts: 'Plan fabric and craft material quantities from measured dimensions, usable widths and explicit working allowances.',
+  Construction: 'Estimate separate material quantities with measured dimensions, product sizes and supplier assumptions; verify the project design independently.',
+  Science: 'Inspect bounded scientific arithmetic with stated inputs, units and method limits; calculations do not establish laboratory or clinical validation.',
+  Sports: 'Check sport-specific scores and performance arithmetic under the disclosed rules and entered assumptions.',
   "E-commerce & Ads":
     "Measure advertising efficiency, acquisition cost, customer value, order contribution, returns, inventory and shipping with currency-neutral inputs.",
   Money:

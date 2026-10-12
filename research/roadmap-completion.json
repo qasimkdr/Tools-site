@@ -1,20 +1,21 @@
 {
   "summary": {
-    "asOf": "2026-10-06",
+    "asOf": "2026-10-12",
     "totalRoadmapRows": 489,
-    "completedScopedRows": 351,
-    "completedCalculatorOrToolRows": 341,
-    "completedGuideRows": 10,
-    "uniqueCalculatorOrToolDestinations": 271,
-    "uniqueGuideDestinations": 10,
-    "notCountedRows": 138,
+    "completedScopedRows": 361,
+    "completedCalculatorOrToolRows": 350,
+    "completedGuideRows": 11,
+    "uniqueCalculatorOrToolDestinations": 280,
+    "uniqueGuideDestinations": 11,
+    "notCountedRows": 128,
     "latestReviewedRank": 489,
     "nextUnreviewedRank": null,
-    "thisBatchNewCalculators": 20,
-    "thisBatchExactKeywords": 27,
+    "thisBatchNewCalculators": 9,
+    "thisBatchExactKeywords": 10,
     "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis\u2013Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately.",
-    "thisBatchNewScopedRows": 14,
-    "duplicateRanksRemoved": 20
+    "thisBatchNewScopedRows": 10,
+    "duplicateRanksRemoved": 20,
+    "thisBatchNewGuides": 1
   },
   "rows": [
     {
@@ -2971,8 +2972,18 @@
       "rank": 231,
       "roadmapPage": "Bowling Handicap Calculator",
       "primaryKeyword": "bowling handicap calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "path": "/tools/bowling-handicap-calculator/",
+      "slug": "bowling-handicap-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "scopeNote": "Individual nonnegative per-game percentage-of-basis awards; league settings supplied; no negative or team-difference handicap.",
+      "reviewedAt": "2026-10-12",
+      "destinations": [
+        "/tools/bowling-handicap-calculator/"
+      ],
+      "previousStatus": "skipped-deferred-or-unverified",
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 232,
@@ -3219,8 +3230,18 @@
       "rank": 256,
       "roadmapPage": "Binding Calculator",
       "primaryKeyword": "binding calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "path": "/tools/quilt-binding-calculator/",
+      "slug": "quilt-binding-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "scopeNote": "Quilting intent verified; straight cross-grain strips with supplied internal join loss; not ski binding or bias layout.",
+      "reviewedAt": "2026-10-12",
+      "destinations": [
+        "/tools/quilt-binding-calculator/"
+      ],
+      "previousStatus": "skipped-deferred-or-unverified",
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 257,
@@ -3466,8 +3487,18 @@
       "rank": 280,
       "roadmapPage": "Generator Birthday",
       "primaryKeyword": "generator birthday",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "path": "/tools/random-birthday-generator/",
+      "slug": "random-birthday-generator",
+      "type": "calculator-or-tool",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "scopeNote": "Fictional uniform Gregorian date samples, not identity data or demographic weighting.",
+      "reviewedAt": "2026-10-12",
+      "destinations": [
+        "/tools/random-birthday-generator/"
+      ],
+      "previousStatus": "skipped-deferred-or-unverified",
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 281,
@@ -3617,8 +3648,18 @@
       "rank": 295,
       "roadmapPage": "Deadline Calculator Legal",
       "primaryKeyword": "deadline calculator legal",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "path": "/tools/legal-deadline-calculator/",
+      "slug": "legal-deadline-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "scopeNote": "Verified FRCP 6(a)-style date arithmetic with standard federal observed holidays and supplied exceptions; no jurisdiction/service/cutoff inference.",
+      "reviewedAt": "2026-10-12",
+      "destinations": [
+        "/tools/legal-deadline-calculator/"
+      ],
+      "previousStatus": "skipped-deferred-or-unverified",
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 296,
@@ -3728,8 +3769,18 @@
       "rank": 306,
       "roadmapPage": "Brick Calculator",
       "primaryKeyword": "brick calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "path": "/tools/brick-calculator/",
+      "slug": "brick-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "scopeNote": "Global actual-face modular net-area brick takeoff; distinct from protected Pakistan nominal volume-density worksheet.",
+      "reviewedAt": "2026-10-12",
+      "destinations": [
+        "/tools/brick-calculator/"
+      ],
+      "previousStatus": "skipped-deferred-or-unverified",
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 307,
@@ -3854,8 +3905,18 @@
       "rank": 319,
       "roadmapPage": "Bra Size Calculator",
       "primaryKeyword": "bras measurement calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "path": "/tools/bra-size-calculator/",
+      "slug": "bra-size-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "scopeNote": "Disclosed rounded two-measurement US/UK chart; no six-measurement A Bra That Fits algorithm or breast volume.",
+      "reviewedAt": "2026-10-12",
+      "destinations": [
+        "/tools/bra-size-calculator/"
+      ],
+      "previousStatus": "skipped-deferred-or-unverified",
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 320,
@@ -3998,7 +4059,17 @@
       "rank": 333,
       "roadmapPage": "Calc Industries Pocket Real Estate Master Financial Calculator",
       "primaryKeyword": "calc industries pocket real estate master financial calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/guides/pocket-real-estate-master-guide/",
+      "slug": "pocket-real-estate-master-guide",
+      "type": "guide",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "scopeNote": "Independent product-intent guide linking manufacturer documentation; embeds existing mortgage check, not firmware emulation.",
+      "reviewedAt": "2026-10-12",
+      "destinations": [
+        "/guides/pocket-real-estate-master-guide/"
+      ],
+      "previousStatus": "not-yet-reviewed-in-sequence"
     },
     {
       "rank": 334,
@@ -4321,7 +4392,17 @@
       "rank": 366,
       "roadmapPage": "Shelf Life Calculator",
       "primaryKeyword": "shelf life calculator",
-      "status": "not-yet-reviewed-in-sequence"
+      "status": "completed-scoped-destination",
+      "path": "/tools/shelf-life-calculator/",
+      "slug": "shelf-life-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "scopeNote": "Supplied Q10 accelerated-aging duration scenarios only; not safety or expiry determination.",
+      "reviewedAt": "2026-10-12",
+      "destinations": [
+        "/tools/shelf-life-calculator/"
+      ],
+      "previousStatus": "not-yet-reviewed-in-sequence"
     },
     {
       "rank": 367,
@@ -4611,8 +4692,18 @@
       "rank": 394,
       "roadmapPage": "Paver Calculator",
       "primaryKeyword": "paver calculator",
-      "status": "skipped-existing-or-covered-intent",
-      "evidence": "Rectangular tile quantity already exists and is recent; paver-specific joint/base/site methods are outside its scope."
+      "status": "completed-scoped-destination",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "path": "/tools/paver-calculator/",
+      "slug": "paver-calculator",
+      "type": "calculator-or-tool",
+      "scopeNote": "Paving units plus separately supplied base/bedding ordering volumes; distinct from protected tile count; no pavement design.",
+      "reviewedAt": "2026-10-12",
+      "destinations": [
+        "/tools/paver-calculator/"
+      ],
+      "previousStatus": "skipped-existing-or-covered-intent",
+      "previousEvidence": "Rectangular tile quantity already exists and is recent; paver-specific joint/base/site methods are outside its scope."
     },
     {
       "rank": 395,
@@ -5345,9 +5436,18 @@
       "rank": 462,
       "roadmapPage": "Rent Vs Buy Calculator",
       "primaryKeyword": "rent vs buy calculator nyt",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "Branded NYT rent-versus-buy intent is not reproduced by a generic lease comparison.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "12 October 2026 verified-gap batch; actual bounded implementation and current primary-source review",
+      "reviewedAt": "2026-10-12",
+      "path": "/tools/home-rent-vs-buy-calculator/",
+      "slug": "home-rent-vs-buy-calculator",
+      "type": "calculator-or-tool",
+      "scopeNote": "Independent fixed-rate home cash-flow and opportunity-cost scenario; not NYT tax method or affiliation.",
+      "destinations": [
+        "/tools/home-rent-vs-buy-calculator/"
+      ],
+      "previousStatus": "deferred-outside-verified-scope",
+      "previousEvidence": "Branded NYT rent-versus-buy intent is not reproduced by a generic lease comparison."
     },
     {
       "rank": 463,

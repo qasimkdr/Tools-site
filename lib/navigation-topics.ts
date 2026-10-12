@@ -1,3 +1,4 @@
+import {next10Navigation} from './roadmap-next10-oct12-navigation';
 import {gap20Navigation} from "./roadmap-gap20-navigation";
 /** Reviewed task families, not broad category matching. Membership is explicit;
  * future pages require a reviewed addition rather than a keyword guess.
@@ -6,6 +7,7 @@ import {deferredNavigation} from "./roadmap-deferred-navigation";
 export type NavigationTopic={id:string;reason:string;paths:string[]};
 const group=(id:string,prefix:string,slugs:string,reason:string):NavigationTopic=>({id,reason,paths:slugs.split(/\s+/).map(s=>`${prefix}/${s}/`)});
 export const navigationTopics:NavigationTopic[]=[
+ ...next10Navigation,
  ...gap20Navigation,
  ...deferredNavigation,
  {"id": "roadmap423-trigonometric-functions-calculator", "reason": "Angle or ratio: Calculate sine, cosine, tangent and principal inverse angles with an explicit degree or radian setting and domain checks. Each related worksheet handles its own adjacent task with separate assumptions.", "paths": ["/tools/trigonometric-functions-calculator/", "/tools/right-triangle-calculator/", "/tools/logarithm-calculator/", "/tools/slope-calculator/"]},
@@ -141,7 +143,7 @@ export const navigationTopics:NavigationTopic[]=[
  group('strength-performance','/tools','bench-press-max-calculator dunk-calculator','Compare distinct strength and jump measurements without predicting training outcomes.'),
  group('sport-counts','/tools','earned-run-average-calculator ops-calculator bowling-score-calculator','Choose a sport-specific score worksheet; these scores use different counts and rules.'),
  group('body-measurements','/tools','ffmi-calculator visceral-fat-calculator womens-bmi-calculator body-fat-calculator','Compare distinct adult body-measurement estimates and their limitations.'),
- group('cycle-calendar','/tools','period-calculator date-from-today-calculator','Compare cycle-date planning with a separate calendar date offset; neither predicts pregnancy.'),
+ group('cycle-calendar','/tools','period-calculator date-from-today-calculator weeks-calculator','Compare cycle-date planning with separate calendar offsets and week-duration counts; none predicts pregnancy.'),
  group('hydration-reference','/tools','water-intake-calculator calories-burned-calculator','Review separate hydration and activity estimates with their individual assumptions.'),
  group('earthwork','/tools','fill-dirt-calculator soil-calculator cubic-yard-calculator','Check fill volume and separate density or ordering allowances.'),
  group('roof-stair-geometry','/tools','rafter-length-calculator stair-calculator right-triangle-calculator','Use geometric measurements for separate roof or stair calculations, not structural approval.'),

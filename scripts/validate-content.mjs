@@ -94,6 +94,7 @@ const financeExpansionSlugs = new Set(["debt-snowball-vs-avalanche-calculator","
 const globalEducationSlugs = new Set(["college-admission-chances-calculator"]);
 const semrushPhaseTwoASlugs = new Set(["grade-calculator","decimal-time-converter","modified-adjusted-gross-income-calculator","money-market-calculator","confidence-interval-calculator","superscript-generator","earned-run-average-calculator","ap-statistics-score-calculator","gcf-calculator","apr-calculator","wire-size-calculator","cone-volume-calculator","normal-cdf-calculator","matrix-inverse-calculator","voltage-drop-calculator","fill-dirt-calculator","board-foot-calculator"]);
 const semrushPhaseThreeSlugs = new Set(["circle-skirt-calculator","cross-stitch-calculator","hypergeometric-calculator","stud-calculator","soffit-calculator","ap-english-language-and-composition-score-calculator"]);
+const next10Slugs = new Set(["bowling-handicap-calculator","quilt-binding-calculator","random-birthday-generator","legal-deadline-calculator","brick-calculator","bra-size-calculator","shelf-life-calculator","paver-calculator","home-rent-vs-buy-calculator"]);
 const gap20Slugs = new Set(["decathlon-scoring-calculator", "dotted-note-duration-calculator", "matrix-basis-calculator", "complex-number-calculator", "snow-weight-load-calculator", "labrador-human-age-calculator", "golf-handicap-worksheet", "absolute-neutrophil-count-calculator", "harris-benedict-calculator", "adult-shoe-size-converter", "food-energy-calculator", "taxable-income-worksheet", "texas-sales-tax-calculator", "nyc-resident-income-tax-calculator", "clothing-size-chart-matcher", "boer-lean-body-mass-calculator", "point-mass-center-of-mass-calculator", "construction-crew-size-calculator", "excavation-haul-calculator", "vector-dot-cross-calculator"]);
 const deferredSlugs = new Set(["five-number-summary-calculator", "average-time-calculator", "integer-exponent-calculator", "stem-and-leaf-plot-generator", "battery-runtime-calculator", "dilution-ratio-calculator", "fixed-coupon-bond-calculator", "cartesian-distance-calculator", "bpm-calculator", "food-protein-calculator", "force-mass-acceleration-calculator", "kinetic-energy-calculator", "momentum-impulse-calculator", "work-energy-calculator", "gravitational-potential-energy-calculator", "hookes-law-calculator", "ideal-gas-law-calculator", "resting-energy-calculator", "rockport-vo2-max-calculator", "rmd-uniform-lifetime-calculator"]);
 const roadmap423Slugs = new Set(["trigonometric-functions-calculator", "slope-calculator", "rental-property-cash-flow-calculator", "resistor-color-code-calculator", "quadratic-equation-calculator", "density-mass-volume-calculator", "net-carbohydrate-calculator", "least-common-multiple-calculator", "dice-sum-probability-calculator", "nth-root-calculator", "title-case-converter", "sequence-sum-calculator", "lease-buyout-calculator", "half-life-calculator", "acreage-calculator", "annualized-return-calculator", "time-value-of-money-calculator", "prime-factorization-calculator", "ipv6-subnet-calculator", "bandwidth-requirement-calculator"]);
@@ -123,7 +124,7 @@ for (const { slug, html } of globalPages) {
   const words = text.split(" ").filter(Boolean).length;
   const h2s = (html.match(/<h2/g) || []).length;
   const faqs = (html.match(/<details/g) || []).length;
-  const minimumWords = ecommerceSlugs.has(slug) || financeExpansionSlugs.has(slug) || globalEducationSlugs.has(slug) || semrushPhaseOneSlugs.has(slug) || semrushPhaseOneBSlugs.has(slug) || semrushPhaseTwoASlugs.has(slug) || semrushPhaseThreeSlugs.has(slug) || semrushRoadmapSlugs.has(slug) || roadmap106Slugs.has(slug) || roadmap126Slugs.has(slug) || roadmap146Slugs.has(slug) || roadmap166Slugs.has(slug) || roadmap186Slugs.has(slug) || roadmap206Slugs.has(slug) || next20Slugs.has(slug) || roadmap268Slugs.has(slug) || roadmap328Slugs.has(slug) || roadmap369Slugs.has(slug) || roadmap423Slugs.has(slug) || deferredSlugs.has(slug) || gap20Slugs.has(slug) ? 900 : 380;
+  const minimumWords = next10Slugs.has(slug) || ecommerceSlugs.has(slug) || financeExpansionSlugs.has(slug) || globalEducationSlugs.has(slug) || semrushPhaseOneSlugs.has(slug) || semrushPhaseOneBSlugs.has(slug) || semrushPhaseTwoASlugs.has(slug) || semrushPhaseThreeSlugs.has(slug) || semrushRoadmapSlugs.has(slug) || roadmap106Slugs.has(slug) || roadmap126Slugs.has(slug) || roadmap146Slugs.has(slug) || roadmap166Slugs.has(slug) || roadmap186Slugs.has(slug) || roadmap206Slugs.has(slug) || next20Slugs.has(slug) || roadmap268Slugs.has(slug) || roadmap328Slugs.has(slug) || roadmap369Slugs.has(slug) || roadmap423Slugs.has(slug) || deferredSlugs.has(slug) || gap20Slugs.has(slug) ? 900 : 380;
   if (words < minimumWords) failures.push(`global ${slug}: only ${words} rendered words (minimum ${minimumWords})`);
   if (h2s < 7) failures.push(`global ${slug}: only ${h2s} H2 sections (minimum 7)`);
   if (faqs < 5) failures.push(`global ${slug}: only ${faqs} FAQs (minimum 5)`);
@@ -225,7 +226,7 @@ for (const slug of globalEducationSlugs) {
 const ecommerceHeader = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
 if (!ecommerceHeader.includes("globalTools.filter(t=>!t.canonicalSlug).map") || !ecommerceHeader.includes("searchText")) failures.push("site search: canonical global tools are not connected or indexed aliases are being added");
 const ecommerceHome = readFileSync(join(process.cwd(), "out", "index.html"), "utf8");
-if (!ecommerceHome.includes("355") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
+if (!ecommerceHome.includes("364") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
 
 const roadmapKeywordChecks = new Map([
   ["cone-volume-calculator", ["cone volume calculator", "volume of a cone calculator", "volume of cone calculator", "cone volume formula", "volume of a cone", "volume of cone formula", "how to find the volume of a cone", "volume-cone", "volume of cone", "cone volume", "volume of a conical shape", "volume of a cone formula"]],
@@ -435,7 +436,7 @@ if (!homeHtml.includes("Archive tools")) failures.push("homepage: archive catego
 if ([...requestedFileSlugs].some(slug=>!sitemapXml.includes(`/${slug}/`))) failures.push("requested file tools: one or more URLs are missing from sitemap");
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
-if (globalPages.length !== 360) failures.push(`360 global tools expected but ${globalPages.length} pages generated`);
+if (globalPages.length !== 369) failures.push(`369 global tools expected but ${globalPages.length} pages generated`);
 // Every workbook variant retains a destination with an explicit method boundary.
 const keywordSource=readFileSync(join(process.cwd(),"lib/roadmap-106-125-keywords.ts"),"utf8");
 const keywordMap=JSON.parse(keywordSource.slice(keywordSource.indexOf("= ")+2,keywordSource.lastIndexOf(" as const")));
@@ -476,7 +477,7 @@ for(const slug of roadmap126Slugs){
 }
 const canonGuide=guidePages.find(p=>p.slug==="canon-ls154tg-handheld-calculator-guide");
 if(!canonGuide||visibleText(canonGuide.html).split(" ").length<1200)failures.push("Canon product-intent guide: requires 1200 useful words");
-if(guidePages.length!==45)failures.push(`45 guides expected, generated ${guidePages.length}`);
+if(guidePages.length!==46)failures.push(`46 guides expected, generated ${guidePages.length}`);
 
 // Ranks 146–165 keep every exact sheet term and distinct clinical guide intent.
 const source146=readFileSync(join(process.cwd(),"lib/roadmap-146-165-keywords.ts"),"utf8");
@@ -604,7 +605,7 @@ for(const slug of ["bank-calculators-guide","study-score-calculator-guide","brea
  if(!page||visibleText(page.html).split(" ").length<1200)failures.push(`${slug}: requires 1200 useful words`);
  if(!globalPages.some(p=>p.html.slice(p.html.indexOf("<main"),p.html.indexOf("</main>")).replace(/<script[\s\S]*?<\/script>/g,"").includes(`href="/guides/${slug}/"`)))failures.push(`${slug}: missing contextual inbound link`);
 }
-if(locs.length!==722)failures.push(`ranks 206–225: expected 722 sitemap URLs, found ${locs.length}`);
+if(locs.length!==732)failures.push(`ranks 206–225: expected 732 sitemap URLs, found ${locs.length}`);
 
 // Next 20 eligible destinations: 15 new tools, 3 older upgrades, 2 guides; 21 ranks with swim merge.
 const nextSource=readFileSync(join(process.cwd(),"lib/roadmap-next20-keywords.ts"),"utf8");

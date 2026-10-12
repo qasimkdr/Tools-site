@@ -2,6 +2,7 @@ import {siteUrl} from "@/lib/site-url";
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import "./next10-tools.css";
 import "./pages.css";
 import "./card-fix.css";
 import "./category-grid-fix.css";
