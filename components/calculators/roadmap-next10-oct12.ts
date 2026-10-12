@@ -38,7 +38,7 @@ export function federalHolidays(year:number):Map<string,string>{
  add(year,0,1,"New Year's Day");add(year+1,0,1,"New Year's Day");
  add(year,0,nth(0,1,3),'Martin Luther King Jr. Day');add(year,1,nth(1,1,3),"Washington's Birthday");
  const mayLast=new Date(Date.UTC(year,5,0));add(year,4,mayLast.getUTCDate()-(mayLast.getUTCDay()+6)%7,'Memorial Day');
- add(year,5,19,'Juneteenth');add(year,6,4,'Independence Day');add(year,8,nth(8,1,1),'Labor Day');
+ if(year>=2021)add(year,5,19,'Juneteenth');add(year,6,4,'Independence Day');add(year,8,nth(8,1,1),'Labor Day');
  add(year,9,nth(9,1,2),'Columbus Day');add(year,10,11,'Veterans Day');add(year,10,nth(10,4,4),'Thanksgiving');add(year,11,25,'Christmas');return found;
 }
 export function legalDayCount(start:string,days:number,direction:string,extra:string,confirmed:string){
