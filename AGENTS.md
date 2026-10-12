@@ -632,3 +632,11 @@ All **541 prior definitions** (360 global plus 181 Pakistan) and review dates ar
 Expected export: **741 pages**, **732 canonical sitemap URLs**, **713 tool/guide profiles**, **364 canonical global tools + 5 aliases**, **46 guides**. The conservative ledger now records **361/489 scoped rows: 350 tool rows and 11 guides**, mapping to **280 distinct primary tool paths and 11 guide paths**. Keep the original 489 denominator and all unsupported/deferred scopes.
 
 Permanent continuation preference: for future authorized batches, apply these established SEO, existing-design, duplicate prevention, protected-definition, source/method, sitemap/search/category, contextual linking, validation and exact-deployment verification rules without requiring the user to restate them. Current source files and the latest snapshot are authoritative over older historical notes. No ranking or indexing guarantee is permitted. Publishing remains subject to successful checks and session authorization; this session expressly authorized the ten-destination publish.
+
+
+### Verified hosting and new-page recommendations
+The user selected **AI CV Backend** for Render in this session. Confirmed workspace ID: `tea-d8uk6ajaml3c73dm78kg`; SolvePilot static service ID: `srv-dalt45e1egvs73fp0m20`, repository `qasimkdr/Tools-site`, auto-deploy from `main`, build `npm ci && npm run build`, publish directory `out`. This established workspace choice can be reused for this project; do not inspect the unrelated AI-CV service.
+
+The ten new pages use reviewed task-specific recommendations instead of filling their legacy related-card block with broad category matches. Existing pages retain their prior card selection. The scored matcher supplements the explicit new-page links. Scored coverage and exported contextual incoming coverage must both pass; an existing cycle-date/week relationship and cash-runway/burn-rate workflow preserve coverage as the catalog grows.
+
+Local browser binary installation returned a truncated archive. Real component callbacks, actual download Blob contents, full static export and deployed browser interaction are used as distinct validation evidence; do not claim local Playwright or mobile-emulation QA that did not run.

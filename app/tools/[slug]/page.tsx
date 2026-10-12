@@ -80,7 +80,12 @@ export default async function GlobalToolPage({
   const semrushAudit = auditForTool(tool);
   const incoming = globalTools.filter(item => item.slug !== tool.slug && auditForTool(item)?.relatedCalculators?.some(link => link.slug === tool.slug));
   const outgoing = semrushAudit?.relatedCalculators?.map(link => link.slug) || [];
-  const related = globalTools
+  const related = next10Audit[tool.slug]
+    ? (next10Audit[tool.slug].relatedCalculators || []).flatMap(link => {
+        const item = globalTools.find(candidate => candidate.slug === link.slug && !candidate.canonicalSlug);
+        return item ? [item] : [];
+      }).slice(0, 5)
+    : globalTools
     .filter((item) => item.slug !== tool.slug && !item.canonicalSlug)
     .sort(
       (a, b) =>
