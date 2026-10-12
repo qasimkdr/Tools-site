@@ -20,7 +20,7 @@ for(const [slug,label,value,gate] of [
  ['paver-calculator','Net paving area','40'],
 ]){
  states=[];let tree=render(Calculator,{slug});assert.equal(heading(tree),'Click Calculate',slug+' initial gate');
- if(gate){button(tree,'Calculate result').props.onClick();tree=render(Calculator,{slug});assert.equal(heading(tree),'Unable to calculate',slug+' scope gate');control(tree,gate).props.onChange({target:{value:'yes'}});tree=render(Calculator,{slug});}
+ if(gate){button(tree,'Calculate result').props.onClick();tree=render(Calculator,{slug});assert.equal(heading(tree),'Unable to calculate',slug+' scope gate');assert.equal(text(walk(tree,n=>n.props?.className==='result-badge')),'Check inputs',slug+' must not label a rejected scenario as calculated');control(tree,gate).props.onChange({target:{value:'yes'}});tree=render(Calculator,{slug});}
  button(tree,'Calculate result').props.onClick();tree=render(Calculator,{slug});const before=heading(tree);assert.notEqual(before,'Unable to calculate',slug+' submitted default');
  control(tree,label).props.onChange({target:{value}});tree=render(Calculator,{slug});assert.equal(heading(tree),before,slug+' retained output');assert(text(tree).includes('Inputs changed'));
  button(tree,'Calculate result').props.onClick();tree=render(Calculator,{slug});assert.notEqual(heading(tree),before,slug+' resubmission changes output');
