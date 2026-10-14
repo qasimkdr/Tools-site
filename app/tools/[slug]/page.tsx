@@ -1,3 +1,4 @@
+import {oct14Audit} from '@/lib/roadmap-oct14-content';
 import {next10Audit} from "@/lib/roadmap-next10-oct12-content";
 import {BirthdayGenerator} from "@/components/BirthdayGenerator";
 import {RentBuyTool} from "@/components/RentBuyTool";
@@ -49,7 +50,7 @@ export async function generateMetadata({
     keywords: tool.keywords,
     alternates: { canonical: `/tools/${tool.canonicalSlug || tool.slug}/` },
     ...(tool.canonicalSlug ? { robots: { index: false, follow: true } } : {}),
-    ...(next10Audit[tool.slug] ? {twitter:{card:"summary_large_image" as const,title:tool.title,description,images:["/og-image.png"]}} : {}),
+    ...((oct14Audit[tool.slug]||next10Audit[tool.slug]) ? {twitter:{card:"summary_large_image" as const,title:tool.title,description,images:["/og-image.png"]}} : {}),
     openGraph: {
       title: tool.title,
       description,
@@ -75,13 +76,13 @@ export default async function GlobalToolPage({
   const { slug } = await params;
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
-  const hasDetailedEditorial = Boolean(next10Audit[tool.slug]||roadmapGap20Audit[tool.slug]||roadmapDeferredAudit[tool.slug]||roadmap423Audit[tool.slug]||roadmap369Audit[tool.slug]||roadmap328Audit[tool.slug]||roadmap268Audit[tool.slug]||next20Audit[tool.slug]||roadmap206Audit[tool.slug]||roadmap186Audit[tool.slug]||roadmap166Audit[tool.slug]||roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
+  const hasDetailedEditorial = Boolean((oct14Audit[tool.slug]||next10Audit[tool.slug])||roadmapGap20Audit[tool.slug]||roadmapDeferredAudit[tool.slug]||roadmap423Audit[tool.slug]||roadmap369Audit[tool.slug]||roadmap328Audit[tool.slug]||roadmap268Audit[tool.slug]||next20Audit[tool.slug]||roadmap206Audit[tool.slug]||roadmap186Audit[tool.slug]||roadmap166Audit[tool.slug]||roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
   const flagship = hasDetailedEditorial ? null : insightForTool(tool);
   const semrushAudit = auditForTool(tool);
   const incoming = globalTools.filter(item => item.slug !== tool.slug && auditForTool(item)?.relatedCalculators?.some(link => link.slug === tool.slug));
   const outgoing = semrushAudit?.relatedCalculators?.map(link => link.slug) || [];
-  const related = next10Audit[tool.slug]
-    ? (next10Audit[tool.slug].relatedCalculators || []).flatMap(link => {
+  const related = (oct14Audit[tool.slug]||next10Audit[tool.slug])
+    ? ((oct14Audit[tool.slug]||next10Audit[tool.slug]).relatedCalculators || []).flatMap(link => {
         const item = globalTools.find(candidate => candidate.slug === link.slug && !candidate.canonicalSlug);
         return item ? [item] : [];
       }).slice(0, 5)
@@ -205,7 +206,7 @@ export default async function GlobalToolPage({
                 <h3>Formula and methodology</h3>
                 <p>{tool.formula}</p>
                 <p>
-                  {tool.category === "Education" && !next20Audit[tool.slug] && !roadmap268Audit[tool.slug] && !roadmap328Audit[tool.slug] && !roadmap369Audit[tool.slug] && !roadmap423Audit[tool.slug] && !roadmapDeferredAudit[tool.slug] && !roadmapGap20Audit[tool.slug] && !next10Audit[tool.slug]
+                  {tool.category === "Education" && !next20Audit[tool.slug] && !roadmap268Audit[tool.slug] && !roadmap328Audit[tool.slug] && !roadmap369Audit[tool.slug] && !roadmap423Audit[tool.slug] && !roadmapDeferredAudit[tool.slug] && !roadmapGap20Audit[tool.slug] && !(oct14Audit[tool.slug]||next10Audit[tool.slug])
                     ? "The calculator applies the disclosed heuristic to values entered on this device. It does not load private admissions data or claim to reproduce an institution's review process."
                     : "The calculator applies the displayed arithmetic to the values entered on this device. It does not silently load a local tax rate, currency conversion or commercial assumption."}
                 </p>
@@ -254,7 +255,7 @@ export default async function GlobalToolPage({
                 </div>
               </section>
             )}
-            {next10Audit[tool.slug]?.sections.map(section=><section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map(p=><p key={p}>{p}</p>)}</section>)}
+            {(oct14Audit[tool.slug]||next10Audit[tool.slug])?.sections.map(section=><section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map(p=><p key={p}>{p}</p>)}</section>)}
             {tool.slug === "college-admission-chances-calculator" && (
               <CollegeAdmissionEditorial />
             )}

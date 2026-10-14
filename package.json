@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/publish-static-sitemap.mjs && node scripts/validate-content.mjs && node scripts/validate-next10-oct12.mjs && node scripts/verify-related-navigation.cjs --export --report && node scripts/check-navigation-graph.mjs --report && node scripts/indexnow.mjs generate",
+    "build": "node scripts/prepare-static-build.mjs && next build && node scripts/publish-static-sitemap.mjs && node scripts/validate-content.mjs && node scripts/validate-next10-oct12.mjs && node scripts/validate-oct14.mjs && node scripts/verify-related-navigation.cjs --export --report && node scripts/check-navigation-graph.mjs --report && node scripts/indexnow.mjs generate",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "validate:content": "node scripts/validate-content.mjs",
@@ -30,7 +30,8 @@
     "verify:roadmap423": "node scripts/verify-roadmap-423-plus.cjs",
     "verify:deferred": "node scripts/verify-roadmap-deferred.cjs",
     "verify:gap20": "node scripts/verify-roadmap-gap20.cjs",
-    "verify:next10": "node scripts/verify-next10-oct12.cjs && node scripts/verify-next10-interaction.cjs"
+    "verify:next10": "node scripts/verify-next10-oct12.cjs && node scripts/verify-next10-interaction.cjs",
+    "verify:oct14": "node scripts/verify-oct14.cjs && node scripts/verify-oct14-interaction.cjs"
   },
   "dependencies": {
     "next": "16.3.8",

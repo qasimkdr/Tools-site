@@ -1,8 +1,13 @@
 {
   "version": 2,
   "policy": "navigation only; scores are not probabilities; duplicate candidates require manual review",
-  "pages": 713,
+  "pages": 723,
   "profilePaths": [
+    "/tools/reputation-calculator/",
+    "/tools/pool-shock-calculator/",
+    "/tools/sourdough-starter-calculator/",
+    "/tools/fixed-index-annuity-calculator/",
+    "/tools/love-calculator-paper/",
     "/tools/bowling-handicap-calculator/",
     "/tools/quilt-binding-calculator/",
     "/tools/random-birthday-generator/",
@@ -670,6 +675,11 @@
     "/generator-tools/username-generator/",
     "/generator-tools/content-idea-generator/",
     "/generator-tools/social-media-hook-generator/",
+    "/guides/btz-calculator-guide/",
+    "/guides/missouri-child-support-calculator-guide/",
+    "/guides/i-bond-value-calculator-guide/",
+    "/guides/body-shape-calculator-guide/",
+    "/guides/chocolate-for-dogs-calculator-guide/",
     "/guides/pocket-real-estate-master-guide/",
     "/guides/military-pt-test-calculator-guide/",
     "/guides/bpc-157-tb-500-blend-calculator-guide/",
@@ -717,12 +727,12 @@
     "/guides/eye-prescription-to-20-20-guide/",
     "/guides/lri-calculator-guide/"
   ],
-  "reviewedTopics": 194,
-  "reviewedMembers": 464,
-  "selectedLinks": 1724,
+  "reviewedTopics": 206,
+  "reviewedMembers": 478,
+  "selectedLinks": 1782,
   "automaticLinks": 8,
-  "editorialLinks": 1716,
-  "unmatchedCount": 114,
+  "editorialLinks": 1774,
+  "unmatchedCount": 111,
   "duplicateCandidates": [
     {
       "paths": [

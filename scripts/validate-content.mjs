@@ -226,7 +226,7 @@ for (const slug of globalEducationSlugs) {
 const ecommerceHeader = readFileSync(join(process.cwd(), "components", "Header.tsx"), "utf8");
 if (!ecommerceHeader.includes("globalTools.filter(t=>!t.canonicalSlug).map") || !ecommerceHeader.includes("searchText")) failures.push("site search: canonical global tools are not connected or indexed aliases are being added");
 const ecommerceHome = readFileSync(join(process.cwd(), "out", "index.html"), "utf8");
-if (!ecommerceHome.includes("364") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
+if (!ecommerceHome.includes("369") || !ecommerceHome.includes("Global calculators")) failures.push("homepage: updated indexable global-tool count is missing");
 
 const roadmapKeywordChecks = new Map([
   ["cone-volume-calculator", ["cone volume calculator", "volume of a cone calculator", "volume of cone calculator", "cone volume formula", "volume of a cone", "volume of cone formula", "how to find the volume of a cone", "volume-cone", "volume of cone", "cone volume", "volume of a conical shape", "volume of a cone formula"]],
@@ -436,7 +436,7 @@ if (!homeHtml.includes("Archive tools")) failures.push("homepage: archive catego
 if ([...requestedFileSlugs].some(slug=>!sitemapXml.includes(`/${slug}/`))) failures.push("requested file tools: one or more URLs are missing from sitemap");
 
 if (pages.length !== declaredTools) failures.push(`${declaredTools} tools declared but ${pages.length} pages generated`);
-if (globalPages.length !== 369) failures.push(`369 global tools expected but ${globalPages.length} pages generated`);
+if (globalPages.length !== 374) failures.push(`374 global tools expected but ${globalPages.length} pages generated`);
 // Every workbook variant retains a destination with an explicit method boundary.
 const keywordSource=readFileSync(join(process.cwd(),"lib/roadmap-106-125-keywords.ts"),"utf8");
 const keywordMap=JSON.parse(keywordSource.slice(keywordSource.indexOf("= ")+2,keywordSource.lastIndexOf(" as const")));
@@ -477,7 +477,7 @@ for(const slug of roadmap126Slugs){
 }
 const canonGuide=guidePages.find(p=>p.slug==="canon-ls154tg-handheld-calculator-guide");
 if(!canonGuide||visibleText(canonGuide.html).split(" ").length<1200)failures.push("Canon product-intent guide: requires 1200 useful words");
-if(guidePages.length!==46)failures.push(`46 guides expected, generated ${guidePages.length}`);
+if(guidePages.length!==51)failures.push(`51 guides expected, generated ${guidePages.length}`);
 
 // Ranks 146–165 keep every exact sheet term and distinct clinical guide intent.
 const source146=readFileSync(join(process.cwd(),"lib/roadmap-146-165-keywords.ts"),"utf8");
@@ -608,7 +608,7 @@ for(const slug of ["bank-calculators-guide","study-score-calculator-guide","brea
  if(!page||visibleText(page.html).split(" ").length<1200)failures.push(`${slug}: requires 1200 useful words`);
  if(!globalPages.some(p=>p.html.slice(p.html.indexOf("<main"),p.html.indexOf("</main>")).replace(/<script[\s\S]*?<\/script>/g,"").includes(`href="/guides/${slug}/"`)))failures.push(`${slug}: missing contextual inbound link`);
 }
-if(locs.length!==732)failures.push(`ranks 206–225: expected 732 sitemap URLs, found ${locs.length}`);
+if(locs.length!==742)failures.push(`ranks 206–225: expected 742 sitemap URLs, found ${locs.length}`);
 
 // Next 20 eligible destinations: 15 new tools, 3 older upgrades, 2 guides; 21 ranks with swim merge.
 const nextSource=readFileSync(join(process.cwd(),"lib/roadmap-next20-keywords.ts"),"utf8");

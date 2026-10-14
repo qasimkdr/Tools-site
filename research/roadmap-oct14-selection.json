@@ -1,0 +1,1144 @@
+{
+  "asOf": "2026-10-14",
+  "baselineCommit": "11fe9a6e0b4ee689dbd84c98527bd49560a269c8",
+  "sourceWorkbook": "SolvePilot_50_Tools_Daily_SEO_Roadmap.xlsx",
+  "workbookSha256": "41293e5726823cd0aa22b22311cf7ddeb3e760f63aaf56fcea4c1983a1a77da9",
+  "newTools": 5,
+  "newGuides": 5,
+  "metricMeaning": "Volume and Competitor Traffic are separate historical workbook fields; null remains unknown. Competitor page vocabulary is not a paid organic keyword export. Search retrieval does not certify country-controlled Google top-ten order or current traffic. Do not sum overlapping phrase volumes as predicted visits.",
+  "keywordMappings": [
+    {
+      "Tool / Page": "Reputation Calculator",
+      "Priority Rank": 241,
+      "Daily Batch": 5,
+      "Keyword": "reputation calculator",
+      "Role": "PRIMARY",
+      "Volume": 1300,
+      "KD %": 9,
+      "CPC USD": 0.52,
+      "Intent": "I",
+      "Competitor Best Position": null,
+      "Competitor Traffic": null,
+      "SolvePilot Position/Flag": 0,
+      "Source Files": "semrush-export-2215.xlsx",
+      "Competitor URLs": null,
+      "clusterAction": "included",
+      "destination": "/tools/reputation-calculator/",
+      "scopeNote": "Disclosed primary scope",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Weighted aggregation methodology",
+          "Compare scenarios without changing the evidence",
+          "Review target FAQs"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Pool Shock Calculator",
+      "Priority Rank": 251,
+      "Daily Batch": 6,
+      "Keyword": "pool shock calculator",
+      "Role": "PRIMARY",
+      "Volume": 1300,
+      "KD %": 11,
+      "CPC USD": 1.24,
+      "Intent": "I",
+      "Competitor Best Position": null,
+      "Competitor Traffic": null,
+      "SolvePilot Position/Flag": 0,
+      "Source Files": "semrush-export-2215.xlsx",
+      "Competitor URLs": null,
+      "clusterAction": "included",
+      "destination": "/tools/pool-shock-calculator/",
+      "scopeNote": "Disclosed primary scope",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Available chlorine basis",
+          "Density conversion",
+          "Compare two label-confirmed mass scenarios"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Btz Calculator",
+      "Priority Rank": 253,
+      "Daily Batch": 6,
+      "Keyword": "btz calculator",
+      "Role": "PRIMARY",
+      "Volume": 1900,
+      "KD %": 14,
+      "CPC USD": 0,
+      "Intent": "C",
+      "Competitor Best Position": null,
+      "Competitor Traffic": null,
+      "SolvePilot Position/Flag": 0,
+      "Source Files": "semrush-export-2215.xlsx",
+      "Competitor URLs": null,
+      "clusterAction": "included",
+      "destination": "/guides/btz-calculator-guide/",
+      "scopeNote": "Disclosed primary scope",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Audit the competing time routes",
+          "Read board scheduling as a separate process"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Sourdough Starter Calculator",
+      "Priority Rank": 311,
+      "Daily Batch": 7,
+      "Keyword": "sourdough starter calculator",
+      "Role": "PRIMARY",
+      "Volume": 1000,
+      "KD %": 9,
+      "CPC USD": 0,
+      "Intent": "C",
+      "Competitor Best Position": null,
+      "Competitor Traffic": null,
+      "SolvePilot Position/Flag": 0,
+      "Source Files": "semrush-export-2215.xlsx",
+      "Competitor URLs": null,
+      "clusterAction": "included",
+      "destination": "/tools/sourdough-starter-calculator/",
+      "scopeNote": "Disclosed primary scope",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Formula and seed composition",
+          "Final-total direction",
+          "Compare ratio changes while holding the seed constant"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Missouri Child Support Calculator",
+      "Priority Rank": 325,
+      "Daily Batch": 7,
+      "Keyword": "missouri child support calculator",
+      "Role": "PRIMARY",
+      "Volume": 1300,
+      "KD %": 14,
+      "CPC USD": 0,
+      "Intent": "C",
+      "Competitor Best Position": null,
+      "Competitor Traffic": null,
+      "SolvePilot Position/Flag": 0,
+      "Source Files": "semrush-export-2215.xlsx",
+      "Competitor URLs": null,
+      "clusterAction": "included",
+      "destination": "/guides/missouri-child-support-calculator-guide/",
+      "scopeNote": "Disclosed primary scope",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Verify the applicability trigger before comparing tools",
+          "Prepare monthly income on a consistent basis"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Annuity Calculator",
+      "Priority Rank": 378,
+      "Daily Batch": 8,
+      "Keyword": "fixed index annuity calculator",
+      "Role": "PRIMARY",
+      "Volume": 1600,
+      "KD %": 23,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 3,
+      "Competitor Traffic": 70,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/annuity-calculator.html",
+      "clusterAction": "included",
+      "destination": "/tools/fixed-index-annuity-calculator/",
+      "scopeNote": "Disclosed primary scope",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Crediting sequence",
+          "Fees after credit",
+          "Use a sequence rather than a repeated average"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Annuity Calculator",
+      "Priority Rank": 378,
+      "Daily Batch": 8,
+      "Keyword": "annuity calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 27100,
+      "KD %": 45,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 2,
+      "Competitor Traffic": 3600,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-2604.xlsx | semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/annuity-calculator.html | www.omnicalculator.com/finance/annuity-future-value",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/time-value-of-money-calculator/",
+      "scopeNote": "Generic fixed-rate, future-value and payout intent overlaps protected existing finance methods; not an index-credit model.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Annuity Calculator",
+      "Priority Rank": 378,
+      "Daily Batch": 8,
+      "Keyword": "fixed annuity calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 2400,
+      "KD %": 38,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 3,
+      "Competitor Traffic": 196,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/annuity-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/time-value-of-money-calculator/",
+      "scopeNote": "Generic fixed-rate, future-value and payout intent overlaps protected existing finance methods; not an index-credit model.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Annuity Calculator",
+      "Priority Rank": 378,
+      "Daily Batch": 8,
+      "Keyword": "annuity income calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1300,
+      "KD %": 44,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 3,
+      "Competitor Traffic": 106,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/annuity-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/time-value-of-money-calculator/",
+      "scopeNote": "Generic fixed-rate, future-value and payout intent overlaps protected existing finance methods; not an index-credit model.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Annuity Calculator",
+      "Priority Rank": 378,
+      "Daily Batch": 8,
+      "Keyword": "annuities calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1600,
+      "KD %": 47,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 2,
+      "Competitor Traffic": 211,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/annuity-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/time-value-of-money-calculator/",
+      "scopeNote": "Generic fixed-rate, future-value and payout intent overlaps protected existing finance methods; not an index-credit model.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Annuity Calculator",
+      "Priority Rank": 378,
+      "Daily Batch": 8,
+      "Keyword": "future value of annuity calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1000,
+      "KD %": 48,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 1,
+      "Competitor Traffic": 248,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/annuity-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/time-value-of-money-calculator/",
+      "scopeNote": "Generic fixed-rate, future-value and payout intent overlaps protected existing finance methods; not an index-credit model.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Body Type Calculator",
+      "Priority Rank": 382,
+      "Daily Batch": 8,
+      "Keyword": "body shape calculator",
+      "Role": "PRIMARY",
+      "Volume": 14800,
+      "KD %": 40,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 1,
+      "Competitor Traffic": 2000,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-2604.xlsx | semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/body-type-calculator.html | www.omnicalculator.com/health/body-shape",
+      "clusterAction": "included",
+      "destination": "/guides/body-shape-calculator-guide/",
+      "scopeNote": "Disclosed primary scope",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Keep the measurement locations distinct",
+          "Separate shape vocabulary from clothing size"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Body Type Calculator",
+      "Priority Rank": 382,
+      "Daily Batch": 8,
+      "Keyword": "body type calculator female",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1900,
+      "KD %": 38,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 1,
+      "Competitor Traffic": 471,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/body-type-calculator.html",
+      "clusterAction": "included",
+      "destination": "/guides/body-shape-calculator-guide/",
+      "scopeNote": "Same-intent supporting phrase",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Keep the measurement locations distinct",
+          "Separate shape vocabulary from clothing size"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Body Type Calculator",
+      "Priority Rank": 382,
+      "Daily Batch": 8,
+      "Keyword": "clothing size calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1300,
+      "KD %": 38,
+      "CPC USD": null,
+      "Intent": "C - I",
+      "Competitor Best Position": 4,
+      "Competitor Traffic": 84,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/body-type-calculator.html",
+      "clusterAction": "existing-canonical-reference",
+      "destination": "/tools/clothing-size-chart-matcher/",
+      "scopeNote": "Mentioned as a different task and linked; not newly completed or a new classifier feature.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Love Calculator",
+      "Priority Rank": 426,
+      "Daily Batch": 9,
+      "Keyword": "love calculator paper",
+      "Role": "PRIMARY",
+      "Volume": 1900,
+      "KD %": 30,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 1,
+      "Competitor Traffic": 66,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/love-calculator.html",
+      "clusterAction": "included",
+      "destination": "/tools/love-calculator-paper/",
+      "scopeNote": "Disclosed primary scope",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Formula and paper-game steps",
+          "Digit reduction",
+          "Recreate the FLAMES circle carefully"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Love Calculator",
+      "Priority Rank": 426,
+      "Daily Batch": 9,
+      "Keyword": "how to do the love calculator on paper",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1300,
+      "KD %": 28,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 1,
+      "Competitor Traffic": 45,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/love-calculator.html",
+      "clusterAction": "included",
+      "destination": "/tools/love-calculator-paper/",
+      "scopeNote": "Same-intent supporting phrase",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Formula and paper-game steps",
+          "Digit reduction",
+          "Recreate the FLAMES circle carefully"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Love Calculator",
+      "Priority Rank": 426,
+      "Daily Batch": 9,
+      "Keyword": "how to do a love calculator on paper",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1300,
+      "KD %": 30,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 1,
+      "Competitor Traffic": 39,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/love-calculator.html",
+      "clusterAction": "included",
+      "destination": "/tools/love-calculator-paper/",
+      "scopeNote": "Same-intent supporting phrase",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Formula and paper-game steps",
+          "Digit reduction",
+          "Recreate the FLAMES circle carefully"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Love Calculator",
+      "Priority Rank": 426,
+      "Daily Batch": 9,
+      "Keyword": "how to do love percentage on paper",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 2400,
+      "KD %": 39,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 3,
+      "Competitor Traffic": 84,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/love-calculator.html",
+      "clusterAction": "included",
+      "destination": "/tools/love-calculator-paper/",
+      "scopeNote": "Same-intent supporting phrase",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Formula and paper-game steps",
+          "Digit reduction",
+          "Recreate the FLAMES circle carefully"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Love Calculator",
+      "Priority Rank": 426,
+      "Daily Batch": 9,
+      "Keyword": "love calculator by name",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1600,
+      "KD %": 44,
+      "CPC USD": null,
+      "Intent": "C - I",
+      "Competitor Best Position": 3,
+      "Competitor Traffic": 131,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/love-calculator.html",
+      "clusterAction": "included",
+      "destination": "/tools/love-calculator-paper/",
+      "scopeNote": "Same-intent supporting phrase",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Formula and paper-game steps",
+          "Digit reduction",
+          "Recreate the FLAMES circle carefully"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Love Calculator",
+      "Priority Rank": 426,
+      "Daily Batch": 9,
+      "Keyword": "love percentage",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1600,
+      "KD %": 47,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 3,
+      "Competitor Traffic": 131,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/love-calculator.html",
+      "clusterAction": "included",
+      "destination": "/tools/love-calculator-paper/",
+      "scopeNote": "Same-intent supporting phrase",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Formula and paper-game steps",
+          "Digit reduction",
+          "Recreate the FLAMES circle carefully"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Love Calculator",
+      "Priority Rank": 426,
+      "Daily Batch": 9,
+      "Keyword": "compatibility calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1600,
+      "KD %": 49,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 6,
+      "Competitor Traffic": 56,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/love-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": null,
+      "scopeNote": "Do not imply real relationship compatibility or unsupported method.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Bond Calculator",
+      "Priority Rank": 431,
+      "Daily Batch": 9,
+      "Keyword": "i bond value calculator",
+      "Role": "PRIMARY",
+      "Volume": 1000,
+      "KD %": 24,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 5,
+      "Competitor Traffic": 35,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/bond-calculator.html",
+      "clusterAction": "included",
+      "destination": "/guides/i-bond-value-calculator-guide/",
+      "scopeNote": "Disclosed primary scope",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Choose the valuation route before entering a rate",
+          "Do not use a coupon-bond price as a savings-bond value"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Bond Calculator",
+      "Priority Rank": 431,
+      "Daily Batch": 9,
+      "Keyword": "bond calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 4400,
+      "KD %": 47,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 2,
+      "Competitor Traffic": 580,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/bond-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/fixed-coupon-bond-calculator/",
+      "scopeNote": "Coupon valuation differs from Series I savings bond official valuation.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Bond Calculator",
+      "Priority Rank": 431,
+      "Daily Batch": 9,
+      "Keyword": "bond price calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1600,
+      "KD %": 43,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 2,
+      "Competitor Traffic": 211,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/bond-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/fixed-coupon-bond-calculator/",
+      "scopeNote": "Coupon valuation differs from Series I savings bond official valuation.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Bond Calculator",
+      "Priority Rank": 431,
+      "Daily Batch": 9,
+      "Keyword": "bond value calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1600,
+      "KD %": 45,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 2,
+      "Competitor Traffic": 211,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/bond-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/fixed-coupon-bond-calculator/",
+      "scopeNote": "Coupon valuation differs from Series I savings bond official valuation.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Bond Calculator",
+      "Priority Rank": 431,
+      "Daily Batch": 9,
+      "Keyword": "calculator bond",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1000,
+      "KD %": 43,
+      "CPC USD": null,
+      "Intent": "C",
+      "Competitor Best Position": 2,
+      "Competitor Traffic": 132,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/bond-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/fixed-coupon-bond-calculator/",
+      "scopeNote": "Coupon valuation differs from Series I savings bond official valuation.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Bond Calculator",
+      "Priority Rank": 431,
+      "Daily Batch": 9,
+      "Keyword": "bond valuation calculator",
+      "Role": "SECONDARY / MERGED",
+      "Volume": 1000,
+      "KD %": 47,
+      "CPC USD": null,
+      "Intent": "I",
+      "Competitor Best Position": 2,
+      "Competitor Traffic": 132,
+      "SolvePilot Position/Flag": null,
+      "Source Files": "semrush-export-4100.xlsx",
+      "Competitor URLs": "www.calculator.net/bond-calculator.html",
+      "clusterAction": "excluded-from-new-page",
+      "destination": "/tools/fixed-coupon-bond-calculator/",
+      "scopeNote": "Coupon valuation differs from Series I savings bond official valuation.",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "not added to new destination keyword metadata",
+        "articleSections": [],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    },
+    {
+      "Tool / Page": "Chocolate For Dogs Calculator",
+      "Priority Rank": 270,
+      "Daily Batch": 6,
+      "Keyword": "chocolate for dogs calculator",
+      "Role": "PRIMARY",
+      "Volume": 1600,
+      "KD %": 13,
+      "CPC USD": 0.27,
+      "Intent": "I",
+      "Competitor Best Position": null,
+      "Competitor Traffic": null,
+      "SolvePilot Position/Flag": 0,
+      "Source Files": "semrush-export-2215.xlsx",
+      "Competitor URLs": null,
+      "clusterAction": "included",
+      "destination": "/guides/chocolate-for-dogs-calculator-guide/",
+      "scopeNote": "Veterinary resource guide alternative; not an automated toxicity verdict",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch",
+      "contentPlacement": {
+        "metadata": "included in this destination keywords",
+        "articleSections": [
+          "Keep the original product information",
+          "Understand what an exposure equation omits",
+          "Veterinary next steps"
+        ],
+        "matchingMethod": "search intent and supported task; awkward word-order variants are not forced into repeated prose"
+      }
+    }
+  ],
+  "researchStatus": "Current public search-result retrieval and competitor page inspection; targeted live UI cases recorded separately. Guides are explicit limited alternatives, not official calculator emulations.",
+  "serpAndCompetitorReview": [
+    {
+      "rank": 241,
+      "query": "reputation calculator",
+      "competitorUrl": "https://www.commoninja.com/free-tools/reviews/reputation-score-checker",
+      "observedPageTerms": [
+        {
+          "term": "weighted average rating",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "review counts",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "reputation score",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Page fields and formula inspected. SolvePilot adds an inverse target-review count and does not copy unverified trust bonuses or benchmark claims.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/tools/reputation-calculator/",
+      "targetSections": [
+        "Weighted aggregation methodology",
+        "Compare scenarios without changing the evidence",
+        "Review target FAQs"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    },
+    {
+      "rank": 251,
+      "query": "pool shock calculator",
+      "competitorUrl": "https://swimcalcs.com/chemistry/shock/",
+      "observedPageTerms": [
+        {
+          "term": "free chlorine",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "available chlorine",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "shock product",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Live UI: 10,000 US gallons, current12,target10,cal-hypo73% displayed zero addition. WebMCP response timed out but DOM confirmed submitted inputs and zero result. SolvePilot likewise clamps addition at zero, exposes excess and uses verified strength/density instead of fixed liquid shortcut.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/tools/pool-shock-calculator/",
+      "targetSections": [
+        "Available chlorine basis",
+        "Density conversion",
+        "Compare two label-confirmed mass scenarios"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    },
+    {
+      "rank": 253,
+      "query": "btz calculator",
+      "competitorUrl": "https://onlineinternetcafe.com/air-force-btz-calculator/",
+      "observedPageTerms": [
+        {
+          "term": "time in service",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "time in grade",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "board date",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Page method inspected; other retrieved tools used inconsistent or unsupported promotion/score rules. Current official base PDF unavailable. Guide labels historic illustration and MPF verification; no current eligibility engine fabricated.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/guides/btz-calculator-guide/",
+      "targetSections": [
+        "Audit the competing time routes",
+        "Read board scheduling as a separate process"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    },
+    {
+      "rank": 311,
+      "query": "sourdough starter calculator",
+      "competitorUrl": "https://loafmath.com/sourdough-starter-calculator/",
+      "observedPageTerms": [
+        {
+          "term": "starter to keep",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "current hydration",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "feeding ratios",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Live UI: retained50g, ratio1:2:2, seedhydration50% gave flour100g,water100g,total250g,displayed87% hydration. Existing competitor already includes seed composition; SolvePilot adds reverse target build and custom ratio parts rather than claiming that feature is absent.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/tools/sourdough-starter-calculator/",
+      "targetSections": [
+        "Formula and seed composition",
+        "Final-total direction",
+        "Compare ratio changes while holding the seed constant"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    },
+    {
+      "rank": 325,
+      "query": "missouri child support calculator",
+      "competitorUrl": "https://form14.wrw.law/",
+      "observedPageTerms": [
+        {
+          "term": "gross income",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "proportionate share",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "Form 14",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Fields and 2026 page statement inspected. Official directions retrieved by search use order/judgment timing, rather than treating competitor filing-date note as controlling. Guide contains no unofficial award calculation.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/guides/missouri-child-support-calculator-guide/",
+      "targetSections": [
+        "Verify the applicability trigger before comparing tools",
+        "Prepare monthly income on a consistent basis"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    },
+    {
+      "rank": 378,
+      "query": "fixed index annuity calculator",
+      "competitorUrl": "https://fiscalcpro.com/calculators/fixed-indexed-annuity-calculator",
+      "observedPageTerms": [
+        {
+          "term": "participation rate",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "cap rate",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "floor rate",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Inputs and disclosed repeated-rate formula inspected. SolvePilot uses annual return sequence, spread and separate post-credit fees; one disclosed method only. No universal product superiority claimed.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/tools/fixed-index-annuity-calculator/",
+      "targetSections": [
+        "Crediting sequence",
+        "Fees after credit",
+        "Use a sequence rather than a repeated average"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    },
+    {
+      "rank": 382,
+      "query": "body shape calculator",
+      "competitorUrl": "https://www.calculator.net/body-type-calculator.html",
+      "observedPageTerms": [
+        {
+          "term": "bust size",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "high hip size",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "hip size",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Fields and clothing/health scope inspected. Public research abstract does not supply complete cutoffs; guide instead explains measurements, method differences and existing garment-chart route.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/guides/body-shape-calculator-guide/",
+      "targetSections": [
+        "Keep the measurement locations distinct",
+        "Separate shape vocabulary from clothing size"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    },
+    {
+      "rank": 426,
+      "query": "love calculator paper",
+      "competitorUrl": "https://calculab.net/en-us/love-calculator/",
+      "observedPageTerms": [
+        {
+          "term": "FLAMES",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "love percentage",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "letter counting",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Disclosed paper algorithms inspected; playground variants differ. SolvePilot labels its own precise LOVES rule and prints reduction/elimination steps, with explicit zero-count handling and no relationship claims.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/tools/love-calculator-paper/",
+      "targetSections": [
+        "Formula and paper-game steps",
+        "Digit reduction",
+        "Recreate the FLAMES circle carefully"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    },
+    {
+      "rank": 431,
+      "query": "i bond value calculator",
+      "competitorUrl": "https://www.calculator.net/bond-calculator.html",
+      "observedPageTerms": [
+        {
+          "term": "bond price",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "yield to maturity",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "coupon rate",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Workbook competitor is coupon-bond intent, not I-bond valuation. Current search also retrieved official Treasury paper/electronic routes; guide directs to those rather than pretending generic coupon pricing values savings bonds.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/guides/i-bond-value-calculator-guide/",
+      "targetSections": [
+        "Choose the valuation route before entering a rate",
+        "Do not use a coupon-bond price as a savings-bond value"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    },
+    {
+      "rank": 270,
+      "query": "chocolate for dogs calculator",
+      "competitorUrl": "https://www.petmd.com/dog/chocolate-toxicity",
+      "observedPageTerms": [
+        {
+          "term": "chocolate toxicity",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "dog weight",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        },
+        {
+          "term": "type of chocolate",
+          "kind": "observed page vocabulary, not measured organic ranking keyword",
+          "volume": null,
+          "traffic": null
+        }
+      ],
+      "findingAndImplementation": "Calculator and urgent veterinary wording inspected in search/page content; no live clinical simulation claimed. Guide prioritizes veterinary contact and data preparation, without safe-dose thresholds or home-treatment output.",
+      "retrievalDate": "2026-10-14",
+      "mappedDestination": "/guides/chocolate-for-dogs-calculator-guide/",
+      "targetSections": [
+        "Keep the original product information",
+        "Understand what an exposure equation omits",
+        "Veterinary next steps"
+      ],
+      "termUse": "Semantic planning for headings, methods, fields and FAQs; not copied competitor prose or claimed verified organic ranking queries."
+    }
+  ],
+  "scopeCautions": [
+    "Five new guides are explicitly bounded resource/method alternatives, not current BTZ, Missouri Form14, clinical toxicity, seven-shape or Treasury valuation engines.",
+    "Guides count as scoped alternatives, not calculator feature completion.",
+    "Reputation is manually supplied review aggregation, not a full web audit.",
+    "Pool chemistry requires separately checked target and product/equipment basis.",
+    "Entertainment paper game carries no compatibility validity."
+  ],
+  "inspectedProtectedSkips": [
+    {
+      "Tool / Page": "Salt Calculator Pool",
+      "Priority Rank": 300,
+      "Daily Batch": 6,
+      "Keyword": "salt calculator pool",
+      "Role": "PRIMARY",
+      "Volume": 1000,
+      "KD %": 10,
+      "CPC USD": 0.81,
+      "Intent": "C - I",
+      "Competitor Best Position": null,
+      "Competitor Traffic": null,
+      "SolvePilot Position/Flag": 0,
+      "Source Files": "semrush-export-2215.xlsx",
+      "Competitor URLs": null,
+      "clusterAction": "preserved-existing",
+      "destination": "/tools/pool-salt-calculator/",
+      "scopeNote": "Existing protected September29 canonical tool; no calculator or editorial changes",
+      "metricsAsOf": "Historical uploaded workbook export; not refreshed in this batch"
+    }
+  ],
+  "sourceLimitations": [
+    "Current AF base PDF direct retrieval returned403; historical rule illustration explicitly labeled.",
+    "Missouri official directions retrieved in search; direct PDF retrieval returned403.",
+    "Apparel research full text unavailable; public abstract inspected, no complete classifier claimed.",
+    "Competitor page vocabulary does not establish actual organic query rankings or current traffic."
+  ]
+}

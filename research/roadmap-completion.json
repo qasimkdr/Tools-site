@@ -1,21 +1,21 @@
 {
   "summary": {
-    "asOf": "2026-10-12",
+    "asOf": "2026-10-14",
     "totalRoadmapRows": 489,
-    "completedScopedRows": 361,
-    "completedCalculatorOrToolRows": 350,
-    "completedGuideRows": 11,
-    "uniqueCalculatorOrToolDestinations": 280,
-    "uniqueGuideDestinations": 11,
-    "notCountedRows": 128,
+    "completedScopedRows": 371,
+    "completedCalculatorOrToolRows": 355,
+    "completedGuideRows": 16,
+    "uniqueCalculatorOrToolDestinations": 285,
+    "uniqueGuideDestinations": 16,
+    "notCountedRows": 118,
     "latestReviewedRank": 489,
     "nextUnreviewedRank": null,
-    "thisBatchNewCalculators": 9,
-    "thisBatchExactKeywords": 10,
-    "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis\u2013Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately.",
+    "thisBatchNewCalculators": 5,
+    "thisBatchExactKeywords": 16,
+    "countMeaning": "Completed rows measure documented scoped destinations from batches, including intentional same-intent merges. They are not a count of separate new URLs, not all keyword variants fully implemented, and not indexed or ranking pages. Explicitly unsupported primary intent, including Khamis–Roche coefficients, is excluded. Medical/technical guide alternatives are counted separately.",
     "thisBatchNewScopedRows": 10,
     "duplicateRanksRemoved": 20,
-    "thisBatchNewGuides": 1
+    "thisBatchNewGuides": 5
   },
   "rows": [
     {
@@ -1267,7 +1267,7 @@
       "roadmapPage": "Height Calculator",
       "primaryKeyword": "khamis-roche method height calculator",
       "status": "deferred-or-partial",
-      "reason": "Mid-parental height arithmetic exists, but Khamis\u2013Roche intent requires age-specific coefficients not implemented. Excluded from full primary-intent completion count."
+      "reason": "Mid-parental height arithmetic exists, but Khamis–Roche intent requires age-specific coefficients not implemented. Excluded from full primary-intent completion count."
     },
     {
       "rank": 100,
@@ -2916,7 +2916,7 @@
       "roadmapPage": "Average Calculator",
       "primaryKeyword": "averages calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
       "additionalScopedDestinations": [
         "/tools/average-time-calculator/"
       ],
@@ -2953,7 +2953,7 @@
       "roadmapPage": "Www.calculator.net Calculator",
       "primaryKeyword": "et calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 230,
@@ -2983,14 +2983,14 @@
         "/tools/bowling-handicap-calculator/"
       ],
       "previousStatus": "skipped-deferred-or-unverified",
-      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 232,
       "roadmapPage": "Calculator+cherry",
       "primaryKeyword": "calculator+cherry",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 233,
@@ -3010,7 +3010,7 @@
       "roadmapPage": "Basis Point Calculator",
       "primaryKeyword": "basis point calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 235,
@@ -3030,7 +3030,7 @@
       "roadmapPage": "Usaf Pt Calculator",
       "primaryKeyword": "usaf pt calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 237,
@@ -3050,14 +3050,14 @@
       "roadmapPage": "Ap Chem Test Score Calculator",
       "primaryKeyword": "ap chem test score calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 239,
       "roadmapPage": "Free Profit Margin Calculator Tool On Nemin .io",
       "primaryKeyword": "free profit margin calculator tool on nemin .io",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 240,
@@ -3076,8 +3076,15 @@
       "rank": 241,
       "roadmapPage": "Reputation Calculator",
       "primaryKeyword": "reputation calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/tools/reputation-calculator/",
+      "slug": "reputation-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "October 14 bounded worksheet",
+      "destinations": [
+        "/tools/reputation-calculator/"
+      ]
     },
     {
       "rank": 242,
@@ -3097,7 +3104,7 @@
       "roadmapPage": "Army Fitness Test Calculator",
       "primaryKeyword": "army fitness test calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 244,
@@ -3117,7 +3124,7 @@
       "roadmapPage": "Five Number Summary Calculator",
       "primaryKeyword": "five number summary calculator",
       "status": "completed-scoped-destination",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
       "path": "/tools/five-number-summary-calculator/",
       "slug": "five-number-summary-calculator",
       "type": "calculator-or-tool",
@@ -3144,21 +3151,21 @@
       "roadmapPage": "Tocris Molarity Calculator",
       "primaryKeyword": "tocris molarity calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 248,
       "roadmapPage": "Army Physical Test Calculator",
       "primaryKeyword": "army physical test calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 249,
       "roadmapPage": "Simplify Radical Expressions Calculator",
       "primaryKeyword": "simplify radical expressions calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 250,
@@ -3177,8 +3184,15 @@
       "rank": 251,
       "roadmapPage": "Pool Shock Calculator",
       "primaryKeyword": "pool shock calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/tools/pool-shock-calculator/",
+      "slug": "pool-shock-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "October 14 bounded worksheet",
+      "destinations": [
+        "/tools/pool-shock-calculator/"
+      ]
     },
     {
       "rank": 252,
@@ -3197,8 +3211,15 @@
       "rank": 253,
       "roadmapPage": "Btz Calculator",
       "primaryKeyword": "btz calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/guides/btz-calculator-guide/",
+      "slug": "btz-calculator-guide",
+      "type": "guide",
+      "evidence": "October 14 informational guide alternative; does not implement the named official or unverified calculator",
+      "destinations": [
+        "/guides/btz-calculator-guide/"
+      ]
     },
     {
       "rank": 254,
@@ -3241,7 +3262,7 @@
         "/tools/quilt-binding-calculator/"
       ],
       "previousStatus": "skipped-deferred-or-unverified",
-      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 257,
@@ -3300,28 +3321,28 @@
       "roadmapPage": "Bpc-157 + Tb-500 Blend Dosage Calculator",
       "primaryKeyword": "bpc-157 + tb-500 blend dosage calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 262,
       "roadmapPage": "Weight Loss Percentage Calculator",
       "primaryKeyword": "weight loss percentage calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 263,
       "roadmapPage": "Pt Test Calculator",
       "primaryKeyword": "pt test calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 264,
       "roadmapPage": "Aft Calculator",
       "primaryKeyword": "aft calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 265,
@@ -3380,35 +3401,42 @@
       "roadmapPage": "Credit Union Loan Calculator",
       "primaryKeyword": "credit union loan calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 270,
       "roadmapPage": "Chocolate For Dogs Calculator",
       "primaryKeyword": "chocolate for dogs calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/guides/chocolate-for-dogs-calculator-guide/",
+      "slug": "chocolate-for-dogs-calculator-guide",
+      "type": "guide",
+      "evidence": "October 14 veterinary resource guide alternative; no toxicity-dose or safe-exposure calculator",
+      "destinations": [
+        "/guides/chocolate-for-dogs-calculator-guide/"
+      ]
     },
     {
       "rank": 271,
       "roadmapPage": "Cubic Feet Calculator",
       "primaryKeyword": "cubic feet calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 272,
       "roadmapPage": "Ap Stats Grade Calculator",
       "primaryKeyword": "ap stats grade calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 273,
       "roadmapPage": "Suburban Paycheck Calculator",
       "primaryKeyword": "suburban paycheck calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 274,
@@ -3441,7 +3469,7 @@
       "roadmapPage": "5 Number Summary Calculator",
       "primaryKeyword": "5 number summary calculator",
       "status": "completed-scoped-destination",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
       "path": "/tools/five-number-summary-calculator/",
       "slug": "five-number-summary-calculator",
       "type": "calculator-or-tool",
@@ -3481,7 +3509,7 @@
       "roadmapPage": "Tsp Growth Calculator",
       "primaryKeyword": "tsp growth calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 280,
@@ -3498,28 +3526,28 @@
         "/tools/random-birthday-generator/"
       ],
       "previousStatus": "skipped-deferred-or-unverified",
-      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 281,
       "roadmapPage": "Fat Intake Calculator",
       "primaryKeyword": "fat intake calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 282,
       "roadmapPage": "Hpt Calculator",
       "primaryKeyword": "hpt calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 283,
       "roadmapPage": "Ap Statistics Calculator",
       "primaryKeyword": "ap statistics calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 284,
@@ -3539,14 +3567,14 @@
       "roadmapPage": "Wedding Drink Calculator",
       "primaryKeyword": "wedding drink calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 286,
       "roadmapPage": "Future Value Calculator",
       "primaryKeyword": "future value calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 287,
@@ -3608,14 +3636,14 @@
       "roadmapPage": "Drip Calculator Online",
       "primaryKeyword": "drip calculator online",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 292,
       "roadmapPage": "Exponent Calculator",
       "primaryKeyword": "exponents calculator",
       "status": "completed-scoped-destination",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
       "path": "/tools/integer-exponent-calculator/",
       "slug": "integer-exponent-calculator",
       "type": "calculator-or-tool",
@@ -3629,7 +3657,7 @@
       "roadmapPage": "Compound Interest Calculator",
       "primaryKeyword": "cd compound interest calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 294,
@@ -3659,14 +3687,14 @@
         "/tools/legal-deadline-calculator/"
       ],
       "previousStatus": "skipped-deferred-or-unverified",
-      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 296,
       "roadmapPage": "APY Calculator",
       "primaryKeyword": "apy calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 297,
@@ -3686,14 +3714,14 @@
       "roadmapPage": "Vat Calculator",
       "primaryKeyword": "vat calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 299,
       "roadmapPage": "Rmd Calculator",
       "primaryKeyword": "rmd calculator",
       "status": "completed-scoped-destination",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
       "path": "/tools/rmd-uniform-lifetime-calculator/",
       "slug": "rmd-uniform-lifetime-calculator",
       "type": "calculator-or-tool",
@@ -3707,21 +3735,21 @@
       "roadmapPage": "Salt Calculator Pool",
       "primaryKeyword": "salt calculator pool",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 301,
       "roadmapPage": "Time To Decimal Calculator",
       "primaryKeyword": "hours to decimal calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 302,
       "roadmapPage": "Money Market Rate Calculator",
       "primaryKeyword": "money market rate calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 303,
@@ -3780,21 +3808,21 @@
         "/tools/brick-calculator/"
       ],
       "previousStatus": "skipped-deferred-or-unverified",
-      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 307,
       "roadmapPage": "Calculator Anion Gap",
       "primaryKeyword": "calculator anion gap",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 308,
       "roadmapPage": "Calculator+lemon",
       "primaryKeyword": "calculator+lemon",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 309,
@@ -3817,21 +3845,28 @@
       "roadmapPage": "Numerical Expression Calculator",
       "primaryKeyword": "numerical expression calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 311,
       "roadmapPage": "Sourdough Starter Calculator",
       "primaryKeyword": "sourdough starter calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/tools/sourdough-starter-calculator/",
+      "slug": "sourdough-starter-calculator",
+      "type": "calculator-or-tool",
+      "evidence": "October 14 bounded worksheet",
+      "destinations": [
+        "/tools/sourdough-starter-calculator/"
+      ]
     },
     {
       "rank": 312,
       "roadmapPage": "Simplest Radical Form Calculator",
       "primaryKeyword": "simplest radical form calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 313,
@@ -3851,7 +3886,7 @@
       "roadmapPage": "Stem And Leaf Plot Generator",
       "primaryKeyword": "stem and leaf plot generator",
       "status": "completed-scoped-destination",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
       "path": "/tools/stem-and-leaf-plot-generator/",
       "slug": "stem-and-leaf-plot-generator",
       "type": "calculator-or-tool",
@@ -3878,14 +3913,14 @@
       "roadmapPage": "Cc In Hp Converter",
       "primaryKeyword": "cc in hp converter",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 317,
       "roadmapPage": "Battery Run Time Calculator",
       "primaryKeyword": "battery run time calculator",
       "status": "completed-scoped-destination",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence.",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
       "path": "/tools/battery-runtime-calculator/",
       "slug": "battery-runtime-calculator",
       "type": "calculator-or-tool",
@@ -3899,7 +3934,7 @@
       "roadmapPage": "Wattage Calculator",
       "primaryKeyword": "watt wattage",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 319,
@@ -3916,7 +3951,7 @@
         "/tools/bra-size-calculator/"
       ],
       "previousStatus": "skipped-deferred-or-unverified",
-      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "previousReason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 320,
@@ -3962,21 +3997,28 @@
       "roadmapPage": "Water Calculator Intake",
       "primaryKeyword": "water calculator intake",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 324,
       "roadmapPage": "Car Lease Vs Buy Calculator",
       "primaryKeyword": "car lease vs buy calculator",
       "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence."
     },
     {
       "rank": 325,
       "roadmapPage": "Missouri Child Support Calculator",
       "primaryKeyword": "missouri child support calculator",
-      "status": "skipped-deferred-or-unverified",
-      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226\u2013327; existing semantic overlap alone is not full completion evidence."
+      "status": "completed-scoped-destination",
+      "reason": "Not counted as a completed batch destination. See selection manifests for ranks226–327; existing semantic overlap alone is not full completion evidence.",
+      "path": "/guides/missouri-child-support-calculator-guide/",
+      "slug": "missouri-child-support-calculator-guide",
+      "type": "guide",
+      "evidence": "October 14 informational guide alternative; does not implement the named official or unverified calculator",
+      "destinations": [
+        "/guides/missouri-child-support-calculator-guide/"
+      ]
     },
     {
       "rank": 326,
@@ -4533,8 +4575,14 @@
       "rank": 378,
       "roadmapPage": "Annuity Calculator",
       "primaryKeyword": "fixed index annuity calculator",
-      "status": "skipped-existing-or-covered-intent",
-      "evidence": "Basic annuity payment already exists; fixed-index product crediting rules need verified contract-specific modeling."
+      "status": "completed-scoped-destination",
+      "evidence": "October 14 bounded worksheet",
+      "path": "/tools/fixed-index-annuity-calculator/",
+      "slug": "fixed-index-annuity-calculator",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/fixed-index-annuity-calculator/"
+      ]
     },
     {
       "rank": 379,
@@ -4567,13 +4615,19 @@
       "rank": 382,
       "roadmapPage": "Body Type Calculator",
       "primaryKeyword": "body shape calculator",
-      "status": "deferred",
-      "evidence": "No validated universal body-shape/clothing-size classification was established.",
+      "status": "completed-scoped-destination",
+      "evidence": "October 14 informational guide alternative; does not implement the named official or unverified calculator",
       "additionalScopedDestinations": [
         "/tools/clothing-size-chart-matcher/"
       ],
       "scopeNote": "Supplied clothing chart secondary only; body-shape primary remains unsupported.",
-      "reviewedAt": "2026-10-06"
+      "reviewedAt": "2026-10-06",
+      "path": "/guides/body-shape-calculator-guide/",
+      "slug": "body-shape-calculator-guide",
+      "type": "guide",
+      "destinations": [
+        "/guides/body-shape-calculator-guide/"
+      ]
     },
     {
       "rank": 383,
@@ -5037,9 +5091,15 @@
       "rank": 426,
       "roadmapPage": "Love Calculator",
       "primaryKeyword": "love calculator paper",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "No validated relationship-compatibility method; no invented love score.",
-      "reviewedAt": "2026-10-05"
+      "status": "completed-scoped-destination",
+      "evidence": "October 14 bounded worksheet",
+      "reviewedAt": "2026-10-05",
+      "path": "/tools/love-calculator-paper/",
+      "slug": "love-calculator-paper",
+      "type": "calculator-or-tool",
+      "destinations": [
+        "/tools/love-calculator-paper/"
+      ]
     },
     {
       "rank": 427,
@@ -5092,13 +5152,19 @@
       "rank": 431,
       "roadmapPage": "Bond Calculator",
       "primaryKeyword": "i bond value calculator",
-      "status": "deferred-outside-verified-scope",
-      "evidence": "Series I bond valuation requires verified issue-date rate history and redemption terms; no generic bond substitute.",
+      "status": "completed-scoped-destination",
+      "evidence": "October 14 informational guide alternative; does not implement the named official or unverified calculator",
       "reviewedAt": "2026-10-05",
       "additionalScopedDestinations": [
         "/tools/fixed-coupon-bond-calculator/"
       ],
-      "scopeNote": "I bond calculator needs current inflation-linked savings-bond rules; fixed-coupon secondary intent only"
+      "scopeNote": "I bond calculator needs current inflation-linked savings-bond rules; fixed-coupon secondary intent only",
+      "path": "/guides/i-bond-value-calculator-guide/",
+      "slug": "i-bond-value-calculator-guide",
+      "type": "guide",
+      "destinations": [
+        "/guides/i-bond-value-calculator-guide/"
+      ]
     },
     {
       "rank": 432,

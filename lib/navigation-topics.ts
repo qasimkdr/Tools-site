@@ -1,3 +1,4 @@
+import {oct14Navigation} from './roadmap-oct14-navigation';
 import {next10Navigation} from './roadmap-next10-oct12-navigation';
 import {gap20Navigation} from "./roadmap-gap20-navigation";
 /** Reviewed task families, not broad category matching. Membership is explicit;
@@ -7,6 +8,7 @@ import {deferredNavigation} from "./roadmap-deferred-navigation";
 export type NavigationTopic={id:string;reason:string;paths:string[]};
 const group=(id:string,prefix:string,slugs:string,reason:string):NavigationTopic=>({id,reason,paths:slugs.split(/\s+/).map(s=>`${prefix}/${s}/`)});
 export const navigationTopics:NavigationTopic[]=[
+ ...oct14Navigation,
  ...next10Navigation,
  ...gap20Navigation,
  ...deferredNavigation,
