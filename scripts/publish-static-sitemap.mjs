@@ -4,7 +4,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 const source = join(process.cwd(), "out", "sitemap.xml");
-const destination = join(process.cwd(), "out", "sitemap.xml");
+const destination = join(process.cwd(), "out", "sitemap-v2.xml");
 const xml = await readFile(source, "utf8");
 
 if (!xml.includes("<urlset") || !xml.includes("</urlset>")) {
