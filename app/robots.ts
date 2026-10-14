@@ -1,4 +1,4 @@
 import {siteUrl as base} from "@/lib/site-url";
 import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
-export default function robots():MetadataRoute.Robots{return{rules:[{userAgent:"*",allow:"/",disallow:["/api/","/admin/"]}],sitemap:`${base}/sitemap.xml`,host:base}}
+export default function robots():MetadataRoute.Robots{return{rules:[{userAgent:"*",allow:"/",disallow:["/api/","/admin/"]}],sitemap:`${base}/sitemap-v2.xml`,host:base}}

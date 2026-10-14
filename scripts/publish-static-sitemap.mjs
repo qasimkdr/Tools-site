@@ -1,5 +1,5 @@
-// Publish a second, standalone static sitemap from the complete Next.js export.
-// This does not alter sitemap.xml, robots.txt, or the diagnostic one-URL sitemap.
+// Publish the permanent crawler-facing static sitemap from the complete export.
+// Run before validation so robots discovery and the published XML are checked together.
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 

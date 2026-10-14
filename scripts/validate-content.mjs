@@ -579,7 +579,10 @@ for(const loc of locs){
 }
 for(const match of globalSitemap.matchAll(/<lastmod>([^<]+)<\/lastmod>/g))if(!Number.isFinite(Date.parse(match[1]))||Date.parse(match[1])>Date.now())failures.push(`sitemap: invalid or future lastmod ${match[1]}`);
 const robotsExport=readFileSync(join(process.cwd(),'out/robots.txt'),'utf8');
-if(!robotsExport.includes('Sitemap: https://solvepilot.xyz/sitemap.xml')||/Disallow: \/(?:\r?\n|$)/.test(robotsExport))failures.push('robots: sitemap discovery or crawl allowance invalid');
+const publishedSitemap=readFileSync(join(process.cwd(),'out/sitemap-v2.xml'),'utf8');
+if(publishedSitemap!==globalSitemap)failures.push('sitemap-v2: must match the complete validated canonical sitemap');
+const discoveredSitemaps=[...robotsExport.matchAll(/^Sitemap:\s*(\S+)\s*$/gm)].map(match=>match[1]);
+if(discoveredSitemaps.length!==1||discoveredSitemaps[0]!=='https://solvepilot.xyz/sitemap-v2.xml'||/Disallow: \/(?:\r?\n|$)/.test(robotsExport))failures.push('robots: sitemap discovery or crawl allowance invalid');
 
 
 // Ranks 206–225: preserve every primary and secondary workbook query.
