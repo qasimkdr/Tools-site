@@ -85,3 +85,19 @@ Phase 3 — technical:
   would normally recover in days, not stay at zero for six weeks.
 - Owner checks needed: GSC Manual actions, Security issues, Pages report (indexed count before/after 10 Oct), URL Inspection
   of a top page (e.g. /tools/molecular-weight-calculator/), Settings → Crawl stats (host errors around 9–10 Oct).
+
+## 5. Owner-supplied evidence (23 Nov 2026) — updated diagnosis
+- Manual actions: **No issues detected**. Security issues: **No issues detected**.
+- DNS (dnschecker): resolves to Render `216.24.57.1` from every tested resolver. Crawl stats host status: **No problems**,
+  100% of responses 200. The mobile-data "unable to reach" problem is a local ISP/resolver issue, not what Googlebot sees.
+- Crawl stats: crawling peaked ~5–6K requests/day around 3–7 Oct, then fell to near zero from ~8 Oct and has stayed there.
+- Pages report (indexed / not indexed): 417/3 (22 Sep) → 482/3 (5–9 Oct) → **423/62 (10 Oct)** → 379/357 (13 Oct)
+  → 350/386 (24 Oct) → 210/526 (7 Nov) → **150/596 (16 Nov)**. Reasons: Crawled – currently not indexed 332,
+  Discovered – currently not indexed 261, Page with redirect 3.
+- Reading: on 10 Oct impressions fell to ~0 while **423 pages were still indexed**, so the first hit was a site-wide ranking
+  suppression, not a crawl/DNS failure. Google then cut crawl demand and has been dropping pages from the index since.
+  This is the signature of an algorithmic site-level quality/spam classification (timed with the September 2026 spam
+  update finishing 8 Oct), not a manual action, a code bug or hosting.
+- Implication: recovery needs site-wide quality signals to change (remove keyword lists and boilerplate, consolidate or
+  noindex the thinnest/near-duplicate pages, pause bulk publishing and bulk IndexNow pushes), then internal linking.
+  Algorithmic recoveries are usually seen only after Google recrawls and reassesses, often around a later update.
