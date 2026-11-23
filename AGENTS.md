@@ -678,4 +678,5 @@ Read `docs/SEO-PLAYBOOK.md`, `docs/seo-audit.md` and `docs/seo-changelog.md` bef
 - Client components receive only the fields they render (`toCard` in `components/ToolCard.tsx`); never pass whole catalog objects to `CategoryBrowser` or other client components.
 - Document/media guidance comes from `lib/file-format-notes.ts` (`fileToolNotes` per slug + role-specific `formatNotes`). Every new document/media tool needs an entry whose operation note matches its real code; never describe behaviour the processor does not implement.
 - Meta descriptions go through `seoDescription(description, category, extras)` on every tool/guide route; pass the page's own example/formula/intro as `extras`. It must never cut a sentence mid-clause.
+- Sitemap lastmod = later of the catalog date and `CONTENT_REFRESH` in `app/sitemap.ts`. Raise `CONTENT_REFRESH` only for genuine site-wide content changes; for single-page rewrites update that page's own date. No priority/changefreq.
 - Known remaining work: Pakistan per-category considerations; thin older Pakistan guides (420–600 words); many descriptions are 110–139 chars (acceptable, below the playbook's 140–160 ideal).

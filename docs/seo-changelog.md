@@ -1,5 +1,13 @@
 # SEO changelog
 
+## 2026-11-23 — Sitemap refresh before resubmission
+- `app/sitemap.ts`: lastmod is now the later of each page's catalog date and `CONTENT_REFRESH` (2026-11-23), because the
+  recovery batches changed the rendered content of every tool/guide page, the homepage, directories, Cookies and Terms.
+  735 of 742 URLs carry 2026-11-23; About, Editorial policy, Author, Contact, Privacy, Disclaimer and /pk/mobiles keep their
+  earlier dates. On-page "Reviewed" dates are unchanged (methods were not re-reviewed).
+- `priority` and `changefreq` removed (ignored by Google).
+- Owner: resubmit https://solvepilot.xyz/sitemap-v2.xml in Search Console after the deploy is live.
+
 ## 2026-11-23 — Recovery batch 4 (meta descriptions, PDF and image pages)
 - `seoDescription()` rewritten: it used to pad short descriptions with a generic category sentence and then cut it off,
   so many snippets ended mid-phrase ("…repayment assumptions and."). It now never cuts a sentence, completes short
