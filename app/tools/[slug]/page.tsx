@@ -5,6 +5,9 @@ import {RentBuyTool} from "@/components/RentBuyTool";
 import {roadmapGap20Audit} from "@/lib/roadmap-gap20-audit";
 import {RelatedNavigation} from "@/components/RelatedNavigation";
 import {ContextualLinks,RelatedTools,relatedPaths} from "@/components/InternalLinks";
+import {SEO_JARGON,cleanConsiderations,cleanFaqs,cleanIntro,stripSeoJargon} from "@/lib/page-cleanup";
+
+const canonicalGlobal=globalTools.filter(t=>!t.canonicalSlug);
 import {roadmapDeferredAudit} from "@/lib/roadmap-deferred-audit";
 import {roadmap423Audit} from "@/lib/roadmap-423-plus-audit";
 import {roadmap369Audit} from "@/lib/roadmap-369-plus-audit";
@@ -77,8 +80,11 @@ export default async function GlobalToolPage({
   const tool = getGlobalTool(slug);
   if (!tool) notFound();
   const hasDetailedEditorial = Boolean((oct14Audit[tool.slug]||next10Audit[tool.slug])||roadmapGap20Audit[tool.slug]||roadmapDeferredAudit[tool.slug]||roadmap423Audit[tool.slug]||roadmap369Audit[tool.slug]||roadmap328Audit[tool.slug]||roadmap268Audit[tool.slug]||next20Audit[tool.slug]||roadmap206Audit[tool.slug]||roadmap186Audit[tool.slug]||roadmap166Audit[tool.slug]||roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
-  const flagship = hasDetailedEditorial ? null : insightForTool(tool);
   const semrushAudit = auditForTool(tool);
+  const faqs = cleanFaqs(tool, canonicalGlobal);
+  const considerations = cleanConsiderations(tool, canonicalGlobal);
+  const intro = cleanIntro(tool, canonicalGlobal);
+  const flagship = hasDetailedEditorial ? null : insightForTool({ ...tool, considerations });
   const url = `https://solvepilot.xyz/tools/${tool.canonicalSlug || tool.slug}/`;
   const jsonLd = {
     "@context": "https://schema.org",
@@ -100,7 +106,7 @@ export default async function GlobalToolPage({
       },
       {
         "@type": "FAQPage",
-        mainEntity: tool.faqs.map((f) => ({
+        mainEntity: faqs.map((f) => ({
           "@type": "Question",
           name: f.question,
           acceptedAnswer: { "@type": "Answer", text: f.answer },
@@ -175,7 +181,7 @@ export default async function GlobalToolPage({
           <AdSlot slot="0000000001" format="horizontal" />
           <section className="rich-content">
             <h2>How this calculator helps</h2>
-            <p>{tool.intro}</p>
+            <p>{intro}</p>
             <h2>How to use it</h2>
             <ol className="how-to-list">
               {tool.howTo.map((step, index) => (
@@ -200,7 +206,7 @@ export default async function GlobalToolPage({
             {semrushAudit && (
               <section className="semrush-intent-audit" data-insight-tier={hasDetailedEditorial ? "tool-specific" : undefined}>
                 <h2>{hasDetailedEditorial ? "How to interpret your result" : "Search intent and calculator coverage"}</h2>
-                <p>{semrushAudit.interpretation}</p>
+                <p>{stripSeoJargon(semrushAudit.interpretation)}</p>
                 {semrushAudit.relatedCalculators?.length ? (
                   <p>For different inputs or formulas, use {semrushAudit.relatedCalculators.map((item, index) => (
                     <span key={item.slug}>{index > 0 ? "; " : ""}<a href={item.path||`/tools/${item.slug}/`}>{item.title}</a></span>
@@ -211,7 +217,7 @@ export default async function GlobalToolPage({
                   <table>
                     <thead><tr><th>Scenario</th><th>What it shows</th></tr></thead>
                     <tbody>
-                      {semrushAudit.scenarios.map((scenario) => {
+                      {semrushAudit.scenarios.filter((scenario) => !SEO_JARGON.test(scenario)).map((scenario) => {
                         const [label, ...rest] = scenario.split(" — ");
                         return <tr key={scenario}><td>{label}</td><td>{rest.join(" — ")}</td></tr>;
                       })}
@@ -220,7 +226,7 @@ export default async function GlobalToolPage({
                 </div>
                 <h2>Common mistakes to avoid</h2>
                 <ul className="mistake-list">
-                  {semrushAudit.mistakes.map((mistake) => <li key={mistake}>{mistake}</li>)}
+                  {semrushAudit.mistakes.filter((mistake) => !SEO_JARGON.test(mistake)).map((mistake) => <li key={mistake}>{mistake}</li>)}
                 </ul>
                 <div className="verification-box">
                   <b>How to verify this result</b>
@@ -240,7 +246,7 @@ export default async function GlobalToolPage({
 
             <h2>What can affect the result?</h2>
             <div className="consideration-grid">
-              {tool.considerations.map((item) => (
+              {considerations.map((item) => (
                 <div key={item.title}>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
@@ -250,7 +256,7 @@ export default async function GlobalToolPage({
             <h2>Privacy and browser processing</h2>
             <p>The {tool.shortTitle} runs in your browser; SolvePilot does not receive the values you enter. See the <Link href="/privacy/">privacy policy</Link>.</p>
             <h2>Accuracy and verification</h2>
-            <p>Check each input against its original source before relying on the result. Our <Link href="/editorial-policy/">editorial and calculation policy</Link> explains how methods are reviewed.</p>
+            <p>Before relying on the result, re-check {considerations.map((item) => item.title.toLowerCase()).join(", ")} against your own records. Our <Link href="/editorial-policy/">editorial and calculation policy</Link> explains how methods are reviewed.</p>
             <h2>Limits of this estimate</h2>
             <p>{tool.limitations}</p>
             <div className="accuracy-note">
@@ -260,11 +266,6 @@ export default async function GlobalToolPage({
             </div>
             <h2>Sources and review information</h2>
             <div className="tool-sources">
-              <span>
-                This tool uses a disclosed calculation and user-entered values;
-                it does not embed private institutional data or guarantee an
-                outcome.
-              </span>
               <Link href="/editorial-policy/">
                 Read our editorial and calculation policy →
               </Link>
@@ -274,7 +275,7 @@ export default async function GlobalToolPage({
             </div>
             <h2>Frequently asked questions</h2>
             <div className="faq-list">
-              {tool.faqs.map((f) => (
+              {faqs.map((f) => (
                 <details key={f.question}>
                   <summary>
                     {f.question}

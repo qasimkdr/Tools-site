@@ -1,6 +1,6 @@
 import type { Tool } from "@/lib/tools";
 
-export type FlagshipContent={decision:string;inputs:[string,string,string];scenarios:[string,string,string];mistakes:[string,string,string];verification:string;curated?:boolean};
+export type FlagshipContent={decision:string;inputs:string[];scenarios:string[];mistakes:string[];verification:string;curated?:boolean};
 
 const item=(decision:string,inputs:[string,string,string],scenarios:[string,string,string],mistakes:[string,string,string],verification:string):FlagshipContent=>({decision,inputs,scenarios,mistakes,verification,curated:true});
 
@@ -53,8 +53,8 @@ const at=<T,>(items:T[],index:number,fallback:T)=>items[index]??items[0]??fallba
 
 export const insightForTool=(tool:Tool):FlagshipContent=>{
   const curated=flagshipContent[tool.slug];if(curated)return curated;
-  const steps=tool.howTo.map(sentence),factors=tool.considerations;
-  const first=at(factors,0,{title:"Input quality",text:"The result changes when entered values are incomplete or measured on a different basis."});
-  const second=at(factors,1,first),third=at(factors,2,second);
-  return{decision:`${sentence(tool.description)} Read the main result together with the supporting values rather than treating one number as a guarantee. The disclosed method is: ${sentence(tool.formula)}`,inputs:[at(steps,0,"Enter current values from a reliable record."),at(steps,1,"Keep every amount and measurement on the displayed basis."),at(steps,2,"Test a cautious second scenario before deciding.")],scenarios:[`Worked baseline — ${sentence(tool.example)}`,`${first.title} check — ${sentence(first.text)}`,`${second.title} stress test — ${sentence(second.text)}`],mistakes:[`Ignoring ${first.title.toLowerCase()}: ${sentence(first.text)}`,`Overlooking ${second.title.toLowerCase()}: ${sentence(second.text)}`,`Failing to test ${third.title.toLowerCase()}: ${sentence(third.text)}`],verification:verificationByCategory[tool.category]||verificationByCategory.Everyday};
+  // Generic fallback: use each distinct factor once (no repeated cards, no padding with duplicates).
+  const steps=tool.howTo.map(sentence),factors=tool.considerations.filter((f,i,a)=>a.findIndex(x=>x.text===f.text)===i);
+  const verbs=["Ignoring","Overlooking","Not re-checking"];
+  return{decision:`${sentence(tool.description)} The disclosed method is: ${sentence(tool.formula)}`,inputs:[at(steps,0,"Enter current values from a reliable record."),at(steps,1,"Keep every amount and measurement on the displayed basis."),at(steps,2,"Test a cautious second scenario before deciding.")],scenarios:[`Worked baseline — ${sentence(tool.example)}`,...factors.slice(0,2).map(f=>`${f.title} check — ${sentence(f.text)}`),...(factors.length<2?[`Limits check — ${sentence(tool.limitations)}`]:[])].slice(0,3),mistakes:factors.slice(0,3).map((f,i)=>`${verbs[i]} ${f.title.toLowerCase()}: ${sentence(f.text)}`),verification:verificationByCategory[tool.category]||verificationByCategory.Everyday};
 };

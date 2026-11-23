@@ -12,3 +12,4 @@
 /* Nucleotide records preserve FASTA headers and sequence line breaks. */
 .field textarea{width:100%;min-width:0;padding:14px;border:0;border-radius:12px;background:transparent;color:var(--navy);font:inherit;line-height:1.5;resize:vertical;outline-offset:2px}
 .contextual-links a,.rich-content p a{color:var(--blue);font-weight:700;text-decoration:underline;text-underline-offset:3px}.contextual-links a:hover,.rich-content p a:hover{color:var(--navy)}
+.feature-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 22px;padding-left:20px;margin:0 0 24px}.feature-list li{line-height:1.6;color:var(--ink)}

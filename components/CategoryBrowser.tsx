@@ -1,12 +1,12 @@
 "use client";
 import { useMemo, useState } from "react";
-import { ToolCard } from "@/components/ToolCard";
+import { ToolCard, type CardTool } from "@/components/ToolCard";
 import type { Tool } from "@/lib/tools";
 
 const categoryMeta:Record<string,{icon:string;copy:string;color:string}>={
   Energy:{icon:"⚡",copy:"Bills, backup and power planning",color:"amber"},Solar:{icon:"☀️",copy:"Panels, batteries and savings",color:"green"},Money:{icon:"💼",copy:"Salary, tax, loans and budgets",color:"blue"},Mobiles:{icon:"📱",copy:"Compare, inspect and choose phones",color:"violet"},Technology:{icon:"🧠",copy:"Devices, data and digital decisions",color:"violet"},Business:{icon:"📊",copy:"Pricing, profit and freelance work",color:"rose"},Vehicles:{icon:"🚗",copy:"Fuel, EV and travel costs",color:"green"},Education:{icon:"🎓",copy:"Marks, attendance and study",color:"violet"},Construction:{icon:"🏗️",copy:"Materials, rooms and quantities",color:"amber"},Everyday:{icon:"✨",copy:"Fast daily calculations",color:"blue"}
 };
-export function CategoryBrowser({tools,initialCount,hrefPrefix="/pk/tools"}:{tools:Tool[];initialCount?:number;hrefPrefix?:string}){
+export function CategoryBrowser({tools,initialCount,hrefPrefix="/pk/tools"}:{tools:CardTool[];initialCount?:number;hrefPrefix?:string}){
   const [active,setActive]=useState("All");
   const categories=useMemo(()=>[...new Set(tools.map(t=>t.category))],[tools]);
   const filtered=active==="All"?tools:tools.filter(t=>t.category===active);

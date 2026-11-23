@@ -1,3 +1,4 @@
+import { toCard } from "@/components/ToolCard";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryBrowser } from "@/components/CategoryBrowser";
@@ -43,7 +44,7 @@ export default function GlobalToolsPage() {
         measurements. Calculations run privately in your browser, and every page
         explains its formula, assumptions and limits.
       </p>
-      <CategoryBrowser tools={discoverableTools} hrefPrefix="/tools" />
+      <CategoryBrowser tools={discoverableTools.map(toCard)} hrefPrefix="/tools" />
       <section className="category-explainers">
         <span className="eyebrow">Browse by purpose</span>
         <h2>Global calculator collections</h2>

@@ -323,7 +323,7 @@ export const oct14Guides:Guide[] = [
         "heading": "Do not use a coupon-bond price as a savings-bond value",
         "paragraphs": [
           "A fixed coupon-bond present-value model discounts a defined stream of coupon payments and a face-value payment using a chosen yield. An I bond follows different savings-bond terms and crediting. Entering an I bond’s denomination into a generic face-value field does not make that model applicable.",
-          "The existing SolvePilot fixed-bond worksheet remains useful for its disclosed coupon-date task. Related interest and date tools can help with independent arithmetic checks, but none is presented as a Treasury valuation substitute. The guide’s separate canonical page answers the product-selection and valuation-route question without altering those protected calculators."
+          "The existing SolvePilot fixed-bond worksheet remains useful for its disclosed coupon-date task. Related interest and date tools can help with independent arithmetic checks, but none is presented as a Treasury valuation substitute. This guide answers the product-selection and valuation-route question without altering those protected calculators."
         ]
       },
       {

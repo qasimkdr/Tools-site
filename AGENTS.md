@@ -674,4 +674,6 @@ Read `docs/SEO-PLAYBOOK.md`, `docs/seo-audit.md` and `docs/seo-changelog.md` bef
 - Pakistan FAQs render through `lib/pk-faqs.ts` (catalog data unchanged to keep definition fingerprints).
 - `pageTitle()` in `lib/seo-metadata.ts` drops the brand suffix when a title would exceed 60 characters.
 - Publishing pace: no more bulk batches (20+ pages/day) and no bulk IndexNow pushes of unchanged URLs until Search Console impressions recover. Prefer improving existing pages.
-- Known remaining work: Pakistan considerations/limitations are shared per category (15–24 pages each); 314 meta descriptions are 110–139 chars; file-tool pages share collection-level privacy/compatibility text.
+- Tool routes render FAQs, considerations and intros through `lib/page-cleanup.ts`: anything repeated word-for-word on 8+ tools, and any SEO-process wording (`SEO_JARGON`), is hidden; FAQs are topped up from the page's own method. Write new tool content so it survives this filter (page-specific, no SEO talk aimed at search engines). `lib/page-supplements.ts` holds verified hand-written additions.
+- Client components receive only the fields they render (`toCard` in `components/ToolCard.tsx`); never pass whole catalog objects to `CategoryBrowser` or other client components.
+- Known remaining work: FileToolEditorial shared guidance (41 document/media pages); Pakistan per-category considerations; 314 meta descriptions are 110–139 chars; thin older Pakistan guides (420–600 words).
