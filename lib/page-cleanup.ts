@@ -86,3 +86,15 @@ export function cleanIntro(t: CleanableTool, collection: CleanableTool[], thresh
 
 /** Remove sentences written about SEO strategy from free-text fields (audit interpretations, notes). */
 export const stripSeoJargon = (text: string) => sentences(text).filter(s => !SEO_JARGON.test(s)).join(" ") || text;
+
+/** FAQ cleanup for file tools (no formula/example fields): drop entries shared by 8+ tools, top up with page-specific extras. */
+export function cleanFileFaqs(t: {title: string; shortTitle: string; faqs: Faq[]}, collection: {title: string; shortTitle: string; faqs: Faq[]}[], extras: Faq[], minimum = 5, threshold = BOILERPLATE_THRESHOLD): Faq[] {
+  const key = (x: {title: string; shortTitle: string}, f: Faq) => norm(f.question + "|" + f.answer, x);
+  const counts = new Map<string, number>();
+  for (const x of collection) for (const k of new Set(x.faqs.map(f => key(x, f)))) counts.set(k, (counts.get(k) || 0) + 1);
+  const own = t.faqs.filter(f => (counts.get(key(t, f)) || 0) < threshold && !SEO_JARGON.test(f.question + " " + f.answer));
+  const result = [...own];
+  for (const f of extras) if (result.length < Math.max(minimum, own.length) && !result.some(o => o.question === f.question)) result.push(f);
+  for (const f of t.faqs) if (result.length < minimum && !result.includes(f)) result.push(f);
+  return result;
+}

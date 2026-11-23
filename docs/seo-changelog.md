@@ -1,5 +1,17 @@
 # SEO changelog
 
+## 2026-11-23 — Recovery batch 3 (document and media tool pages)
+- `components/FileToolEditorial.tsx` no longer prints the same ~740-word block on 41 document/media pages. It now renders
+  per-tool content from `lib/file-format-notes.ts`: what the operation changes (checked against the actual code in
+  `DocumentTool.tsx` / `MediaTool.tsx`), input and output format notes, format-specific mistakes and checks, and links to the
+  formats' specifications (RFC 4180, RFC 8259, YAML 1.2.2, W3C XML, W3C WebVTT, CommonMark, WHATWG HTML, FFmpeg docs).
+- Honest limits now stated where the old text overclaimed: Word→PDF and PDF→Word are text-only; Markdown→DOCX recognises
+  only #, ## and - / * bullets; Merge Excel copies sheets side by side rather than stacking rows.
+- Document route: removed generic "Formatting" and "Limitations" paragraphs (the latter mentioned PDF-to-Word on every
+  page); privacy is one tool-specific line. Media route: removed the generic quality paragraph.
+- Document/media FAQs shared by 8+ tools are replaced with answers from each tool's own notes (`cleanFileFaqs`).
+- Repeated body text (blocks on 8+ pages): site-wide 26% → 18.6%; remaining repeats are mostly interface labels.
+
 ## 2026-11-23 — Recovery batch 2 (template boilerplate + page weight)
 No calculator logic, formulas, inputs, defaults, URLs, canonicals or catalog definitions changed (render-time only).
 - `lib/page-cleanup.ts`: FAQs, considerations and intro sentences that appear word-for-word on 8+ tools are hidden at render
