@@ -101,3 +101,16 @@ Phase 3 — technical:
 - Implication: recovery needs site-wide quality signals to change (remove keyword lists and boilerplate, consolidate or
   noindex the thinnest/near-duplicate pages, pause bulk publishing and bulk IndexNow pushes), then internal linking.
   Algorithmic recoveries are usually seen only after Google recrawls and reassesses, often around a later update.
+
+## 6. Fix status (23 Nov 2026) — see docs/seo-changelog.md
+| Finding | Before | After |
+|---|---|---|
+| Pages with <3 in-article tool links | 528 | 0 |
+| Visible keyword lists | 290 | 0 |
+| Generic boilerplate paragraphs (global) | 4×134 + 2×369 + 333 | removed / one-line |
+| Pakistan generic FAQ answers | 3×181 | page-specific |
+| Same-first-4 related cards | PK, PDF, doc, image, media, archive, generator | 6 relevance cards, inbound ≥3 |
+| HTML per tool page | ≈326 KB | ≈55 KB |
+| Titles >60 chars | 142 | 52 (title itself >60) |
+| AdSense | beforeInteractive | afterInteractive |
+Open: per-category shared considerations on Pakistan pages, short meta descriptions, file-tool collection text, thin older Pakistan guides.

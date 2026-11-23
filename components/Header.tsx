@@ -12,7 +12,8 @@ import {archiveTools} from "@/lib/archive-tools";
 import {generatorTools} from "@/lib/generator-tools";
 import {creatorTools} from "@/lib/creator-tools";
 import {productivityTools} from "@/lib/productivity-tools";
-const searchEntries:SearchEntry[]=[
+/** Site search index: served once as /search-index.json (app/search-index.json/route.ts), not embedded in every page. */
+export const searchEntries:SearchEntry[]=[
  ...archiveTools.map(t=>({title:t.title,href:"/archive-tools/"+t.slug+"/",type:"Document tool" as const,category:"Archives",icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.keywords.join(" ")).toLowerCase()})),
  ...creatorTools.map(t=>({title:t.title,href:"/generator-tools/"+t.slug+"/",type:"Generator tool" as const,category:t.category,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.category+" "+t.keywords.join(" ")).toLowerCase()})),
  ...productivityTools.map(t=>({title:t.title,href:"/generator-tools/"+t.slug+"/",type:"Generator tool" as const,category:t.category,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.category+" "+t.keywords.join(" ")).toLowerCase()})),
@@ -25,4 +26,4 @@ const searchEntries:SearchEntry[]=[
  ...globalTools.filter(t=>!t.canonicalSlug).map(t=>({title:t.title,href:"/tools/"+t.slug+"/",type:"Global tool" as const,category:t.category,icon:t.icon,searchText:(t.title+" "+t.shortTitle+" "+t.category+" "+t.keywords.join(" ")).toLowerCase()})),
  ...guides.map(g=>({title:g.title,href:"/guides/"+g.slug+"/",type:"Guide" as const,category:g.category,icon:g.icon,searchText:(g.title+" "+g.description+" "+g.category+" "+(g.keywords||[]).join(" ")).toLowerCase()}))
 ];
-export function Header(){return <header className="site-header"><div className="shell nav-wrap"><Logo/><nav aria-label="Primary navigation"><Link href="/generator-tools/">Generators</Link><Link href="/media-tools/">Media tools</Link><Link href="/image-tools/">Image tools</Link><Link href="/document-tools/">Document tools</Link><Link href="/pdf-tools/">PDF tools</Link><Link href="/tools/">Global tools</Link><Link href="/pk/tools/">Pakistan tools</Link><Link href="/guides/">Guides</Link><Link href="/about/">About</Link></nav><NavbarSearch entries={searchEntries}/><Link className="nav-cta" href="/#tool-categories">Explore tools <span>→</span></Link></div></header>}
+export function Header(){return <header className="site-header"><div className="shell nav-wrap"><Logo/><nav aria-label="Primary navigation"><Link href="/generator-tools/">Generators</Link><Link href="/media-tools/">Media tools</Link><Link href="/image-tools/">Image tools</Link><Link href="/document-tools/">Document tools</Link><Link href="/pdf-tools/">PDF tools</Link><Link href="/tools/">Global tools</Link><Link href="/pk/tools/">Pakistan tools</Link><Link href="/guides/">Guides</Link><Link href="/about/">About</Link></nav><NavbarSearch count={searchEntries.length}/><Link className="nav-cta" href="/#tool-categories">Explore tools <span>→</span></Link></div></header>}

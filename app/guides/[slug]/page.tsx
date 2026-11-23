@@ -1,4 +1,5 @@
 import {RelatedNavigation} from "@/components/RelatedNavigation";
+import {ContextualLinks} from "@/components/InternalLinks";
 import {Calculator} from "@/components/Calculator";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import { getGuide, guides } from "@/lib/guides";
 import { getTool } from "@/lib/tools";
 import { getGlobalTool } from "@/lib/global-tools";
 import { ToolCard } from "@/components/ToolCard";
-import { seoDescription } from "@/lib/seo-metadata";
+import { seoDescription, pageTitle } from "@/lib/seo-metadata";
 import { AutoFinanceSupplement } from "@/components/AutoFinanceSupplement";
 
 export function generateStaticParams() { return guides.map(({ slug }) => ({ slug })); }
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const guide = getGuide(slug);
   if (!guide) return {};
   const description = seoDescription(guide.description, "Guide");
-  return { ...((guide.slug==="pocket-real-estate-master-guide"||["btz-calculator-guide","missouri-child-support-calculator-guide","i-bond-value-calculator-guide","body-shape-calculator-guide","chocolate-for-dogs-calculator-guide"].includes(guide.slug))?{twitter:{card:"summary_large_image" as const,title:guide.title,description,images:["/og-image.png"]}}:{}), title: guide.title, description, keywords: guide.keywords, alternates: { canonical: `/guides/${guide.slug}/` }, openGraph: { title: guide.title, description, url: `/guides/${guide.slug}/`, type: "article", images: [{ url: "/og-image.png", width: 1732, height: 909, alt: "SolvePilot — Free Calculators & Smart Tools" }] } };
+  return { ...((guide.slug==="pocket-real-estate-master-guide"||["btz-calculator-guide","missouri-child-support-calculator-guide","i-bond-value-calculator-guide","body-shape-calculator-guide","chocolate-for-dogs-calculator-guide"].includes(guide.slug))?{twitter:{card:"summary_large_image" as const,title:pageTitle(guide.title),description,images:["/og-image.png"]}}:{}), title: guide.title, description, keywords: guide.keywords, alternates: { canonical: `/guides/${guide.slug}/` }, openGraph: { title: guide.title, description, url: `/guides/${guide.slug}/`, type: "article", images: [{ url: "/og-image.png", width: 1732, height: 909, alt: "SolvePilot — Free Calculators & Smart Tools" }] } };
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -49,6 +50,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <AutoFinanceSupplement slug={guide.slug} />
         {guide.tables?.map(table=><section key={table.caption}><h2>{table.caption}</h2><div className="guide-table-wrap"><table><thead><tr>{table.headers.map(header=><th key={header}>{header}</th>)}</tr></thead><tbody>{table.rows.map((row,index)=><tr key={`${table.caption}-${index}`}>{row.map((cell,cellIndex)=><td key={`${index}-${cellIndex}`}>{cell}</td>)}</tr>)}</tbody></table></div>{table.note&&<p className="table-note">{table.note}</p>}</section>)}
         {guide.example&&<section className="worked-example"><h2>{guide.example.heading}</h2>{guide.example.paragraphs.map(paragraph=><p key={paragraph}>{paragraph}</p>)}{guide.example.steps&&<ol>{guide.example.steps.map(step=><li key={step}>{step}</li>)}</ol>}</section>}
+        <ContextualLinks path={`/guides/${guide.slug}/`} subject={"guide"}/>
         {guide.faqs?.length&&<section><h2>Frequently asked questions</h2><div className="guide-faqs">{guide.faqs.map(item=><details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></section>}
         <section className="guide-limit"><h2>Limitations and responsible use</h2><p>{guide.limitation}</p></section>
         <section><h2>Sources and further verification</h2><div className="source-list">{guide.sources.map(source=><a key={source.name} href={source.url} target={source.url.startsWith("http")?"_blank":undefined} rel={source.url.startsWith("http")?"noopener noreferrer":undefined}><b>{source.name}</b><span>{source.note}</span></a>)}</div><p className="source-note">Sources are provided for verification. A link does not imply endorsement, and official rules may change after our review date.</p></section>

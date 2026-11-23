@@ -4,6 +4,7 @@ import {BirthdayGenerator} from "@/components/BirthdayGenerator";
 import {RentBuyTool} from "@/components/RentBuyTool";
 import {roadmapGap20Audit} from "@/lib/roadmap-gap20-audit";
 import {RelatedNavigation} from "@/components/RelatedNavigation";
+import {ContextualLinks,RelatedTools,relatedPaths} from "@/components/InternalLinks";
 import {roadmapDeferredAudit} from "@/lib/roadmap-deferred-audit";
 import {roadmap423Audit} from "@/lib/roadmap-423-plus-audit";
 import {roadmap369Audit} from "@/lib/roadmap-369-plus-audit";
@@ -24,11 +25,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Calculator } from "@/components/Calculator";
 import { AdSlot } from "@/components/AdSlot";
-import { ToolCard } from "@/components/ToolCard";
 import { FlagshipInsights } from "@/components/FlagshipInsights";
 import { insightForTool } from "@/lib/flagship-content";
 import { getGlobalTool, globalTools } from "@/lib/global-tools";
-import { seoDescription } from "@/lib/seo-metadata";
+import { seoDescription, pageTitle } from "@/lib/seo-metadata";
 import { CollegeAdmissionEditorial } from "@/components/CollegeAdmissionEditorial";
 import { auditForTool } from "@/lib/semrush-batch-one-audit";
 
@@ -45,7 +45,7 @@ export async function generateMetadata({
   if (!tool) return {};
   const description = seoDescription(tool.description, tool.category);
   return {
-    title: tool.title,
+    title: pageTitle(tool.title),
     description,
     keywords: tool.keywords,
     alternates: { canonical: `/tools/${tool.canonicalSlug || tool.slug}/` },
@@ -79,21 +79,6 @@ export default async function GlobalToolPage({
   const hasDetailedEditorial = Boolean((oct14Audit[tool.slug]||next10Audit[tool.slug])||roadmapGap20Audit[tool.slug]||roadmapDeferredAudit[tool.slug]||roadmap423Audit[tool.slug]||roadmap369Audit[tool.slug]||roadmap328Audit[tool.slug]||roadmap268Audit[tool.slug]||next20Audit[tool.slug]||roadmap206Audit[tool.slug]||roadmap186Audit[tool.slug]||roadmap166Audit[tool.slug]||roadmap106Audit[tool.slug]||roadmap126Audit[tool.slug]||roadmap146Audit[tool.slug]);
   const flagship = hasDetailedEditorial ? null : insightForTool(tool);
   const semrushAudit = auditForTool(tool);
-  const incoming = globalTools.filter(item => item.slug !== tool.slug && auditForTool(item)?.relatedCalculators?.some(link => link.slug === tool.slug));
-  const outgoing = semrushAudit?.relatedCalculators?.map(link => link.slug) || [];
-  const related = (oct14Audit[tool.slug]||next10Audit[tool.slug])
-    ? ((oct14Audit[tool.slug]||next10Audit[tool.slug]).relatedCalculators || []).flatMap(link => {
-        const item = globalTools.find(candidate => candidate.slug === link.slug && !candidate.canonicalSlug);
-        return item ? [item] : [];
-      }).slice(0, 5)
-    : globalTools
-    .filter((item) => item.slug !== tool.slug && !item.canonicalSlug)
-    .sort(
-      (a, b) =>
-        (Number(incoming.includes(b)) * 4 + Number(outgoing.includes(b.slug)) * 2 + Number(b.category === tool.category)) -
-        (Number(incoming.includes(a)) * 4 + Number(outgoing.includes(a.slug)) * 2 + Number(a.category === tool.category)),
-    )
-    .slice(0, 5);
   const url = `https://solvepilot.xyz/tools/${tool.canonicalSlug || tool.slug}/`;
   const jsonLd = {
     "@context": "https://schema.org",
@@ -205,15 +190,12 @@ export default async function GlobalToolPage({
               <div>
                 <h3>Formula and methodology</h3>
                 <p>{tool.formula}</p>
-                <p>
-                  {tool.category === "Education" && !next20Audit[tool.slug] && !roadmap268Audit[tool.slug] && !roadmap328Audit[tool.slug] && !roadmap369Audit[tool.slug] && !roadmap423Audit[tool.slug] && !roadmapDeferredAudit[tool.slug] && !roadmapGap20Audit[tool.slug] && !(oct14Audit[tool.slug]||next10Audit[tool.slug])
-                    ? "The calculator applies the disclosed heuristic to values entered on this device. It does not load private admissions data or claim to reproduce an institution's review process."
-                    : "The calculator applies the displayed arithmetic to the values entered on this device. It does not silently load a local tax rate, currency conversion or commercial assumption."}
-                </p>
+
               </div>
             </div>
             <h2>Worked calculation example</h2>
             <p>{tool.example}</p>
+            <ContextualLinks path={`/tools/${tool.canonicalSlug || tool.slug}/`} subject={tool.shortTitle} />
             {flagship && <FlagshipInsights content={flagship} />}
             {semrushAudit && (
               <section className="semrush-intent-audit" data-insight-tier={hasDetailedEditorial ? "tool-specific" : undefined}>
@@ -224,10 +206,6 @@ export default async function GlobalToolPage({
                     <span key={item.slug}>{index > 0 ? "; " : ""}<a href={item.path||`/tools/${item.slug}/`}>{item.title}</a></span>
                   ))}.</p>
                 ) : null}
-                <h3>Related questions this calculator covers</h3>
-                <ul>
-                  {semrushAudit.keywordThemes.map((theme) => <li key={theme}>{theme}</li>)}
-                </ul>
                 <h2>{hasDetailedEditorial ? "Scenario comparison" : "Worked scenarios"}</h2>
                 <div className="guide-table-wrap">
                   <table>
@@ -259,42 +237,7 @@ export default async function GlobalToolPage({
             {tool.slug === "college-admission-chances-calculator" && (
               <CollegeAdmissionEditorial />
             )}
-            {tool.category !== "Education" && !hasDetailedEditorial && <><h2>Understanding the displayed figures</h2>
-            <p>
-              The main result answers the page’s primary question, while the
-              supporting figures reveal how that answer was formed. Read the
-              labels carefully before comparing alternatives. A percentage can
-              describe a rate, a share of income, a fee or a change over time;
-              those meanings are not interchangeable. Monetary fields are
-              deliberately currency-neutral, so use one currency throughout the
-              calculation and convert external figures before entering them.
-            </p>
-            <p>
-              Dates, balances and rates should come from the same measurement
-              period. When an annual rate is combined with monthly payments, the
-              calculator converts the rate to the relevant periodic basis
-              described in the methodology. Displayed values are rounded for
-              readability, but calculations retain additional precision. Small
-              differences from a provider statement can result from daily
-              accrual, transaction timing or the provider’s rounding convention.
-            </p>
-            <h2>Planning with multiple scenarios</h2>
-            <p>
-              Start with values that best describe the current situation and
-              keep that result as the baseline. Next, change only one uncertain
-              input—such as a rate, payment, fee, return or time period—and
-              calculate again. This makes the source of the difference visible.
-              A cautious scenario is generally more informative than increasing
-              several favourable assumptions at once.
-            </p>
-            <p>
-              Do not interpret a favourable estimate as approval, eligibility or
-              a forecast. The calculator cannot know future market conditions,
-              personal risk tolerance, contractual exceptions or rules that
-              apply in a particular jurisdiction. When comparing products, use
-              equivalent periods and include charges that are collected outside
-              the headline rate.
-            </p></>}
+
             <h2>What can affect the result?</h2>
             <div className="consideration-grid">
               {tool.considerations.map((item) => (
@@ -305,23 +248,9 @@ export default async function GlobalToolPage({
               ))}
             </div>
             <h2>Privacy and browser processing</h2>
-            <p>
-              Values entered on this page are processed in the current browser
-              session. SolvePilot does not require an account and does not
-              receive the values entered into the calculator.
-              Refreshing or closing the page clears the working values unless
-              the browser itself restores a previous session. Avoid entering
-              identifying or account information because the calculation needs
-              summary values only.
-            </p>
+            <p>The {tool.shortTitle} runs in your browser; SolvePilot does not receive the values you enter. See the <Link href="/privacy/">privacy policy</Link>.</p>
             <h2>Accuracy and verification</h2>
-            <p>
-              Accuracy depends first on input quality. Confirm definitions,
-              scales, dates and source information before entering a value. Keep
-              an independent record of any result used for planning because this
-              page does not create an official statement or retain a calculation
-              history.
-            </p>
+            <p>Check each input against its original source before relying on the result. Our <Link href="/editorial-policy/">editorial and calculation policy</Link> explains how methods are reviewed.</p>
             <h2>Limits of this estimate</h2>
             <p>{tool.limitations}</p>
             <div className="accuracy-note">
@@ -376,20 +305,7 @@ export default async function GlobalToolPage({
           </div>
         </aside>
       </article>
-      <section className="shell related">
-        <div className="section-heading">
-          <div>
-            <span className="eyebrow">Continue exploring</span>
-            <h2>Related global tools</h2>
-          </div>
-          <Link href="/tools/">View every global tool →</Link>
-        </div>
-        <div className="tools-grid four">
-          {related.map((item) => (
-            <ToolCard key={item.slug} tool={item} hrefPrefix="/tools" />
-          ))}
-        </div>
-      </section>
-    <RelatedNavigation path={`/tools/${tool.slug}/`} exclude={related.map(item=>`/tools/${item.slug}/`)} /></>
+      <RelatedTools path={`/tools/${tool.canonicalSlug || tool.slug}/`} heading="Related tools" />
+    <RelatedNavigation path={`/tools/${tool.slug}/`} exclude={relatedPaths(`/tools/${tool.canonicalSlug || tool.slug}/`)} /></>
   );
 }

@@ -27,3 +27,7 @@ export const seoDescription = (description: string, category = "Everyday") => {
   if (expanded.length < 110) expanded += " No signup is required.";
   return trimAtWord(expanded);
 };
+
+/** Title for <title>: drop the " | SolvePilot" suffix when it would push the title past 60 characters. */
+export const pageTitle = (title: string): string | { absolute: string } =>
+  `${title} | SolvePilot`.length > 60 ? { absolute: title } : title;
