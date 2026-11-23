@@ -1,3 +1,4 @@
+import {seoDescription} from "@/lib/seo-metadata";
 import {pageTitle} from "@/lib/seo-metadata";
 import {RelatedNavigation} from "@/components/RelatedNavigation";
 import {ContextualLinks,RelatedTools,relatedPaths} from "@/components/InternalLinks";
@@ -14,7 +15,7 @@ import {creatorTools,getCreatorTool} from "@/lib/creator-tools";
 
 const allTools=[...generatorTools,...productivityTools,...creatorTools];
 export function generateStaticParams(){return allTools.map(({slug})=>({slug}))}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const{slug}=await params,t=getGeneratorTool(slug)||getProductivityTool(slug)||getCreatorTool(slug);if(!t)return{};return{title:pageTitle(t.title),description:t.description,keywords:t.keywords,alternates:{canonical:"/generator-tools/"+t.slug+"/"},openGraph:{title:t.title,description:t.description,url:"/generator-tools/"+t.slug+"/",type:"website",images:[{url:"/og-image.png",width:1732,height:909,alt:t.title+" — SolvePilot"}]},twitter:{card:"summary_large_image",title:t.title,description:t.description,images:["/og-image.png"]}}}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const{slug}=await params,t=getGeneratorTool(slug)||getProductivityTool(slug)||getCreatorTool(slug);if(!t)return{};const metaDesc=seoDescription(t.description,"Everyday",[t.intro]);return{title:pageTitle(t.title),description:metaDesc,keywords:t.keywords,alternates:{canonical:"/generator-tools/"+t.slug+"/"},openGraph:{title:t.title,description:metaDesc,url:"/generator-tools/"+t.slug+"/",type:"website",images:[{url:"/og-image.png",width:1732,height:909,alt:t.title+" — SolvePilot"}]},twitter:{card:"summary_large_image",title:t.title,description:metaDesc,images:["/og-image.png"]}}}
 export default async function Page({params}:{params:Promise<{slug:string}>}){
  const{slug}=await params,base=getGeneratorTool(slug),productivity=getProductivityTool(slug),creator=getCreatorTool(slug),t=base||productivity||creator;if(!t)notFound();
  const url="https://solvepilot.xyz/generator-tools/"+t.slug+"/",isCode=t.category==="QR & Barcode",isBusiness=t.category==="Business Documents";

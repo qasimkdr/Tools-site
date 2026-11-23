@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return {};
-  const description = seoDescription(guide.description, "Guide");
+  const description = seoDescription(guide.description, "Guide", [guide.quickAnswer]);
   return { ...((guide.slug==="pocket-real-estate-master-guide"||["btz-calculator-guide","missouri-child-support-calculator-guide","i-bond-value-calculator-guide","body-shape-calculator-guide","chocolate-for-dogs-calculator-guide"].includes(guide.slug))?{twitter:{card:"summary_large_image" as const,title:pageTitle(guide.title),description,images:["/og-image.png"]}}:{}), title: guide.title, description, keywords: guide.keywords, alternates: { canonical: `/guides/${guide.slug}/` }, openGraph: { title: guide.title, description, url: `/guides/${guide.slug}/`, type: "article", images: [{ url: "/og-image.png", width: 1732, height: 909, alt: "SolvePilot — Free Calculators & Smart Tools" }] } };
 }
 

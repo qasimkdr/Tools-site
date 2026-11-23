@@ -98,3 +98,12 @@ export function cleanFileFaqs(t: {title: string; shortTitle: string; faqs: Faq[]
   for (const f of t.faqs) if (result.length < minimum && !result.includes(f)) result.push(f);
   return result;
 }
+
+/** Page-specific FAQ extras for file tools that have no separate notes (PDF, image, archive). */
+export function simpleToolFaqExtras(t: {shortTitle: string; intro: string; howTo: string[]; features: string[]}): Faq[] {
+  return [
+    {question: `What does ${t.shortTitle} do?`, answer: t.intro.replace(/\s+/g, " ").trim()},
+    {question: `How do I use ${t.shortTitle}?`, answer: t.howTo.map((s, i) => `${i + 1}. ${s}`).join(" ")},
+    {question: `Which options does ${t.shortTitle} include?`, answer: `${t.features.join(", ")}.`},
+  ].filter(f => f.answer.length > 20);
+}

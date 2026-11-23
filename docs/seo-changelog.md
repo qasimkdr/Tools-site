@@ -1,5 +1,16 @@
 # SEO changelog
 
+## 2026-11-23 — Recovery batch 4 (meta descriptions, PDF and image pages)
+- `seoDescription()` rewritten: it used to pad short descriptions with a generic category sentence and then cut it off,
+  so many snippets ended mid-phrase ("…repayment assumptions and."). It now never cuts a sentence, completes short
+  descriptions with a whole sentence from the page itself (worked example, formula, guide quick answer, tool note or
+  intro), and only then falls back. Built site: 0 broken endings, 0 duplicates, 0 over 160, all ≥110 characters.
+- All file-tool routes (PDF, image, document, media, archive, generator) now use the helper instead of raw descriptions.
+- PDF and image routes: removed the sentence appended to every intro and the sentence repeated under each image feature;
+  merged generic privacy/limitation paragraphs into one short line; the PDF password warning now appears only on the
+  protect and unlock tools; FAQs shared by 8+ tools are replaced with page-specific answers (`simpleToolFaqExtras`).
+- Cookies and Terms descriptions extended to ≥110 characters (wording supported by the page text).
+
 ## 2026-11-23 — Recovery batch 3 (document and media tool pages)
 - `components/FileToolEditorial.tsx` no longer prints the same ~740-word block on 41 document/media pages. It now renders
   per-tool content from `lib/file-format-notes.ts`: what the operation changes (checked against the actual code in

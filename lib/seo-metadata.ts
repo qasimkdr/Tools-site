@@ -11,21 +11,44 @@ const suffixes: Record<string, string> = {
   Guide: "Read the method, practical examples, official sources and limitations before relying on the information.",
 };
 
-const trimAtWord = (value: string, maximum = 158) => {
+const clean = (value: string) => value.replace(/\s+/g, " ").trim();
+const firstSentence = (value: string) => (clean(value).match(/^.*?[.!?](?=\s|$)/)?.[0] || clean(value)).trim();
+const DANGLING = /\s+(and|or|the|to|of|a|an|before|with|for|in|on|by|from)$/i;
+
+/** Shorten without leaving a broken clause: prefer a sentence end, else a word boundary with no dangling connector. */
+const trimClean = (value: string, maximum = 160) => {
   if (value.length <= maximum) return value;
-  const shortened = value.slice(0, maximum - 1);
-  const boundary = shortened.lastIndexOf(" ");
-  return `${shortened.slice(0, boundary > 110 ? boundary : maximum - 1).replace(/[,:;\s]+$/, "")}.`;
+  const cut = value.slice(0, maximum);
+  const sentenceEnd = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("? "), cut.lastIndexOf("! "));
+  if (sentenceEnd >= 109) return cut.slice(0, sentenceEnd + 1);
+  let words = cut.slice(0, cut.lastIndexOf(" ")).replace(/[,:;\s]+$/, "");
+  while (DANGLING.test(words)) words = words.replace(DANGLING, "");
+  return `${words}.`;
 };
 
-export const seoDescription = (description: string, category = "Everyday") => {
-  const clean = description.replace(/\s+/g, " ").trim();
-  if (clean.length >= 110 && clean.length <= 160) return clean;
-  if (clean.length > 160) return trimAtWord(clean);
+/**
+ * Meta description, 110–160 characters where possible. Short descriptions are completed with a
+ * whole sentence from the page itself (worked example, formula, intro) before falling back to a
+ * category sentence; text is never cut mid-sentence.
+ */
+export const seoDescription = (description: string, category = "Everyday", extras: string[] = []) => {
+  const base = clean(description);
+  if (base.length > 160) return trimClean(base);
+  if (base.length >= 140) return base;
+  for (const extra of extras) {
+    const sentence = firstSentence(extra || "");
+    const candidate = `${base} ${sentence}`;
+    if (sentence.length > 20 && !base.includes(sentence) && candidate.length <= 160 && candidate.length >= 110) return candidate;
+  }
   const suffix = suffixes[category] || suffixes.Everyday;
-  let expanded = `${clean} ${suffix}`;
-  if (expanded.length < 110) expanded += " No signup is required.";
-  return trimAtWord(expanded);
+  const withSuffix = `${base} ${suffix}`;
+  if (withSuffix.length <= 160) return withSuffix;
+  if (base.length >= 110) return base;
+  for (const tail of [" Free to use, no signup required.", " Free to use in your browser, with no signup and no values sent to a server."]) {
+    const candidate = `${base}${tail}`;
+    if (candidate.length >= 110 && candidate.length <= 160) return candidate;
+  }
+  return trimClean(withSuffix);
 };
 
 /** Title for <title>: drop the " | SolvePilot" suffix when it would push the title past 60 characters. */

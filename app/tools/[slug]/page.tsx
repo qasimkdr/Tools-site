@@ -46,7 +46,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const tool = getGlobalTool(slug);
   if (!tool) return {};
-  const description = seoDescription(tool.description, tool.category);
+  const description = seoDescription(tool.description, tool.category, [tool.example, tool.formula]);
   return {
     title: pageTitle(tool.title),
     description,
