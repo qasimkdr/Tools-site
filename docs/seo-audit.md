@@ -68,3 +68,20 @@ Phase 2 — quality (needs your OK, touches shared template text, not tool logic
 Phase 3 — technical:
 - Load header search index from a static JSON file on demand instead of embedding in every page.
 - AdSense `afterInteractive`/lazy; shorten titles >60; extend short meta descriptions.
+
+## 4. Traffic drop on 10 October 2026 (GSC export, last 3 months)
+- Impressions: ~200–290/day (late Sep) → 1,769–2,154 (3–4 Oct) → 510–658/day (5–9 Oct) → **22 on 10 Oct → ~1/day since**.
+  The whole site disappeared overnight; it was not a gradual ranking decline.
+- **No commits on 7–11 Oct.** The last deploy before the drop was 6 Oct (40 tools + Next.js security patch).
+  At that commit robots.txt allowed everything, layout robots = index/follow, and only the 5 alias pages are noindex.
+  Code did not de-index the site.
+- **Timing match:** third-party trackers report the Google **September 2026 spam update ran 24 Sep → completed 8 Oct**
+  (not yet verified directly on the Search Status Dashboard). The site dropped 1–2 days after completion.
+- **Publishing velocity (AGENTS.md counts):** ~526 pages on 2 Oct → 731 on 6 Oct (+~205 pages in 4–5 days) on a domain whose
+  first impressions were 20 Sep, IndexNow pushing every URL from 4 Oct, heavy shared boilerplate (§2 A1) and visible
+  keyword lists (§2 A2). This fits Google's **scaled content abuse** spam policy pattern.
+- Most likely cause: site-level spam demotion (algorithmic, from the spam update) or a manual action.
+  Less likely: hosting/DNS fetch failure (AGENTS.md records earlier DNS resets and sitemap fetch errors). An outage alone
+  would normally recover in days, not stay at zero for six weeks.
+- Owner checks needed: GSC Manual actions, Security issues, Pages report (indexed count before/after 10 Oct), URL Inspection
+  of a top page (e.g. /tools/molecular-weight-calculator/), Settings → Crawl stats (host errors around 9–10 Oct).
